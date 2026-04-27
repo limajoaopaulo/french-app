@@ -104,7 +104,7 @@ describe("QuestionCard", () => {
       />,
     )
     fireEvent.click(screen.getByRole("button", { name: /show answer/i }))
-    fireEvent.click(await screen.findByRole("button", { name: /^good$/i }))
+    fireEvent.click(await screen.findByRole("button", { name: /^right$/i }))
     expect(submitAnswerMock).toHaveBeenCalledTimes(1)
     const arg = submitAnswerMock.mock.calls[0][0] as {
       selfGrade: string | null

@@ -7,7 +7,7 @@ import { diffOptions } from "@/lib/option-diff"
 import { t } from "@/lib/i18n"
 
 type Phase = "options" | "ankiPrompt" | "ankiReveal" | "explanation"
-type SelfGrade = "again" | "hard" | "good" | "easy"
+type SelfGrade = "again" | "good"
 
 interface Props {
   sessionId: number
@@ -226,39 +226,23 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
             )}
           </p>
           <div className="flex flex-col gap-2">
-            <p className="text-sm text-zinc-400">How well did you know it?</p>
-            <div className="grid grid-cols-4 gap-2">
+            <p className="text-sm text-zinc-400">Did you know it?</p>
+            <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
                 disabled={submitting}
                 onClick={() => pickSelfGrade("again")}
                 className="rounded-xl border border-rose-500/40 bg-rose-500/15 px-3 py-3 text-rose-200 transition hover:bg-rose-500/25 disabled:cursor-default"
               >
-                Again
-              </button>
-              <button
-                type="button"
-                disabled={submitting}
-                onClick={() => pickSelfGrade("hard")}
-                className="rounded-xl border border-amber-500/40 bg-amber-500/15 px-3 py-3 text-amber-200 transition hover:bg-amber-500/25 disabled:cursor-default"
-              >
-                Hard
+                Wrong
               </button>
               <button
                 type="button"
                 disabled={submitting}
                 onClick={() => pickSelfGrade("good")}
-                className="rounded-xl border border-zinc-400/40 bg-zinc-400/15 px-3 py-3 text-zinc-100 transition hover:bg-zinc-400/25 disabled:cursor-default"
-              >
-                Good
-              </button>
-              <button
-                type="button"
-                disabled={submitting}
-                onClick={() => pickSelfGrade("easy")}
                 className="rounded-xl border border-emerald-500/40 bg-emerald-500/15 px-3 py-3 text-emerald-200 transition hover:bg-emerald-500/25 disabled:cursor-default"
               >
-                Easy
+                Right
               </button>
             </div>
           </div>
