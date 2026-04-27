@@ -1,0 +1,91 @@
+{
+  "_notes": "Symmetric BR-PT contrast pairs — after an answer whose `pattern` matches a key, 70% probability the next question is drawn where `pattern === counterpart`, if available and unseen this session. Disabled in bosses and review mode. Pattern keys must exist in taxonomy.json (pt/taxonomy.json).",
+  "_pairing_probability": 0.70,
+  "_disabled_in": ["boss", "review"],
+
+  "pairs": {
+    "ser-identidade-profissao": "estar-estado-temporario",
+    "estar-estado-temporario": "ser-identidade-profissao",
+
+    "ser-vs-estar-adjetivo": "ser-origem-posse",
+    "ser-origem-posse": "ser-vs-estar-adjetivo",
+
+    "estar-localizacao-temporaria": "ser-evento-localizacao",
+    "ser-evento-localizacao": "estar-localizacao-temporaria",
+
+    "perfeito-acao-pontual": "imperfeito-descricao",
+    "imperfeito-descricao": "perfeito-acao-pontual",
+
+    "perfeito-vs-imperfeito": "imperfeito-habito",
+    "imperfeito-habito": "perfeito-vs-imperfeito",
+
+    "subj-presente-duvida": "subj-presente-vontade",
+    "subj-presente-vontade": "subj-presente-duvida",
+
+    "subj-futuro-quando-se": "subj-presente-conjuncao",
+    "subj-presente-conjuncao": "subj-futuro-quando-se",
+
+    "subj-futuro-enquanto-assim-que": "subj-imperfeito",
+    "subj-imperfeito": "subj-futuro-enquanto-assim-que",
+
+    "prep-por-vs-para": "verbo-prep-a",
+    "verbo-prep-a": "prep-por-vs-para",
+
+    "prep-em-localizacao": "prep-a-destino",
+    "prep-a-destino": "prep-em-localizacao",
+
+    "contracoes-de-em": "contracoes-por-pelo-pela",
+    "contracoes-por-pelo-pela": "contracoes-de-em",
+
+    "verbo-prep-de": "verbo-prep-com",
+    "verbo-prep-com": "verbo-prep-de",
+
+    "futuro-simples": "futuro-composto-ir",
+    "futuro-composto-ir": "futuro-simples",
+
+    "futuro-do-preterito": "se-condicional-irreal",
+    "se-condicional-irreal": "futuro-do-preterito",
+
+    "presente-com-valor-futuro": "futuro-composto-ir",
+
+    "pronom-voce-vs-a-gente": "pronom-proclise-br",
+    "pronom-proclise-br": "pronom-voce-vs-a-gente",
+
+    "pronom-objeto-direto": "pronom-objeto-indireto",
+    "pronom-objeto-indireto": "pronom-objeto-direto",
+
+    "pronom-omissao-objeto": "pronom-objeto-direto",
+
+    "gerundio-acao-em-curso": "infinitivo-pessoal",
+    "infinitivo-pessoal": "gerundio-acao-em-curso",
+
+    "discurso-indireto-presente": "discurso-indireto-passado",
+    "discurso-indireto-passado": "discurso-indireto-presente",
+
+    "se-condicional-real": "se-condicional-irreal",
+
+    "dupla-negacao-ninguem": "dupla-negacao-nada",
+    "dupla-negacao-nada": "dupla-negacao-ninguem",
+
+    "dupla-negacao-nunca": "nao-final-enfatico",
+    "nao-final-enfatico": "dupla-negacao-nunca",
+
+    "artigo-com-nome-proprio": "artigo-com-possessivo",
+    "artigo-com-possessivo": "artigo-com-nome-proprio",
+
+    "informal-saudacoes": "formal-reduzido",
+    "formal-reduzido": "informal-saudacoes",
+
+    "girias-frequentes": "expressoes-idiomaticas",
+    "expressoes-idiomaticas": "girias-frequentes"
+  },
+
+  "_design_notes": [
+    "ser-vs-estar gets 3 symmetric pairs — it's the sub that most rewards contrast drilling in BR-PT.",
+    "perfeito vs imperfeito mirrors FR passé-composé vs imparfait.",
+    "subjunctive pairs include the BR-specific futuro do subjuntivo (quando eu for, se ele quiser) contrasting with presente do subjuntivo (espero que ele venha) and imperfeito do subjuntivo (se eu pudesse).",
+    "por-vs-para is the preposition contrast; em-vs-a is the location/destination contrast.",
+    "gerundio-vs-infinitivo matters in BR (estou falando) because EU-PT forms (estou a falar) will be rejected in the seed bank but learners may confuse them.",
+    "dupla negação pairs teach that BR requires the extra 'não' only in some constructions (Ninguém veio ✓ / Não veio ninguém ✓ / Ninguém não veio ✗)."
+  ]
+}

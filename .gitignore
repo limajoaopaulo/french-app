@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/src/generated/prisma
+
+# prisma dev database
+/prisma/dev.db
+/prisma/dev.db-journal
+/prisma/dev.db.bak
+
+# sentence corpus (authoring helper — see scripts/sentences/README.md)
+/scripts/sentences/data/
+
+# claude code per-machine settings + local logs
+/.claude/
+/.logs/

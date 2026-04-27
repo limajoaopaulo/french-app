@@ -1,0 +1,290 @@
+{
+  "_notes": "10 grammar + 10 vocab subs, effort-balanced. Each sub declares its sub-sub 'patterns' (PatternStats rows are seeded from these). Colors map to Tailwind-friendly hex. 'shortLabel' is used for radar axes (<= 12 chars).",
+
+  "domains": {
+    "grammar": {
+      "label": "Grammaire",
+      "color": "#6366f1",
+      "subs": {
+        "present_conjugation": {
+          "label": "Conjugaison — présent",
+          "shortLabel": "Présent",
+          "hint": "être/avoir + réguliers + irréguliers fréquents",
+          "patterns": [
+            "present-etre-avoir",
+            "present-er-regular",
+            "present-ir-regular",
+            "present-re-regular",
+            "present-irregular-core",
+            "present-pronominal"
+          ]
+        },
+        "past_tenses": {
+          "label": "Temps du passé",
+          "shortLabel": "Passé",
+          "hint": "passé composé, imparfait, plus-que-parfait (sans passé simple)",
+          "patterns": [
+            "pc-avoir",
+            "pc-etre-accord",
+            "imparfait-description",
+            "imparfait-habitude",
+            "pc-vs-imparfait",
+            "plus-que-parfait"
+          ]
+        },
+        "future_conditional": {
+          "label": "Futur & conditionnel",
+          "shortLabel": "Futur/Cond.",
+          "hint": "futur simple, futur proche, conditionnel présent/passé",
+          "patterns": [
+            "futur-simple",
+            "futur-proche",
+            "conditionnel-present",
+            "conditionnel-passe",
+            "si-concordance"
+          ]
+        },
+        "subjunctive": {
+          "label": "Subjonctif (présent)",
+          "shortLabel": "Subjonctif",
+          "hint": "déclencheurs principaux, subjonctif présent uniquement",
+          "patterns": [
+            "subj-trigger-doute",
+            "subj-trigger-volonte",
+            "subj-trigger-emotion",
+            "subj-trigger-conjonction",
+            "subj-trigger-impersonnel"
+          ]
+        },
+        "pronouns_personal": {
+          "label": "Pronoms personnels",
+          "shortLabel": "Pronoms",
+          "hint": "COD, COI, y, en + placement et combinaisons",
+          "patterns": [
+            "pronom-cod",
+            "pronom-coi",
+            "pronom-y",
+            "pronom-en",
+            "pronom-combinaisons"
+          ]
+        },
+        "relative_pronouns": {
+          "label": "Pronoms relatifs",
+          "shortLabel": "Relatifs",
+          "hint": "qui, que, où, dont, lequel",
+          "patterns": [
+            "relatif-qui",
+            "relatif-que",
+            "relatif-ou",
+            "relatif-dont",
+            "relatif-lequel"
+          ]
+        },
+        "prepositions": {
+          "label": "Prépositions",
+          "shortLabel": "Prépositions",
+          "hint": "à, de, en, dans + villes/pays + verbe+prep",
+          "patterns": [
+            "prep-a-ville",
+            "prep-en-pays-feminin",
+            "prep-au-pays-masculin",
+            "prep-de-origine",
+            "verbe-prep-a-inf",
+            "verbe-prep-de-inf"
+          ]
+        },
+        "articles_determiners": {
+          "label": "Articles & déterminants",
+          "shortLabel": "Articles",
+          "hint": "défini, indéfini, partitif, de après négation, possessifs, démonstratifs",
+          "patterns": [
+            "article-defini",
+            "article-indefini",
+            "article-partitif",
+            "de-apres-negation",
+            "possessif-demonstratif"
+          ]
+        },
+        "negation": {
+          "label": "Négation",
+          "shortLabel": "Négation",
+          "hint": "ne…pas/plus/jamais/rien/personne/que",
+          "patterns": [
+            "ne-pas",
+            "ne-plus",
+            "ne-jamais",
+            "ne-rien",
+            "ne-personne",
+            "ne-que"
+          ]
+        },
+        "complex_sentences": {
+          "label": "Phrases complexes",
+          "shortLabel": "Phrases cx",
+          "hint": "discours rapporté, concordance, connecteurs, si-clauses",
+          "patterns": [
+            "reported-present",
+            "reported-passe",
+            "si-type1",
+            "si-type2",
+            "connecteurs-logiques"
+          ]
+        }
+      }
+    },
+
+    "vocabulary": {
+      "label": "Vocabulaire",
+      "color": "#ec4899",
+      "subs": {
+        "daily_life": {
+          "label": "Vie quotidienne",
+          "shortLabel": "Quotidien",
+          "hint": "routines, temps, vêtements, courses",
+          "patterns": [
+            "routine-matinale",
+            "temps-meteo",
+            "vetements",
+            "courses",
+            "transports-quotidiens"
+          ]
+        },
+        "food_cooking": {
+          "label": "Cuisine & restaurant",
+          "shortLabel": "Cuisine",
+          "hint": "ingrédients, méthodes, au restaurant, plats",
+          "patterns": [
+            "ingredients-base",
+            "methodes-cuisson",
+            "au-restaurant",
+            "plats-typiques",
+            "preferences-alimentaires"
+          ]
+        },
+        "home_logistics": {
+          "label": "Logement & logistique",
+          "shortLabel": "Logement",
+          "hint": "pièces, mobilier, locatif, entretien",
+          "patterns": [
+            "pieces-maison",
+            "mobilier-objets",
+            "locatif-baux",
+            "reparations-entretien"
+          ]
+        },
+        "work_career": {
+          "label": "Travail & carrière",
+          "shortLabel": "Travail",
+          "hint": "emails, réunions, contrats, compétences",
+          "patterns": [
+            "email-formel",
+            "reunions",
+            "contrats-salaire",
+            "competences-cv",
+            "entreprise-roles"
+          ]
+        },
+        "health_body": {
+          "label": "Santé & corps",
+          "shortLabel": "Santé",
+          "hint": "parties du corps, maladies, médecin, bien-être",
+          "patterns": [
+            "parties-corps",
+            "symptomes-maladies",
+            "medecin-visite",
+            "urgences",
+            "bien-etre"
+          ]
+        },
+        "travel_transport": {
+          "label": "Voyage & transport",
+          "shortLabel": "Voyage",
+          "hint": "billets, hébergement, directions, retards",
+          "patterns": [
+            "billets-reservations",
+            "hebergement",
+            "directions-orientation",
+            "douane-visa",
+            "accidents-retards"
+          ]
+        },
+        "emotions_social": {
+          "label": "Émotions & vie sociale",
+          "shortLabel": "Émotions",
+          "hint": "sentiments, relations, conflits, politesse",
+          "patterns": [
+            "sentiments-base",
+            "relations-famille",
+            "amitie-amour",
+            "conflits-excuses",
+            "politesse-sociale"
+          ]
+        },
+        "admin_bureaucracy": {
+          "label": "Administratif",
+          "shortLabel": "Admin",
+          "hint": "banque, impôts, CAF, papiers, assurance",
+          "patterns": [
+            "banque-compte",
+            "impots-taxes",
+            "caf-aides",
+            "papiers-identite",
+            "assurance"
+          ]
+        },
+        "media_news": {
+          "label": "Médias & actualité",
+          "shortLabel": "Médias",
+          "hint": "presse, débat, réseaux, événements, chiffres",
+          "patterns": [
+            "titres-presse",
+            "debat-politique",
+            "reseaux-sociaux",
+            "evenements-actualite",
+            "chiffres-statistiques"
+          ]
+        },
+        "register_nuance": {
+          "label": "Registre & nuance",
+          "shortLabel": "Registre",
+          "hint": "familier, soutenu, argot, idiomes, politesse indirecte",
+          "patterns": [
+            "familier-tutoiement",
+            "soutenu-formel",
+            "argot-verlan",
+            "idiomes-courants",
+            "politesse-indirecte"
+          ]
+        }
+      }
+    }
+  },
+
+  "default_active": {
+    "_notes": "All 20 subs active by default — the taxonomy is balanced, no reason to pre-deactivate.",
+    "grammar": [
+      "present_conjugation",
+      "past_tenses",
+      "future_conditional",
+      "subjunctive",
+      "pronouns_personal",
+      "relative_pronouns",
+      "prepositions",
+      "articles_determiners",
+      "negation",
+      "complex_sentences"
+    ],
+    "vocabulary": [
+      "daily_life",
+      "food_cooking",
+      "home_logistics",
+      "work_career",
+      "health_body",
+      "travel_transport",
+      "emotions_social",
+      "admin_bureaucracy",
+      "media_news",
+      "register_nuance"
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+// French Adaptive Quiz — source of truth for the DB.
+// Multi-user + multi-language: each user is locked to one Language at signup.
+// Per-user rows (Session/SubStats/PatternStats/Review/QuestionState) inherit
+// language transitively from the user.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// -----------------------------------------------------------------------------
+// Languages — seeded on migrate (fr, pt).
+// -----------------------------------------------------------------------------
+
+model Language {
+  id   Int    @id @default(autoincrement())
+  code String @unique
+  name String
+
+  users     User[]
+  questions Question[]
+}
+
+// -----------------------------------------------------------------------------
+// Users — username + 4-digit PIN (bcrypt hash). One language per user.
+// -----------------------------------------------------------------------------
+
+model User {
+  id          Int      @id @default(autoincrement())
+  username    String   @unique
+  displayName String
+  pinHash     String?
+  languageId  Int
+  language    Language @relation(fields: [languageId], references: [id])
+  createdAt   DateTime @default(now())
+
+  sessions       Session[]
+  subStats       SubStats[]
+  patternStats   PatternStats[]
+  reviews        Review[]
+  questionStates QuestionState[]
+
+  @@index([username])
+  @@index([languageId])
+}
+
+// -----------------------------------------------------------------------------
+// Question bank — split by language.
+// -----------------------------------------------------------------------------
+
+model Question {
+  id           Int      @id @default(autoincrement())
+  externalId   String   @unique
+  languageId   Int
+  language     Language @relation(fields: [languageId], references: [id])
+  domain       String
+  sub          String
+  level        Int
+  pattern      String
+  counterpart  String?
+  cueType      String
+  cue          String
+  options      String
+  correctIndex Int
+  explanation  String
+  register     String?
+  source       String
+  createdAt    DateTime @default(now())
+
+  reviews Review[]
+  states  QuestionState[]
+
+  @@index([languageId, domain, sub])
+  @@index([languageId, pattern])
+  @@index([languageId, level])
+  @@index([languageId, domain, sub, level])
+}
+
+// -----------------------------------------------------------------------------
+// Per-question FSRS state — per user.
+// -----------------------------------------------------------------------------
+
+model QuestionState {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  user       User     @relation(fields: [userId], references: [id])
+  questionId Int
+  question   Question @relation(fields: [questionId], references: [id])
+
+  // FSRS card state (mirrors ts-fsrs Card type fields).
+  stability     Float     @default(0)
+  difficulty    Float     @default(0)
+  state         Int       @default(0)
+  scheduledDays Int       @default(0)
+  learningSteps Int       @default(0)
+  reps          Int       @default(0)
+  lapses        Int       @default(0)
+  lastReview    DateTime?
+  dueAt         DateTime?
+
+  retired       Boolean   @default(false)
+  firstServedAt DateTime?
+  lastSeenAt    DateTime?
+
+  @@unique([userId, questionId])
+  @@index([userId, dueAt])
+  @@index([userId, state])
+}
+
+// -----------------------------------------------------------------------------
+// Individual answer events
+// -----------------------------------------------------------------------------
+
+model Review {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  user       User     @relation(fields: [userId], references: [id])
+  questionId Int
+  question   Question @relation(fields: [questionId], references: [id])
+  sessionId  Int?
+  session    Session? @relation(fields: [sessionId], references: [id])
+
+  correct      Boolean
+  selfGrade    String?
+  responseMs   Int
+  speedTag     String
+  pointsEarned Float
+  levelAtServe Int
+
+  reviewedAt DateTime @default(now())
+
+  @@index([userId, sessionId])
+  @@index([userId, reviewedAt])
+}
+
+// -----------------------------------------------------------------------------
+// Per-user, per-sub activation toggle.
+// -----------------------------------------------------------------------------
+
+model SubStats {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  domain    String
+  sub       String
+  isActive  Boolean  @default(false)
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, domain, sub])
+  @@index([userId, domain, isActive])
+}
+
+// -----------------------------------------------------------------------------
+// Per-user, per-pattern lastSeenAt (cold-pattern boost). Mastery derives from
+// per-card FSRS state.
+// -----------------------------------------------------------------------------
+
+model PatternStats {
+  id         Int       @id @default(autoincrement())
+  userId     Int
+  user       User      @relation(fields: [userId], references: [id])
+  domain     String
+  sub        String
+  pattern    String
+  lastSeenAt DateTime?
+  updatedAt  DateTime  @updatedAt
+
+  @@unique([userId, domain, sub, pattern])
+  @@index([userId, sub])
+}
+
+// -----------------------------------------------------------------------------
+// Sessions — per user.
+// -----------------------------------------------------------------------------
+
+model Session {
+  id            Int       @id @default(autoincrement())
+  userId        Int
+  user          User      @relation(fields: [userId], references: [id])
+  mode          String
+  domainFilter  String?
+  plannedLength Int
+  startedAt     DateTime  @default(now())
+  endedAt       DateTime?
+  endReason     String?
+
+  questionsSeen Int   @default(0)
+  correctCount  Int   @default(0)
+  missCount     Int   @default(0)
+  totalPoints   Float @default(0)
+  ppq           Float @default(0)
+
+  bossDomain String?
+  bossLevel  Int?
+  bossMedal  String?
+  bossQueue  String?
+
+  targetSubs String?
+  levelMin   Int?
+  levelMax   Int?
+
+  reviews Review[]
+
+  @@index([userId, startedAt])
+}

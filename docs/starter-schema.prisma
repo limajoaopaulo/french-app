@@ -1,0 +1,162 @@
+// French Adaptive Quiz — starter schema.
+// Run: npx prisma migrate dev --name init
+//
+// NOTE for Claude Code: review this before the first migration.
+// Open questions marked with `// ?` — decide with the user.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// -----------------------------------------------------------------------------
+// Question bank
+// -----------------------------------------------------------------------------
+
+model Question {
+  id            Int      @id @default(autoincrement())
+  externalId    String   @unique // stable slug from seed JSON (seed_…); autogen for user-added
+  domain        String   // "grammar" | "vocabulary"
+  sub           String   // taxonomy sub key (e.g. "conjugation")
+  level         Int      // 1..5 = A1..C1
+  pattern       String   // kebab-case identifier for contrast pairing
+  counterpart   String?  // paired pattern key, nullable
+  cueType       String   // "gap_fr" | "intent_en" | "situation_fr" | …
+  cue           String
+  options       String   // JSON array of 4 strings (SQLite has no native array)
+  correctIndex  Int      // 0..3 — canonical, pre-shuffle
+  explanation   String
+  register      String?  // "casual" | "neutral" | "formal"
+  source        String   // "seed" | "user_added"
+  createdAt     DateTime @default(now())
+
+  reviews       Review[]
+
+  @@index([domain, sub])
+  @@index([pattern])
+  @@index([level])
+}
+
+// -----------------------------------------------------------------------------
+// Per-question state (Leitner basket, encounters, etc.)
+// Kept separate from Question so seed ingestion is idempotent.
+// -----------------------------------------------------------------------------
+
+model QuestionState {
+  id             Int       @id @default(autoincrement())
+  questionId     Int       @unique
+  encounters     Int       @default(0)
+  correctInRow   Int       @default(0)
+  basket         Int       @default(0) // 0=New, 1=Learning, 2=Review, 3=Mastered
+  leitnerBox     Int       @default(1) // 1..5
+  nextDueAt      DateTime?
+  retired        Boolean   @default(false)
+  lastSeenAt     DateTime?
+
+  @@index([nextDueAt])
+  @@index([basket])
+}
+
+// -----------------------------------------------------------------------------
+// Individual answer events
+// -----------------------------------------------------------------------------
+
+model Review {
+  id           Int      @id @default(autoincrement())
+  questionId   Int
+  question     Question @relation(fields: [questionId], references: [id])
+  sessionId    Int?
+  session      Session? @relation(fields: [sessionId], references: [id])
+
+  correct      Boolean
+  confident    Boolean
+  responseMs   Int
+  speedTag     String   // "fast" | "normal" | "slow"
+  pointsEarned Float
+  levelAtServe Int      // the level the engine chose to serve this at
+
+  reviewedAt   DateTime @default(now())
+
+  @@index([sessionId])
+  @@index([reviewedAt])
+}
+
+// -----------------------------------------------------------------------------
+// Per-subcategory running stats
+// -----------------------------------------------------------------------------
+
+model SubStats {
+  id              Int      @id @default(autoincrement())
+  domain          String
+  sub             String
+  estimatedLevel  Float    @default(2.0) // 1.0..5.0
+  totalAnswered   Int      @default(0)
+  totalCorrect    Int      @default(0)
+  overconfident   Int      @default(0) // count of wrong-but-confident
+  recent          String   @default("[]") // JSON array of booleans, last ~20
+  isActive        Boolean  @default(false)
+  updatedAt       DateTime @updatedAt
+
+  @@unique([domain, sub])
+  @@index([estimatedLevel])
+}
+
+// -----------------------------------------------------------------------------
+// Pattern miss tracker — powers "Difficultés récurrentes"
+// -----------------------------------------------------------------------------
+
+model PatternMiss {
+  id        Int      @id @default(autoincrement())
+  pattern   String
+  sessionId Int?
+  missedAt  DateTime @default(now())
+
+  @@index([pattern])
+  @@index([sessionId])
+}
+
+// -----------------------------------------------------------------------------
+// Sessions
+// -----------------------------------------------------------------------------
+
+model Session {
+  id            Int       @id @default(autoincrement())
+  mode          String    // "personalised" | "review" | "manual" | "boss"
+  domainFilter  String?   // "grammar" | "vocabulary" | null for both
+  plannedLength Int       // target question count (or boss total)
+  startedAt     DateTime  @default(now())
+  endedAt       DateTime?
+  endReason     String?   // "completed" | "early_exit" | "boss_defeat" | "boss_victory"
+
+  // Aggregated stats, computed at end
+  questionsSeen Int       @default(0)
+  correctCount  Int       @default(0)
+  missCount     Int       @default(0)
+  totalPoints   Float     @default(0)
+  ppq           Float     @default(0) // points per question at end
+
+  // Boss-specific
+  bossDomain    String?   // "grammar" | "vocabulary"
+  bossLevel     Int?      // 2..5
+  bossMedal     String?   // "gold" | "silver" | "bronze" | null if defeat/abandon
+
+  reviews       Review[]
+
+  @@index([startedAt])
+}
+
+// -----------------------------------------------------------------------------
+// Open questions for Claude Code to raise with user:
+// ? Should `QuestionState` really be separate from `Question`, or merged?
+//   (Separate is cleaner for seed re-ingestion but adds a join everywhere.)
+// ? Should `Review.levelAtServe` be captured, or is it derivable from the
+//   session + question's canonical level? Current answer: capture it, cheap
+//   insurance.
+// ? Is JSON-as-string in SQLite (options, recent) acceptable, or do we want
+//   to normalize into separate tables? Current answer: JSON-as-string is
+//   fine for personal use; revisit if we ever go multi-user.
+// -----------------------------------------------------------------------------

@@ -1,0 +1,42 @@
+{
+  "_stale": true,
+  "_stale_reason": "Pattern keys reference the old taxonomy. Rewrite in Phase 8 against new patterns declared in taxonomy.json.",
+  "_source": "Extracted from french-quiz-app.tsx (CONTRAST_PAIRS object)",
+  "_notes": "Symmetric lookup: pattern → counterpart pattern. When user answers a question whose `pattern` is a key here, 70% probability the next question is drawn from the bank where `pattern === counterpart`, IF such a question exists and hasn't been seen recently. Disabled in bosses and review mode.",
+  "_pairing_probability": 0.70,
+  "_disabled_in": ["boss", "review"],
+  "pairs": {
+    "imparfait-interruption": "passe-compose-event",
+    "passe-compose-event": "imparfait-interruption",
+
+    "subjonctif-present-trigger": "indicatif-que",
+    "indicatif-que": "subjonctif-present-trigger",
+
+    "bien-que": "parce-que-indicatif",
+    "parce-que-indicatif": "bien-que",
+
+    "futur-simple": "conditionnel-hypothese",
+    "conditionnel-hypothese": "futur-simple",
+
+    "rater-vs-manquer": "manquer-emotion",
+
+    "cependant-vs-pourtant": "par-consequent",
+
+    "en-revanche": "par-ailleurs",
+
+    "pronom-y": "pronom-en",
+    "pronom-en": "pronom-y",
+
+    "tu-me-manques": "j-ai-besoin-de",
+
+    "partitif-du": "de-apres-negation",
+    "de-apres-negation": "partitif-du",
+
+    "inversion-formelle": "question-familiere",
+    "question-familiere": "inversion-formelle",
+
+    "registre-formel-superieur": "registre-familier-ami",
+    "registre-familier-ami": "registre-formel-superieur"
+  },
+  "_asymmetric_notes": "Some pairs above are one-way (e.g. 'rater-vs-manquer' → 'manquer-emotion' has no reverse entry). That's intentional from the artifact source. Add reverse entries if you want bidirectional pairing on those."
+}
