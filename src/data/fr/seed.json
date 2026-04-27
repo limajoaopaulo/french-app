@@ -1348,10 +1348,10 @@
       "cue_type": "situation_fr",
       "cue": "Un ami se plaint : il envoie des messages à sa sœur, mais elle ne fait jamais rien en retour. Tu résumes la situation.",
       "options": [
-        "Elle ne répond",
-        "Elle ne réponde",
-        "Elle ne répondre",
-        "Elle ne réponds"
+        "Elle ne répond.",
+        "Elle ne réponde.",
+        "Elle ne répondre.",
+        "Elle ne réponds."
       ],
       "correct_index": 0,
       "explanation": "« Répondre » 3e pers. sing. : pas de -t écrit, pas de -ds (qui est la forme du tu). Elle répond.",
@@ -1436,7 +1436,7 @@
       "level": 3,
       "pattern": "present-pronominal",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu te souviens très bien d'un voyage (sans répéter « voyage »).",
+      "cue": "Dire que tu (se souvenir) très bien d'un voyage (sans répéter « voyage »).",
       "options": [
         "Je m'en souviens très bien.",
         "Je le souviens très bien.",
@@ -1472,7 +1472,7 @@
       "level": 4,
       "pattern": "present-irregular-core",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que ce film te plaît beaucoup (utiliser « plaire »).",
+      "cue": "Dire que ce film (plaire) beaucoup (avec le bon pronom pour toi).",
       "options": [
         "Ce film me plaît beaucoup.",
         "Ce film me plais beaucoup.",
@@ -1543,8 +1543,8 @@
       "sub": "present_conjugation",
       "level": 5,
       "pattern": "present-irregular-core",
-      "cue_type": "situation_fr",
-      "cue": "Dans un communiqué officiel, le comité annonce sa décision formelle d'agir sans tarder.",
+      "cue_type": "gap_fr",
+      "cue": "Registre formel : Le comité ___ (résoudre) d'agir sans tarder.",
       "options": [
         "résout",
         "résoudre",
@@ -2200,7 +2200,7 @@
       "pattern": "pc-vs-imparfait",
       "counterpart": "imparfait-description",
       "cue_type": "situation_fr",
-      "cue": "Quand tu étais petit, tu as eu un accident de vélo mémorable.",
+      "cue": "Raconte à la 1re personne : pendant l'enfance, un accident de vélo mémorable. Choisis le bon couple imparfait/passé composé.",
       "options": [
         "Quand j'étais petit, j'ai eu",
         "Quand j'ai été petit, j'avais",
@@ -2964,7 +2964,7 @@
       "level": 3,
       "pattern": "si-concordance",
       "cue_type": "situation_fr",
-      "cue": "Tu négocies avec un collègue : s'il finit son travail avant 18h, tu l'aideras demain.",
+      "cue": "Tu négocies avec un collègue : la condition est qu'il (finir) son travail avant 18h pour que tu l'aides demain.",
       "options": [
         "S'il finit avant 18h, je l'aiderai demain.",
         "S'il finissait avant 18h, je l'aiderai demain.",
@@ -3705,7 +3705,7 @@
       "level": 3,
       "pattern": "subj-trigger-impersonnel",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'il faut qu'on fasse attention à la route.",
+      "cue": "Dire qu'il faut qu'on (faire) attention à la route.",
       "options": [
         "Il faut qu'on fasse",
         "Il faut qu'on fait",
@@ -3741,7 +3741,7 @@
       "level": 3,
       "pattern": "subj-trigger-impersonnel",
       "cue_type": "situation_fr",
-      "cue": "Un ami te demande un conseil important. Tu réponds qu'il vaut mieux qu'il prenne son temps pour décider.",
+      "cue": "Un ami te demande un conseil pour une décision difficile. Réponds avec « il vaut mieux que » + (prendre) son temps.",
       "options": [
         "Il vaut mieux que tu prennes ton temps.",
         "Il vaut mieux que tu prends ton temps.",
@@ -5109,7 +5109,7 @@
       "pattern": "pronom-en",
       "counterpart": "pronom-y",
       "cue_type": "situation_fr",
-      "cue": "Dans un article critique, tu recommandes un livre : il en vaut la peine d'être lu attentivement.",
+      "cue": "Dans un article critique, tu veux dire qu'un livre mérite d'être lu attentivement (sans répéter « de ce livre »).",
       "options": [
         "Ce livre en vaut la peine.",
         "Ce livre le vaut la peine.",
@@ -5145,7 +5145,7 @@
       "level": 2,
       "pattern": "relatif-qui",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : le médecin qui m'a soigné.",
+      "cue": "Dire : le médecin ___ m'a soigné (relatif sujet).",
       "options": [
         "Le médecin qui",
         "Le médecin que",
@@ -7951,7 +7951,7 @@
         "fait pluie"
       ],
       "correct_index": 0,
-      "explanation": "« Pleuvoir » (verbe impersonnel) : il pleut.",
+      "explanation": "« Pleuvoir » est un verbe impersonnel (sujet toujours « il »).",
       "register": "neutral"
     },
     {
@@ -8053,10 +8053,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « This jacket doesn't fit me; it's too tight. »",
       "options": [
-        "ne me va pas ; elle est trop serrée.",
-        "ne me fit pas ; elle est trop tight.",
-        "me va mal ; elle est trop petite-étroite.",
-        "ne m'ajuste pas ; elle est trop étroite."
+        "Cette veste ne me va pas ; elle est trop serrée.",
+        "Cette veste ne me fit pas ; elle est trop tight.",
+        "Cette veste me va mal ; elle est trop petite-étroite.",
+        "Cette veste ne m'ajuste pas ; elle est trop étroite."
       ],
       "correct_index": 0,
       "explanation": "« Aller à qn » = sizer/fitter ; « serré » = tight.",
@@ -8069,7 +8069,7 @@
       "level": 4,
       "pattern": "vetements",
       "cue_type": "situation_fr",
-      "cue": "En invitation formelle, le dress code est « tenue de soirée ».",
+      "cue": "En invitation formelle, le dress code indiqué sur le carton est ___.",
       "options": [
         "tenue de soirée.",
         "habit de soirée.",
@@ -8500,13 +8500,13 @@
       "sub": "food_cooking",
       "level": 3,
       "pattern": "au-restaurant",
-      "cue_type": "intent_en",
-      "cue": "Say: « Is this dish spicy? »",
+      "cue_type": "gap_fr",
+      "cue": "Au restaurant : Ce plat est ___ ?",
       "options": [
-        "épicé ?",
-        "piquant ?",
-        "aigre ?",
-        "relevé-très ?"
+        "épicé",
+        "piquant",
+        "aigre",
+        "relevé-très"
       ],
       "correct_index": 0,
       "explanation": "« Épicé » = spicy (avec des épices). « Piquant » marche aussi mais moins neutre.",
@@ -8557,10 +8557,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu recommandes à un ami un plat typique du Sud-Ouest.",
       "options": [
-        "Goûte le cassoulet, c'est un classique du",
-        "Goûte au cassoulet, c'est un classique du",
-        "Teste le cassoulet, c'est classique de",
-        "Essaie à cassoulet, c'est le classique du"
+        "Goûte le cassoulet, c'est un classique du Sud-Ouest.",
+        "Goûte au cassoulet, c'est un classique du Sud-Ouest.",
+        "Teste le cassoulet, c'est classique du Sud-Ouest.",
+        "Essaie à cassoulet, c'est le classique du Sud-Ouest."
       ],
       "correct_index": 0,
       "explanation": "« Goûter + COD » (sans « à ») = try food ; « du Sud-Ouest » (article défini contracté).",
@@ -8575,10 +8575,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « It's a dish my grandmother used to make. »",
       "options": [
-        "que faisait ma grand-mère.",
-        "que ma grand-mère faisait avant.",
-        "que ma grand-mère a fait toujours.",
-        "fait de ma grand-mère."
+        "C'est un plat que faisait ma grand-mère.",
+        "C'est un plat que ma grand-mère faisait avant.",
+        "C'est un plat que ma grand-mère a fait toujours.",
+        "C'est un plat fait de ma grand-mère."
       ],
       "correct_index": 0,
       "explanation": "Imparfait pour habitude passée (« used to make ») ; relative simple.",
@@ -8968,13 +8968,13 @@
       "sub": "home_logistics",
       "level": 2,
       "pattern": "reparations-entretien",
-      "cue_type": "intent_en",
-      "cue": "Say: « The washing machine is broken. »",
+      "cue_type": "gap_fr",
+      "cue": "La machine à laver est ___ .",
       "options": [
-        "en panne.",
-        "cassée.",
-        "rompue.",
-        "brisée."
+        "en panne",
+        "cassée",
+        "rompue",
+        "brisée"
       ],
       "correct_index": 0,
       "explanation": "« En panne » = standard pour appareil qui ne fonctionne plus (« cassée » suggère du physique brisé).",
@@ -9061,10 +9061,10 @@
       "cue_type": "intent_en",
       "cue": "« The mezzanine serves as an office. »",
       "options": [
-        "sert de bureau.",
-        "serve comme bureau.",
-        "fonctionne comme bureau.",
-        "est utilisée pour bureau."
+        "La mezzanine sert de bureau.",
+        "La mezzanine serve comme bureau.",
+        "La mezzanine fonctionne comme bureau.",
+        "La mezzanine est utilisée pour bureau."
       ],
       "correct_index": 0,
       "explanation": "« Servir de + nom (sans article) » = serve as.",
@@ -9205,10 +9205,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu proposes de reporter la réunion à la semaine prochaine.",
       "options": [
-        "On peut reporter la réunion à la",
-        "On peut remettre la réunion à",
-        "On peut déplacer la réunion pour la",
-        "On peut repousser la réunion dans la"
+        "On peut reporter la réunion à la semaine prochaine.",
+        "On peut remettre la réunion à la semaine prochaine.",
+        "On peut déplacer la réunion pour la semaine prochaine.",
+        "On peut repousser la réunion dans la semaine prochaine."
       ],
       "correct_index": 0,
       "explanation": "« Reporter À + date » = postpone (formel et courant).",
@@ -9383,7 +9383,7 @@
       "level": 3,
       "pattern": "competences-cv",
       "cue_type": "situation_fr",
-      "cue": "Dans un CV, un niveau d'anglais courant.",
+      "cue": "Dans un CV, tu indiques ton niveau d'anglais : Anglais ___.",
       "options": [
         "courant.",
         "fluent.",
@@ -10121,7 +10121,7 @@
       "level": 3,
       "pattern": "hebergement",
       "cue_type": "situation_fr",
-      "cue": "À la réception, tu demandes à quelle heure il faut libérer la chambre.",
+      "cue": "À la réception, tu demandes : « À quelle heure ___? »",
       "options": [
         "est le départ de la chambre ?",
         "on laisse la chambre ?",
@@ -10267,10 +10267,10 @@
       "cue_type": "situation_fr",
       "cue": "À l'aéroport, un agent te demande la raison de ta visite en France.",
       "options": [
-        "Je viens pour affaires, je suis ici pour",
-        "Je viens pour business, je suis ici pour",
-        "Je viens par affaires, je suis ici",
-        "Je viens à affaires, je suis ici"
+        "Je viens pour affaires.",
+        "Je viens pour business.",
+        "Je viens par affaires.",
+        "Je viens à affaires."
       ],
       "correct_index": 0,
       "explanation": "« Pour affaires » = on business (locution figée sans article).",
@@ -10987,10 +10987,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu demandes à ton conseiller bancaire d'activer le virement international.",
       "options": [
-        "Pourriez-vous activer les virements à l'international",
-        "Pourriez-vous activer les virements internationaux",
-        "Vous pourriez allumer les virements en international",
-        "Vous pouvez autoriser les virages à l'international"
+        "Pourriez-vous activer les virements à l'international, s'il vous plaît ?",
+        "Pourriez-vous activer les virements internationaux, s'il vous plaît ?",
+        "Vous pourriez allumer les virements en international, s'il vous plaît ?",
+        "Vous pouvez autoriser les virages à l'international, s'il vous plaît ?"
       ],
       "correct_index": 0,
       "explanation": "« Virement à l'international » (ou « international ») = wire transfer abroad (« virement » pas « virage »).",
@@ -11093,7 +11093,7 @@
       "level": 3,
       "pattern": "caf-aides",
       "cue_type": "situation_fr",
-      "cue": "À la CAF, on te demande si tu as déjà créé un compte en ligne.",
+      "cue": "À la CAF, on te demande si tu as déjà créé un compte en ligne en tant qu'___.",
       "options": [
         "allocataire sur caf.fr.",
         "usager sur caf.fr.",
@@ -11417,7 +11417,7 @@
       "level": 4,
       "pattern": "titres-presse",
       "cue_type": "situation_fr",
-      "cue": "Un article d'actualité à un ami.",
+      "cue": "Tu résumes un article d'actualité à un ami.",
       "options": [
         "D'après Le Figaro, la mesure entrerait en vigueur en juin.",
         "Selon Le Figaro, la mesure entrait en vigueur en juin.",
@@ -11453,7 +11453,7 @@
       "level": 3,
       "pattern": "debat-politique",
       "cue_type": "situation_fr",
-      "cue": "À un étranger comment on élit le président en France.",
+      "cue": "Tu expliques à un étranger comment on élit le président : il est ___.",
       "options": [
         "élu au suffrage universel direct.",
         "choisi au suffrage universel direct.",
@@ -11489,7 +11489,7 @@
       "level": 4,
       "pattern": "debat-politique",
       "cue_type": "gap_fr",
-      "cue": "Elle a ___ projet de loi.",
+      "cue": "Elle a ___ projet de loi sur le budget.",
       "options": [
         "opposé son veto au",
         "vétoé le",
@@ -11507,7 +11507,7 @@
       "level": 4,
       "pattern": "debat-politique",
       "cue_type": "situation_fr",
-      "cue": "Une proposition de loi avec un collègue engagé.",
+      "cue": "Tu discutes d'une proposition de loi avec un collègue engagé : Cette mesure ___.",
       "options": [
         "divise l'opinion publique.",
         "divise l'opinion du public.",
@@ -11632,8 +11632,8 @@
       "sub": "media_news",
       "level": 4,
       "pattern": "evenements-actualite",
-      "cue_type": "situation_fr",
-      "cue": "Article : Le séisme ___ (catastrophe récente).",
+      "cue_type": "gap_fr",
+      "cue": "Article de presse : Le séisme ___.",
       "options": [
         "a fait plus de mille victimes.",
         "a rendu plus de mille victimes.",
@@ -11689,10 +11689,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « Unemployment has risen by 5 percent. »",
       "options": [
-        "a augmenté de 5 %.",
-        "est monté par 5 %.",
-        "a grandi à 5 %.",
-        "s'est augmenté en 5 %."
+        "Le chômage a augmenté de 5 %.",
+        "Le chômage est monté par 5 %.",
+        "Le chômage a grandi à 5 %.",
+        "Le chômage s'est augmenté en 5 %."
       ],
       "correct_index": 0,
       "explanation": "« Augmenter DE + pourcentage » (croissance) ; « augmenter À » = atteindre un niveau.",
@@ -11777,7 +11777,7 @@
       "level": 5,
       "pattern": "evenements-actualite",
       "cue_type": "situation_fr",
-      "cue": "Dans un éditorial, tu qualifies une décision de tournant historique.",
+      "cue": "Dans un éditorial, tu qualifies une décision de tournant historique : Cette décision ___.",
       "options": [
         "marque un véritable tournant historique.",
         "marque un vrai tourner historique.",
@@ -11795,7 +11795,7 @@
       "level": 5,
       "pattern": "chiffres-statistiques",
       "cue_type": "situation_fr",
-      "cue": "Dans un rapport, tu nuances une donnée en signalant une marge d'erreur.",
+      "cue": "Dans un rapport, tu nuances une donnée : Ces chiffres sont à prendre ___.",
       "options": [
         "avec précaution, la marge d'erreur étant de ± 3 %.",
         "prudemment, la marge est de ± 3 %.",
@@ -12283,10 +12283,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que ton compte est à zéro.",
       "options": [
-        "est à zéro.",
-        "est nul.",
-        "est vide à zéro.",
-        "n'a plus."
+        "Mon compte est à zéro.",
+        "Mon compte est nul.",
+        "Mon compte est vide à zéro.",
+        "Mon compte n'a plus."
       ],
       "correct_index": 0,
       "explanation": "« À zéro » = expression idiomatique. « Nul » = invalide/sans valeur, pas vide.",
@@ -12517,10 +12517,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « The taxes are deducted directly from my salary. »",
       "options": [
-        "Les impôts sont prélevés directement sur",
-        "Les taxes sont enlevées directement de",
-        "Les impôts sont pris tout de suite de",
-        "Mes impôts descendent direct de"
+        "Les impôts sont prélevés directement sur mon salaire.",
+        "Les taxes sont enlevées directement de mon salaire.",
+        "Les impôts sont pris tout de suite de mon salaire.",
+        "Mes impôts descendent direct de mon salaire."
       ],
       "correct_index": 0,
       "explanation": "« Prélever sur » (préposition fixe). Renvoie au « prélèvement à la source » en vigueur depuis 2019.",
@@ -12679,10 +12679,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « Is this covered by my insurance? »",
       "options": [
-        "c'est couvert par mon assurance ?",
-        "c'est couvrir par mon assurance ?",
-        "c'est couverture de mon assurance ?",
-        "mon assurance couvre-t-elle ça ?"
+        "C'est couvert par mon assurance ?",
+        "C'est couvrir par mon assurance ?",
+        "C'est couverture de mon assurance ?",
+        "Mon assurance couvre-t-elle ça ?"
       ],
       "correct_index": 0,
       "explanation": "« Être couvert par » = tournure passive standard. Participe passé, pas l'infinitif.",
@@ -13129,10 +13129,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que ton pantalon est trop serré.",
       "options": [
-        "trop serré.",
-        "trop tendu.",
-        "trop petit serré.",
-        "serré trop."
+        "Mon pantalon est trop serré.",
+        "Mon pantalon est trop tendu.",
+        "Mon pantalon est trop petit serré.",
+        "Mon pantalon est serré trop."
       ],
       "correct_index": 0,
       "explanation": "« Serré » = adjectif pour un vêtement étroit. « Tendu » = tense, pas pour un vêtement.",
@@ -13147,10 +13147,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « This dress fits me perfectly. »",
       "options": [
-        "me va parfaitement.",
-        "me fit parfaitement.",
-        "va sur moi parfaitement.",
-        "me correspond parfait."
+        "Cette robe me va parfaitement.",
+        "Cette robe me fit parfaitement.",
+        "Cette robe va sur moi parfaitement.",
+        "Cette robe me correspond parfait."
       ],
       "correct_index": 0,
       "explanation": "« Aller à quelqu'un » = to fit/suit. Verbe avec COI (« me »).",
@@ -13183,10 +13183,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que cette chemise se froisse vite.",
       "options": [
-        "se froisse vite.",
-        "froisse vite.",
-        "fait froisse vite.",
-        "est froissée vite."
+        "Cette chemise se froisse vite.",
+        "Cette chemise froisse vite.",
+        "Cette chemise fait froisse vite.",
+        "Cette chemise est froissée vite."
       ],
       "correct_index": 0,
       "explanation": "« Se froisser » est pronominal (la chemise se froisse elle-même). Intransitif = pronominal en français.",
@@ -13453,10 +13453,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que ta sœur ne parle plus à ta mère.",
       "options": [
-        "brouillée avec ma mère.",
-        "fâchée avec ma mère.",
-        "en dispute avec ma mère.",
-        "brouillée à ma mère."
+        "Ma sœur est brouillée avec ma mère.",
+        "Ma sœur est fâchée avec ma mère.",
+        "Ma sœur est en dispute avec ma mère.",
+        "Ma sœur est brouillée à ma mère."
       ],
       "correct_index": 0,
       "explanation": "« Être brouillé avec » = sur un différend durable (préposition « avec »). « Fâché » est plus passager.",
@@ -13723,13 +13723,13 @@
       "cue_type": "situation_fr",
       "cue": "Tu bouscules quelqu'un dans le métro.",
       "options": [
-        "je suis désolé !",
-        "je suis désolé eh !",
-        "j'excuse !",
-        "désolé moi !"
+        "Pardon, je suis désolé !",
+        "Pardon, je suis désolé eh !",
+        "Pardon, j'excuse !",
+        "Pardon, désolé moi !"
       ],
       "correct_index": 0,
-      "explanation": "« Pardon » + « désolé » = formule standard pour un incident mineur. « J'excuse » ne se dit pas.",
+      "explanation": "« Pardon + désolé » = formule standard pour un incident mineur. « J'excuse » ne se dit pas.",
       "register": "casual"
     },
     {
@@ -14566,8 +14566,8 @@
       "sub": "food_cooking",
       "level": 4,
       "pattern": "au-restaurant",
-      "cue_type": "situation_fr",
-      "cue": "Au serveur un problème avec ton plat.",
+      "cue_type": "gap_fr",
+      "cue": "Au serveur : « Excusez-moi, ma viande est ___ »",
       "options": [
         "beaucoup trop cuite.",
         "trop cuite beaucoup.",
@@ -15790,8 +15790,8 @@
       "sub": "work_career",
       "level": 2,
       "pattern": "entreprise-roles",
-      "cue_type": "situation_fr",
-      "cue": "Tu présentes ta collègue à un nouvel arrivant.",
+      "cue_type": "gap_fr",
+      "cue": "Tu présentes ta collègue à un nouvel arrivant : « C'est ___ »",
       "options": [
         "notre directrice.",
         "notre directeuse.",
@@ -16168,16 +16168,16 @@
       "sub": "health_body",
       "level": 2,
       "pattern": "urgences",
-      "cue_type": "micro_intent_fr",
-      "cue": "Crier à l'aide.",
+      "cue_type": "gap_fr",
+      "cue": "Au secours ! Pouvez-vous ___ ?",
       "options": [
-        "aider quelqu'un !",
-        "aider à quelqu'un !",
-        "aide à quelqu'un !",
-        "aider !"
+        "aider quelqu'un",
+        "aider à quelqu'un",
+        "aide à quelqu'un",
+        "aider"
       ],
       "correct_index": 0,
-      "explanation": "« Au secours » = cri d'alarme. « Aider quelqu'un » (COD direct, sans préposition).",
+      "explanation": "« Aider quelqu'un » = transitif direct (COD sans préposition). « Aider à quelqu'un » est incorrect.",
       "register": "neutral"
     },
     {
@@ -16582,8 +16582,8 @@
       "sub": "home_logistics",
       "level": 5,
       "pattern": "mobilier-objets",
-      "cue_type": "situation_fr",
-      "cue": "Un meuble ancien à un antiquaire.",
+      "cue_type": "gap_fr",
+      "cue": "Chez l'antiquaire : « Ce secrétaire est ___ »",
       "options": [
         "en bois de rose.",
         "dans du bois de rose.",
@@ -18133,13 +18133,13 @@
       "cue_type": "intent_en",
       "cue": "Say: « He told the secret to no one. »",
       "options": [
-        "Il n'a confié le secret à",
-        "Il a confié le secret à",
-        "Il n'a pas confié le secret à",
-        "Il n'a confié le secret à aucune"
+        "Il n'a confié le secret à personne.",
+        "Il a confié le secret à personne.",
+        "Il n'a pas confié le secret à personne.",
+        "Il n'a confié le secret à aucune personne."
       ],
       "correct_index": 0,
-      "explanation": "« Confier à personne » : « personne » en fin de groupe après le COI. Pas de « pas » ajouté.",
+      "explanation": "« Ne... personne » sans « pas » ajouté. « Personne » se place en fin de groupe après le COI.",
       "register": "neutral"
     },
     {
@@ -18508,13 +18508,13 @@
       "sub": "relative_pronouns",
       "level": 1,
       "pattern": "relatif-que",
-      "cue_type": "situation_fr",
-      "cue": "Tu présentes un cadeau reçu.",
+      "cue_type": "gap_fr",
+      "cue": "Voici le cadeau ___ pour mon anniversaire.",
       "options": [
-        "que j'ai reçu.",
-        "qui j'ai reçu.",
-        "que je ai reçu.",
-        "qu'il j'ai reçu."
+        "que j'ai reçu",
+        "qui j'ai reçu",
+        "que je ai reçu",
+        "qu'il j'ai reçu"
       ],
       "correct_index": 0,
       "explanation": "« Que » COD. « Je » → « j' » (élision devant voyelle « ai »). « Que » ne s'élide pas devant « j' ».",
@@ -18580,13 +18580,13 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-que",
-      "cue_type": "situation_fr",
-      "cue": "Tu cites une phrase d'un livre.",
+      "cue_type": "gap_fr",
+      "cue": "C'est la phrase ___ dans le livre.",
       "options": [
-        "que j'ai soulignée dans le livre.",
-        "qui j'ai souligné dans le livre.",
-        "que j'ai souligné dans le livre.",
-        "qu'elle j'ai soulignée."
+        "que j'ai soulignée",
+        "qui j'ai souligné",
+        "que j'ai souligné",
+        "qu'elle j'ai soulignée"
       ],
       "correct_index": 0,
       "explanation": "Accord PC avec COD fém. sing. antéposé (« la phrase ») → « soulignée ».",
@@ -18814,13 +18814,13 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-lequel",
-      "cue_type": "micro_intent_fr",
-      "cue": "Parler de l'option pour laquelle tu votes.",
+      "cue_type": "gap_fr",
+      "cue": "C'est l'option pour ___ je vote.",
       "options": [
-        "laquelle je vote.",
-        "qui je vote.",
-        "que je vote.",
-        "la quelle je vote."
+        "laquelle",
+        "qui",
+        "que",
+        "la quelle"
       ],
       "correct_index": 0,
       "explanation": "« Pour laquelle » (préposition + laquelle). « Laquelle » en un mot, accord fém. sing.",
@@ -19372,13 +19372,13 @@
       "sub": "complex_sentences",
       "level": 2,
       "pattern": "reported-present",
-      "cue_type": "situation_fr",
-      "cue": "Tu transmets un message à un ami.",
+      "cue_type": "gap_fr",
+      "cue": "Sophie m'a demandé de te dire ___ ce soir.",
       "options": [
-        "qu'elle ne peut pas venir.",
-        "que elle ne peut pas venir.",
-        "qu'elle pas peut venir.",
-        "que ne peut pas venir."
+        "qu'elle ne peut pas venir",
+        "que elle ne peut pas venir",
+        "qu'elle pas peut venir",
+        "que ne peut pas venir"
       ],
       "correct_index": 0,
       "explanation": "« Dire que + subordonnée ». Élision « qu'elle » obligatoire.",
@@ -19823,7 +19823,7 @@
       "level": 5,
       "pattern": "si-type2",
       "cue_type": "micro_intent_fr",
-      "cue": "Formuler un regret hypothétique.",
+      "cue": "Formuler un souhait irréalisable (si-type 2, sujet « je », verbe pouvoir).",
       "options": [
         "Si je pouvais, je le ferais.",
         "Si je pourrais, je le ferais.",
@@ -19967,7 +19967,7 @@
       "level": 5,
       "pattern": "pc-etre-accord",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu es rentré tard hier soir.",
+      "cue": "Dire que tu (rentrer) tard hier soir (PC, 1re pers.).",
       "options": [
         "Je suis rentré tard hier soir.",
         "J'ai rentré tard hier soir.",
@@ -20039,7 +20039,7 @@
       "level": 5,
       "pattern": "plus-que-parfait",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'il était déjà parti quand tu es arrivé.",
+      "cue": "Dire que lui (partir/PQP) déjà quand tu (arriver/PC).",
       "options": [
         "Il était déjà parti quand je suis arrivé.",
         "Il a déjà parti quand je suis arrivé.",
@@ -20183,7 +20183,7 @@
       "level": 5,
       "pattern": "subj-trigger-volonte",
       "cue_type": "micro_intent_fr",
-      "cue": "Exprimer un souhait formel qu'il puisse venir.",
+      "cue": "Exprimer un souhait formel : souhaiter que lui (pouvoir) venir.",
       "options": [
         "Je souhaite qu'il puisse venir.",
         "Je souhaite qu'il peut venir.",
@@ -20237,7 +20237,7 @@
       "level": 5,
       "pattern": "pronom-cod",
       "cue_type": "situation_fr",
-      "cue": "Tu soutiens emphatiquement une proposition.",
+      "cue": "Tu appuies emphatiquement une proposition (COD pronom + verbe).",
       "options": [
         "je la soutiens pleinement.",
         "je soutiens la pleinement.",
@@ -20452,8 +20452,8 @@
       "sub": "articles_determiners",
       "level": 5,
       "pattern": "possessif-demonstratif",
-      "cue_type": "situation_fr",
-      "cue": "Tu compares deux options à voix haute.",
+      "cue_type": "gap_fr",
+      "cue": "Tu compares deux options : « Je préfère ___ »",
       "options": [
         "celle-ci à celle-là.",
         "celui-ci à celle-là.",
@@ -20668,8 +20668,8 @@
       "sub": "emotions_social",
       "level": 5,
       "pattern": "amitie-amour",
-      "cue_type": "situation_fr",
-      "cue": "Tu décris l'échec d'une relation.",
+      "cue_type": "gap_fr",
+      "cue": "Tu décris l'échec d'une relation : « La relation ___ »",
       "options": [
         "s'est soldée par une rupture.",
         "a soldé par une rupture.",

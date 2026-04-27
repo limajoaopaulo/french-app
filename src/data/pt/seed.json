@@ -30,7 +30,7 @@
         "está"
       ],
       "correct_index": 0,
-      "explanation": "Identidade permanente usa SER: eu sou brasileiro.",
+      "explanation": "Identidade permanente usa SER.",
       "register": "neutral"
     },
     {
@@ -48,7 +48,7 @@
         "fico"
       ],
       "correct_index": 0,
-      "explanation": "Estado temporário usa ESTAR: eu estou cansado.",
+      "explanation": "Estado temporário usa ESTAR.",
       "register": "neutral"
     },
     {
@@ -66,7 +66,7 @@
         "tinha"
       ],
       "correct_index": 0,
-      "explanation": "Posse com TER, 3ª pessoa do singular: ela tem.",
+      "explanation": "Posse com TER, 3ª pessoa do singular.",
       "register": "neutral"
     },
     {
@@ -156,7 +156,7 @@
         "fazia"
       ],
       "correct_index": 0,
-      "explanation": "FAZER é irregular na 1ª pessoa do singular: eu faço.",
+      "explanation": "FAZER é irregular na 1ª pessoa do singular.",
       "register": "neutral"
     },
     {
@@ -174,7 +174,7 @@
         "vá"
       ],
       "correct_index": 0,
-      "explanation": "IR é irregular: eu vou.",
+      "explanation": "IR é irregular.",
       "register": "neutral"
     },
     {
@@ -192,7 +192,7 @@
         "ponhou"
       ],
       "correct_index": 0,
-      "explanation": "PÔR é irregular na 1ª pessoa: eu ponho.",
+      "explanation": "PÔR é irregular na 1ª pessoa.",
       "register": "neutral"
     },
     {
@@ -210,7 +210,7 @@
         "veio"
       ],
       "correct_index": 0,
-      "explanation": "VIR é irregular: ele/ela vem.",
+      "explanation": "VIR é irregular.",
       "register": "neutral"
     },
     {
@@ -228,7 +228,7 @@
         "levanta"
       ],
       "correct_index": 0,
-      "explanation": "Próclise é o padrão no BR informal: eu me levanto. (Ênclise \"levanto-me\" é europeia.)",
+      "explanation": "Próclise é o padrão no BR informal.",
       "register": "casual"
     },
     {
@@ -264,7 +264,7 @@
         "comendo"
       ],
       "correct_index": 0,
-      "explanation": "Pretérito perfeito, 1ª pessoa: eu comi.",
+      "explanation": "Pretérito perfeito, 1ª pessoa.",
       "register": "neutral"
     },
     {
@@ -282,7 +282,7 @@
         "more"
       ],
       "correct_index": 0,
-      "explanation": "Descrição de situação passada prolongada: imperfeito. Eu morava.",
+      "explanation": "Descrição de situação passada prolongada: imperfeito.",
       "register": "neutral"
     },
     {
@@ -374,7 +374,7 @@
         "abriu"
       ],
       "correct_index": 0,
-      "explanation": "Particípio irregular de ABRIR: aberto/aberta.",
+      "explanation": "Particípio irregular de ABRIR.",
       "register": "neutral"
     },
     {
@@ -428,7 +428,7 @@
         "fui"
       ],
       "correct_index": 0,
-      "explanation": "Futuro com IR + infinitivo é o padrão coloquial no BR: vou ir. (Irei é formal.)",
+      "explanation": "Futuro com IR + infinitivo é o padrão coloquial no BR.",
       "register": "casual"
     },
     {
@@ -446,7 +446,7 @@
         "Estudava"
       ],
       "correct_index": 0,
-      "explanation": "Futuro próximo com IR + infinitivo: vou estudar.",
+      "explanation": "Futuro próximo com IR + infinitivo.",
       "register": "neutral"
     },
     {
@@ -482,7 +482,7 @@
         "saiu"
       ],
       "correct_index": 0,
-      "explanation": "Horários programados no BR usam o presente com valor futuro: sai às oito e meia.",
+      "explanation": "Horários programados no BR usam o presente com valor futuro.",
       "register": "casual"
     },
     {
@@ -1172,7 +1172,7 @@
         "Um"
       ],
       "correct_index": 0,
-      "explanation": "Casa é feminino: A casa.",
+      "explanation": "Casa é feminino: artigo definido A.",
       "register": "neutral"
     },
     {
@@ -1190,7 +1190,7 @@
         "dos"
       ],
       "correct_index": 0,
-      "explanation": "Primeira menção, masculino singular: UM filme.",
+      "explanation": "Primeira menção, masculino singular.",
       "register": "neutral"
     },
     {
@@ -1208,7 +1208,7 @@
         "A"
       ],
       "correct_index": 0,
-      "explanation": "No BR é comum usar artigo definido com nomes próprios: O João, A Maria.",
+      "explanation": "No BR é comum usar artigo definido com nomes próprios.",
       "register": "casual"
     },
     {
@@ -1336,7 +1336,7 @@
         "só"
       ],
       "correct_index": 0,
-      "explanation": "Dupla negação com NADA depois do verbo: \"Eu não quero nada.\"",
+      "explanation": "Dupla negação com NADA depois do verbo.",
       "register": "neutral"
     },
     {
@@ -1628,7 +1628,7 @@
         "choveu"
       ],
       "correct_index": 0,
-      "explanation": "ESTAR + gerúndio para ação em curso: está chovendo.",
+      "explanation": "ESTAR + gerúndio para ação em curso.",
       "register": "casual"
     },
     {
@@ -2618,7 +2618,7 @@
         "soube"
       ],
       "correct_index": 0,
-      "explanation": "SABER é irregular na 1ª sing.: eu sei.",
+      "explanation": "SABER é irregular na 1ª pessoa do singular.",
       "register": "neutral"
     },
     {
@@ -2636,7 +2636,7 @@
         "pôde"
       ],
       "correct_index": 0,
-      "explanation": "PODER é irregular na 1ª sing.: eu posso.",
+      "explanation": "PODER é irregular na 1ª pessoa do singular.",
       "register": "neutral"
     },
     {
@@ -2654,7 +2654,7 @@
         "traga"
       ],
       "correct_index": 0,
-      "explanation": "TRAZER é irregular na 3ª pessoa do singular do presente: ele/ela traz (não *traze).",
+      "explanation": "TRAZER é irregular na 3ª pessoa do singular do presente.",
       "register": "neutral"
     },
     {
@@ -2672,7 +2672,7 @@
         "ouvi"
       ],
       "correct_index": 0,
-      "explanation": "OUVIR é irregular na 1ª sing.: eu ouço.",
+      "explanation": "OUVIR é irregular na 1ª pessoa do singular.",
       "register": "neutral"
     },
     {
@@ -2690,7 +2690,7 @@
         "sairei"
       ],
       "correct_index": 0,
-      "explanation": "SAIR é irregular na 1ª sing.: eu saio.",
+      "explanation": "SAIR é irregular na 1ª pessoa do singular.",
       "register": "neutral"
     },
     {
@@ -2708,7 +2708,7 @@
         "vido"
       ],
       "correct_index": 0,
-      "explanation": "VER é irregular na 1ª sing.: eu vejo.",
+      "explanation": "VER é irregular na 1ª pessoa do singular.",
       "register": "casual"
     },
     {
@@ -2726,7 +2726,7 @@
         "dei"
       ],
       "correct_index": 0,
-      "explanation": "DAR é irregular: eu dou.",
+      "explanation": "DAR é irregular.",
       "register": "casual"
     },
     {
@@ -2816,7 +2816,7 @@
         "senta"
       ],
       "correct_index": 0,
-      "explanation": "Próclise é o padrão BR: eu me sento.",
+      "explanation": "Próclise é o padrão BR.",
       "register": "casual"
     },
     {
@@ -2834,7 +2834,7 @@
         "vou"
       ],
       "correct_index": 0,
-      "explanation": "IR no pretérito perfeito: eu fui.",
+      "explanation": "IR no pretérito perfeito.",
       "register": "neutral"
     },
     {
@@ -2870,7 +2870,7 @@
         "fazer"
       ],
       "correct_index": 0,
-      "explanation": "FAZER no pretérito perfeito: eu fiz.",
+      "explanation": "FAZER no pretérito perfeito.",
       "register": "casual"
     },
     {
@@ -2942,7 +2942,7 @@
         "iria"
       ],
       "correct_index": 0,
-      "explanation": "Ação em curso no passado: imperfeito. Eu ia.",
+      "explanation": "Ação em curso no passado: imperfeito.",
       "register": "neutral"
     },
     {
@@ -2960,7 +2960,7 @@
         "saiba"
       ],
       "correct_index": 0,
-      "explanation": "Estado mental no passado: imperfeito. Eu sabia.",
+      "explanation": "Estado mental no passado: imperfeito.",
       "register": "neutral"
     },
     {
@@ -3014,7 +3014,7 @@
         "descobrira"
       ],
       "correct_index": 0,
-      "explanation": "Dois tempos passados anteriores: mais-que-perfeito composto (tinha descoberto).",
+      "explanation": "Dois tempos passados anteriores: mais-que-perfeito composto.",
       "register": "neutral"
     },
     {
@@ -3141,7 +3141,7 @@
         "ia"
       ],
       "correct_index": 0,
-      "explanation": "A GENTE conjuga como 3ª sing.: a gente vai.",
+      "explanation": "A GENTE conjuga como 3ª pessoa do singular.",
       "register": "casual"
     },
     {
@@ -3195,7 +3195,7 @@
         "poderá"
       ],
       "correct_index": 0,
-      "explanation": "Pedido cortês: poderia (futuro do pretérito).",
+      "explanation": "Pedido cortês usa futuro do pretérito.",
       "register": "formal"
     },
     {
@@ -3231,7 +3231,7 @@
         "estavam"
       ],
       "correct_index": 0,
-      "explanation": "Conjectura no presente: futuro do pretérito (estariam).",
+      "explanation": "Conjectura no presente: futuro do pretérito.",
       "register": "neutral"
     },
     {
@@ -3339,7 +3339,7 @@
         "vinha"
       ],
       "correct_index": 0,
-      "explanation": "TALVEZ exige subjuntivo quando precede o verbo: talvez venha.",
+      "explanation": "TALVEZ exige subjuntivo quando precede o verbo.",
       "register": "neutral"
     },
     {
@@ -3357,7 +3357,7 @@
         "chegará"
       ],
       "correct_index": 0,
-      "explanation": "Expressão impessoal de opinião: subjuntivo presente. Chegue.",
+      "explanation": "Expressão impessoal de opinião: subjuntivo presente.",
       "register": "neutral"
     },
     {
@@ -3501,7 +3501,7 @@
         "esteja"
       ],
       "correct_index": 0,
-      "explanation": "ENQUANTO com valor futuro: futuro do subjuntivo. Estiver.",
+      "explanation": "ENQUANTO com valor futuro: futuro do subjuntivo.",
       "register": "neutral"
     },
     {
@@ -3519,7 +3519,7 @@
         "precise"
       ],
       "correct_index": 0,
-      "explanation": "SEMPRE QUE (condição geral no futuro): futuro do subjuntivo. Precisar.",
+      "explanation": "SEMPRE QUE (condição geral no futuro): futuro do subjuntivo.",
       "register": "neutral"
     },
     {
@@ -3537,7 +3537,7 @@
         "queira"
       ],
       "correct_index": 0,
-      "explanation": "CONFORME com valor futuro: futuro do subjuntivo. Quiser.",
+      "explanation": "CONFORME com valor futuro: futuro do subjuntivo.",
       "register": "neutral"
     },
     {
@@ -3555,7 +3555,7 @@
         "sei"
       ],
       "correct_index": 0,
-      "explanation": "Hipótese irreal passada: imperfeito do subjuntivo. Soubesse.",
+      "explanation": "Hipótese irreal passada: imperfeito do subjuntivo.",
       "register": "neutral"
     },
     {
@@ -3573,7 +3573,7 @@
         "estaria"
       ],
       "correct_index": 0,
-      "explanation": "QUEM DERA expressa desejo irreal: imperfeito do subjuntivo. Estivesse.",
+      "explanation": "QUEM DERA expressa desejo irreal: imperfeito do subjuntivo.",
       "register": "casual"
     },
     {
@@ -3681,7 +3681,7 @@
         "a mim"
       ],
       "correct_index": 0,
-      "explanation": "Com advérbio de negação (não), próclise obrigatória: não me ligou.",
+      "explanation": "Com advérbio de negação (não), próclise obrigatória.",
       "register": "neutral"
     },
     {
@@ -3735,7 +3735,7 @@
         "de mim"
       ],
       "correct_index": 0,
-      "explanation": "Pronome tônico depois de preposição (para): MIM. Nunca \"para eu\".",
+      "explanation": "Pronome tônico depois de preposição (para): MIM.",
       "register": "neutral"
     },
     {
@@ -3807,7 +3807,7 @@
         "eu"
       ],
       "correct_index": 0,
-      "explanation": "QUEM atrai próclise: \"foi ele quem me disse\".",
+      "explanation": "QUEM atrai próclise.",
       "register": "formal"
     },
     {
@@ -4582,7 +4582,7 @@
         "fôssemos"
       ],
       "correct_index": 0,
-      "explanation": "Infinitivo pessoal flexiona com sujeito: nós irmos.",
+      "explanation": "Infinitivo pessoal flexiona com sujeito.",
       "register": "neutral"
     },
     {
@@ -4732,9 +4732,9 @@
     {
       "id": "gr_cx_se_real_a2",
       "domain": "grammar",
-      "sub": "complex_sentences",
+      "sub": "prepositions",
       "level": 2,
-      "pattern": "se-condicional-real",
+      "pattern": "prep-a-destino",
       "cue_type": "gap_pt",
       "cue": "Se fizer sol amanhã, vou ___ praia.",
       "options": [
@@ -5209,7 +5209,7 @@
         "açaí",
         "acai",
         "asai",
-        "açai"
+        "cupuaçu"
       ],
       "correct_index": 0,
       "explanation": "AÇAÍ (com cedilha e til): fruta amazônica congelada, servida gelada.",
@@ -6346,7 +6346,7 @@
         "ambos — GPS e mapa"
       ],
       "correct_index": 0,
-      "explanation": "GPS é anglicismo já padrão. Usa-se como masculino: \"o GPS\".",
+      "explanation": "GPS é anglicismo já padrão. Usa-se como masculino.",
       "register": "casual"
     },
     {
@@ -6863,7 +6863,7 @@
       "cue": "Mandei o envelope pelos ___.",
       "options": [
         "Correios",
-        "correios",
+        "Sedex",
         "correio",
         "CTT"
       ],
@@ -7498,7 +7498,7 @@
         "caiba"
       ],
       "correct_index": 0,
-      "explanation": "CABER, 1ª sing. presente: caibo (irregular).",
+      "explanation": "CABER é irregular na 1ª pessoa do singular: caibo.",
       "register": "neutral"
     },
     {
@@ -7516,7 +7516,7 @@
         "perdo"
       ],
       "correct_index": 0,
-      "explanation": "PERDER, 1ª sing.: perco (irregular, com -c-).",
+      "explanation": "PERDER é irregular na 1ª pessoa do singular: perco (com -c-).",
       "register": "casual"
     },
     {
@@ -7534,7 +7534,7 @@
         "pedi"
       ],
       "correct_index": 0,
-      "explanation": "PEDIR, 1ª sing.: peço (irregular).",
+      "explanation": "PEDIR é irregular na 1ª pessoa do singular.",
       "register": "casual"
     },
     {
@@ -7588,7 +7588,7 @@
         "fez"
       ],
       "correct_index": 0,
-      "explanation": "Particípio de FAZER: feito. \"Fazido\" não existe.",
+      "explanation": "Particípio irregular de FAZER: feito (\"fazido\" não existe).",
       "register": "neutral"
     },
     {
@@ -7678,7 +7678,7 @@
         "tínhamos"
       ],
       "correct_index": 0,
-      "explanation": "Condicional irreal passado: teríamos + particípio (chegado).",
+      "explanation": "Condicional irreal passado: teríamos + particípio.",
       "register": "neutral"
     },
     {
@@ -7750,7 +7750,7 @@
         "tenho"
       ],
       "correct_index": 0,
-      "explanation": "Futuro do subjuntivo de TER: tiver. QUANDO com referência futura.",
+      "explanation": "Futuro do subjuntivo de TER: tiver.",
       "register": "casual"
     },
     {
@@ -8201,7 +8201,7 @@
         "assim"
       ],
       "correct_index": 0,
-      "explanation": "\"Não jamais\" NÃO é padrão. JAMAIS sozinho basta. Mas \"jamais\" também pode ocorrer após o verbo: \"Não farei isso jamais.\"",
+      "explanation": "\"Não jamais\" NÃO é padrão. JAMAIS sozinho basta. Mas \"jamais\" também pode ocorrer após o verbo.",
       "register": "formal"
     },
     {
@@ -10289,7 +10289,7 @@
         "trará"
       ],
       "correct_index": 0,
-      "explanation": "Futuro do subjuntivo de TRAZER: trouxer (irregular).",
+      "explanation": "Futuro do subjuntivo de TRAZER: trouxer.",
       "register": "casual"
     },
     {
@@ -10307,7 +10307,7 @@
         "saíssem"
       ],
       "correct_index": 0,
-      "explanation": "Infinitivo pessoal com sujeito explícito diferente: eles saírem.",
+      "explanation": "Infinitivo pessoal com sujeito explícito diferente.",
       "register": "formal"
     },
     {
