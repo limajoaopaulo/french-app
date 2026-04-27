@@ -3957,7 +3957,7 @@
       "level": 4,
       "pattern": "subj-trigger-volonte",
       "cue_type": "situation_fr",
-      "cue": "Un enseignant rappelle sa consigne stricte : il exige que ses étudiants rendent les devoirs avant vendredi.",
+      "cue": "Consigne stricte : il (exiger) que ses étudiants (rendre) les devoirs avant vendredi.",
       "options": [
         "Il exige que ses étudiants rendent les devoirs avant vendredi.",
         "Il exige que ses étudiants rendrent les devoirs avant vendredi.",
@@ -4836,7 +4836,7 @@
       "pattern": "pronom-y",
       "counterpart": "pronom-en",
       "cue_type": "situation_fr",
-      "cue": "Un ami propose d'aller à Lyon en train ce week-end. Tu es d'accord et dis que tu y vas volontiers.",
+      "cue": "Aller à Lyon ce week-end : tu es d'accord (sans répéter « Lyon »).",
       "options": [
         "Oui, j'y vais volontiers.",
         "Oui, je vais volontiers y.",
@@ -5072,7 +5072,7 @@
       "pattern": "pronom-en",
       "counterpart": "pronom-y",
       "cue_type": "situation_fr",
-      "cue": "Dans un registre soutenu, tu évoques un projet qui te tient à cœur et dont tu t'occupes personnellement.",
+      "cue": "Registre soutenu : un projet qui te tient à cœur (s'occuper de — pronom relatif).",
       "options": [
         "dont je m'occupe personnellement.",
         "que je m'occupe personnellement.",
@@ -5595,7 +5595,7 @@
       "level": 4,
       "pattern": "relatif-lequel",
       "cue_type": "situation_fr",
-      "cue": "Tu évoques la réunion pendant laquelle tu as signé le contrat.",
+      "cue": "La réunion ___ tu as signé le contrat.",
       "options": [
         "pendant laquelle",
         "pendant que",
@@ -6077,7 +6077,7 @@
       "pattern": "verbe-prep-a-inf",
       "counterpart": "verbe-prep-de-inf",
       "cue_type": "situation_fr",
-      "cue": "Tu passes ton temps à jardiner le week-end.",
+      "cue": "Activité dominante du week-end : (passer son temps) jardiner.",
       "options": [
         "Je passe mon temps à jardiner",
         "Je passe mon temps de jardiner",
@@ -6263,13 +6263,13 @@
       "sub": "articles_determiners",
       "level": 2,
       "pattern": "article-defini",
-      "cue_type": "situation_fr",
-      "cue": "Tu demandes à ton coloc de passer à la boulangerie du coin (la seule du quartier).",
+      "cue_type": "gap_fr",
+      "cue": "Tu peux passer à ___ boulangerie du coin (la seule du quartier) ?",
       "options": [
-        "Tu peux passer à la",
-        "Tu peux passer à une",
-        "Tu peux passer à de",
-        "Tu peux passer à"
+        "la",
+        "une",
+        "de",
+        "(rien)"
       ],
       "correct_index": 0,
       "explanation": "Lieu précis connu des deux → défini « la ».",
@@ -6672,7 +6672,7 @@
       "level": 2,
       "pattern": "possessif-demonstratif",
       "cue_type": "situation_fr",
-      "cue": "Tu présentes ta sœur et ses deux enfants à un ami.",
+      "cue": "Présente : (ma) sœur + (ses/leurs) deux enfants.",
       "options": [
         "Voici ma sœur et ses deux enfants.",
         "Voici mon sœur et son deux enfants.",
@@ -7391,8 +7391,8 @@
       "sub": "complex_sentences",
       "level": 4,
       "pattern": "reported-present",
-      "cue_type": "situation_fr",
-      "cue": "Dans un email, tu rapportes la décision du client : il refuse la proposition.",
+      "cue_type": "gap_fr",
+      "cue": "Email : Le client dit ___ la proposition.",
       "options": [
         "qu'il refuse",
         "il refuse",
