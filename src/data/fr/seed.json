@@ -139,7 +139,7 @@
         "allés"
       ],
       "correct_index": 0,
-      "explanation": "Futur simple de « aller » : nous irons.",
+      "explanation": "Futur simple : « aller » a un radical irrégulier ir- (nous irons). « Allons » = présent ; « allions » = imparfait/subjonctif.",
       "register": "neutral"
     },
     {
@@ -688,7 +688,7 @@
         "salle de bains"
       ],
       "correct_index": 0,
-      "explanation": "On dort dans la chambre.",
+      "explanation": "La chambre est la pièce réservée au sommeil ; salon = séjour, cuisine = pièce pour cuisiner.",
       "register": "neutral"
     },
     {
@@ -850,7 +850,7 @@
         "fait réserver"
       ],
       "correct_index": 0,
-      "explanation": "« Réserver un billet » au passé composé.",
+      "explanation": "PC de « réserver » (-er) : participe en -é (réservé). « Réserve » = présent ; « réservé à » change le sens.",
       "register": "neutral"
     },
     {
@@ -1147,8 +1147,8 @@
       "sub": "present_conjugation",
       "level": 1,
       "pattern": "present-er-regular",
-      "cue_type": "intent_en",
-      "cue": "Say: « I live in Paris with my family. »",
+      "cue_type": "gap_fr",
+      "cue": "___ à Paris avec ma famille.",
       "options": [
         "J'habite",
         "Je habite",
@@ -1274,7 +1274,7 @@
       "level": 2,
       "pattern": "present-irregular-core",
       "cue_type": "situation_fr",
-      "cue": "Un ami te demande ce que tu fais tous les samedis matin. Tu lui expliques ta routine au marché.",
+      "cue": "Un ami te demande ta routine du week-end. Tu lui décris ton habitude au marché chaque samedi matin.",
       "options": [
         "Je fais les courses.",
         "Je fait les courses.",
@@ -1508,7 +1508,7 @@
       "level": 4,
       "pattern": "present-re-regular",
       "cue_type": "situation_fr",
-      "cue": "Ils repeignent tout le salon en bleu.",
+      "cue": "Tes amis refont la décoration : en ce moment, ils (peindre) le salon en bleu.",
       "options": [
         "Ils peignent le salon en bleu.",
         "Ils peindent le salon en bleu.",
@@ -1652,7 +1652,7 @@
       "level": 2,
       "pattern": "pc-etre-accord",
       "cue_type": "situation_fr",
-      "cue": "Ta collègue te raconte ses vacances de l'été dernier : elle est allée à Rome pour la première fois.",
+      "cue": "Ta collègue te parle de ses vacances de l'été dernier : première visite à Rome. Comment rapportes-tu ça avec « aller » au passé composé ?",
       "options": [
         "Elle est allée à Rome.",
         "Elle a allée à Rome.",
@@ -1742,7 +1742,7 @@
       "level": 2,
       "pattern": "imparfait-description",
       "cue_type": "situation_fr",
-      "cue": "Elle était grande, avec un grand jardin derrière.",
+      "cue": "Tu décris la maison de ton enfance : grande, avec un grand jardin derrière.",
       "options": [
         "Elle était",
         "Elle a été",
@@ -1778,7 +1778,7 @@
       "level": 2,
       "pattern": "imparfait-description",
       "cue_type": "gap_fr",
-      "cue": "Quand j'avais dix ans, j'___ toujours peur de l'orage.",
+      "cue": "Dans mon enfance, j'___ toujours peur de l'orage.",
       "options": [
         "avais",
         "ai eu",
@@ -2236,7 +2236,7 @@
       "level": 3,
       "pattern": "plus-que-parfait",
       "cue_type": "situation_fr",
-      "cue": "Tu arrives au bureau. Ta collègue t'explique qu'elle avait fini le rapport la veille.",
+      "cue": "Tu arrives au bureau lundi matin. Ta collègue te dit qu'elle (finir) le rapport la veille.",
       "options": [
         "Elle m'a dit qu'elle avait fini",
         "Elle m'a dit qu'elle a fini",
@@ -2511,7 +2511,7 @@
       "pattern": "pc-vs-imparfait",
       "counterpart": "imparfait-description",
       "cue_type": "situation_fr",
-      "cue": "À peine étais-tu sorti que la neige s'est mise à tomber.",
+      "cue": "Registre soigné. Tu (sortir) à peine dehors, puis la neige (se mettre) à tomber. Construis la phrase avec inversion après « À peine ».",
       "options": [
         "À peine étais-je sorti que la neige s'est mise",
         "À peine suis-je sorti que la neige se mettait",
@@ -3327,7 +3327,7 @@
       "level": 4,
       "pattern": "conditionnel-present",
       "cue_type": "situation_fr",
-      "cue": "Tu rapportes une rumeur non confirmée : le PDG démissionnerait la semaine prochaine.",
+      "cue": "Tu relaies une rumeur journalistique non vérifiée : le PDG (démissionner) la semaine prochaine.",
       "options": [
         "Le PDG démissionnerait",
         "Le PDG démissionnera",
@@ -3471,7 +3471,7 @@
       "level": 2,
       "pattern": "subj-trigger-impersonnel",
       "cue_type": "situation_fr",
-      "cue": "Tes parents te rappellent que tu as rendez-vous chez le médecin à 15h. Tu confirmes qu'il faut que tu y sois.",
+      "cue": "Tes parents te rappellent que tu as rendez-vous chez le médecin à 15h. Comment exprimes-tu l'obligation avec « il faut que » + (être) à 15h ?",
       "options": [
         "Il faut que j'y sois à 15h.",
         "Il faut que j'y suis à 15h.",
@@ -3831,7 +3831,7 @@
       "level": 3,
       "pattern": "subj-trigger-doute",
       "cue_type": "situation_fr",
-      "cue": "Un collègue te présente un projet ambitieux. Tu doutes qu'il soit prêt à temps pour la réunion.",
+      "cue": "Un collègue te présente un projet ambitieux. Exprime ton scepticisme avec « douter que » + (être) prêt à temps.",
       "options": [
         "Je doute qu'il soit",
         "Je doute qu'il est",
@@ -3884,8 +3884,8 @@
       "sub": "subjunctive",
       "level": 4,
       "pattern": "subj-trigger-conjonction",
-      "cue_type": "situation_fr",
-      "cue": "Bien qu'il soit très intelligent, il échoue souvent à ses examens.",
+      "cue_type": "gap_fr",
+      "cue": "Bien qu'il ___ très intelligent, il échoue souvent à ses examens.",
       "options": [
         "soit",
         "est",
@@ -6504,7 +6504,7 @@
       "pattern": "article-partitif",
       "counterpart": "de-apres-negation",
       "cue_type": "situation_fr",
-      "cue": "Il faut de la patience avec les nouveaux clients.",
+      "cue": "Tu conseilles à un collègue stressé comment gérer les nouveaux clients. Complète : « Il ___ patience. »",
       "options": [
         "Il faut de la",
         "Il faut la",
@@ -7032,7 +7032,7 @@
       "level": 3,
       "pattern": "ne-rien",
       "cue_type": "situation_fr",
-      "cue": "Un ami te demande ce que tu as fait samedi. Tu n'as absolument rien fait.",
+      "cue": "Un ami te demande ce que tu as fait samedi. Tu es resté chez toi, sans aucune activité. Comment l'exprimes-tu au passé composé avec « rien » ?",
       "options": [
         "Je n'ai rien fait.",
         "Je n'ai pas fait.",
@@ -7104,7 +7104,7 @@
       "level": 3,
       "pattern": "ne-personne",
       "cue_type": "situation_fr",
-      "cue": "Personne n'est venu à la réunion hier matin.",
+      "cue": "La salle de réunion était vide hier matin. Exprime l'absence totale de participants avec « personne » en sujet.",
       "options": [
         "Personne n'est",
         "Ne personne est",
@@ -7689,13 +7689,13 @@
       "level": 4,
       "pattern": "si-type2",
       "counterpart": "si-type1",
-      "cue_type": "situation_fr",
-      "cue": "Dans un débat, tu esquisses une hypothèse : si le gouvernement réduisait les impôts, la consommation augmenterait.",
+      "cue_type": "gap_fr",
+      "cue": "Dans un débat, tu esquisses une hypothèse : si le gouvernement ___ les impôts, la consommation ___.",
       "options": [
-        "réduisait les impôts, la consommation augmenterait.",
-        "réduirait les impôts, la consommation augmenterait.",
-        "réduit les impôts, la consommation augmenterait.",
-        "réduisait les impôts, la consommation augmentera."
+        "réduisait … augmenterait",
+        "réduirait … augmenterait",
+        "réduit … augmenterait",
+        "réduisait … augmentera"
       ],
       "correct_index": 0,
       "explanation": "Irréel du présent : imparfait + conditionnel. Jamais « si + conditionnel ».",
@@ -7816,8 +7816,8 @@
       "sub": "complex_sentences",
       "level": 5,
       "pattern": "connecteurs-logiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « Although he's tired, he keeps working. »",
+      "cue_type": "gap_fr",
+      "cue": "Bien qu'il ___ fatigué, il continue à travailler.",
       "options": [
         "soit",
         "est",
@@ -7853,7 +7853,7 @@
       "level": 1,
       "pattern": "routine-matinale",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : je me lève à sept heures.",
+      "cue": "Dire que tu te (lever) à sept heures.",
       "options": [
         "Je me lève",
         "Je lève",
@@ -8213,7 +8213,7 @@
       "level": 3,
       "pattern": "transports-quotidiens",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : j'ai raté mon train.",
+      "cue": "Dire que tu n'as pas pris ton train à temps.",
       "options": [
         "J'ai raté mon train.",
         "J'ai manqué à mon train.",
@@ -8303,7 +8303,7 @@
       "level": 2,
       "pattern": "ingredients-base",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : il me faut des œufs, de la farine et du sucre.",
+      "cue": "Dire que tu as besoin d'œufs, de farine et de sucre pour ta recette.",
       "options": [
         "Il me faut des œufs, de la farine et du sucre.",
         "Il me faut les œufs, la farine et le sucre.",
@@ -8483,7 +8483,7 @@
       "level": 3,
       "pattern": "au-restaurant",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : nous aimerions commander.",
+      "cue": "Dire que vous souhaitez passer votre commande.",
       "options": [
         "Nous aimerions commander.",
         "Nous aimerions ordonner.",
@@ -9491,7 +9491,7 @@
       "level": 3,
       "pattern": "entreprise-roles",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : je suis en télétravail aujourd'hui.",
+      "cue": "Dire que tu travailles depuis chez toi aujourd'hui.",
       "options": [
         "Je suis en télétravail",
         "Je fais du télétravail",
@@ -9599,7 +9599,7 @@
       "level": 2,
       "pattern": "parties-corps",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : j'ai mal au dos.",
+      "cue": "Dire que tu as une douleur dans le dos.",
       "options": [
         "J'ai mal au dos.",
         "J'ai un mal dos.",
@@ -10031,7 +10031,7 @@
       "level": 2,
       "pattern": "billets-reservations",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : je prends un aller-retour.",
+      "cue": "Dire que tu voyages dans les deux sens.",
       "options": [
         "Je prends un aller-retour.",
         "Je prends un ticket aller-retour.",
@@ -10805,7 +10805,7 @@
       "level": 3,
       "pattern": "politesse-sociale",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : je t'en prie.",
+      "cue": "Répondre « you're welcome » (informel) après un remerciement.",
       "options": [
         "Je t'en prie.",
         "Je le prie.",
@@ -11867,7 +11867,7 @@
       "level": 3,
       "pattern": "familier-tutoiement",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire : t'inquiète !",
+      "cue": "Rassurer un ami (registre très familier) : ne t'en fais pas.",
       "options": [
         "T'inquiète !",
         "Tu ne t'inquiète !",
@@ -14962,8 +14962,8 @@
       "sub": "travel_transport",
       "level": 3,
       "pattern": "hebergement",
-      "cue_type": "intent_en",
-      "cue": "Say: « The hotel is fully booked for the weekend. »",
+      "cue_type": "gap_fr",
+      "cue": "L'hôtel est ___ pour tout le week-end.",
       "options": [
         "complet",
         "plein",
@@ -15052,8 +15052,8 @@
       "sub": "travel_transport",
       "level": 5,
       "pattern": "hebergement",
-      "cue_type": "intent_en",
-      "cue": "Say: « The property comes with a sea view. »",
+      "cue_type": "gap_fr",
+      "cue": "La propriété ___ vue sur mer.",
       "options": [
         "bénéficie d'une",
         "a d'une",
@@ -15250,8 +15250,8 @@
       "sub": "travel_transport",
       "level": 5,
       "pattern": "billets-reservations",
-      "cue_type": "intent_en",
-      "cue": "Say: « Tickets are non-transferable. »",
+      "cue_type": "gap_fr",
+      "cue": "Les billets sont ___ (non cessibles).",
       "options": [
         "nominatifs.",
         "non-transférables.",
@@ -16042,8 +16042,8 @@
       "sub": "health_body",
       "level": 4,
       "pattern": "symptomes-maladies",
-      "cue_type": "intent_en",
-      "cue": "Say: « The doctor prescribed antibiotics. »",
+      "cue_type": "gap_fr",
+      "cue": "Le médecin ___ des antibiotiques.",
       "options": [
         "m'a prescrit",
         "m'a prescris",
@@ -16348,8 +16348,8 @@
       "sub": "health_body",
       "level": 4,
       "pattern": "bien-etre",
-      "cue_type": "intent_en",
-      "cue": "Say: « Meditation helps me manage stress. »",
+      "cue_type": "gap_fr",
+      "cue": "La méditation ___ gérer le stress.",
       "options": [
         "m'aide à",
         "m'aide de",
@@ -16457,7 +16457,7 @@
       "level": 3,
       "pattern": "pieces-maison",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que la cuisine est équipée.",
+      "cue": "Dire que la cuisine (être) bien (équiper).",
       "options": [
         "est équipée.",
         "est équipement.",
@@ -16601,7 +16601,7 @@
       "level": 5,
       "pattern": "mobilier-objets",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que les rideaux doivent être nettoyés à sec.",
+      "cue": "Dire que les rideaux (devoir) (nettoyer) à sec.",
       "options": [
         "doivent être nettoyés à sec.",
         "doivent se nettoyer à sec.",
@@ -16780,8 +16780,8 @@
       "sub": "home_logistics",
       "level": 4,
       "pattern": "reparations-entretien",
-      "cue_type": "intent_en",
-      "cue": "Say: « The boiler broke down last week. »",
+      "cue_type": "gap_fr",
+      "cue": "La chaudière ___ la semaine dernière.",
       "options": [
         "est tombée en panne",
         "a tombé en panne",
@@ -16817,7 +16817,7 @@
       "level": 4,
       "pattern": "reparations-entretien",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que l'installation électrique est vétuste.",
+      "cue": "Qualifier l'état d'une installation électrique ancienne.",
       "options": [
         "vétuste.",
         "vieux.",
@@ -16978,8 +16978,8 @@
       "sub": "media_news",
       "level": 5,
       "pattern": "debat-politique",
-      "cue_type": "intent_en",
-      "cue": "Say: « His argument lacks substance. »",
+      "cue_type": "gap_fr",
+      "cue": "Son argument ___ consistance.",
       "options": [
         "manque de",
         "manque",
@@ -17033,7 +17033,7 @@
       "level": 3,
       "pattern": "evenements-actualite",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'un incendie s'est déclenché.",
+      "cue": "Dire qu'un incendie (se déclencher) dans le quartier.",
       "options": [
         "s'est déclenché.",
         "a déclenché.",
@@ -17050,8 +17050,8 @@
       "sub": "media_news",
       "level": 3,
       "pattern": "evenements-actualite",
-      "cue_type": "intent_en",
-      "cue": "Say: « The festival attracted thousands of visitors. »",
+      "cue_type": "gap_fr",
+      "cue": "Le festival ___ des milliers de visiteurs.",
       "options": [
         "a attiré des milliers de",
         "a attiré des mille",
@@ -17105,7 +17105,7 @@
       "level": 5,
       "pattern": "evenements-actualite",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que le bilan humain est lourd.",
+      "cue": "Qualifier le bilan humain d'une catastrophe (terme journalistique).",
       "options": [
         "lourd.",
         "pesant.",
@@ -17194,8 +17194,8 @@
       "sub": "media_news",
       "level": 3,
       "pattern": "chiffres-statistiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « The number has doubled in five years. »",
+      "cue_type": "gap_fr",
+      "cue": "Le chiffre ___ cinq ans.",
       "options": [
         "a doublé en",
         "s'est doublé en",
@@ -17249,7 +17249,7 @@
       "level": 5,
       "pattern": "chiffres-statistiques",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que les chiffres sont trompeurs.",
+      "cue": "Dire que les chiffres peuvent induire en erreur (adjectif précis).",
       "options": [
         "sont trompeurs.",
         "sont trompeuses.",
@@ -17266,8 +17266,8 @@
       "sub": "media_news",
       "level": 5,
       "pattern": "chiffres-statistiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « The data must be interpreted with caution. »",
+      "cue_type": "gap_fr",
+      "cue": "Les données doivent ___ avec prudence.",
       "options": [
         "être interprétées",
         "être interprété",
@@ -18472,8 +18472,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-qui",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm the one who made the mistake. »",
+      "cue_type": "gap_fr",
+      "cue": "C'est moi ___ fait l'erreur.",
       "options": [
         "qui ai",
         "qui a",
@@ -18706,8 +18706,8 @@
       "sub": "relative_pronouns",
       "level": 2,
       "pattern": "relatif-dont",
-      "cue_type": "intent_en",
-      "cue": "Say: « This is the book I was telling you about. »",
+      "cue_type": "gap_fr",
+      "cue": "Voici le livre ___ je te parlais.",
       "options": [
         "dont",
         "que",
@@ -18778,8 +18778,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-lequel",
-      "cue_type": "intent_en",
-      "cue": "Say: « The chair on which she sat. »",
+      "cue_type": "gap_fr",
+      "cue": "C'est la chaise ___ elle s'est assise.",
       "options": [
         "sur laquelle",
         "sur qui",
@@ -18832,8 +18832,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-lequel",
-      "cue_type": "intent_en",
-      "cue": "Say: « The committee by which the decision was approved. »",
+      "cue_type": "gap_fr",
+      "cue": "C'est le comité ___ la décision a été approuvée.",
       "options": [
         "par lequel",
         "par laquelle",
@@ -19103,7 +19103,7 @@
       "level": 2,
       "pattern": "prep-de-origine",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que ce vin vient de Californie.",
+      "cue": "Dire que ce vin (venir) de Californie.",
       "options": [
         "Ce vin vient de",
         "Ce vin vient du",
@@ -19463,7 +19463,7 @@
       "level": 4,
       "pattern": "reported-present",
       "cue_type": "micro_intent_fr",
-      "cue": "Rapporter que le patron dit que tout va bien.",
+      "cue": "Le patron (affirmer) que la situation est sous contrôle. Rapporter ses mots.",
       "options": [
         "que tout va bien.",
         "tout va bien.",
@@ -19984,8 +19984,8 @@
       "sub": "past_tenses",
       "level": 5,
       "pattern": "pc-etre-accord",
-      "cue_type": "intent_en",
-      "cue": "Say: « All the leaves had fallen by November. »",
+      "cue_type": "gap_fr",
+      "cue": "En novembre, toutes les feuilles ___.",
       "options": [
         "étaient tombées",
         "avaient tombé",
@@ -20506,8 +20506,8 @@
       "sub": "admin_bureaucracy",
       "level": 5,
       "pattern": "impots-taxes",
-      "cue_type": "intent_en",
-      "cue": "Say: « The tax system is unfairly regressive. »",
+      "cue_type": "gap_fr",
+      "cue": "Le système fiscal est ___.",
       "options": [
         "injustement régressif.",
         "injustement régressive.",
@@ -20560,8 +20560,8 @@
       "sub": "admin_bureaucracy",
       "level": 5,
       "pattern": "impots-taxes",
-      "cue_type": "intent_en",
-      "cue": "Say: « Tax evasion carries heavy penalties. »",
+      "cue_type": "gap_fr",
+      "cue": "La fraude fiscale est ___ de lourdes sanctions.",
       "options": [
         "passible de",
         "passible à",
@@ -20615,7 +20615,7 @@
       "level": 5,
       "pattern": "papiers-identite",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que ton dossier est recevable.",
+      "cue": "Qualifier un dossier administratif en règle (terme juridique).",
       "options": [
         "recevable.",
         "recevé.",
@@ -20794,8 +20794,8 @@
       "sub": "food_cooking",
       "level": 5,
       "pattern": "au-restaurant",
-      "cue_type": "intent_en",
-      "cue": "Say: « The service left something to be desired. »",
+      "cue_type": "gap_fr",
+      "cue": "Le service ___.",
       "options": [
         "a laissé à désirer.",
         "a laissé de désirer.",
@@ -20903,7 +20903,7 @@
       "level": 5,
       "pattern": "plats-typiques",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que le plat fond en bouche.",
+      "cue": "Décrire la texture d'un plat qui (fondre) en bouche.",
       "options": [
         "Le plat fond en bouche.",
         "Le plat fond dans la bouche.",
@@ -20975,7 +20975,7 @@
       "level": 5,
       "pattern": "symptomes-maladies",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que le diagnostic est réservé.",
+      "cue": "Qualifier un pronostic médical incertain (terme clinique).",
       "options": [
         "réservé.",
         "réservée.",
@@ -21191,7 +21191,7 @@
       "level": 5,
       "pattern": "accidents-retards",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que le trafic est fortement perturbé.",
+      "cue": "Dire que le trafic (perturber) fortement en ce moment.",
       "options": [
         "est fortement perturbé.",
         "est forte perturbé.",
@@ -21263,7 +21263,7 @@
       "level": 1,
       "pattern": "present-er-regular",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu parles français.",
+      "cue": "Dire que tu (parler) français.",
       "options": [
         "Je parle",
         "Je parler",
@@ -21370,8 +21370,8 @@
       "sub": "present_conjugation",
       "level": 4,
       "pattern": "present-re-regular",
-      "cue_type": "intent_en",
-      "cue": "Say: « The court renders its verdict tomorrow. »",
+      "cue_type": "gap_fr",
+      "cue": "Le tribunal ___ son verdict demain.",
       "options": [
         "rend",
         "rends",
@@ -21407,7 +21407,7 @@
       "level": 4,
       "pattern": "present-re-regular",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu attends une réponse.",
+      "cue": "Dire que tu (attendre) une réponse.",
       "options": [
         "J'attends",
         "J'attend",
@@ -21569,7 +21569,7 @@
       "level": 2,
       "pattern": "article-defini",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu prends le métro.",
+      "cue": "Dire que tu (prendre) le métro pour aller au travail.",
       "options": [
         "Je prends le métro.",
         "Je prends métro.",
@@ -21604,8 +21604,8 @@
       "sub": "articles_determiners",
       "level": 2,
       "pattern": "article-defini",
-      "cue_type": "intent_en",
-      "cue": "Say: « My father works at the hospital. »",
+      "cue_type": "gap_fr",
+      "cue": "Mon père travaille ___.",
       "options": [
         "à l'hôpital.",
         "à hôpital.",
@@ -21731,7 +21731,7 @@
       "level": 2,
       "pattern": "transports-quotidiens",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu prends le bus tous les jours.",
+      "cue": "Dire que tu (prendre) le bus tous les jours.",
       "options": [
         "Je prends le",
         "Je prends",
@@ -21838,8 +21838,8 @@
       "sub": "daily_life",
       "level": 4,
       "pattern": "transports-quotidiens",
-      "cue_type": "intent_en",
-      "cue": "Say: « Traffic is at a standstill. »",
+      "cue_type": "gap_fr",
+      "cue": "La circulation est ___.",
       "options": [
         "paralysée.",
         "en standstill.",

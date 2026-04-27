@@ -437,8 +437,8 @@
       "sub": "future_conditional",
       "level": 1,
       "pattern": "futuro-composto-ir",
-      "cue_type": "intent_en",
-      "cue": "Say: I'm going to study tonight.",
+      "cue_type": "gap_pt",
+      "cue": "Eu ___ estudar esta noite.",
       "options": [
         "Vou estudar",
         "Estudarei",
@@ -1601,8 +1601,8 @@
       "sub": "daily_life",
       "level": 1,
       "pattern": "clima-tempo",
-      "cue_type": "intent_en",
-      "cue": "Say: It's very hot today.",
+      "cue_type": "gap_pt",
+      "cue": "___ muito calor hoje.",
       "options": [
         "Hoje está",
         "Hoje é",
@@ -1637,8 +1637,8 @@
       "sub": "daily_life",
       "level": 1,
       "pattern": "roupas",
-      "cue_type": "intent_en",
-      "cue": "Say: I'm wearing a blue shirt.",
+      "cue_type": "gap_pt",
+      "cue": "___ camisa azul hoje.",
       "options": [
         "Estou de",
         "Tenho uma",
@@ -1781,8 +1781,8 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "preferencias-alimentares",
-      "cue_type": "intent_en",
-      "cue": "Say: I'm vegetarian.",
+      "cue_type": "gap_pt",
+      "cue": "Eu ___ vegetariano.",
       "options": [
         "Sou",
         "Estou",
@@ -2267,8 +2267,8 @@
       "sub": "emotions_social",
       "level": 2,
       "pattern": "conflitos-desculpas",
-      "cue_type": "intent_en",
-      "cue": "Apologize for being late.",
+      "cue_type": "gap_pt",
+      "cue": "___ o atraso!",
       "options": [
         "Desculpa",
         "Perdão",
@@ -2654,7 +2654,7 @@
         "traga"
       ],
       "correct_index": 0,
-      "explanation": "TRAZER, 3ª sing.",
+      "explanation": "TRAZER é irregular na 3ª pessoa do singular do presente: ele/ela traz (não *traze).",
       "register": "neutral"
     },
     {
@@ -2780,7 +2780,7 @@
         "venha"
       ],
       "correct_index": 0,
-      "explanation": "VIR, 1ª sing. presente.",
+      "explanation": "VIR é irregular na 1ª pessoa do singular do presente: eu venho (não *vejo nem *vio).",
       "register": "neutral"
     },
     {
@@ -3150,8 +3150,8 @@
       "sub": "future_conditional",
       "level": 3,
       "pattern": "futuro-do-preterito",
-      "cue_type": "intent_en",
-      "cue": "Say politely (written formal): I would like to request a meeting.",
+      "cue_type": "gap_pt",
+      "cue": "Registro formal : Eu ___ solicitar uma reunião.",
       "options": [
         "Gostaria de",
         "Queria",
@@ -4843,8 +4843,8 @@
       "sub": "daily_life",
       "level": 2,
       "pattern": "rotina-matinal",
-      "cue_type": "intent_en",
-      "cue": "Say: I take a shower before breakfast.",
+      "cue_type": "gap_pt",
+      "cue": "Eu ___ antes do café da manhã.",
       "options": [
         "Tomo banho",
         "Faço banho",
@@ -7570,7 +7570,7 @@
         "era"
       ],
       "correct_index": 0,
-      "explanation": "Voz passiva (passado pontual): foi aberta.",
+      "explanation": "Voz passiva no passado pontual: SER no pretérito perfeito (foi) + particípio irregular (aberta, de ABRIR).",
       "register": "formal"
     },
     {
