@@ -6,7 +6,8 @@ import { submitAnswer } from "@/app/actions/session"
 import { diffOptions } from "@/lib/option-diff"
 import { t } from "@/lib/i18n"
 
-type Phase = "options" | "explanation"
+type Phase = "options" | "ankiPrompt" | "ankiReveal" | "explanation"
+type SelfGrade = "again" | "hard" | "good" | "easy"
 
 interface Props {
   sessionId: number
@@ -15,6 +16,7 @@ interface Props {
 }
 
 const BLANK_MARKER = "___"
+const ANKI_THRESHOLD = 3
 
 function explanationDurationMs(text: string): number {
   return Math.min(7000, 2000 + 40 * text.length)
@@ -28,7 +30,8 @@ function splitCueAroundBlank(cue: string): { before: string; after: string } | n
 
 export function QuestionCard({ sessionId, question, onAdvance }: Props) {
   const isFirstEncounter = question.encounters === 0
-  const [phase, setPhase] = useState<Phase>("options")
+  const isAnki = question.encounters >= ANKI_THRESHOLD
+  const [phase, setPhase] = useState<Phase>(isAnki ? "ankiPrompt" : "options")
   const [chosenIndex, setChosenIndex] = useState<number | null>(null)
   const [correct, setCorrect] = useState<boolean | null>(null)
   const [submitting, setSubmitting] = useState(false)
@@ -101,6 +104,35 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
     [phase, submitting, sessionId, question],
   )
 
+  const reveal = useCallback(() => {
+    if (phase !== "ankiPrompt") return
+    responseMsRef.current = Math.round(performance.now() - startedAt.current)
+    setPhase("ankiReveal")
+  }, [phase])
+
+  const pickSelfGrade = useCallback(
+    async (grade: SelfGrade) => {
+      if (phase !== "ankiReveal" || submitting) return
+      setSubmitting(true)
+      try {
+        const res = await submitAnswer({
+          sessionId,
+          questionId: question.questionId,
+          chosenIndex: -1,
+          displayedCorrectIndex: question.correctIndex,
+          levelAtServe: question.levelAtServe,
+          responseMs: responseMsRef.current,
+          selfGrade: grade,
+        })
+        setCorrect(res.correct)
+        setPhase("explanation")
+      } finally {
+        setSubmitting(false)
+      }
+    },
+    [phase, submitting, sessionId, question],
+  )
+
   return (
     <div className="mx-auto flex w-full max-w-xl flex-col gap-6 rounded-2xl border border-white/10 bg-zinc-900/60 p-6 shadow-lg">
       <header className="flex items-center justify-between text-sm text-zinc-400">
@@ -111,6 +143,11 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
           {isFirstEncounter && (
             <span className="rounded-full border border-sky-400/30 bg-sky-500/10 px-2 py-0.5 text-[10px] uppercase tracking-wide text-sky-200">
               {t.session.firstEncounter}
+            </span>
+          )}
+          {isAnki && (
+            <span className="rounded-full border border-violet-400/30 bg-violet-500/10 px-2 py-0.5 text-[10px] uppercase tracking-wide text-violet-200">
+              Anki
             </span>
           )}
           <span className="rounded-full border border-white/10 px-2 py-0.5 text-xs uppercase tracking-wide">
@@ -152,6 +189,79 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
               </li>
             ))}
           </ul>
+        </>
+      )}
+
+      {phase === "ankiPrompt" && (
+        <>
+          <p className="text-lg leading-relaxed text-zinc-50">{question.cue}</p>
+          <button
+            type="button"
+            onClick={reveal}
+            className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-zinc-200 transition hover:bg-white/10"
+          >
+            Show answer
+          </button>
+        </>
+      )}
+
+      {phase === "ankiReveal" && (
+        <>
+          <p className="text-lg leading-relaxed text-zinc-50">
+            {cueSplit ? (
+              <>
+                {cueSplit.before}
+                <mark className="rounded bg-emerald-400/20 px-1 text-emerald-200">
+                  {correctOption}
+                </mark>
+                {cueSplit.after}
+              </>
+            ) : (
+              <>
+                {question.cue}
+                <span className="ml-2 rounded bg-emerald-400/20 px-1 text-emerald-200">
+                  {correctOption}
+                </span>
+              </>
+            )}
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="text-sm text-zinc-400">How well did you know it?</p>
+            <div className="grid grid-cols-4 gap-2">
+              <button
+                type="button"
+                disabled={submitting}
+                onClick={() => pickSelfGrade("again")}
+                className="rounded-xl border border-rose-500/40 bg-rose-500/15 px-3 py-3 text-rose-200 transition hover:bg-rose-500/25 disabled:cursor-default"
+              >
+                Again
+              </button>
+              <button
+                type="button"
+                disabled={submitting}
+                onClick={() => pickSelfGrade("hard")}
+                className="rounded-xl border border-amber-500/40 bg-amber-500/15 px-3 py-3 text-amber-200 transition hover:bg-amber-500/25 disabled:cursor-default"
+              >
+                Hard
+              </button>
+              <button
+                type="button"
+                disabled={submitting}
+                onClick={() => pickSelfGrade("good")}
+                className="rounded-xl border border-zinc-400/40 bg-zinc-400/15 px-3 py-3 text-zinc-100 transition hover:bg-zinc-400/25 disabled:cursor-default"
+              >
+                Good
+              </button>
+              <button
+                type="button"
+                disabled={submitting}
+                onClick={() => pickSelfGrade("easy")}
+                className="rounded-xl border border-emerald-500/40 bg-emerald-500/15 px-3 py-3 text-emerald-200 transition hover:bg-emerald-500/25 disabled:cursor-default"
+              >
+                Easy
+              </button>
+            </div>
+          </div>
         </>
       )}
 

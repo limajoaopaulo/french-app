@@ -5,7 +5,7 @@ import type { SpeedTag } from "@/lib/time"
 export { Rating, State }
 export type { Grade }
 
-export type SelfGrade = "hard" | "good" | "easy"
+export type SelfGrade = "again" | "hard" | "good" | "easy"
 
 const TARGET_RETENTION = 0.9
 
@@ -25,12 +25,24 @@ export function targetRetention(): number {
 export interface AnswerSignal {
   correct: boolean
   speedTag: SpeedTag
+  // Anki mode: user self-grades on the flip card. When set, takes precedence
+  // over the speedTag-based heuristic. correct is derived: any selfGrade
+  // other than "again" implies correct=true.
+  selfGrade?: SelfGrade | null
 }
 
-// Wrong → Again. Correct + fast → Easy. Correct + slow → Hard.
-// Default correct → Good. Difficulty signal comes from response time so
-// the user doesn't have to self-grade after every right answer.
+// Anki path (selfGrade present): direct mapping to FSRS rating.
+// Multi-choice path (no selfGrade): wrong → Again; correct + fast → Easy;
+// correct + slow → Hard; default correct → Good.
 export function gradeFromAnswer(s: AnswerSignal): Grade {
+  if (s.selfGrade) {
+    switch (s.selfGrade) {
+      case "again": return Rating.Again
+      case "hard":  return Rating.Hard
+      case "good":  return Rating.Good
+      case "easy":  return Rating.Easy
+    }
+  }
   if (!s.correct) return Rating.Again
   if (s.speedTag === "fast") return Rating.Easy
   if (s.speedTag === "slow") return Rating.Hard

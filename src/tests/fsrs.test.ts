@@ -19,6 +19,13 @@ describe("gradeFromAnswer", () => {
   test("correct + slow is Hard", () => {
     expect(gradeFromAnswer({ correct: true, speedTag: "slow" })).toBe(Rating.Hard)
   })
+
+  test("anki self-grade overrides speed-derived heuristic", () => {
+    expect(gradeFromAnswer({ correct: false, speedTag: "fast", selfGrade: "again" })).toBe(Rating.Again)
+    expect(gradeFromAnswer({ correct: true, speedTag: "fast", selfGrade: "hard" })).toBe(Rating.Hard)
+    expect(gradeFromAnswer({ correct: true, speedTag: "slow", selfGrade: "good" })).toBe(Rating.Good)
+    expect(gradeFromAnswer({ correct: true, speedTag: "normal", selfGrade: "easy" })).toBe(Rating.Easy)
+  })
 })
 
 describe("retrievability", () => {

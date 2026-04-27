@@ -230,7 +230,12 @@ export async function submitAnswer(input: unknown): Promise<{
   if (!question) throw new Error(`Question ${parsed.questionId} not found`)
   if (!session) throw new Error(`Session ${parsed.sessionId} not found`)
 
-  const correct = parsed.chosenIndex === parsed.displayedCorrectIndex
+  const selfGrade = parsed.selfGrade ?? null
+  // Anki mode: chosenIndex is -1, correctness derived from self-grade.
+  // Multi-choice mode: correctness from chosen vs displayed correct.
+  const correct = selfGrade
+    ? selfGrade !== "again"
+    : parsed.chosenIndex === parsed.displayedCorrectIndex
 
   const optionsArr = JSON.parse(question.options) as string[]
   const tag = speedTag(parsed.responseMs, { cue: question.cue, options: optionsArr })
@@ -238,7 +243,7 @@ export async function submitAnswer(input: unknown): Promise<{
   const fsrsResult = await applyOutcome({
     userId: user.id,
     questionId: question.id,
-    signal: { correct, speedTag: tag },
+    signal: { correct, speedTag: tag, selfGrade },
   })
 
   const points = pointsForAnswer({
@@ -255,7 +260,7 @@ export async function submitAnswer(input: unknown): Promise<{
       questionId: question.id,
       sessionId: session.id,
       correct,
-      selfGrade: null,
+      selfGrade,
       responseMs: parsed.responseMs,
       speedTag: tag,
       pointsEarned: points,

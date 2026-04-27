@@ -77,4 +77,40 @@ describe("QuestionCard", () => {
     expect(await screen.findByText("Incorrect")).toBeInTheDocument()
     expect(submitAnswerMock).toHaveBeenCalledTimes(1)
   })
+
+  it("on the 3rd encounter, shows the anki flow (no options, just reveal + self-grade)", async () => {
+    submitAnswerMock.mockClear()
+    render(
+      <QuestionCard
+        sessionId={1}
+        question={makeQuestion(3, 0)}
+        onAdvance={() => {}}
+      />,
+    )
+    // Cue is visible; multi-choice options are NOT
+    expect(screen.getByText(/Nous ___/)).toBeInTheDocument()
+    expect(screen.queryByRole("button", { name: /parlons/ })).not.toBeInTheDocument()
+    expect(screen.getByRole("button", { name: /show answer/i })).toBeInTheDocument()
+  })
+
+  it("anki flow: reveal then self-grade submits with selfGrade and chosenIndex=-1", async () => {
+    submitAnswerMock.mockClear()
+    submitAnswerMock.mockImplementationOnce(async () => ({ correct: true, remaining: 0 }))
+    render(
+      <QuestionCard
+        sessionId={1}
+        question={makeQuestion(5, 0)}
+        onAdvance={() => {}}
+      />,
+    )
+    fireEvent.click(screen.getByRole("button", { name: /show answer/i }))
+    fireEvent.click(await screen.findByRole("button", { name: /^good$/i }))
+    expect(submitAnswerMock).toHaveBeenCalledTimes(1)
+    const arg = submitAnswerMock.mock.calls[0][0] as {
+      selfGrade: string | null
+      chosenIndex: number
+    }
+    expect(arg.selfGrade).toBe("good")
+    expect(arg.chosenIndex).toBe(-1)
+  })
 })

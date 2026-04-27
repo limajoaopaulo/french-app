@@ -28,13 +28,19 @@ export const StartBossSchema = z.object({
   level: z.number().int().min(2).max(5),
 })
 
+export const SelfGradeSchema = z.enum(["again", "hard", "good", "easy"])
+export type SelfGradeInput = z.infer<typeof SelfGradeSchema>
+
 export const SubmitAnswerSchema = z.object({
   sessionId: z.number().int().positive(),
   questionId: z.number().int().positive(),
-  chosenIndex: z.number().int().min(0).max(3),
+  // Multi-choice mode: chosenIndex set, selfGrade null.
+  // Anki mode (3rd+ encounter): chosenIndex = -1 (sentinel), selfGrade set.
+  chosenIndex: z.number().int().min(-1).max(3),
   displayedCorrectIndex: z.number().int().min(0).max(3),
   levelAtServe: z.number().int().min(1).max(5),
   responseMs: z.number().int().min(0),
+  selfGrade: SelfGradeSchema.nullable().optional(),
 })
 
 export const ToggleActiveSubSchema = z.object({
