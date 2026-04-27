@@ -113,9 +113,9 @@ function main() {
   for (const c of candidates.p2_stage_setter_cue.slice(5, 10)) {
     console.log(`  ${c.id}: ${c.cue}`)
   }
-  console.log("=== p3 sample ===")
-  for (const c of candidates.p3_telegraphing.slice(20, 25)) {
-    console.log(`  ${c.id}: cue="${c.cue}" correct="${c.correct}"`)
+  console.log("=== p3 ALL ===")
+  for (const c of candidates.p3_telegraphing) {
+    console.log(`  ${c.id}|${c.cue}|${c.correct}`)
   }
 }
 

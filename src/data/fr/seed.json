@@ -1706,7 +1706,7 @@
       "level": 2,
       "pattern": "pc-etre-accord",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu es rentré(e) tard hier soir.",
+      "cue": "Dire que tu (rentrer) tard hier soir.",
       "options": [
         "Je suis rentré(e)",
         "J'ai rentré",
@@ -1850,7 +1850,7 @@
       "level": 2,
       "pattern": "imparfait-habitude",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu lisais beaucoup quand tu étais adolescent.",
+      "cue": "Dire que tu (lire) beaucoup quand adolescent.",
       "options": [
         "Je lisais",
         "J'ai lu",
@@ -1940,7 +1940,7 @@
       "level": 3,
       "pattern": "pc-etre-accord",
       "cue_type": "situation_fr",
-      "cue": "Ta sœur te raconte sa matinée : elle s'est levée tôt puis elle s'est douchée avant le petit-déjeuner.",
+      "cue": "Ta sœur, ce matin (se lever tôt, se doucher avant le petit-déjeuner).",
       "options": [
         "Elle s'est levée tôt puis s'est douchée.",
         "Elle s'a levé tôt puis s'a douché.",
@@ -2086,7 +2086,7 @@
       "pattern": "pc-vs-imparfait",
       "counterpart": "imparfait-description",
       "cue_type": "situation_fr",
-      "cue": "Tu marchais tranquillement dans la rue quand tu as vu un ancien ami.",
+      "cue": "Tu (marcher) tranquillement, soudain (voir) un ancien ami.",
       "options": [
         "Je marchais dans la rue quand j'ai vu",
         "J'ai marché dans la rue quand j'ai vu",
@@ -2105,7 +2105,7 @@
       "pattern": "pc-vs-imparfait",
       "counterpart": "imparfait-description",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'hier, tu regardais un film et soudain la lumière s'est éteinte.",
+      "cue": "Dire : hier, tu (regarder) un film et soudain la lumière (s'éteindre).",
       "options": [
         "Je regardais un film et soudain la lumière s'est éteinte.",
         "J'ai regardé un film et soudain la lumière s'éteignait.",
@@ -2143,7 +2143,7 @@
       "pattern": "pc-vs-imparfait",
       "counterpart": "imparfait-description",
       "cue_type": "situation_fr",
-      "cue": "Un ami te demande ce qui s'est passé. Tu expliques que tu lisais tranquillement et que le chat a cassé un vase.",
+      "cue": "Tu (lire) tranquillement, le chat (casser) un vase.",
       "options": [
         "Je lisais tranquillement et le chat a cassé un vase.",
         "J'ai lu tranquillement et le chat cassait un vase.",
@@ -2418,13 +2418,13 @@
       "sub": "past_tenses",
       "level": 4,
       "pattern": "pc-avoir",
-      "cue_type": "situation_fr",
-      "cue": "Tu as laissé tes clés chez un ami la semaine dernière.",
+      "cue_type": "gap_fr",
+      "cue": "J'___ tes clés chez un ami la semaine dernière.",
       "options": [
-        "J'ai laissé",
-        "J'ai laissées",
-        "Je laissais",
-        "J'ai laisser"
+        "ai laissé",
+        "ai laissées",
+        "laissais",
+        "ai laisser"
       ],
       "correct_index": 0,
       "explanation": "« Laisser » + COD postposé → pas d'accord. Événement ponctuel daté → PC. Participe : laissé.",
@@ -2672,13 +2672,13 @@
       "sub": "future_conditional",
       "level": 2,
       "pattern": "futur-proche",
-      "cue_type": "situation_fr",
-      "cue": "Tu prépares ta valise : tu viens de décider d'emporter un parapluie parce qu'il pleuvra ce week-end.",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ un parapluie : il pleuvra ce week-end.",
       "options": [
-        "Je vais emporter",
-        "Je vais emporté",
-        "Je emporterai",
-        "J'emportais"
+        "vais emporter",
+        "vais emporté",
+        "emporterai",
+        "j'emportais"
       ],
       "correct_index": 0,
       "explanation": "Décision qui vient d'être prise → futur proche. Option 3 manque l'élision (j'emporterai).",
@@ -2909,7 +2909,7 @@
       "pattern": "si-concordance",
       "counterpart": "si-type2",
       "cue_type": "situation_fr",
-      "cue": "Tu rêves à voix haute : si tu parlais cinq langues, tu voyagerais partout dans le monde.",
+      "cue": "Rêve : Si (parler) cinq langues → (voyager) partout.",
       "options": [
         "Si je parlais cinq langues, je voyagerais partout.",
         "Si je parle cinq langues, je voyagerai partout.",
@@ -2928,7 +2928,7 @@
       "pattern": "si-concordance",
       "counterpart": "si-type2",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire hypothétiquement : si tu étais riche, tu arrêterais de travailler.",
+      "cue": "Dire hypothétiquement : (être) riche → (arrêter) de travailler.",
       "options": [
         "Si j'étais riche, j'arrêterais",
         "Si je serais riche, j'arrêterais",
@@ -3036,7 +3036,7 @@
       "level": 3,
       "pattern": "conditionnel-present",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire avec hésitation que vous voudriez essayer.",
+      "cue": "Dire avec hésitation : Nous (vouloir) essayer.",
       "options": [
         "Nous voudrions essayer.",
         "Nous voulons essayer.",
@@ -3128,7 +3128,7 @@
       "pattern": "si-concordance",
       "counterpart": "si-type2",
       "cue_type": "situation_fr",
-      "cue": "Tu imagines un passé différent : si tu avais accepté ce travail à Lyon, ta vie aurait changé.",
+      "cue": "Passé différent : Si (accepter) ce travail à Lyon → ta vie (changer).",
       "options": [
         "Si j'avais accepté ce travail, ma vie aurait changé.",
         "Si j'acceptais ce travail, ma vie aurait changé.",
@@ -3199,8 +3199,8 @@
       "sub": "future_conditional",
       "level": 4,
       "pattern": "conditionnel-present",
-      "cue_type": "situation_fr",
-      "cue": "Un collègue insiste pour que tu ailles à un pot ce soir. Tu refuses poliment en expliquant que tu ne pourrais pas rester longtemps.",
+      "cue_type": "gap_fr",
+      "cue": "Refuser poliment : ___ rester longtemps.",
       "options": [
         "Je ne pourrais pas",
         "Je ne peux pas",
@@ -3219,7 +3219,7 @@
       "pattern": "conditionnel-passe",
       "counterpart": "si-type2",
       "cue_type": "situation_fr",
-      "cue": "Tu analyses une erreur : si tu avais réservé plus tôt, tu aurais eu une meilleure place dans le train.",
+      "cue": "Erreur passée : Si (réserver) plus tôt → (avoir) une meilleure place.",
       "options": [
         "Si j'avais réservé plus tôt, j'aurais eu",
         "Si j'aurais réservé plus tôt, j'aurais eu",
@@ -3381,7 +3381,7 @@
       "level": 5,
       "pattern": "conditionnel-present",
       "cue_type": "situation_fr",
-      "cue": "Dans un style littéraire soutenu, tu exprimes une impression : « on eût dit une ville d'une autre époque ».",
+      "cue": "Style littéraire (impression d'irréel) : on ___ une ville d'une autre époque.",
       "options": [
         "On eût dit une ville d'une autre époque.",
         "On aurait dit une ville d'une autre époque.",
@@ -3507,7 +3507,7 @@
       "level": 2,
       "pattern": "subj-trigger-volonte",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu voudrais que ton ami soit là.",
+      "cue": "Dire : (vouloir au conditionnel) que ton ami (être) là.",
       "options": [
         "Je voudrais que mon ami soit là.",
         "Je voudrais que mon ami est là.",
@@ -3597,7 +3597,7 @@
       "level": 3,
       "pattern": "subj-trigger-emotion",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu as peur qu'il pleuve demain.",
+      "cue": "Dire : (avoir peur que) il (pleuvoir) demain.",
       "options": [
         "J'ai peur qu'il pleuve demain.",
         "J'ai peur qu'il pleut demain.",
@@ -3633,7 +3633,7 @@
       "level": 3,
       "pattern": "subj-trigger-doute",
       "cue_type": "situation_fr",
-      "cue": "Tu n'es pas sûr que ton ami vienne à ton anniversaire ce soir.",
+      "cue": "Tu n'es pas sûr : ton ami (venir) ce soir.",
       "options": [
         "Je ne suis pas sûr qu'il vienne ce soir.",
         "Je ne suis pas sûr qu'il vient ce soir.",
@@ -3794,8 +3794,8 @@
       "sub": "subjunctive",
       "level": 3,
       "pattern": "subj-trigger-conjonction",
-      "cue_type": "situation_fr",
-      "cue": "Tu demandes à ta fille de ranger sa chambre avant que ses amis viennent goûter.",
+      "cue_type": "gap_fr",
+      "cue": "Range ta chambre avant que tes amis ___ goûter.",
       "options": [
         "qu'ils viennent.",
         "qu'ils viendront.",
@@ -3813,7 +3813,7 @@
       "level": 3,
       "pattern": "subj-trigger-conjonction",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu l'aideras pour qu'il finisse à temps.",
+      "cue": "Dire : Je l'aiderai pour qu'il (finir) à temps.",
       "options": [
         "Je l'aiderai pour qu'il finisse à temps.",
         "Je l'aiderai pour qu'il finit à temps.",
@@ -3975,7 +3975,7 @@
       "level": 4,
       "pattern": "subj-trigger-doute",
       "cue_type": "micro_intent_fr",
-      "cue": "Nier fermement qu'il soit coupable.",
+      "cue": "Nier : (croire) qu'il (être) coupable.",
       "options": [
         "Je ne crois pas qu'il soit coupable.",
         "Je ne crois pas qu'il est coupable.",
@@ -4190,8 +4190,8 @@
       "sub": "subjunctive",
       "level": 5,
       "pattern": "subj-trigger-conjonction",
-      "cue_type": "situation_fr",
-      "cue": "Dans un discours soutenu, tu opposes deux thèses : qu'il s'agisse de culture ou d'économie, la question reste ouverte.",
+      "cue_type": "gap_fr",
+      "cue": "Discours soutenu (concession en tête) : ___ de culture ou d'économie, la question reste ouverte.",
       "options": [
         "Qu'il s'agisse",
         "Qu'il s'agit",
@@ -4227,7 +4227,7 @@
       "level": 5,
       "pattern": "subj-trigger-conjonction",
       "cue_type": "situation_fr",
-      "cue": "Dans un essai, tu introduis une concession : qu'il pleuve ou qu'il vente, la cérémonie aura lieu.",
+      "cue": "Essai (concession en tête) : (pleuvoir) ou (venter), la cérémonie aura lieu.",
       "options": [
         "Qu'il pleuve ou qu'il vente, la cérémonie aura lieu.",
         "Qu'il pleut ou qu'il vente, la cérémonie aura lieu.",
@@ -4298,13 +4298,13 @@
       "sub": "pronouns_personal",
       "level": 2,
       "pattern": "pronom-cod",
-      "cue_type": "situation_fr",
-      "cue": "On te propose un gâteau. Tu acceptes et dis que tu le manges volontiers.",
+      "cue_type": "gap_fr",
+      "cue": "On te propose un gâteau. Oui, je ___ volontiers.",
       "options": [
-        "Oui, je le mange volontiers.",
-        "Oui, je mange le volontiers.",
-        "Oui, je l'adore volontiers.",
-        "Oui, je les mange volontiers."
+        "le mange",
+        "mange le",
+        "l'adore",
+        "les mange"
       ],
       "correct_index": 0,
       "explanation": "COD masculin singulier (le gâteau) = « le » avant le verbe.",
@@ -4371,7 +4371,7 @@
       "level": 2,
       "pattern": "pronom-coi",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu as téléphoné à ta mère hier.",
+      "cue": "Dire : (téléphoner) à ta mère hier (sans répéter « ma mère »).",
       "options": [
         "Je lui ai téléphoné hier.",
         "J'ai téléphoné elle hier.",
@@ -4409,7 +4409,7 @@
       "pattern": "pronom-y",
       "counterpart": "pronom-en",
       "cue_type": "situation_fr",
-      "cue": "On te demande si tu vas à la gym tous les samedis. Tu confirmes.",
+      "cue": "Tu vas à la gym tous les samedis : confirme (sans répéter « la gym »).",
       "options": [
         "Oui, j'y vais tous les samedis.",
         "Oui, je vais à elle tous les samedis.",
@@ -4650,7 +4650,7 @@
       "level": 3,
       "pattern": "pronom-combinaisons",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu le lui as expliqué hier.",
+      "cue": "Dire : tu (expliquer) hier (à lui, la chose).",
       "options": [
         "Je le lui ai expliqué hier.",
         "Je lui l'ai expliqué hier.",
@@ -4762,7 +4762,7 @@
       "pattern": "pronom-en",
       "counterpart": "pronom-y",
       "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu n'en as plus besoin.",
+      "cue": "Dire : tu (avoir) plus besoin de cette chose.",
       "options": [
         "Je n'en ai plus besoin.",
         "Je n'y ai plus besoin.",
@@ -4926,7 +4926,7 @@
       "level": 4,
       "pattern": "pronom-cod",
       "cue_type": "situation_fr",
-      "cue": "Tu montres une photo à un ami : les fleurs que tu as cueillies ce matin dans ton jardin.",
+      "cue": "Photo : les fleurs que tu (cueillir) ce matin dans ton jardin.",
       "options": [
         "cueillies",
         "cueilli",
