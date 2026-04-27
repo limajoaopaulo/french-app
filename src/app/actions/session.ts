@@ -232,18 +232,13 @@ export async function submitAnswer(input: unknown): Promise<{
 
   const correct = parsed.chosenIndex === parsed.displayedCorrectIndex
 
-  // Self-grade is only meaningful when correct (the flip card only renders on
-  // a correct pick). Defensive: ignore any non-null self-grade on a wrong
-  // answer.
-  const effectiveSelfGrade = correct ? parsed.selfGrade : null
-
   const optionsArr = JSON.parse(question.options) as string[]
   const tag = speedTag(parsed.responseMs, { cue: question.cue, options: optionsArr })
 
   const fsrsResult = await applyOutcome({
     userId: user.id,
     questionId: question.id,
-    signal: { correct, selfGrade: effectiveSelfGrade },
+    signal: { correct, speedTag: tag },
   })
 
   const points = pointsForAnswer({
@@ -260,7 +255,7 @@ export async function submitAnswer(input: unknown): Promise<{
       questionId: question.id,
       sessionId: session.id,
       correct,
-      selfGrade: effectiveSelfGrade,
+      selfGrade: null,
       responseMs: parsed.responseMs,
       speedTag: tag,
       pointsEarned: points,

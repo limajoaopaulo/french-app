@@ -2,26 +2,22 @@ import { describe, expect, test } from "vitest"
 import { gradeFromAnswer, retrievability, Rating, State, type FSRSStateRow } from "@/lib/fsrs"
 
 describe("gradeFromAnswer", () => {
-  test("wrong answer is Again, regardless of selfGrade", () => {
-    expect(gradeFromAnswer({ correct: false, selfGrade: null })).toBe(Rating.Again)
-    expect(gradeFromAnswer({ correct: false, selfGrade: "easy" })).toBe(Rating.Again)
-    expect(gradeFromAnswer({ correct: false, selfGrade: "hard" })).toBe(Rating.Again)
+  test("wrong answer is Again, regardless of speed", () => {
+    expect(gradeFromAnswer({ correct: false, speedTag: "fast" })).toBe(Rating.Again)
+    expect(gradeFromAnswer({ correct: false, speedTag: "normal" })).toBe(Rating.Again)
+    expect(gradeFromAnswer({ correct: false, speedTag: "slow" })).toBe(Rating.Again)
   })
 
-  test("correct + selfGrade='hard' is Hard", () => {
-    expect(gradeFromAnswer({ correct: true, selfGrade: "hard" })).toBe(Rating.Hard)
+  test("correct + fast is Easy", () => {
+    expect(gradeFromAnswer({ correct: true, speedTag: "fast" })).toBe(Rating.Easy)
   })
 
-  test("correct + selfGrade='good' is Good", () => {
-    expect(gradeFromAnswer({ correct: true, selfGrade: "good" })).toBe(Rating.Good)
+  test("correct + normal is Good", () => {
+    expect(gradeFromAnswer({ correct: true, speedTag: "normal" })).toBe(Rating.Good)
   })
 
-  test("correct + selfGrade='easy' is Easy", () => {
-    expect(gradeFromAnswer({ correct: true, selfGrade: "easy" })).toBe(Rating.Easy)
-  })
-
-  test("correct + null selfGrade defaults to Good", () => {
-    expect(gradeFromAnswer({ correct: true, selfGrade: null })).toBe(Rating.Good)
+  test("correct + slow is Hard", () => {
+    expect(gradeFromAnswer({ correct: true, speedTag: "slow" })).toBe(Rating.Hard)
   })
 })
 

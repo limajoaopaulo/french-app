@@ -34,7 +34,7 @@ function makeQuestion(encounters: number, correctIndex = 0): ServedQuestionDTO {
 }
 
 describe("QuestionCard", () => {
-  it("shows options immediately on every encounter (no confidence gate)", () => {
+  it("shows options immediately on every encounter (no confidence/self-grade gate)", () => {
     render(
       <QuestionCard
         sessionId={1}
@@ -44,24 +44,13 @@ describe("QuestionCard", () => {
     )
     expect(screen.getByRole("button", { name: /parlons/ })).toBeInTheDocument()
     expect(screen.getByRole("button", { name: /parlez/ })).toBeInTheDocument()
-    expect(screen.getByText("New")).toBeInTheDocument()
-  })
-
-  it("on a repeat encounter still shows options first (no confidence buttons)", () => {
-    render(
-      <QuestionCard
-        sessionId={1}
-        question={makeQuestion(3)}
-        onAdvance={() => {}}
-      />,
-    )
-    expect(screen.getByRole("button", { name: /parlons/ })).toBeInTheDocument()
     expect(screen.queryByText("Hard")).not.toBeInTheDocument()
-    expect(screen.queryByText("New")).not.toBeInTheDocument()
+    expect(screen.queryByText("Easy")).not.toBeInTheDocument()
   })
 
-  it("shows the self-grade flip card after picking the correct option", async () => {
+  it("on a correct pick, submits immediately and shows the explanation", async () => {
     submitAnswerMock.mockClear()
+    submitAnswerMock.mockImplementationOnce(async () => ({ correct: true, remaining: 0 }))
     render(
       <QuestionCard
         sessionId={1}
@@ -70,35 +59,13 @@ describe("QuestionCard", () => {
       />,
     )
     fireEvent.click(screen.getByRole("button", { name: /parlons/ }))
-    expect(await screen.findByText("Hard")).toBeInTheDocument()
-    expect(screen.getByText("Good")).toBeInTheDocument()
-    expect(screen.getByText("Easy")).toBeInTheDocument()
-    // submitAnswer not yet called — waiting for self-grade.
-    expect(submitAnswerMock).not.toHaveBeenCalled()
-  })
-
-  it("submits with the chosen self-grade after the flip card", async () => {
-    submitAnswerMock.mockClear()
-    render(
-      <QuestionCard
-        sessionId={1}
-        question={makeQuestion(0, 0)}
-        onAdvance={() => {}}
-      />,
-    )
-    fireEvent.click(screen.getByRole("button", { name: /parlons/ }))
-    fireEvent.click(await screen.findByText("Good"))
+    expect(await screen.findByText("Correct")).toBeInTheDocument()
     expect(submitAnswerMock).toHaveBeenCalledTimes(1)
-    const arg = submitAnswerMock.mock.calls[0][0] as { selfGrade: string | null }
-    expect(arg.selfGrade).toBe("good")
   })
 
-  it("on a wrong pick, skips the flip card and submits with selfGrade=null", async () => {
+  it("on a wrong pick, submits and shows the explanation with Incorrect header", async () => {
     submitAnswerMock.mockClear()
-    submitAnswerMock.mockImplementationOnce(async () => ({
-      correct: false,
-      remaining: 0,
-    }))
+    submitAnswerMock.mockImplementationOnce(async () => ({ correct: false, remaining: 0 }))
     render(
       <QuestionCard
         sessionId={1}
@@ -107,11 +74,7 @@ describe("QuestionCard", () => {
       />,
     )
     fireEvent.click(screen.getByRole("button", { name: /parlez/ }))
-    // No flip card — flow advances directly to explanation
     expect(await screen.findByText("Incorrect")).toBeInTheDocument()
-    expect(screen.queryByText("Hard")).not.toBeInTheDocument()
     expect(submitAnswerMock).toHaveBeenCalledTimes(1)
-    const arg = submitAnswerMock.mock.calls[0][0] as { selfGrade: string | null }
-    expect(arg.selfGrade).toBeNull()
   })
 })

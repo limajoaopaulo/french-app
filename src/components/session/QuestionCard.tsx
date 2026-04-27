@@ -6,8 +6,7 @@ import { submitAnswer } from "@/app/actions/session"
 import { diffOptions } from "@/lib/option-diff"
 import { t } from "@/lib/i18n"
 
-type Phase = "options" | "selfGrade" | "explanation"
-type SelfGrade = "hard" | "good" | "easy"
+type Phase = "options" | "explanation"
 
 interface Props {
   sessionId: number
@@ -78,56 +77,28 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
     }
   }, [phase, durationMs, onAdvance])
 
-  const submit = useCallback(
-    async (selfGrade: SelfGrade | null, idx: number) => {
-      const res = await submitAnswer({
-        sessionId,
-        questionId: question.questionId,
-        selfGrade,
-        chosenIndex: idx,
-        displayedCorrectIndex: question.correctIndex,
-        levelAtServe: question.levelAtServe,
-        responseMs: responseMsRef.current,
-      })
-      setCorrect(res.correct)
-      setPhase("explanation")
-    },
-    [sessionId, question],
-  )
-
   const pickOption = useCallback(
     async (idx: number) => {
       if (phase !== "options" || submitting) return
       setSubmitting(true)
       responseMsRef.current = Math.round(performance.now() - startedAt.current)
       setChosenIndex(idx)
-      const isCorrect = idx === question.correctIndex
       try {
-        if (isCorrect) {
-          // Wait for the user's self-grade before submitting.
-          setCorrect(true)
-          setPhase("selfGrade")
-        } else {
-          await submit(null, idx)
-        }
+        const res = await submitAnswer({
+          sessionId,
+          questionId: question.questionId,
+          chosenIndex: idx,
+          displayedCorrectIndex: question.correctIndex,
+          levelAtServe: question.levelAtServe,
+          responseMs: responseMsRef.current,
+        })
+        setCorrect(res.correct)
+        setPhase("explanation")
       } finally {
         setSubmitting(false)
       }
     },
-    [phase, submitting, question.correctIndex, submit],
-  )
-
-  const pickSelfGrade = useCallback(
-    async (rating: SelfGrade) => {
-      if (phase !== "selfGrade" || submitting || chosenIndex === null) return
-      setSubmitting(true)
-      try {
-        await submit(rating, chosenIndex)
-      } finally {
-        setSubmitting(false)
-      }
-    },
-    [phase, submitting, chosenIndex, submit],
+    [phase, submitting, sessionId, question],
   )
 
   return (
@@ -181,58 +152,6 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
               </li>
             ))}
           </ul>
-        </>
-      )}
-
-      {phase === "selfGrade" && (
-        <>
-          <p className="text-lg leading-relaxed text-zinc-50">
-            {cueSplit ? (
-              <>
-                {cueSplit.before}
-                <mark className="rounded bg-emerald-400/20 px-1 text-emerald-200">
-                  {correctOption}
-                </mark>
-                {cueSplit.after}
-              </>
-            ) : (
-              <>
-                {question.cue}
-                <span className="ml-2 rounded bg-emerald-400/20 px-1 text-emerald-200">
-                  {correctOption}
-                </span>
-              </>
-            )}
-          </p>
-          <div className="flex flex-col gap-3">
-            <p className="text-sm text-zinc-400">{t.session.selfGradePrompt}</p>
-            <div className="grid grid-cols-3 gap-2">
-              <button
-                type="button"
-                disabled={submitting}
-                onClick={() => pickSelfGrade("hard")}
-                className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-3 py-3 text-rose-200 transition hover:bg-rose-500/20 disabled:cursor-default"
-              >
-                {t.session.selfGradeHard}
-              </button>
-              <button
-                type="button"
-                disabled={submitting}
-                onClick={() => pickSelfGrade("good")}
-                className="rounded-xl border border-zinc-400/30 bg-zinc-400/10 px-3 py-3 text-zinc-100 transition hover:bg-zinc-400/20 disabled:cursor-default"
-              >
-                {t.session.selfGradeGood}
-              </button>
-              <button
-                type="button"
-                disabled={submitting}
-                onClick={() => pickSelfGrade("easy")}
-                className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-3 py-3 text-emerald-200 transition hover:bg-emerald-500/20 disabled:cursor-default"
-              >
-                {t.session.selfGradeEasy}
-              </button>
-            </div>
-          </div>
         </>
       )}
 

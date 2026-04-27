@@ -1,5 +1,6 @@
 import { fsrs, Rating, State, type Card, type Grade } from "ts-fsrs"
 import { prisma } from "@/lib/db"
+import type { SpeedTag } from "@/lib/time"
 
 export { Rating, State }
 export type { Grade }
@@ -23,22 +24,17 @@ export function targetRetention(): number {
 
 export interface AnswerSignal {
   correct: boolean
-  selfGrade: SelfGrade | null
+  speedTag: SpeedTag
 }
 
-// Wrong → Again. Correct paths use the user's self-grade from the flip card.
-// selfGrade is null only when the answer is wrong (no flip card shown).
+// Wrong → Again. Correct + fast → Easy. Correct + slow → Hard.
+// Default correct → Good. Difficulty signal comes from response time so
+// the user doesn't have to self-grade after every right answer.
 export function gradeFromAnswer(s: AnswerSignal): Grade {
   if (!s.correct) return Rating.Again
-  switch (s.selfGrade) {
-    case "easy":
-      return Rating.Easy
-    case "hard":
-      return Rating.Hard
-    case "good":
-    default:
-      return Rating.Good
-  }
+  if (s.speedTag === "fast") return Rating.Easy
+  if (s.speedTag === "slow") return Rating.Hard
+  return Rating.Good
 }
 
 // FSRS card row shape (matches QuestionState columns we persist).

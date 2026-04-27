@@ -28,13 +28,9 @@ export const StartBossSchema = z.object({
   level: z.number().int().min(2).max(5),
 })
 
-export const SelfGradeSchema = z.enum(["hard", "good", "easy"])
-export type SelfGradeInput = z.infer<typeof SelfGradeSchema>
-
 export const SubmitAnswerSchema = z.object({
   sessionId: z.number().int().positive(),
   questionId: z.number().int().positive(),
-  selfGrade: SelfGradeSchema.nullable(),
   chosenIndex: z.number().int().min(0).max(3),
   displayedCorrectIndex: z.number().int().min(0).max(3),
   levelAtServe: z.number().int().min(1).max(5),
