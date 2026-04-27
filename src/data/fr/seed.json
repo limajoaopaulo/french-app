@@ -1294,10 +1294,10 @@
       "cue_type": "situation_fr",
       "cue": "On t'accueille en France et on te demande : « D'où venez-vous ? »",
       "options": [
-        "Je viens",
-        "Je vien",
-        "Je venais",
-        "Je suis venu"
+        "Je viens de France.",
+        "Je vien de France.",
+        "Je venais de France.",
+        "Je suis venu de France."
       ],
       "correct_index": 0,
       "explanation": "« Venir » présent, 1re pers. sing. : je viens (avec -s). « Venais » = imparfait ; « suis venu » = passé composé.",
@@ -1384,10 +1384,10 @@
       "cue_type": "situation_fr",
       "cue": "Un dîner de famille où tout le monde apprécie le vin rouge.",
       "options": [
-        "Nous buvons",
-        "Nous boivons",
-        "Nous buvez",
-        "On boivent"
+        "Nous buvons du vin rouge.",
+        "Nous boivons du vin rouge.",
+        "Nous buvez du vin rouge.",
+        "On boivent du vin rouge."
       ],
       "correct_index": 0,
       "explanation": "« Boire » change de radical au pluriel : boi- → buv-. Nous buvons, vous buvez, ils boivent.",
@@ -1402,10 +1402,10 @@
       "cue_type": "situation_fr",
       "cue": "Décrire : chaque jour, à 7h précises, tu sors du lit.",
       "options": [
-        "Je me lève",
-        "Je me leve",
-        "Je lève moi",
-        "Je m'élève"
+        "Je me lève à 7h.",
+        "Je me leve à 7h.",
+        "Je lève moi à 7h.",
+        "Je m'élève à 7h."
       ],
       "correct_index": 0,
       "explanation": "« Se lever » : pronom « me » + accent grave devant -e muet (je me lève). « S'élever » = to rise (sens différent).",
@@ -1438,10 +1438,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que tu te souviens très bien d'un voyage (sans répéter « voyage »).",
       "options": [
-        "Je m'en souviens",
-        "Je le souviens",
-        "Je souviens",
-        "Je me souviens de lui"
+        "Je m'en souviens très bien.",
+        "Je le souviens très bien.",
+        "Je souviens très bien.",
+        "Je me souviens de lui très bien."
       ],
       "correct_index": 0,
       "explanation": "« Se souvenir DE qch » → pronom « en » reprend le complément (« de ce voyage »). « De lui » se garde pour une personne.",
@@ -1474,10 +1474,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que ce film te plaît beaucoup (utiliser « plaire »).",
       "options": [
-        "Ce film me plaît",
-        "Ce film me plais",
-        "Ce film me plaise",
-        "Ce film se plaît à moi"
+        "Ce film me plaît beaucoup.",
+        "Ce film me plais beaucoup.",
+        "Ce film me plaise beaucoup.",
+        "Ce film se plaît à moi beaucoup."
       ],
       "correct_index": 0,
       "explanation": "« Plaire à qn » : le film (sujet) + me (COI) + plaît (3e pers. sing., accent circonflexe).",
@@ -1921,8 +1921,8 @@
       "sub": "past_tenses",
       "level": 3,
       "pattern": "pc-avoir",
-      "cue_type": "situation_fr",
-      "cue": "Un collègue te demande pourquoi tu es en retard. Tu expliques que ton train a été annulé ce matin.",
+      "cue_type": "gap_fr",
+      "cue": "Je suis en retard parce que mon train ___ annulé ce matin.",
       "options": [
         "a été",
         "était",
@@ -2029,8 +2029,8 @@
       "sub": "past_tenses",
       "level": 3,
       "pattern": "imparfait-habitude",
-      "cue_type": "intent_en",
-      "cue": "Say: « Every morning, I used to drink my coffee on the balcony. »",
+      "cue_type": "gap_fr",
+      "cue": "Chaque matin, ___ café sur le balcon.",
       "options": [
         "je buvais mon",
         "j'ai bu mon",
@@ -2050,10 +2050,10 @@
       "cue_type": "situation_fr",
       "cue": "Ton père, chaque dimanche (préparer toujours un grand repas pour la famille).",
       "options": [
-        "Il préparait toujours",
-        "Il a toujours préparé",
-        "Il prépare toujours",
-        "Il avait préparé toujours"
+        "Il préparait toujours un grand repas.",
+        "Il a toujours préparé un grand repas.",
+        "Il prépare toujours un grand repas.",
+        "Il avait préparé toujours un grand repas."
       ],
       "correct_index": 0,
       "explanation": "Habitude passée (« toujours », « chaque dimanche ») → imparfait.",
@@ -5052,13 +5052,13 @@
       "sub": "pronouns_personal",
       "level": 4,
       "pattern": "pronom-cod",
-      "cue_type": "intent_en",
-      "cue": "Say: « He's tired, but he doesn't realize it. »",
+      "cue_type": "gap_fr",
+      "cue": "Il est fatigué, mais il ne ___ rend pas compte.",
       "options": [
-        "Il est fatigué, mais il ne s'en",
-        "Il est fatigué, mais il ne le",
-        "Il est fatigué, mais il ne",
-        "Il est fatigué, mais il ne y"
+        "s'en",
+        "le",
+        "la",
+        "y"
       ],
       "correct_index": 0,
       "explanation": "« Se rendre compte DE qch » → pronom « en ». « Il ne s'en rend pas compte ».",
@@ -5111,10 +5111,10 @@
       "cue_type": "situation_fr",
       "cue": "Dans un article critique, tu recommandes un livre : il en vaut la peine d'être lu attentivement.",
       "options": [
-        "Ce livre en vaut",
-        "Ce livre le vaut",
-        "Ce livre y vaut",
-        "Ce livre vaut en"
+        "Ce livre en vaut la peine.",
+        "Ce livre le vaut la peine.",
+        "Ce livre y vaut la peine.",
+        "Ce livre vaut en la peine."
       ],
       "correct_index": 0,
       "explanation": "Expression figée « valoir la peine DE » → « en vaut la peine ».",
@@ -7106,10 +7106,10 @@
       "cue_type": "situation_fr",
       "cue": "La salle de réunion était vide hier matin. Exprime l'absence totale de participants avec « personne » en sujet.",
       "options": [
-        "Personne n'est",
-        "Ne personne est",
-        "Rien n'est",
-        "Personne est pas"
+        "Personne n'est venu.",
+        "Ne personne est venu.",
+        "Rien n'est venu.",
+        "Personne est pas venu."
       ],
       "correct_index": 0,
       "explanation": "« Personne » sujet en tête + « ne » + verbe.",
@@ -7337,13 +7337,13 @@
       "sub": "complex_sentences",
       "level": 3,
       "pattern": "reported-present",
-      "cue_type": "situation_fr",
-      "cue": "Tu rapportes à un collègue ce que le chef a dit ce matin : il est content du projet.",
+      "cue_type": "gap_fr",
+      "cue": "Le chef dit ___ content du projet.",
       "options": [
-        "Il dit qu'il est",
-        "Il dit il est",
-        "Il dit qu'il soit",
-        "Il dit de être"
+        "qu'il est",
+        "il est",
+        "qu'il soit",
+        "de être"
       ],
       "correct_index": 0,
       "explanation": "Rapporté simple au présent : indicatif après « que ».",
@@ -7373,13 +7373,13 @@
       "sub": "complex_sentences",
       "level": 4,
       "pattern": "reported-present",
-      "cue_type": "intent_en",
-      "cue": "Say: « She asks if I'm coming. »",
+      "cue_type": "gap_fr",
+      "cue": "Elle demande ___ je viens.",
       "options": [
-        "Elle demande si",
-        "Elle demande que",
-        "Elle demande si est-ce que",
-        "Elle demande est-ce que"
+        "si",
+        "que",
+        "si est-ce que",
+        "est-ce que"
       ],
       "correct_index": 0,
       "explanation": "Interrogation totale rapportée : « si » + indicatif (pas d'inversion).",
@@ -7499,8 +7499,8 @@
       "sub": "complex_sentences",
       "level": 5,
       "pattern": "reported-passe",
-      "cue_type": "situation_fr",
-      "cue": "Dans un rapport, tu rapportes la prédiction d'un expert : « La solution sera longue à mettre en œuvre. »",
+      "cue_type": "gap_fr",
+      "cue": "L'expert a prédit que la solution ___ longue à mettre en œuvre.",
       "options": [
         "serait",
         "sera",
@@ -7578,10 +7578,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu proposes à un ami : s'il termine tôt, vous irez au cinéma.",
       "options": [
-        "Si tu finis tôt, on ira",
-        "Si tu finiras tôt, on ira",
-        "Si tu finisses tôt, on ira",
-        "Si tu finirais tôt, on irait"
+        "Si tu finis tôt, on ira au cinéma.",
+        "Si tu finiras tôt, on ira au cinéma.",
+        "Si tu finisses tôt, on ira au cinéma.",
+        "Si tu finirais tôt, on irait au cinéma."
       ],
       "correct_index": 0,
       "explanation": "Condition réelle → présent + futur.",
@@ -7726,13 +7726,13 @@
       "sub": "complex_sentences",
       "level": 3,
       "pattern": "connecteurs-logiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm tired, so I'm going to bed. »",
+      "cue_type": "gap_fr",
+      "cue": "Je suis fatigué, ___ je vais me coucher.",
       "options": [
-        "Je suis fatigué, donc",
-        "Je suis fatigué, cependant",
-        "Je suis fatigué, parce que",
-        "Je suis fatigué, en effet"
+        "donc",
+        "cependant",
+        "parce que",
+        "en effet"
       ],
       "correct_index": 0,
       "explanation": "« Donc » = conséquence.",
@@ -7780,13 +7780,13 @@
       "sub": "complex_sentences",
       "level": 4,
       "pattern": "connecteurs-logiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « He's studying while I'm working. »",
+      "cue_type": "gap_fr",
+      "cue": "Il étudie ___ je travaille.",
       "options": [
-        "Il étudie tandis que",
-        "Il étudie parce que",
-        "Il étudie donc",
-        "Il étudie bien que"
+        "tandis que",
+        "parce que",
+        "donc",
+        "bien que"
       ],
       "correct_index": 0,
       "explanation": "« Tandis que » = opposition simultanée.",
@@ -7834,8 +7834,8 @@
       "sub": "complex_sentences",
       "level": 5,
       "pattern": "connecteurs-logiques",
-      "cue_type": "situation_fr",
-      "cue": "Dans une synthèse, tu opposes deux tendances du marché.",
+      "cue_type": "gap_fr",
+      "cue": "Les ventes ont progressé au nord ; ___ elles ont reculé au sud.",
       "options": [
         "en revanche,",
         "parce que",
@@ -7855,10 +7855,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que tu te (lever) à sept heures.",
       "options": [
-        "Je me lève",
-        "Je lève",
-        "Je suis lève",
-        "Me lever"
+        "Je me lève à sept heures.",
+        "Je lève à sept heures.",
+        "Je suis lève à sept heures.",
+        "Me lever à sept heures."
       ],
       "correct_index": 0,
       "explanation": "« Se lever » (pronominal) au présent : je me lève.",
@@ -7927,10 +7927,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « It's hot today. »",
       "options": [
-        "Il fait chaud",
-        "C'est chaud",
-        "Il est chaud",
-        "Ça chauffe"
+        "Il fait chaud aujourd'hui.",
+        "C'est chaud aujourd'hui.",
+        "Il est chaud aujourd'hui.",
+        "Ça chauffe aujourd'hui."
       ],
       "correct_index": 0,
       "explanation": "Météo : « il fait + adjectif » (tournure fixe).",
@@ -7981,10 +7981,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « A heat wave is expected next week. »",
       "options": [
-        "Une canicule est prévue",
-        "Une vague de chaud est prévue",
-        "Un coup de chaleur est prévu",
-        "Une chaleur d'onde est prévue"
+        "Une canicule est prévue la semaine prochaine.",
+        "Une vague de chaud est prévue la semaine prochaine.",
+        "Un coup de chaleur est prévu la semaine prochaine.",
+        "Une chaleur d'onde est prévue la semaine prochaine."
       ],
       "correct_index": 0,
       "explanation": "« Canicule » = mot consacré pour heat wave (pas « vague de chaud »).",
@@ -8014,8 +8014,8 @@
       "sub": "daily_life",
       "level": 1,
       "pattern": "vetements",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm wearing a black sweater. »",
+      "cue_type": "gap_fr",
+      "cue": "___ un pull noir.",
       "options": [
         "Je porte",
         "Je mets",
@@ -8122,13 +8122,13 @@
       "sub": "daily_life",
       "level": 3,
       "pattern": "courses",
-      "cue_type": "intent_en",
-      "cue": "Say: « The shop closes in five minutes. »",
+      "cue_type": "gap_fr",
+      "cue": "Le magasin ferme ___ cinq minutes.",
       "options": [
-        "ferme dans",
-        "ferme en",
-        "ferme à",
-        "est fermé dans"
+        "dans",
+        "en",
+        "à",
+        "depuis"
       ],
       "correct_index": 0,
       "explanation": "« Dans + durée » = action future après ce délai.",
@@ -8176,8 +8176,8 @@
       "sub": "daily_life",
       "level": 2,
       "pattern": "transports-quotidiens",
-      "cue_type": "intent_en",
-      "cue": "Say: « I take the metro to go to work. »",
+      "cue_type": "gap_fr",
+      "cue": "___ le métro pour aller au travail.",
       "options": [
         "Je prends",
         "Je mets",
@@ -8233,10 +8233,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « There's a huge traffic jam on the ring road. »",
       "options": [
-        "Il y a un énorme bouchon",
-        "Il y a un grand trafic",
-        "Il y a un bloc grand",
-        "Il y a une queue énorme"
+        "Il y a un énorme bouchon sur le périph.",
+        "Il y a un grand trafic sur le périph.",
+        "Il y a un bloc grand sur le périph.",
+        "Il y a une queue énorme sur le périph."
       ],
       "correct_index": 0,
       "explanation": "« Bouchon » = traffic jam (familier : le périph').",
@@ -8356,8 +8356,8 @@
       "sub": "food_cooking",
       "level": 3,
       "pattern": "ingredients-base",
-      "cue_type": "intent_en",
-      "cue": "Say: « This cake is too sweet for my taste. »",
+      "cue_type": "gap_fr",
+      "cue": "Ce gâteau est trop ___ mon goût.",
       "options": [
         "sucré à",
         "doux à",
@@ -8374,8 +8374,8 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "methodes-cuisson",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm going to boil some water. »",
+      "cue_type": "gap_fr",
+      "cue": "___ de l'eau.",
       "options": [
         "Je vais faire bouillir",
         "Je vais bouillir",
@@ -8431,10 +8431,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « Let it simmer on low heat for an hour. »",
       "options": [
-        "Laisse mijoter à feu doux pendant",
-        "Laisse bouillir à feu petit pendant",
-        "Fais cuire à feu doux pour",
-        "Laisse chauffer doucement pour"
+        "Laisse mijoter à feu doux pendant une heure.",
+        "Laisse bouillir à feu petit pendant une heure.",
+        "Fais cuire à feu doux pour une heure.",
+        "Laisse chauffer doucement pour une heure."
       ],
       "correct_index": 0,
       "explanation": "« Mijoter » = simmer ; « feu doux » (pas « petit feu »).",
@@ -8464,13 +8464,13 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "au-restaurant",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'd like a table for two, please. »",
+      "cue_type": "gap_fr",
+      "cue": "Je voudrais une table ___ deux, s'il vous plaît.",
       "options": [
-        "Je voudrais une table pour",
-        "Je veux une table pour",
-        "Je voudrais une table de",
-        "Je voudrais une table à"
+        "pour",
+        "de",
+        "à",
+        "en"
       ],
       "correct_index": 0,
       "explanation": "« Une table pour + nombre » = formulation standard.",
@@ -8518,13 +8518,13 @@
       "sub": "food_cooking",
       "level": 4,
       "pattern": "au-restaurant",
-      "cue_type": "situation_fr",
-      "cue": "Tu es allergique aux fruits de mer : tu préviens le serveur.",
+      "cue_type": "gap_fr",
+      "cue": "Je suis allergique ___ fruits de mer.",
       "options": [
-        "Je suis allergique aux",
-        "J'ai une allergie des",
-        "Je suis allergique des",
-        "J'ai allergie aux"
+        "aux",
+        "des",
+        "les",
+        "à des"
       ],
       "correct_index": 0,
       "explanation": "« Allergique À » + article défini.",
@@ -8539,10 +8539,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « A cheese platter to finish. »",
       "options": [
-        "Un plateau de fromages",
-        "Un plaque de fromages",
-        "Une planche à fromage",
-        "Un tableau de fromages"
+        "Un plateau de fromages pour finir.",
+        "Un plaque de fromages pour finir.",
+        "Une planche à fromage pour finir.",
+        "Un tableau de fromages pour finir."
       ],
       "correct_index": 0,
       "explanation": "« Plateau de fromages » = expression consacrée.",
@@ -8608,13 +8608,13 @@
       "sub": "food_cooking",
       "level": 5,
       "pattern": "plats-typiques",
-      "cue_type": "situation_fr",
-      "cue": "Dans une critique gastronomique, tu évoques un plat dont l'assaisonnement est parfaitement dosé.",
+      "cue_type": "gap_fr",
+      "cue": "Un plat ___ l'assaisonnement est parfaitement dosé.",
       "options": [
-        "Un plat dont",
-        "Un plat duquel",
-        "Un plat où",
-        "Un plat que"
+        "dont",
+        "duquel",
+        "où",
+        "que"
       ],
       "correct_index": 0,
       "explanation": "« L'assaisonnement DU plat » → complément de nom → « dont ».",
@@ -8626,8 +8626,8 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "preferences-alimentaires",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm vegetarian. »",
+      "cue_type": "gap_fr",
+      "cue": "___ végétarien.",
       "options": [
         "Je suis",
         "J'ai",
@@ -8845,10 +8845,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu emménages et tu montes un meuble IKEA.",
       "options": [
-        "Je suis en train de monter",
-        "Je suis en train de construire",
-        "Je suis en train de bâtir",
-        "Je suis en train d'assembler"
+        "Je suis en train de monter un meuble.",
+        "Je suis en train de construire un meuble.",
+        "Je suis en train de bâtir un meuble.",
+        "Je suis en train d'assembler un meuble."
       ],
       "correct_index": 0,
       "explanation": "« Monter » un meuble = assemble (usuel pour IKEA). « Assembler » existe mais plus technique.",
@@ -8935,10 +8935,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I'm giving my notice in December. »",
       "options": [
-        "Je donne mon préavis",
-        "Je donne ma notice",
-        "Je pose mon préavis",
-        "Je remets mon avertissement"
+        "Je donne mon préavis en décembre.",
+        "Je donne ma notice en décembre.",
+        "Je pose mon préavis en décembre.",
+        "Je remets mon avertissement en décembre."
       ],
       "correct_index": 0,
       "explanation": "« Préavis » = notice (bail, emploi). « Notice » en français = instructions.",
@@ -8989,10 +8989,10 @@
       "cue_type": "situation_fr",
       "cue": "Il y a une fuite sous l'évier de la cuisine ; tu appelles le plombier.",
       "options": [
-        "Il y a une fuite",
-        "Il y a un fuit",
-        "Il y a un écoulement",
-        "Il y a une fuit d'eau"
+        "Il y a une fuite sous l'évier.",
+        "Il y a un fuit sous l'évier.",
+        "Il y a un écoulement sous l'évier.",
+        "Il y a une fuit d'eau sous l'évier."
       ],
       "correct_index": 0,
       "explanation": "« Fuite » (féminin) = leak.",
@@ -9043,10 +9043,10 @@
       "cue_type": "situation_fr",
       "cue": "Au syndic un dégât des eaux dans la salle de bain.",
       "options": [
-        "Je signale un dégât des eaux",
-        "Je signale un dégât d'eaux",
-        "Je rapporte un dégât d'eau",
-        "Je déclare un accident d'eaux"
+        "Je signale un dégât des eaux dans la salle de bain.",
+        "Je signale un dégât d'eaux dans la salle de bain.",
+        "Je rapporte un dégât d'eau dans la salle de bain.",
+        "Je déclare un accident d'eaux dans la salle de bain."
       ],
       "correct_index": 0,
       "explanation": "« Dégât des eaux » = terme consacré (assurance, syndic).",
@@ -9223,10 +9223,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I'll send out the agenda before the meeting. »",
       "options": [
-        "Je ferai circuler l'ordre du jour",
-        "Je enverrai l'agenda",
-        "Je passerai l'ordre de la journée",
-        "J'envoierai le programme"
+        "Je ferai circuler l'ordre du jour avant la réunion.",
+        "Je enverrai l'agenda avant la réunion.",
+        "Je passerai l'ordre de la journée avant la réunion.",
+        "J'envoierai le programme avant la réunion."
       ],
       "correct_index": 0,
       "explanation": "« Ordre du jour » = agenda (pas « agenda » qui = diary). « Faire circuler » = send out.",
@@ -9367,10 +9367,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I was let go last month. »",
       "options": [
-        "J'ai été licencié",
-        "J'ai été laissé aller",
-        "On m'a fait partir",
-        "J'ai été congédié"
+        "J'ai été licencié le mois dernier.",
+        "J'ai été laissé aller le mois dernier.",
+        "On m'a fait partir le mois dernier.",
+        "J'ai été congédié le mois dernier."
       ],
       "correct_index": 0,
       "explanation": "« Licencié » = standard. « Congédié » existe mais plus formel/administratif.",
@@ -9400,13 +9400,13 @@
       "sub": "work_career",
       "level": 3,
       "pattern": "competences-cv",
-      "cue_type": "intent_en",
-      "cue": "Say: « I have five years of experience in marketing. »",
+      "cue_type": "gap_fr",
+      "cue": "J'ai cinq ans ___ marketing.",
       "options": [
-        "J'ai cinq ans d'expérience en",
-        "J'ai cinq années d'expérience de",
-        "J'ai cinq ans expérience dans",
-        "J'ai cinq ans de expérience en"
+        "d'expérience en",
+        "d'expérience de",
+        "expérience dans",
+        "de expérience en"
       ],
       "correct_index": 0,
       "explanation": "« X ans d'expérience EN [domaine] » = standard (élision de « de »).",
@@ -9454,8 +9454,8 @@
       "sub": "work_career",
       "level": 3,
       "pattern": "entreprise-roles",
-      "cue_type": "situation_fr",
-      "cue": "Tu présentes l'organigramme à un nouveau : Marie est ta supérieure hiérarchique.",
+      "cue_type": "gap_fr",
+      "cue": "Marie est ___ hiérarchique.",
       "options": [
         "ma supérieure",
         "ma supérieur",
@@ -9493,10 +9493,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que tu travailles depuis chez toi aujourd'hui.",
       "options": [
-        "Je suis en télétravail",
-        "Je fais du télétravail",
-        "Je télétravaille",
-        "Je suis à télétravailler"
+        "Je suis en télétravail aujourd'hui.",
+        "Je fais du télétravail aujourd'hui.",
+        "Je télétravaille aujourd'hui.",
+        "Je suis à télétravailler aujourd'hui."
       ],
       "correct_index": 0,
       "explanation": "« Être en télétravail » = forme la plus idiomatique.",
@@ -9511,10 +9511,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I report to the head of marketing. »",
       "options": [
-        "Je rapporte au directeur",
-        "Je remets au directeur du",
-        "Je fais un rapport au directeur",
-        "Je suis sous le directeur"
+        "Je rapporte au directeur marketing.",
+        "Je remets au directeur du marketing.",
+        "Je fais un rapport au directeur marketing.",
+        "Je suis sous le directeur marketing."
       ],
       "correct_index": 0,
       "explanation": "« Rapporter à qn » = report to (hiérarchie). Sans article devant « marketing » (adj. invariable).",
@@ -9547,10 +9547,10 @@
       "cue_type": "intent_en",
       "cue": "« a mutually agreed termination »",
       "options": [
-        "une rupture conventionnelle",
-        "une séparation mutuelle accordée",
-        "une résiliation à l'amiable mutuelle",
-        "un licenciement d'accord mutuel"
+        "une rupture conventionnelle.",
+        "une séparation mutuelle accordée.",
+        "une résiliation à l'amiable mutuelle.",
+        "un licenciement d'accord mutuel."
       ],
       "correct_index": 0,
       "explanation": "« Rupture conventionnelle » = terme juridique consacré en France.",
@@ -9619,10 +9619,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I sprained my ankle. »",
       "options": [
-        "Je me suis foulé la",
-        "J'ai foulé ma",
-        "Je me suis tordu mon",
-        "Je me suis cassé la"
+        "Je me suis foulé la cheville.",
+        "J'ai foulé ma cheville.",
+        "Je me suis tordu mon cheville.",
+        "Je me suis cassé la cheville."
       ],
       "correct_index": 0,
       "explanation": "Se fouler (sprain) + article défini pour parties du corps.",
@@ -9655,10 +9655,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu appelles le travail pour prévenir que tu ne viens pas : tu as attrapé un rhume.",
       "options": [
-        "J'ai attrapé",
-        "J'ai pris",
-        "J'ai reçu",
-        "J'ai gagné"
+        "J'ai attrapé un rhume.",
+        "J'ai pris un rhume.",
+        "J'ai reçu un rhume.",
+        "J'ai gagné un rhume."
       ],
       "correct_index": 0,
       "explanation": "« Attraper un rhume » = catch a cold (expression figée).",
@@ -9814,13 +9814,13 @@
       "sub": "health_body",
       "level": 2,
       "pattern": "urgences",
-      "cue_type": "intent_en",
-      "cue": "Say: « Call an ambulance! »",
+      "cue_type": "gap_fr",
+      "cue": "Appelez ___ ambulance !",
       "options": [
-        "Appelez une",
-        "Appelez un",
-        "Appelez pour",
-        "Téléphonez un"
+        "une",
+        "un",
+        "pour une",
+        "pour un"
       ],
       "correct_index": 0,
       "explanation": "« Ambulance » est féminin : une ambulance.",
@@ -9886,8 +9886,8 @@
       "sub": "health_body",
       "level": 2,
       "pattern": "bien-etre",
-      "cue_type": "intent_en",
-      "cue": "Say: « I try to exercise twice a week. »",
+      "cue_type": "gap_fr",
+      "cue": "___ sport deux fois par semaine.",
       "options": [
         "J'essaie de faire du",
         "J'essaie à faire du",
@@ -9907,10 +9907,10 @@
       "cue_type": "situation_fr",
       "cue": "À un ami que tu fais du yoga pour gérer le stress.",
       "options": [
-        "Je fais du yoga pour gérer",
-        "Je fais yoga pour gérer",
-        "Je fais du yoga pour manager",
-        "Je fais yoga pour handle"
+        "Je fais du yoga pour gérer le stress.",
+        "Je fais yoga pour gérer le stress.",
+        "Je fais du yoga pour manager le stress.",
+        "Je fais yoga pour handle le stress."
       ],
       "correct_index": 0,
       "explanation": "« Faire du yoga » (partitif) ; « gérer » = manage.",
@@ -10015,10 +10015,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I'd like a one-way ticket to Nice. »",
       "options": [
-        "Je voudrais un aller simple",
-        "Je voudrais un ticket une voie",
-        "Je voudrais un billet une fois",
-        "Je voudrais un ticket aller"
+        "Je voudrais un aller simple pour Nice.",
+        "Je voudrais un ticket une voie pour Nice.",
+        "Je voudrais un billet une fois pour Nice.",
+        "Je voudrais un ticket aller pour Nice."
       ],
       "correct_index": 0,
       "explanation": "« Aller simple » = one-way (opposé : aller-retour).",
@@ -10051,10 +10051,10 @@
       "cue_type": "situation_fr",
       "cue": "À la SNCF, tu demandes s'il reste de la place en seconde pour le TGV de 9h.",
       "options": [
-        "Il reste de la place en seconde sur le",
-        "Il reste place en seconde au",
-        "Il y a de la place en deuxième dans le",
-        "Est-ce qu'il reste en seconde le"
+        "Il reste de la place en seconde sur le TGV de 9h ?",
+        "Il reste place en seconde au TGV de 9h ?",
+        "Il y a de la place en deuxième dans le TGV de 9h ?",
+        "Est-ce qu'il reste en seconde le TGV de 9h ?"
       ],
       "correct_index": 0,
       "explanation": "« En seconde » (classe) + « sur le TGV » (numéro de train).",
@@ -10498,13 +10498,13 @@
       "sub": "emotions_social",
       "level": 3,
       "pattern": "sentiments-base",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm disappointed with the result. »",
+      "cue_type": "gap_fr",
+      "cue": "Je suis déçu ___ résultat.",
       "options": [
-        "Je suis déçu du",
-        "Je suis déçu pour le",
-        "Je suis dépité avec le",
-        "Je me sens déçu sur le"
+        "du",
+        "pour le",
+        "avec le",
+        "sur le"
       ],
       "correct_index": 0,
       "explanation": "« Déçu DE qqch » = disappointed with/by.",
@@ -10537,10 +10537,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « My mother-in-law is coming tomorrow. »",
       "options": [
-        "Ma belle-mère",
-        "Ma mère belle",
-        "Ma belle mère",
-        "Ma mère-en-loi"
+        "Ma belle-mère vient demain.",
+        "Ma mère belle vient demain.",
+        "Ma belle mère vient demain.",
+        "Ma mère-en-loi vient demain."
       ],
       "correct_index": 0,
       "explanation": "« Belle-mère » = mère de son conjoint (avec trait d'union).",
@@ -10573,10 +10573,10 @@
       "cue_type": "situation_fr",
       "cue": "La relation compliquée avec ta belle-sœur.",
       "options": [
-        "Je m'entends mal avec",
-        "J'entends mal",
-        "Je suis mal avec",
-        "Je n'ai pas bien avec"
+        "Je m'entends mal avec ma belle-sœur.",
+        "J'entends mal ma belle-sœur.",
+        "Je suis mal avec ma belle-sœur.",
+        "Je n'ai pas bien avec ma belle-sœur."
       ],
       "correct_index": 0,
       "explanation": "« S'entendre (bien/mal) avec qn » = get along with.",
@@ -10717,10 +10717,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « We had a big fight last night. »",
       "options": [
-        "On s'est disputés",
-        "On a eu un grand combat",
-        "On a fighté",
-        "On a fait une grande dispute"
+        "On s'est disputés hier soir.",
+        "On a eu un grand combat hier soir.",
+        "On a fighté hier soir.",
+        "On a fait une grande dispute hier soir."
       ],
       "correct_index": 0,
       "explanation": "« Se disputer » (pronominal réciproque) = have an argument. Accord du PP en nombre.",
@@ -11272,8 +11272,8 @@
       "sub": "admin_bureaucracy",
       "level": 4,
       "pattern": "assurance",
-      "cue_type": "intent_en",
-      "cue": "Say: « The deductible is 200 euros. »",
+      "cue_type": "gap_fr",
+      "cue": "___ 200 euros.",
       "options": [
         "La franchise est de",
         "Le déductible est de",
@@ -11347,10 +11347,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I read it in the paper this morning. »",
       "options": [
-        "Je l'ai lu dans le journal",
-        "Je l'ai lu au journal",
-        "J'ai lu ça dans papier",
-        "Je l'ai lu sur le journal"
+        "Je l'ai lu dans le journal ce matin.",
+        "Je l'ai lu au journal ce matin.",
+        "J'ai lu ça dans papier ce matin.",
+        "Je l'ai lu sur le journal ce matin."
       ],
       "correct_index": 0,
       "explanation": "« Dans le journal » (lire DANS la presse écrite).",
@@ -11365,10 +11365,10 @@
       "cue_type": "situation_fr",
       "cue": "Un titre de Le Monde sur la réforme des retraites.",
       "options": [
-        "Tu as vu la une du Monde sur",
-        "Tu as vu le haut du Monde sur",
-        "Tu as vu la première du Monde sur",
-        "Tu as vu le titre du Monde à"
+        "Tu as vu la une du Monde sur la réforme des retraites ?",
+        "Tu as vu le haut du Monde sur la réforme des retraites ?",
+        "Tu as vu la première du Monde sur la réforme des retraites ?",
+        "Tu as vu le titre du Monde à la réforme des retraites ?"
       ],
       "correct_index": 0,
       "explanation": "« La une » (féminin) = front page du journal.",
@@ -11488,13 +11488,13 @@
       "sub": "media_news",
       "level": 4,
       "pattern": "debat-politique",
-      "cue_type": "intent_en",
-      "cue": "Say: « She vetoed the bill. »",
+      "cue_type": "gap_fr",
+      "cue": "Elle a ___ projet de loi.",
       "options": [
-        "Elle a opposé son veto au",
-        "Elle a vétoé le",
-        "Elle a mis un veto sur le",
-        "Elle a refusé par veto le"
+        "opposé son veto au",
+        "vétoé le",
+        "mis un veto sur le",
+        "refusé par veto le"
       ],
       "correct_index": 0,
       "explanation": "« Opposer son veto à » = locution figée.",
@@ -11545,10 +11545,10 @@
       "cue_type": "situation_fr",
       "cue": "Une vidéo est devenue virale en quelques heures.",
       "options": [
-        "La vidéo est devenue virale",
-        "La vidéo a été virale",
-        "La vidéo a fait viral",
-        "La vidéo a viralé"
+        "La vidéo est devenue virale en quelques heures.",
+        "La vidéo a été virale en quelques heures.",
+        "La vidéo a fait viral en quelques heures.",
+        "La vidéo a viralé en quelques heures."
       ],
       "correct_index": 0,
       "explanation": "« Devenir viral » = go viral (calque accepté).",
@@ -11560,8 +11560,8 @@
       "sub": "media_news",
       "level": 3,
       "pattern": "reseaux-sociaux",
-      "cue_type": "intent_en",
-      "cue": "Say: « I deleted my X account. »",
+      "cue_type": "gap_fr",
+      "cue": "___ mon compte X.",
       "options": [
         "J'ai supprimé",
         "J'ai effacé",
@@ -11905,10 +11905,10 @@
       "cue_type": "intent_en",
       "cue": "Formal: « I took the liberty of contacting you. »",
       "options": [
-        "Je me permets",
-        "Je prends la liberté",
-        "Je me donne le droit",
-        "Je me sers"
+        "Je me permets de vous contacter.",
+        "Je prends la liberté de vous contacter.",
+        "Je me donne le droit de vous contacter.",
+        "Je me sers de vous contacter."
       ],
       "correct_index": 0,
       "explanation": "« Je me permets de » = formule formelle standard (« prendre la liberté » est un calque).",
@@ -12319,10 +12319,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I need to contest a direct debit that I didn't authorize. »",
       "options": [
-        "Je dois contester un prélèvement que je n'ai pas",
-        "Je dois contester un paiement que je n'ai pas",
-        "Je dois lutter contre un prélèvement non",
-        "Je dois protester un débit non"
+        "Je dois contester un prélèvement que je n'ai pas autorisé.",
+        "Je dois contester un paiement que je n'ai pas autorisé.",
+        "Je dois lutter contre un prélèvement non autorisé.",
+        "Je dois protester un débit non autorisé."
       ],
       "correct_index": 0,
       "explanation": "« Prélèvement » = direct debit (terme bancaire précis). « Contester » = to formally dispute.",
@@ -12391,10 +12391,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « The bank froze my assets pending the investigation. »",
       "options": [
-        "gelé mes avoirs dans l'attente de",
-        "bloqué mes biens en attendant",
-        "gelé mon argent jusqu'à",
-        "suspendu mes fonds avant"
+        "La banque a gelé mes avoirs dans l'attente de l'enquête.",
+        "La banque a bloqué mes biens en attendant l'enquête.",
+        "La banque a gelé mon argent jusqu'à l'enquête.",
+        "La banque a suspendu mes fonds avant l'enquête."
       ],
       "correct_index": 0,
       "explanation": "« Geler des avoirs » = terme juridico-bancaire. « Avoirs » = holdings (toujours pluriel). « Dans l'attente de » = pending.",
@@ -12409,10 +12409,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu négocies une facilité avec ton conseiller bancaire.",
       "options": [
-        "Je sollicite un découvert autorisé",
-        "Je demande un découvert permis",
-        "Je voudrais un crédit accordé",
-        "Je demande un découvert libre"
+        "Je sollicite un découvert autorisé.",
+        "Je demande un découvert permis.",
+        "Je voudrais un crédit accordé.",
+        "Je demande un découvert libre."
       ],
       "correct_index": 0,
       "explanation": "« Découvert autorisé » = arranged overdraft. « Solliciter » = demander formellement (registre soutenu).",
@@ -12427,10 +12427,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Protester contre des frais injustifiés (registre soutenu).",
       "options": [
-        "Je conteste vivement l'imputation de",
-        "Je conteste avec colère",
-        "Je refuse absolument",
-        "Je discute"
+        "Je conteste vivement l'imputation de ces frais.",
+        "Je conteste avec colère ces frais.",
+        "Je refuse absolument ces frais.",
+        "Je discute ces frais."
       ],
       "correct_index": 0,
       "explanation": "« Vivement » + « contester » = collocation du registre formel. « Imputation » = charging (vocabulaire comptable).",
@@ -12445,10 +12445,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « We've capped the overdraft facility at five hundred euros. »",
       "options": [
-        "Nous avons plafonné la facilité de caisse",
-        "Nous avons limité le découvert",
-        "Nous avons coupé le découvert",
-        "Nous avons arrêté le crédit"
+        "Nous avons plafonné la facilité de caisse à cinq cents euros.",
+        "Nous avons limité le découvert à cinq cents euros.",
+        "Nous avons coupé le découvert à cinq cents euros.",
+        "Nous avons arrêté le crédit à cinq cents euros."
       ],
       "correct_index": 0,
       "explanation": "« Facilité de caisse » = overdraft facility (jargon bancaire). « Plafonner » = to cap.",
@@ -12499,10 +12499,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que tu n'es pas imposable cette année.",
       "options": [
-        "Je ne suis pas imposable",
-        "Je ne suis pas taxé",
-        "Je ne paie pas de taxes",
-        "Je suis sans impôt"
+        "Je ne suis pas imposable cette année.",
+        "Je ne suis pas taxé cette année.",
+        "Je ne paie pas de taxes cette année.",
+        "Je suis sans impôt cette année."
       ],
       "correct_index": 0,
       "explanation": "« Imposable » = liable for income tax (adjectif fiscal standard). « Taxé » ne se dit pas pour les particuliers.",
@@ -12535,10 +12535,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I forgot my ID card at home. »",
       "options": [
-        "J'ai oublié ma carte d'identité",
-        "J'ai oublié ma carte d'ID",
-        "J'ai oublié mon ID",
-        "J'ai laissé mon identité"
+        "J'ai oublié ma carte d'identité à la maison.",
+        "J'ai oublié ma carte d'ID à la maison.",
+        "J'ai oublié mon ID à la maison.",
+        "J'ai laissé mon identité à la maison."
       ],
       "correct_index": 0,
       "explanation": "« Carte d'identité » = terme intégral ; « ID » ne s'abrège pas en français courant.",
@@ -12586,8 +12586,8 @@
       "sub": "admin_bureaucracy",
       "level": 2,
       "pattern": "papiers-identite",
-      "cue_type": "intent_en",
-      "cue": "Say: « My passport expires next year. »",
+      "cue_type": "gap_fr",
+      "cue": "Mon passeport ___ l'année prochaine.",
       "options": [
         "expire",
         "finit",
@@ -12625,10 +12625,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu appelles la préfecture au sujet de ton titre de séjour.",
       "options": [
-        "Mon titre de séjour arrive à expiration",
-        "Mon papier de séjour va finir",
-        "Mon titre arrive à la fin",
-        "Ma résidence expire"
+        "Mon titre de séjour arrive à expiration le mois prochain.",
+        "Mon papier de séjour va finir le mois prochain.",
+        "Mon titre arrive à la fin le mois prochain.",
+        "Ma résidence expire le mois prochain."
       ],
       "correct_index": 0,
       "explanation": "« Titre de séjour » = residence permit. « Arriver à expiration » = tournure administrative.",
@@ -12715,10 +12715,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que ta franchise est de cent euros.",
       "options": [
-        "Ma franchise",
-        "Ma frange",
-        "Mon déductible",
-        "Mon droit"
+        "Ma franchise est de cent euros.",
+        "Ma frange est de cent euros.",
+        "Mon déductible est de cent euros.",
+        "Mon droit est de cent euros."
       ],
       "correct_index": 0,
       "explanation": "« Franchise » = deductible (faux ami : pas la liberté mais la part non couverte). « Déductible » ne s'emploie pas en assurance française.",
@@ -12823,10 +12823,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « It takes me half an hour to get ready in the morning. »",
       "options": [
-        "Il me faut une demi-heure pour me",
-        "Ça me prends une demi-heure pour",
-        "Je prends une demi-heure à me",
-        "Il me prend une demi-heure pour me"
+        "Il me faut une demi-heure pour me préparer le matin.",
+        "Ça me prends une demi-heure pour me préparer le matin.",
+        "Je prends une demi-heure à me préparer le matin.",
+        "Il me prend une demi-heure pour me préparer le matin."
       ],
       "correct_index": 0,
       "explanation": "« Il me faut + durée » = construction impersonnelle. « Se préparer » garde le réfléchi.",
@@ -12949,10 +12949,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « There's a heatwave forecast for next week. »",
       "options": [
-        "Une canicule est annoncée",
-        "Une chaleur est annoncée",
-        "Un feu est annoncé",
-        "Une vague chaude est annoncée"
+        "Une canicule est annoncée la semaine prochaine.",
+        "Une chaleur est annoncée la semaine prochaine.",
+        "Un feu est annoncé la semaine prochaine.",
+        "Une vague chaude est annoncée la semaine prochaine."
       ],
       "correct_index": 0,
       "explanation": "« Canicule » = heatwave (terme précis). « Être annoncé » = être prévu.",
@@ -12967,10 +12967,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu commentes la pluie à un collègue.",
       "options": [
-        "Il pleut des cordes",
-        "Il pleut fort",
-        "Il pleut beaucoup",
-        "Il pleut intense"
+        "Il pleut des cordes !",
+        "Il pleut fort !",
+        "Il pleut beaucoup !",
+        "Il pleut intense !"
       ],
       "correct_index": 0,
       "explanation": "« Pleuvoir des cordes » = idiome pour « rain cats and dogs ». Les autres sont compréhensibles mais non idiomatiques.",
@@ -13003,10 +13003,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « The weather is unpredictable in spring. »",
       "options": [
-        "Le temps est imprévisible",
-        "Le temps est indéterminé",
-        "La météo est inprévoyable",
-        "Le temps est pas prévu"
+        "Le temps est imprévisible au printemps.",
+        "Le temps est indéterminé au printemps.",
+        "La météo est inprévoyable au printemps.",
+        "Le temps est pas prévu au printemps."
       ],
       "correct_index": 0,
       "explanation": "« Imprévisible » = unpredictable. « Au printemps » (mais « en été/automne/hiver »).",
@@ -13201,10 +13201,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I do my grocery shopping online now. »",
       "options": [
-        "Je fais mes courses en ligne",
-        "Je fais mes courses sur Internet",
-        "Je fais mon shopping en ligne",
-        "Je fais mes achats en ligne"
+        "Je fais mes courses en ligne maintenant.",
+        "Je fais mes courses sur Internet maintenant.",
+        "Je fais mon shopping en ligne maintenant.",
+        "Je fais mes achats en ligne maintenant."
       ],
       "correct_index": 0,
       "explanation": "« Faire ses courses » = grocery shopping. « Shopping » = pour vêtements/loisirs. « En ligne » = online.",
@@ -13219,10 +13219,10 @@
       "cue_type": "situation_fr",
       "cue": "À la caisse du supermarché, tu paies.",
       "options": [
-        "Je règle",
-        "Je paye",
-        "Je paies",
-        "Je payer"
+        "Je règle en carte.",
+        "Je paye en carte.",
+        "Je paies en carte.",
+        "Je payer en carte."
       ],
       "correct_index": 0,
       "explanation": "« Régler » (= to settle a bill) est plus formel et courant en caisse que « payer ». « Je paye » est aussi accepté (variante de « paie »), mais « paies » avec -s est la 2e pers., faux ici.",
@@ -13273,10 +13273,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « I'm torn between two options. »",
       "options": [
-        "Je suis partagé",
-        "Je suis divisé",
-        "Je suis",
-        "Je suis coupé"
+        "Je suis partagé entre deux options.",
+        "Je suis divisé entre deux options.",
+        "Je suis entre deux options.",
+        "Je suis coupé entre deux options."
       ],
       "correct_index": 0,
       "explanation": "« Partagé entre » = torn between (idiome avec participe passé adjectival).",
@@ -13507,10 +13507,10 @@
       "cue_type": "situation_fr",
       "cue": "La situation familiale d'un collègue.",
       "options": [
-        "Il est en procédure de divorce",
-        "Il est en procès de divorce",
-        "Il est en divorce",
-        "Il est en procédure de divorcer"
+        "Il est en procédure de divorce.",
+        "Il est en procès de divorce.",
+        "Il est en divorce.",
+        "Il est en procédure de divorcer."
       ],
       "correct_index": 0,
       "explanation": "« Procédure de divorce » = divorce proceedings (terme juridique figé). « Procès » = court trial.",
@@ -13525,10 +13525,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que tu es l'aîné de la famille.",
       "options": [
-        "Je suis l'aîné",
-        "Je suis le premier",
-        "Je suis l'ancien",
-        "Je suis l'âge"
+        "Je suis l'aîné de la famille.",
+        "Je suis le premier de la famille.",
+        "Je suis l'ancien de la famille.",
+        "Je suis l'âge de la famille."
       ],
       "correct_index": 0,
       "explanation": "« Aîné » = eldest sibling (terme précis). « Premier » serait ambigu, « ancien » = former.",
@@ -13633,10 +13633,10 @@
       "cue_type": "intent_en",
       "cue": "Say: « They've been dating for a while now. »",
       "options": [
-        "Ils sortent ensemble",
-        "Ils datent",
-        "Ils sont sortants ensemble",
-        "Ils se sortent ensemble"
+        "Ils sortent ensemble depuis un moment.",
+        "Ils datent depuis un moment.",
+        "Ils sont sortants ensemble depuis un moment.",
+        "Ils se sortent ensemble depuis un moment."
       ],
       "correct_index": 0,
       "explanation": "« Sortir ensemble » = être en couple (tournure standard). Pas de réfléchi. « Dater » ne s'emploie pas pour un couple en français.",
@@ -13651,10 +13651,10 @@
       "cue_type": "situation_fr",
       "cue": "Ton ami t'annonce qu'il va demander sa copine en mariage.",
       "options": [
-        "Je vais la demander en",
-        "Je vais la demander le",
-        "Je vais lui demander en",
-        "Je vais lui demander"
+        "Je vais la demander en mariage.",
+        "Je vais la demander le mariage.",
+        "Je vais lui demander en mariage.",
+        "Je vais lui demander le mariage."
       ],
       "correct_index": 0,
       "explanation": "« Demander quelqu'un en mariage » = tournure avec COD direct (« la »), pas COI.",
@@ -13741,10 +13741,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que tu reconnais ton erreur.",
       "options": [
-        "Je reconnais",
-        "J'admets",
-        "J'accepte",
-        "Je sais"
+        "Je reconnais mon erreur.",
+        "J'admets mon erreur.",
+        "J'accepte mon erreur.",
+        "Je sais mon erreur."
       ],
       "correct_index": 0,
       "explanation": "« Reconnaître une erreur » = collocation standard (to acknowledge). « Admettre » existe mais est moins fréquent ici.",
@@ -13918,13 +13918,13 @@
       "sub": "articles_determiners",
       "level": 4,
       "pattern": "article-defini",
-      "cue_type": "intent_en",
-      "cue": "Say: « Coffee is bad for the heart, they say. »",
+      "cue_type": "gap_fr",
+      "cue": "Le café est mauvais pour ___ cœur, dit-on.",
       "options": [
-        "Le café est mauvais pour le",
-        "Café est mauvais pour",
-        "Du café est mauvais pour du",
-        "Le café est mauvais à le"
+        "le",
+        "un",
+        "du",
+        "au"
       ],
       "correct_index": 0,
       "explanation": "« Le café » (générique) + « pour le cœur » (organe, défini). Généralisation française systématique.",
@@ -14008,13 +14008,13 @@
       "sub": "articles_determiners",
       "level": 1,
       "pattern": "article-partitif",
-      "cue_type": "situation_fr",
-      "cue": "Tu commandes à la boulangerie.",
+      "cue_type": "gap_fr",
+      "cue": "Je voudrais ___ pain, s'il vous plaît.",
       "options": [
-        "Je voudrais du",
-        "Je voudrais le",
-        "Je voudrais",
-        "Je voudrais de"
+        "du",
+        "le",
+        "un",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "« Du » = partitif (de + le). Achat d'une quantité non précisée.",
@@ -14062,13 +14062,13 @@
       "sub": "articles_determiners",
       "level": 4,
       "pattern": "article-partitif",
-      "cue_type": "intent_en",
-      "cue": "Say: « It takes courage to speak up. »",
+      "cue_type": "gap_fr",
+      "cue": "Il faut ___ courage pour s'exprimer.",
       "options": [
-        "Il faut du",
-        "Il faut",
-        "Il faut le",
-        "Il faut de"
+        "du",
+        "le",
+        "un",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "Nom abstrait indénombrable → partitif « du ». Article obligatoire avec « il faut + qualité ».",
@@ -14080,13 +14080,13 @@
       "sub": "articles_determiners",
       "level": 4,
       "pattern": "article-partitif",
-      "cue_type": "situation_fr",
-      "cue": "Ton état après une longue semaine.",
+      "cue_type": "gap_fr",
+      "cue": "J'ai ___ fatigue après une longue semaine.",
       "options": [
-        "J'ai de la",
-        "J'ai la",
-        "J'ai de",
-        "J'ai"
+        "de la",
+        "la",
+        "de",
+        "une"
       ],
       "correct_index": 0,
       "explanation": "Partitif conservé même avec adjectif pour quantifier une émotion/état.",
@@ -14098,13 +14098,13 @@
       "sub": "articles_determiners",
       "level": 4,
       "pattern": "article-partitif",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'il faut de la patience.",
+      "cue_type": "gap_fr",
+      "cue": "Il faut ___ patience.",
       "options": [
-        "Il faut de la",
-        "Il faut la",
-        "Il faut",
-        "Il faut une"
+        "de la",
+        "la",
+        "une",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "« Il faut + partitif » pour une qualité abstraite nécessaire.",
@@ -14116,13 +14116,13 @@
       "sub": "articles_determiners",
       "level": 4,
       "pattern": "article-partitif",
-      "cue_type": "intent_en",
-      "cue": "Say: « I listen to classical music. »",
+      "cue_type": "gap_fr",
+      "cue": "J'écoute ___ musique classique.",
       "options": [
-        "J'écoute de la",
-        "J'écoute la",
-        "J'écoute",
-        "J'écoute une"
+        "de la",
+        "la",
+        "une",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "Partitif « de la » pour une activité d'écoute (quantité non précise).",
@@ -14152,8 +14152,8 @@
       "sub": "articles_determiners",
       "level": 4,
       "pattern": "de-apres-negation",
-      "cue_type": "situation_fr",
-      "cue": "Tu refuses poliment un café l'après-midi.",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ café l'après-midi.",
       "options": [
         "ne prends jamais de",
         "ne prends jamais du",
@@ -14425,10 +14425,10 @@
       "cue_type": "situation_fr",
       "cue": "Comment cuire un poulet à haute température.",
       "options": [
-        "Il faut le faire dorer",
-        "Il faut le doré",
-        "Il faut le faire doré",
-        "Il faut le fait dorer"
+        "Il faut le faire dorer à haute température.",
+        "Il faut le doré à haute température.",
+        "Il faut le faire doré à haute température.",
+        "Il faut le fait dorer à haute température."
       ],
       "correct_index": 0,
       "explanation": "« Faire dorer » = faire prendre couleur (causatif). « À feu vif » = forte température.",
@@ -14512,13 +14512,13 @@
       "sub": "food_cooking",
       "level": 4,
       "pattern": "methodes-cuisson",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'il faut déglacer la poêle.",
+      "cue_type": "gap_fr",
+      "cue": "Il faut ___ la poêle.",
       "options": [
-        "Il faut déglacer",
-        "Il faut dégelacer",
-        "Il faut déglaciner",
-        "Il faut faire déglace"
+        "déglacer",
+        "dégelacer",
+        "déglaciner",
+        "faire déglace"
       ],
       "correct_index": 0,
       "explanation": "« Déglacer » = verbe culinaire (ajouter liquide pour dissoudre les sucs collés).",
@@ -14530,8 +14530,8 @@
       "sub": "food_cooking",
       "level": 4,
       "pattern": "methodes-cuisson",
-      "cue_type": "intent_en",
-      "cue": "Say: « Simmer over low heat for twenty minutes. »",
+      "cue_type": "gap_fr",
+      "cue": "Faites mijoter ___ vingt minutes.",
       "options": [
         "à feu doux pendant",
         "sur feu doux pendant",
@@ -14620,13 +14620,13 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "plats-typiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « I've never tried a croque-monsieur. »",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ un croque-monsieur.",
       "options": [
-        "Je n'ai jamais goûté",
-        "Je n'ai pas jamais goûté",
-        "Je jamais n'ai goûté",
-        "J'ai jamais goûté pas"
+        "n'ai jamais goûté",
+        "n'ai pas jamais goûté",
+        "jamais n'ai goûté",
+        "ai jamais goûté pas"
       ],
       "correct_index": 0,
       "explanation": "« Ne... jamais » autour de l'auxiliaire. Une seule négation (pas + jamais = incorrect).",
@@ -14638,8 +14638,8 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "plats-typiques",
-      "cue_type": "situation_fr",
-      "cue": "Tu présentes ton plat préféré à quelqu'un.",
+      "cue_type": "gap_fr",
+      "cue": "___ la tartiflette.",
       "options": [
         "Mon plat préféré, c'est",
         "Mon plat est préféré, c'est",
@@ -14656,8 +14656,8 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "plats-typiques",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu aimes la quiche lorraine.",
+      "cue_type": "gap_fr",
+      "cue": "___ quiche lorraine.",
       "options": [
         "J'aime la",
         "J'aime une",
@@ -14674,13 +14674,13 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "plats-typiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « Crêpes are typical in Brittany. »",
+      "cue_type": "gap_fr",
+      "cue": "Les crêpes ___ en Bretagne.",
       "options": [
-        "Les crêpes sont typiques",
-        "Des crêpes sont typiques",
-        "Crêpes sont typiques",
-        "Les crêpes sont typique"
+        "sont typiques",
+        "sont typique",
+        "sont des typiques",
+        "est typiques"
       ],
       "correct_index": 0,
       "explanation": "Généralisation → article défini « les ». Accord du pluriel « typiques ».",
@@ -14800,8 +14800,8 @@
       "sub": "food_cooking",
       "level": 3,
       "pattern": "preferences-alimentaires",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu détestes les champignons.",
+      "cue_type": "gap_fr",
+      "cue": "___ champignons.",
       "options": [
         "Je déteste les",
         "Je déteste des",
@@ -14854,13 +14854,13 @@
       "sub": "travel_transport",
       "level": 2,
       "pattern": "hebergement",
-      "cue_type": "situation_fr",
-      "cue": "Tu arrives à l'hôtel et tu te présentes à la réception.",
+      "cue_type": "gap_fr",
+      "cue": "Bonjour, j'ai une réservation ___ nom de Dupont.",
       "options": [
-        "Bonjour, j'ai une réservation au",
-        "Bonjour, j'ai un réservé au",
-        "Bonjour, je réserve au",
-        "Bonjour, j'ai une réservation en"
+        "au",
+        "à le",
+        "en",
+        "à"
       ],
       "correct_index": 0,
       "explanation": "« Au nom de + nom de famille » = formule standard d'enregistrement.",
@@ -14872,8 +14872,8 @@
       "sub": "travel_transport",
       "level": 2,
       "pattern": "hebergement",
-      "cue_type": "micro_intent_fr",
-      "cue": "Demander à quelle heure est le petit-déjeuner.",
+      "cue_type": "gap_fr",
+      "cue": "___ petit-déjeuner ?",
       "options": [
         "À quelle heure est le",
         "À quelle heure du",
@@ -14908,13 +14908,13 @@
       "sub": "travel_transport",
       "level": 3,
       "pattern": "hebergement",
-      "cue_type": "intent_en",
-      "cue": "Say: « We stayed in an Airbnb in the city centre. »",
+      "cue_type": "gap_fr",
+      "cue": "On a logé dans un Airbnb ___ centre-ville.",
       "options": [
-        "On a logé dans un Airbnb en",
-        "On a logé dans un Airbnb dans",
-        "On a resté dans un Airbnb en",
-        "Nous avons logés dans un Airbnb en"
+        "en",
+        "dans",
+        "au",
+        "à"
       ],
       "correct_index": 0,
       "explanation": "« Loger » (aux. « avoir », pas d'accord). « En centre-ville » = locution figée sans article.",
@@ -14980,13 +14980,13 @@
       "sub": "travel_transport",
       "level": 4,
       "pattern": "hebergement",
-      "cue_type": "intent_en",
-      "cue": "Say: « Could you put us on the waiting list? »",
+      "cue_type": "gap_fr",
+      "cue": "Pourriez-vous nous mettre ___ liste d'attente ?",
       "options": [
-        "Pourriez-vous nous mettre sur",
-        "Pourriez-vous nous mettre dans la",
-        "Pouvez-vous mettre-nous sur",
-        "Pouvez-vous nous mettre en"
+        "sur la",
+        "dans la",
+        "en",
+        "à la"
       ],
       "correct_index": 0,
       "explanation": "« Sur liste d'attente » = locution figée sans article. « Pourriez-vous » (conditionnel de politesse).",
@@ -15088,8 +15088,8 @@
       "sub": "travel_transport",
       "level": 5,
       "pattern": "hebergement",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu déconseilles cet établissement (registre soutenu).",
+      "cue_type": "gap_fr",
+      "cue": "___ cet établissement.",
       "options": [
         "Je déconseille vivement",
         "Je déconseille beaucoup",
@@ -15142,8 +15142,8 @@
       "sub": "travel_transport",
       "level": 4,
       "pattern": "billets-reservations",
-      "cue_type": "situation_fr",
-      "cue": "Tu modifies ta réservation par téléphone.",
+      "cue_type": "gap_fr",
+      "cue": "___ ma réservation.",
       "options": [
         "Je souhaiterais modifier",
         "Je souhaiterais changer",
@@ -15268,13 +15268,13 @@
       "sub": "travel_transport",
       "level": 2,
       "pattern": "douane-visa",
-      "cue_type": "intent_en",
-      "cue": "Say: « I have nothing to declare. »",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ à déclarer.",
       "options": [
-        "Je n'ai rien à",
-        "Je n'ai rien",
-        "Je n'ai pas à",
-        "Je ne rien ai à"
+        "n'ai rien",
+        "n'ai pas rien",
+        "n'ai pas à rien",
+        "ne rien ai"
       ],
       "correct_index": 0,
       "explanation": "« N'avoir rien à + infinitif ». Pronom « rien » + préposition « à » + infinitif.",
@@ -15304,8 +15304,8 @@
       "sub": "travel_transport",
       "level": 2,
       "pattern": "douane-visa",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu viens pour le tourisme.",
+      "cue_type": "gap_fr",
+      "cue": "___ tourisme.",
       "options": [
         "Je viens pour le",
         "Je viens par le",
@@ -15322,13 +15322,13 @@
       "sub": "travel_transport",
       "level": 2,
       "pattern": "douane-visa",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm staying for two weeks. »",
+      "cue_type": "gap_fr",
+      "cue": "Je reste ___ deux semaines.",
       "options": [
-        "Je reste",
-        "Je reste depuis",
-        "Je reste par",
-        "Je suis pour"
+        "pendant",
+        "depuis",
+        "par",
+        "pour"
       ],
       "correct_index": 0,
       "explanation": "Durée projetée sans préposition. « Depuis » = durée écoulée (faux ici).",
@@ -15340,13 +15340,13 @@
       "sub": "travel_transport",
       "level": 3,
       "pattern": "douane-visa",
-      "cue_type": "intent_en",
-      "cue": "Say: « I had to renew my visa at the consulate. »",
+      "cue_type": "gap_fr",
+      "cue": "J'ai dû renouveler mon visa ___ consulat.",
       "options": [
-        "J'ai dû renouveler mon visa au",
-        "J'ai dû renouveler mon visa à le",
-        "J'ai du renouveler mon visa au",
-        "J'ai dû renouveler mon visa en"
+        "au",
+        "à le",
+        "en",
+        "dans le"
       ],
       "correct_index": 0,
       "explanation": "« Au consulat » (à + le = au). « Dû » = participe passé avec accent circonflexe (à distinguer de « du »).",
@@ -15412,13 +15412,13 @@
       "sub": "work_career",
       "level": 2,
       "pattern": "email-formel",
-      "cue_type": "intent_en",
-      "cue": "Say: « Hello, I'm writing about my order. »",
+      "cue_type": "gap_fr",
+      "cue": "Bonjour, je vous écris ___ ma commande.",
       "options": [
-        "Bonjour, je vous écris au sujet de",
-        "Bonjour, je vous écrit au sujet de",
-        "Bonjour, j'écris à propos de",
-        "Bonjour, je vous écris sur"
+        "au sujet de",
+        "sur",
+        "à propos sur",
+        "à sujet de"
       ],
       "correct_index": 0,
       "explanation": "« Au sujet de » = regarding (locution figée). Conjugaison « écris » à la 1re pers. sing.",
@@ -15700,13 +15700,13 @@
       "sub": "work_career",
       "level": 4,
       "pattern": "competences-cv",
-      "cue_type": "intent_en",
-      "cue": "Say: « I have ten years of experience in the field. »",
+      "cue_type": "gap_fr",
+      "cue": "J'ai dix ans d'expérience ___ le domaine.",
       "options": [
-        "J'ai dix ans d'expérience dans",
-        "J'ai dix ans d'expériences dans",
-        "J'ai dix ans de expérience dans",
-        "Je possède dix ans d'expérience en"
+        "dans",
+        "en",
+        "à",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "« Expérience » indénombrable ici → singulier. « Dans le + domaine » (pas « en le »).",
@@ -15718,8 +15718,8 @@
       "sub": "work_career",
       "level": 4,
       "pattern": "competences-cv",
-      "cue_type": "situation_fr",
-      "cue": "Tu listes tes compétences dans ton CV.",
+      "cue_type": "gap_fr",
+      "cue": "___ outils informatiques.",
       "options": [
         "Maîtrise des",
         "Maîtrisage des",
@@ -15808,13 +15808,13 @@
       "sub": "work_career",
       "level": 2,
       "pattern": "entreprise-roles",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu travailles dans une grande entreprise.",
+      "cue_type": "gap_fr",
+      "cue": "Je travaille ___ une grande entreprise.",
       "options": [
-        "Je travaille dans",
-        "Je travaille en",
-        "Je travaille à",
-        "Je travaille sur"
+        "dans",
+        "en",
+        "à",
+        "sur"
       ],
       "correct_index": 0,
       "explanation": "« Dans une entreprise » = préposition fixe pour le lieu de travail.",
@@ -15826,13 +15826,13 @@
       "sub": "work_career",
       "level": 2,
       "pattern": "entreprise-roles",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm an intern at a bank. »",
+      "cue_type": "gap_fr",
+      "cue": "Je suis ___ une banque.",
       "options": [
-        "Je suis stagiaire dans",
-        "Je suis stagière dans",
-        "Je suis stage dans",
-        "Je suis stagiaire à"
+        "stagiaire dans",
+        "stagière dans",
+        "stage dans",
+        "stagiaire à"
       ],
       "correct_index": 0,
       "explanation": "« Stagiaire » = épicène (même forme masc./fém.). « Dans une banque » (préposition de lieu).",
@@ -15862,8 +15862,8 @@
       "sub": "work_career",
       "level": 4,
       "pattern": "entreprise-roles",
-      "cue_type": "situation_fr",
-      "cue": "Tu expliques la taille de ton équipe.",
+      "cue_type": "gap_fr",
+      "cue": "___ dix personnes.",
       "options": [
         "Je dirige une équipe de",
         "Je surveille une équipe de",
@@ -15880,13 +15880,13 @@
       "sub": "work_career",
       "level": 4,
       "pattern": "entreprise-roles",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu es responsable du service marketing.",
+      "cue_type": "gap_fr",
+      "cue": "Je suis responsable ___ service marketing.",
       "options": [
-        "Je suis responsable du",
-        "Je suis responsable de le",
-        "Je suis responsable par le",
-        "Je suis responsable sur le"
+        "du",
+        "de le",
+        "par le",
+        "sur le"
       ],
       "correct_index": 0,
       "explanation": "« Du » = de + le (contraction). « Être responsable de » = préposition fixe.",
@@ -15898,13 +15898,13 @@
       "sub": "work_career",
       "level": 4,
       "pattern": "entreprise-roles",
-      "cue_type": "intent_en",
-      "cue": "Say: « I've been promoted to head of department. »",
+      "cue_type": "gap_fr",
+      "cue": "J'ai été ___ chef de service.",
       "options": [
-        "J'ai été promu",
-        "J'ai été promu à",
-        "J'ai été promu comme",
-        "J'ai eu une promotion"
+        "promu",
+        "promu à",
+        "promu comme",
+        "eu une promotion en"
       ],
       "correct_index": 0,
       "explanation": "« Être promu + fonction » (sans préposition). « Chef de service » = head of department.",
@@ -15934,8 +15934,8 @@
       "sub": "health_body",
       "level": 3,
       "pattern": "parties-corps",
-      "cue_type": "situation_fr",
-      "cue": "Tu décris une douleur à ton kiné.",
+      "cue_type": "gap_fr",
+      "cue": "___ dos.",
       "options": [
         "J'ai mal au bas du",
         "J'ai mal à le bas du",
@@ -16078,8 +16078,8 @@
       "sub": "health_body",
       "level": 3,
       "pattern": "medecin-visite",
-      "cue_type": "situation_fr",
-      "cue": "Ce que tu ressens à ton médecin.",
+      "cue_type": "gap_fr",
+      "cue": "___ très fatigué.",
       "options": [
         "Je me sens",
         "Je sens",
@@ -16204,13 +16204,13 @@
       "sub": "health_body",
       "level": 4,
       "pattern": "urgences",
-      "cue_type": "intent_en",
-      "cue": "Say: « He lost consciousness for a few seconds. »",
+      "cue_type": "gap_fr",
+      "cue": "Il a perdu ___ quelques secondes.",
       "options": [
-        "Il a perdu",
-        "Il a perdu la",
-        "Il perdait",
-        "Il a perdue"
+        "connaissance pendant",
+        "la connaissance pendant",
+        "conscience depuis",
+        "connaisance pendant"
       ],
       "correct_index": 0,
       "explanation": "« Perdre connaissance » = idiome médical (sans article). PC ponctuel (pas imparfait, événement défini).",
@@ -16225,10 +16225,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu appelles les pompiers pour un incendie.",
       "options": [
-        "Il y a un début d'incendie",
-        "Il y a un commencement d'incendie",
-        "Il y a un début de feu",
-        "Il y un début d'incendie"
+        "Il y a un début d'incendie.",
+        "Il y a un commencement d'incendie.",
+        "Il y a un début de feu.",
+        "Il y un début d'incendie."
       ],
       "correct_index": 0,
       "explanation": "« Début d'incendie » = terme des pompiers (minor fire). « Il y a » (pas « il y » seul).",
@@ -16276,13 +16276,13 @@
       "sub": "health_body",
       "level": 2,
       "pattern": "bien-etre",
-      "cue_type": "intent_en",
-      "cue": "Say: « I try to walk every day. »",
+      "cue_type": "gap_fr",
+      "cue": "J'essaie ___ marcher tous les jours.",
       "options": [
-        "J'essaie de",
-        "J'essaie",
-        "Je essaie de",
-        "J'essaie à"
+        "de",
+        "à",
+        "pour",
+        "que"
       ],
       "correct_index": 0,
       "explanation": "« Essayer de + infinitif » (préposition « de »). Élision « J' » obligatoire.",
@@ -16312,8 +16312,8 @@
       "sub": "health_body",
       "level": 2,
       "pattern": "bien-etre",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu fais du sport régulièrement.",
+      "cue_type": "gap_fr",
+      "cue": "___ sport régulièrement.",
       "options": [
         "Je fais du",
         "Je fais le",
@@ -16366,8 +16366,8 @@
       "sub": "health_body",
       "level": 4,
       "pattern": "bien-etre",
-      "cue_type": "situation_fr",
-      "cue": "Tu parles de ta routine de bien-être.",
+      "cue_type": "gap_fr",
+      "cue": "___ yoga trois fois par semaine.",
       "options": [
         "Je pratique le",
         "Je pratique du",
@@ -16402,13 +16402,13 @@
       "sub": "health_body",
       "level": 4,
       "pattern": "bien-etre",
-      "cue_type": "intent_en",
-      "cue": "Say: « A balanced diet is the key to good health. »",
+      "cue_type": "gap_fr",
+      "cue": "Une alimentation équilibrée est la clé ___ bonne santé.",
       "options": [
-        "équilibrée est la clé d'une",
-        "équilibrée est clé à une",
-        "balancée est la clé d'une",
-        "équilibrée est clé de la"
+        "d'une",
+        "à une",
+        "de la",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "« La clé d'une bonne santé » (article défini + « de » possessif). « Équilibrée » > « balancée » (anglicisme).",
@@ -16420,13 +16420,13 @@
       "sub": "home_logistics",
       "level": 3,
       "pattern": "pieces-maison",
-      "cue_type": "intent_en",
-      "cue": "Say: « The living room opens onto the terrace. »",
+      "cue_type": "gap_fr",
+      "cue": "Le salon ___ la terrasse.",
       "options": [
-        "Le salon donne sur",
-        "Le salon ouvre à",
-        "Le salon ouvre sur",
-        "Le salon donne à"
+        "donne sur",
+        "ouvre à",
+        "ouvre sur",
+        "donne à"
       ],
       "correct_index": 0,
       "explanation": "« Donner sur + lieu » = verbe spécifique pour « ouvrir sur » (vocabulaire immobilier).",
@@ -16564,13 +16564,13 @@
       "sub": "home_logistics",
       "level": 5,
       "pattern": "mobilier-objets",
-      "cue_type": "intent_en",
-      "cue": "Say: « The furniture is made of solid oak. »",
+      "cue_type": "gap_fr",
+      "cue": "Le mobilier est ___ chêne massif.",
       "options": [
-        "Le mobilier est en",
-        "Le mobilier est fait du",
-        "Le mobilier est de",
-        "Le mobilier est fait en"
+        "en",
+        "fait du",
+        "de",
+        "fait en"
       ],
       "correct_index": 0,
       "explanation": "« En + matière » pour la composition. « Chêne massif » = solid oak (collocation).",
@@ -16726,8 +16726,8 @@
       "sub": "home_logistics",
       "level": 2,
       "pattern": "reparations-entretien",
-      "cue_type": "situation_fr",
-      "cue": "Tu appelles le propriétaire pour signaler un souci.",
+      "cue_type": "gap_fr",
+      "cue": "___ chauffage.",
       "options": [
         "Il y a un problème avec le",
         "Il y a un problème sur le",
@@ -16762,13 +16762,13 @@
       "sub": "home_logistics",
       "level": 2,
       "pattern": "reparations-entretien",
-      "cue_type": "intent_en",
-      "cue": "Say: « I called a plumber. »",
+      "cue_type": "gap_fr",
+      "cue": "J'ai ___ un plombier.",
       "options": [
-        "J'ai appelé",
-        "J'ai appellé",
-        "Je ai appelé",
-        "J'ai appel"
+        "appelé",
+        "appellé",
+        "appel",
+        "appeler"
       ],
       "correct_index": 0,
       "explanation": "« Appeler » : un seul -l au participe passé « appelé ». Élision « J' ».",
@@ -16798,8 +16798,8 @@
       "sub": "home_logistics",
       "level": 4,
       "pattern": "reparations-entretien",
-      "cue_type": "situation_fr",
-      "cue": "Un dégât des eaux à ton assureur.",
+      "cue_type": "gap_fr",
+      "cue": "___ l'appartement.",
       "options": [
         "J'ai un dégât des eaux dans",
         "J'ai un dégât d'eau dans",
@@ -16834,13 +16834,13 @@
       "sub": "home_logistics",
       "level": 4,
       "pattern": "reparations-entretien",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'd like an estimate for the repairs. »",
+      "cue_type": "gap_fr",
+      "cue": "Je voudrais ___ pour les réparations.",
       "options": [
-        "Je voudrais un devis",
-        "Je voudrais une estimation",
-        "Je voudrais un devise",
-        "Je voudrais un prix"
+        "un devis",
+        "une estimation",
+        "un devise",
+        "un prix"
       ],
       "correct_index": 0,
       "explanation": "« Devis » = estimé écrit formel (vocabulaire des artisans). « Devise » = motto (faux ami).",
@@ -16924,8 +16924,8 @@
       "sub": "media_news",
       "level": 5,
       "pattern": "debat-politique",
-      "cue_type": "intent_en",
-      "cue": "Say: « Both candidates dodged the question. »",
+      "cue_type": "gap_fr",
+      "cue": "Les deux candidats ___ la question.",
       "options": [
         "ont esquivé",
         "ont éludés",
@@ -16942,8 +16942,8 @@
       "sub": "media_news",
       "level": 5,
       "pattern": "debat-politique",
-      "cue_type": "situation_fr",
-      "cue": "Tu résumes une joute oratoire tendue.",
+      "cue_type": "gap_fr",
+      "cue": "Le candidat ___ par son adversaire.",
       "options": [
         "a été mis en difficulté",
         "a été mis en problème",
@@ -16960,13 +16960,13 @@
       "sub": "media_news",
       "level": 5,
       "pattern": "debat-politique",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que le débat a dégénéré.",
+      "cue_type": "gap_fr",
+      "cue": "Le débat a tourné ___ vinaigre.",
       "options": [
-        "Le débat a tourné au",
-        "Le débat a tourné",
-        "Le débat a devenu",
-        "Le débat s'est tourné au"
+        "au",
+        "en",
+        "à",
+        "dans le"
       ],
       "correct_index": 0,
       "explanation": "« Tourner au + nom » = idiome pour dégénérer. « Au vinaigre » = figé (literally : turn sour).",
@@ -16996,13 +16996,13 @@
       "sub": "media_news",
       "level": 3,
       "pattern": "evenements-actualite",
-      "cue_type": "intent_en",
-      "cue": "Say: « The concert has been postponed until next month. »",
+      "cue_type": "gap_fr",
+      "cue": "Le concert a été reporté ___ mois prochain.",
       "options": [
-        "Le concert a été reporté au",
-        "Le concert a été reporté pour le",
-        "Le concert a été reporté dans le",
-        "Le concert a été reporté de"
+        "au",
+        "pour le",
+        "dans le",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "« Reporter à + date » (préposition « à »). Contraction « au » (à + le).",
@@ -17140,8 +17140,8 @@
       "sub": "media_news",
       "level": 3,
       "pattern": "chiffres-statistiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « Unemployment dropped by two percent. »",
+      "cue_type": "gap_fr",
+      "cue": "Le chômage ___ deux pour cent.",
       "options": [
         "a baissé de",
         "a baissé par",
@@ -17176,13 +17176,13 @@
       "sub": "media_news",
       "level": 3,
       "pattern": "chiffres-statistiques",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que les prix ont augmenté de cinq pour cent.",
+      "cue_type": "gap_fr",
+      "cue": "Les prix ont augmenté ___ cinq pour cent.",
       "options": [
-        "Les prix ont augmenté de",
-        "Les prix ont augmenté par",
-        "Les prix se sont augmentés de",
-        "Les prix ont augmenté"
+        "de",
+        "par",
+        "à",
+        "en"
       ],
       "correct_index": 0,
       "explanation": "« Augmenter de + pourcentage ». PC avec « avoir » (pas réfléchi).",
@@ -17284,13 +17284,13 @@
       "sub": "media_news",
       "level": 2,
       "pattern": "reseaux-sociaux",
-      "cue_type": "intent_en",
-      "cue": "Say: « I post photos on Instagram. »",
+      "cue_type": "gap_fr",
+      "cue": "Je poste des photos ___ Instagram.",
       "options": [
-        "Je poste des photos sur",
-        "Je post des photos sur",
-        "Je poste des photos à",
-        "Je poste les photos sur"
+        "sur",
+        "à",
+        "en",
+        "dans"
       ],
       "correct_index": 0,
       "explanation": "« Poster » (verbe accepté). « Des photos » (partitif pluriel). « Sur + plateforme ».",
@@ -17359,10 +17359,10 @@
       "cue_type": "intent_en",
       "cue": "Casual: « I'm totally broke right now. »",
       "options": [
-        "Je suis complètement fauché",
-        "Je suis complètement cassé",
-        "Je suis tout cassé financier",
-        "Je suis complètement pauvre"
+        "Je suis complètement fauché.",
+        "Je suis complètement cassé.",
+        "Je suis tout cassé financier.",
+        "Je suis complètement pauvre."
       ],
       "correct_index": 0,
       "explanation": "« Fauché » = broke (familier). « Cassé » = broken (objets). « Pauvre » = pauvre durablement.",
@@ -17428,13 +17428,13 @@
       "sub": "register_nuance",
       "level": 5,
       "pattern": "familier-tutoiement",
-      "cue_type": "intent_en",
-      "cue": "Casual: « He threw a fit over nothing. »",
+      "cue_type": "gap_fr",
+      "cue": "Il ___ une crise pour rien.",
       "options": [
-        "Il a piqué",
-        "Il a fait",
-        "Il a pris",
-        "Il a eu"
+        "a piqué",
+        "a fait",
+        "a pris",
+        "a eu"
       ],
       "correct_index": 0,
       "explanation": "« Piquer une crise » = idiome familier pour « throw a fit ». « Faire une crise » est plus neutre/médical.",
@@ -17482,13 +17482,13 @@
       "sub": "register_nuance",
       "level": 5,
       "pattern": "familier-tutoiement",
-      "cue_type": "intent_en",
-      "cue": "Casual: « He dumped her without warning. »",
+      "cue_type": "gap_fr",
+      "cue": "Il ___ sans prévenir.",
       "options": [
-        "Il l'a larguée",
-        "Il l'a largué",
-        "Il a la larguée",
-        "Il la largué"
+        "l'a larguée",
+        "l'a largué",
+        "a la larguée",
+        "la largué"
       ],
       "correct_index": 0,
       "explanation": "« Larguer quelqu'un » = to dump (familier). Accord PC avec COD fém. antéposé : -ée.",
@@ -17500,13 +17500,13 @@
       "sub": "register_nuance",
       "level": 3,
       "pattern": "soutenu-formel",
-      "cue_type": "intent_en",
-      "cue": "Formal: « Would you be so kind as to close the door? »",
+      "cue_type": "gap_fr",
+      "cue": "Auriez-vous l'amabilité ___ fermer la porte ?",
       "options": [
-        "Auriez-vous l'amabilité de",
-        "Auriez-vous l'amabilité à",
-        "Avez-vous l'amabilité à",
-        "Auriez-vous la amabilité de"
+        "de",
+        "à",
+        "pour",
+        "que"
       ],
       "correct_index": 0,
       "explanation": "« Avoir l'amabilité de + inf » = formule polie. Conditionnel « auriez » atténue la requête.",
@@ -17608,13 +17608,13 @@
       "sub": "register_nuance",
       "level": 5,
       "pattern": "soutenu-formel",
-      "cue_type": "micro_intent_fr",
-      "cue": "Exprimer un accord formel (registre soutenu).",
+      "cue_type": "gap_fr",
+      "cue": "Je souscris pleinement ___ cette proposition.",
       "options": [
-        "Je souscris pleinement à",
-        "Je souscris pleinement de",
-        "Je souscris pleine à",
-        "Je me souscris pleinement à"
+        "à",
+        "de",
+        "pour",
+        "en"
       ],
       "correct_index": 0,
       "explanation": "« Souscrire à + nom » = adhérer (registre soutenu). Préposition « à » fixe, pas pronominal.",
@@ -17698,13 +17698,13 @@
       "sub": "register_nuance",
       "level": 3,
       "pattern": "idiomes-courants",
-      "cue_type": "intent_en",
-      "cue": "Idiom: « He's always in a bad mood in the morning. »",
+      "cue_type": "gap_fr",
+      "cue": "Il est toujours ___ mauvais poil le matin.",
       "options": [
-        "Il est toujours de",
-        "Il est toujours en",
-        "Il est toujours avec",
-        "Il est toujours dans"
+        "de",
+        "en",
+        "avec",
+        "dans"
       ],
       "correct_index": 0,
       "explanation": "« De mauvais poil » = idiome familier (préposition « de » fixe). Synonyme : « de mauvaise humeur ».",
@@ -17734,13 +17734,13 @@
       "sub": "register_nuance",
       "level": 5,
       "pattern": "idiomes-courants",
-      "cue_type": "situation_fr",
-      "cue": "Quelqu'un qui t'a longtemps menti.",
+      "cue_type": "gap_fr",
+      "cue": "Il m'a mené ___ bateau.",
       "options": [
-        "Il m'a mené en",
-        "Il m'a mené dans un",
-        "Il m'a mené au",
-        "Il m'a mené à"
+        "en",
+        "dans un",
+        "au",
+        "à un"
       ],
       "correct_index": 0,
       "explanation": "« Mener en bateau » = to lead astray (idiome figé, « en » sans article).",
@@ -17824,13 +17824,13 @@
       "sub": "register_nuance",
       "level": 5,
       "pattern": "politesse-indirecte",
-      "cue_type": "micro_intent_fr",
-      "cue": "Introduire une suggestion avec prudence (soutenu).",
+      "cue_type": "gap_fr",
+      "cue": "Si je puis ___ suggérer une alternative…",
       "options": [
-        "Si je puis me permettre de",
-        "Si je peux me permettre de",
-        "Si je puis me permettre à",
-        "Si je puis me permettre"
+        "me permettre de",
+        "peux me permettre de",
+        "me permettre à",
+        "me permettre"
       ],
       "correct_index": 0,
       "explanation": "« Si je puis » = variante littéraire de « si je peux ». « Se permettre de + inf » (préposition « de »).",
@@ -17842,13 +17842,13 @@
       "sub": "negation",
       "level": 3,
       "pattern": "ne-pas",
-      "cue_type": "intent_en",
-      "cue": "Say: « I haven't seen him for ages. »",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ depuis une éternité.",
       "options": [
-        "Je ne l'ai pas vu",
-        "Je ne l'ai vu pas",
-        "Je ne pas ai vu lui",
-        "Je n'ai pas vu lui"
+        "ne l'ai pas vu",
+        "ne l'ai vu pas",
+        "ne pas ai vu lui",
+        "n'ai pas vu lui"
       ],
       "correct_index": 0,
       "explanation": "PC négatif : aux. + « pas » + participe. COD « l' » avant l'auxiliaire.",
@@ -17860,8 +17860,8 @@
       "sub": "negation",
       "level": 3,
       "pattern": "ne-pas",
-      "cue_type": "situation_fr",
-      "cue": "Tu déclines une invitation.",
+      "cue_type": "gap_fr",
+      "cue": "___ venir.",
       "options": [
         "Je ne pense pas pouvoir",
         "Je ne pas pense pouvoir",
@@ -17986,13 +17986,13 @@
       "sub": "negation",
       "level": 4,
       "pattern": "ne-jamais",
-      "cue_type": "intent_en",
-      "cue": "Say: « I've never set foot in that neighborhood. »",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ dans ce quartier.",
       "options": [
-        "Je n'ai jamais mis les pieds",
-        "Je n'ai jamais mis pied",
-        "Je n'ai jamais mis des pieds",
-        "J'ai jamais mis les pieds"
+        "n'ai jamais mis les pieds",
+        "n'ai jamais mis pied",
+        "n'ai jamais mis des pieds",
+        "ai jamais mis les pieds"
       ],
       "correct_index": 0,
       "explanation": "« Mettre les pieds » = idiome avec article défini figé (to set foot). « Ne... jamais » avec « ne ».",
@@ -18004,8 +18004,8 @@
       "sub": "negation",
       "level": 4,
       "pattern": "ne-jamais",
-      "cue_type": "situation_fr",
-      "cue": "Tu exprimes un refus catégorique.",
+      "cue_type": "gap_fr",
+      "cue": "___ ça !",
       "options": [
         "Je ne ferai jamais",
         "Je ne jamais ferai",
@@ -18058,13 +18058,13 @@
       "sub": "negation",
       "level": 2,
       "pattern": "ne-personne",
-      "cue_type": "intent_en",
-      "cue": "Say: « I don't know anyone here. »",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ personne ici.",
       "options": [
-        "Je ne connais",
-        "Je ne connais pas",
-        "Je ne connais aucune",
-        "Je connais"
+        "ne connais",
+        "ne connais pas",
+        "ne connais aucune",
+        "connais"
       ],
       "correct_index": 0,
       "explanation": "« Ne... personne » = négation unique (pas de « pas » ajouté). « Aucune personne » est un pléonasme.",
@@ -18076,8 +18076,8 @@
       "sub": "negation",
       "level": 2,
       "pattern": "ne-personne",
-      "cue_type": "situation_fr",
-      "cue": "Tu entres dans une pièce vide.",
+      "cue_type": "gap_fr",
+      "cue": "___ personne.",
       "options": [
         "Il n'y a",
         "Il n'y a pas",
@@ -18112,13 +18112,13 @@
       "sub": "negation",
       "level": 2,
       "pattern": "ne-personne",
-      "cue_type": "intent_en",
-      "cue": "Say: « I saw nobody at the party. »",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ personne à la fête.",
       "options": [
-        "Je n'ai vu",
-        "J'ai vu",
-        "Je n'ai pas vu",
-        "Je n'ai vu aucune"
+        "n'ai vu",
+        "ai vu",
+        "n'ai pas vu",
+        "n'ai vu aucune"
       ],
       "correct_index": 0,
       "explanation": "PC négatif avec « personne » : « n'ai vu personne » (personne APRÈS le participe).",
@@ -18148,8 +18148,8 @@
       "sub": "negation",
       "level": 4,
       "pattern": "ne-personne",
-      "cue_type": "situation_fr",
-      "cue": "Tu constates un abandon total.",
+      "cue_type": "gap_fr",
+      "cue": "___ venu.",
       "options": [
         "Personne n'est",
         "Personne est",
@@ -18166,8 +18166,8 @@
       "sub": "negation",
       "level": 4,
       "pattern": "ne-personne",
-      "cue_type": "micro_intent_fr",
-      "cue": "Affirmer ton indépendance (« je ne dépends de personne »).",
+      "cue_type": "gap_fr",
+      "cue": "___ personne.",
       "options": [
         "Je ne dépends de",
         "Je dépends pas de",
@@ -18202,13 +18202,13 @@
       "sub": "negation",
       "level": 5,
       "pattern": "ne-personne",
-      "cue_type": "intent_en",
-      "cue": "Say: « He's answerable to no one. »",
+      "cue_type": "gap_fr",
+      "cue": "Il ___ comptes à rendre à personne.",
       "options": [
-        "Il n'a de",
-        "Il n'a des",
-        "Il a de",
-        "Il n'a pas de"
+        "n'a de",
+        "n'a des",
+        "a de",
+        "n'a pas de"
       ],
       "correct_index": 0,
       "explanation": "« N'avoir de comptes à rendre à personne » = idiome soutenu. « De comptes » (pas d'article après négation).",
@@ -18310,8 +18310,8 @@
       "sub": "negation",
       "level": 5,
       "pattern": "ne-que",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu n'as qu'une chose à dire.",
+      "cue_type": "gap_fr",
+      "cue": "___ qu'une chose à dire.",
       "options": [
         "Je n'ai",
         "Je n'ai pas",
@@ -18328,13 +18328,13 @@
       "sub": "negation",
       "level": 5,
       "pattern": "ne-que",
-      "cue_type": "intent_en",
-      "cue": "Say: « He thinks only of his own interests. »",
+      "cue_type": "gap_fr",
+      "cue": "Il ___ ses propres intérêts.",
       "options": [
-        "Il ne pense qu'à",
-        "Il pense qu'à",
-        "Il ne pense pas qu'à",
-        "Il ne pense à que"
+        "ne pense qu'à",
+        "pense qu'à",
+        "ne pense pas qu'à",
+        "ne pense à que"
       ],
       "correct_index": 0,
       "explanation": "« Ne penser qu'à + X » = to only think about. « Penser à » (préposition fixe). « Que » après le verbe.",
@@ -18364,8 +18364,8 @@
       "sub": "relative_pronouns",
       "level": 1,
       "pattern": "relatif-qui",
-      "cue_type": "situation_fr",
-      "cue": "Tu présentes une collègue.",
+      "cue_type": "gap_fr",
+      "cue": "Voici Marie, ___ avec moi depuis deux ans.",
       "options": [
         "qui travaille",
         "que travaille",
@@ -18454,8 +18454,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-qui",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire « c'est lui qui a l'air sérieux ».",
+      "cue_type": "gap_fr",
+      "cue": "___ a l'air sérieux.",
       "options": [
         "C'est lui qui",
         "C'est lui que",
@@ -18562,8 +18562,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-que",
-      "cue_type": "intent_en",
-      "cue": "Say: « The decision that she made shocked everyone. »",
+      "cue_type": "gap_fr",
+      "cue": "La décision ___ a choqué tout le monde.",
       "options": [
         "qu'elle a prise",
         "qu'elle a pris",
@@ -18616,8 +18616,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-que",
-      "cue_type": "intent_en",
-      "cue": "Say: « The questions that he asked me were tough. »",
+      "cue_type": "gap_fr",
+      "cue": "Les questions ___ étaient difficiles.",
       "options": [
         "qu'il m'a posées",
         "qui il m'a posées",
@@ -18652,8 +18652,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-ou",
-      "cue_type": "situation_fr",
-      "cue": "Tu racontes un moment marquant de ta vie.",
+      "cue_type": "gap_fr",
+      "cue": "___ tout a basculé.",
       "options": [
         "C'était un soir où",
         "C'était un soir que",
@@ -18670,8 +18670,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-ou",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que c'est un endroit où tu te sens bien.",
+      "cue_type": "gap_fr",
+      "cue": "___ je me sens bien.",
       "options": [
         "C'est un endroit où",
         "C'est un endroit que",
@@ -18688,8 +18688,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-ou",
-      "cue_type": "intent_en",
-      "cue": "Say: « The day when everything changed. »",
+      "cue_type": "gap_fr",
+      "cue": "___ tout a changé.",
       "options": [
         "Le jour où",
         "Le jour que",
@@ -18724,8 +18724,8 @@
       "sub": "relative_pronouns",
       "level": 2,
       "pattern": "relatif-dont",
-      "cue_type": "situation_fr",
-      "cue": "Tu présentes un collègue à un ami.",
+      "cue_type": "gap_fr",
+      "cue": "Voici Paul, ___ je t'ai parlé.",
       "options": [
         "dont",
         "que",
@@ -18760,8 +18760,8 @@
       "sub": "relative_pronouns",
       "level": 2,
       "pattern": "relatif-dont",
-      "cue_type": "intent_en",
-      "cue": "Say: « The movie I was talking about is on Netflix. »",
+      "cue_type": "gap_fr",
+      "cue": "___ je parlais est sur Netflix.",
       "options": [
         "Le film dont",
         "Le film que",
@@ -18796,8 +18796,8 @@
       "sub": "relative_pronouns",
       "level": 4,
       "pattern": "relatif-lequel",
-      "cue_type": "situation_fr",
-      "cue": "Tu exposes un principe de fonctionnement.",
+      "cue_type": "gap_fr",
+      "cue": "C'est le principe ___ tout fonctionne.",
       "options": [
         "selon lequel",
         "selon qui",
@@ -18850,13 +18850,13 @@
       "sub": "prepositions",
       "level": 3,
       "pattern": "prep-a-ville",
-      "cue_type": "intent_en",
-      "cue": "Say: « I've lived in Marseille for three years. »",
+      "cue_type": "gap_fr",
+      "cue": "J'habite ___ Marseille depuis trois ans.",
       "options": [
-        "J'habite à",
-        "J'habite en",
-        "J'habite dans",
-        "J'habite au"
+        "à",
+        "en",
+        "dans",
+        "au"
       ],
       "correct_index": 0,
       "explanation": "« À + ville » (préposition fixe). « Depuis + durée » pour action qui continue.",
@@ -18868,13 +18868,13 @@
       "sub": "prepositions",
       "level": 3,
       "pattern": "prep-a-ville",
-      "cue_type": "situation_fr",
-      "cue": "Tu expliques où tu travailles.",
+      "cue_type": "gap_fr",
+      "cue": "Je bosse ___ Paris.",
       "options": [
-        "Je bosse à",
-        "Je bosse au",
-        "Je bosse en",
-        "Je bosse dans"
+        "à",
+        "au",
+        "en",
+        "dans"
       ],
       "correct_index": 0,
       "explanation": "« À + ville » même si article intégré (« La Haye »). Préposition « à ».",
@@ -18886,13 +18886,13 @@
       "sub": "prepositions",
       "level": 3,
       "pattern": "prep-a-ville",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu pars à Rome demain.",
+      "cue_type": "gap_fr",
+      "cue": "Je pars ___ Rome demain.",
       "options": [
-        "Je pars à",
-        "Je pars en",
-        "Je pars au",
-        "Je pars dans"
+        "à",
+        "en",
+        "au",
+        "dans"
       ],
       "correct_index": 0,
       "explanation": "« À + ville » pour la destination. « En » s'emploie pour les pays/régions, pas les villes.",
@@ -18904,13 +18904,13 @@
       "sub": "prepositions",
       "level": 3,
       "pattern": "prep-a-ville",
-      "cue_type": "intent_en",
-      "cue": "Say: « She was born in Casablanca. »",
+      "cue_type": "gap_fr",
+      "cue": "Elle est née ___ Casablanca.",
       "options": [
-        "Elle est née à",
-        "Elle est née en",
-        "Elle est née dans",
-        "Elle est née au"
+        "à",
+        "en",
+        "dans",
+        "au"
       ],
       "correct_index": 0,
       "explanation": "« À + ville » même pour une naissance. « En » réservé aux pays/régions.",
@@ -18940,13 +18940,13 @@
       "sub": "prepositions",
       "level": 1,
       "pattern": "prep-en-pays-feminin",
-      "cue_type": "situation_fr",
-      "cue": "Tu annonces où tu pars en vacances.",
+      "cue_type": "gap_fr",
+      "cue": "Je pars ___ France cet été.",
       "options": [
-        "Je pars en",
-        "Je pars à",
-        "Je pars dans",
-        "Je pars au"
+        "en",
+        "à",
+        "dans",
+        "au"
       ],
       "correct_index": 0,
       "explanation": "« En + pays fém. » : « Italie » finit par -e (féminin).",
@@ -19048,13 +19048,13 @@
       "sub": "prepositions",
       "level": 1,
       "pattern": "prep-de-origine",
-      "cue_type": "intent_en",
-      "cue": "Say: « He's from Portugal. »",
+      "cue_type": "gap_fr",
+      "cue": "Il vient ___ Portugal.",
       "options": [
-        "Il vient du",
-        "Il vient de",
-        "Il vient de le",
-        "Il vient en"
+        "du",
+        "de",
+        "de le",
+        "en"
       ],
       "correct_index": 0,
       "explanation": "« Portugal » masc. → « du Portugal » (de + le contracté).",
@@ -19084,13 +19084,13 @@
       "sub": "prepositions",
       "level": 2,
       "pattern": "prep-de-origine",
-      "cue_type": "situation_fr",
-      "cue": "Tu décris la provenance d'un colis.",
+      "cue_type": "gap_fr",
+      "cue": "J'ai reçu une lettre ___ États-Unis.",
       "options": [
-        "J'ai reçu une lettre des",
-        "J'ai reçu une lettre de",
-        "J'ai reçu une lettre du",
-        "J'ai reçu une lettre en"
+        "des",
+        "de",
+        "du",
+        "en"
       ],
       "correct_index": 0,
       "explanation": "« Des » = de + les (pays pluriels : États-Unis, Pays-Bas, Philippines).",
@@ -19102,13 +19102,13 @@
       "sub": "prepositions",
       "level": 2,
       "pattern": "prep-de-origine",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que ce vin (venir) de Californie.",
+      "cue_type": "gap_fr",
+      "cue": "Ce vin vient ___ Californie.",
       "options": [
-        "Ce vin vient de",
-        "Ce vin vient du",
-        "Ce vin vient en",
-        "Ce vin vient de la"
+        "de",
+        "du",
+        "en",
+        "de la"
       ],
       "correct_index": 0,
       "explanation": "« Californie » = région fém. → « de » seul (sans article) avec les régions/pays féminins.",
@@ -19138,13 +19138,13 @@
       "sub": "prepositions",
       "level": 3,
       "pattern": "prep-de-origine",
-      "cue_type": "intent_en",
-      "cue": "Say: « I've just come back from the Netherlands. »",
+      "cue_type": "gap_fr",
+      "cue": "Je reviens ___ Pays-Bas.",
       "options": [
-        "Je reviens des",
-        "Je reviens de",
-        "Je reviens du",
-        "Je reviens à les"
+        "des",
+        "de",
+        "du",
+        "à les"
       ],
       "correct_index": 0,
       "explanation": "« Pays-Bas » pluriel → « des » (de + les contracté).",
@@ -19156,13 +19156,13 @@
       "sub": "prepositions",
       "level": 3,
       "pattern": "prep-de-origine",
-      "cue_type": "situation_fr",
-      "cue": "Tu expliques l'origine d'un collègue.",
+      "cue_type": "gap_fr",
+      "cue": "Il est originaire ___ Lyon.",
       "options": [
-        "Il est originaire de",
-        "Il est originaire du",
-        "Il est originaire en",
-        "Il est originaire à"
+        "de",
+        "du",
+        "en",
+        "à"
       ],
       "correct_index": 0,
       "explanation": "« Originaire de + pays fém. » (sans article, comme « je viens de Belgique »).",
@@ -19192,13 +19192,13 @@
       "sub": "prepositions",
       "level": 3,
       "pattern": "prep-de-origine",
-      "cue_type": "intent_en",
-      "cue": "Say: « This tradition comes from rural Brittany. »",
+      "cue_type": "gap_fr",
+      "cue": "Cette tradition vient ___ Bretagne rurale.",
       "options": [
-        "Cette tradition vient de la",
-        "Cette tradition vient du la",
-        "Cette tradition vient de",
-        "Cette tradition vient en la"
+        "de la",
+        "du la",
+        "de",
+        "en la"
       ],
       "correct_index": 0,
       "explanation": "Ajout d'un adjectif (« rurale ») force l'article : « de la Bretagne rurale » (pas « de Bretagne »).",
@@ -19210,13 +19210,13 @@
       "sub": "prepositions",
       "level": 5,
       "pattern": "verbe-prep-a-inf",
-      "cue_type": "intent_en",
-      "cue": "Say: « He excels at persuading people. »",
+      "cue_type": "gap_fr",
+      "cue": "Il excelle ___ persuader les gens.",
       "options": [
-        "Il excelle à",
-        "Il excelle de",
-        "Il excelle en",
-        "Il excelle pour"
+        "à",
+        "de",
+        "en",
+        "pour"
       ],
       "correct_index": 0,
       "explanation": "« Exceller à + infinitif » (préposition « à » fixe). Verbe de compétence.",
@@ -19228,13 +19228,13 @@
       "sub": "prepositions",
       "level": 5,
       "pattern": "verbe-prep-a-inf",
-      "cue_type": "situation_fr",
-      "cue": "Quelqu'un qui persévère dans sa position.",
+      "cue_type": "gap_fr",
+      "cue": "Il ___ défendre son point de vue.",
       "options": [
-        "Il s'obstine à",
-        "Il s'obstine de",
-        "Il s'obstine en",
-        "Il obstine à"
+        "s'obstine à",
+        "s'obstine de",
+        "s'obstine en",
+        "obstine à"
       ],
       "correct_index": 0,
       "explanation": "« S'obstiner à + inf » (pronominal + préposition « à »). Verbe de persévérance.",
@@ -19264,13 +19264,13 @@
       "sub": "prepositions",
       "level": 5,
       "pattern": "verbe-prep-a-inf",
-      "cue_type": "intent_en",
-      "cue": "Say: « He was reduced to begging in the street. »",
+      "cue_type": "gap_fr",
+      "cue": "Il a été réduit ___ mendier dans la rue.",
       "options": [
-        "Il a été réduit à",
-        "Il a été réduit de",
-        "Il était réduit en",
-        "Il a été réduit pour"
+        "à",
+        "de",
+        "en",
+        "pour"
       ],
       "correct_index": 0,
       "explanation": "« Être réduit à + inf » = forced to (passif + préposition « à »). Construction littéraire/formelle.",
@@ -19300,13 +19300,13 @@
       "sub": "prepositions",
       "level": 5,
       "pattern": "verbe-prep-de-inf",
-      "cue_type": "situation_fr",
-      "cue": "Tu exposes un principe professionnel.",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ commenter les décisions de la direction.",
       "options": [
-        "Je m'abstiens de",
-        "Je m'abstiens à",
-        "J'abstiens de",
-        "Je m'abstiens pour"
+        "m'abstiens de",
+        "m'abstiens à",
+        "abstiens de",
+        "m'abstiens pour"
       ],
       "correct_index": 0,
       "explanation": "« S'abstenir de + inf » (pronominal + « de »). Registre formel.",
@@ -19354,13 +19354,13 @@
       "sub": "complex_sentences",
       "level": 2,
       "pattern": "reported-present",
-      "cue_type": "intent_en",
-      "cue": "Say: « He says that he's tired. »",
+      "cue_type": "gap_fr",
+      "cue": "Il dit ___ est fatigué.",
       "options": [
-        "Il dit qu'il",
-        "Il dit que il",
-        "Il dit qui",
-        "Il dit que"
+        "qu'il",
+        "que il",
+        "qui",
+        "que"
       ],
       "correct_index": 0,
       "explanation": "« Que » + élision « qu'il » (devant voyelle). Discours rapporté au présent.",
@@ -19498,8 +19498,8 @@
       "sub": "complex_sentences",
       "level": 3,
       "pattern": "reported-passe",
-      "cue_type": "situation_fr",
-      "cue": "Tu rapportes une conversation ancienne.",
+      "cue_type": "gap_fr",
+      "cue": "___ tout préparé à l'avance.",
       "options": [
         "Elle a raconté qu'elle avait",
         "Elle a raconté qu'elle a",
@@ -19606,13 +19606,13 @@
       "sub": "complex_sentences",
       "level": 2,
       "pattern": "si-type1",
-      "cue_type": "intent_en",
-      "cue": "Say: « If it rains, we'll stay home. »",
+      "cue_type": "gap_fr",
+      "cue": "___ pleut, on restera à la maison.",
       "options": [
-        "S'il pleut, on restera",
-        "Si il pleut, on restera",
-        "S'il pleuvra, on restera",
-        "S'il pleut, on resterait"
+        "S'il",
+        "Si il",
+        "S'il va",
+        "Quand il"
       ],
       "correct_index": 0,
       "explanation": "Si-type 1 : « si + présent, futur simple ». Élision « s'il » (devant il) obligatoire.",
@@ -19642,13 +19642,13 @@
       "sub": "complex_sentences",
       "level": 2,
       "pattern": "si-type1",
-      "cue_type": "micro_intent_fr",
-      "cue": "Proposer à faire à manger si quelqu'un a faim.",
+      "cue_type": "gap_fr",
+      "cue": "___ faim, je fais quelque chose.",
       "options": [
-        "Si tu as faim, je fais",
-        "Si tu auras faim, je fais",
-        "Si tu as faim, je ferais",
-        "Si tu as faim, je fait"
+        "Si tu as",
+        "Si tu auras",
+        "Si tu avais",
+        "Si tu aies"
       ],
       "correct_index": 0,
       "explanation": "« Si + présent, présent » pour une promesse immédiate. Conjugaison « je fais » (1re pers.).",
@@ -19660,13 +19660,13 @@
       "sub": "complex_sentences",
       "level": 2,
       "pattern": "si-type1",
-      "cue_type": "intent_en",
-      "cue": "Say: « If he calls, tell him I'm busy. »",
+      "cue_type": "gap_fr",
+      "cue": "S'il appelle, ___ que je suis occupé.",
       "options": [
-        "S'il appelle, dis-lui",
-        "Si il appelle, dis-lui",
-        "S'il appellera, dis-lui",
-        "S'il appelle, dis-le"
+        "dis-lui",
+        "dis-le",
+        "dites-lui",
+        "lui dire"
       ],
       "correct_index": 0,
       "explanation": "« Si + présent, impératif ». « Dis-lui » (COI pour une personne, pas « dis-le »).",
@@ -19696,8 +19696,8 @@
       "sub": "complex_sentences",
       "level": 4,
       "pattern": "si-type1",
-      "cue_type": "situation_fr",
-      "cue": "Tu préviens une collègue de filtrer les appels.",
+      "cue_type": "gap_fr",
+      "cue": "S'il ___ je suis en réunion.",
       "options": [
         "appelle, dis-lui que",
         "appellera, dis-lui que",
@@ -19732,13 +19732,13 @@
       "sub": "complex_sentences",
       "level": 4,
       "pattern": "si-type1",
-      "cue_type": "intent_en",
-      "cue": "Say: « If the weather's nice, we'll have a picnic. »",
+      "cue_type": "gap_fr",
+      "cue": "___ fait beau, on fera un pique-nique.",
       "options": [
-        "S'il fait beau, on fera",
-        "Si il fait beau, on fera",
-        "S'il fera beau, on fera",
-        "S'il fait beau, on ferait"
+        "S'il",
+        "Si il",
+        "S'il va faire",
+        "Quand il"
       ],
       "correct_index": 0,
       "explanation": "« Si + présent, futur ». Élision « s'il ». « Faire beau » = impersonnel météo.",
@@ -19807,10 +19807,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu rêves à voix haute.",
       "options": [
-        "Si j'étais riche, je ferais",
-        "Si j'étais riche, je fais",
-        "Si je serais riche, je ferais",
-        "Si j'étais riche, je ferai"
+        "Si j'étais riche, je ferais.",
+        "Si j'étais riche, je fais.",
+        "Si je serais riche, je ferais.",
+        "Si j'étais riche, je ferai."
       ],
       "correct_index": 0,
       "explanation": "Imparfait dans la subordonnée + conditionnel présent dans la principale. Pas de conditionnel après « si ».",
@@ -19825,10 +19825,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Formuler un regret hypothétique.",
       "options": [
-        "Si je pouvais, je le ferais",
-        "Si je pourrais, je le ferais",
-        "Si je pouvais, je le ferai",
-        "Si je peux, je le ferais"
+        "Si je pouvais, je le ferais.",
+        "Si je pourrais, je le ferais.",
+        "Si je pouvais, je le ferai.",
+        "Si je peux, je le ferais."
       ],
       "correct_index": 0,
       "explanation": "Imparfait + conditionnel. Jamais « si » + conditionnel (erreur courante à éviter).",
@@ -19894,8 +19894,8 @@
       "sub": "past_tenses",
       "level": 5,
       "pattern": "pc-avoir",
-      "cue_type": "micro_intent_fr",
-      "cue": "Rapporter que tu as fait une découverte.",
+      "cue_type": "gap_fr",
+      "cue": "___ une découverte intéressante.",
       "options": [
         "J'ai fait",
         "J'ai faite",
@@ -19912,13 +19912,13 @@
       "sub": "past_tenses",
       "level": 5,
       "pattern": "pc-avoir",
-      "cue_type": "intent_en",
-      "cue": "Say: « The committee has unanimously adopted the proposal. »",
+      "cue_type": "gap_fr",
+      "cue": "Le comité a adopté la proposition ___ l'unanimité.",
       "options": [
-        "a adopté la proposition à",
-        "a adoptée la proposition à",
-        "a adopté la proposition par",
-        "ont adopté la proposition à"
+        "à",
+        "par",
+        "en",
+        "de"
       ],
       "correct_index": 0,
       "explanation": "PC avec « avoir » + COD après = pas d'accord. « À l'unanimité » (préposition fixe).",
@@ -19930,13 +19930,13 @@
       "sub": "past_tenses",
       "level": 5,
       "pattern": "pc-etre-accord",
-      "cue_type": "intent_en",
-      "cue": "Say: « They arrived late, as expected. »",
+      "cue_type": "gap_fr",
+      "cue": "Ils ___ tard, comme prévu.",
       "options": [
-        "Ils sont arrivés",
-        "Ils ont arrivé",
-        "Ils sont arrivé",
-        "Ils sont arrivée"
+        "sont arrivés",
+        "ont arrivé",
+        "sont arrivé",
+        "sont arrivée"
       ],
       "correct_index": 0,
       "explanation": "« Arriver » prend « être » + accord masc. pluriel « arrivés ».",
@@ -19969,10 +19969,10 @@
       "cue_type": "micro_intent_fr",
       "cue": "Dire que tu es rentré tard hier soir.",
       "options": [
-        "Je suis rentré tard",
-        "J'ai rentré tard",
-        "Je suis rentré en tard",
-        "Je suis rentr"
+        "Je suis rentré tard hier soir.",
+        "J'ai rentré tard hier soir.",
+        "Je suis rentré en tard hier soir.",
+        "Je suis rentré à tard hier soir."
       ],
       "correct_index": 0,
       "explanation": "« Rentrer » intransitif → aux. « être » + accord avec sujet. « Tard » (adverbe, sans préposition).",
@@ -20020,8 +20020,8 @@
       "sub": "past_tenses",
       "level": 5,
       "pattern": "plus-que-parfait",
-      "cue_type": "situation_fr",
-      "cue": "Tu expliques pourquoi tu étais surpris.",
+      "cue_type": "gap_fr",
+      "cue": "___ rendu sa démission.",
       "options": [
         "J'ignorais qu'il avait",
         "J'ignorais qu'il a",
@@ -20095,10 +20095,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu regrettes une décision passée.",
       "options": [
-        "J'aurais dû accepter",
-        "J'avais dû accepter",
-        "J'aurais du accepter",
-        "J'aurais dû accepté"
+        "J'aurais dû accepter.",
+        "J'avais dû accepter.",
+        "J'aurais du accepter.",
+        "J'aurais dû accepté."
       ],
       "correct_index": 0,
       "explanation": "« Aurais dû + infinitif » = regret formulé (should have). « Dû » avec circonflexe.",
@@ -20110,8 +20110,8 @@
       "sub": "future_conditional",
       "level": 5,
       "pattern": "conditionnel-passe",
-      "cue_type": "micro_intent_fr",
-      "cue": "Faire un reproche atténué (tu aurais pu...).",
+      "cue_type": "gap_fr",
+      "cue": "___ prévenir !",
       "options": [
         "Tu aurais pu",
         "Tu aurais peut",
@@ -20128,13 +20128,13 @@
       "sub": "future_conditional",
       "level": 5,
       "pattern": "conditionnel-passe",
-      "cue_type": "intent_en",
-      "cue": "Say: « He would have been happier elsewhere. »",
+      "cue_type": "gap_fr",
+      "cue": "Il ___ plus heureux ailleurs.",
       "options": [
-        "Il aurait été plus heureux",
-        "Il serait été plus heureux",
-        "Il aurait était plus heureux",
-        "Il aurait été plus heureuse"
+        "aurait été",
+        "serait été",
+        "aurait était",
+        "aurait eu"
       ],
       "correct_index": 0,
       "explanation": "Conditionnel passé : aux. « avoir » (pas « être ») + « été ». Accord masc. sing.",
@@ -20218,8 +20218,8 @@
       "sub": "pronouns_personal",
       "level": 5,
       "pattern": "pronom-cod",
-      "cue_type": "intent_en",
-      "cue": "Say: « Having seen it myself, I can confirm. »",
+      "cue_type": "gap_fr",
+      "cue": "___ moi-même, je peux confirmer.",
       "options": [
         "L'ayant vu",
         "En ayant vu",
@@ -20311,10 +20311,10 @@
       "cue_type": "situation_fr",
       "cue": "Tu racontes que tu as écrit à ta sœur.",
       "options": [
-        "Je lui ai écrit",
-        "Je la ai écrit",
-        "Je ai écrit lui",
-        "J'ai écrit lui"
+        "Je lui ai écrit.",
+        "Je la ai écrit.",
+        "Je ai écrit lui.",
+        "J'ai écrit lui."
       ],
       "correct_index": 0,
       "explanation": "« Écrire à + personne » → COI « lui ». Pronom antéposé à l'auxiliaire.",
@@ -20344,13 +20344,13 @@
       "sub": "pronouns_personal",
       "level": 3,
       "pattern": "pronom-coi",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm going to ask him a question. »",
+      "cue_type": "gap_fr",
+      "cue": "Je vais ___ une question.",
       "options": [
-        "Je vais lui poser",
-        "Je vais le poser",
-        "Je vais poser lui",
-        "Je vais lui demander"
+        "lui poser",
+        "le poser",
+        "poser lui",
+        "lui demander"
       ],
       "correct_index": 0,
       "explanation": "« Poser une question à + personne » → COI « lui ». « Poser » (pas « demander ») avec « question ».",
@@ -20380,8 +20380,8 @@
       "sub": "pronouns_personal",
       "level": 4,
       "pattern": "pronom-en",
-      "cue_type": "situation_fr",
-      "cue": "Tu parles de ton rapport à la musique.",
+      "cue_type": "gap_fr",
+      "cue": "___ tous les jours.",
       "options": [
         "J'en écoute",
         "Je en écoute",
@@ -20470,8 +20470,8 @@
       "sub": "articles_determiners",
       "level": 5,
       "pattern": "possessif-demonstratif",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire « les siens sont partis ».",
+      "cue_type": "gap_fr",
+      "cue": "___ sont partis.",
       "options": [
         "Les siens",
         "Les sien",
@@ -20524,8 +20524,8 @@
       "sub": "admin_bureaucracy",
       "level": 5,
       "pattern": "impots-taxes",
-      "cue_type": "situation_fr",
-      "cue": "La politique fiscale à un ami.",
+      "cue_type": "gap_fr",
+      "cue": "La pression fiscale ___ les ménages.",
       "options": [
         "pèse lourdement sur",
         "pèse lourde sur",
@@ -20542,13 +20542,13 @@
       "sub": "admin_bureaucracy",
       "level": 5,
       "pattern": "impots-taxes",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tes impôts sont prélevés à la source.",
+      "cue_type": "gap_fr",
+      "cue": "Mes impôts sont prélevés ___ la source.",
       "options": [
-        "Mes impôts sont prélevés à",
-        "Mes impôts sont prélevés sur",
-        "Mes impôts sont prélevés en",
-        "Mes impôts sont prélevés dans"
+        "à",
+        "sur",
+        "en",
+        "dans"
       ],
       "correct_index": 0,
       "explanation": "« Prélèvement à la source » = système fiscal français depuis 2019. Préposition « à » figée.",
@@ -20632,13 +20632,13 @@
       "sub": "admin_bureaucracy",
       "level": 5,
       "pattern": "papiers-identite",
-      "cue_type": "intent_en",
-      "cue": "Say: « I've begun the naturalization proceedings. »",
+      "cue_type": "gap_fr",
+      "cue": "J'ai entamé les démarches ___ naturalisation.",
       "options": [
-        "J'ai entamé les démarches de",
-        "J'ai entammé les démarches de",
-        "J'ai entamé les démarches à la",
-        "J'ai entamé les démarches pour"
+        "de",
+        "à la",
+        "pour la",
+        "pour"
       ],
       "correct_index": 0,
       "explanation": "« Entamer des démarches » = to begin proceedings (collocation formelle). « De naturalisation » (préposition figée).",
@@ -20704,13 +20704,13 @@
       "sub": "emotions_social",
       "level": 5,
       "pattern": "amitie-amour",
-      "cue_type": "intent_en",
-      "cue": "Say: « He cheated on her with her best friend. »",
+      "cue_type": "gap_fr",
+      "cue": "Il ___ avec sa meilleure amie.",
       "options": [
-        "Il l'a trompée",
-        "Il l'a trompé",
-        "Il a trompé elle",
-        "Il la trompée"
+        "l'a trompée",
+        "l'a trompé",
+        "a trompé elle",
+        "la trompée"
       ],
       "correct_index": 0,
       "explanation": "« Tromper quelqu'un avec » = to cheat on with. Accord PC avec COD fém. antéposé « trompée ».",
@@ -20740,8 +20740,8 @@
       "sub": "emotions_social",
       "level": 5,
       "pattern": "conflits-excuses",
-      "cue_type": "situation_fr",
-      "cue": "Tu présentes des excuses publiques (très formel).",
+      "cue_type": "gap_fr",
+      "cue": "___ vouloir m'excuser.",
       "options": [
         "Je vous prie de bien",
         "Je vous prie de",
@@ -20776,13 +20776,13 @@
       "sub": "emotions_social",
       "level": 5,
       "pattern": "conflits-excuses",
-      "cue_type": "intent_en",
-      "cue": "Say: « She holds a grudge against him. »",
+      "cue_type": "gap_fr",
+      "cue": "Elle ___ encore.",
       "options": [
-        "Elle lui en veut",
-        "Elle lui en veux",
-        "Elle le en veut",
-        "Elle en lui veut"
+        "lui en veut",
+        "lui en veux",
+        "le en veut",
+        "en lui veut"
       ],
       "correct_index": 0,
       "explanation": "« En vouloir à quelqu'un » = idiome (to hold a grudge). Ordre : COI « lui » + « en » + verbe 3e pers.",
@@ -20830,8 +20830,8 @@
       "sub": "food_cooking",
       "level": 5,
       "pattern": "au-restaurant",
-      "cue_type": "micro_intent_fr",
-      "cue": "Commander le menu dégustation.",
+      "cue_type": "gap_fr",
+      "cue": "___ dégustation.",
       "options": [
         "Je prendrai le menu",
         "Je prendrais le menu",
@@ -20866,8 +20866,8 @@
       "sub": "food_cooking",
       "level": 5,
       "pattern": "plats-typiques",
-      "cue_type": "intent_en",
-      "cue": "Say: « This dish is a must of Lyon cuisine. »",
+      "cue_type": "gap_fr",
+      "cue": "Ce plat est ___ la cuisine lyonnaise.",
       "options": [
         "un incontournable de",
         "un incontournable pour",
@@ -20884,8 +20884,8 @@
       "sub": "food_cooking",
       "level": 5,
       "pattern": "plats-typiques",
-      "cue_type": "situation_fr",
-      "cue": "La tradition d'un plat ancien.",
+      "cue_type": "gap_fr",
+      "cue": "Cette recette ___ génération.",
       "options": [
         "se transmet de génération en",
         "se transmet de génération à",
@@ -20992,13 +20992,13 @@
       "sub": "health_body",
       "level": 5,
       "pattern": "symptomes-maladies",
-      "cue_type": "intent_en",
-      "cue": "Say: « She suffers from a chronic illness. »",
+      "cue_type": "gap_fr",
+      "cue": "Elle souffre ___ maladie chronique.",
       "options": [
-        "Elle souffre d'une",
-        "Elle souffre d'un",
-        "Elle souffre de",
-        "Elle souffre à une"
+        "d'une",
+        "d'un",
+        "de",
+        "à une"
       ],
       "correct_index": 0,
       "explanation": "« Souffrir de + maladie » (préposition « de » fixe). « Maladie » fém. → « d'une ».",
@@ -21028,8 +21028,8 @@
       "sub": "health_body",
       "level": 5,
       "pattern": "medecin-visite",
-      "cue_type": "situation_fr",
-      "cue": "Tu cites les instructions post-opératoires.",
+      "cue_type": "gap_fr",
+      "cue": "Il faut observer ___ quinze jours.",
       "options": [
         "un repos strict pendant",
         "un repos stricte pendant",
@@ -21082,8 +21082,8 @@
       "sub": "health_body",
       "level": 5,
       "pattern": "bien-etre",
-      "cue_type": "intent_en",
-      "cue": "Say: « Mindfulness helps reduce stress. »",
+      "cue_type": "gap_fr",
+      "cue": "La pleine conscience ___ réduire le stress.",
       "options": [
         "aide à",
         "aide de",
@@ -21100,8 +21100,8 @@
       "sub": "health_body",
       "level": 5,
       "pattern": "bien-etre",
-      "cue_type": "situation_fr",
-      "cue": "Tu décris ta philosophie de vie.",
+      "cue_type": "gap_fr",
+      "cue": "___ quotidien.",
       "options": [
         "Je cultive le bien-être au",
         "Je cultive le bien-être en",
@@ -21172,8 +21172,8 @@
       "sub": "travel_transport",
       "level": 5,
       "pattern": "accidents-retards",
-      "cue_type": "situation_fr",
-      "cue": "Une catastrophe de transport dans un bulletin.",
+      "cue_type": "gap_fr",
+      "cue": "___ plusieurs victimes.",
       "options": [
         "Le bilan provisoire fait état de",
         "Le bilan provisoire fait état à",
@@ -21244,8 +21244,8 @@
       "sub": "present_conjugation",
       "level": 1,
       "pattern": "present-er-regular",
-      "cue_type": "situation_fr",
-      "cue": "Tu annonces tes projets pour la soirée.",
+      "cue_type": "gap_fr",
+      "cue": "___ un film ce soir.",
       "options": [
         "Je regarde",
         "Je regarder",
@@ -21262,8 +21262,8 @@
       "sub": "present_conjugation",
       "level": 1,
       "pattern": "present-er-regular",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu (parler) français.",
+      "cue_type": "gap_fr",
+      "cue": "___ français.",
       "options": [
         "Je parle",
         "Je parler",
@@ -21280,13 +21280,13 @@
       "sub": "present_conjugation",
       "level": 1,
       "pattern": "present-er-regular",
-      "cue_type": "intent_en",
-      "cue": "Say: « We eat together on Sundays. »",
+      "cue_type": "gap_fr",
+      "cue": "Nous ___ ensemble le dimanche.",
       "options": [
-        "Nous mangeons",
-        "Nous mangons",
-        "Nous mangent",
-        "Nous mange"
+        "mangeons",
+        "mangons",
+        "mangent",
+        "mange"
       ],
       "correct_index": 0,
       "explanation": "Verbes -ger : -ons → -geons (garder le g doux). « Le dimanche » = habitude hebdomadaire.",
@@ -21298,13 +21298,13 @@
       "sub": "present_conjugation",
       "level": 3,
       "pattern": "present-er-regular",
-      "cue_type": "intent_en",
-      "cue": "Say: « We employ 50 people at our firm. »",
+      "cue_type": "gap_fr",
+      "cue": "Nous ___ 50 personnes dans notre entreprise.",
       "options": [
-        "Nous employons 50 personnes dans",
-        "Nous employons 50 personnes en",
-        "Nous employe 50 personnes dans",
-        "Nous employez 50 personnes dans"
+        "employons",
+        "employe",
+        "employez",
+        "employer"
       ],
       "correct_index": 0,
       "explanation": "« Employer » -yer → -yons (1re pers. pluriel). « Dans + entreprise » (préposition de lieu).",
@@ -21316,8 +21316,8 @@
       "sub": "present_conjugation",
       "level": 3,
       "pattern": "present-er-regular",
-      "cue_type": "situation_fr",
-      "cue": "Ton rythme de travail hybride.",
+      "cue_type": "gap_fr",
+      "cue": "___ deux jours par semaine.",
       "options": [
         "Je télétravaille",
         "Je télétravailler",
@@ -21352,13 +21352,13 @@
       "sub": "present_conjugation",
       "level": 3,
       "pattern": "present-er-regular",
-      "cue_type": "intent_en",
-      "cue": "Say: « They celebrate their anniversary every year. »",
+      "cue_type": "gap_fr",
+      "cue": "Ils ___ leur anniversaire de mariage chaque année.",
       "options": [
-        "Ils célèbrent",
-        "Ils célébrent",
-        "Ils célèbre",
-        "Ils célèbrer"
+        "célèbrent",
+        "célébrent",
+        "célèbre",
+        "célèbrer"
       ],
       "correct_index": 0,
       "explanation": "« Célébrer » : é → è devant consonne + e muet (1,2,3,6 pers.). 3e pers. pluriel « célèbrent ».",
@@ -21388,8 +21388,8 @@
       "sub": "present_conjugation",
       "level": 4,
       "pattern": "present-re-regular",
-      "cue_type": "situation_fr",
-      "cue": "Un collègue que tu restitues un dossier.",
+      "cue_type": "gap_fr",
+      "cue": "___ le dossier maintenant.",
       "options": [
         "Je rends",
         "Je rend",
@@ -21406,8 +21406,8 @@
       "sub": "present_conjugation",
       "level": 4,
       "pattern": "present-re-regular",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu (attendre) une réponse.",
+      "cue_type": "gap_fr",
+      "cue": "___ une réponse.",
       "options": [
         "J'attends",
         "J'attend",
@@ -21424,13 +21424,13 @@
       "sub": "present_conjugation",
       "level": 4,
       "pattern": "present-re-regular",
-      "cue_type": "intent_en",
-      "cue": "Say: « We defend our rights. »",
+      "cue_type": "gap_fr",
+      "cue": "Nous ___ nos droits.",
       "options": [
-        "Nous défendons",
-        "Nous défend",
-        "Nous défendent",
-        "Nous défendons à"
+        "défendons",
+        "défend",
+        "défendent",
+        "défendons à"
       ],
       "correct_index": 0,
       "explanation": "« Défendre » 1re pers. pluriel : radical « défend » + -ons = « défendons ». Transitif direct.",
@@ -21442,13 +21442,13 @@
       "sub": "present_conjugation",
       "level": 4,
       "pattern": "present-pronominal",
-      "cue_type": "intent_en",
-      "cue": "Say: « I'm worried about my father's health. »",
+      "cue_type": "gap_fr",
+      "cue": "Je ___ de la santé de mon père.",
       "options": [
-        "Je m'inquiète",
-        "Je inquiète",
-        "Je m'inquiètes",
-        "Je me inquiète"
+        "m'inquiète",
+        "inquiète",
+        "m'inquiètes",
+        "me inquiète"
       ],
       "correct_index": 0,
       "explanation": "« S'inquiéter » (pronominal). Élision « m' ». 1re pers. : -e.",
@@ -21460,8 +21460,8 @@
       "sub": "present_conjugation",
       "level": 4,
       "pattern": "present-pronominal",
-      "cue_type": "situation_fr",
-      "cue": "Comment tu décompresses après le travail.",
+      "cue_type": "gap_fr",
+      "cue": "___ en regardant une série.",
       "options": [
         "Je me détends",
         "Je détends",
@@ -21496,13 +21496,13 @@
       "sub": "present_conjugation",
       "level": 4,
       "pattern": "present-pronominal",
-      "cue_type": "intent_en",
-      "cue": "Say: « They remember their first trip. »",
+      "cue_type": "gap_fr",
+      "cue": "Ils ___ leur premier voyage.",
       "options": [
-        "Ils se souviennent de",
-        "Ils souviennent de",
-        "Ils se souviennent",
-        "Ils se souviens de"
+        "se souviennent de",
+        "souviennent de",
+        "se souviennent",
+        "se souviens de"
       ],
       "correct_index": 0,
       "explanation": "« Se souvenir de + nom » (pronominal + préposition « de »). 3e pers. pluriel « souviennent ».",
@@ -21550,13 +21550,13 @@
       "sub": "articles_determiners",
       "level": 1,
       "pattern": "article-defini",
-      "cue_type": "intent_en",
-      "cue": "Say: « Children love chocolate. »",
+      "cue_type": "gap_fr",
+      "cue": "Les enfants aiment ___ chocolat.",
       "options": [
-        "Les enfants aiment le",
-        "Des enfants aiment le",
-        "Enfants aiment le",
-        "Les enfants aiment du"
+        "le",
+        "du",
+        "des",
+        "un"
       ],
       "correct_index": 0,
       "explanation": "Double généralisation : « les enfants » (tous) + « le chocolat » (en général).",
@@ -21640,13 +21640,13 @@
       "sub": "articles_determiners",
       "level": 1,
       "pattern": "article-indefini",
-      "cue_type": "situation_fr",
-      "cue": "Tu commandes à la boulangerie.",
+      "cue_type": "gap_fr",
+      "cue": "Je voudrais ___ baguette, s'il vous plaît.",
       "options": [
-        "Je voudrais une",
-        "Je voudrais la",
-        "Je voudrais",
-        "Je voudrais de"
+        "une",
+        "la",
+        "de",
+        "des"
       ],
       "correct_index": 0,
       "explanation": "Article indéfini « une » pour un élément non spécifié. « Baguette » fém.",
@@ -21676,8 +21676,8 @@
       "sub": "articles_determiners",
       "level": 2,
       "pattern": "article-indefini",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'il y a une boulangerie dans ta rue.",
+      "cue_type": "gap_fr",
+      "cue": "___ boulangerie dans ma rue.",
       "options": [
         "Il y a une",
         "Il y a",
@@ -21730,8 +21730,8 @@
       "sub": "daily_life",
       "level": 2,
       "pattern": "transports-quotidiens",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire que tu (prendre) le bus tous les jours.",
+      "cue_type": "gap_fr",
+      "cue": "___ bus tous les jours.",
       "options": [
         "Je prends le",
         "Je prends",
@@ -21784,13 +21784,13 @@
       "sub": "daily_life",
       "level": 3,
       "pattern": "transports-quotidiens",
-      "cue_type": "intent_en",
-      "cue": "Say: « I missed the last train. »",
+      "cue_type": "gap_fr",
+      "cue": "J'ai ___ le dernier train.",
       "options": [
-        "J'ai raté",
-        "J'ai ratté",
-        "J'ai raté à",
-        "J'ai perdu"
+        "raté",
+        "ratté",
+        "raté à",
+        "perdu"
       ],
       "correct_index": 0,
       "explanation": "« Rater un train » (transitif direct). « Perdre » ne s'emploie pas pour rater un transport.",
@@ -21802,8 +21802,8 @@
       "sub": "daily_life",
       "level": 3,
       "pattern": "transports-quotidiens",
-      "cue_type": "situation_fr",
-      "cue": "Comment tu rentres tard de soirée.",
+      "cue_type": "gap_fr",
+      "cue": "Je rentre ___ roulent plus.",
       "options": [
         "en Uber parce que les métros ne",
         "avec Uber parce que les métros ne",
@@ -21820,8 +21820,8 @@
       "sub": "daily_life",
       "level": 3,
       "pattern": "transports-quotidiens",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'il y a des embouteillages.",
+      "cue_type": "gap_fr",
+      "cue": "___ embouteillages.",
       "options": [
         "Il y a des",
         "Il y a de",
@@ -21856,8 +21856,8 @@
       "sub": "daily_life",
       "level": 4,
       "pattern": "transports-quotidiens",
-      "cue_type": "situation_fr",
-      "cue": "Tu commentes une hausse de tarif.",
+      "cue_type": "gap_fr",
+      "cue": "Cette année, ___ dix pour cent.",
       "options": [
         "l'abonnement a augmenté de",
         "l'abonnement a augmenté par",
@@ -22000,8 +22000,8 @@
       "sub": "emotions_social",
       "level": 4,
       "pattern": "conflits-excuses",
-      "cue_type": "micro_intent_fr",
-      "cue": "Dire qu'il n'y a pas de raison de s'excuser.",
+      "cue_type": "gap_fr",
+      "cue": "___ s'excuser.",
       "options": [
         "Il n'y a pas lieu de",
         "Il n'y a pas lieu à",

@@ -1418,13 +1418,13 @@
       "sub": "complex_sentences",
       "level": 2,
       "pattern": "gerundio-acao-em-curso",
-      "cue_type": "intent_en",
-      "cue": "Say (BR): I am studying Portuguese.",
+      "cue_type": "gap_pt",
+      "cue": "Eu ___ português agora.",
       "options": [
-        "Estou estudando",
-        "Estou a estudar",
-        "Estudo",
-        "Estudei"
+        "estou estudando",
+        "estou a estudar",
+        "estudo",
+        "estudei"
       ],
       "correct_index": 0,
       "explanation": "BR: ESTOU + gerúndio (estudando). A forma \"a estudar\" é europeia.",
@@ -1709,13 +1709,13 @@
       "sub": "food_cooking",
       "level": 2,
       "pattern": "pratos-brasileiros",
-      "cue_type": "intent_en",
-      "cue": "Name the Brazilian national dish (black beans + pork).",
+      "cue_type": "gap_pt",
+      "cue": "O prato nacional do Brasil, feito com feijão preto e carnes de porco, é a ___.",
       "options": [
-        "Feijoada",
-        "Moqueca",
-        "Pastel",
-        "Coxinha"
+        "feijoada",
+        "moqueca",
+        "pastel",
+        "coxinha"
       ],
       "correct_index": 0,
       "explanation": "FEIJOADA é o prato nacional do Brasil: feijão preto com carnes de porco.",
@@ -1853,13 +1853,13 @@
       "sub": "home_logistics",
       "level": 2,
       "pattern": "aluguel-contrato",
-      "cue_type": "intent_en",
-      "cue": "Say: I pay rent on the 5th of every month.",
+      "cue_type": "gap_pt",
+      "cue": "Pago o ___ todo dia cinco.",
       "options": [
-        "Pago o aluguel",
-        "Pago o renda",
-        "Pago o crédito",
-        "Pago o arrendamento"
+        "aluguel",
+        "renda",
+        "crédito",
+        "arrendamento"
       ],
       "correct_index": 0,
       "explanation": "No BR: ALUGUEL (em Portugal: renda ou arrendamento).",
@@ -2105,13 +2105,13 @@
       "sub": "travel_transport",
       "level": 2,
       "pattern": "passagens-reservas",
-      "cue_type": "intent_en",
-      "cue": "Say: I bought a ticket to Rio.",
+      "cue_type": "gap_pt",
+      "cue": "Comprei uma ___ para o Rio.",
       "options": [
-        "Comprei uma passagem",
-        "Comprei um ticket",
-        "Comprei um bilhete",
-        "Comprei uma entrada"
+        "passagem",
+        "ticket",
+        "bilhete",
+        "entrada"
       ],
       "correct_index": 0,
       "explanation": "No BR: PASSAGEM (de avião, ônibus). \"Bilhete\" é europeu. \"Entrada\" é para eventos.",
@@ -8648,7 +8648,7 @@
         "Que delícia!",
         "Que deliciosidade!",
         "Que gostoso!",
-        "Ambos — delícia e gostoso"
+        "Ambos — delícia e gostoso."
       ],
       "correct_index": 0,
       "explanation": "QUE DELÍCIA! é fórmula universal. GOSTOSO também funciona no BR.",
@@ -9512,7 +9512,7 @@
         "Beijos!",
         "Abraços!",
         "Até logo!",
-        "Ambos — Beijos e Abraços"
+        "Ambos — Beijos e Abraços."
       ],
       "correct_index": 0,
       "explanation": "BEIJOS ou ABRAÇOS: despedida afetuosa em mensagens BR. Distinção de gênero/proximidade flexível.",
@@ -9848,13 +9848,13 @@
       "sub": "admin_bureaucracy",
       "level": 1,
       "pattern": "cpf-rg-documentos",
-      "cue_type": "intent_en",
-      "cue": "Translate: the Brazilian public health system.",
+      "cue_type": "gap_pt",
+      "cue": "O sistema público de saúde universal e gratuito do Brasil chama-se ___.",
       "options": [
-        "o SUS",
-        "o INSS",
-        "a ANS",
-        "a ANVISA"
+        "SUS",
+        "INSS",
+        "ANS",
+        "ANVISA"
       ],
       "correct_index": 0,
       "explanation": "SUS: Sistema Único de Saúde, universal e gratuito.",
@@ -10160,7 +10160,7 @@
         "Rola?",
         "Dá?",
         "Vai dar?",
-        "Todas funcionam"
+        "Todas funcionam."
       ],
       "correct_index": 0,
       "explanation": "ROLA? = does it work/happen? Gíria BR muito comum.",
