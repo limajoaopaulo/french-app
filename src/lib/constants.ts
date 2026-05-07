@@ -30,6 +30,18 @@ export const RANK_TIERS: readonly RankTier[] = [
   { name: "bronze", minPpq: raw.rank_tiers.bronze.min_ppq, color: raw.rank_tiers.bronze.color },
 ] as const
 
+export interface UserTier {
+  name: string
+  min: number
+  color: string
+}
+
+// Lifetime XP tiers — cumulative totalPoints across all completed sessions.
+// Sorted ascending; userTier() walks from the top down.
+export const USER_TIERS: readonly UserTier[] = (
+  raw.user_tiers as ReadonlyArray<{ name: string; min: number; color: string }>
+).map((t) => ({ name: t.name, min: t.min, color: t.color }))
+
 export const TIME_THRESHOLDS = {
   wordsPerSecondBase: raw.time_thresholds.words_per_second_base,
   fastFloorSeconds: raw.time_thresholds.fast_floor_seconds,

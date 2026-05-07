@@ -3,6 +3,7 @@ import { redirect } from "next/navigation"
 import { prisma } from "@/lib/db"
 import { getDomains, type Domain } from "@/lib/taxonomy"
 import { SubToggle } from "./SubToggle"
+import { DrillLengthPicker } from "./DrillLengthPicker"
 import { t } from "@/lib/i18n"
 import { getCurrentUser } from "@/lib/auth"
 
@@ -25,6 +26,18 @@ export default async function SettingsPage() {
             {t.settings.back}
           </Link>
         </header>
+
+        <section className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-zinc-900/60 p-5">
+          <div>
+            <h2 className="text-lg font-semibold">
+              {t.settings.drillLengthTitle}
+            </h2>
+            <p className="text-sm text-zinc-400">
+              {t.settings.drillLengthHint}
+            </p>
+          </div>
+          <DrillLengthPicker initial={user.defaultDrillLength} />
+        </section>
 
         <p className="text-sm text-zinc-400">{t.settings.hint}</p>
 

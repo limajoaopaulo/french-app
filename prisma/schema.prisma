@@ -30,13 +30,14 @@ model Language {
 // -----------------------------------------------------------------------------
 
 model User {
-  id          Int      @id @default(autoincrement())
-  username    String   @unique
-  displayName String
-  pinHash     String?
-  languageId  Int
-  language    Language @relation(fields: [languageId], references: [id])
-  createdAt   DateTime @default(now())
+  id                 Int      @id @default(autoincrement())
+  username           String   @unique
+  displayName        String
+  pinHash            String?
+  languageId         Int
+  language           Language @relation(fields: [languageId], references: [id])
+  defaultDrillLength Int      @default(10)
+  createdAt          DateTime @default(now())
 
   sessions       Session[]
   subStats       SubStats[]
@@ -199,9 +200,10 @@ model Session {
   bossMedal  String?
   bossQueue  String?
 
-  targetSubs String?
-  levelMin   Int?
-  levelMax   Int?
+  targetSubs       String?
+  levelMin         Int?
+  levelMax         Int?
+  subLevelsBefore  String?
 
   reviews Review[]
 

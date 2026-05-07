@@ -3,10 +3,20 @@ import { redirect } from "next/navigation"
 import { prisma } from "@/lib/db"
 import { RadarChart } from "@/components/stats/RadarChart"
 import { PatternBreakdown, type PatternRow } from "@/components/stats/PatternBreakdown"
+import { ProgressBar } from "@/components/ui/ProgressBar"
 import { getDomains, type Domain } from "@/lib/taxonomy"
 import { DIFFICULTIES } from "@/lib/constants"
-import { loadSubAggregates } from "@/lib/progression"
-import { cardsToNextLevel, patternMastery, type CardForLevel } from "@/lib/levels"
+import {
+  loadSubAggregates,
+  loadSubReviewCounts,
+} from "@/lib/progression"
+import {
+  bandProgressToNext,
+  cardsToNextLevel,
+  cefrLabel,
+  patternMastery,
+  type CardForLevel,
+} from "@/lib/levels"
 import { LEVEL_LABELS } from "@/lib/constants"
 import { t } from "@/lib/i18n"
 import { getCurrentUser } from "@/lib/auth"
@@ -17,16 +27,18 @@ export default async function StatsPage() {
   const user = await getCurrentUser()
   if (!user) redirect("/welcome")
   const now = new Date()
-  const [subAggregates, statesWithQuestion, patternStats] = await Promise.all([
-    loadSubAggregates(user.id, user.languageId),
-    prisma.questionState.findMany({
-      where: { userId: user.id, question: { languageId: user.languageId } },
-      include: {
-        question: { select: { domain: true, sub: true, pattern: true, level: true } },
-      },
-    }),
-    prisma.patternStats.findMany({ where: { userId: user.id } }),
-  ])
+  const [subAggregates, statesWithQuestion, patternStats, reviewCounts] =
+    await Promise.all([
+      loadSubAggregates(user.id, user.languageId),
+      prisma.questionState.findMany({
+        where: { userId: user.id, question: { languageId: user.languageId } },
+        include: {
+          question: { select: { domain: true, sub: true, pattern: true, level: true } },
+        },
+      }),
+      prisma.patternStats.findMany({ where: { userId: user.id } }),
+      loadSubReviewCounts(user.id, user.languageId),
+    ])
   const DOMAINS = getDomains(user.languageCode)
 
   const cardsForPattern: Array<CardForLevel & { pattern: string }> =
@@ -149,38 +161,66 @@ export default async function StatsPage() {
                       level: st.question.level,
                       stability: st.stability,
                     }))
+                  const subLevelValue = sub?.subLevel ?? 0
+                  const band = bandProgressToNext(subCards, subLevelValue)
                   const nextLevelInfo = cardsToNextLevel(
                     subCards,
-                    sub?.subLevel ?? 0,
+                    subLevelValue,
                   )
+                  const counts = reviewCounts.get(`${domainKey}::${s.key}`)
+                  const hasAnswered = (counts?.total ?? 0) > 0
+                  const accuracyPct = hasAnswered
+                    ? Math.round((counts!.correct / counts!.total) * 100)
+                    : 0
+                  const cefr = cefrLabel(subLevelValue)
+                  const bandRatio = band.progress
                   let progressLabel: string
-                  if (!nextLevelInfo) {
+                  if (band.nextLevel === null) {
                     progressLabel = t.stats.maxLevelReached
-                  } else if (nextLevelInfo.needed === 0) {
+                  } else if (nextLevelInfo && nextLevelInfo.needed === 0) {
                     progressLabel = t.stats.readyToLevelUp
                   } else {
                     const nextLabel =
-                      t.levels[LEVEL_LABELS[nextLevelInfo.nextLevel]] ??
-                      LEVEL_LABELS[nextLevelInfo.nextLevel] ??
-                      String(nextLevelInfo.nextLevel)
-                    progressLabel = t.stats.cardsToLevel(
-                      nextLevelInfo.needed,
+                      t.levels[LEVEL_LABELS[band.nextLevel]] ??
+                      LEVEL_LABELS[band.nextLevel] ??
+                      String(band.nextLevel)
+                    progressLabel = t.end.progressToNext(
+                      Math.round(band.progress * 100),
                       nextLabel,
                     )
                   }
+
                   return (
                     <details
                       key={s.key}
                       className="rounded-xl border border-white/5 bg-white/[0.03] px-4 py-2"
                     >
-                      <summary className="flex cursor-pointer items-center justify-between gap-3 text-sm">
-                        <span className="text-zinc-200">{s.label}</span>
-                        <span className="flex items-center gap-3 text-xs text-zinc-400">
-                          <span className="text-emerald-300/80">
-                            {progressLabel}
+                      <summary className="flex cursor-pointer flex-col gap-1.5 text-sm">
+                        <div className="flex items-center justify-between gap-3">
+                          <span className="text-zinc-200">{s.label}</span>
+                          <span className="flex items-center gap-2 text-xs">
+                            <span
+                              className="rounded-full border border-white/10 px-2 py-0.5 font-mono uppercase tracking-wide text-zinc-200"
+                              style={{ borderColor: info.color, color: info.color }}
+                            >
+                              {cefr}
+                            </span>
+                            <span className="text-emerald-300/80">
+                              {progressLabel}
+                            </span>
                           </span>
-                          <span>{t.stats.levelLabel(sub?.subLevel ?? 0)}</span>
-                        </span>
+                        </div>
+                        <ProgressBar ratio={bandRatio} color={info.color} />
+                        <div className="flex items-center justify-between gap-3 text-[11px] text-zinc-500">
+                          {hasAnswered ? (
+                            <>
+                              <span>{t.stats.totalAnswered(counts!.total)}</span>
+                              <span>{t.stats.accuracyPct(accuracyPct)}</span>
+                            </>
+                          ) : (
+                            <span>{t.stats.notAnsweredYet}</span>
+                          )}
+                        </div>
                       </summary>
                       <PatternBreakdown patterns={patterns} />
                     </details>

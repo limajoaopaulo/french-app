@@ -2,7 +2,10 @@
 
 import { revalidatePath } from "next/cache"
 import { prisma } from "@/lib/db"
-import { ToggleActiveSubSchema } from "@/lib/schemas"
+import {
+  SetDefaultDrillLengthSchema,
+  ToggleActiveSubSchema,
+} from "@/lib/schemas"
 import { requireUser } from "@/lib/auth"
 
 export async function toggleActiveSub(input: unknown): Promise<void> {
@@ -17,6 +20,17 @@ export async function toggleActiveSub(input: unknown): Promise<void> {
       },
     },
     data: { isActive: parsed.isActive },
+  })
+  revalidatePath("/settings")
+  revalidatePath("/")
+}
+
+export async function setDefaultDrillLength(input: unknown): Promise<void> {
+  const user = await requireUser()
+  const parsed = SetDefaultDrillLengthSchema.parse(input)
+  await prisma.user.update({
+    where: { id: user.id },
+    data: { defaultDrillLength: parsed.length },
   })
   revalidatePath("/settings")
   revalidatePath("/")

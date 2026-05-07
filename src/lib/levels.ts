@@ -15,6 +15,22 @@ export const CARDS_PER_LEVEL_THRESHOLD = 5
 // number, clearer name at the call site.
 export const MIN_CARDS_PER_LEVEL = CARDS_PER_LEVEL_THRESHOLD
 
+const CEFR_BY_INT: Record<number, string> = {
+  0: "—",
+  1: "A1",
+  2: "A2",
+  3: "B1",
+  4: "B2",
+  5: "C1",
+}
+
+// Friendly CEFR label for a (possibly decimal) subLevel. floor() — the integer
+// part — is the band the user is currently in.
+export function cefrLabel(level: number): string {
+  const band = Math.max(0, Math.min(5, Math.floor(level)))
+  return CEFR_BY_INT[band] ?? "—"
+}
+
 export interface CardForLevel {
   level: number
   stability: number
@@ -80,6 +96,37 @@ export function cardsToNextLevel(
   ).length
   const needed = Math.max(0, MIN_CARDS_PER_LEVEL - have)
   return { needed, nextLevel }
+}
+
+// Continuous progress toward the next CEFR level. For each card at level ≥
+// next, credit min(1, stability / nextThreshold) — the closer a card is to
+// graduating, the more credit. Divide by MIN_CARDS_PER_LEVEL (need 5 fully
+// qualifying cards). Clamped to [0, 1]. Unlike cardsToNextLevel.needed,
+// this moves on every FSRS update — useful for per-drill feedback.
+export function bandProgressToNext(
+  cards: readonly { level: number; stability: number }[],
+  currentSubLevel: number,
+): { progress: number; nextLevel: number | null } {
+  const nextLevel = Math.floor(currentSubLevel) + 1
+  if (nextLevel > 5) return { progress: 1, nextLevel: null }
+  const threshold = STABILITY_THRESHOLDS_DAYS[nextLevel] ?? 0
+  if (threshold <= 0) {
+    // A1 has threshold 0; any card with level≥1 qualifies as full credit.
+    const credits = cards.filter((c) => c.level >= nextLevel).length
+    return {
+      progress: Math.max(0, Math.min(1, credits / MIN_CARDS_PER_LEVEL)),
+      nextLevel,
+    }
+  }
+  let credits = 0
+  for (const c of cards) {
+    if (c.level < nextLevel) continue
+    credits += Math.min(1, c.stability / threshold)
+  }
+  return {
+    progress: Math.max(0, Math.min(1, credits / MIN_CARDS_PER_LEVEL)),
+    nextLevel,
+  }
 }
 
 // Mean retrievability across the cards in a sub. Cards with state===New (never

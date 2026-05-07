@@ -15,6 +15,7 @@ import {
   computeUnlockedBossLevels,
   loadSubAggregates,
   pickPersonalisedTargets,
+  snapshotSubLevels,
 } from "@/lib/progression"
 import { pointsForAnswer, pointsPerQuestion } from "@/lib/points"
 import { speedTag } from "@/lib/time"
@@ -70,6 +71,7 @@ export async function startPersonalisedSession(
     }
   }
 
+  const snapshot = await snapshotSubLevels(user.id, user.languageId)
   const session = await prisma.session.create({
     data: {
       userId: user.id,
@@ -79,6 +81,7 @@ export async function startPersonalisedSession(
       targetSubs: targetSubs ? JSON.stringify(targetSubs) : null,
       levelMin: levelRange?.min ?? null,
       levelMax: levelRange?.max ?? null,
+      subLevelsBefore: JSON.stringify(snapshot),
     },
   })
   return { sessionId: session.id }
@@ -97,6 +100,7 @@ export async function startBossSession(
   }
 
   const queue = buildBossComposition(parsed.level)
+  const snapshot = await snapshotSubLevels(user.id, user.languageId)
   const session = await prisma.session.create({
     data: {
       userId: user.id,
@@ -106,6 +110,7 @@ export async function startBossSession(
       bossDomain: parsed.domain,
       bossLevel: parsed.level,
       bossQueue: JSON.stringify(queue),
+      subLevelsBefore: JSON.stringify(snapshot),
     },
   })
   return { sessionId: session.id }

@@ -2,6 +2,8 @@ import { prisma } from "@/lib/db"
 import { BOSSES, FSRS_TARGET_RETENTION } from "@/lib/constants"
 import { getDomains, type Domain, type LanguageCode } from "@/lib/taxonomy"
 import {
+  bandProgressToNext,
+  cardsToNextLevel,
   subLevelFromCards,
   subRetrievabilitySummary,
   type CardForLevel,
@@ -220,6 +222,126 @@ export function computeUnlockedBossLevels(
     }
   }
   return unlocked
+}
+
+export interface BossProgress {
+  ready: number
+  total: number
+  bottleneck: { sub: string; subLevel: number } | null
+}
+
+// Active subs in `domain` that are at or above `level` count as "ready"; the
+// remaining ones are blocking. The bottleneck is the active sub furthest below.
+export function computeBossProgress(
+  subAggregates: SubAggregate[],
+  domain: Domain,
+  level: number,
+): BossProgress {
+  const active = subAggregates.filter(
+    (s) => s.isActive && s.domain === domain,
+  )
+  if (active.length === 0) {
+    return { ready: 0, total: 0, bottleneck: null }
+  }
+  const ready = active.filter((s) => s.subLevel >= level).length
+  const blockers = active
+    .filter((s) => s.subLevel < level)
+    .sort((a, b) => a.subLevel - b.subLevel)
+  const bottleneck = blockers[0]
+    ? { sub: blockers[0].sub, subLevel: blockers[0].subLevel }
+    : null
+  return { ready, total: active.length, bottleneck }
+}
+
+export interface SubLevelSnapshotEntry {
+  subLevel: number
+  cardsNeeded: number
+  nextLevel: number | null
+  bandProgress: number
+}
+export type SubLevelSnapshot = Record<string, SubLevelSnapshotEntry>
+
+// Capture current per-active-sub level + cards-to-next-level so the post-drill
+// screen can show "X → Y cards to B1, +Z graduated" without per-card storage.
+// Keyed by `${domain}::${sub}` — same convention used elsewhere.
+export async function snapshotSubLevels(
+  userId: number,
+  languageId: number,
+): Promise<SubLevelSnapshot> {
+  const [subStats, states] = await Promise.all([
+    prisma.subStats.findMany({ where: { userId, isActive: true } }),
+    prisma.questionState.findMany({
+      where: { userId, question: { languageId } },
+      include: {
+        question: { select: { domain: true, sub: true, level: true } },
+      },
+    }),
+  ])
+
+  const cardsBySub = new Map<string, CardForLevel[]>()
+  for (const st of states) {
+    const key = `${st.question.domain}::${st.question.sub}`
+    const arr = cardsBySub.get(key) ?? []
+    arr.push({
+      level: st.question.level,
+      stability: st.stability,
+      difficulty: st.difficulty,
+      state: st.state,
+      scheduledDays: st.scheduledDays,
+      learningSteps: st.learningSteps,
+      reps: st.reps,
+      lapses: st.lapses,
+      lastReview: st.lastReview,
+      dueAt: st.dueAt,
+    })
+    cardsBySub.set(key, arr)
+  }
+
+  const out: SubLevelSnapshot = {}
+  for (const sub of subStats) {
+    const key = `${sub.domain}::${sub.sub}`
+    const cards = cardsBySub.get(key) ?? []
+    const subLevel = subLevelFromCards(cards)
+    const next = cardsToNextLevel(cards, subLevel)
+    const band = bandProgressToNext(cards, subLevel)
+    out[key] = {
+      subLevel,
+      cardsNeeded: next?.needed ?? 0,
+      nextLevel: next?.nextLevel ?? null,
+      bandProgress: band.progress,
+    }
+  }
+  return out
+}
+
+export interface SubReviewCount {
+  total: number
+  correct: number
+}
+
+// Lifetime per-sub review counts (correct + total) for stats page accuracy
+// display. Joins Review → Question to group by domain/sub since Review itself
+// only stores questionId.
+export async function loadSubReviewCounts(
+  userId: number,
+  languageId: number,
+): Promise<Map<string, SubReviewCount>> {
+  const reviews = await prisma.review.findMany({
+    where: { userId, question: { languageId } },
+    select: {
+      correct: true,
+      question: { select: { domain: true, sub: true } },
+    },
+  })
+  const out = new Map<string, SubReviewCount>()
+  for (const r of reviews) {
+    const key = `${r.question.domain}::${r.question.sub}`
+    const cur = out.get(key) ?? { total: 0, correct: 0 }
+    cur.total++
+    if (r.correct) cur.correct++
+    out.set(key, cur)
+  }
+  return out
 }
 
 export interface SkillLossEntry {

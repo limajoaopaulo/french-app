@@ -21,10 +21,16 @@ export const t = {
     bossLocked: "Locked",
     bossUnlocked: "Unlocked",
     bossSoon: "Coming soon",
+    bossProgressReady: (ready: number, total: number) =>
+      `${ready} / ${total} ready`,
+    bossProgressBottleneck: (label: string, level: string) =>
+      `${label} → ${level}`,
     recentTitle: "Recent sessions",
     recentEmpty: "No sessions yet.",
     focusPatterns: "Focus",
     drillFocusFor: (subs: string, range: string) => `${subs} · ${range}`,
+    lifetimeXp: (n: number) => `${n.toLocaleString()} XP`,
+    nextTier: (xp: number) => `${xp.toLocaleString()} to next tier`,
   },
   levels: {
     A1: "A1",
@@ -67,6 +73,16 @@ export const t = {
     patternsAnsweredHeading: "Patterns seen",
     radarCaption: "Current levels",
     noReviews: "No answers recorded.",
+    advancementHeading: "Progress",
+    progressToNext: (pct: number, label: string) => `${pct}% to ${label}`,
+    progressBeforeAfter: (before: number, after: number, label: string) =>
+      `${before}% → ${after}% to ${label}`,
+    progressDelta: (delta: number) =>
+      `${delta > 0 ? "+" : ""}${delta}% this drill`,
+    leveledUp: (from: string, to: string) => `Leveled up: ${from} → ${to}`,
+    leveledDown: (from: string, to: string) => `Setback: ${from} → ${to}`,
+    mastered: "Mastered C1",
+    readyToLevelUp: "Ready to level up",
   },
   boss: {
     startBoss: (domain: string, level: string) => `Fight ${domain} ${level}`,
@@ -96,11 +112,17 @@ export const t = {
       `${n} card${n === 1 ? "" : "s"} to ${level}`,
     readyToLevelUp: "Ready to level up",
     maxLevelReached: "Max level reached",
+    totalAnswered: (n: number) => `${n} answered`,
+    accuracyPct: (pct: number) => `${pct}% accuracy`,
+    notAnsweredYet: "Not started",
   },
   settings: {
     title: "Active sub-categories",
     hint: "Toggle what you want included in personalised drills.",
     back: "Back",
+    drillLengthTitle: "Default drill length",
+    drillLengthHint: "How many questions per personalised drill from the home screen.",
+    drillLengthOption: (n: number) => `${n} Q`,
   },
   ranks: {
     diamond: "Diamond",
@@ -108,6 +130,13 @@ export const t = {
     gold: "Gold",
     silver: "Silver",
     bronze: "Bronze",
+  } as Record<string, string>,
+  tiers: {
+    apprentice: "Apprentice",
+    initiate: "Initiate",
+    adept: "Adept",
+    master: "Master",
+    sage: "Sage",
   } as Record<string, string>,
   header: {
     switchUser: "Switch user",

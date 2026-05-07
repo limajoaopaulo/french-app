@@ -5,8 +5,10 @@ import { t } from "@/lib/i18n"
 import { loadHomeData, type RecentSession, type BossCard } from "@/lib/home"
 import { LEVEL_LABELS } from "@/lib/constants"
 import { BossTileButton } from "@/components/home/BossTileButton"
+import { ProgressBar } from "@/components/ui/ProgressBar"
+import { UserTierBadge } from "@/components/badges/UserTierBadge"
 import { medalByTier } from "@/lib/boss"
-import type { Domain } from "@/lib/taxonomy"
+import { getDomains, type Domain, type DomainsByKey } from "@/lib/taxonomy"
 import { getCurrentUser } from "@/lib/auth"
 
 export const dynamic = "force-dynamic"
@@ -31,15 +33,19 @@ export default async function Home({ searchParams }: HomeProps) {
     languageCode: user.languageCode,
     domainFilter,
   })
+  const DOMAINS = getDomains(user.languageCode)
 
   return (
     <main className="min-h-screen bg-zinc-950 px-4 py-16 text-zinc-100">
       <div className="mx-auto flex w-full max-w-xl flex-col gap-6">
-        <header>
-          <h1 className="text-2xl font-semibold">{t.appTitle}</h1>
-          <p className="mt-1 text-sm text-zinc-400">
-            Single-user personal trainer — entraîne-toi, affronte les défis.
-          </p>
+        <header className="flex flex-col gap-3">
+          <div>
+            <h1 className="text-2xl font-semibold">{t.appTitle}</h1>
+            <p className="mt-1 text-sm text-zinc-400">
+              Single-user personal trainer — entraîne-toi, affronte les défis.
+            </p>
+          </div>
+          <UserTierBadge xp={data.lifetimeXp} tier={data.tier} />
         </header>
 
         <DomainTabs active={domainFilter} />
@@ -56,6 +62,7 @@ export default async function Home({ searchParams }: HomeProps) {
           <HomeStart
             preview={data.personalisedPreview}
             domainFilter={domainFilter}
+            defaultLength={user.defaultDrillLength}
           />
         </Card>
 
@@ -78,7 +85,11 @@ export default async function Home({ searchParams }: HomeProps) {
           />
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
             {data.bosses.map((b) => (
-              <BossTile key={`${b.domain}-${b.level}`} card={b} />
+              <BossTile
+                key={`${b.domain}-${b.level}`}
+                card={b}
+                domains={DOMAINS}
+              />
             ))}
           </div>
         </Card>
@@ -177,7 +188,13 @@ function SectionHeader({
   )
 }
 
-function BossTile({ card }: { card: BossCard }) {
+function BossTile({
+  card,
+  domains,
+}: {
+  card: BossCard
+  domains: DomainsByKey
+}) {
   const label = LEVEL_LABELS[card.level] ?? `L${card.level}`
   const domainLabel = t.domains[card.domain]
 
@@ -185,16 +202,37 @@ function BossTile({ card }: { card: BossCard }) {
     return <BossTileButton domain={card.domain as Domain} level={card.level} />
   }
 
+  const { ready, total, bottleneck } = card.progress
+  const ratio = total > 0 ? ready / total : 0
+  const bottleneckSubLabel = bottleneck
+    ? domains[card.domain]?.subs.find((s) => s.key === bottleneck.sub)
+        ?.label ?? bottleneck.sub
+    : null
+
   return (
     <div
-      className="flex flex-col gap-1 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-zinc-500"
+      className="flex flex-col gap-1.5 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-zinc-400"
       aria-label={`${domainLabel} ${label} ${t.home.bossLocked}`}
     >
       <span className="text-xs uppercase tracking-wide opacity-70">
         {domainLabel}
       </span>
-      <span className="text-lg font-semibold">{label}</span>
-      <span className="text-[11px] opacity-70">{t.home.bossLocked}</span>
+      <span className="text-lg font-semibold text-zinc-300">{label}</span>
+      {total > 0 ? (
+        <>
+          <ProgressBar ratio={ratio} />
+          <span className="text-[11px] opacity-80">
+            {t.home.bossProgressReady(ready, total)}
+          </span>
+          {bottleneckSubLabel && (
+            <span className="truncate text-[11px] opacity-70">
+              {t.home.bossProgressBottleneck(bottleneckSubLabel, label)}
+            </span>
+          )}
+        </>
+      ) : (
+        <span className="text-[11px] opacity-70">{t.home.bossLocked}</span>
+      )}
     </div>
   )
 }

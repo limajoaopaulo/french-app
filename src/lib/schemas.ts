@@ -49,5 +49,9 @@ export const ToggleActiveSubSchema = z.object({
   isActive: z.boolean(),
 })
 
+export const SetDefaultDrillLengthSchema = z.object({
+  length: z.union([z.literal(5), z.literal(10), z.literal(15), z.literal(20)]),
+})
+
 export const SpeedTag = z.enum(["fast", "normal", "slow"])
 export type SpeedTagInput = z.infer<typeof SpeedTag>

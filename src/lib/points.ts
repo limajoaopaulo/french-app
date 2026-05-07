@@ -1,4 +1,4 @@
-import { LEVEL_POINTS, SPEED_MULTIPLIER, RANK_TIERS } from "@/lib/constants"
+import { LEVEL_POINTS, SPEED_MULTIPLIER, RANK_TIERS, USER_TIERS } from "@/lib/constants"
 import type { SpeedTag } from "@/lib/time"
 
 // Points reward consolidation: stability gained (in days) weighted by the
@@ -24,4 +24,26 @@ export function pointsPerQuestion(totalPoints: number, questionsSeen: number): n
 
 export function rankTier(ppq: number) {
   return RANK_TIERS.find((t) => ppq >= t.minPpq) ?? RANK_TIERS[RANK_TIERS.length - 1]
+}
+
+export interface UserTierInfo {
+  name: string
+  min: number
+  color: string
+  nextMin: number | null
+}
+
+// Lifetime XP tier from cumulative totalPoints. Walks ascending USER_TIERS and
+// picks the highest tier the XP qualifies for. nextMin is the next threshold,
+// or null at top tier.
+export function userTier(totalXp: number): UserTierInfo {
+  let current = USER_TIERS[0]
+  let nextMin: number | null = USER_TIERS[1]?.min ?? null
+  for (let i = 0; i < USER_TIERS.length; i++) {
+    if (totalXp >= USER_TIERS[i].min) {
+      current = USER_TIERS[i]
+      nextMin = USER_TIERS[i + 1]?.min ?? null
+    }
+  }
+  return { name: current.name, min: current.min, color: current.color, nextMin }
 }

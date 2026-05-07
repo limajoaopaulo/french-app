@@ -3,11 +3,18 @@ import { notFound, redirect } from "next/navigation"
 import { prisma } from "@/lib/db"
 import { RankBadge } from "@/components/badges/RankBadge"
 import { RadarChart } from "@/components/stats/RadarChart"
+import { ProgressBar } from "@/components/ui/ProgressBar"
 import { DIFFICULTIES, LEVEL_LABELS } from "@/lib/constants"
 import { t } from "@/lib/i18n"
 import { bossMedalFromMisses } from "@/lib/boss"
 import { loadBossDefeatDetails } from "@/app/actions/session"
 import { loadSubAggregates } from "@/lib/progression"
+import {
+  bandProgressToNext,
+  cefrLabel,
+  subLevelFromCards,
+} from "@/lib/levels"
+import type { SubLevelSnapshot } from "@/lib/progression"
 import { getDomains, type Domain, type DomainsByKey } from "@/lib/taxonomy"
 import { getCurrentUser } from "@/lib/auth"
 
@@ -86,6 +93,13 @@ export default async function SessionEndPage({ params }: PageProps) {
     .filter((a) => radarDomains.includes(a.domain as Domain))
     .map((a) => ({ domain: a.domain, sub: a.sub, level: a.subLevel }))
 
+  const advancementRows = await buildAdvancementRows({
+    userId: user.id,
+    languageId: user.languageId,
+    snapshotJson: session.subLevelsBefore,
+    drilledSubs: subRows,
+  })
+
   return (
     <main className="min-h-screen bg-zinc-950 px-4 py-16 text-zinc-100">
       <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-6 rounded-2xl border border-white/10 bg-zinc-900/60 p-8">
@@ -120,6 +134,8 @@ export default async function SessionEndPage({ params }: PageProps) {
         </dl>
 
         <SessionBreakdown subs={subRows} patterns={patternRows} />
+
+        {advancementRows.length > 0 && <AdvancementBlock rows={advancementRows} />}
 
         {subStatsForRadar.length > 0 && radarDomains.length > 0 && (
           <div className="flex w-full flex-col items-center gap-2 rounded-xl border border-white/5 bg-white/[0.02] p-4">
@@ -199,7 +215,9 @@ function SessionBreakdown({
                   {Math.round((row.correct / row.total) * 100)}%
                 </span>
               </div>
-              <AccuracyBar correct={row.correct} total={row.total} />
+              <ProgressBar
+                ratio={row.total > 0 ? row.correct / row.total : 0}
+              />
             </li>
           ))}
         </ul>
@@ -234,17 +252,212 @@ function SessionBreakdown({
   )
 }
 
-function AccuracyBar({ correct, total }: { correct: number; total: number }) {
-  const ratio = total > 0 ? correct / total : 0
-  const color =
-    ratio < 0.6 ? "#f43f5e" : ratio < 0.8 ? "#f59e0b" : "#10b981"
+interface AdvancementRow {
+  domain: Domain
+  sub: string
+  label: string
+  beforeCefr: string
+  afterCefr: string
+  // Continuous percentage progress toward the next CEFR band.
+  beforeProgress: number  // 0..1
+  afterProgress: number   // 0..1
+  afterNextLabel: string | null
+  state: "leveled_up" | "leveled_down" | "advanced" | "unchanged" | "mastered"
+}
+
+async function buildAdvancementRows(args: {
+  userId: number
+  languageId: number
+  snapshotJson: string | null
+  drilledSubs: SubBreakdownRow[]
+}): Promise<AdvancementRow[]> {
+  if (!args.snapshotJson || args.drilledSubs.length === 0) return []
+
+  let snapshot: SubLevelSnapshot
+  try {
+    snapshot = JSON.parse(args.snapshotJson) as SubLevelSnapshot
+  } catch {
+    return []
+  }
+
+  const drilledKeys = new Set(
+    args.drilledSubs.map((r) => `${r.domain}::${r.sub}`),
+  )
+
+  // Pull current QuestionState rows for the drilled (domain, sub) pairs only.
+  const states = await prisma.questionState.findMany({
+    where: {
+      userId: args.userId,
+      question: {
+        languageId: args.languageId,
+        OR: args.drilledSubs.map((r) => ({ domain: r.domain, sub: r.sub })),
+      },
+    },
+    include: {
+      question: { select: { domain: true, sub: true, level: true } },
+    },
+  })
+
+  const cardsByKey = new Map<
+    string,
+    Array<{
+      level: number
+      stability: number
+      difficulty: number
+      state: number
+      scheduledDays: number
+      learningSteps: number
+      reps: number
+      lapses: number
+      lastReview: Date | null
+      dueAt: Date | null
+    }>
+  >()
+  for (const st of states) {
+    const key = `${st.question.domain}::${st.question.sub}`
+    if (!drilledKeys.has(key)) continue
+    const arr = cardsByKey.get(key) ?? []
+    arr.push({
+      level: st.question.level,
+      stability: st.stability,
+      difficulty: st.difficulty,
+      state: st.state,
+      scheduledDays: st.scheduledDays,
+      learningSteps: st.learningSteps,
+      reps: st.reps,
+      lapses: st.lapses,
+      lastReview: st.lastReview,
+      dueAt: st.dueAt,
+    })
+    cardsByKey.set(key, arr)
+  }
+
+  const out: AdvancementRow[] = []
+  for (const row of args.drilledSubs) {
+    const key = `${row.domain}::${row.sub}`
+    const before = snapshot[key]
+    if (!before) continue
+    const cards = cardsByKey.get(key) ?? []
+    const afterSubLevel = subLevelFromCards(cards)
+    const afterBand = bandProgressToNext(cards, afterSubLevel)
+
+    const beforeCefr = cefrLabel(before.subLevel)
+    const afterCefr = cefrLabel(afterSubLevel)
+    const beforeBandFloor = Math.floor(before.subLevel)
+    const afterBandFloor = Math.floor(afterSubLevel)
+
+    let state: AdvancementRow["state"]
+    if (afterBandFloor > beforeBandFloor) {
+      state = afterBandFloor >= 5 ? "mastered" : "leveled_up"
+    } else if (afterBandFloor < beforeBandFloor) {
+      state = "leveled_down"
+    } else if (afterBand.nextLevel === null) {
+      state = "mastered"
+    } else {
+      // Same band: report movement on the continuous progress metric.
+      state = afterBand.progress > before.bandProgress + 1e-4
+        ? "advanced"
+        : "unchanged"
+    }
+
+    out.push({
+      domain: row.domain,
+      sub: row.sub,
+      label: row.label,
+      beforeCefr,
+      afterCefr,
+      beforeProgress: before.bandProgress,
+      afterProgress: afterBand.progress,
+      afterNextLabel: afterBand.nextLevel
+        ? t.levels[LEVEL_LABELS[afterBand.nextLevel] ?? ""] ??
+          LEVEL_LABELS[afterBand.nextLevel] ??
+          ""
+        : null,
+      state,
+    })
+  }
+  return out
+}
+
+function AdvancementBlock({ rows }: { rows: AdvancementRow[] }) {
   return (
-    <div className="h-1 overflow-hidden rounded-full bg-white/5">
-      <div
-        className="h-full rounded-full"
-        style={{ width: `${Math.round(ratio * 100)}%`, backgroundColor: color }}
-      />
+    <div className="flex w-full flex-col gap-3 rounded-xl border border-white/5 bg-white/[0.02] p-4">
+      <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-300">
+        {t.end.advancementHeading}
+      </h2>
+      <ul className="flex flex-col gap-3">
+        {rows.map((r) => {
+          const beforePct = Math.round(r.beforeProgress * 100)
+          const afterPct = Math.round(r.afterProgress * 100)
+          const deltaPct = afterPct - beforePct
+          return (
+            <li
+              key={`${r.domain}::${r.sub}`}
+              className="flex flex-col gap-1.5"
+            >
+              <div className="flex items-center justify-between gap-2 text-sm">
+                <span className="text-zinc-200">{r.label}</span>
+                <AdvancementBadge row={r} />
+              </div>
+              <ProgressBar ratio={r.afterProgress} />
+              <div className="flex items-center justify-between gap-2 text-[11px] text-zinc-400">
+                <span>
+                  {r.afterNextLabel === null
+                    ? t.end.mastered
+                    : beforePct === afterPct
+                      ? t.end.progressToNext(afterPct, r.afterNextLabel)
+                      : t.end.progressBeforeAfter(
+                          beforePct,
+                          afterPct,
+                          r.afterNextLabel,
+                        )}
+                </span>
+                {deltaPct > 0 && (
+                  <span className="text-emerald-300">
+                    {t.end.progressDelta(deltaPct)}
+                  </span>
+                )}
+                {deltaPct < 0 && (
+                  <span className="text-rose-300">
+                    {t.end.progressDelta(deltaPct)}
+                  </span>
+                )}
+              </div>
+            </li>
+          )
+        })}
+      </ul>
     </div>
+  )
+}
+
+function AdvancementBadge({ row }: { row: AdvancementRow }) {
+  const base = "rounded-full border px-2 py-0.5 text-[11px] font-mono uppercase tracking-wide"
+  if (row.state === "leveled_up") {
+    return (
+      <span className={`${base} border-emerald-400/50 bg-emerald-500/10 text-emerald-200`}>
+        {t.end.leveledUp(row.beforeCefr, row.afterCefr)}
+      </span>
+    )
+  }
+  if (row.state === "leveled_down") {
+    return (
+      <span className={`${base} border-rose-400/50 bg-rose-500/10 text-rose-200`}>
+        {t.end.leveledDown(row.beforeCefr, row.afterCefr)}
+      </span>
+    )
+  }
+  if (row.state === "mastered") {
+    return (
+      <span className={`${base} border-amber-400/50 bg-amber-500/10 text-amber-200`}>
+        {row.afterCefr}
+      </span>
+    )
+  }
+  return (
+    <span className={`${base} border-white/10 bg-white/5 text-zinc-200`}>
+      {row.afterCefr}
+    </span>
   )
 }
 

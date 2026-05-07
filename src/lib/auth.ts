@@ -52,6 +52,7 @@ export interface CurrentUser {
   displayName: string
   languageId: number
   languageCode: LanguageCode
+  defaultDrillLength: number
 }
 
 export async function getCurrentUser(): Promise<CurrentUser | null> {
@@ -77,6 +78,7 @@ export async function getCurrentUser(): Promise<CurrentUser | null> {
     displayName: row.displayName,
     languageId: row.languageId,
     languageCode: row.language.code as LanguageCode,
+    defaultDrillLength: row.defaultDrillLength,
   }
 }
 

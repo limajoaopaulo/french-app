@@ -1,11 +1,13 @@
 import { prisma } from "@/lib/db"
 import { BOSSES, DIFFICULTIES, FSRS_TARGET_RETENTION } from "@/lib/constants"
-import { rankTier } from "@/lib/points"
+import { rankTier, userTier, type UserTierInfo } from "@/lib/points"
 import { getDomains, type Domain, type LanguageCode } from "@/lib/taxonomy"
 import {
+  computeBossProgress,
   computeUnlockedBossLevels,
   loadSubAggregates,
   pickPersonalisedTargets,
+  type BossProgress,
   type PersonalisedTargets,
   type SubAggregate,
 } from "@/lib/progression"
@@ -29,6 +31,7 @@ export interface BossCard {
   domain: Domain
   level: number
   unlocked: boolean
+  progress: BossProgress
 }
 
 export interface RecurrentDifficulty {
@@ -44,6 +47,8 @@ export interface HomeData {
   personalisedPreview: PersonalisedTargets | null
   subAggregates: SubAggregate[]
   recurrentDifficulties: RecurrentDifficulty[]
+  lifetimeXp: number
+  tier: UserTierInfo
 }
 
 export async function loadHomeData(args: {
@@ -67,7 +72,7 @@ export async function loadHomeData(args: {
       : {}),
   }
 
-  const [sessions, dueCount, subAggregates, statesWithQuestion] =
+  const [sessions, dueCount, subAggregates, statesWithQuestion, xpAggregate] =
     await Promise.all([
       prisma.session.findMany({
         where: sessionWhere,
@@ -88,7 +93,13 @@ export async function loadHomeData(args: {
           question: { select: { domain: true, sub: true, pattern: true, level: true } },
         },
       }),
+      prisma.session.aggregate({
+        where: { userId: args.userId, endedAt: { not: null } },
+        _sum: { totalPoints: true },
+      }),
     ])
+  const lifetimeXp = xpAggregate._sum.totalPoints ?? 0
+  const tier = userTier(lifetimeXp)
 
   const recentSessions: RecentSession[] = sessions.map((s) => ({
     id: s.id,
@@ -122,6 +133,7 @@ export async function loadHomeData(args: {
         domain: domainKey,
         level,
         unlocked: unlockedLevels.has(level),
+        progress: computeBossProgress(subAggregates, domainKey, level),
       })
     }
   }
@@ -177,6 +189,8 @@ export async function loadHomeData(args: {
     personalisedPreview,
     subAggregates: filteredAggregates,
     recurrentDifficulties,
+    lifetimeXp,
+    tier,
   }
 }
 

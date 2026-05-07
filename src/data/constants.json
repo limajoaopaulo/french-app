@@ -59,6 +59,14 @@
     "bronze":   { "min_ppq": 0.0, "color": "#f97316" }
   },
 
+  "user_tiers": [
+    { "name": "apprentice", "min": 0,    "color": "#94a3b8" },
+    { "name": "initiate",   "min": 100,  "color": "#34d399" },
+    { "name": "adept",      "min": 500,  "color": "#60a5fa" },
+    { "name": "master",     "min": 2000, "color": "#a78bfa" },
+    { "name": "sage",       "min": 5000, "color": "#fbbf24" }
+  ],
+
   "time_thresholds": {
     "_notes": "Used to derive speedTag (fast/normal/slow). Speed feeds the points multiplier in scoring_rules.speed_multiplier — it does not affect the FSRS grade (the user's flip-card self-grade owns that).",
     "words_per_second_base": 2,
