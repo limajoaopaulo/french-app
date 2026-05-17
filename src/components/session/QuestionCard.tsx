@@ -34,11 +34,18 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
   const [phase, setPhase] = useState<Phase>(isAnki ? "ankiPrompt" : "options")
   const [chosenIndex, setChosenIndex] = useState<number | null>(null)
   const [correct, setCorrect] = useState<boolean | null>(null)
-  const [submitting, setSubmitting] = useState(false)
   const [progressFilled, setProgressFilled] = useState(false)
   const startedAt = useRef<number>(0)
   const responseMsRef = useRef<number>(0)
   const autoAdvanceRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  // Holds the in-flight submitAnswer promise; advance() awaits it before
+  // calling serveNext so the server never serves the same question twice.
+  const pendingSubmitRef = useRef<Promise<unknown> | null>(null)
+  // Synchronous guard against double-clicks since we transition phase
+  // optimistically — phase change happens on next render, but a rapid
+  // re-fire of the click handler within the same tick would otherwise
+  // submit twice. Resets on question change via SessionRunner's key prop.
+  const submittedRef = useRef(false)
 
   const durationMs = useMemo(
     () => explanationDurationMs(question.explanation),
@@ -55,10 +62,14 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
     startedAt.current = performance.now()
   }, [])
 
-  const skipExplanation = useCallback(() => {
+  const skipExplanation = useCallback(async () => {
     if (autoAdvanceRef.current) {
       clearTimeout(autoAdvanceRef.current)
       autoAdvanceRef.current = null
+    }
+    if (pendingSubmitRef.current) {
+      await pendingSubmitRef.current
+      pendingSubmitRef.current = null
     }
     onAdvance()
   }, [onAdvance])
@@ -67,8 +78,12 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
     if (phase !== "explanation") return
     setProgressFilled(false)
     const raf = requestAnimationFrame(() => setProgressFilled(true))
-    autoAdvanceRef.current = setTimeout(() => {
+    autoAdvanceRef.current = setTimeout(async () => {
       autoAdvanceRef.current = null
+      if (pendingSubmitRef.current) {
+        await pendingSubmitRef.current
+        pendingSubmitRef.current = null
+      }
       onAdvance()
     }, durationMs)
     return () => {
@@ -81,27 +96,29 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
   }, [phase, durationMs, onAdvance])
 
   const pickOption = useCallback(
-    async (idx: number) => {
-      if (phase !== "options" || submitting) return
-      setSubmitting(true)
+    (idx: number) => {
+      if (phase !== "options" || submittedRef.current) return
+      submittedRef.current = true
       responseMsRef.current = Math.round(performance.now() - startedAt.current)
       setChosenIndex(idx)
-      try {
-        const res = await submitAnswer({
-          sessionId,
-          questionId: question.questionId,
-          chosenIndex: idx,
-          displayedCorrectIndex: question.correctIndex,
-          levelAtServe: question.levelAtServe,
-          responseMs: responseMsRef.current,
-        })
-        setCorrect(res.correct)
-        setPhase("explanation")
-      } finally {
-        setSubmitting(false)
-      }
+      // The client already knows the correct index — show feedback instantly.
+      // submitAnswer runs in the background; advance() awaits the promise
+      // before calling serveNext.
+      const isCorrect = idx === question.correctIndex
+      setCorrect(isCorrect)
+      setPhase("explanation")
+      pendingSubmitRef.current = submitAnswer({
+        sessionId,
+        questionId: question.questionId,
+        chosenIndex: idx,
+        displayedCorrectIndex: question.correctIndex,
+        levelAtServe: question.levelAtServe,
+        responseMs: responseMsRef.current,
+      }).catch((err) => {
+        console.error("submitAnswer failed", err)
+      })
     },
-    [phase, submitting, sessionId, question],
+    [phase, sessionId, question],
   )
 
   const reveal = useCallback(() => {
@@ -111,26 +128,25 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
   }, [phase])
 
   const pickSelfGrade = useCallback(
-    async (grade: SelfGrade) => {
-      if (phase !== "ankiReveal" || submitting) return
-      setSubmitting(true)
-      try {
-        const res = await submitAnswer({
-          sessionId,
-          questionId: question.questionId,
-          chosenIndex: -1,
-          displayedCorrectIndex: question.correctIndex,
-          levelAtServe: question.levelAtServe,
-          responseMs: responseMsRef.current,
-          selfGrade: grade,
-        })
-        setCorrect(res.correct)
-        setPhase("explanation")
-      } finally {
-        setSubmitting(false)
-      }
+    (grade: SelfGrade) => {
+      if (phase !== "ankiReveal" || submittedRef.current) return
+      submittedRef.current = true
+      const isCorrect = grade !== "again"
+      setCorrect(isCorrect)
+      setPhase("explanation")
+      pendingSubmitRef.current = submitAnswer({
+        sessionId,
+        questionId: question.questionId,
+        chosenIndex: -1,
+        displayedCorrectIndex: question.correctIndex,
+        levelAtServe: question.levelAtServe,
+        responseMs: responseMsRef.current,
+        selfGrade: grade,
+      }).catch((err) => {
+        console.error("submitAnswer failed", err)
+      })
     },
-    [phase, submitting, sessionId, question],
+    [phase, sessionId, question],
   )
 
   return (
@@ -164,9 +180,8 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
               <li key={idx}>
                 <button
                   type="button"
-                  disabled={submitting}
                   onClick={() => pickOption(idx)}
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-left text-zinc-100 transition hover:bg-white/10 disabled:cursor-default"
+                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-left text-zinc-100 transition hover:bg-white/10"
                 >
                   <span className="mr-3 font-mono text-zinc-400">
                     {String.fromCharCode(65 + idx)}.
@@ -230,17 +245,15 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
             <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
-                disabled={submitting}
                 onClick={() => pickSelfGrade("again")}
-                className="rounded-xl border border-rose-500/40 bg-rose-500/15 px-3 py-3 text-rose-200 transition hover:bg-rose-500/25 disabled:cursor-default"
+                className="rounded-xl border border-rose-500/40 bg-rose-500/15 px-3 py-3 text-rose-200 transition hover:bg-rose-500/25"
               >
                 Wrong
               </button>
               <button
                 type="button"
-                disabled={submitting}
                 onClick={() => pickSelfGrade("good")}
-                className="rounded-xl border border-emerald-500/40 bg-emerald-500/15 px-3 py-3 text-emerald-200 transition hover:bg-emerald-500/25 disabled:cursor-default"
+                className="rounded-xl border border-emerald-500/40 bg-emerald-500/15 px-3 py-3 text-emerald-200 transition hover:bg-emerald-500/25"
               >
                 Right
               </button>
