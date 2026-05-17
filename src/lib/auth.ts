@@ -1,4 +1,5 @@
 import "server-only"
+import { cache } from "react"
 import bcrypt from "bcryptjs"
 import { SignJWT, jwtVerify } from "jose"
 import { cookies } from "next/headers"
@@ -55,32 +56,34 @@ export interface CurrentUser {
   defaultDrillLength: number
 }
 
-export async function getCurrentUser(): Promise<CurrentUser | null> {
-  const jar = await cookies()
-  const token = jar.get(COOKIE_NAME)?.value
-  if (!token) return null
-  let userId: number
-  try {
-    const { payload } = await jwtVerify(token, getSecret())
-    if (typeof payload.uid !== "number") return null
-    userId = payload.uid
-  } catch {
-    return null
-  }
-  const row = await prisma.user.findUnique({
-    where: { id: userId },
-    include: { language: true },
-  })
-  if (!row) return null
-  return {
-    id: row.id,
-    username: row.username,
-    displayName: row.displayName,
-    languageId: row.languageId,
-    languageCode: row.language.code as LanguageCode,
-    defaultDrillLength: row.defaultDrillLength,
-  }
-}
+export const getCurrentUser = cache(
+  async (): Promise<CurrentUser | null> => {
+    const jar = await cookies()
+    const token = jar.get(COOKIE_NAME)?.value
+    if (!token) return null
+    let userId: number
+    try {
+      const { payload } = await jwtVerify(token, getSecret())
+      if (typeof payload.uid !== "number") return null
+      userId = payload.uid
+    } catch {
+      return null
+    }
+    const row = await prisma.user.findUnique({
+      where: { id: userId },
+      include: { language: true },
+    })
+    if (!row) return null
+    return {
+      id: row.id,
+      username: row.username,
+      displayName: row.displayName,
+      languageId: row.languageId,
+      languageCode: row.language.code as LanguageCode,
+      defaultDrillLength: row.defaultDrillLength,
+    }
+  },
+)
 
 export async function requireUser(): Promise<CurrentUser> {
   const u = await getCurrentUser()

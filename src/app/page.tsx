@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import Link from "next/link"
 import { redirect } from "next/navigation"
 import { HomeStart } from "./HomeStart"
@@ -9,7 +10,7 @@ import { ProgressBar } from "@/components/ui/ProgressBar"
 import { UserTierBadge } from "@/components/badges/UserTierBadge"
 import { medalByTier } from "@/lib/boss"
 import { getDomains, type Domain, type DomainsByKey } from "@/lib/taxonomy"
-import { getCurrentUser } from "@/lib/auth"
+import { getCurrentUser, type CurrentUser } from "@/lib/auth"
 
 export const dynamic = "force-dynamic"
 
@@ -27,13 +28,6 @@ export default async function Home({ searchParams }: HomeProps) {
   if (!user) redirect("/welcome")
   const { domain } = await searchParams
   const domainFilter = parseDomainParam(domain)
-  const data = await loadHomeData({
-    userId: user.id,
-    languageId: user.languageId,
-    languageCode: user.languageCode,
-    domainFilter,
-  })
-  const DOMAINS = getDomains(user.languageCode)
 
   return (
     <main className="min-h-screen bg-zinc-950 px-4 py-16 text-zinc-100">
@@ -45,67 +39,16 @@ export default async function Home({ searchParams }: HomeProps) {
               Single-user personal trainer — entraîne-toi, affronte les défis.
             </p>
           </div>
-          <UserTierBadge xp={data.lifetimeXp} tier={data.tier} />
         </header>
 
         <DomainTabs active={domainFilter} />
 
-        <Card>
-          <div>
-            <h2 className="text-xl font-semibold">
-              {t.home.personalisedHeadline}
-            </h2>
-            <p className="text-sm text-zinc-400">
-              {t.home.personalisedSubtitle}
-            </p>
-          </div>
-          <HomeStart
-            preview={data.personalisedPreview}
-            domainFilter={domainFilter}
-            defaultLength={user.defaultDrillLength}
-          />
-        </Card>
-
-        {data.dueReviewCount > 0 && (
-          <Card>
-            <SectionHeader
-              title={t.home.revisionTitle}
-              subtitle={t.home.revisionSubtitle(data.dueReviewCount)}
-            />
-            <span className="self-start rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-400">
-              {t.home.revisionSoon}
-            </span>
-          </Card>
-        )}
-
-        <Card>
-          <SectionHeader
-            title={t.home.bossesTitle}
-            subtitle={t.home.bossesSubtitle}
-          />
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-            {data.bosses.map((b) => (
-              <BossTile
-                key={`${b.domain}-${b.level}`}
-                card={b}
-                domains={DOMAINS}
-              />
-            ))}
-          </div>
-        </Card>
-
-        <Card>
-          <SectionHeader title={t.home.recentTitle} />
-          {data.recentSessions.length === 0 ? (
-            <p className="text-sm text-zinc-500">{t.home.recentEmpty}</p>
-          ) : (
-            <ul className="flex flex-col gap-1.5">
-              {data.recentSessions.map((s) => (
-                <RecentRow key={s.id} s={s} />
-              ))}
-            </ul>
-          )}
-        </Card>
+        <Suspense
+          key={domainFilter ?? "all"}
+          fallback={<HomeBodySkeleton />}
+        >
+          <HomeBody user={user} domainFilter={domainFilter} />
+        </Suspense>
 
         <nav className="flex gap-3 text-sm">
           <Link
@@ -123,6 +66,96 @@ export default async function Home({ searchParams }: HomeProps) {
         </nav>
       </div>
     </main>
+  )
+}
+
+async function HomeBody({
+  user,
+  domainFilter,
+}: {
+  user: CurrentUser
+  domainFilter: Domain | undefined
+}) {
+  const data = await loadHomeData({
+    userId: user.id,
+    languageId: user.languageId,
+    languageCode: user.languageCode,
+    domainFilter,
+  })
+  const DOMAINS = getDomains(user.languageCode)
+
+  return (
+    <>
+      <UserTierBadge xp={data.lifetimeXp} tier={data.tier} />
+
+      <Card>
+        <div>
+          <h2 className="text-xl font-semibold">
+            {t.home.personalisedHeadline}
+          </h2>
+          <p className="text-sm text-zinc-400">
+            {t.home.personalisedSubtitle}
+          </p>
+        </div>
+        <HomeStart
+          preview={data.personalisedPreview}
+          domainFilter={domainFilter}
+          defaultLength={user.defaultDrillLength}
+        />
+      </Card>
+
+      {data.dueReviewCount > 0 && (
+        <Card>
+          <SectionHeader
+            title={t.home.revisionTitle}
+            subtitle={t.home.revisionSubtitle(data.dueReviewCount)}
+          />
+          <span className="self-start rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-400">
+            {t.home.revisionSoon}
+          </span>
+        </Card>
+      )}
+
+      <Card>
+        <SectionHeader
+          title={t.home.bossesTitle}
+          subtitle={t.home.bossesSubtitle}
+        />
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+          {data.bosses.map((b) => (
+            <BossTile
+              key={`${b.domain}-${b.level}`}
+              card={b}
+              domains={DOMAINS}
+            />
+          ))}
+        </div>
+      </Card>
+
+      <Card>
+        <SectionHeader title={t.home.recentTitle} />
+        {data.recentSessions.length === 0 ? (
+          <p className="text-sm text-zinc-500">{t.home.recentEmpty}</p>
+        ) : (
+          <ul className="flex flex-col gap-1.5">
+            {data.recentSessions.map((s) => (
+              <RecentRow key={s.id} s={s} />
+            ))}
+          </ul>
+        )}
+      </Card>
+    </>
+  )
+}
+
+function HomeBodySkeleton() {
+  return (
+    <div className="flex animate-pulse flex-col gap-6">
+      <div className="h-12 rounded-xl border border-white/5 bg-zinc-900/40" />
+      <div className="h-40 rounded-2xl border border-white/10 bg-zinc-900/40" />
+      <div className="h-44 rounded-2xl border border-white/10 bg-zinc-900/40" />
+      <div className="h-32 rounded-2xl border border-white/10 bg-zinc-900/40" />
+    </div>
   )
 }
 
