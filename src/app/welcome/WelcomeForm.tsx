@@ -5,7 +5,15 @@ import { useRouter } from "next/navigation"
 import { createUser, signIn } from "@/app/actions/auth"
 
 type Mode = "signin" | "signup"
-type Lang = "fr" | "pt"
+type Lang = "fr" | "pt" | "de" | "it" | "es"
+
+const LANGUAGES: Array<{ code: Lang; emoji: string; label: string }> = [
+  { code: "fr", emoji: "🇫🇷", label: "French" },
+  { code: "pt", emoji: "🇧🇷", label: "Portuguese (BR)" },
+  { code: "de", emoji: "🇩🇪", label: "German" },
+  { code: "it", emoji: "🇮🇹", label: "Italian" },
+  { code: "es", emoji: "🇪🇸", label: "Spanish" },
+]
 
 export function WelcomeForm() {
   const router = useRouter()
@@ -69,21 +77,17 @@ export function WelcomeForm() {
             <label className="text-xs uppercase tracking-wide text-zinc-400">
               Pick your language
             </label>
-            <div className="grid grid-cols-2 gap-2">
-              <LangCard
-                code="fr"
-                emoji="🇫🇷"
-                label="French"
-                selected={language === "fr"}
-                onSelect={() => setLanguage("fr")}
-              />
-              <LangCard
-                code="pt"
-                emoji="🇧🇷"
-                label="Portuguese (BR)"
-                selected={language === "pt"}
-                onSelect={() => setLanguage("pt")}
-              />
+            <div className="grid grid-cols-3 gap-2">
+              {LANGUAGES.map((lang) => (
+                <LangCard
+                  key={lang.code}
+                  code={lang.code}
+                  emoji={lang.emoji}
+                  label={lang.label}
+                  selected={language === lang.code}
+                  onSelect={() => setLanguage(lang.code)}
+                />
+              ))}
             </div>
           </div>
         )}

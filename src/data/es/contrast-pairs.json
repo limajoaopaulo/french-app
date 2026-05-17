@@ -1,0 +1,92 @@
+{
+  "_notes": "Symmetric Castilian Spanish contrast pairs — after an answer whose `pattern` matches a key, 70% probability the next question is drawn where `pattern === counterpart`, if available and unseen this session. Disabled in bosses and review mode. Pattern keys must exist in es/taxonomy.json. ser-vs-estar gets multiple symmetric pairs because it is the single highest-value contrast for Spanish learners; pretérito indefinido vs imperfecto is the past-tense headliner; por vs para covers the headline preposition contrast; subjuntivo vs indicativo is split across presente, cuando+futuro, and imperfecto/pluscuamperfecto for hypotheticals.",
+  "_pairing_probability": 0.70,
+  "_disabled_in": ["boss", "review"],
+
+  "pairs": {
+    "ser-identidad-profesion": "estar-estado-temporal",
+    "estar-estado-temporal": "ser-identidad-profesion",
+
+    "ser-vs-estar-adjetivo": "ser-origen-posesion",
+    "ser-origen-posesion": "ser-vs-estar-adjetivo",
+
+    "estar-localizacion": "ser-evento-localizacion",
+    "ser-evento-localizacion": "estar-localizacion",
+
+    "estar-gerundio-progresivo": "ser-identidad-profesion",
+
+    "indefinido-accion-puntual": "imperfecto-descripcion",
+    "imperfecto-descripcion": "indefinido-accion-puntual",
+
+    "indefinido-vs-imperfecto": "imperfecto-habito",
+    "imperfecto-habito": "indefinido-vs-imperfecto",
+
+    "perfecto-pasado-reciente": "indefinido-accion-puntual",
+    "perfecto-vs-indefinido": "indefinido-accion-puntual",
+
+    "subj-presente-duda": "subj-presente-voluntad",
+    "subj-presente-voluntad": "subj-presente-duda",
+
+    "subj-cuando-futuro": "subj-presente-conjuncion",
+    "subj-presente-conjuncion": "subj-cuando-futuro",
+
+    "subj-imperfecto-hipotesis": "subj-pluscuamperfecto-tipo3",
+    "subj-pluscuamperfecto-tipo3": "subj-imperfecto-hipotesis",
+
+    "por-causa": "para-finalidad",
+    "para-finalidad": "por-causa",
+
+    "por-medio": "para-destinatario",
+    "para-destinatario": "por-medio",
+
+    "para-fecha-limite": "por-causa",
+
+    "vosotros-informal-plural": "ustedes-formal-plural",
+    "ustedes-formal-plural": "vosotros-informal-plural",
+
+    "tu-vs-usted-castilla": "vosotros-coloquial",
+    "vosotros-coloquial": "tu-vs-usted-castilla",
+
+    "pronom-od": "pronom-oi",
+    "pronom-oi": "pronom-od",
+
+    "pronom-od-oi-combinacion": "leismo-persona-masculino",
+    "leismo-persona-masculino": "pronom-od-oi-combinacion",
+
+    "imperativo-afirmativo": "imperativo-negativo",
+    "imperativo-negativo": "imperativo-afirmativo",
+
+    "futuro-simple": "futuro-ir-a-infinitivo",
+    "futuro-ir-a-infinitivo": "futuro-simple",
+
+    "condicional-simple": "condicional-compuesto",
+    "condicional-compuesto": "condicional-simple",
+
+    "si-concordancia-tiempos": "si-condicional-irreal",
+    "si-condicional-irreal": "si-concordancia-tiempos",
+
+    "si-condicional-real": "si-condicional-irreal",
+    "si-condicional-tipo3": "si-condicional-irreal",
+
+    "doble-negacion-nadie": "doble-negacion-nada",
+    "doble-negacion-nada": "doble-negacion-nadie",
+
+    "doble-negacion-nunca": "tampoco-ni-ni",
+    "tampoco-ni-ni": "doble-negacion-nunca",
+
+    "slang-vale-guay-molar": "formal-escrito",
+    "formal-escrito": "slang-vale-guay-molar",
+
+    "tio-tia-vocativo": "expresiones-idiomaticas",
+    "expresiones-idiomaticas": "tio-tia-vocativo"
+  },
+
+  "_design_notes": [
+    "ser-vs-estar gets 4 symmetric flavors: identidad↔estado, adjetivo↔origen, localización↔evento, plus estar+gerundio paired one-way against ser-identity (highlights the structural distinction).",
+    "Pretérito indefinido ↔ imperfecto is the past-tense headliner; perfecto-pasado-reciente and perfecto-vs-indefinido one-way pair with indefinido to surface the Castilian peninsular usage of pretérito perfecto for today/this-week.",
+    "Subjuntivo pairs split: presente-duda↔voluntad (trigger families), cuando-futuro↔conjuncion (temporal vs concessive), imperfecto↔pluscuamperfecto (hypothesis types 2 and 3).",
+    "Por vs para gets symmetric pairs for causa↔finalidad and medio↔destinatario, plus a one-way para-fecha-limite → por-causa to expose the temporal flavor.",
+    "Vosotros vs ustedes captures the Castilian formal/informal plural split; tu-vs-usted ↔ vosotros-coloquial exposes the registration choice in peninsular Spanish.",
+    "Si-conditional pairs: real↔irreal and tipo3↔irreal (one-way) cover the three condicional patterns with the irreal as pivot."
+  ]
+}

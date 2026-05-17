@@ -1,7 +1,13 @@
 import { describe, expect, test } from "vitest"
 import { z } from "zod"
+import deSeed from "../data/de/seed.json"
+import deTaxonomy from "../data/de/taxonomy.json"
+import esSeed from "../data/es/seed.json"
+import esTaxonomy from "../data/es/taxonomy.json"
 import frSeed from "../data/fr/seed.json"
 import frTaxonomy from "../data/fr/taxonomy.json"
+import itSeed from "../data/it/seed.json"
+import itTaxonomy from "../data/it/taxonomy.json"
 import ptSeed from "../data/pt/seed.json"
 import ptTaxonomy from "../data/pt/taxonomy.json"
 
@@ -112,3 +118,6 @@ function runChecks(label: string, seed: Seed, tax: Taxonomy) {
 
 runChecks("fr", frSeed as Seed, frTaxonomy as Taxonomy)
 runChecks("pt", ptSeed as Seed, ptTaxonomy as Taxonomy)
+runChecks("de", deSeed as Seed, deTaxonomy as Taxonomy)
+runChecks("it", itSeed as Seed, itTaxonomy as Taxonomy)
+runChecks("es", esSeed as Seed, esTaxonomy as Taxonomy)

@@ -1,0 +1,316 @@
+{
+  "_notes": "German (de-DE) taxonomy. 10 grammar + 10 vocabulary subs, mirroring FR/PT structure so the runtime stays language-agnostic. German-specific decisions: (1) Replaced FR's 'relative_pronouns' sub with a dedicated 'cases_declension' sub — the single biggest German-learner struggle (Nom/Akk/Dat/Gen marking on articles/adjectives/pronouns), with no clean FR/PT parallel. Relative pronouns themselves live as patterns inside 'complex_sentences' since German relative pronouns are basically declined demonstratives plus the case logic, more naturally taught alongside subordinate clauses. (2) 'present_conjugation' explicitly includes separable verbs and modal verbs as core patterns — these dominate beginner production in German and are not cleanly an FR analog. (3) 'past_tenses' centers on Perfekt vs Präteritum (the FR passé-composé vs imparfait analog but with different register triggers — Perfekt is colloquial spoken default; Präteritum is written-narrative and the fixed set sein/haben/modals). (4) 'subjunctive' is Konjunktiv II in everyday use (würde + irrealis); Konjunktiv I appears only as a reported-speech pattern. (5) 'prepositions' is structured around the Akkusativ/Dativ/Genitiv split and the two-way (Wechselpräpositionen) Akk-motion / Dat-location contrast. (6) 'complex_sentences' folds verb-final word order in subordinate clauses and the case-marked relative pronouns. (7) Vocabulary patterns localized: Anmeldung/Krankenkasse/Finanzamt/BAföG replace FR CAF/impôts and PT CPF/INSS; Brötchen/Mittagessen/Bäckerei replace FR plats-typiques; Deutsche Bahn/ICE/Fahrkarte replace FR billets-reservations; Sie-vs-du is the single most important register axis.",
+  "_language": "de",
+
+  "domains": {
+    "grammar": {
+      "label": "Grammatik",
+      "color": "#10b981",
+      "subs": {
+        "present_conjugation": {
+          "label": "Präsens — Konjugation",
+          "shortLabel": "Präsens",
+          "hint": "sein/haben, regelmäßige Verben, Modalverben, trennbare & untrennbare Verben",
+          "patterns": [
+            "present-sein-haben",
+            "present-regular-en",
+            "present-stem-changing",
+            "present-irregular-core",
+            "present-modal-verbs",
+            "present-separable-verbs",
+            "present-inseparable-prefix",
+            "present-reflexive"
+          ]
+        },
+        "past_tenses": {
+          "label": "Vergangenheit",
+          "shortLabel": "Vergangenh.",
+          "hint": "Perfekt (haben/sein + Partizip II), Präteritum, Plusquamperfekt",
+          "patterns": [
+            "perfekt-haben",
+            "perfekt-sein",
+            "perfekt-partizip-irregular",
+            "praeteritum-sein-haben-modal",
+            "praeteritum-regular",
+            "perfekt-vs-praeteritum",
+            "plusquamperfekt"
+          ]
+        },
+        "future_conditional": {
+          "label": "Futur & Konditional",
+          "shortLabel": "Futur/Kond.",
+          "hint": "Futur I (werden + Inf.), Präsens mit Zukunftsbedeutung, würde-Konstruktion",
+          "patterns": [
+            "futur-werden-infinitiv",
+            "praesens-mit-zeitangabe-futur",
+            "futur-vermutung",
+            "wuerde-hoeflichkeit",
+            "futur-vs-praesens"
+          ]
+        },
+        "subjunctive": {
+          "label": "Konjunktiv",
+          "shortLabel": "Konjunktiv",
+          "hint": "Konjunktiv II (würde-Form, wäre/hätte/könnte), Irrealis, Konjunktiv I in indirekter Rede",
+          "patterns": [
+            "konj2-wuerde-form",
+            "konj2-waere-haette",
+            "konj2-koennte-sollte",
+            "konj2-irrealer-wunsch",
+            "konj2-irrealer-bedingungssatz",
+            "konj1-indirekte-rede"
+          ]
+        },
+        "pronouns_personal": {
+          "label": "Personalpronomen",
+          "shortLabel": "Pronomen",
+          "hint": "ich/du/er/sie/es/wir/ihr/sie/Sie — Nominativ, Akkusativ, Dativ + Reflexivpronomen",
+          "patterns": [
+            "pronoun-nominativ",
+            "pronoun-akkusativ",
+            "pronoun-dativ",
+            "pronoun-sie-vs-du",
+            "pronoun-reflexiv-akk",
+            "pronoun-reflexiv-dat",
+            "pronoun-es-impersonal"
+          ]
+        },
+        "cases_declension": {
+          "label": "Fälle & Deklination",
+          "shortLabel": "Fälle",
+          "hint": "Nominativ, Akkusativ, Dativ, Genitiv — Artikel-, Adjektiv- und Pronomendeklination",
+          "patterns": [
+            "case-nominativ-subjekt",
+            "case-akkusativ-direktes-objekt",
+            "case-dativ-indirektes-objekt",
+            "case-genitiv-besitz",
+            "case-akkusativ-vs-dativ",
+            "adjektiv-deklination-bestimmt",
+            "adjektiv-deklination-unbestimmt",
+            "dativ-verben"
+          ]
+        },
+        "prepositions": {
+          "label": "Präpositionen",
+          "shortLabel": "Präposition",
+          "hint": "Akk-Präp., Dat-Präp., Wechselpräp. (Akk/Dat), Genitiv-Präp., Verb+Präp.",
+          "patterns": [
+            "prep-akkusativ-fest",
+            "prep-dativ-fest",
+            "wechselprep-akk-bewegung",
+            "wechselprep-dat-ort",
+            "prep-genitiv",
+            "verb-prep-akkusativ",
+            "verb-prep-dativ",
+            "prep-zeit-um-am-im"
+          ]
+        },
+        "articles_determiners": {
+          "label": "Artikel & Determinanten",
+          "shortLabel": "Artikel",
+          "hint": "der/die/das, ein/eine, kein-, Possessivartikel, Demonstrativ — mit Genus & Fall",
+          "patterns": [
+            "artikel-bestimmt-nominativ",
+            "artikel-unbestimmt-nominativ",
+            "artikel-akkusativ",
+            "artikel-dativ",
+            "kein-negation-artikel",
+            "possessivartikel",
+            "demonstrativ-dieser-jener",
+            "genus-der-die-das"
+          ]
+        },
+        "negation": {
+          "label": "Negation",
+          "shortLabel": "Negation",
+          "hint": "nicht vs kein, Satznegation, Teilnegation, Position von nicht",
+          "patterns": [
+            "nicht-satznegation",
+            "kein-vor-substantiv",
+            "nicht-vs-kein",
+            "nicht-position-im-satz",
+            "negation-mit-noch-mehr",
+            "niemand-nichts-nie"
+          ]
+        },
+        "complex_sentences": {
+          "label": "Komplexe Sätze",
+          "shortLabel": "Komplexe S.",
+          "hint": "Nebensätze mit Verb-Endstellung, Relativsätze, weil/dass/wenn, indirekte Fragen",
+          "patterns": [
+            "nebensatz-weil-verb-end",
+            "nebensatz-dass",
+            "nebensatz-wenn-temporal",
+            "nebensatz-wenn-konditional",
+            "relativsatz-nominativ-akkusativ",
+            "relativsatz-dativ",
+            "indirekte-frage-ob",
+            "infinitivsatz-zu",
+            "modal-vs-zu-infinitiv"
+          ]
+        }
+      }
+    },
+
+    "vocabulary": {
+      "label": "Wortschatz",
+      "color": "#f59e0b",
+      "subs": {
+        "daily_life": {
+          "label": "Alltag",
+          "shortLabel": "Alltag",
+          "hint": "Routine, Wetter, Kleidung, Einkaufen, öffentlicher Verkehr",
+          "patterns": [
+            "routine-morgen",
+            "wetter-jahreszeiten",
+            "kleidung",
+            "einkaufen-supermarkt",
+            "oeffentlicher-verkehr"
+          ]
+        },
+        "food_cooking": {
+          "label": "Essen & Kochen",
+          "shortLabel": "Essen",
+          "hint": "Brötchen & Bäckerei, Mittag-/Abendessen, im Restaurant bestellen, Kaffee und Kuchen",
+          "patterns": [
+            "baeckerei-broetchen",
+            "mittag-abendessen",
+            "im-restaurant-bestellen",
+            "kaffee-und-kuchen",
+            "lebensmittel-grundwortschatz",
+            "essgewohnheiten"
+          ]
+        },
+        "home_logistics": {
+          "label": "Wohnen & Logistik",
+          "shortLabel": "Wohnen",
+          "hint": "Zimmer, Möbel, Mietvertrag, Nebenkosten, Reparaturen, Wohngemeinschaft",
+          "patterns": [
+            "zimmer-moebel",
+            "mietvertrag-kaution",
+            "nebenkosten-strom",
+            "reparaturen-handwerker",
+            "wg-mitbewohner"
+          ]
+        },
+        "work_career": {
+          "label": "Arbeit & Karriere",
+          "shortLabel": "Arbeit",
+          "hint": "Bewerbung, Lebenslauf, Vorstellungsgespräch, Meeting, Gehalt, formelle E-Mail",
+          "patterns": [
+            "bewerbung-lebenslauf",
+            "vorstellungsgespraech",
+            "meeting-besprechung",
+            "gehalt-vertrag",
+            "formelle-email",
+            "kollegen-buero"
+          ]
+        },
+        "health_body": {
+          "label": "Gesundheit & Körper",
+          "shortLabel": "Gesundh.",
+          "hint": "Körperteile, Symptome, Hausarzt, Termin, Krankenkasse, Apotheke, Krankschreibung",
+          "patterns": [
+            "koerperteile",
+            "symptome-krankheiten",
+            "hausarzt-termin",
+            "apotheke-medikamente",
+            "krankschreibung-akz",
+            "krankenkasse"
+          ]
+        },
+        "travel_transport": {
+          "label": "Reisen & Verkehr",
+          "shortLabel": "Reisen",
+          "hint": "Deutsche Bahn, ICE/RE, Fahrkarte vs Ticket, Flughafen, Hotel, Wegbeschreibung",
+          "patterns": [
+            "bahn-ice-re",
+            "fahrkarte-kaufen",
+            "flughafen-check-in",
+            "hotel-buchung",
+            "wegbeschreibung",
+            "verspaetung-anschluss"
+          ]
+        },
+        "emotions_social": {
+          "label": "Gefühle & Sozialleben",
+          "shortLabel": "Gefühle",
+          "hint": "Gefühle, Familie, Freundschaft, Konflikte, Entschuldigungen, Höflichkeit",
+          "patterns": [
+            "gefuehle-basis",
+            "familie-beziehungen",
+            "freundschaft-liebe",
+            "konflikte-entschuldigung",
+            "hoeflichkeitsfloskeln"
+          ]
+        },
+        "admin_bureaucracy": {
+          "label": "Behördengänge",
+          "shortLabel": "Behörden",
+          "hint": "Anmeldung, Personalausweis, Aufenthaltstitel, Finanzamt, BAföG, Lohnsteuer",
+          "patterns": [
+            "anmeldung-buergeramt",
+            "personalausweis-pass",
+            "aufenthaltstitel-visum",
+            "finanzamt-steuer",
+            "bafoeg-foerderung",
+            "lohnsteuer-abrechnung"
+          ]
+        },
+        "media_news": {
+          "label": "Medien & Aktuelles",
+          "shortLabel": "Medien",
+          "hint": "Zeitung, Politik, soziale Medien, Veranstaltungen, Zahlen & Statistik",
+          "patterns": [
+            "zeitung-schlagzeile",
+            "politik-wahlen",
+            "soziale-medien",
+            "veranstaltungen-aktuelles",
+            "zahlen-statistik"
+          ]
+        },
+        "register_nuance": {
+          "label": "Register & Nuance",
+          "shortLabel": "Register",
+          "hint": "Sie vs du, formell vs umgangssprachlich, Anglizismen, leichte Dialektnotizen",
+          "patterns": [
+            "sie-vs-du-uebergang",
+            "umgangssprache-jugendsprache",
+            "formell-geschaeftsbrief",
+            "anglizismen-denglisch",
+            "dialekt-bayrisch-schwaebisch",
+            "redewendungen"
+          ]
+        }
+      }
+    }
+  },
+
+  "default_active": {
+    "_notes": "All 20 subs active by default — taxonomy is balanced; no reason to pre-deactivate.",
+    "grammar": [
+      "present_conjugation",
+      "past_tenses",
+      "future_conditional",
+      "subjunctive",
+      "pronouns_personal",
+      "cases_declension",
+      "prepositions",
+      "articles_determiners",
+      "negation",
+      "complex_sentences"
+    ],
+    "vocabulary": [
+      "daily_life",
+      "food_cooking",
+      "home_logistics",
+      "work_career",
+      "health_body",
+      "travel_transport",
+      "emotions_social",
+      "admin_bureaucracy",
+      "media_news",
+      "register_nuance"
+    ]
+  }
+}

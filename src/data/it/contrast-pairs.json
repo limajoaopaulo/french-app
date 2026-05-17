@@ -1,0 +1,59 @@
+{
+  "_notes": "Italian contrast pairs. Lookup: pattern → counterpart pattern. When user answers a question whose pattern is a key here, 70% probability the next question is drawn from the bank where pattern === counterpart, IF such a question exists and hasn't been seen this session. Italian-specific priorities: (1) auxiliary selection (essere vs avere — verbs of movement / pronominal take essere, transitives take avere). (2) passato prossimo vs imperfetto — the punctual vs descriptive/habitual axis. (3) ci vs ne pronouns — locative ci against partitive ne. (4) congiuntivo vs indicativo — including the imperfect congiuntivo for hypothesis. (5) tu vs Lei — informal vs formal second person, both directions. (6) articolo determinativo vs partitivo — 'lo zucchero' vs 'dello zucchero'. (7) prep articolata a vs in — 'al/alla' vs 'nel/nella' on city/region/country split. (8) imperativo tu vs imperativo Lei — informal vs formal command. Disabled in bosses and review mode.",
+  "_pairing_probability": 0.70,
+  "_disabled_in": ["boss", "review"],
+  "pairs": {
+    "aux-avere-transitive": "aux-essere-movement",
+    "aux-essere-movement": "aux-avere-transitive",
+
+    "aux-essere-pronominal": "aux-avere-transitive",
+
+    "passato-prossimo-vs-imperfetto": "imperfetto-descrizione",
+    "imperfetto-descrizione": "passato-prossimo-vs-imperfetto",
+
+    "imperfetto-abitudine": "passato-prossimo-vs-imperfetto",
+
+    "congiuntivo-presente-dubbio": "congiuntivo-presente-volonta",
+    "congiuntivo-presente-volonta": "congiuntivo-presente-dubbio",
+
+    "congiuntivo-presente-congiunzione": "congiuntivo-presente-impersonale",
+    "congiuntivo-imperfetto": "periodo-ipotetico-tipo2",
+    "congiuntivo-trapassato": "periodo-ipotetico-tipo3",
+
+    "pronome-ci-locativo": "pronome-ne-partitivo",
+    "pronome-ne-partitivo": "pronome-ci-locativo",
+
+    "pronome-ci-idiomatico": "pronome-ne-causale",
+    "pronome-ne-causale": "pronome-ci-idiomatico",
+
+    "pronome-diretto": "pronome-indiretto",
+    "pronome-indiretto": "pronome-diretto",
+
+    "articolo-determinativo": "articolo-partitivo",
+    "articolo-partitivo": "articolo-determinativo",
+
+    "prep-articolata-a": "prep-articolata-in",
+    "prep-articolata-in": "prep-articolata-a",
+
+    "prep-a-citta": "prep-in-paese-regione",
+    "prep-in-paese-regione": "prep-a-citta",
+
+    "imperativo-tu": "imperativo-lei-formale",
+    "imperativo-lei-formale": "imperativo-tu",
+
+    "imperativo-tu-negativo": "imperativo-tu",
+
+    "periodo-ipotetico-tipo1": "periodo-ipotetico-tipo2",
+    "periodo-ipotetico-tipo2": "periodo-ipotetico-tipo1",
+
+    "tu-vs-lei": "formale-email-lavoro",
+    "formale-email-lavoro": "tu-vs-lei",
+
+    "relativo-che-soggetto": "relativo-cui-prep",
+    "relativo-cui-prep": "relativo-che-soggetto",
+
+    "futuro-semplice": "condizionale-presente",
+    "condizionale-presente": "futuro-semplice"
+  },
+  "_asymmetric_notes": "Some entries are one-way intentionally (e.g. aux-essere-pronominal → aux-avere-transitive, imperfetto-abitudine → passato-prossimo-vs-imperfetto): the reverse case is already covered by another key and we don't want to over-pair the dominant pattern."
+}

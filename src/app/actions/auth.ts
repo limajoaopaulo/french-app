@@ -31,7 +31,7 @@ const CreateUserSchema = z.object({
     .regex(/^\d{4}$/, "PIN must be 4 digits")
     .optional()
     .or(z.literal("").transform(() => undefined)),
-  languageCode: z.enum(["fr", "pt"]),
+  languageCode: z.enum(["fr", "pt", "de", "it", "es"]),
 })
 
 const SignInSchema = z.object({

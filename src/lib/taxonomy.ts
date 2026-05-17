@@ -1,8 +1,11 @@
+import deRaw from "@/data/de/taxonomy.json"
+import esRaw from "@/data/es/taxonomy.json"
 import frRaw from "@/data/fr/taxonomy.json"
+import itRaw from "@/data/it/taxonomy.json"
 import ptRaw from "@/data/pt/taxonomy.json"
 
 export type Domain = "grammar" | "vocabulary"
-export type LanguageCode = "fr" | "pt"
+export type LanguageCode = "fr" | "pt" | "de" | "it" | "es"
 
 export interface SubInfo {
   key: string
@@ -38,6 +41,9 @@ interface RawTaxonomy {
 const RAW: Record<LanguageCode, RawTaxonomy> = {
   fr: frRaw as RawTaxonomy,
   pt: ptRaw as RawTaxonomy,
+  de: deRaw as RawTaxonomy,
+  it: itRaw as RawTaxonomy,
+  es: esRaw as RawTaxonomy,
 }
 
 function toDomainInfo(key: Domain, d: RawDomain): DomainInfo {

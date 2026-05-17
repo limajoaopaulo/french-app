@@ -1,0 +1,284 @@
+{
+  "_notes": "Italian taxonomy. 10 grammar + 10 vocabulary subs, mirroring FR/PT so the runtime needs no per-language code paths. Italian-specific design choices: (1) past_tenses centers on essere-vs-avere AUXILIARY SELECTION (the biggest IT learner trap — verbs of movement / pronominal take essere; transitives take avere; some verbs alternate by transitivity). Passato remoto is included as a B2/C1 spike only — it is regional and literary, not daily Italian. (2) pronouns_personal carries the ci/ne pair (locative ci, idiomatic ci, partitive ne, causal ne) which has no FR/PT analog. (3) prepositions has heavy emphasis on PREPOSIZIONI ARTICOLATE (al, della, sui, nel, dallo…) — Italian fuses preposition + article aggressively; this is a daily decision point. (4) relative_pronouns is kept (not swapped) because Italian has the che/cui/il-quale triad with 'preposizione + cui' as a real B1-B2 hurdle. (5) complex_sentences includes imperativo (tu/Lei contrast, negative tu = 'non + infinito') and periodo ipotetico (type 1/2/3) — the latter pairs with congiuntivo imperfetto/trapassato. (6) subjunctive (congiuntivo) explicitly includes congiuntivo imperfetto (B2 hypothesis) and congiuntivo trapassato (C1 periodo ipotetico tipo 3). (7) Vocabulary localized: codice fiscale / partita IVA / SSN / INPS / Agenzia delle Entrate / permesso di soggiorno replace FR's CAF / impôts; Trenitalia / Frecciarossa / Regionale / biglietto-da-timbrare replace FR's SNCF terminology; bar (caffè) vs trattoria vs ristorante and primi/secondi/contorni/aperitivo are explicit. (8) register_nuance covers tu vs Lei (the formal-second-person decision that French/Portuguese don't share at this magnitude) plus anglicismi (computer, weekend) and light dialect markers. Pattern list pruned to the questions in this seed bank plus patterns referenced as counterparts/contrast-pairs — no orphans.",
+  "_language": "it",
+
+  "domains": {
+    "grammar": {
+      "label": "Grammatica",
+      "color": "#10b981",
+      "subs": {
+        "present_conjugation": {
+          "label": "Coniugazione — presente",
+          "shortLabel": "Presente",
+          "hint": "essere/avere + regolari -are/-ere/-ire + irregolari frequenti + verbi in -isco",
+          "patterns": [
+            "present-essere-avere",
+            "present-are-regular",
+            "present-ere-regular",
+            "present-ire-isco",
+            "present-irregular-core"
+          ]
+        },
+        "past_tenses": {
+          "label": "Tempi del passato",
+          "shortLabel": "Passato",
+          "hint": "passato prossimo (essere vs avere), imperfetto, trapassato, passato remoto (B2+)",
+          "patterns": [
+            "aux-avere-transitive",
+            "aux-essere-movement",
+            "aux-essere-pronominal",
+            "aux-essere-impersonal",
+            "imperfetto-descrizione",
+            "imperfetto-abitudine",
+            "passato-prossimo-vs-imperfetto",
+            "trapassato-prossimo",
+            "passato-remoto-letterario"
+          ]
+        },
+        "future_conditional": {
+          "label": "Futuro & condizionale",
+          "shortLabel": "Futuro/Cond.",
+          "hint": "futuro semplice, futuro anteriore, condizionale presente/passato, cortesia",
+          "patterns": [
+            "futuro-semplice",
+            "futuro-anteriore",
+            "condizionale-presente",
+            "condizionale-passato",
+            "condizionale-cortesia"
+          ]
+        },
+        "subjunctive": {
+          "label": "Congiuntivo",
+          "shortLabel": "Congiuntivo",
+          "hint": "congiuntivo presente (volontà/dubbio/emozione/congiunzioni) + imperfetto (ipotesi) + trapassato (C1)",
+          "patterns": [
+            "congiuntivo-presente-volonta",
+            "congiuntivo-presente-dubbio",
+            "congiuntivo-presente-emozione",
+            "congiuntivo-presente-congiunzione",
+            "congiuntivo-presente-impersonale",
+            "congiuntivo-imperfetto",
+            "congiuntivo-trapassato"
+          ]
+        },
+        "pronouns_personal": {
+          "label": "Pronomi personali",
+          "shortLabel": "Pronomi",
+          "hint": "diretti, indiretti, ci (luogo/idiomatico), ne (partitivo/causale), combinazioni",
+          "patterns": [
+            "pronome-diretto",
+            "pronome-indiretto",
+            "pronome-ci-locativo",
+            "pronome-ci-idiomatico",
+            "pronome-ne-partitivo",
+            "pronome-ne-causale",
+            "pronome-combinato"
+          ]
+        },
+        "relative_pronouns": {
+          "label": "Pronomi relativi",
+          "shortLabel": "Relativi",
+          "hint": "che (sogg/ogg), cui (con preposizione), il quale (formale), dove",
+          "patterns": [
+            "relativo-che-soggetto",
+            "relativo-che-oggetto",
+            "relativo-cui-prep",
+            "relativo-il-quale",
+            "relativo-dove"
+          ]
+        },
+        "prepositions": {
+          "label": "Preposizioni",
+          "shortLabel": "Preposizioni",
+          "hint": "semplici (a/di/da/in/con/su/per) + articolate (al/della/sul/nei…) + città/paesi + verbo+prep",
+          "patterns": [
+            "prep-a-citta",
+            "prep-in-paese-regione",
+            "prep-articolata-a",
+            "prep-articolata-di",
+            "prep-articolata-in",
+            "prep-articolata-su",
+            "verbo-prep-di-inf"
+          ]
+        },
+        "articles_determiners": {
+          "label": "Articoli & determinanti",
+          "shortLabel": "Articoli",
+          "hint": "determinativo (il/lo/la/i/gli/le), partitivo (del/dello…), possessivi famiglia, dimostrativi (questo/quello)",
+          "patterns": [
+            "articolo-determinativo",
+            "articolo-lo-z-s-impura",
+            "articolo-partitivo",
+            "possessivo-famiglia-senza-articolo",
+            "dimostrativo-questo-quello"
+          ]
+        },
+        "negation": {
+          "label": "Negazione",
+          "shortLabel": "Negazione",
+          "hint": "non + doppia negazione (niente/nessuno/mai/più), 'non … che' restrittivo",
+          "patterns": [
+            "non-semplice",
+            "doppia-negazione-niente",
+            "doppia-negazione-nessuno",
+            "doppia-negazione-mai",
+            "doppia-negazione-piu",
+            "non-che-restrittivo"
+          ]
+        },
+        "complex_sentences": {
+          "label": "Frasi complesse",
+          "shortLabel": "Frasi cx.",
+          "hint": "imperativo (tu/Lei, negativo), discorso indiretto, periodo ipotetico tipo 1/2/3, connettivi",
+          "patterns": [
+            "imperativo-tu",
+            "imperativo-tu-negativo",
+            "imperativo-lei-formale",
+            "discorso-indiretto-passato",
+            "periodo-ipotetico-tipo1",
+            "periodo-ipotetico-tipo2",
+            "periodo-ipotetico-tipo3",
+            "connettivi-causali"
+          ]
+        }
+      }
+    },
+
+    "vocabulary": {
+      "label": "Vocabolario",
+      "color": "#f59e0b",
+      "subs": {
+        "daily_life": {
+          "label": "Vita quotidiana",
+          "shortLabel": "Quotidiano",
+          "hint": "routine, tempo/meteo, spesa, vestiti",
+          "patterns": [
+            "routine-mattutina",
+            "tempo-meteo",
+            "spesa-supermercato"
+          ]
+        },
+        "food_cooking": {
+          "label": "Cucina & ristorante",
+          "shortLabel": "Cucina",
+          "hint": "bar/caffè, trattoria vs ristorante, primi/secondi/contorni, conto vs ricevuta",
+          "patterns": [
+            "al-bar-caffe",
+            "primi-secondi-contorni",
+            "ordinare-conto"
+          ]
+        },
+        "home_logistics": {
+          "label": "Casa & logistica",
+          "shortLabel": "Casa",
+          "hint": "stanze, affitto, bollette",
+          "patterns": [
+            "stanze-casa",
+            "affitto-contratto",
+            "bollette-utenze"
+          ]
+        },
+        "work_career": {
+          "label": "Lavoro & carriera",
+          "shortLabel": "Lavoro",
+          "hint": "CV, colloquio, contratto, stipendio, email formale",
+          "patterns": [
+            "curriculum-colloquio",
+            "contratto-stipendio",
+            "email-formale"
+          ]
+        },
+        "health_body": {
+          "label": "Salute & corpo",
+          "shortLabel": "Salute",
+          "hint": "parti del corpo, medico di base, farmacia, ricetta",
+          "patterns": [
+            "parti-del-corpo",
+            "medico-di-base",
+            "farmacia-ricetta"
+          ]
+        },
+        "travel_transport": {
+          "label": "Viaggio & trasporto",
+          "shortLabel": "Viaggio",
+          "hint": "Trenitalia (Regionale/Frecciarossa), biglietto da timbrare/validare, indicazioni",
+          "patterns": [
+            "biglietti-treno",
+            "validazione-timbro",
+            "indicazioni-strada"
+          ]
+        },
+        "emotions_social": {
+          "label": "Emozioni & vita sociale",
+          "shortLabel": "Emozioni",
+          "hint": "sentimenti, famiglia, scuse, cortesia",
+          "patterns": [
+            "sentimenti-base",
+            "relazioni-famiglia",
+            "conflitti-scuse"
+          ]
+        },
+        "admin_bureaucracy": {
+          "label": "Burocrazia",
+          "shortLabel": "Burocrazia",
+          "hint": "codice fiscale, partita IVA, tessera sanitaria, permesso di soggiorno",
+          "patterns": [
+            "codice-fiscale-tessera",
+            "partita-iva-fattura",
+            "permesso-di-soggiorno"
+          ]
+        },
+        "media_news": {
+          "label": "Media & attualità",
+          "shortLabel": "Media",
+          "hint": "giornale, social, eventi/attualità",
+          "patterns": [
+            "titoli-giornale",
+            "social-media",
+            "eventi-attualita"
+          ]
+        },
+        "register_nuance": {
+          "label": "Registro & sfumatura",
+          "shortLabel": "Registro",
+          "hint": "tu vs Lei, formale (email/lavoro), anglicismi, espressioni idiomatiche, dialetto leggero",
+          "patterns": [
+            "tu-vs-lei",
+            "formale-email-lavoro",
+            "anglicismi-correnti",
+            "espressioni-idiomatiche",
+            "dialetto-leggero"
+          ]
+        }
+      }
+    }
+  },
+
+  "default_active": {
+    "_notes": "All 20 subs active by default, matching FR/PT. User can toggle in settings.",
+    "grammar": [
+      "present_conjugation",
+      "past_tenses",
+      "future_conditional",
+      "subjunctive",
+      "pronouns_personal",
+      "relative_pronouns",
+      "prepositions",
+      "articles_determiners",
+      "negation",
+      "complex_sentences"
+    ],
+    "vocabulary": [
+      "daily_life",
+      "food_cooking",
+      "home_logistics",
+      "work_career",
+      "health_body",
+      "travel_transport",
+      "emotions_social",
+      "admin_bureaucracy",
+      "media_news",
+      "register_nuance"
+    ]
+  }
+}

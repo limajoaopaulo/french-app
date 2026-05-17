@@ -1,0 +1,78 @@
+{
+  "_notes": "Symmetric German contrast pairs — after an answer whose `pattern` matches a key, 70% probability the next question is drawn where `pattern === counterpart`, if available and unseen this session. Disabled in bosses and review mode. Pattern keys must exist in taxonomy.json (de/taxonomy.json). Heaviest cluster is around cases (Akk↔Dat) and the Perfekt↔Präteritum register split — German's two most consequential drilling axes.",
+  "_pairing_probability": 0.70,
+  "_disabled_in": ["boss", "review"],
+
+  "pairs": {
+    "case-akkusativ-direktes-objekt": "case-dativ-indirektes-objekt",
+    "case-dativ-indirektes-objekt": "case-akkusativ-direktes-objekt",
+
+    "case-akkusativ-vs-dativ": "dativ-verben",
+    "dativ-verben": "case-akkusativ-vs-dativ",
+
+    "adjektiv-deklination-bestimmt": "adjektiv-deklination-unbestimmt",
+    "adjektiv-deklination-unbestimmt": "adjektiv-deklination-bestimmt",
+
+    "wechselprep-akk-bewegung": "wechselprep-dat-ort",
+    "wechselprep-dat-ort": "wechselprep-akk-bewegung",
+
+    "prep-akkusativ-fest": "prep-dativ-fest",
+    "prep-dativ-fest": "prep-akkusativ-fest",
+
+    "perfekt-haben": "perfekt-sein",
+    "perfekt-sein": "perfekt-haben",
+
+    "perfekt-vs-praeteritum": "praeteritum-sein-haben-modal",
+    "praeteritum-sein-haben-modal": "perfekt-vs-praeteritum",
+
+    "present-separable-verbs": "present-inseparable-prefix",
+    "present-inseparable-prefix": "present-separable-verbs",
+
+    "present-modal-verbs": "modal-vs-zu-infinitiv",
+    "modal-vs-zu-infinitiv": "present-modal-verbs",
+
+    "pronoun-sie-vs-du": "sie-vs-du-uebergang",
+    "sie-vs-du-uebergang": "pronoun-sie-vs-du",
+
+    "pronoun-akkusativ": "pronoun-dativ",
+    "pronoun-dativ": "pronoun-akkusativ",
+
+    "pronoun-reflexiv-akk": "pronoun-reflexiv-dat",
+    "pronoun-reflexiv-dat": "pronoun-reflexiv-akk",
+
+    "konj2-irrealer-bedingungssatz": "nebensatz-wenn-konditional",
+    "nebensatz-wenn-konditional": "konj2-irrealer-bedingungssatz",
+
+    "konj2-wuerde-form": "praesens-mit-zeitangabe-futur",
+    "praesens-mit-zeitangabe-futur": "konj2-wuerde-form",
+
+    "futur-werden-infinitiv": "praesens-mit-zeitangabe-futur",
+
+    "artikel-bestimmt-nominativ": "artikel-unbestimmt-nominativ",
+    "artikel-unbestimmt-nominativ": "artikel-bestimmt-nominativ",
+
+    "artikel-akkusativ": "artikel-dativ",
+    "artikel-dativ": "artikel-akkusativ",
+
+    "nicht-satznegation": "kein-vor-substantiv",
+    "kein-vor-substantiv": "nicht-satznegation",
+
+    "nebensatz-weil-verb-end": "nebensatz-dass",
+    "nebensatz-dass": "nebensatz-weil-verb-end",
+
+    "nebensatz-wenn-temporal": "nebensatz-wenn-konditional",
+
+    "formell-geschaeftsbrief": "umgangssprache-jugendsprache",
+    "umgangssprache-jugendsprache": "formell-geschaeftsbrief"
+  },
+
+  "_design_notes": [
+    "Cases (Akk↔Dat) gets the heaviest pairing — the single biggest German confusion axis. Three explicit symmetric pairs across case-marking patterns, adjective declension, and reflexive pronouns.",
+    "Wechselpräpositionen (Akk for motion ↔ Dat for location) is a dedicated pair because the choice is fully driven by the underlying motion/location question.",
+    "Perfekt ↔ Präteritum mirrors FR passé-composé ↔ imparfait but with a different rationale: register split, not aspectual.",
+    "Separable ↔ inseparable prefix verbs catches the trennbar/untrennbar distinction (stehen auf vs verstehen).",
+    "Modal + bare infinitive ↔ main verb + zu-infinitive pairs the two competing infinitive constructions.",
+    "Sie ↔ du is doubled: once as a pronoun pattern, once as a register/social pattern — it shows up at both grammatical and pragmatic levels.",
+    "Konjunktiv II irreal-condition ↔ wenn-konditional pairs because wenn-clauses contain the Konjunktiv II verb form."
+  ]
+}

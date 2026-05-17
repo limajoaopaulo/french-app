@@ -1,0 +1,289 @@
+{
+  "_notes": "Castilian Spanish (es-ES) taxonomy. 10 grammar + 10 vocabulary subs, mirroring FR/PT structure so the runtime stays language-agnostic. Key Spanish-specific decisions: (1) Replaced FR's 'relative_pronouns' sub with 'ser_vs_estar' — the single biggest Spanish-learner struggle, same move PT made. Relative pronouns (que, donde, cuyo) live inside 'complex_sentences'. (2) Past tenses center on pretérito indefinido vs imperfecto plus pretérito perfecto (he hablado) — Castilian uses pretérito perfecto productively for today/this-week, unlike most LatAm varieties. (3) Subjunctive includes imperfecto and pluscuamperfecto de subjuntivo for B2/C1 hypotheticals and the cuando+subjunctive future-reference trigger. (4) 'pronouns_personal' covers OD/OI/leísmo plus the Castilian-specific vosotros/ustedes split and gustar-type verbs. (5) Prepositions sub leads with por vs para — the headline preposition contrast. (6) Vocabulary patterns localized to Spain: DNI/NIE/Hacienda/Seguridad Social/Renfe/médico de cabecera replace FR's CAF/impôts. Register sub captures tú/usted (Castilian tutea more freely), vosotros and slang (vale, guay, molar, tío/tía). Pattern lists are scoped to what the starter seed bank exercises; expand them as the bank grows.",
+  "_language": "es-ES",
+
+  "domains": {
+    "grammar": {
+      "label": "Gramática",
+      "color": "#10b981",
+      "subs": {
+        "present_conjugation": {
+          "label": "Conjugación — presente",
+          "shortLabel": "Presente",
+          "hint": "ser/estar/tener/ir + regulares -ar/-er/-ir + irregulares frecuentes + imperativo",
+          "patterns": [
+            "present-ser-estar",
+            "present-tener-haber",
+            "present-ar-regular",
+            "present-er-regular",
+            "present-ir-regular",
+            "present-irregular-core",
+            "present-stem-change",
+            "present-reflexive",
+            "imperativo-afirmativo",
+            "imperativo-negativo"
+          ]
+        },
+        "past_tenses": {
+          "label": "Tiempos del pasado",
+          "shortLabel": "Pasado",
+          "hint": "pretérito indefinido vs imperfecto + pretérito perfecto + pluscuamperfecto",
+          "patterns": [
+            "indefinido-accion-puntual",
+            "imperfecto-descripcion",
+            "imperfecto-habito",
+            "indefinido-vs-imperfecto",
+            "perfecto-pasado-reciente",
+            "perfecto-vs-indefinido",
+            "pluscuamperfecto"
+          ]
+        },
+        "future_conditional": {
+          "label": "Futuro & condicional",
+          "shortLabel": "Futuro/Cond.",
+          "hint": "futuro simple, ir a + infinitivo, condicional simple y compuesto",
+          "patterns": [
+            "futuro-simple",
+            "futuro-ir-a-infinitivo",
+            "condicional-simple",
+            "condicional-compuesto",
+            "si-concordancia-tiempos"
+          ]
+        },
+        "subjunctive": {
+          "label": "Subjuntivo",
+          "shortLabel": "Subjuntivo",
+          "hint": "presente, imperfecto y pluscuamperfecto de subjuntivo + disparadores (duda, voluntad, emoción, cuando+futuro)",
+          "patterns": [
+            "subj-presente-duda",
+            "subj-presente-voluntad",
+            "subj-presente-emocion",
+            "subj-presente-conjuncion",
+            "subj-presente-impersonal",
+            "subj-cuando-futuro",
+            "subj-imperfecto-hipotesis",
+            "subj-pluscuamperfecto-tipo3"
+          ]
+        },
+        "pronouns_personal": {
+          "label": "Pronombres personales",
+          "shortLabel": "Pronombres",
+          "hint": "OD/OI, combinación se-lo, leísmo de persona, vosotros/ustedes, verbos tipo gustar",
+          "patterns": [
+            "pronom-od",
+            "pronom-oi",
+            "pronom-od-oi-combinacion",
+            "leismo-persona-masculino",
+            "vosotros-informal-plural",
+            "ustedes-formal-plural",
+            "verbos-tipo-gustar"
+          ]
+        },
+        "ser_vs_estar": {
+          "label": "Ser vs estar",
+          "shortLabel": "Ser/Estar",
+          "hint": "identidad vs estado, localización, adjetivos que cambian de sentido (aburrido, listo, rico)",
+          "patterns": [
+            "ser-identidad-profesion",
+            "estar-estado-temporal",
+            "ser-vs-estar-adjetivo",
+            "ser-origen-posesion",
+            "estar-localizacion",
+            "ser-evento-localizacion",
+            "estar-gerundio-progresivo"
+          ]
+        },
+        "prepositions": {
+          "label": "Preposiciones",
+          "shortLabel": "Preposiciones",
+          "hint": "por vs para, a personal, contracciones del/al",
+          "patterns": [
+            "por-causa",
+            "por-medio",
+            "para-finalidad",
+            "para-destinatario",
+            "para-fecha-limite",
+            "a-personal",
+            "contraccion-al-del"
+          ]
+        },
+        "articles_determiners": {
+          "label": "Artículos & determinantes",
+          "shortLabel": "Artículos",
+          "hint": "definido, lo neutro, posesivos tónicos, demostrativos (este/ese/aquel)",
+          "patterns": [
+            "articulo-definido",
+            "articulo-lo-neutro",
+            "posesivo-atono-tonico",
+            "este-ese-aquel"
+          ]
+        },
+        "negation": {
+          "label": "Negación",
+          "shortLabel": "Negación",
+          "hint": "no + doble negación (nadie/nada/nunca), tampoco, ni…ni",
+          "patterns": [
+            "no-simple",
+            "doble-negacion-nadie",
+            "doble-negacion-nada",
+            "doble-negacion-nunca",
+            "tampoco-ni-ni"
+          ]
+        },
+        "complex_sentences": {
+          "label": "Frases complejas",
+          "shortLabel": "Frases cx.",
+          "hint": "relativos (que, donde, cuyo), discurso indirecto, condicionales tipos 1/2/3, pasiva con se",
+          "patterns": [
+            "relativo-que",
+            "relativo-donde",
+            "relativo-cuyo",
+            "discurso-indirecto-presente",
+            "discurso-indirecto-pasado",
+            "si-condicional-real",
+            "si-condicional-irreal",
+            "si-condicional-tipo3",
+            "pasiva-con-se"
+          ]
+        }
+      }
+    },
+
+    "vocabulary": {
+      "label": "Vocabulario",
+      "color": "#f59e0b",
+      "subs": {
+        "daily_life": {
+          "label": "Vida cotidiana",
+          "shortLabel": "Cotidiano",
+          "hint": "rutinas, tiempo atmosférico, compras",
+          "patterns": [
+            "rutina-matinal",
+            "tiempo-clima",
+            "compras-supermercado"
+          ]
+        },
+        "food_cooking": {
+          "label": "Comida & cocina",
+          "shortLabel": "Comida",
+          "hint": "tapas, bar/caña, menú del día, sobremesa, cocina española",
+          "patterns": [
+            "platos-espanoles",
+            "en-el-bar-tapas",
+            "menu-del-dia-sobremesa"
+          ]
+        },
+        "home_logistics": {
+          "label": "Casa & vivienda",
+          "shortLabel": "Casa",
+          "hint": "habitaciones, alquiler, comunidad de vecinos",
+          "patterns": [
+            "habitaciones-casa",
+            "alquiler-contrato",
+            "comunidad-gastos"
+          ]
+        },
+        "work_career": {
+          "label": "Trabajo & carrera",
+          "shortLabel": "Trabajo",
+          "hint": "currículum, contrato, nómina, email formal",
+          "patterns": [
+            "curriculum-entrevista",
+            "contrato-nomina",
+            "email-formal"
+          ]
+        },
+        "health_body": {
+          "label": "Salud & cuerpo",
+          "shortLabel": "Salud",
+          "hint": "partes del cuerpo, médico de cabecera, urgencias, baja médica",
+          "patterns": [
+            "partes-cuerpo",
+            "medico-cabecera-cita",
+            "urgencias-baja-medica"
+          ]
+        },
+        "travel_transport": {
+          "label": "Viaje & transporte",
+          "shortLabel": "Viaje",
+          "hint": "Renfe (AVE, Cercanías), billete, andén",
+          "patterns": [
+            "billetes-reservas",
+            "renfe-ave-cercanias"
+          ]
+        },
+        "emotions_social": {
+          "label": "Emociones & vida social",
+          "shortLabel": "Emociones",
+          "hint": "sentimientos, familia, conflictos y disculpas",
+          "patterns": [
+            "sentimientos-base",
+            "relaciones-familia",
+            "conflictos-disculpas"
+          ]
+        },
+        "admin_bureaucracy": {
+          "label": "Administración",
+          "shortLabel": "Admin",
+          "hint": "DNI/NIE, Hacienda/AEAT, padrón/empadronamiento",
+          "patterns": [
+            "dni-nie-documentos",
+            "hacienda-aeat-impuestos",
+            "padron-empadronamiento"
+          ]
+        },
+        "media_news": {
+          "label": "Medios & actualidad",
+          "shortLabel": "Medios",
+          "hint": "prensa, política, redes sociales",
+          "patterns": [
+            "titulares-prensa",
+            "politica-elecciones",
+            "redes-sociales"
+          ]
+        },
+        "register_nuance": {
+          "label": "Registro & matiz",
+          "shortLabel": "Registro",
+          "hint": "tú vs usted (Castilla tutea), vosotros familiar, slang (vale, guay, molar, tío/tía), expresiones",
+          "patterns": [
+            "tu-vs-usted-castilla",
+            "vosotros-coloquial",
+            "slang-vale-guay-molar",
+            "tio-tia-vocativo",
+            "formal-escrito",
+            "expresiones-idiomaticas"
+          ]
+        }
+      }
+    }
+  },
+
+  "default_active": {
+    "_notes": "All 20 subs active by default, matching FR/PT.",
+    "grammar": [
+      "present_conjugation",
+      "past_tenses",
+      "future_conditional",
+      "subjunctive",
+      "pronouns_personal",
+      "ser_vs_estar",
+      "prepositions",
+      "articles_determiners",
+      "negation",
+      "complex_sentences"
+    ],
+    "vocabulary": [
+      "daily_life",
+      "food_cooking",
+      "home_logistics",
+      "work_career",
+      "health_body",
+      "travel_transport",
+      "emotions_social",
+      "admin_bureaucracy",
+      "media_news",
+      "register_nuance"
+    ]
+  }
+}

@@ -2,7 +2,7 @@ import "dotenv/config"
 import { readFileSync } from "node:fs"
 import { resolve } from "node:path"
 import { PrismaClient } from "../src/generated/prisma/client"
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3"
+import { PrismaLibSql } from "@prisma/adapter-libsql"
 
 interface SeedQuestion {
   id: string
@@ -34,12 +34,16 @@ interface Taxonomy {
 const LANGUAGES: Array<{ code: string; name: string }> = [
   { code: "fr", name: "Français" },
   { code: "pt", name: "Português" },
+  { code: "de", name: "Deutsch" },
+  { code: "it", name: "Italiano" },
+  { code: "es", name: "Español" },
 ]
 
 async function main() {
   const url = process.env.DATABASE_URL
   if (!url) throw new Error("DATABASE_URL is not set")
-  const adapter = new PrismaBetterSqlite3({ url })
+  const authToken = process.env.TURSO_AUTH_TOKEN
+  const adapter = new PrismaLibSql({ url, authToken })
   const prisma = new PrismaClient({ adapter })
 
   try {

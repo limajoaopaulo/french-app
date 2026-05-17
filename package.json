@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
+    "postinstall": "prisma generate",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
@@ -15,10 +16,10 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.91.1",
-    "@prisma/adapter-better-sqlite3": "^7.8.0",
+    "@libsql/client": "^0.15.4",
+    "@prisma/adapter-libsql": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "bcryptjs": "^3.0.3",
-    "better-sqlite3": "^12.9.0",
     "jose": "^6.2.2",
     "next": "16.2.4",
     "react": "19.2.4",

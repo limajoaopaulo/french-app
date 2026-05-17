@@ -1,0 +1,1895 @@
+{
+  "_purpose": "Starter Castilian Spanish (es-ES) seed bank (~85 questions). Covers all 10 grammar and 10 vocabulary subs across A1-B2 (with C1 spikes for condicional compuesto, pluscuamperfecto de subjuntivo, pasiva con se). Variety: peninsular Spanish — vosotros for informal plural, Spanish institutions (DNI, NIE, Hacienda, Seguridad Social, Renfe), and Castilian slang (vale, guay, molar, tío/tía). Production-biased cue mix: intent_en ~40%, gap_es ~30%, situation_es ~20%, micro_intent_es ~10% — explicitly avoiding the gap-only drift that PT fell into. Explanations are one-sentence rule statements in Spanish, never restating the answer.",
+  "_schema": {
+    "id": "string (stable slug)",
+    "domain": "'grammar' | 'vocabulary'",
+    "sub": "taxonomy.domains.<domain>.subs key (es-specific)",
+    "level": "1..5 (A1..C1)",
+    "pattern": "MUST match one of the sub's declared patterns in es/taxonomy.json",
+    "counterpart": "optional — pattern key of its paired opposite",
+    "cue_type": "'gap_es' | 'intent_en' | 'situation_es' | 'micro_intent_es'",
+    "cue": "prompt shown to user",
+    "options": "array of 4 strings; options[0] is the correct answer before shuffle",
+    "correct_index": "0 at authoring time; shuffled at runtime",
+    "explanation": "one-sentence rule statement in Spanish",
+    "register": "'casual' | 'neutral' | 'formal' (optional)"
+  },
+  "questions": [
+    {
+      "id": "gr_present_soy_a1",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 1,
+      "pattern": "present-ser-estar",
+      "cue_type": "micro_intent_es",
+      "cue": "Yo (ser) profesor de instituto.",
+      "options": [
+        "soy",
+        "estoy",
+        "es",
+        "está"
+      ],
+      "correct_index": 0,
+      "explanation": "Identidad o profesión usa SER, 1ª persona singular.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_present_tengo_a1",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 1,
+      "pattern": "present-tener-haber",
+      "cue_type": "micro_intent_es",
+      "cue": "Yo (tener) dos hermanas menores.",
+      "options": [
+        "tengo",
+        "tiengo",
+        "he",
+        "estoy"
+      ],
+      "correct_index": 0,
+      "explanation": "Posesión con TENER; la 1ª persona es irregular (tengo).",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_present_hablamos_a1",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 1,
+      "pattern": "present-ar-regular",
+      "cue_type": "micro_intent_es",
+      "cue": "Nosotros (hablar) español en casa.",
+      "options": [
+        "hablamos",
+        "habláis",
+        "hablan",
+        "hablo"
+      ],
+      "correct_index": 0,
+      "explanation": "Verbos en -AR, 1ª persona del plural: -amos.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_present_comeis_a1",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 1,
+      "pattern": "present-er-regular",
+      "cue_type": "intent_en",
+      "cue": "Say to friends (Spain, informal plural): \"Do you eat fish?\"",
+      "options": [
+        "¿Coméis pescado?",
+        "¿Comen pescado?",
+        "¿Comemos pescado?",
+        "¿Coméns pescado?"
+      ],
+      "correct_index": 0,
+      "explanation": "En España, vosotros con -ER toma la desinencia -éis.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_present_abren_a1",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 1,
+      "pattern": "present-ir-regular",
+      "cue_type": "intent_en",
+      "cue": "Say: \"The shops open at ten in the morning.\"",
+      "options": [
+        "Las tiendas abren a las diez de la mañana.",
+        "Las tiendas abran a las diez de la mañana.",
+        "Las tiendas abrieron a las diez de la mañana.",
+        "Las tiendas abriendo a las diez de la mañana."
+      ],
+      "correct_index": 0,
+      "explanation": "Verbo en -IR regular, 3ª persona del plural en presente de indicativo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_present_pongo_a2",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 2,
+      "pattern": "present-irregular-core",
+      "cue_type": "micro_intent_es",
+      "cue": "Yo (poner) la mesa antes de cenar.",
+      "options": [
+        "pongo",
+        "pono",
+        "pones",
+        "puse"
+      ],
+      "correct_index": 0,
+      "explanation": "PONER es irregular en la 1ª persona del presente: añade -g-.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_present_quiero_a2",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 2,
+      "pattern": "present-stem-change",
+      "cue_type": "micro_intent_es",
+      "cue": "Yo (querer) ir al cine esta tarde.",
+      "options": [
+        "quiero",
+        "quero",
+        "quieres",
+        "quería"
+      ],
+      "correct_index": 0,
+      "explanation": "QUERER diptonga e→ie en presente, excepto en nosotros y vosotros.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_present_levanto_a2",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 2,
+      "pattern": "present-reflexive",
+      "cue_type": "micro_intent_es",
+      "cue": "Yo (levantarse) a las siete todos los días.",
+      "options": [
+        "Me levanto",
+        "Levanto",
+        "Me levanta",
+        "Yo levanto me"
+      ],
+      "correct_index": 0,
+      "explanation": "Verbo pronominal: el pronombre reflexivo concuerda con el sujeto y va antes del verbo conjugado.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_imperativo_afirm_a2",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 2,
+      "pattern": "imperativo-afirmativo",
+      "counterpart": "imperativo-negativo",
+      "cue_type": "intent_en",
+      "cue": "Tell a friend (tú): \"Speak slower, please.\"",
+      "options": [
+        "Habla más despacio, por favor.",
+        "Hablas más despacio, por favor.",
+        "Hable más despacio, por favor.",
+        "No hables más despacio, por favor."
+      ],
+      "correct_index": 0,
+      "explanation": "Imperativo afirmativo con TÚ coincide con la 3ª persona del presente.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_imperativo_neg_b1",
+      "domain": "grammar",
+      "sub": "present_conjugation",
+      "level": 3,
+      "pattern": "imperativo-negativo",
+      "counterpart": "imperativo-afirmativo",
+      "cue_type": "intent_en",
+      "cue": "Tell a friend (tú, negative): \"Don't talk so fast, I don't understand anything!\"",
+      "options": [
+        "¡No hables tan rápido, no entiendo nada!",
+        "¡No habla tan rápido, no entiendo nada!",
+        "¡No hablas tan rápido, no entiendo nada!",
+        "¡No hablar tan rápido, no entiendo nada!"
+      ],
+      "correct_index": 0,
+      "explanation": "Imperativo negativo siempre usa el presente de subjuntivo.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_past_indef_a2",
+      "domain": "grammar",
+      "sub": "past_tenses",
+      "level": 2,
+      "pattern": "indefinido-accion-puntual",
+      "counterpart": "imperfecto-descripcion",
+      "cue_type": "intent_en",
+      "cue": "Say: \"Yesterday I visited my grandparents in their village.\"",
+      "options": [
+        "Ayer visité a mis abuelos en su pueblo.",
+        "Ayer visitaba a mis abuelos en su pueblo.",
+        "Ayer he visitado a mis abuelos en su pueblo.",
+        "Ayer visito a mis abuelos en su pueblo."
+      ],
+      "correct_index": 0,
+      "explanation": "Pretérito indefinido: acción puntual y terminada con marcador de tiempo cerrado (ayer).",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_past_imperf_desc_a2",
+      "domain": "grammar",
+      "sub": "past_tenses",
+      "level": 2,
+      "pattern": "imperfecto-descripcion",
+      "counterpart": "indefinido-accion-puntual",
+      "cue_type": "situation_es",
+      "cue": "Le cuentas a alguien dónde vivías cuando eras niño.",
+      "options": [
+        "De pequeño, yo vivía en un pueblo cerca de Sevilla.",
+        "De pequeño, yo viví en un pueblo cerca de Sevilla.",
+        "De pequeño, yo he vivido en un pueblo cerca de Sevilla.",
+        "De pequeño, yo viviera en un pueblo cerca de Sevilla."
+      ],
+      "correct_index": 0,
+      "explanation": "Imperfecto: descripción de situación habitual en el pasado.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_past_imperf_habito_a2",
+      "domain": "grammar",
+      "sub": "past_tenses",
+      "level": 2,
+      "pattern": "imperfecto-habito",
+      "counterpart": "perfecto-vs-indefinido",
+      "cue_type": "intent_en",
+      "cue": "Say: \"When I was a kid, I used to play football every Saturday.\"",
+      "options": [
+        "Cuando era niño, jugaba al fútbol todos los sábados.",
+        "Cuando fui niño, jugué al fútbol todos los sábados.",
+        "Cuando he sido niño, he jugado al fútbol todos los sábados.",
+        "Cuando soy niño, juego al fútbol todos los sábados."
+      ],
+      "correct_index": 0,
+      "explanation": "Imperfecto para hábitos en el pasado; el indefinido marcaría una vez única.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_past_contrast_b1",
+      "domain": "grammar",
+      "sub": "past_tenses",
+      "level": 3,
+      "pattern": "indefinido-vs-imperfecto",
+      "counterpart": "imperfecto-descripcion",
+      "cue_type": "gap_es",
+      "cue": "Yo leía tranquilamente cuando de repente ___ el teléfono.",
+      "options": [
+        "sonó",
+        "sonaba",
+        "ha sonado",
+        "sonará"
+      ],
+      "correct_index": 0,
+      "explanation": "Acción puntual que interrumpe una acción en curso: indefinido frente al imperfecto descriptivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_past_perfecto_a2",
+      "domain": "grammar",
+      "sub": "past_tenses",
+      "level": 2,
+      "pattern": "perfecto-pasado-reciente",
+      "counterpart": "perfecto-vs-indefinido",
+      "cue_type": "intent_en",
+      "cue": "Say (Spain, today): \"This morning I drank too much coffee.\"",
+      "options": [
+        "Esta mañana he tomado demasiado café.",
+        "Esta mañana tomé demasiado café.",
+        "Esta mañana tomaba demasiado café.",
+        "Esta mañana tomar demasiado café."
+      ],
+      "correct_index": 0,
+      "explanation": "En español peninsular, marcadores como \"hoy\" o \"esta mañana\" piden pretérito perfecto compuesto.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_past_pluscuamperf_b2",
+      "domain": "grammar",
+      "sub": "past_tenses",
+      "level": 4,
+      "pattern": "pluscuamperfecto",
+      "cue_type": "intent_en",
+      "cue": "Say: \"When I arrived at the party, everyone had already finished dinner.\"",
+      "options": [
+        "Cuando llegué a la fiesta, todos ya habían terminado la cena.",
+        "Cuando llegué a la fiesta, todos ya terminaron la cena.",
+        "Cuando llegué a la fiesta, todos ya terminaban la cena.",
+        "Cuando llegué a la fiesta, todos ya han terminado la cena."
+      ],
+      "correct_index": 0,
+      "explanation": "Pluscuamperfecto: acción anterior a otra acción ya pasada.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_futuro_simple_b1",
+      "domain": "grammar",
+      "sub": "future_conditional",
+      "level": 3,
+      "pattern": "futuro-simple",
+      "counterpart": "futuro-ir-a-infinitivo",
+      "cue_type": "intent_en",
+      "cue": "Say: \"Next year we'll go to Italy on holiday.\"",
+      "options": [
+        "El año que viene iremos a Italia de vacaciones.",
+        "El año que viene vamos a Italia de vacaciones.",
+        "El año que viene íbamos a Italia de vacaciones.",
+        "El año que viene fuimos a Italia de vacaciones."
+      ],
+      "correct_index": 0,
+      "explanation": "Futuro simple: la raíz de IR es ir- y la 1ª persona del plural toma -emos.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_futuro_ir_a_a1",
+      "domain": "grammar",
+      "sub": "future_conditional",
+      "level": 1,
+      "pattern": "futuro-ir-a-infinitivo",
+      "counterpart": "futuro-simple",
+      "cue_type": "gap_es",
+      "cue": "Esta noche yo ___ estudiar para el examen.",
+      "options": [
+        "voy a",
+        "voy",
+        "estoy",
+        "iré"
+      ],
+      "correct_index": 0,
+      "explanation": "Futuro próximo: IR (conjugado) + A + infinitivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_condicional_b1",
+      "domain": "grammar",
+      "sub": "future_conditional",
+      "level": 3,
+      "pattern": "condicional-simple",
+      "cue_type": "intent_en",
+      "cue": "Polite request: \"I would like a coffee, please.\"",
+      "options": [
+        "Querría un café, por favor.",
+        "Quiero un café, por favor.",
+        "Quería un café, por favor.",
+        "Querré un café, por favor."
+      ],
+      "correct_index": 0,
+      "explanation": "Cortesía: condicional simple (querría).",
+      "register": "formal"
+    },
+    {
+      "id": "gr_si_concordancia_b1",
+      "domain": "grammar",
+      "sub": "future_conditional",
+      "level": 3,
+      "pattern": "si-concordancia-tiempos",
+      "counterpart": "si-condicional-irreal",
+      "cue_type": "micro_intent_es",
+      "cue": "Si tuviera más tiempo, yo (tocar) piano todos los días.",
+      "options": [
+        "tocaría",
+        "toco",
+        "tocaré",
+        "tocaba"
+      ],
+      "correct_index": 0,
+      "explanation": "Si + imperfecto de subjuntivo → condicional simple en la principal.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_condicional_compuesto_c1",
+      "domain": "grammar",
+      "sub": "future_conditional",
+      "level": 5,
+      "pattern": "condicional-compuesto",
+      "counterpart": "si-condicional-tipo3",
+      "cue_type": "intent_en",
+      "cue": "Say (hypothetical past): \"If I had studied more, I would have passed.\"",
+      "options": [
+        "Si hubiera estudiado más, habría aprobado.",
+        "Si estudiara más, aprobaría.",
+        "Si estudio más, apruebo.",
+        "Si hubiera estudiado más, aprobaría."
+      ],
+      "correct_index": 0,
+      "explanation": "Condicional tipo 3: si + pluscuamperfecto de subjuntivo → condicional compuesto.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_subj_duda_b1",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 3,
+      "pattern": "subj-presente-duda",
+      "counterpart": "subj-presente-voluntad",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I don't think he's right about this.\"",
+      "options": [
+        "No creo que él tenga razón en esto.",
+        "No creo que él tiene razón en esto.",
+        "No creo que él tendrá razón en esto.",
+        "No creo que él tenía razón en esto."
+      ],
+      "correct_index": 0,
+      "explanation": "Negar un verbo de opinión activa el presente de subjuntivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_subj_voluntad_b1",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 3,
+      "pattern": "subj-presente-voluntad",
+      "counterpart": "subj-presente-duda",
+      "cue_type": "micro_intent_es",
+      "cue": "Quiero que tú (venir) a la fiesta.",
+      "options": [
+        "vengas",
+        "vienes",
+        "venir",
+        "vendrás"
+      ],
+      "correct_index": 0,
+      "explanation": "Verbos de voluntad con cambio de sujeto piden subjuntivo en la subordinada.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_subj_emocion_b1",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 3,
+      "pattern": "subj-presente-emocion",
+      "cue_type": "situation_es",
+      "cue": "Un amigo llega a tu fiesta y le quieres expresar alegría por su presencia.",
+      "options": [
+        "Me alegra que estés aquí con nosotros.",
+        "Me alegra que estás aquí con nosotros.",
+        "Me alegra que estarás aquí con nosotros.",
+        "Me alegra que estabas aquí con nosotros."
+      ],
+      "correct_index": 0,
+      "explanation": "Verbos de emoción con cambio de sujeto activan el subjuntivo.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_subj_conjuncion_b2",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 4,
+      "pattern": "subj-presente-conjuncion",
+      "cue_type": "gap_es",
+      "cue": "Aunque ___ cansado, sigue trabajando.",
+      "options": [
+        "esté",
+        "está",
+        "estará",
+        "estaba"
+      ],
+      "correct_index": 0,
+      "explanation": "AUNQUE + subjuntivo expresa concesión hipotética; con indicativo afirmaría el hecho.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_subj_cuando_futuro_b1",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 3,
+      "pattern": "subj-cuando-futuro",
+      "counterpart": "subj-presente-conjuncion",
+      "cue_type": "gap_es",
+      "cue": "Cuando ___ a casa esta noche, te llamaré.",
+      "options": [
+        "llegue",
+        "llego",
+        "llegaré",
+        "llegara"
+      ],
+      "correct_index": 0,
+      "explanation": "Cuando con referencia futura pide presente de subjuntivo, no futuro de indicativo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_subj_imperf_b2",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 4,
+      "pattern": "subj-imperfecto-hipotesis",
+      "counterpart": "subj-presente-duda",
+      "cue_type": "gap_es",
+      "cue": "Si yo ___ rico, viajaría por todo el mundo.",
+      "options": [
+        "fuera",
+        "soy",
+        "sería",
+        "seré"
+      ],
+      "correct_index": 0,
+      "explanation": "Hipótesis irreal en presente: si + imperfecto de subjuntivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_subj_pluscuamperf_c1",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 5,
+      "pattern": "subj-pluscuamperfecto-tipo3",
+      "counterpart": "subj-imperfecto-hipotesis",
+      "cue_type": "gap_es",
+      "cue": "Si me lo ___ antes, te habría ayudado.",
+      "options": [
+        "hubieras dicho",
+        "dijeras",
+        "decías",
+        "has dicho"
+      ],
+      "correct_index": 0,
+      "explanation": "Hipótesis irreal en el pasado (tipo 3): pluscuamperfecto de subjuntivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_subj_impersonal_b1",
+      "domain": "grammar",
+      "sub": "subjunctive",
+      "level": 3,
+      "pattern": "subj-presente-impersonal",
+      "cue_type": "gap_es",
+      "cue": "Es importante que tú ___ tus deberes antes de salir.",
+      "options": [
+        "hagas",
+        "haces",
+        "harás",
+        "hiciste"
+      ],
+      "correct_index": 0,
+      "explanation": "Expresiones impersonales de valoración exigen subjuntivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_pron_od_a2",
+      "domain": "grammar",
+      "sub": "pronouns_personal",
+      "level": 2,
+      "pattern": "pronom-od",
+      "counterpart": "pronom-oi",
+      "cue_type": "intent_en",
+      "cue": "Reply: \"The book? Yes, I've already read it.\"",
+      "options": [
+        "¿El libro? Sí, ya lo he leído.",
+        "¿El libro? Sí, ya le he leído.",
+        "¿El libro? Sí, ya se he leído.",
+        "¿El libro? Sí, ya los he leído."
+      ],
+      "correct_index": 0,
+      "explanation": "Pronombre de objeto directo, masculino singular: LO.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_pron_oi_a2",
+      "domain": "grammar",
+      "sub": "pronouns_personal",
+      "level": 2,
+      "pattern": "pronom-oi",
+      "counterpart": "pronom-od",
+      "cue_type": "gap_es",
+      "cue": "A María ___ di un regalo por su cumpleaños.",
+      "options": [
+        "le",
+        "la",
+        "lo",
+        "se"
+      ],
+      "correct_index": 0,
+      "explanation": "Objeto indirecto en español estándar: LE, sin distinción de género.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_pron_combinacion_b1",
+      "domain": "grammar",
+      "sub": "pronouns_personal",
+      "level": 3,
+      "pattern": "pronom-od-oi-combinacion",
+      "cue_type": "gap_es",
+      "cue": "¿La carta a Marta? Ya ___ ___ he mandado.",
+      "options": [
+        "se la",
+        "le la",
+        "la le",
+        "le lo"
+      ],
+      "correct_index": 0,
+      "explanation": "LE + LO/LA → SE LO/SE LA: el OI se transforma en SE ante OD de 3ª persona.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_leismo_b1",
+      "domain": "grammar",
+      "sub": "pronouns_personal",
+      "level": 3,
+      "pattern": "leismo-persona-masculino",
+      "cue_type": "situation_es",
+      "cue": "Estás en Madrid hablando de tu hermano. ¿Qué dirías más natural en España?",
+      "options": [
+        "A mi hermano le vi ayer en el bar.",
+        "A mi hermano me vi ayer en el bar.",
+        "A mi hermano se vi ayer en el bar.",
+        "A mi hermano lo vio yo ayer en el bar."
+      ],
+      "correct_index": 0,
+      "explanation": "Leísmo de persona masculino singular: aceptado por la RAE y muy común en Castilla.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_vosotros_a2",
+      "domain": "grammar",
+      "sub": "pronouns_personal",
+      "level": 2,
+      "pattern": "vosotros-informal-plural",
+      "counterpart": "ustedes-formal-plural",
+      "cue_type": "intent_en",
+      "cue": "Say to a group of friends (Spain): \"Are you all coming to dinner?\"",
+      "options": [
+        "¿Venís a cenar?",
+        "¿Vienen a cenar?",
+        "¿Vienes a cenar?",
+        "¿Venimos a cenar?"
+      ],
+      "correct_index": 0,
+      "explanation": "En España, vosotros es la 2ª persona del plural informal; toma -ís en verbos como VENIR.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_ustedes_formal_b1",
+      "domain": "grammar",
+      "sub": "pronouns_personal",
+      "level": 3,
+      "pattern": "ustedes-formal-plural",
+      "counterpart": "vosotros-informal-plural",
+      "cue_type": "situation_es",
+      "cue": "Saludas formalmente a unos clientes en una reunión.",
+      "options": [
+        "Buenos días, ¿cómo están ustedes?",
+        "Buenos días, ¿cómo estáis vosotros?",
+        "Buenos días, ¿cómo estás tú?",
+        "Buenos días, ¿cómo está usted?"
+      ],
+      "correct_index": 0,
+      "explanation": "En España, USTEDES marca el plural formal y conjuga en 3ª persona del plural.",
+      "register": "formal"
+    },
+    {
+      "id": "gr_gustar_a1",
+      "domain": "grammar",
+      "sub": "pronouns_personal",
+      "level": 1,
+      "pattern": "verbos-tipo-gustar",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I like Spanish films.\"",
+      "options": [
+        "Me gustan las películas españolas.",
+        "Yo gusto las películas españolas.",
+        "Me gusta las películas españolas.",
+        "Me gustan a las películas españolas."
+      ],
+      "correct_index": 0,
+      "explanation": "GUSTAR concuerda con la cosa que gusta (sujeto gramatical), no con la persona.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_ser_identidad_a1",
+      "domain": "grammar",
+      "sub": "ser_vs_estar",
+      "level": 1,
+      "pattern": "ser-identidad-profesion",
+      "counterpart": "estar-estado-temporal",
+      "cue_type": "situation_es",
+      "cue": "Describes la profesión de tu padre a alguien que acabas de conocer.",
+      "options": [
+        "Mi padre es médico en un hospital de Bilbao.",
+        "Mi padre está médico en un hospital de Bilbao.",
+        "Mi padre tiene médico en un hospital de Bilbao.",
+        "Mi padre hay médico en un hospital de Bilbao."
+      ],
+      "correct_index": 0,
+      "explanation": "Profesión e identidad usan SER.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_estar_estado_a1",
+      "domain": "grammar",
+      "sub": "ser_vs_estar",
+      "level": 1,
+      "pattern": "estar-estado-temporal",
+      "counterpart": "ser-identidad-profesion",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I'm really tired today, I didn't sleep at all.\"",
+      "options": [
+        "Hoy estoy muy cansado, no he dormido nada.",
+        "Hoy soy muy cansado, no he dormido nada.",
+        "Hoy tengo muy cansado, no he dormido nada.",
+        "Hoy hago muy cansado, no he dormido nada."
+      ],
+      "correct_index": 0,
+      "explanation": "Estado físico o anímico temporal usa ESTAR.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_ser_estar_adj_b1",
+      "domain": "grammar",
+      "sub": "ser_vs_estar",
+      "level": 3,
+      "pattern": "ser-vs-estar-adjetivo",
+      "counterpart": "ser-origen-posesion",
+      "cue_type": "situation_es",
+      "cue": "Quieres decir que tu amigo Pedro tiene cualidades de persona inteligente y preparada.",
+      "options": [
+        "Pedro es muy listo.",
+        "Pedro está muy listo.",
+        "Pedro es preparado a venir.",
+        "Pedro está listo a salir."
+      ],
+      "correct_index": 0,
+      "explanation": "SER LISTO = inteligente (cualidad); ESTAR LISTO = preparado para algo (estado).",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_ser_origen_a2",
+      "domain": "grammar",
+      "sub": "ser_vs_estar",
+      "level": 2,
+      "pattern": "ser-origen-posesion",
+      "counterpart": "ser-vs-estar-adjetivo",
+      "cue_type": "gap_es",
+      "cue": "Este coche ___ de mi hermano, no es mío.",
+      "options": [
+        "es",
+        "está",
+        "tiene",
+        "hay"
+      ],
+      "correct_index": 0,
+      "explanation": "Posesión y origen se expresan con SER + DE.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_estar_localizacion_a1",
+      "domain": "grammar",
+      "sub": "ser_vs_estar",
+      "level": 1,
+      "pattern": "estar-localizacion",
+      "counterpart": "ser-evento-localizacion",
+      "cue_type": "intent_en",
+      "cue": "Say: \"The Prado Museum is in Madrid.\"",
+      "options": [
+        "El Museo del Prado está en Madrid.",
+        "El Museo del Prado es en Madrid.",
+        "El Museo del Prado hay en Madrid.",
+        "El Museo del Prado tiene en Madrid."
+      ],
+      "correct_index": 0,
+      "explanation": "Localización de un objeto o lugar concreto usa ESTAR.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_ser_evento_b1",
+      "domain": "grammar",
+      "sub": "ser_vs_estar",
+      "level": 3,
+      "pattern": "ser-evento-localizacion",
+      "counterpart": "estar-localizacion",
+      "cue_type": "situation_es",
+      "cue": "Le explicas a alguien dónde se celebra el concierto de esta noche.",
+      "options": [
+        "El concierto es en el Palacio de los Deportes.",
+        "El concierto está en el Palacio de los Deportes.",
+        "El concierto hay en el Palacio de los Deportes.",
+        "El concierto tiene en el Palacio de los Deportes."
+      ],
+      "correct_index": 0,
+      "explanation": "La localización de un EVENTO (no de un objeto) se expresa con SER.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_estar_gerundio_a2",
+      "domain": "grammar",
+      "sub": "ser_vs_estar",
+      "level": 2,
+      "pattern": "estar-gerundio-progresivo",
+      "cue_type": "micro_intent_es",
+      "cue": "Yo (estar + estudiar) para el examen ahora.",
+      "options": [
+        "Estoy estudiando",
+        "Soy estudiando",
+        "Estoy estudiar",
+        "Estoy estudio"
+      ],
+      "correct_index": 0,
+      "explanation": "ESTAR + gerundio expresa acción en curso.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_prep_por_causa_b1",
+      "domain": "grammar",
+      "sub": "prepositions",
+      "level": 3,
+      "pattern": "por-causa",
+      "counterpart": "para-finalidad",
+      "cue_type": "intent_en",
+      "cue": "Say: \"They fired him for being late every day.\"",
+      "options": [
+        "Lo despidieron por llegar tarde todos los días.",
+        "Lo despidieron para llegar tarde todos los días.",
+        "Lo despidieron de llegar tarde todos los días.",
+        "Lo despidieron con llegar tarde todos los días."
+      ],
+      "correct_index": 0,
+      "explanation": "POR introduce la causa o el motivo de una acción.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_prep_por_medio_b1",
+      "domain": "grammar",
+      "sub": "prepositions",
+      "level": 3,
+      "pattern": "por-medio",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I sent the document by email.\"",
+      "options": [
+        "Envié el documento por correo electrónico.",
+        "Envié el documento para correo electrónico.",
+        "Envié el documento en correo electrónico.",
+        "Envié el documento de correo electrónico."
+      ],
+      "correct_index": 0,
+      "explanation": "POR expresa el medio o canal por el que se realiza algo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_prep_para_finalidad_a2",
+      "domain": "grammar",
+      "sub": "prepositions",
+      "level": 2,
+      "pattern": "para-finalidad",
+      "counterpart": "por-causa",
+      "cue_type": "gap_es",
+      "cue": "Estudio español ___ trabajar en Madrid.",
+      "options": [
+        "para",
+        "por",
+        "a",
+        "de"
+      ],
+      "correct_index": 0,
+      "explanation": "PARA introduce la finalidad o el objetivo de una acción.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_prep_para_destinatario_a2",
+      "domain": "grammar",
+      "sub": "prepositions",
+      "level": 2,
+      "pattern": "para-destinatario",
+      "cue_type": "situation_es",
+      "cue": "Le entregas un regalo envuelto y le dices que es de cumpleaños para tu madre.",
+      "options": [
+        "Este regalo es para mi madre, es su cumpleaños.",
+        "Este regalo es por mi madre, es su cumpleaños.",
+        "Este regalo es a mi madre, es su cumpleaños.",
+        "Este regalo es de mi madre, es su cumpleaños."
+      ],
+      "correct_index": 0,
+      "explanation": "PARA marca el destinatario o beneficiario.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_prep_para_fecha_b1",
+      "domain": "grammar",
+      "sub": "prepositions",
+      "level": 3,
+      "pattern": "para-fecha-limite",
+      "cue_type": "gap_es",
+      "cue": "Necesito el informe terminado ___ el viernes a más tardar.",
+      "options": [
+        "para",
+        "por",
+        "en",
+        "a"
+      ],
+      "correct_index": 0,
+      "explanation": "PARA expresa una fecha límite o plazo.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_prep_a_personal_a2",
+      "domain": "grammar",
+      "sub": "prepositions",
+      "level": 2,
+      "pattern": "a-personal",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I see my sister in the square every day.\"",
+      "options": [
+        "Veo a mi hermana en la plaza todos los días.",
+        "Veo mi hermana en la plaza todos los días.",
+        "Veo de mi hermana en la plaza todos los días.",
+        "Veo en mi hermana en la plaza todos los días."
+      ],
+      "correct_index": 0,
+      "explanation": "La preposición A es obligatoria delante de un objeto directo de persona conocida.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_prep_contraccion_a1",
+      "domain": "grammar",
+      "sub": "prepositions",
+      "level": 1,
+      "pattern": "contraccion-al-del",
+      "cue_type": "gap_es",
+      "cue": "Voy ___ supermercado a comprar pan.",
+      "options": [
+        "al",
+        "a el",
+        "a lo",
+        "en el"
+      ],
+      "correct_index": 0,
+      "explanation": "A + EL se contrae obligatoriamente en AL.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_art_def_a1",
+      "domain": "grammar",
+      "sub": "articles_determiners",
+      "level": 1,
+      "pattern": "articulo-definido",
+      "cue_type": "intent_en",
+      "cue": "Say (general statement): \"Cats are independent animals.\"",
+      "options": [
+        "Los gatos son animales independientes.",
+        "Unos gatos son animales independientes.",
+        "Gatos son animales independientes.",
+        "Lo gatos son animales independientes."
+      ],
+      "correct_index": 0,
+      "explanation": "Para generalizaciones de especie en español se usa el artículo definido.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_art_lo_neutro_b1",
+      "domain": "grammar",
+      "sub": "articles_determiners",
+      "level": 3,
+      "pattern": "articulo-lo-neutro",
+      "cue_type": "intent_en",
+      "cue": "Say: \"The best thing is to rest now.\"",
+      "options": [
+        "Lo mejor es descansar ahora.",
+        "El mejor es descansar ahora.",
+        "La mejor es descansar ahora.",
+        "Los mejor es descansar ahora."
+      ],
+      "correct_index": 0,
+      "explanation": "LO neutro + adjetivo sustantiva una cualidad abstracta.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_art_demostrativo_a2",
+      "domain": "grammar",
+      "sub": "articles_determiners",
+      "level": 2,
+      "pattern": "este-ese-aquel",
+      "cue_type": "situation_es",
+      "cue": "Señalas un coche que está muy lejos, casi en el horizonte.",
+      "options": [
+        "¡Mira aquel coche!",
+        "¡Mira este coche!",
+        "¡Mira ese coche!",
+        "¡Mira el coche!"
+      ],
+      "correct_index": 0,
+      "explanation": "AQUEL marca distancia lejana; ESE distancia media; ESTE cercanía al hablante.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_art_posesivo_a2",
+      "domain": "grammar",
+      "sub": "articles_determiners",
+      "level": 2,
+      "pattern": "posesivo-atono-tonico",
+      "cue_type": "gap_es",
+      "cue": "Este libro es ___; me lo regalaron por mi cumpleaños.",
+      "options": [
+        "mío",
+        "mi",
+        "me",
+        "su"
+      ],
+      "correct_index": 0,
+      "explanation": "Tras SER se usa la forma tónica del posesivo (mío, tuyo, suyo).",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_neg_simple_a1",
+      "domain": "grammar",
+      "sub": "negation",
+      "level": 1,
+      "pattern": "no-simple",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I don't speak French.\"",
+      "options": [
+        "No hablo francés.",
+        "Hablo no francés.",
+        "Hablo francés no.",
+        "Yo no hablar francés."
+      ],
+      "correct_index": 0,
+      "explanation": "Negación simple: NO se coloca delante del verbo conjugado.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_neg_nadie_a2",
+      "domain": "grammar",
+      "sub": "negation",
+      "level": 2,
+      "pattern": "doble-negacion-nadie",
+      "counterpart": "doble-negacion-nada",
+      "cue_type": "intent_en",
+      "cue": "Say: \"Nobody came to last night's party.\"",
+      "options": [
+        "Nadie vino a la fiesta de anoche.",
+        "No nadie vino a la fiesta de anoche.",
+        "Ninguno no vino a la fiesta de anoche.",
+        "Alguien no vino a la fiesta de anoche."
+      ],
+      "correct_index": 0,
+      "explanation": "NADIE antepuesto al verbo no necesita NO; la doble negación solo es obligatoria si el negativo va detrás.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_neg_nada_a2",
+      "domain": "grammar",
+      "sub": "negation",
+      "level": 2,
+      "pattern": "doble-negacion-nada",
+      "counterpart": "doble-negacion-nadie",
+      "cue_type": "gap_es",
+      "cue": "No quiero ___ , gracias, ya he comido.",
+      "options": [
+        "nada",
+        "algo",
+        "ninguno",
+        "nadie"
+      ],
+      "correct_index": 0,
+      "explanation": "Tras un verbo negado, se exige el indefinido negativo (doble negación obligatoria).",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_neg_tampoco_b1",
+      "domain": "grammar",
+      "sub": "negation",
+      "level": 3,
+      "pattern": "tampoco-ni-ni",
+      "cue_type": "intent_en",
+      "cue": "Reply (Spain, casual): \"Me neither — I don't like that show.\"",
+      "options": [
+        "A mí tampoco me gusta ese programa.",
+        "A mí también no me gusta ese programa.",
+        "A mí no tampoco me gusta ese programa.",
+        "Yo tampoco gusto ese programa."
+      ],
+      "correct_index": 0,
+      "explanation": "TAMPOCO es el equivalente negativo de TAMBIÉN; con verbos tipo gustar se usa A + pronombre tónico.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_rel_que_a2",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 2,
+      "pattern": "relativo-que",
+      "cue_type": "situation_es",
+      "cue": "Le hablas a alguien del chico que vive en el piso de al lado.",
+      "options": [
+        "El chico que vive al lado es muy simpático.",
+        "El chico quien vive al lado es muy simpático.",
+        "El chico cuyo vive al lado es muy simpático.",
+        "El chico el cual vive al lado es muy simpático."
+      ],
+      "correct_index": 0,
+      "explanation": "QUE es el relativo general; QUIEN solo se usa con preposición o entre comas.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_rel_donde_b1",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 3,
+      "pattern": "relativo-donde",
+      "cue_type": "intent_en",
+      "cue": "Say: \"This is the bar where we met.\"",
+      "options": [
+        "Este es el bar donde nos conocimos.",
+        "Este es el bar que nos conocimos.",
+        "Este es el bar cuyo nos conocimos.",
+        "Este es el bar quien nos conocimos."
+      ],
+      "correct_index": 0,
+      "explanation": "DONDE es el relativo de lugar.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_rel_cuyo_b2",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 4,
+      "pattern": "relativo-cuyo",
+      "cue_type": "gap_es",
+      "cue": "Es un escritor ___ obra ha sido traducida a veinte idiomas.",
+      "options": [
+        "cuya",
+        "que",
+        "quien",
+        "del cual"
+      ],
+      "correct_index": 0,
+      "explanation": "CUYO/A es el relativo de posesión y concuerda con el sustantivo poseído.",
+      "register": "formal"
+    },
+    {
+      "id": "gr_discurso_b1",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 3,
+      "pattern": "discurso-indirecto-pasado",
+      "counterpart": "discurso-indirecto-presente",
+      "cue_type": "intent_en",
+      "cue": "Report: He said: \"I am tired.\" → \"He said that he ___ tired.\"",
+      "options": [
+        "Dijo que estaba cansado.",
+        "Dijo que está cansado.",
+        "Dijo que estuvo cansado.",
+        "Dijo que esté cansado."
+      ],
+      "correct_index": 0,
+      "explanation": "Tras un verbo de habla en pasado, el presente del original pasa al imperfecto.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_si_real_b1",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 3,
+      "pattern": "si-condicional-real",
+      "counterpart": "si-condicional-irreal",
+      "cue_type": "gap_es",
+      "cue": "Si ___ tiempo, vendré a verte mañana.",
+      "options": [
+        "tengo",
+        "tenga",
+        "tuviera",
+        "tendría"
+      ],
+      "correct_index": 0,
+      "explanation": "Condicional real (tipo 1): si + presente de indicativo → futuro o presente en la principal.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_pasiva_se_b2",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 4,
+      "pattern": "pasiva-con-se",
+      "cue_type": "gap_es",
+      "cue": "En esta tienda ___ ropa de segunda mano.",
+      "options": [
+        "se vende",
+        "es vendida",
+        "vende se",
+        "está vendiendo"
+      ],
+      "correct_index": 0,
+      "explanation": "Pasiva refleja con SE: muy frecuente en español cuando el agente es genérico.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_daily_clima_a1",
+      "domain": "vocabulary",
+      "sub": "daily_life",
+      "level": 1,
+      "pattern": "tiempo-clima",
+      "cue_type": "intent_en",
+      "cue": "Say: \"It's really cold today, grab your coat.\"",
+      "options": [
+        "Hoy hace mucho frío, coge el abrigo.",
+        "Hoy está mucho frío, coge el abrigo.",
+        "Hoy es mucho frío, coge el abrigo.",
+        "Hoy tiene mucho frío, coge el abrigo."
+      ],
+      "correct_index": 0,
+      "explanation": "El tiempo atmosférico se expresa con HACER: hace frío, hace calor.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_daily_rutina_a1",
+      "domain": "vocabulary",
+      "sub": "daily_life",
+      "level": 1,
+      "pattern": "rutina-matinal",
+      "cue_type": "gap_es",
+      "cue": "Yo ___ todas las mañanas antes de desayunar.",
+      "options": [
+        "me ducho",
+        "ducho",
+        "me duche",
+        "duchando"
+      ],
+      "correct_index": 0,
+      "explanation": "DUCHARSE es pronominal: el pronombre reflexivo precede al verbo conjugado.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_daily_compras_a2",
+      "domain": "vocabulary",
+      "sub": "daily_life",
+      "level": 2,
+      "pattern": "compras-supermercado",
+      "cue_type": "situation_es",
+      "cue": "Estás en la caja del supermercado y la cajera te pregunta cómo vas a pagar.",
+      "options": [
+        "Con tarjeta, por favor.",
+        "Con el dinero, por favor.",
+        "Por tarjeta, por favor.",
+        "En tarjeta, por favor."
+      ],
+      "correct_index": 0,
+      "explanation": "El medio de pago se introduce con CON: con tarjeta, en efectivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_food_tapas_a2",
+      "domain": "vocabulary",
+      "sub": "food_cooking",
+      "level": 2,
+      "pattern": "en-el-bar-tapas",
+      "cue_type": "situation_es",
+      "cue": "Entras en un bar de Madrid y quieres una cerveza pequeña de barril.",
+      "options": [
+        "Una caña, por favor.",
+        "Una pinta, por favor.",
+        "Un vaso de cerveza, por favor.",
+        "Una botellita, por favor."
+      ],
+      "correct_index": 0,
+      "explanation": "En España, una CAÑA es una cerveza de barril pequeña; es lo que se pide por defecto.",
+      "register": "casual"
+    },
+    {
+      "id": "vo_food_menu_a2",
+      "domain": "vocabulary",
+      "sub": "food_cooking",
+      "level": 2,
+      "pattern": "menu-del-dia-sobremesa",
+      "cue_type": "intent_en",
+      "cue": "Say: \"Today's set menu costs twelve euros.\"",
+      "options": [
+        "El menú del día cuesta doce euros.",
+        "La carta del día cuesta doce euros.",
+        "El plato del día cuesta doce euros.",
+        "El menú de hoy costa doce euros."
+      ],
+      "correct_index": 0,
+      "explanation": "MENÚ DEL DÍA es la fórmula fija para el menú de precio cerrado a mediodía.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_food_tortilla_b1",
+      "domain": "vocabulary",
+      "sub": "food_cooking",
+      "level": 3,
+      "pattern": "platos-espanoles",
+      "cue_type": "situation_es",
+      "cue": "Un amigo extranjero te pregunta por un plato español típico hecho con huevo y patata.",
+      "options": [
+        "Se llama tortilla española.",
+        "Se llama paella valenciana.",
+        "Se llama fabada asturiana.",
+        "Se llama empanada gallega."
+      ],
+      "correct_index": 0,
+      "explanation": "La tortilla española lleva huevo y patata; sin patata sería tortilla francesa.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_home_habitaciones_a1",
+      "domain": "vocabulary",
+      "sub": "home_logistics",
+      "level": 1,
+      "pattern": "habitaciones-casa",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I sleep in the bedroom with my partner.\"",
+      "options": [
+        "Duermo en el dormitorio con mi pareja.",
+        "Duermo en el salón con mi pareja.",
+        "Duermo en el baño con mi pareja.",
+        "Duermo en el comedor con mi pareja."
+      ],
+      "correct_index": 0,
+      "explanation": "DORMITORIO es la habitación destinada al sueño; SALÓN es la sala de estar.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_home_alquiler_b1",
+      "domain": "vocabulary",
+      "sub": "home_logistics",
+      "level": 3,
+      "pattern": "alquiler-contrato",
+      "cue_type": "gap_es",
+      "cue": "Para entrar en el piso tuve que pagar dos meses de ___ por adelantado.",
+      "options": [
+        "fianza",
+        "tasa",
+        "impuesto",
+        "préstamo"
+      ],
+      "correct_index": 0,
+      "explanation": "En España, la FIANZA es el depósito de garantía exigido al firmar un alquiler.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_home_comunidad_b1",
+      "domain": "vocabulary",
+      "sub": "home_logistics",
+      "level": 3,
+      "pattern": "comunidad-gastos",
+      "cue_type": "gap_es",
+      "cue": "Cada mes pago 80 euros de ___ por los gastos del edificio.",
+      "options": [
+        "comunidad",
+        "alquiler",
+        "fianza",
+        "hipoteca"
+      ],
+      "correct_index": 0,
+      "explanation": "Los GASTOS DE COMUNIDAD cubren limpieza, ascensor y mantenimiento del edificio.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_work_email_b1",
+      "domain": "vocabulary",
+      "sub": "work_career",
+      "level": 3,
+      "pattern": "email-formal",
+      "cue_type": "intent_en",
+      "cue": "Formal email closing: \"Best regards,\"",
+      "options": [
+        "Un cordial saludo,",
+        "Besos,",
+        "Hasta luego,",
+        "Ciao,"
+      ],
+      "correct_index": 0,
+      "explanation": "UN CORDIAL SALUDO es la fórmula estándar de cierre en correspondencia formal en España.",
+      "register": "formal"
+    },
+    {
+      "id": "vo_work_nomina_b1",
+      "domain": "vocabulary",
+      "sub": "work_career",
+      "level": 3,
+      "pattern": "contrato-nomina",
+      "cue_type": "gap_es",
+      "cue": "Mi empresa me ingresa la ___ el día 28 de cada mes.",
+      "options": [
+        "nómina",
+        "factura",
+        "cuenta",
+        "tarjeta"
+      ],
+      "correct_index": 0,
+      "explanation": "La NÓMINA es el documento y el pago del sueldo mensual en España.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_work_entrevista_a2",
+      "domain": "vocabulary",
+      "sub": "work_career",
+      "level": 2,
+      "pattern": "curriculum-entrevista",
+      "cue_type": "gap_es",
+      "cue": "La semana pasada mandé mi ___ a una empresa de Barcelona.",
+      "options": [
+        "currículum",
+        "resumen",
+        "carta",
+        "formulario"
+      ],
+      "correct_index": 0,
+      "explanation": "CURRÍCULUM (o currículo) es la traducción estándar de CV.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_health_cabecera_a2",
+      "domain": "vocabulary",
+      "sub": "health_body",
+      "level": 2,
+      "pattern": "medico-cabecera-cita",
+      "cue_type": "situation_es",
+      "cue": "Llamas al centro de salud para que te vea tu médico habitual.",
+      "options": [
+        "Quería pedir cita con mi médico de cabecera.",
+        "Quería pedir cita con mi doctor de cabeza.",
+        "Quería pedir reserva con mi médico jefe.",
+        "Quería pedir un médico de cabecera."
+      ],
+      "correct_index": 0,
+      "explanation": "El MÉDICO DE CABECERA es el médico de familia asignado en la Seguridad Social.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_health_baja_b1",
+      "domain": "vocabulary",
+      "sub": "health_body",
+      "level": 3,
+      "pattern": "urgencias-baja-medica",
+      "cue_type": "intent_en",
+      "cue": "Say: \"The doctor gave me sick leave for one week.\"",
+      "options": [
+        "El médico me dio la baja una semana.",
+        "El médico me dio enfermedad una semana.",
+        "El médico me dio vacaciones una semana.",
+        "El médico me dio descanso una semana."
+      ],
+      "correct_index": 0,
+      "explanation": "DAR LA BAJA es la fórmula fija para la baja médica laboral en España.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_health_partes_a1",
+      "domain": "vocabulary",
+      "sub": "health_body",
+      "level": 1,
+      "pattern": "partes-cuerpo",
+      "cue_type": "gap_es",
+      "cue": "Me duele mucho ___ cabeza desde esta mañana.",
+      "options": [
+        "la",
+        "mi",
+        "su",
+        "una"
+      ],
+      "correct_index": 0,
+      "explanation": "Con partes del cuerpo, el español usa el artículo definido, no el posesivo.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_travel_renfe_b1",
+      "domain": "vocabulary",
+      "sub": "travel_transport",
+      "level": 3,
+      "pattern": "renfe-ave-cercanias",
+      "cue_type": "situation_es",
+      "cue": "Quieres ir rápido de Madrid a Barcelona en tren de alta velocidad.",
+      "options": [
+        "Voy a coger el AVE a Barcelona.",
+        "Voy a coger el Cercanías a Barcelona.",
+        "Voy a coger el metro a Barcelona.",
+        "Voy a coger el TGV a Barcelona."
+      ],
+      "correct_index": 0,
+      "explanation": "El AVE es el tren de alta velocidad de Renfe; Cercanías es el tren urbano y de proximidad.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_travel_billete_a2",
+      "domain": "vocabulary",
+      "sub": "travel_transport",
+      "level": 2,
+      "pattern": "billetes-reservas",
+      "cue_type": "intent_en",
+      "cue": "At the station: \"A return ticket to Valencia, please.\"",
+      "options": [
+        "Un billete de ida y vuelta a Valencia, por favor.",
+        "Un boleto de ida y vuelta a Valencia, por favor.",
+        "Un tique de ida y vuelta a Valencia, por favor.",
+        "Una entrada de ida y vuelta a Valencia, por favor."
+      ],
+      "correct_index": 0,
+      "explanation": "En España se usa BILLETE para transporte; BOLETO es habitual en Latinoamérica.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_travel_anden_a2",
+      "domain": "vocabulary",
+      "sub": "travel_transport",
+      "level": 2,
+      "pattern": "renfe-ave-cercanias",
+      "cue_type": "gap_es",
+      "cue": "El tren a Sevilla sale del ___ número 7.",
+      "options": [
+        "andén",
+        "puerta",
+        "carril",
+        "muelle"
+      ],
+      "correct_index": 0,
+      "explanation": "ANDÉN es la plataforma donde se embarca al tren.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_emotions_familia_a1",
+      "domain": "vocabulary",
+      "sub": "emotions_social",
+      "level": 1,
+      "pattern": "relaciones-familia",
+      "cue_type": "gap_es",
+      "cue": "El hermano de mi padre es mi ___.",
+      "options": [
+        "tío",
+        "primo",
+        "sobrino",
+        "cuñado"
+      ],
+      "correct_index": 0,
+      "explanation": "TÍO designa al hermano de uno de los padres.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_emotions_disculpa_a2",
+      "domain": "vocabulary",
+      "sub": "emotions_social",
+      "level": 2,
+      "pattern": "conflictos-disculpas",
+      "cue_type": "situation_es",
+      "cue": "Llegas tarde a una reunión de trabajo y quieres disculparte formalmente.",
+      "options": [
+        "Disculpen el retraso, ha habido un problema con el metro.",
+        "Perdón, llego tarde.",
+        "Lo siento, tío, me he liado.",
+        "Vale, lo siento."
+      ],
+      "correct_index": 0,
+      "explanation": "DISCULPEN (ustedes) es la fórmula formal; PERDÓN y LO SIENTO son más informales.",
+      "register": "formal"
+    },
+    {
+      "id": "vo_emotions_sentimientos_a2",
+      "domain": "vocabulary",
+      "sub": "emotions_social",
+      "level": 2,
+      "pattern": "sentimientos-base",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I'm really fed up with this job.\"",
+      "options": [
+        "Estoy harto de este trabajo.",
+        "Soy harto de este trabajo.",
+        "Tengo harto de este trabajo.",
+        "Estoy hartado de este trabajo."
+      ],
+      "correct_index": 0,
+      "explanation": "ESTAR HARTO DE expresa estado de saturación o cansancio.",
+      "register": "casual"
+    },
+    {
+      "id": "vo_admin_dni_a2",
+      "domain": "vocabulary",
+      "sub": "admin_bureaucracy",
+      "level": 2,
+      "pattern": "dni-nie-documentos",
+      "cue_type": "gap_es",
+      "cue": "Para cualquier trámite oficial necesitas el ___ si eres español.",
+      "options": [
+        "DNI",
+        "NIE",
+        "pasaporte",
+        "carnet de conducir"
+      ],
+      "correct_index": 0,
+      "explanation": "El DNI es el Documento Nacional de Identidad; el NIE es el equivalente para extranjeros residentes.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_admin_hacienda_b1",
+      "domain": "vocabulary",
+      "sub": "admin_bureaucracy",
+      "level": 3,
+      "pattern": "hacienda-aeat-impuestos",
+      "cue_type": "intent_en",
+      "cue": "Say: \"In June I have to file my tax return.\"",
+      "options": [
+        "En junio tengo que hacer la declaración de la renta.",
+        "En junio tengo que hacer la declaración de impuestos.",
+        "En junio tengo que pagar mis tasas.",
+        "En junio tengo que declarar mis taxes."
+      ],
+      "correct_index": 0,
+      "explanation": "DECLARACIÓN DE LA RENTA es el trámite anual del IRPF gestionado por la AEAT (Hacienda).",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_admin_padron_b1",
+      "domain": "vocabulary",
+      "sub": "admin_bureaucracy",
+      "level": 3,
+      "pattern": "padron-empadronamiento",
+      "cue_type": "situation_es",
+      "cue": "Acabas de mudarte a Madrid y tienes que registrar tu dirección en el ayuntamiento.",
+      "options": [
+        "Tengo que empadronarme en el ayuntamiento.",
+        "Tengo que registrarme en la policía.",
+        "Tengo que firmar el padrón en Hacienda.",
+        "Tengo que abrir el padrón en mi banco."
+      ],
+      "correct_index": 0,
+      "explanation": "EMPADRONARSE es inscribirse en el padrón municipal, requisito para muchos trámites.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_media_titular_b1",
+      "domain": "vocabulary",
+      "sub": "media_news",
+      "level": 3,
+      "pattern": "titulares-prensa",
+      "cue_type": "gap_es",
+      "cue": "El ___ del periódico dice: «El gobierno aprueba nueva ley».",
+      "options": [
+        "titular",
+        "artículo",
+        "subtítulo",
+        "anuncio"
+      ],
+      "correct_index": 0,
+      "explanation": "TITULAR es la frase principal de una noticia, en letra grande.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_media_redes_a2",
+      "domain": "vocabulary",
+      "sub": "media_news",
+      "level": 2,
+      "pattern": "redes-sociales",
+      "cue_type": "intent_en",
+      "cue": "Say: \"I posted a photo on Instagram yesterday.\"",
+      "options": [
+        "Subí una foto a Instagram ayer.",
+        "Posteé una foto en Instagram ayer.",
+        "Puse una foto a Instagram ayer.",
+        "Mandé una foto a Instagram ayer."
+      ],
+      "correct_index": 0,
+      "explanation": "SUBIR es el verbo neutro y más usado en España para publicar contenido en redes.",
+      "register": "casual"
+    },
+    {
+      "id": "vo_media_elecciones_b1",
+      "domain": "vocabulary",
+      "sub": "media_news",
+      "level": 3,
+      "pattern": "politica-elecciones",
+      "cue_type": "gap_es",
+      "cue": "El próximo domingo se celebran las ___ generales.",
+      "options": [
+        "elecciones",
+        "votaciones",
+        "encuestas",
+        "campañas"
+      ],
+      "correct_index": 0,
+      "explanation": "ELECCIONES designa el proceso institucional de voto; VOTACIÓN es cada acto concreto.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_register_vale_a1",
+      "domain": "vocabulary",
+      "sub": "register_nuance",
+      "level": 1,
+      "pattern": "slang-vale-guay-molar",
+      "cue_type": "situation_es",
+      "cue": "Un amigo te propone quedar a las ocho y estás de acuerdo (España, informal).",
+      "options": [
+        "Vale, a las ocho.",
+        "Está bien, a las ocho.",
+        "Bueno, a las ocho.",
+        "Sí, a las ocho."
+      ],
+      "correct_index": 0,
+      "explanation": "VALE es la forma coloquial más típica en España para mostrar acuerdo.",
+      "register": "casual"
+    },
+    {
+      "id": "vo_register_tio_a2",
+      "domain": "vocabulary",
+      "sub": "register_nuance",
+      "level": 2,
+      "pattern": "tio-tia-vocativo",
+      "cue_type": "intent_en",
+      "cue": "Say to a friend (Spain, very casual): \"Hey man, what's up?\"",
+      "options": [
+        "¿Qué pasa, tío?",
+        "¿Qué pasa, señor?",
+        "¿Qué pasa, hombre?",
+        "¿Qué pasa, amigo?"
+      ],
+      "correct_index": 0,
+      "explanation": "TÍO/TÍA es el vocativo informal castellano más típico entre jóvenes.",
+      "register": "casual"
+    },
+    {
+      "id": "vo_register_usted_b1",
+      "domain": "vocabulary",
+      "sub": "register_nuance",
+      "level": 3,
+      "pattern": "tu-vs-usted-castilla",
+      "cue_type": "situation_es",
+      "cue": "Entras en una tienda en Madrid y la dependienta tiene tu edad. ¿Qué fórmula es la más natural en España?",
+      "options": [
+        "Hola, ¿me puedes ayudar?",
+        "Hola, ¿puede usted ayudarme?",
+        "Hola, ¿le puede ayudar a mí?",
+        "Buenos días, ¿podría usted servirme?"
+      ],
+      "correct_index": 0,
+      "explanation": "En España, el TÚ se usa con desconocidos de edad similar en contextos cotidianos; USTED suena distante.",
+      "register": "casual"
+    },
+    {
+      "id": "gr_past_perf_vs_indef_b1",
+      "domain": "grammar",
+      "sub": "past_tenses",
+      "level": 3,
+      "pattern": "perfecto-vs-indefinido",
+      "counterpart": "indefinido-accion-puntual",
+      "cue_type": "gap_es",
+      "cue": "Esta semana ___ tres libros, pero el año pasado ___ veinte.",
+      "options": [
+        "he leído / leí",
+        "leí / he leído",
+        "leía / leí",
+        "he leído / leía"
+      ],
+      "correct_index": 0,
+      "explanation": "En español peninsular, el perfecto cubre un período abierto que incluye el ahora; el indefinido un período cerrado.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_si_irreal_b2",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 4,
+      "pattern": "si-condicional-irreal",
+      "counterpart": "si-condicional-real",
+      "cue_type": "intent_en",
+      "cue": "Say: \"If I had money, I would buy a house.\"",
+      "options": [
+        "Si tuviera dinero, me compraría una casa.",
+        "Si tengo dinero, me compraría una casa.",
+        "Si tuviera dinero, me compro una casa.",
+        "Si tenía dinero, me compraría una casa."
+      ],
+      "correct_index": 0,
+      "explanation": "Condicional irreal en presente (tipo 2): si + imperfecto de subjuntivo → condicional simple.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_si_tipo3_c1",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 5,
+      "pattern": "si-condicional-tipo3",
+      "counterpart": "si-condicional-irreal",
+      "cue_type": "gap_es",
+      "cue": "Si me ___ hablado antes, todo habría sido diferente.",
+      "options": [
+        "hubieras",
+        "habrías",
+        "hubieron",
+        "has"
+      ],
+      "correct_index": 0,
+      "explanation": "Condicional tipo 3: si + pluscuamperfecto de subjuntivo → condicional compuesto.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_neg_nunca_a2",
+      "domain": "grammar",
+      "sub": "negation",
+      "level": 2,
+      "pattern": "doble-negacion-nunca",
+      "counterpart": "tampoco-ni-ni",
+      "cue_type": "micro_intent_es",
+      "cue": "Yo (no llegar nunca) tarde al trabajo.",
+      "options": [
+        "Yo no llego nunca tarde al trabajo.",
+        "Yo no llego tarde al trabajo nunca no.",
+        "Yo no nunca llego tarde al trabajo.",
+        "Yo nunca no llego tarde al trabajo."
+      ],
+      "correct_index": 0,
+      "explanation": "Con el negativo NUNCA pospuesto al verbo se mantiene NO delante: doble negación obligatoria.",
+      "register": "neutral"
+    },
+    {
+      "id": "gr_discurso_presente_b1",
+      "domain": "grammar",
+      "sub": "complex_sentences",
+      "level": 3,
+      "pattern": "discurso-indirecto-presente",
+      "counterpart": "discurso-indirecto-pasado",
+      "cue_type": "intent_en",
+      "cue": "Report: She says: \"I'm tired.\" → \"She says that she ___ tired.\"",
+      "options": [
+        "Dice que está cansada.",
+        "Dice que esté cansada.",
+        "Dice que estaba cansada.",
+        "Dice que está cansado."
+      ],
+      "correct_index": 0,
+      "explanation": "Con verbo introductor en presente, el tiempo de la subordinada no cambia.",
+      "register": "neutral"
+    },
+    {
+      "id": "vo_register_vosotros_casual_a2",
+      "domain": "vocabulary",
+      "sub": "register_nuance",
+      "level": 2,
+      "pattern": "vosotros-coloquial",
+      "counterpart": "tu-vs-usted-castilla",
+      "cue_type": "situation_es",
+      "cue": "Saludas a un grupo de amigos al llegar a un bar en Madrid.",
+      "options": [
+        "¡Hola, chicos! ¿Qué tal estáis?",
+        "¡Hola, chicos! ¿Qué tal están?",
+        "¡Hola, chicos! ¿Qué tal estás?",
+        "¡Hola, chicos! ¿Cómo se encuentran ustedes?"
+      ],
+      "correct_index": 0,
+      "explanation": "Entre amigos en España se usa VOSOTROS con la conjugación en -áis/-éis/-ís.",
+      "register": "casual"
+    },
+    {
+      "id": "vo_register_formal_b1",
+      "domain": "vocabulary",
+      "sub": "register_nuance",
+      "level": 3,
+      "pattern": "formal-escrito",
+      "counterpart": "slang-vale-guay-molar",
+      "cue_type": "situation_es",
+      "cue": "Empiezas un correo dirigido a un cliente al que no conoces personalmente.",
+      "options": [
+        "Estimado Sr. García:",
+        "¡Hola, tío!",
+        "Buenas, ¿qué tal?",
+        "Querido amigo:"
+      ],
+      "correct_index": 0,
+      "explanation": "ESTIMADO/A + apellido es la fórmula de apertura estándar en correspondencia formal escrita.",
+      "register": "formal"
+    },
+    {
+      "id": "vo_register_expresion_b1",
+      "domain": "vocabulary",
+      "sub": "register_nuance",
+      "level": 3,
+      "pattern": "expresiones-idiomaticas",
+      "counterpart": "tio-tia-vocativo",
+      "cue_type": "situation_es",
+      "cue": "Un compañero te cuenta algo que te parece increíble y muy sorprendente.",
+      "options": [
+        "¡No me digas, qué fuerte!",
+        "¡No me dices, qué fuerte!",
+        "¡No te digo, qué fuerte!",
+        "¡No lo digo, qué fuerte!"
+      ],
+      "correct_index": 0,
+      "explanation": "¡NO ME DIGAS! es la expresión idiomática estándar para sorpresa; usa imperativo negativo.",
+      "register": "casual"
+    }
+  ]
+}
