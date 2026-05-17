@@ -45,23 +45,31 @@ export interface PersonalisedTargets {
   weakPatterns: string[]
 }
 
-export async function loadSubAggregates(
-  userId: number,
-  languageId: number,
-): Promise<SubAggregate[]> {
-  const [subStats, states] = await Promise.all([
-    prisma.subStats.findMany({ where: { userId } }),
-    prisma.questionState.findMany({
-      where: {
-        userId,
-        question: { languageId },
-      },
-      include: {
-        question: { select: { domain: true, sub: true, level: true, pattern: true } },
-      },
-    }),
-  ])
+export interface PrefetchedQuestionState {
+  stability: number
+  difficulty: number
+  state: number
+  scheduledDays: number
+  learningSteps: number
+  reps: number
+  lapses: number
+  lastReview: Date | null
+  dueAt: Date | null
+  question: { domain: string; sub: string; level: number; pattern: string }
+}
 
+export interface PrefetchedSubStat {
+  domain: string
+  sub: string
+  isActive: boolean
+}
+
+// In-memory aggregation — caller supplies the two heavy fetches.
+// Used by loadHomeData to avoid re-querying the same data through three paths.
+export function computeSubAggregates(
+  subStats: PrefetchedSubStat[],
+  states: PrefetchedQuestionState[],
+): SubAggregate[] {
   const cardsBySub = new Map<string, CardForLevel[]>()
   for (const st of states) {
     const key = `${st.question.domain}::${st.question.sub}`
@@ -102,6 +110,27 @@ export async function loadSubAggregates(
   return out
 }
 
+export async function loadSubAggregates(
+  userId: number,
+  languageId: number,
+  prefetchedStates?: PrefetchedQuestionState[],
+): Promise<SubAggregate[]> {
+  const [subStats, states] = await Promise.all([
+    prisma.subStats.findMany({ where: { userId } }),
+    prefetchedStates ??
+      prisma.questionState.findMany({
+        where: {
+          userId,
+          question: { languageId },
+        },
+        include: {
+          question: { select: { domain: true, sub: true, level: true, pattern: true } },
+        },
+      }),
+  ])
+  return computeSubAggregates(subStats, states)
+}
+
 function subPriority(s: SubAggregate): number {
   const levelScore = 5 - s.subLevel
   const retentionPressure = s.lowR * 2
@@ -122,6 +151,7 @@ export async function pickPersonalisedTargets(args: {
   languageCode: LanguageCode
   subAggregates: SubAggregate[]
   domainFilter?: Domain
+  prefetchedStates?: PrefetchedQuestionState[]
 }): Promise<PersonalisedTargets | null> {
   let pool = args.subAggregates.filter((s) => s.isActive)
   if (args.domainFilter) pool = pool.filter((s) => s.domain === args.domainFilter)
@@ -156,12 +186,14 @@ export async function pickPersonalisedTargets(args: {
   const range = levelRangeFor(meanEst)
 
   const subDomainKeys = new Set(picks.map((p) => `${p.sub.domain}::${p.sub.sub}`))
-  const states = await prisma.questionState.findMany({
-    where: { userId: args.userId, question: { languageId: args.languageId } },
-    include: {
-      question: { select: { domain: true, sub: true, pattern: true } },
-    },
-  })
+  const states =
+    args.prefetchedStates ??
+    (await prisma.questionState.findMany({
+      where: { userId: args.userId, question: { languageId: args.languageId } },
+      include: {
+        question: { select: { domain: true, sub: true, pattern: true } },
+      },
+    }))
   type StateCard = {
     stability: number
     difficulty: number

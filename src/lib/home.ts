@@ -4,8 +4,8 @@ import { rankTier, userTier, type UserTierInfo } from "@/lib/points"
 import { getDomains, type Domain, type LanguageCode } from "@/lib/taxonomy"
 import {
   computeBossProgress,
+  computeSubAggregates,
   computeUnlockedBossLevels,
-  loadSubAggregates,
   pickPersonalisedTargets,
   type BossProgress,
   type PersonalisedTargets,
@@ -72,21 +72,18 @@ export async function loadHomeData(args: {
       : {}),
   }
 
-  const [sessions, dueCount, subAggregates, statesWithQuestion, xpAggregate] =
+  // The home page used to trigger four near-identical questionState queries
+  // (one for dueCount, one inside loadSubAggregates, one for the mastery
+  // computation, one inside pickPersonalisedTargets) plus a separate subStats
+  // fetch. Now everything reads from a single shared bundle in one round trip.
+  const [sessions, subStatsRows, statesWithQuestion, xpAggregate] =
     await Promise.all([
       prisma.session.findMany({
         where: sessionWhere,
         orderBy: { startedAt: "desc" },
         take: 8,
       }),
-      prisma.questionState.count({
-        where: {
-          userId: args.userId,
-          dueAt: { lte: now },
-          question: { languageId: args.languageId },
-        },
-      }),
-      loadSubAggregates(args.userId, args.languageId),
+      prisma.subStats.findMany({ where: { userId: args.userId } }),
       prisma.questionState.findMany({
         where: { userId: args.userId, question: { languageId: args.languageId } },
         include: {
@@ -98,6 +95,11 @@ export async function loadHomeData(args: {
         _sum: { totalPoints: true },
       }),
     ])
+  const subAggregates = computeSubAggregates(subStatsRows, statesWithQuestion)
+  const dueCount = statesWithQuestion.reduce(
+    (acc, s) => (s.dueAt && s.dueAt <= now ? acc + 1 : acc),
+    0,
+  )
   const lifetimeXp = xpAggregate._sum.totalPoints ?? 0
   const tier = userTier(lifetimeXp)
 
@@ -144,6 +146,7 @@ export async function loadHomeData(args: {
     languageCode: args.languageCode,
     subAggregates,
     domainFilter: args.domainFilter,
+    prefetchedStates: statesWithQuestion,
   })
 
   const activeKeys = new Set(
