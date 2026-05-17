@@ -1,6 +1,7 @@
 "use server"
 
 import { revalidatePath } from "next/cache"
+import { after } from "next/server"
 import { prisma } from "@/lib/db"
 import {
   StartBossSchema,
@@ -71,7 +72,6 @@ export async function startPersonalisedSession(
     }
   }
 
-  const snapshot = await snapshotSubLevels(user.id, user.languageId)
   const session = await prisma.session.create({
     data: {
       userId: user.id,
@@ -81,8 +81,18 @@ export async function startPersonalisedSession(
       targetSubs: targetSubs ? JSON.stringify(targetSubs) : null,
       levelMin: levelRange?.min ?? null,
       levelMax: levelRange?.max ?? null,
-      subLevelsBefore: JSON.stringify(snapshot),
+      subLevelsBefore: JSON.stringify({}),
     },
+  })
+  // Compute the "before" snapshot after the response — the client only needs
+  // sessionId to redirect. The snapshot is read on the end-of-session page,
+  // many seconds (or minutes) later, by which point this has long completed.
+  after(async () => {
+    const snapshot = await snapshotSubLevels(user.id, user.languageId)
+    await prisma.session.update({
+      where: { id: session.id },
+      data: { subLevelsBefore: JSON.stringify(snapshot) },
+    })
   })
   return { sessionId: session.id }
 }
@@ -100,7 +110,6 @@ export async function startBossSession(
   }
 
   const queue = buildBossComposition(parsed.level)
-  const snapshot = await snapshotSubLevels(user.id, user.languageId)
   const session = await prisma.session.create({
     data: {
       userId: user.id,
@@ -110,8 +119,15 @@ export async function startBossSession(
       bossDomain: parsed.domain,
       bossLevel: parsed.level,
       bossQueue: JSON.stringify(queue),
-      subLevelsBefore: JSON.stringify(snapshot),
+      subLevelsBefore: JSON.stringify({}),
     },
+  })
+  after(async () => {
+    const snapshot = await snapshotSubLevels(user.id, user.languageId)
+    await prisma.session.update({
+      where: { id: session.id },
+      data: { subLevelsBefore: JSON.stringify(snapshot) },
+    })
   })
   return { sessionId: session.id }
 }
@@ -125,7 +141,7 @@ export async function serveNext(sessionId: number): Promise<ServedQuestionDTO | 
 
   const servedReviews = await prisma.review.findMany({
     where: { userId: user.id, sessionId },
-    select: { questionId: true },
+    include: { question: { select: { pattern: true } } },
   })
   const servedIds = servedReviews.map((r) => r.questionId)
 
@@ -185,6 +201,7 @@ export async function serveNext(sessionId: number): Promise<ServedQuestionDTO | 
     servedIds,
     targetSubs,
     levelRange,
+    prefetchedReviews: servedReviews,
   })
   if (!picked) return { done: true }
 

@@ -181,6 +181,7 @@ export async function pickNextQuestion(args: {
   servedIds: number[]
   targetSubs?: Array<{ domain: string; sub: string }>
   levelRange?: { min: number; max: number }
+  prefetchedReviews?: Array<{ question: { pattern: string } }>
 }): Promise<{ question: ServedQuestion; levelAtServe: number } | null> {
   const subScope = await resolveSubScope(args)
   if (subScope.length === 0) return null
@@ -262,10 +263,12 @@ export async function pickNextQuestion(args: {
     .sort((a, b) => b[1] - a[1])
   const weakPatterns = new Set(weakRanked.slice(0, 5).map(([p]) => p))
 
-  const reviews = await prisma.review.findMany({
-    where: { userId: args.userId, sessionId: args.sessionId },
-    include: { question: { select: { pattern: true } } },
-  })
+  const reviews =
+    args.prefetchedReviews ??
+    (await prisma.review.findMany({
+      where: { userId: args.userId, sessionId: args.sessionId },
+      include: { question: { select: { pattern: true } } },
+    }))
   const servedPatternCounts = new Map<string, number>()
   for (const r of reviews) {
     const key = r.question.pattern
