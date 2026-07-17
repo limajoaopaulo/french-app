@@ -3,32 +3,24 @@
 export const t = {
   appTitle: "Adaptive Quiz",
   home: {
-    personalisedHeadline: "Drill",
-    personalisedSubtitle: "We target your weak spots.",
+    personalisedHeadline: "Train",
+    personalisedSubtitle: "We pick your weakest, most useful skills.",
     startDrill: (n: number) => `Start (${n} Q)`,
     settingsLink: "Settings",
     statsLink: "Stats",
-    domainAll: "All",
-    domainGrammar: "Grammar",
-    domainVocab: "Vocabulary",
-    tabAriaLabel: "Filter by domain",
     revisionTitle: "Review",
     revisionSubtitle: (n: number) =>
       `${n} card${n > 1 ? "s" : ""} due`,
     revisionSoon: "Coming soon",
-    bossesTitle: "Boss arena",
-    bossesSubtitle: "Test your A2 / B1 / B2 / C1 mastery.",
-    bossLocked: "Locked",
-    bossUnlocked: "Unlocked",
-    bossSoon: "Coming soon",
-    bossProgressReady: (ready: number, total: number) =>
-      `${ready} / ${total} ready`,
-    bossProgressBottleneck: (label: string, level: string) =>
-      `${label} → ${level}`,
+    progressionTitle: "Your level",
+    progressionCaption: (label: string) => `Overall ${label}`,
+    toImproveTitle: "To improve",
+    toImproveSubtitle: (n: number) =>
+      `${n} skill${n > 1 ? "s" : ""} you keep missing`,
     recentTitle: "Recent sessions",
     recentEmpty: "No sessions yet.",
-    focusPatterns: "Focus",
-    drillFocusFor: (subs: string, range: string) => `${subs} · ${range}`,
+    focusTags: "Focus",
+    drillFocusFor: (tags: string, range: string) => `${tags} · ${range}`,
     lifetimeXp: (n: number) => `${n.toLocaleString()} XP`,
     nextTier: (xp: number) => `${xp.toLocaleString()} to next tier`,
   },
@@ -61,6 +53,8 @@ export const t = {
       "Your answers so far are saved. You can start another drill any time.",
     endDrillConfirmYes: "Yes, end",
     endDrillConfirmNo: "Keep going",
+    showTranslation: "Show translation",
+    hideTranslation: "Hide translation",
   },
   end: {
     title: "Session complete",
@@ -83,15 +77,6 @@ export const t = {
     leveledDown: (from: string, to: string) => `Setback: ${from} → ${to}`,
     mastered: "Mastered C1",
     readyToLevelUp: "Ready to level up",
-  },
-  boss: {
-    startBoss: (domain: string, level: string) => `Fight ${domain} ${level}`,
-    defeatTitle: "Boss defeated you",
-    defeatBody: (domain: string, level: string) =>
-      `You failed on ${domain} ${level}. Sub-categories in this domain have been knocked down.`,
-    relockedListTitle: "Sub-categories knocked back",
-    medalEarned: (label: string) => `Medal: ${label}`,
-    medalTitle: "Boss conquered",
   },
   stats: {
     title: "Stats",
@@ -117,11 +102,11 @@ export const t = {
     notAnsweredYet: "Not started",
   },
   settings: {
-    title: "Active sub-categories",
-    hint: "Toggle what you want included in personalised drills.",
+    title: "Settings",
+    hint: "The app auto-targets the skills you should train — no categories to pick.",
     back: "Back",
     drillLengthTitle: "Default drill length",
-    drillLengthHint: "How many questions per personalised drill from the home screen.",
+    drillLengthHint: "How many questions per drill from the home screen.",
     drillLengthOption: (n: number) => `${n} Q`,
   },
   ranks: {

@@ -1,0 +1,724 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vExpr_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Depuis que mon meilleur ami a déménagé, j'ai le ___.",
+      "blankHint": null,
+      "translation": "Since my best friend moved away, I've been feeling down.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["cafard", "scarabée", "papillon", "moustique"],
+      "correct_index": 0,
+      "explanation": "« Avoir le cafard » veut dire être triste ou déprimé.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Cette nouvelle voiture coûte les ___ de la tête.",
+      "blankHint": null,
+      "translation": "This new car costs an arm and a leg.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["yeux", "dents", "oreilles", "mains"],
+      "correct_index": 0,
+      "explanation": "« Coûter les yeux de la tête » signifie être très cher.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il m'a posé un ___ : il n'est jamais venu au rendez-vous.",
+      "blankHint": null,
+      "translation": "He stood me up: he never came to the meeting.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["lapin", "chat", "chien", "oiseau"],
+      "correct_index": 0,
+      "explanation": "« Poser un lapin » veut dire ne pas venir à un rendez-vous.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Excusez ma voix, j'ai un ___ dans la gorge ce matin.",
+      "blankHint": null,
+      "translation": "Excuse my voice, I have a frog in my throat this morning.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["chat", "chien", "lapin", "oiseau"],
+      "correct_index": 0,
+      "explanation": "« Avoir un chat dans la gorge » veut dire être enroué.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Prends ton parapluie, il pleut des ___ dehors !",
+      "blankHint": null,
+      "translation": "Take your umbrella, it's raining cats and dogs outside!",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["cordes", "fils", "gouttes", "seaux"],
+      "correct_index": 0,
+      "explanation": "« Il pleut des cordes » veut dire qu'il pleut très fort.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ne trouve pas la réponse, je donne ma ___ au chat.",
+      "blankHint": null,
+      "translation": "I can't find the answer, I give up guessing.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["langue", "main", "tête", "dent"],
+      "correct_index": 0,
+      "explanation": "« Donner sa langue au chat », c'est renoncer à deviner.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Quand ils se sont rencontrés, ce fut le coup de ___.",
+      "blankHint": null,
+      "translation": "When they met, it was love at first sight.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["foudre", "tonnerre", "éclair", "vent"],
+      "correct_index": 0,
+      "explanation": "« Le coup de foudre » désigne un amour immédiat.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il faisait si chaud qu'elle est tombée dans les ___.",
+      "blankHint": null,
+      "translation": "It was so hot that she fainted.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["pommes", "poires", "prunes", "cerises"],
+      "correct_index": 0,
+      "explanation": "« Tomber dans les pommes » veut dire s'évanouir.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il ne fait jamais rien à la maison, il a un ___ dans la main.",
+      "blankHint": null,
+      "translation": "He never does anything at home, he's bone idle.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["poil", "doigt", "ongle", "clou"],
+      "correct_index": 0,
+      "explanation": "« Avoir un poil dans la main » veut dire être très paresseux.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle met toujours son grain de ___ dans nos conversations.",
+      "blankHint": null,
+      "translation": "She always puts in her two cents during our conversations.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["sel", "poivre", "sable", "sucre"],
+      "correct_index": 0,
+      "explanation": "« Mettre son grain de sel », c'est donner un avis non demandé.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Arrête de me casser les ___ avec toutes tes questions !",
+      "blankHint": null,
+      "translation": "Stop bugging me with all your questions!",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["pieds", "mains", "bras", "genoux"],
+      "correct_index": 0,
+      "explanation": "« Casser les pieds » à quelqu'un, c'est l'agacer.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après la fête d'hier soir, j'avais la gueule de ___.",
+      "blankHint": null,
+      "translation": "After last night's party, I had a hangover.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["bois", "pierre", "fer", "verre"],
+      "correct_index": 0,
+      "explanation": "« La gueule de bois » désigne le malaise après avoir trop bu.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_013",
+      "format": "cloze",
+      "level": 4,
+      "cue": "J'ai passé une nuit ___ à réviser pour l'examen de demain.",
+      "blankHint": null,
+      "translation": "I spent a sleepless night studying for tomorrow's exam.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["blanche", "noire", "grise", "rouge"],
+      "correct_index": 0,
+      "explanation": "« Une nuit blanche » est une nuit passée sans dormir.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_014",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sans le moindre alibi, le suspect est dans de beaux ___.",
+      "blankHint": null,
+      "translation": "Without any alibi, the suspect is in a real fix.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["draps", "habits", "vêtements", "tissus"],
+      "correct_index": 0,
+      "explanation": "« Être dans de beaux draps », c'est être dans une situation difficile.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Tu veux décorer avant même d'avoir les murs : tu mets la charrue avant les ___.",
+      "blankHint": null,
+      "translation": "You want to decorate before you even have the walls: you're putting the cart before the horse.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["bœufs", "chevaux", "ânes", "vaches"],
+      "correct_index": 0,
+      "explanation": "« Mettre la charrue avant les bœufs », c'est faire les choses dans le désordre.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après des mois d'échecs, il a fini par jeter l'___.",
+      "blankHint": null,
+      "translation": "After months of failure, he finally threw in the towel.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["éponge", "assiette", "aiguille", "échelle"],
+      "correct_index": 0,
+      "explanation": "« Jeter l'éponge », c'est abandonner, renoncer.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Désolé, je ne peux pas t'aider maintenant, j'ai d'autres ___ à fouetter.",
+      "blankHint": null,
+      "translation": "Sorry, I can't help you now, I have other fish to fry.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["chats", "chiens", "souris", "rats"],
+      "correct_index": 0,
+      "explanation": "« Avoir d'autres chats à fouetter », c'est avoir des choses plus importantes à faire.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il est parti de la soirée sans dire au revoir, il a filé à l'___.",
+      "blankHint": null,
+      "translation": "He left the party without saying goodbye, he slipped away.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["anglaise", "française", "espagnole", "italienne"],
+      "correct_index": 0,
+      "explanation": "« Filer à l'anglaise », c'est partir discrètement sans prévenir.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_019",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Assez de détours : soyons francs et appelons un chat un ___.",
+      "blankHint": null,
+      "translation": "Enough beating around the bush: let's be frank and call a spade a spade.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["chat", "chien", "rat", "loup"],
+      "correct_index": 0,
+      "explanation": "« Appeler un chat un chat », c'est dire les choses franchement.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_020",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Après une longue enquête, les journalistes ont découvert le pot aux ___.",
+      "blankHint": null,
+      "translation": "After a long investigation, the journalists uncovered the hidden truth.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["roses", "lys", "tulipes", "marguerites"],
+      "correct_index": 0,
+      "explanation": "« Découvrir le pot aux roses », c'est mettre au jour un secret caché.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_021",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le juge a fini par lui tirer les vers du ___ pendant l'interrogatoire.",
+      "blankHint": null,
+      "translation": "The judge finally wormed the information out of him during questioning.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["nez", "cœur", "ventre", "dos"],
+      "correct_index": 0,
+      "explanation": "« Tirer les vers du nez », c'est faire parler quelqu'un habilement.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_022",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Dans ses critiques, il n'y va pas de main ___ : il dit tout sans ménagement.",
+      "blankHint": null,
+      "translation": "In his criticism, he doesn't pull any punches: he says everything bluntly.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["morte", "vive", "faible", "lourde"],
+      "correct_index": 0,
+      "explanation": "« Ne pas y aller de main morte », c'est agir avec force, sans retenue.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_023",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il obtient toujours ce qu'il veut : il connaît tout le monde et a le bras ___.",
+      "blankHint": null,
+      "translation": "He always gets what he wants: he knows everyone and has a lot of influence.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["long", "court", "fort", "large"],
+      "correct_index": 0,
+      "explanation": "« Avoir le bras long », c'est avoir de l'influence et des relations.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_024",
+      "format": "cloze",
+      "level": 5,
+      "cue": "En apercevant le danger, il a pris ses jambes à son ___.",
+      "blankHint": null,
+      "translation": "Seeing the danger, he took to his heels.",
+      "tags": [
+        { "facet": "topic", "tag": "idioms", "role": "focus" }
+      ],
+      "options": ["cou", "dos", "bras", "pied"],
+      "correct_index": 0,
+      "explanation": "« Prendre ses jambes à son cou », c'est s'enfuir en courant.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vExpr_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour saluer poliment votre patron le matin, dites « ___ » et non « Salut ».",
+      "blankHint": null,
+      "translation": "To greet your boss politely in the morning, say \"Hello\" and not \"Hi\".",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["Bonjour", "Salut", "Coucou", "Yo"],
+      "correct_index": 0,
+      "explanation": "« Bonjour » est la salutation correcte ; « Salut » est familier.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Sur votre CV, écrivez « mon dernier ___ » plutôt que « mon dernier boulot ».",
+      "blankHint": null,
+      "translation": "On your résumé, write \"my last job\" rather than the slang word.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["emploi", "boulot", "taf", "job"],
+      "correct_index": 0,
+      "explanation": "« Emploi » relève du registre soutenu ; « boulot » et « taf » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Dans un document officiel, on parle d'une « ___ » et non d'une « bagnole ».",
+      "blankHint": null,
+      "translation": "In an official document, you refer to a \"car\", not the slang word.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["voiture", "bagnole", "caisse", "tire"],
+      "correct_index": 0,
+      "explanation": "« Voiture » est le terme correct ; « bagnole » et « caisse » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "À la banque, le conseiller parle de votre « ___ » et non de votre « fric ».",
+      "blankHint": null,
+      "translation": "At the bank, the adviser talks about your \"money\", not the slang word.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["argent", "fric", "thune", "blé"],
+      "correct_index": 0,
+      "explanation": "« Argent » est neutre et correct ; « fric », « thune » et « blé » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Au restaurant, le serveur demande poliment : « Que désirez-vous ___ ? »",
+      "blankHint": null,
+      "translation": "At the restaurant, the waiter politely asks: \"What would you like to eat?\"",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["manger", "bouffer", "grailler", "becter"],
+      "correct_index": 0,
+      "explanation": "« Manger » est correct ; « bouffer », « grailler » et « becter » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En réunion, on dit « je suis très ___ » plutôt que « je suis trop content ».",
+      "blankHint": null,
+      "translation": "In a meeting, you say \"I am very pleased\" rather than the casual phrase.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["satisfait", "emballé", "scotché", "raccord"],
+      "correct_index": 0,
+      "explanation": "« Satisfait » convient au registre soutenu ; les autres sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Dans un mail professionnel : « Veuillez trouver ci-joint le document que je vous ___. »",
+      "blankHint": null,
+      "translation": "In a professional email: \"Please find attached the document I am sending you.\"",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["transmets", "balance", "file", "refile"],
+      "correct_index": 0,
+      "explanation": "« Transmettre » est soutenu ; « balancer », « filer » et « refiler » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après cette longue réunion, le directeur déclare qu'il est ___.",
+      "blankHint": null,
+      "translation": "After this long meeting, the director says he is exhausted.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["épuisé", "crevé", "naze", "claqué"],
+      "correct_index": 0,
+      "explanation": "« Épuisé » relève du registre soutenu ; « crevé », « naze » et « claqué » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le professeur demande poliment : « Avez-vous bien ___ la consigne ? »",
+      "blankHint": null,
+      "translation": "The teacher politely asks: \"Did you understand the instruction properly?\"",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["compris", "pigé", "capté", "gobé"],
+      "correct_index": 0,
+      "explanation": "« Compris » est correct ; « pigé », « capté » et « gobé » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le rapport mentionne « un ___ technique » plutôt que « une grosse galère ».",
+      "blankHint": null,
+      "translation": "The report mentions \"a technical problem\" rather than the casual phrase.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["problème", "galère", "embrouille", "pépin"],
+      "correct_index": 0,
+      "explanation": "« Problème » est neutre ; « galère », « embrouille » et « pépin » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "À la fin de l'entretien, on dit poliment « je dois ___ » et non « je me casse ».",
+      "blankHint": null,
+      "translation": "At the end of the interview, you politely say \"I must leave\" and not the slang phrase.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["partir", "me casser", "me barrer", "me tirer"],
+      "correct_index": 0,
+      "explanation": "« Partir » est correct ; « se casser », « se barrer » et « se tirer » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Dans un compte rendu, on écrit « le projet a ___ progressé », pas « vachement ».",
+      "blankHint": null,
+      "translation": "In a report, you write \"the project has progressed a lot\", not the slang word.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["beaucoup", "vachement", "grave", "hyper"],
+      "correct_index": 0,
+      "explanation": "« Beaucoup » est neutre ; « vachement », « grave » et « hyper » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_037",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Dans son communiqué, l'entreprise souhaite ___ de nouveaux locaux au centre-ville.",
+      "blankHint": null,
+      "translation": "In its statement, the company wishes to acquire new premises downtown.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["acquérir", "choper", "dégoter", "récupérer"],
+      "correct_index": 0,
+      "explanation": "« Acquérir » est soutenu ; « choper » et « dégoter » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_038",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sur le formulaire administratif, il est écrit : « Je ___ à cette adresse depuis 2015. »",
+      "blankHint": null,
+      "translation": "On the administrative form it reads: \"I have resided at this address since 2015.\"",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["réside", "crèche", "squatte", "traîne"],
+      "correct_index": 0,
+      "explanation": "« Résider » relève du registre administratif soutenu ; « crécher » et « squatter » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_039",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Lors de l'audience, le témoin a ___ que l'accusé était présent ce soir-là.",
+      "blankHint": null,
+      "translation": "During the hearing, the witness stated that the accused was present that evening.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["déclaré", "balancé", "sorti", "lâché"],
+      "correct_index": 0,
+      "explanation": "« Déclarer » est soutenu ; « balancer », « sortir » et « lâcher » (une phrase) sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_040",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le client s'est dit pleinement ___ de la prestation dans son évaluation officielle.",
+      "blankHint": null,
+      "translation": "The client said he was fully satisfied with the service in his official review.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["satisfait", "emballé", "nickel", "raccord"],
+      "correct_index": 0,
+      "explanation": "« Satisfait » convient à un écrit formel ; « emballé », « nickel » et « raccord » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_041",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La direction va prochainement ___ des négociations avec les syndicats.",
+      "blankHint": null,
+      "translation": "Management will soon open negotiations with the unions.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["entamer", "démarrer", "lancer", "attaquer"],
+      "correct_index": 0,
+      "explanation": "« Entamer » des négociations est soutenu ; « démarrer », « lancer » et « attaquer » sont plus familiers ici.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_042",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette procédure ___ toute votre attention avant la signature du contrat.",
+      "blankHint": null,
+      "translation": "This procedure requires your full attention before signing the contract.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["requiert", "veut", "réclame", "cherche"],
+      "correct_index": 0,
+      "explanation": "« Requérir » est soutenu ; « vouloir », « réclamer » et « chercher » sont ici trop familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_043",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Je vous saurais ___ de bien vouloir me répondre dans les meilleurs délais.",
+      "blankHint": null,
+      "translation": "I would be grateful if you would kindly reply to me as soon as possible.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["gré", "grès", "gréé", "grâce"],
+      "correct_index": 0,
+      "explanation": "« Savoir gré à quelqu'un » est une formule de politesse très soutenue.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_044",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Veuillez agréer, Madame, l'expression de mes salutations ___.",
+      "blankHint": null,
+      "translation": "Please accept, Madam, the expression of my distinguished regards.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["distinguées", "sympas", "chaleureuses", "amicales"],
+      "correct_index": 0,
+      "explanation": "« Salutations distinguées » est la formule de clôture formelle standard.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_045",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Nous restons à votre entière ___ pour tout complément d'information.",
+      "blankHint": null,
+      "translation": "We remain entirely at your disposal for any further information.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["disposition", "dispo", "écoute", "portée"],
+      "correct_index": 0,
+      "explanation": "« Être à la disposition de quelqu'un » est la formule soutenue consacrée.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_046",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Je me permets d'___ votre attention sur l'importance de ce dossier.",
+      "blankHint": null,
+      "translation": "I take the liberty of drawing your attention to the importance of this matter.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["attirer", "capter", "choper", "braquer"],
+      "correct_index": 0,
+      "explanation": "« Attirer l'attention » est soutenu ; « capter », « choper » et « braquer » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_047",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Dans ce discours officiel, je tiens à vous ___ ma plus profonde gratitude.",
+      "blankHint": null,
+      "translation": "In this official speech, I wish to express my deepest gratitude to you.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["exprimer", "filer", "balancer", "envoyer"],
+      "correct_index": 0,
+      "explanation": "« Exprimer sa gratitude » est soutenu ; « filer », « balancer » et « envoyer » sont familiers.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vExpr_048",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le rapport d'expertise ___ que les normes de sécurité ont été respectées.",
+      "blankHint": null,
+      "translation": "The expert report certifies that the safety standards were met.",
+      "tags": [
+        { "facet": "topic", "tag": "register_formal", "role": "focus" }
+      ],
+      "options": ["atteste", "raconte", "cause", "baratine"],
+      "correct_index": 0,
+      "explanation": "« Attester » est soutenu ; « raconter », « causer » et « baratiner » sont familiers.",
+      "register": "formal"
+    }
+  ]
+}

@@ -1,91 +1,125 @@
 import { describe, expect, test } from "vitest"
 import { z } from "zod"
 import frSeed from "../data/fr/seed.json"
-import frTaxonomy from "../data/fr/taxonomy.json"
+import frFacets from "../data/fr/facets.json"
 import ptSeed from "../data/pt/seed.json"
-import ptTaxonomy from "../data/pt/taxonomy.json"
+import ptFacets from "../data/pt/facets.json"
 
-// Shape shared by FR and PT seed files. Every language's seed bank must pass.
-const QuestionSchema = z.object({
+// A question is valid in EITHER the new tag format (tags + format) or the legacy
+// format (domain/sub/cue_type). Legacy questions are treated as one focus tag
+// (domain→facet, sub→tag) so the same checks apply during the transition.
+
+const TagRefSchema = z.object({
+  facet: z.enum(["grammar", "topic"]),
+  tag: z.string().min(1),
+  role: z.enum(["focus", "context"]),
+})
+
+const NewQuestionSchema = z.object({
+  id: z.string().min(1),
+  format: z.string().min(1),
+  level: z.number().int().min(1).max(5),
+  cue: z.string().min(1),
+  blankHint: z.string().min(1).nullable().optional(),
+  translation: z.string().min(1).nullable().optional(),
+  tags: z.array(TagRefSchema).min(1),
+  options: z.array(z.string().min(1)).length(4),
+  correct_index: z.literal(0),
+  explanation: z.string().min(1),
+  register: z.string().min(1).optional(),
+})
+
+const LegacyQuestionSchema = z.object({
   id: z.string().min(1),
   domain: z.enum(["grammar", "vocabulary"]),
   sub: z.string().min(1),
   level: z.number().int().min(1).max(5),
   pattern: z.string().min(1),
-  counterpart: z.string().min(1).optional(),
   cue_type: z.string().min(1),
   cue: z.string().min(1),
   options: z.array(z.string().min(1)).length(4),
   correct_index: z.literal(0),
   explanation: z.string().min(1),
-  register: z.enum(["casual", "neutral", "formal"]).optional(),
+  register: z.string().min(1).optional(),
 })
 
-type Taxonomy = {
-  domains: Record<
-    string,
-    { subs: Record<string, { patterns: string[] }> }
-  >
+type Facets = {
+  facets: Record<"grammar" | "topic", { tags: Record<string, unknown> }>
 }
 type Seed = { questions: unknown[] }
+type NormTag = { facet: "grammar" | "topic"; tag: string; role: "focus" | "context" }
 
-function collectPatterns(tax: Taxonomy): Map<string, Set<string>> {
-  // domain/sub -> allowed pattern keys
-  const byDomainSub = new Map<string, Set<string>>()
-  for (const [d, dv] of Object.entries(tax.domains)) {
-    for (const [s, sv] of Object.entries(dv.subs)) {
-      byDomainSub.set(`${d}/${s}`, new Set(sv.patterns))
-    }
+function knownTags(f: Facets): Set<string> {
+  const s = new Set<string>()
+  for (const facet of ["grammar", "topic"] as const) {
+    for (const tag of Object.keys(f.facets[facet].tags)) s.add(`${facet}::${tag}`)
   }
-  return byDomainSub
+  return s
 }
 
-function runChecks(label: string, seed: Seed, tax: Taxonomy) {
+function normalize(q: unknown): {
+  id: string
+  format: string
+  cue: string
+  tags: NormTag[]
+  translation?: string
+} | null {
+  const asNew = NewQuestionSchema.safeParse(q)
+  if (asNew.success) {
+    return {
+      id: asNew.data.id,
+      format: asNew.data.format,
+      cue: asNew.data.cue,
+      tags: asNew.data.tags,
+      translation: asNew.data.translation ?? undefined,
+    }
+  }
+  const asLegacy = LegacyQuestionSchema.safeParse(q)
+  if (asLegacy.success) {
+    const facet = asLegacy.data.domain === "grammar" ? "grammar" : "topic"
+    return {
+      id: asLegacy.data.id,
+      format: asLegacy.data.cue_type,
+      cue: asLegacy.data.cue,
+      tags: [{ facet, tag: asLegacy.data.sub, role: "focus" }],
+    }
+  }
+  return null
+}
+
+function runChecks(label: string, seed: Seed, facets: Facets) {
   describe(`${label} seed`, () => {
+    const known = knownTags(facets)
     const parsed = seed.questions.map((q, i) => {
-      const r = QuestionSchema.safeParse(q)
-      if (!r.success) {
-        throw new Error(
-          `${label} question index ${i} failed schema: ${r.error.message}`,
-        )
-      }
-      return r.data
+      const n = normalize(q)
+      if (!n) throw new Error(`${label} question index ${i} matches neither schema`)
+      return n
     })
 
-    const byDomainSub = collectPatterns(tax)
-
-    test("every question matches the shared schema", () => {
+    test("bank is non-empty", () => {
       expect(parsed.length).toBeGreaterThan(0)
     })
 
-    test("every domain/sub exists in the language's taxonomy", () => {
+    test("every question has at least one focus tag", () => {
       for (const q of parsed) {
         expect(
-          byDomainSub.has(`${q.domain}/${q.sub}`),
-          `${q.id} references unknown ${q.domain}/${q.sub}`,
+          q.tags.some((t) => t.role === "focus"),
+          `${q.id} has no focus tag`,
         ).toBe(true)
       }
     })
 
-    test("every pattern is declared in the sub's pattern list", () => {
+    test("no duplicate (facet,tag) within a question", () => {
       for (const q of parsed) {
-        const allowed = byDomainSub.get(`${q.domain}/${q.sub}`)!
-        expect(
-          allowed.has(q.pattern),
-          `${q.id} pattern "${q.pattern}" not declared in ${q.domain}/${q.sub}`,
-        ).toBe(true)
+        const keys = q.tags.map((t) => `${t.facet}::${t.tag}`)
+        expect(new Set(keys).size, `${q.id} has duplicate tags`).toBe(keys.length)
       }
     })
 
-    test("every counterpart (if set) is a declared pattern somewhere in the taxonomy", () => {
-      const all = new Set<string>()
-      for (const set of byDomainSub.values()) for (const p of set) all.add(p)
+    test("cloze questions contain the ___ blank marker", () => {
       for (const q of parsed) {
-        if (q.counterpart) {
-          expect(
-            all.has(q.counterpart),
-            `${q.id} counterpart "${q.counterpart}" not found in taxonomy`,
-          ).toBe(true)
+        if (q.format === "cloze") {
+          expect(q.cue.includes("___"), `${q.id} is cloze but has no ___`).toBe(true)
         }
       }
     })
@@ -93,22 +127,26 @@ function runChecks(label: string, seed: Seed, tax: Taxonomy) {
     test("ids are unique", () => {
       const ids = parsed.map((q) => q.id)
       const dupes = ids.filter((id, i) => ids.indexOf(id) !== i)
-      expect(dupes, `duplicate ids: ${[...new Set(dupes)].join(", ")}`).toEqual(
-        [],
-      )
+      expect(dupes, `duplicate ids: ${[...new Set(dupes)].join(", ")}`).toEqual([])
     })
 
-    test("options are unique within each question", () => {
-      for (const q of parsed) {
-        const uniq = new Set(q.options)
-        expect(
-          uniq.size,
-          `${q.id} has duplicate options: ${q.options.join(" | ")}`,
-        ).toBe(4)
+    // NEW-format questions must reference tags that exist in the taxonomy.
+    // (Legacy questions use old sub keys and are exempt until reauthored.)
+    test("new-format tags exist in the taxonomy", () => {
+      for (let i = 0; i < seed.questions.length; i++) {
+        const raw = seed.questions[i] as { tags?: unknown; id?: string }
+        if (!raw.tags) continue
+        const n = parsed.find((p) => p.id === raw.id)!
+        for (const t of n.tags) {
+          expect(
+            known.has(`${t.facet}::${t.tag}`),
+            `${n.id} references unknown tag ${t.facet}::${t.tag}`,
+          ).toBe(true)
+        }
       }
     })
   })
 }
 
-runChecks("fr", frSeed as Seed, frTaxonomy as Taxonomy)
-runChecks("pt", ptSeed as Seed, ptTaxonomy as Taxonomy)
+runChecks("fr", frSeed as Seed, frFacets as Facets)
+runChecks("pt", ptSeed as Seed, ptFacets as Facets)

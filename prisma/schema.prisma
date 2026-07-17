@@ -40,8 +40,7 @@ model User {
   createdAt          DateTime @default(now())
 
   sessions       Session[]
-  subStats       SubStats[]
-  patternStats   PatternStats[]
+  tagStats       TagStats[]
   reviews        Review[]
   questionStates QuestionState[]
 
@@ -58,13 +57,11 @@ model Question {
   externalId   String   @unique
   languageId   Int
   language     Language @relation(fields: [languageId], references: [id])
-  domain       String
-  sub          String
   level        Int
-  pattern      String
-  counterpart  String?
-  cueType      String
+  format       String
   cue          String
+  blankHint    String?
+  translation  String?
   options      String
   correctIndex Int
   explanation  String
@@ -74,11 +71,31 @@ model Question {
 
   reviews Review[]
   states  QuestionState[]
+  tags    QuestionTag[]
 
-  @@index([languageId, domain, sub])
-  @@index([languageId, pattern])
   @@index([languageId, level])
-  @@index([languageId, domain, sub, level])
+}
+
+// -----------------------------------------------------------------------------
+// Multi-facet tags on a question. A question carries tags across facets
+// ('grammar' | 'topic'); each tag is 'focus' (genuinely tested) or 'context'
+// (present but given/incidental). Level graduation counts focus cards only;
+// retrievability/weakness/staleness use all cards. Replaces the single
+// domain/sub/pattern classification.
+// -----------------------------------------------------------------------------
+
+model QuestionTag {
+  id         Int      @id @default(autoincrement())
+  questionId Int
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  facet      String // 'grammar' | 'topic'
+  tag        String // taxonomy key
+  role       String // 'focus' | 'context'
+
+  @@unique([questionId, facet, tag])
+  @@index([facet, tag, role])
+  @@index([facet, tag])
+  @@index([questionId])
 }
 
 // -----------------------------------------------------------------------------
@@ -139,39 +156,22 @@ model Review {
 }
 
 // -----------------------------------------------------------------------------
-// Per-user, per-sub activation toggle.
+// Per-user, per-tag state (lastSeenAt for staleness). Replaces SubStats +
+// PatternStats. Under linear mode every tag is always in scope (no isActive
+// toggle); the app auto-targets by frequency-weighted weakness.
 // -----------------------------------------------------------------------------
 
-model SubStats {
-  id        Int      @id @default(autoincrement())
-  userId    Int
-  user      User     @relation(fields: [userId], references: [id])
-  domain    String
-  sub       String
-  isActive  Boolean  @default(false)
-  updatedAt DateTime @updatedAt
-
-  @@unique([userId, domain, sub])
-  @@index([userId, domain, isActive])
-}
-
-// -----------------------------------------------------------------------------
-// Per-user, per-pattern lastSeenAt (cold-pattern boost). Mastery derives from
-// per-card FSRS state.
-// -----------------------------------------------------------------------------
-
-model PatternStats {
+model TagStats {
   id         Int       @id @default(autoincrement())
   userId     Int
   user       User      @relation(fields: [userId], references: [id])
-  domain     String
-  sub        String
-  pattern    String
+  facet      String
+  tag        String
   lastSeenAt DateTime?
   updatedAt  DateTime  @updatedAt
 
-  @@unique([userId, domain, sub, pattern])
-  @@index([userId, sub])
+  @@unique([userId, facet, tag])
+  @@index([userId, facet])
 }
 
 // -----------------------------------------------------------------------------
@@ -183,7 +183,6 @@ model Session {
   userId        Int
   user          User      @relation(fields: [userId], references: [id])
   mode          String
-  domainFilter  String?
   plannedLength Int
   startedAt     DateTime  @default(now())
   endedAt       DateTime?
@@ -195,15 +194,10 @@ model Session {
   totalPoints   Float @default(0)
   ppq           Float @default(0)
 
-  bossDomain String?
-  bossLevel  Int?
-  bossMedal  String?
-  bossQueue  String?
-
-  targetSubs       String?
-  levelMin         Int?
-  levelMax         Int?
-  subLevelsBefore  String?
+  targetTags      String?
+  levelMin        Int?
+  levelMax        Int?
+  subLevelsBefore String?
 
   reviews Review[]
 

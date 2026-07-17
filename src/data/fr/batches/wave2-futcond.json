@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_futcond_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ce matin, je ___ prendre le petit-déjeuner.",
+      "blankHint": "aller",
+      "translation": "This morning, I am going to have breakfast.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["vais", "va", "vas", "allons"],
+      "correct_index": 0,
+      "explanation": "Futur proche : je vais + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Est-ce que tu ___ dormir maintenant ?",
+      "blankHint": "aller",
+      "translation": "Are you going to sleep now?",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["vas", "va", "vais", "vont"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 2e personne : tu vas + infinitif.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il ___ jouer au foot cet après-midi.",
+      "blankHint": "aller",
+      "translation": "He is going to play football this afternoon.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["va", "vas", "vont", "vais"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 3e personne : il va + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous ___ acheter du pain à la boulangerie.",
+      "blankHint": "aller",
+      "translation": "We are going to buy bread at the bakery.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["allons", "allez", "va", "vont"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 1re personne du pluriel : nous allons + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Vous ___ visiter le musée demain ?",
+      "blankHint": "aller",
+      "translation": "Are you going to visit the museum tomorrow?",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["allez", "allons", "vont", "va"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 2e personne du pluriel : vous allez + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Les enfants ___ regarder un dessin animé.",
+      "blankHint": "aller",
+      "translation": "The children are going to watch a cartoon.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["vont", "va", "allez", "allons"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 3e personne du pluriel : ils vont + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "On ___ faire les courses ce soir après le travail.",
+      "blankHint": "aller",
+      "translation": "We are going to do the shopping tonight after work.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["va", "vont", "allons", "ira"],
+      "correct_index": 0,
+      "explanation": "« On » se conjugue comme « il » : on va + infinitif.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Demain, je ___ commencer un nouveau travail.",
+      "blankHint": "aller",
+      "translation": "Tomorrow, I am going to start a new job.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["vais", "vas", "irai", "allais"],
+      "correct_index": 0,
+      "explanation": "Futur proche : je vais + infinitif ; « irai » serait du futur simple.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce week-end, nous ___ rendre visite à mes parents.",
+      "blankHint": "aller",
+      "translation": "This weekend, we are going to visit my parents.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["allons", "allez", "irons", "allions"],
+      "correct_index": 0,
+      "explanation": "Futur proche : nous allons + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu ___ être en retard si tu ne pars pas maintenant.",
+      "blankHint": "aller",
+      "translation": "You are going to be late if you don't leave now.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["vas", "va", "iras", "allais"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 2e personne : tu vas + infinitif.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ déménager à Lyon le mois prochain.",
+      "blankHint": "aller",
+      "translation": "She is going to move to Lyon next month.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["va", "vas", "ira", "allait"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 3e personne : elle va + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ adorer ce film, j'en suis certain.",
+      "blankHint": "aller",
+      "translation": "You are going to love this movie, I'm certain.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["allez", "allons", "irez", "alliez"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 2e personne du pluriel : vous allez + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je pense qu'il ___ neiger cette nuit.",
+      "blankHint": "aller",
+      "translation": "I think it's going to snow tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["va", "vas", "ira", "allait"],
+      "correct_index": 0,
+      "explanation": "Futur proche avec « il » impersonnel : il va + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ bientôt annoncer les résultats du concours.",
+      "blankHint": "aller",
+      "translation": "We are going to announce the competition results soon.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["allons", "allez", "irons", "allions"],
+      "correct_index": 0,
+      "explanation": "Futur proche : nous allons + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ___ signer le contrat dès que possible.",
+      "blankHint": "aller",
+      "translation": "They are going to sign the contract as soon as possible.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["vont", "va", "iront", "allaient"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 3e personne du pluriel : ils vont + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu ___ te sentir mieux après une bonne nuit de sommeil.",
+      "blankHint": "aller",
+      "translation": "You are going to feel better after a good night's sleep.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["vas", "va", "iras", "allais"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 2e personne : tu vas + infinitif.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "On ___ devoir trouver une autre solution.",
+      "blankHint": "aller",
+      "translation": "We are going to have to find another solution.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["va", "vont", "allons", "irait"],
+      "correct_index": 0,
+      "explanation": "« On » se conjugue comme « il » : on va + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ recevoir notre réponse dans les prochains jours.",
+      "blankHint": "aller",
+      "translation": "You are going to receive our answer in the coming days.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_proche", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["allez", "allons", "irez", "alliez"],
+      "correct_index": 0,
+      "explanation": "Futur proche à la 2e personne du pluriel : vous allez + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Demain, j'___ à la plage avec mes amis.",
+      "blankHint": "aller",
+      "translation": "Tomorrow, I will go to the beach with my friends.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["irai", "vais", "irais", "allais"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « aller » : j'irai.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu ___ content de voir ce cadeau.",
+      "blankHint": "être",
+      "translation": "You will be happy to see this gift.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["seras", "es", "serais", "étais"],
+      "correct_index": 0,
+      "explanation": "Futur simple de « être » : tu seras.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ dix-huit ans l'année prochaine.",
+      "blankHint": "avoir",
+      "translation": "She will be eighteen next year.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["aura", "a", "aurait", "avait"],
+      "correct_index": 0,
+      "explanation": "Futur simple de « avoir » : elle aura.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ chez nous ce soir, il fait trop froid dehors.",
+      "blankHint": "rester",
+      "translation": "We will stay home tonight, it's too cold outside.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["resterons", "restons", "resterions", "restions"],
+      "correct_index": 0,
+      "explanation": "Futur simple régulier : nous resterons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ le train de dix heures, n'est-ce pas ?",
+      "blankHint": "prendre",
+      "translation": "You will take the ten o'clock train, won't you?",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["prendrez", "prenez", "prendriez", "preniez"],
+      "correct_index": 0,
+      "explanation": "Futur simple de « prendre » : vous prendrez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils ___ leurs devoirs après le dîner.",
+      "blankHint": "finir",
+      "translation": "They will finish their homework after dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["finiront", "finissent", "finiraient", "finissaient"],
+      "correct_index": 0,
+      "explanation": "Futur simple de « finir » : ils finiront.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Dès que tu ___ prêt, nous partirons.",
+      "blankHint": "être",
+      "translation": "As soon as you are ready, we will leave.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["seras", "es", "serais", "étais"],
+      "correct_index": 0,
+      "explanation": "Après « dès que » exprimant le futur, on emploie le futur simple : tu seras.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "L'été prochain, nous ___ en Italie tous ensemble.",
+      "blankHint": "aller",
+      "translation": "Next summer, we will go to Italy all together.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["irons", "allons", "irions", "allions"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « aller » : nous irons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je te ___ dès que j'aurai des nouvelles.",
+      "blankHint": "appeler",
+      "translation": "I will call you as soon as I have news.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["appellerai", "appelle", "appellerais", "appelais"],
+      "correct_index": 0,
+      "explanation": "Futur simple de « appeler » : je t'appellerai, avec double « l ».",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle ___ sûrement à ta lettre très bientôt.",
+      "blankHint": "répondre",
+      "translation": "She will surely answer your letter very soon.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["répondra", "répond", "répondrait", "répondait"],
+      "correct_index": 0,
+      "explanation": "Futur simple de « répondre » : elle répondra.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ bientôt nos nouveaux bureaux au centre-ville.",
+      "blankHint": "découvrir",
+      "translation": "You will soon discover our new offices downtown.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["découvrirez", "découvrez", "découvririez", "découvriez"],
+      "correct_index": 0,
+      "explanation": "Futur simple de « découvrir » : vous découvrirez.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ne ___ pas avant minuit, je pense.",
+      "blankHint": "revenir",
+      "translation": "They won't come back before midnight, I think.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["reviendront", "reviennent", "reviendraient", "revenaient"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « revenir » : ils reviendront.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Nous ___ vous tenir informés de la suite du dossier.",
+      "blankHint": "pouvoir",
+      "translation": "We will be able to keep you informed about the rest of the file.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["pourrons", "pouvons", "pourrions", "pouvions"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « pouvoir » : nous pourrons.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il ___ falloir revoir tout le calendrier du projet.",
+      "blankHint": "falloir",
+      "translation": "It will be necessary to review the whole project schedule.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["faudra", "faut", "faudrait", "fallait"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « falloir » : il faudra.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Dès qu'il ___ la vérité, il comprendra notre choix.",
+      "blankHint": "savoir",
+      "translation": "As soon as he knows the truth, he will understand our choice.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["saura", "sait", "saurait", "savait"],
+      "correct_index": 0,
+      "explanation": "Après « dès que » au futur, futur simple : il saura.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Vous ___ patienter encore quelques minutes, merci.",
+      "blankHint": "devoir",
+      "translation": "You will have to wait a few more minutes, thank you.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["devrez", "devez", "devriez", "deviez"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « devoir » : vous devrez.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je vous ___ la facture dès demain matin.",
+      "blankHint": "envoyer",
+      "translation": "I will send you the invoice first thing tomorrow.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["enverrai", "envoie", "enverrais", "envoyais"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « envoyer » : j'enverrai.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il ___ mieux réfléchir avant de prendre une décision.",
+      "blankHint": "valoir",
+      "translation": "It will be better to think before making a decision.",
+      "tags": [
+        { "facet": "grammar", "tag": "futur_simple", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["vaudra", "vaut", "vaudrait", "valait"],
+      "correct_index": 0,
+      "explanation": "Futur simple irrégulier de « valoir » : il vaudra mieux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_037",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ___ un thé, s'il vous plaît.",
+      "blankHint": "vouloir",
+      "translation": "I would like a tea, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["voudrais", "veux", "voudrai", "voulais"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel de politesse : je voudrais.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_038",
+      "format": "cloze",
+      "level": 2,
+      "cue": "___-tu m'aider une minute, s'il te plaît ?",
+      "blankHint": "pouvoir",
+      "translation": "Could you help me for a minute, please?",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["Pourrais", "Peux", "Pourras", "Pouvais"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel de politesse : pourrais-tu ?",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_039",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'___ bien un peu de repos ce week-end.",
+      "blankHint": "aimer",
+      "translation": "I would quite like a bit of rest this weekend.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["aimerais", "aime", "aimerai", "aimais"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel exprime un souhait atténué : j'aimerais bien.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_040",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ réserver une table pour deux personnes.",
+      "blankHint": "vouloir",
+      "translation": "We would like to book a table for two.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["voudrions", "voulons", "voudrons", "voulions"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel de politesse : nous voudrions.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_041",
+      "format": "cloze",
+      "level": 2,
+      "cue": "___-vous fermer la fenêtre, s'il vous plaît ?",
+      "blankHint": "pouvoir",
+      "translation": "Could you close the window, please?",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["Pourriez", "Pouvez", "Pourrez", "Pouviez"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel de politesse : pourriez-vous ?",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_042",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ bien un chocolat chaud, je crois.",
+      "blankHint": "vouloir",
+      "translation": "She would quite like a hot chocolate, I think.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["voudrait", "veut", "voudra", "voulait"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel atténue le désir : elle voudrait bien.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_043",
+      "format": "cloze",
+      "level": 3,
+      "cue": "À ta place, je ___ un médecin sans attendre.",
+      "blankHint": "consulter",
+      "translation": "If I were you, I would see a doctor without waiting.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["consulterais", "consulte", "consulterai", "consultais"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel présent exprime un conseil : je consulterais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_044",
+      "format": "cloze",
+      "level": 3,
+      "cue": "On ___ aller au cinéma ce soir, non ?",
+      "blankHint": "pouvoir",
+      "translation": "We could go to the cinema tonight, couldn't we?",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["pourrait", "peut", "pourra", "pouvait"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel présent exprime une suggestion : on pourrait.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_045",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu ___ vraiment lire ce livre, il est génial.",
+      "blankHint": "devoir",
+      "translation": "You really should read this book, it's great.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["devrais", "dois", "devras", "devais"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel présent de « devoir » exprime un conseil : tu devrais.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_046",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il a promis qu'il ___ à l'heure cette fois.",
+      "blankHint": "arriver",
+      "translation": "He promised he would arrive on time this time.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["arriverait", "arrive", "arrivera", "arrivait"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel exprime le futur dans le passé : il arriverait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_047",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ ravis de vous revoir très bientôt.",
+      "blankHint": "être",
+      "translation": "We would be delighted to see you again very soon.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["serions", "sommes", "serons", "étions"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel présent de « être » adoucit l'expression : nous serions ravis.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_048",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ me rendre un très grand service.",
+      "blankHint": "pouvoir",
+      "translation": "You could do me a very great favour.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["pourriez", "pouvez", "pourrez", "pouviez"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel présent de « pouvoir » : vous pourriez.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_049",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Si j'avais le choix, je ___ à la campagne.",
+      "blankHint": "vivre",
+      "translation": "If I had the choice, I would live in the countryside.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["vivrais", "vis", "vivrai", "vivais"],
+      "correct_index": 0,
+      "explanation": "Concordance : si + imparfait, conditionnel dans la principale → je vivrais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_050",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle m'a dit qu'elle ___ le dossier avant vendredi.",
+      "blankHint": "finir",
+      "translation": "She told me she would finish the file before Friday.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["finirait", "finit", "finira", "finissait"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel exprime le futur dans le passé : elle finirait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_051",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Tu ___ me prévenir bien plus tôt, franchement !",
+      "blankHint": "devoir",
+      "translation": "You should have warned me much earlier, honestly!",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["aurais dû", "as dû", "auras dû", "avais dû"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel passé de « devoir » exprime le reproche : tu aurais dû.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_futcond_052",
+      "format": "cloze",
+      "level": 4,
+      "cue": "À votre place, j'___ cette offre sans hésiter.",
+      "blankHint": "accepter",
+      "translation": "If I were you, I would accept this offer without hesitating.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["accepterais", "accepte", "accepterai", "acceptais"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel présent exprime un conseil : j'accepterais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_053",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Nous ___ une réponse un peu plus rapide de votre part.",
+      "blankHint": "préférer",
+      "translation": "We would have preferred a slightly faster answer from you.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["aurions préféré", "avons préféré", "aurons préféré", "avions préféré"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel passé exprime un regret poli : nous aurions préféré.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_054",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Selon la presse, le ministre ___ bientôt démissionner.",
+      "blankHint": "devoir",
+      "translation": "According to the press, the minister is reportedly about to resign.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["devrait", "doit", "devra", "devait"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel journalistique exprime une information non confirmée : il devrait.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_055",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si tu m'avais écouté, tu n'___ pas cette erreur.",
+      "blankHint": "commettre",
+      "translation": "If you had listened to me, you would not have made this mistake.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["aurais commis", "avais commis", "auras commis", "as commis"],
+      "correct_index": 0,
+      "explanation": "Concordance : si + plus-que-parfait → conditionnel passé, tu aurais commis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_056",
+      "format": "cloze",
+      "level": 5,
+      "cue": "D'après nos sources, l'accident ___ plusieurs blessés.",
+      "blankHint": "faire",
+      "translation": "According to our sources, the accident reportedly caused several injuries.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["aurait fait", "a fait", "aura fait", "avait fait"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel passé journalistique rapporte un fait non confirmé : il aurait fait.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_057",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Nous ___ éviter ce malentendu avec un peu de communication.",
+      "blankHint": "pouvoir",
+      "translation": "We could have avoided this misunderstanding with a bit of communication.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["aurions pu", "avons pu", "aurons pu", "avions pu"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel passé exprime le regret : nous aurions pu éviter.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_futcond_058",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Vous ___ nous prévenir avant de signer un tel contrat.",
+      "blankHint": "devoir",
+      "translation": "You should have warned us before signing such a contract.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["auriez dû", "avez dû", "aurez dû", "aviez dû"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel passé de « devoir » exprime le reproche : vous auriez dû.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_059",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le président ___ de dissoudre l'assemblée, selon nos informations.",
+      "blankHint": "envisager",
+      "translation": "The president has reportedly considered dissolving the assembly, according to our information.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["aurait envisagé", "a envisagé", "aura envisagé", "avait envisagé"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel passé journalistique rapporte une information non confirmée : il aurait envisagé.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_futcond_060",
+      "format": "cloze",
+      "level": 5,
+      "cue": "À sa place, j'___ tout autrement dans cette situation.",
+      "blankHint": "agir",
+      "translation": "In his place, I would have acted quite differently in that situation.",
+      "tags": [
+        { "facet": "grammar", "tag": "conditionnel", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["aurais agi", "ai agi", "aurai agi", "avais agi"],
+      "correct_index": 0,
+      "explanation": "Le conditionnel passé exprime une hypothèse dans le passé : j'aurais agi.",
+      "register": "neutral"
+    }
+  ]
+}

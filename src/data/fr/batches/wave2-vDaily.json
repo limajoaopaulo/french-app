@@ -1,0 +1,814 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vDaily_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le matin, je me ___ à sept heures.",
+      "blankHint": null,
+      "translation": "In the morning, I wake up at seven o'clock.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["réveille", "couche", "promène", "dépêche"],
+      "correct_index": 0,
+      "explanation": "Se réveiller, c'est ouvrir les yeux le matin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le soir, je me ___ vers onze heures.",
+      "blankHint": null,
+      "translation": "In the evening, I go to bed around eleven o'clock.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["couche", "réveille", "lève", "brosse"],
+      "correct_index": 0,
+      "explanation": "Se coucher, c'est aller au lit pour dormir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je me ___ les dents après le petit déjeuner.",
+      "blankHint": null,
+      "translation": "I brush my teeth after breakfast.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["brosse", "habille", "réveille", "couche"],
+      "correct_index": 0,
+      "explanation": "On se brosse les dents avec une brosse à dents.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Chaque matin, je prends une ___ chaude.",
+      "blankHint": null,
+      "translation": "Every morning, I take a hot shower.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["douche", "sieste", "promenade", "réunion"],
+      "correct_index": 0,
+      "explanation": "Prendre une douche, c'est se laver sous l'eau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le matin, je bois un ___ avant de partir.",
+      "blankHint": null,
+      "translation": "In the morning, I drink a coffee before leaving.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["café", "lit", "réveil", "savon"],
+      "correct_index": 0,
+      "explanation": "On boit souvent un café au petit déjeuner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Après le travail, je ___ à la maison.",
+      "blankHint": null,
+      "translation": "After work, I come back home.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["rentre", "réveille", "habille", "brosse"],
+      "correct_index": 0,
+      "explanation": "Rentrer, c'est revenir chez soi.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je me ___ toujours en jean et en tee-shirt.",
+      "blankHint": null,
+      "translation": "I always get dressed in jeans and a T-shirt.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["habille", "réveille", "couche", "dépêche"],
+      "correct_index": 0,
+      "explanation": "S'habiller, c'est mettre ses vêtements.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le matin je suis pressé, alors je me ___.",
+      "blankHint": null,
+      "translation": "In the morning I'm in a hurry, so I hurry up.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["dépêche", "repose", "promène", "couche"],
+      "correct_index": 0,
+      "explanation": "Se dépêcher, c'est faire vite.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vDaily_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant de dormir, je ___ mon réveil pour le matin.",
+      "blankHint": null,
+      "translation": "Before sleeping, I set my alarm clock for the morning.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["règle", "brosse", "rentre", "réveille"],
+      "correct_index": 0,
+      "explanation": "Régler son réveil, c'est choisir l'heure de la sonnerie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Chaque matin, je fais mon ___ avant de partir.",
+      "blankHint": null,
+      "translation": "Every morning, I make my bed before leaving.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["lit", "café", "ménage", "douche"],
+      "correct_index": 0,
+      "explanation": "Faire son lit, c'est arranger les draps et la couverture.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le samedi, je fais le ___ dans tout l'appartement.",
+      "blankHint": null,
+      "translation": "On Saturdays, I do the housework throughout the whole apartment.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["ménage", "réveil", "café", "repas"],
+      "correct_index": 0,
+      "explanation": "Faire le ménage, c'est nettoyer la maison.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le dimanche après-midi, je fais une petite ___ sur le canapé.",
+      "blankHint": null,
+      "translation": "On Sunday afternoons, I take a little nap on the sofa.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["sieste", "douche", "vaisselle", "lessive"],
+      "correct_index": 0,
+      "explanation": "Faire la sieste, c'est dormir un moment dans la journée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Comme j'étais en retard, j'ai dû ___ mon petit déjeuner.",
+      "blankHint": null,
+      "translation": "Since I was late, I had to skip my breakfast.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["sauter", "ranger", "repasser", "arroser"],
+      "correct_index": 0,
+      "explanation": "Sauter un repas, c'est ne pas le prendre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le dimanche, je fais la ___ et j'étends le linge sur le balcon.",
+      "blankHint": null,
+      "translation": "On Sundays, I do the laundry and hang the washing on the balcony.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["lessive", "vaisselle", "sieste", "poussière"],
+      "correct_index": 0,
+      "explanation": "Faire la lessive, c'est laver le linge sale.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après le dîner, c'est moi qui fais la ___.",
+      "blankHint": null,
+      "translation": "After dinner, I'm the one who does the dishes.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["vaisselle", "lessive", "sieste", "poussière"],
+      "correct_index": 0,
+      "explanation": "Faire la vaisselle, c'est laver les assiettes et les verres.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je dois ___ mes chemises avant de les mettre dans l'armoire.",
+      "blankHint": null,
+      "translation": "I have to iron my shirts before putting them in the wardrobe.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["repasser", "arroser", "balayer", "réveiller"],
+      "correct_index": 0,
+      "explanation": "Repasser, c'est enlever les plis avec un fer chaud.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avant le travail, je ___ le chien dans le parc.",
+      "blankHint": null,
+      "translation": "Before work, I walk the dog in the park.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["promène", "repasse", "balaie", "réveille"],
+      "correct_index": 0,
+      "explanation": "Promener le chien, c'est le sortir pour marcher.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le soir, je ___ la table après le repas.",
+      "blankHint": null,
+      "translation": "In the evening, I clear the table after the meal.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["débarrasse", "repasse", "arrose", "réveille"],
+      "correct_index": 0,
+      "explanation": "Débarrasser la table, c'est enlever les assiettes après avoir mangé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Aujourd'hui il fait ___ et le ciel est tout bleu.",
+      "blankHint": null,
+      "translation": "Today the weather is nice and the sky is all blue.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["beau", "mauvais", "gris", "sombre"],
+      "correct_index": 0,
+      "explanation": "Quand le ciel est bleu, on dit qu'il fait beau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_020",
+      "format": "cloze",
+      "level": 1,
+      "cue": "En hiver, il fait très ___ ici.",
+      "blankHint": null,
+      "translation": "In winter, it is very cold here.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["froid", "chaud", "beau", "tard"],
+      "correct_index": 0,
+      "explanation": "En hiver, la température est basse : il fait froid.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_021",
+      "format": "cloze",
+      "level": 1,
+      "cue": "En été, il fait ___ et on va à la plage.",
+      "blankHint": null,
+      "translation": "In summer, it is hot and we go to the beach.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["chaud", "froid", "gris", "sombre"],
+      "correct_index": 0,
+      "explanation": "En été, la température est haute : il fait chaud.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_022",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il ___ beaucoup, prends ton parapluie.",
+      "blankHint": null,
+      "translation": "It's raining a lot, take your umbrella.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["pleut", "neige", "brille", "gèle"],
+      "correct_index": 0,
+      "explanation": "Quand l'eau tombe du ciel, il pleut.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_023",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Quel ___ fait-il aujourd'hui ?",
+      "blankHint": null,
+      "translation": "What is the weather like today?",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["temps", "heure", "jour", "ciel"],
+      "correct_index": 0,
+      "explanation": "On demande « Quel temps fait-il ? » pour parler de la météo.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_024",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le matin, le ___ se lève à l'est.",
+      "blankHint": null,
+      "translation": "In the morning, the sun rises in the east.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["soleil", "lune", "vent", "nuage"],
+      "correct_index": 0,
+      "explanation": "Le soleil se lève le matin et brille dans le ciel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il est huit ___ du matin, je dois partir.",
+      "blankHint": null,
+      "translation": "It's eight o'clock in the morning, I have to leave.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["heures", "minutes", "jours", "temps"],
+      "correct_index": 0,
+      "explanation": "On indique l'heure avec « heures » : huit heures.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Attends une ___, j'arrive tout de suite.",
+      "blankHint": null,
+      "translation": "Wait a minute, I'm coming right away.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["minute", "journée", "semaine", "saison"],
+      "correct_index": 0,
+      "explanation": "« Attends une minute » signifie attendre un court moment.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vDaily_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En automne, les feuilles tombent et il y a beaucoup de ___.",
+      "blankHint": null,
+      "translation": "In autumn, the leaves fall and there is a lot of wind.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["vent", "soleil", "neige", "chaleur"],
+      "correct_index": 0,
+      "explanation": "Le vent est l'air qui souffle fort en automne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce matin il y a du ___, on ne voit pas la route.",
+      "blankHint": null,
+      "translation": "This morning there is fog, you can't see the road.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["brouillard", "soleil", "vent", "orage"],
+      "correct_index": 0,
+      "explanation": "Le brouillard est une brume épaisse qui cache la vue.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Cet après-___, je vais faire des courses en ville.",
+      "blankHint": null,
+      "translation": "This afternoon, I'm going to do some shopping in town.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["midi", "matin", "soir", "nuit"],
+      "correct_index": 0,
+      "explanation": "L'après-midi est le moment entre midi et le soir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le ciel est couvert de ___ gris.",
+      "blankHint": null,
+      "translation": "The sky is covered with grey clouds.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["nuages", "soleils", "vents", "étoiles"],
+      "correct_index": 0,
+      "explanation": "Les nuages gris cachent le soleil et annoncent la pluie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Un violent ___ a éclaté avec de la pluie et du tonnerre.",
+      "blankHint": null,
+      "translation": "A violent storm broke out with rain and thunder.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["orage", "soleil", "brouillard", "gel"],
+      "correct_index": 0,
+      "explanation": "Un orage est accompagné d'éclairs et de tonnerre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La météo annonce une ___ de chaleur pour la semaine prochaine.",
+      "blankHint": null,
+      "translation": "The forecast announces a heat wave for next week.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["vague", "goutte", "averse", "saison"],
+      "correct_index": 0,
+      "explanation": "Une vague de chaleur est une longue période de temps très chaud.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il tombe une fine ___ depuis ce matin, le sol est mouillé.",
+      "blankHint": null,
+      "translation": "A fine drizzle has been falling since this morning; the ground is wet.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["bruine", "neige", "grêle", "chaleur"],
+      "correct_index": 0,
+      "explanation": "La bruine est une pluie très fine et légère.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le temps est très ___ aujourd'hui : soleil, puis pluie, puis vent.",
+      "blankHint": null,
+      "translation": "The weather is very unstable today: sun, then rain, then wind.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["instable", "ensoleillé", "sec", "doux"],
+      "correct_index": 0,
+      "explanation": "Un temps instable change souvent dans la même journée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette nuit, la température va ___ en dessous de zéro.",
+      "blankHint": null,
+      "translation": "Tonight, the temperature will drop below zero.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["chuter", "monter", "briller", "souffler"],
+      "correct_index": 0,
+      "explanation": "Chuter, c'est baisser fortement et rapidement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Au petit ___, le soleil commence à peine à se lever.",
+      "blankHint": null,
+      "translation": "At daybreak, the sun is barely starting to rise.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["matin", "soir", "midi", "moment"],
+      "correct_index": 0,
+      "explanation": "« Au petit matin » désigne le tout début de la journée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_037",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Quand il fait froid, je mets un ___ chaud.",
+      "blankHint": null,
+      "translation": "When it's cold, I put on a warm coat.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["manteau", "short", "tee-shirt", "sandale"],
+      "correct_index": 0,
+      "explanation": "Le manteau est un vêtement chaud pour l'hiver.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_038",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Aux pieds, je porte des ___ noires.",
+      "blankHint": null,
+      "translation": "On my feet, I wear black shoes.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["chaussures", "gants", "lunettes", "chemises"],
+      "correct_index": 0,
+      "explanation": "On porte des chaussures aux pieds.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_039",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour dormir, je mets un ___.",
+      "blankHint": null,
+      "translation": "To sleep, I put on pyjamas.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["pyjama", "manteau", "costume", "maillot"],
+      "correct_index": 0,
+      "explanation": "Le pyjama est le vêtement qu'on met pour dormir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_040",
+      "format": "cloze",
+      "level": 1,
+      "cue": "En été, je porte un ___ et des sandales.",
+      "blankHint": null,
+      "translation": "In summer, I wear shorts and sandals.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["short", "manteau", "écharpe", "pull"],
+      "correct_index": 0,
+      "explanation": "Le short est un pantalon court qu'on porte quand il fait chaud.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_041",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il fait froid, mets ton ___ !",
+      "blankHint": null,
+      "translation": "It's cold, put on your sweater!",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["pull", "short", "maillot", "sandale"],
+      "correct_index": 0,
+      "explanation": "Le pull est un vêtement chaud en laine ou en coton.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vDaily_042",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Sur la tête, je porte un ___.",
+      "blankHint": null,
+      "translation": "On my head, I wear a hat.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["chapeau", "gant", "chaussette", "pantalon"],
+      "correct_index": 0,
+      "explanation": "On porte un chapeau sur la tête.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_043",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En hiver, je mets une ___ autour du cou.",
+      "blankHint": null,
+      "translation": "In winter, I put a scarf around my neck.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["écharpe", "ceinture", "cravate", "casquette"],
+      "correct_index": 0,
+      "explanation": "L'écharpe tient le cou au chaud en hiver.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_044",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour aller travailler, il porte un ___ et une cravate.",
+      "blankHint": null,
+      "translation": "To go to work, he wears a suit and a tie.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["costume", "pyjama", "maillot", "short"],
+      "correct_index": 0,
+      "explanation": "Le costume est un vêtement élégant pour le travail.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_045",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il fait froid, mets tes ___ pour protéger tes mains.",
+      "blankHint": null,
+      "translation": "It's cold, put on your gloves to protect your hands.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["gants", "chaussettes", "lunettes", "bottes"],
+      "correct_index": 0,
+      "explanation": "Les gants couvrent et réchauffent les mains.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_046",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle a mis une jolie ___ pour aller à la fête.",
+      "blankHint": null,
+      "translation": "She put on a pretty dress to go to the party.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["robe", "cravate", "ceinture", "casquette"],
+      "correct_index": 0,
+      "explanation": "La robe est un vêtement féminin d'une seule pièce.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_047",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant de sortir sous la pluie, il a pris son ___.",
+      "blankHint": null,
+      "translation": "Before going out in the rain, he took his umbrella.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["parapluie", "chapeau", "foulard", "gant"],
+      "correct_index": 0,
+      "explanation": "Le parapluie protège de la pluie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_048",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ces chaussures sont trop petites, il me faut une plus grande ___.",
+      "blankHint": null,
+      "translation": "These shoes are too small, I need a bigger size.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["pointure", "couleur", "marque", "matière"],
+      "correct_index": 0,
+      "explanation": "La pointure est la taille des chaussures.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_049",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avant d'acheter le pantalon, je vais l'___ dans la cabine.",
+      "blankHint": null,
+      "translation": "Before buying the trousers, I'm going to try them on in the fitting room.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["essayer", "repasser", "laver", "plier"],
+      "correct_index": 0,
+      "explanation": "Essayer un vêtement, c'est le mettre pour voir s'il va bien.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_050",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette chemise est en pur ___, c'est très agréable en été.",
+      "blankHint": null,
+      "translation": "This shirt is pure cotton, it's very pleasant in summer.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["coton", "laine", "cuir", "fourrure"],
+      "correct_index": 0,
+      "explanation": "Le coton est une matière légère et fraîche pour l'été.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_051",
+      "format": "cloze",
+      "level": 3,
+      "cue": "En hiver, un manteau en ___ tient bien chaud.",
+      "blankHint": null,
+      "translation": "In winter, a wool coat keeps you nice and warm.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["laine", "coton", "lin", "soie"],
+      "correct_index": 0,
+      "explanation": "La laine est une matière chaude idéale pour l'hiver.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_052",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette chemise a des ___ longues qui couvrent les bras.",
+      "blankHint": null,
+      "translation": "This shirt has long sleeves that cover the arms.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["manches", "cols", "poches", "boutons"],
+      "correct_index": 0,
+      "explanation": "Les manches sont les parties du vêtement qui couvrent les bras.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_053",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ta chemise est froissée, tu devrais la ___ avant l'entretien.",
+      "blankHint": null,
+      "translation": "Your shirt is wrinkled, you should iron it before the interview.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["repasser", "essayer", "plier", "enfiler"],
+      "correct_index": 0,
+      "explanation": "Repasser une chemise enlève les plis avec un fer chaud.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vDaily_054",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce pantalon est trop long, il faut faire un ___.",
+      "blankHint": null,
+      "translation": "These trousers are too long; a hem needs to be done.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["ourlet", "bouton", "col", "nœud"],
+      "correct_index": 0,
+      "explanation": "L'ourlet est le repli cousu au bas d'un pantalon pour le raccourcir.",
+      "register": "neutral"
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "questions": [
+    {
+      "id": "fr_w1_past_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Hier soir, nous ___ au restaurant.",
+      "blankHint": "manger",
+      "translation": "Last night we ate at the restaurant.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["avons mangé", "mangeons", "avons mangés", "as mangé"],
+      "correct_index": 0,
+      "explanation": "Passé composé avec « avoir » : nous avons mangé, sans accord.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'___ mon rapport avant midi.",
+      "blankHint": "finir",
+      "translation": "I finished my report before noon.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["ai fini", "suis fini", "finissais", "as fini"],
+      "correct_index": 0,
+      "explanation": "Le verbe « finir » se conjugue avec « avoir » : j'ai fini.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_003",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce matin, elle ___ le métro pour aller au travail.",
+      "blankHint": "prendre",
+      "translation": "This morning she took the metro to go to work.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["a pris", "a prit", "est prise", "prenait"],
+      "correct_index": 0,
+      "explanation": "Participe passé irrégulier de « prendre » : elle a pris.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_004",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ les informations à la télévision hier ?",
+      "blankHint": "voir",
+      "translation": "Did you see the news on television yesterday?",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["avez vu", "avez vus", "êtes vus", "voyiez"],
+      "correct_index": 0,
+      "explanation": "Avec « avoir », pas d'accord quand le COD suit : vous avez vu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils ___ trop de café ce matin.",
+      "blankHint": "boire",
+      "translation": "They drank too much coffee this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["ont bu", "ont bus", "sont bus", "buvaient"],
+      "correct_index": 0,
+      "explanation": "Participe passé de « boire » avec « avoir » : ils ont bu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ à la gare à pied.",
+      "blankHint": "aller",
+      "translation": "She went to the station on foot.",
+      "tags": [
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["est allée", "est allé", "a allé", "allait"],
+      "correct_index": 0,
+      "explanation": "« Aller » se conjugue avec « être » et s'accorde : elle est allée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mes amis ___ me voir dimanche dernier.",
+      "blankHint": "venir",
+      "translation": "My friends came to see me last Sunday.",
+      "tags": [
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["sont venus", "ont venu", "sont venu", "venaient"],
+      "correct_index": 0,
+      "explanation": "« Venir » prend « être » et s'accorde au masculin pluriel : sont venus.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les filles ___ tôt ce matin.",
+      "blankHint": "partir",
+      "translation": "The girls left early this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["sont parties", "sont parti", "ont parti", "partaient"],
+      "correct_index": 0,
+      "explanation": "« Partir » avec « être » s'accorde au féminin pluriel : sont parties.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il ___ dans l'escalier hier.",
+      "blankHint": "tomber",
+      "translation": "He fell down the stairs yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["est tombé", "a tombé", "est tombée", "tombait"],
+      "correct_index": 0,
+      "explanation": "« Tomber » se conjugue avec « être » : il est tombé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elles ___ en retard à la réunion.",
+      "blankHint": "arriver",
+      "translation": "They arrived late to the meeting.",
+      "tags": [
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["sont arrivées", "sont arrivé", "ont arrivé", "arrivaient"],
+      "correct_index": 0,
+      "explanation": "« Arriver » avec « être » s'accorde : elles sont arrivées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Autrefois, le climat ___ plus doux dans cette région.",
+      "blankHint": "être",
+      "translation": "In the past, the climate used to be milder in this region.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["était", "a été", "est", "serait"],
+      "correct_index": 0,
+      "explanation": "L'imparfait décrit un état durable dans le passé : le climat était.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Quand nous étions jeunes, nous ___ beaucoup de temps libre.",
+      "blankHint": "avoir",
+      "translation": "When we were young, we had a lot of free time.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["avions", "avons eu", "avons", "aurions"],
+      "correct_index": 0,
+      "explanation": "L'imparfait exprime une situation passée habituelle : nous avions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Enfant, elle ___ chez ses grands-parents.",
+      "blankHint": "habiter",
+      "translation": "As a child, she lived at her grandparents' house.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["habitait", "a habité", "habite", "habitera"],
+      "correct_index": 0,
+      "explanation": "L'imparfait décrit une habitude passée : enfant, elle habitait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_014",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce jour-là, il ___ très chaud et le ciel était bleu.",
+      "blankHint": "faire",
+      "translation": "That day, it was very hot and the sky was blue.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["faisait", "a fait", "fait", "ferait"],
+      "correct_index": 0,
+      "explanation": "L'imparfait pose le décor météo : il faisait très chaud.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tous les étés, les enfants ___ au bord de la mer.",
+      "blankHint": "jouer",
+      "translation": "Every summer, the children played at the seaside.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["jouaient", "ont joué", "jouent", "joueraient"],
+      "correct_index": 0,
+      "explanation": "« Tous les étés » marque une action répétée : les enfants jouaient.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je dormais quand le téléphone ___.",
+      "blankHint": "sonner",
+      "translation": "I was sleeping when the phone rang.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["a sonné", "sonnait", "sonne", "a sonnée"],
+      "correct_index": 0,
+      "explanation": "L'action ponctuelle qui interrompt se met au passé composé : a sonné.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il ___ tranquillement quand soudain il a entendu un bruit.",
+      "blankHint": "marcher",
+      "translation": "He was walking calmly when suddenly he heard a noise.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["marchait", "a marché", "marche", "marchera"],
+      "correct_index": 0,
+      "explanation": "L'action en cours interrompue prend l'imparfait : il marchait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "D'habitude je prenais le bus, mais ce matin-là j'___ un taxi.",
+      "blankHint": "prendre",
+      "translation": "I usually took the bus, but that morning I took a taxi.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["ai pris", "prenais", "prends", "ai prit"],
+      "correct_index": 0,
+      "explanation": "Événement unique et daté au passé composé : ce matin-là, j'ai pris.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_019",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le soleil ___ quand nous sommes sortis.",
+      "blankHint": "briller",
+      "translation": "The sun was shining when we went out.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["brillait", "a brillé", "brille", "brillera"],
+      "correct_index": 0,
+      "explanation": "Le décor de fond se met à l'imparfait : le soleil brillait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_020",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce matin-là, tout à coup, il ___ à pleuvoir.",
+      "blankHint": "commencer",
+      "translation": "That morning, all of a sudden, it started to rain.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["a commencé", "commençait", "commence", "a commencée"],
+      "correct_index": 0,
+      "explanation": "« Tout à coup » signale une rupture ponctuelle : il a commencé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_021",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les fleurs que j'ai ___ sont magnifiques.",
+      "blankHint": "acheter",
+      "translation": "The flowers I bought are magnificent.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["achetées", "acheté", "achetés", "achetée"],
+      "correct_index": 0,
+      "explanation": "COD « les fleurs » (fém. plur.) placé avant : accord en achetées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_022",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Marie et Sophie sont ___ ensemble hier soir.",
+      "blankHint": "sortir",
+      "translation": "Marie and Sophie went out together last night.",
+      "tags": [
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["sorties", "sorti", "sortis", "sortie"],
+      "correct_index": 0,
+      "explanation": "Avec « être », accord au féminin pluriel : elles sont sorties.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_023",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle s'est ___ les mains avant le repas.",
+      "blankHint": "laver",
+      "translation": "She washed her hands before the meal.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["lavé", "lavée", "lavés", "lavées"],
+      "correct_index": 0,
+      "explanation": "COD « les mains » placé après : pas d'accord, elle s'est lavé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_024",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La lettre que tu as ___ est arrivée ce matin.",
+      "blankHint": "écrire",
+      "translation": "The letter you wrote arrived this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["écrite", "écrit", "écrits", "écrites"],
+      "correct_index": 0,
+      "explanation": "COD « la lettre » (fém. sing.) avant : accord en écrite.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_025",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les garçons se sont ___ à sept heures.",
+      "blankHint": "réveiller",
+      "translation": "The boys woke up at seven o'clock.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["réveillés", "réveillé", "réveillée", "réveillées"],
+      "correct_index": 0,
+      "explanation": "Pronominal, « se » est COD avant : accord au masculin pluriel réveillés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ nos devoirs hier soir.",
+      "blankHint": "faire",
+      "translation": "We did our homework last night.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["avons fait", "avons faits", "faisons", "sommes faits"],
+      "correct_index": 0,
+      "explanation": "« Faire » avec « avoir », COD après : nous avons fait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mon grand-père ___ à l'hôpital la semaine dernière.",
+      "blankHint": "aller",
+      "translation": "My grandfather went to the hospital last week.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["est allé", "a allé", "est allée", "allait"],
+      "correct_index": 0,
+      "explanation": "« Aller » prend « être » : mon grand-père est allé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_028",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Quand il faisait beau, nous ___ dans le parc.",
+      "blankHint": "se promener",
+      "translation": "When the weather was nice, we used to walk in the park.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["nous promenions", "nous sommes promenés", "nous promenons", "nous promènerons"],
+      "correct_index": 0,
+      "explanation": "Habitude passée d'un verbe pronominal à l'imparfait : nous promenions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_029",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle lisait tranquillement lorsqu'on ___ à la porte.",
+      "blankHint": "frapper",
+      "translation": "She was reading quietly when someone knocked at the door.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["a frappé", "frappait", "frappe", "a frappée"],
+      "correct_index": 0,
+      "explanation": "L'action brève qui survient prend le passé composé : on a frappé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_past_030",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces photos ? Je les ai ___ en Italie.",
+      "blankHint": "prendre",
+      "translation": "These photos? I took them in Italy.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["prises", "pris", "prise", "prit"],
+      "correct_index": 0,
+      "explanation": "Le COD « les » (fém. plur.) précède : accord en prises.",
+      "register": "neutral"
+    }
+  ]
+}

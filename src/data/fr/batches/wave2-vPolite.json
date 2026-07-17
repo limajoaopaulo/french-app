@@ -1,0 +1,634 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vPolite_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je suis vraiment ___ de t'avoir fait attendre si longtemps.",
+      "blankHint": null,
+      "translation": "I'm really sorry for having made you wait so long.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["désolé", "content", "pressé", "occupé"],
+      "correct_index": 0,
+      "explanation": "Pour s'excuser, on dit qu'on est désolé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je voudrais m'___ pour mon comportement d'hier soir.",
+      "blankHint": null,
+      "translation": "I would like to apologize for my behavior last night.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["excuser", "amuser", "ennuyer", "occuper"],
+      "correct_index": 0,
+      "explanation": "Présenter des excuses, c'est s'excuser.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Après leur dispute, ils ont décidé de se ___.",
+      "blankHint": null,
+      "translation": "After their argument, they decided to make up.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["réconcilier", "disputer", "séparer", "fâcher"],
+      "correct_index": 0,
+      "explanation": "Faire la paix après une dispute, c'est se réconcilier.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce n'est pas grave, je te ___ volontiers.",
+      "blankHint": null,
+      "translation": "It's not serious, I gladly forgive you.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["pardonne", "reproche", "accuse", "blâme"],
+      "correct_index": 0,
+      "explanation": "Ne plus en vouloir à quelqu'un, c'est lui pardonner.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vPolite_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je reconnais que j'ai eu ___ de crier sur toi.",
+      "blankHint": null,
+      "translation": "I admit that I was wrong to shout at you.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["tort", "raison", "peur", "honte"],
+      "correct_index": 0,
+      "explanation": "Se tromper ou mal agir, c'est avoir tort.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "C'était un simple ___ , personne ne voulait blesser l'autre.",
+      "blankHint": null,
+      "translation": "It was just a misunderstanding, nobody meant to hurt the other.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["malentendu", "mensonge", "compliment", "cadeau"],
+      "correct_index": 0,
+      "explanation": "Une incompréhension entre deux personnes est un malentendu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il m'a présenté ses ___ pour le mal qu'il avait causé.",
+      "blankHint": null,
+      "translation": "He offered me his apologies for the harm he had caused.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["excuses", "félicitations", "remerciements", "salutations"],
+      "correct_index": 0,
+      "explanation": "On présente ses excuses pour se faire pardonner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Arrête de me faire des ___ , je n'ai rien fait de mal !",
+      "blankHint": null,
+      "translation": "Stop reproaching me, I haven't done anything wrong!",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["reproches", "compliments", "faveurs", "cadeaux"],
+      "correct_index": 0,
+      "explanation": "Critiquer le comportement de quelqu'un, c'est lui faire des reproches.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vPolite_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La ___ entre les deux collègues a fini par exploser en réunion.",
+      "blankHint": null,
+      "translation": "The tension between the two colleagues finally exploded during the meeting.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["tension", "entente", "complicité", "amitié"],
+      "correct_index": 0,
+      "explanation": "Un climat de conflit latent, c'est de la tension.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je regrette profondément de t'avoir ___ avec mes paroles.",
+      "blankHint": null,
+      "translation": "I deeply regret having hurt you with my words.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["blessé", "aidé", "félicité", "remercié"],
+      "correct_index": 0,
+      "explanation": "Faire de la peine à quelqu'un, c'est le blesser.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ne se parlent plus depuis leur violente ___.",
+      "blankHint": null,
+      "translation": "They no longer speak to each other since their violent quarrel.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["dispute", "rencontre", "réunion", "promenade"],
+      "correct_index": 0,
+      "explanation": "Une querelle entre deux personnes est une dispute.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour ___ le conflit, ils ont fait appel à un médiateur.",
+      "blankHint": null,
+      "translation": "To resolve the conflict, they called on a mediator.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["résoudre", "provoquer", "aggraver", "ignorer"],
+      "correct_index": 0,
+      "explanation": "Mettre fin à un conflit, c'est le résoudre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_013",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je vous prie de bien vouloir m'___ de cette maladresse.",
+      "blankHint": null,
+      "translation": "Please forgive me for this blunder.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["excuser", "féliciter", "remercier", "complimenter"],
+      "correct_index": 0,
+      "explanation": "Demander pardon poliment, c'est prier quelqu'un de nous excuser.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_014",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sa remarque blessante a ___ une vive dispute entre eux.",
+      "blankHint": null,
+      "translation": "His hurtful remark triggered a heated argument between them.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["déclenché", "apaisé", "évité", "calmé"],
+      "correct_index": 0,
+      "explanation": "Provoquer soudainement un conflit, c'est le déclencher.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Malgré leurs différends, ils ont réussi à ___ leurs divergences.",
+      "blankHint": null,
+      "translation": "Despite their differences, they managed to overcome their disagreements.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["surmonter", "envenimer", "attiser", "nourrir"],
+      "correct_index": 0,
+      "explanation": "Venir à bout d'un désaccord, c'est le surmonter.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il refuse d'assumer la moindre ___ dans cette affaire.",
+      "blankHint": null,
+      "translation": "He refuses to take the slightest responsibility in this matter.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["responsabilité", "récompense", "félicitation", "gratitude"],
+      "correct_index": 0,
+      "explanation": "Reconnaître sa part dans un tort, c'est en assumer la responsabilité.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le ton est monté et la discussion a rapidement ___ en querelle.",
+      "blankHint": null,
+      "translation": "Voices rose and the discussion quickly degenerated into a quarrel.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["dégénéré", "abouti", "contribué", "renoncé"],
+      "correct_index": 0,
+      "explanation": "Tourner mal et s'envenimer, c'est dégénérer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après des années de rancune, il a fini par reconnaître ses ___.",
+      "blankHint": null,
+      "translation": "After years of resentment, he finally acknowledged his wrongs.",
+      "tags": [
+        { "facet": "topic", "tag": "apologies_conflict", "role": "focus" }
+      ],
+      "options": ["torts", "mérites", "droits", "devoirs"],
+      "correct_index": 0,
+      "explanation": "Admettre que l'on a mal agi, c'est reconnaître ses torts.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "___ beaucoup pour ton cadeau, c'est très gentil.",
+      "blankHint": null,
+      "translation": "Thank you very much for your gift, that's very kind.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["Merci", "Bonjour", "Bravo", "Voilà"],
+      "correct_index": 0,
+      "explanation": "Pour exprimer sa reconnaissance, on dit merci.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vPolite_020",
+      "format": "cloze",
+      "level": 1,
+      "cue": "— Merci beaucoup ! — De ___ , c'est normal.",
+      "blankHint": null,
+      "translation": "— Thank you very much! — You're welcome, it's nothing.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["rien", "quoi", "tout", "plus"],
+      "correct_index": 0,
+      "explanation": "Pour répondre à un merci, on dit « de rien ».",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vPolite_021",
+      "format": "cloze",
+      "level": 1,
+      "cue": "___ , madame, où se trouve la gare, s'il vous plaît ?",
+      "blankHint": null,
+      "translation": "Excuse me, madam, where is the station, please?",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["Pardon", "Merci", "Bravo", "Adieu"],
+      "correct_index": 0,
+      "explanation": "Pour aborder poliment quelqu'un, on dit « pardon ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_022",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Quand on entre dans une boulangerie, on dit « ___ » au vendeur.",
+      "blankHint": null,
+      "translation": "When you enter a bakery, you say \"hello\" to the seller.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["bonjour", "merci", "pardon", "bravo"],
+      "correct_index": 0,
+      "explanation": "Pour saluer en arrivant, on dit bonjour.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_023",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Sois ___ avec tes grands-parents et dis-leur merci.",
+      "blankHint": null,
+      "translation": "Be polite with your grandparents and say thank you to them.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["poli", "drôle", "rapide", "grand"],
+      "correct_index": 0,
+      "explanation": "Bien se comporter avec respect, c'est être poli.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vPolite_024",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le soir, en quittant ses amis, il dit « ___ ».",
+      "blankHint": null,
+      "translation": "In the evening, when leaving his friends, he says \"goodbye\".",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["au revoir", "bonjour", "merci", "pardon"],
+      "correct_index": 0,
+      "explanation": "Pour prendre congé, on dit au revoir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "___ -moi de vous déranger, mais j'ai une petite question.",
+      "blankHint": null,
+      "translation": "Excuse me for disturbing you, but I have a little question.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["Excusez", "Remerciez", "Saluez", "Félicitez"],
+      "correct_index": 0,
+      "explanation": "Pour s'adresser poliment à quelqu'un, on dit « excusez-moi ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "— Puis-je m'asseoir ici ? — Je vous en ___ .",
+      "blankHint": null,
+      "translation": "— May I sit here? — Please do.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["prie", "remercie", "salue", "excuse"],
+      "correct_index": 0,
+      "explanation": "Pour accorder poliment une permission, on dit « je vous en prie ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il faut toujours ___ les gens poliment quand on arrive.",
+      "blankHint": null,
+      "translation": "You should always greet people politely when you arrive.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["saluer", "ignorer", "bousculer", "déranger"],
+      "correct_index": 0,
+      "explanation": "Dire bonjour à quelqu'un, c'est le saluer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "— Voulez-vous un café ? — ___ , avec plaisir.",
+      "blankHint": null,
+      "translation": "— Would you like a coffee? — Gladly, with pleasure.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["Volontiers", "Jamais", "Dommage", "Tant pis"],
+      "correct_index": 0,
+      "explanation": "Pour accepter poliment, on répond « volontiers ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "N'oublie pas de ___ ton hôte pour ce délicieux repas.",
+      "blankHint": null,
+      "translation": "Don't forget to thank your host for this delicious meal.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["remercier", "gronder", "critiquer", "déranger"],
+      "correct_index": 0,
+      "explanation": "Dire merci à quelqu'un, c'est le remercier.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En France, on ___ les personnes qu'on ne connaît pas bien.",
+      "blankHint": null,
+      "translation": "In France, you use the formal \"vous\" with people you don't know well.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["vouvoie", "tutoie", "insulte", "ignore"],
+      "correct_index": 0,
+      "explanation": "Dire « vous » par respect, c'est vouvoyer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Par ___ , il a laissé sa place à la vieille dame dans le bus.",
+      "blankHint": null,
+      "translation": "Out of politeness, he gave up his seat to the old lady on the bus.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["politesse", "paresse", "colère", "méfiance"],
+      "correct_index": 0,
+      "explanation": "Agir avec courtoisie, c'est agir par politesse.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "___ patienter quelques instants, le médecin va vous recevoir.",
+      "blankHint": null,
+      "translation": "Please wait a few moments, the doctor will see you.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["Veuillez", "Voulez", "Pouvez", "Devez"],
+      "correct_index": 0,
+      "explanation": "Pour une demande polie et formelle, on emploie « veuillez ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est un homme très ___ qui salue toujours ses voisins.",
+      "blankHint": null,
+      "translation": "He is a very courteous man who always greets his neighbors.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["courtois", "grossier", "distrait", "pressé"],
+      "correct_index": 0,
+      "explanation": "Poli et prévenant envers autrui, c'est être courtois.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle m'a remercié avec beaucoup de ___ pour mon geste.",
+      "blankHint": null,
+      "translation": "She thanked me with a lot of gratitude for my gesture.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["gratitude", "mépris", "indifférence", "méfiance"],
+      "correct_index": 0,
+      "explanation": "Le sentiment de reconnaissance envers quelqu'un est la gratitude.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Interrompre quelqu'un sans s'excuser est considéré comme ___.",
+      "blankHint": null,
+      "translation": "Interrupting someone without apologizing is considered rude.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["impoli", "aimable", "courtois", "respectueux"],
+      "correct_index": 0,
+      "explanation": "Un comportement qui manque de politesse est impoli.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je vous serais ___ de bien vouloir me répondre rapidement.",
+      "blankHint": null,
+      "translation": "I would be grateful if you would kindly reply to me quickly.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["reconnaissant", "désolé", "fâché", "jaloux"],
+      "correct_index": 0,
+      "explanation": "Exprimer poliment sa gratitude anticipée : « je vous serais reconnaissant ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_037",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Veuillez agréer, Madame, l'expression de mes ___ distinguées.",
+      "blankHint": null,
+      "translation": "Please accept, Madam, the expression of my highest regards.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["salutations", "excuses", "félicitations", "condoléances"],
+      "correct_index": 0,
+      "explanation": "Formule de politesse finale d'une lettre : « mes salutations distinguées ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_038",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il s'est adressé à ses invités avec une ___ irréprochable.",
+      "blankHint": null,
+      "translation": "He addressed his guests with impeccable courtesy.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["courtoisie", "arrogance", "familiarité", "brusquerie"],
+      "correct_index": 0,
+      "explanation": "La politesse raffinée envers autrui est la courtoisie.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_039",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Par pure ___ , elle a feint de s'intéresser à son long discours.",
+      "blankHint": null,
+      "translation": "Out of pure politeness, she pretended to be interested in his long speech.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["politesse", "malveillance", "hostilité", "indifférence"],
+      "correct_index": 0,
+      "explanation": "Faire semblant par convenance, c'est agir par politesse.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vPolite_040",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je me permets de solliciter votre ___ pour ce léger contretemps.",
+      "blankHint": null,
+      "translation": "I take the liberty of asking for your indulgence for this slight delay.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["indulgence", "sévérité", "colère", "méfiance"],
+      "correct_index": 0,
+      "explanation": "Demander poliment d'être excusé, c'est solliciter l'indulgence.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_041",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Un ton ___ et mesuré est de rigueur dans ce type de courrier.",
+      "blankHint": null,
+      "translation": "A courteous and measured tone is required in this kind of letter.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["courtois", "désinvolte", "familier", "cassant"],
+      "correct_index": 0,
+      "explanation": "Un ton poli et respectueux est un ton courtois.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vPolite_042",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il a décliné l'invitation avec ___ pour ne pas froisser son hôte.",
+      "blankHint": null,
+      "translation": "He declined the invitation with tact so as not to offend his host.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["tact", "brusquerie", "dédain", "mépris"],
+      "correct_index": 0,
+      "explanation": "Agir avec délicatesse pour ne pas blesser, c'est faire preuve de tact.",
+      "register": "formal"
+    }
+  ]
+}

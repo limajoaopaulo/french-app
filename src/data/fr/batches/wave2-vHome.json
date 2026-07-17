@@ -1,0 +1,816 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vHome_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je prépare le dîner dans la ___ .",
+      "blankHint": null,
+      "translation": "I prepare dinner in the kitchen.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["cuisine", "chambre", "garage", "terrasse"],
+      "correct_index": 0,
+      "explanation": "On cuisine et on prépare les repas dans la cuisine.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le soir, je dors dans ma ___ .",
+      "blankHint": null,
+      "translation": "In the evening, I sleep in my bedroom.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["chambre", "cuisine", "cave", "entrée"],
+      "correct_index": 0,
+      "explanation": "On dort dans la chambre, la pièce où se trouve le lit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je me lave les mains dans la salle de ___ .",
+      "blankHint": null,
+      "translation": "I wash my hands in the bathroom.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["bains", "sport", "séjour", "jeux"],
+      "correct_index": 0,
+      "explanation": "La salle de bains est la pièce pour se laver.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous regardons la télévision dans le ___ .",
+      "blankHint": null,
+      "translation": "We watch television in the living room.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["salon", "grenier", "couloir", "placard"],
+      "correct_index": 0,
+      "explanation": "Le salon est la pièce où l'on se détend et reçoit les invités.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je gare la voiture dans le ___ .",
+      "blankHint": null,
+      "translation": "I park the car in the garage.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["garage", "salon", "bureau", "balcon"],
+      "correct_index": 0,
+      "explanation": "On range la voiture dans le garage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous mangeons ensemble dans la salle à ___ .",
+      "blankHint": null,
+      "translation": "We eat together in the dining room.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["manger", "dormir", "laver", "jouer"],
+      "correct_index": 0,
+      "explanation": "La salle à manger est la pièce où l'on prend les repas.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour aller du salon aux chambres, il faut traverser le ___ .",
+      "blankHint": null,
+      "translation": "To go from the living room to the bedrooms, you have to cross the hallway.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["couloir", "plafond", "trottoir", "placard"],
+      "correct_index": 0,
+      "explanation": "Le couloir est le passage étroit qui relie les pièces.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous prenons l'apéritif sur le ___ pour profiter du soleil.",
+      "blankHint": null,
+      "translation": "We have drinks on the balcony to enjoy the sun.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["balcon", "couloir", "sous-sol", "évier"],
+      "correct_index": 0,
+      "explanation": "Le balcon est la plateforme extérieure à l'étage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je travaille à la maison, dans mon ___ , au calme.",
+      "blankHint": null,
+      "translation": "I work from home, in my study, in peace.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["bureau", "grenier", "vestibule", "jardin"],
+      "correct_index": 0,
+      "explanation": "Le bureau est la pièce aménagée pour travailler.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous rangeons les vieux cartons au ___ , sous le toit.",
+      "blankHint": null,
+      "translation": "We store the old boxes in the attic, under the roof.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["grenier", "salon", "palier", "perron"],
+      "correct_index": 0,
+      "explanation": "Le grenier est l'espace situé juste sous le toit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La ___ est fraîche : c'est parfait pour conserver le vin.",
+      "blankHint": null,
+      "translation": "The cellar is cool: it's perfect for storing wine.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["cave", "cuisine", "véranda", "buanderie"],
+      "correct_index": 0,
+      "explanation": "La cave est la pièce souterraine, souvent utilisée pour le vin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Enlève tes chaussures dans l' ___ avant d'entrer dans le salon.",
+      "blankHint": null,
+      "translation": "Take off your shoes in the entryway before going into the living room.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["entrée", "cave", "cheminée", "cuisine"],
+      "correct_index": 0,
+      "explanation": "L'entrée est la première pièce quand on arrive dans le logement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous faisons sécher le linge dans la ___ , à côté de la machine à laver.",
+      "blankHint": null,
+      "translation": "We dry the laundry in the utility room, next to the washing machine.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["buanderie", "véranda", "mansarde", "loggia"],
+      "correct_index": 0,
+      "explanation": "La buanderie est la pièce réservée au lavage et au séchage du linge.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Grâce à la ___ vitrée, nous profitons du jardin même en hiver.",
+      "blankHint": null,
+      "translation": "Thanks to the glass veranda, we enjoy the garden even in winter.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["véranda", "buanderie", "cave", "soupente"],
+      "correct_index": 0,
+      "explanation": "La véranda est une pièce vitrée prolongeant la maison vers l'extérieur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "L'appartement est en attique : la chambre sous les combles est une jolie ___ .",
+      "blankHint": null,
+      "translation": "The apartment is a penthouse: the room under the roof is a pretty attic room.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["mansarde", "buanderie", "véranda", "loggia"],
+      "correct_index": 0,
+      "explanation": "Une mansarde est une pièce aménagée sous un toit en pente.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les enfants jouent au ___ , la pièce du bas à moitié enterrée.",
+      "blankHint": null,
+      "translation": "The children play in the basement, the lower room that is half underground.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["sous-sol", "palier", "vestibule", "grenier"],
+      "correct_index": 0,
+      "explanation": "Le sous-sol est le niveau situé sous le rez-de-chaussée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Arrivés au troisième étage, nous attendons sur le ___ devant la porte.",
+      "blankHint": null,
+      "translation": "Having reached the third floor, we wait on the landing in front of the door.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["palier", "perron", "couloir", "seuil"],
+      "correct_index": 0,
+      "explanation": "Le palier est l'espace plat qui dessert les portes à chaque étage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette petite chambre sert de ___ : on y range les valises et les cartons.",
+      "blankHint": null,
+      "translation": "This little room is used as a box room: we store suitcases and boxes there.",
+      "tags": [
+        { "facet": "topic", "tag": "home_rooms", "role": "focus" }
+      ],
+      "options": ["débarras", "véranda", "loggia", "buanderie"],
+      "correct_index": 0,
+      "explanation": "Un débarras est une pièce où l'on entrepose ce dont on ne se sert pas souvent.",
+      "register": "neutral"
+    },
+
+    {
+      "id": "fr_w2_vHome_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le soir, je dors dans mon ___ confortable.",
+      "blankHint": null,
+      "translation": "In the evening, I sleep in my comfortable bed.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["lit", "évier", "four", "rideau"],
+      "correct_index": 0,
+      "explanation": "On dort dans un lit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_020",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je m'assois sur une ___ pour manger.",
+      "blankHint": null,
+      "translation": "I sit on a chair to eat.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["chaise", "lampe", "armoire", "assiette"],
+      "correct_index": 0,
+      "explanation": "On s'assoit sur une chaise.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_021",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je pose mon verre et mon assiette sur la ___ .",
+      "blankHint": null,
+      "translation": "I put my glass and my plate on the table.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["table", "porte", "chaise", "fenêtre"],
+      "correct_index": 0,
+      "explanation": "On pose les objets sur la table.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_022",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je range mes vêtements dans l' ___ .",
+      "blankHint": null,
+      "translation": "I put my clothes away in the wardrobe.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["armoire", "table", "chaise", "lampe"],
+      "correct_index": 0,
+      "explanation": "L'armoire est un grand meuble pour ranger les vêtements.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_023",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le soir, j'allume la ___ pour lire.",
+      "blankHint": null,
+      "translation": "In the evening, I turn on the lamp to read.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["lampe", "chaise", "porte", "table"],
+      "correct_index": 0,
+      "explanation": "La lampe donne de la lumière.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_024",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous nous asseyons sur le ___ pour regarder un film.",
+      "blankHint": null,
+      "translation": "We sit on the sofa to watch a film.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["canapé", "évier", "miroir", "tapis"],
+      "correct_index": 0,
+      "explanation": "Le canapé est le grand siège confortable du salon.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je garde le lait et les légumes au frais dans le ___ .",
+      "blankHint": null,
+      "translation": "I keep the milk and vegetables cool in the fridge.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["réfrigérateur", "canapé", "oreiller", "fauteuil"],
+      "correct_index": 0,
+      "explanation": "Le réfrigérateur conserve les aliments au froid.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je fais la vaisselle dans l' ___ de la cuisine.",
+      "blankHint": null,
+      "translation": "I do the dishes in the kitchen sink.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["évier", "oreiller", "tiroir", "étagère"],
+      "correct_index": 0,
+      "explanation": "L'évier est le bac où l'on lave la vaisselle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je pose mes livres sur l' ___ fixée au mur.",
+      "blankHint": null,
+      "translation": "I put my books on the shelf fixed to the wall.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["étagère", "évier", "couette", "poignée"],
+      "correct_index": 0,
+      "explanation": "Une étagère sert à poser des objets, comme des livres.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour dormir, je pose ma tête sur un ___ moelleux.",
+      "blankHint": null,
+      "translation": "To sleep, I rest my head on a soft pillow.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["oreiller", "tiroir", "robinet", "cintre"],
+      "correct_index": 0,
+      "explanation": "On pose la tête sur un oreiller pour dormir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je range les couverts dans le ___ du buffet.",
+      "blankHint": null,
+      "translation": "I put the cutlery away in the drawer of the sideboard.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["tiroir", "rideau", "évier", "oreiller"],
+      "correct_index": 0,
+      "explanation": "Un tiroir est le compartiment coulissant d'un meuble.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il fait trop clair : je ferme les ___ de la chambre.",
+      "blankHint": null,
+      "translation": "It's too bright: I close the bedroom curtains.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["rideaux", "tiroirs", "éviers", "robinets"],
+      "correct_index": 0,
+      "explanation": "Les rideaux couvrent la fenêtre et bloquent la lumière.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "L'eau coule mal : le ___ du lavabo est entartré.",
+      "blankHint": null,
+      "translation": "The water flows badly: the tap on the basin is clogged with limescale.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["robinet", "cintre", "matelas", "abat-jour"],
+      "correct_index": 0,
+      "explanation": "Le robinet contrôle l'écoulement de l'eau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce ___ est trop mou ; j'ai mal au dos quand je me réveille.",
+      "blankHint": null,
+      "translation": "This mattress is too soft; my back hurts when I wake up.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["matelas", "robinet", "cintre", "paillasson"],
+      "correct_index": 0,
+      "explanation": "Le matelas est la partie souple du lit sur laquelle on s'allonge.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Suspends ta veste sur un ___ pour qu'elle ne se froisse pas.",
+      "blankHint": null,
+      "translation": "Hang your jacket on a hanger so it doesn't wrinkle.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["cintre", "matelas", "robinet", "tabouret"],
+      "correct_index": 0,
+      "explanation": "Un cintre sert à suspendre les vêtements dans l'armoire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La lumière est trop crue ; il faudrait changer l' ___ de cette lampe.",
+      "blankHint": null,
+      "translation": "The light is too harsh; we should change the lampshade of this lamp.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["abat-jour", "paillasson", "cintre", "tabouret"],
+      "correct_index": 0,
+      "explanation": "L'abat-jour est la partie qui adoucit et dirige la lumière d'une lampe.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Essuie tes pieds sur le ___ avant d'entrer.",
+      "blankHint": null,
+      "translation": "Wipe your feet on the doormat before coming in.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["paillasson", "abat-jour", "matelas", "cintre"],
+      "correct_index": 0,
+      "explanation": "Le paillasson est le petit tapis placé devant la porte d'entrée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "À la cuisine, on s'installe sur un ___ haut, sans dossier.",
+      "blankHint": null,
+      "translation": "In the kitchen, we sit on a high stool, without a backrest.",
+      "tags": [
+        { "facet": "topic", "tag": "furniture_objects", "role": "focus" }
+      ],
+      "options": ["tabouret", "paillasson", "abat-jour", "robinet"],
+      "correct_index": 0,
+      "explanation": "Un tabouret est un siège sans dossier ni accoudoirs.",
+      "register": "neutral"
+    },
+
+    {
+      "id": "fr_w2_vHome_037",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Chaque mois, je paie le ___ de mon appartement au propriétaire.",
+      "blankHint": null,
+      "translation": "Every month, I pay the rent for my apartment to the landlord.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["loyer", "trottoir", "matelas", "voisin"],
+      "correct_index": 0,
+      "explanation": "Le loyer est la somme versée chaque mois pour louer un logement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_038",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La personne qui possède l'appartement et à qui je paie le loyer est le ___ .",
+      "blankHint": null,
+      "translation": "The person who owns the apartment and to whom I pay the rent is the landlord.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["propriétaire", "facteur", "plombier", "banquier"],
+      "correct_index": 0,
+      "explanation": "Le propriétaire est celui qui possède le logement et le met en location.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_039",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Comme je loue ce studio, je suis le ___ , pas le propriétaire.",
+      "blankHint": null,
+      "translation": "Since I rent this studio, I am the tenant, not the owner.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["locataire", "propriétaire", "facteur", "voisin"],
+      "correct_index": 0,
+      "explanation": "Le locataire est la personne qui loue le logement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_040",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant d'emménager, il faut signer le ___ de location avec le propriétaire.",
+      "blankHint": null,
+      "translation": "Before moving in, you have to sign the rental lease with the landlord.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["contrat", "trottoir", "canapé", "quartier"],
+      "correct_index": 0,
+      "explanation": "Le contrat de location fixe les droits et devoirs des deux parties.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_041",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En plus du loyer, je paie les ___ : l'eau, l'électricité et le gaz.",
+      "blankHint": null,
+      "translation": "In addition to the rent, I pay the utility bills: water, electricity and gas.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["factures", "chaises", "clés", "fenêtres"],
+      "correct_index": 0,
+      "explanation": "Les factures sont les documents à payer pour l'eau, le gaz ou l'électricité.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_042",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En arrivant, j'ouvre le ___ d'électricité pour avoir la lumière.",
+      "blankHint": null,
+      "translation": "When I arrive, I open the electricity account to have light.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["compteur", "loyer", "voisin", "balcon"],
+      "correct_index": 0,
+      "explanation": "Le compteur mesure la consommation d'électricité, d'eau ou de gaz.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_043",
+      "format": "cloze",
+      "level": 3,
+      "cue": "En entrant dans le logement, je verse une ___ que je récupérerai en partant.",
+      "blankHint": null,
+      "translation": "When moving into the property, I pay a deposit that I will get back when I leave.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["caution", "facture", "poignée", "étagère"],
+      "correct_index": 0,
+      "explanation": "La caution est la somme bloquée en garantie et rendue au départ.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_044",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le jour de la remise des clés, nous faisons l' ___ des lieux ensemble.",
+      "blankHint": null,
+      "translation": "On the day the keys are handed over, we do the inventory of fixtures together.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["état", "loyer", "compteur", "balcon"],
+      "correct_index": 0,
+      "explanation": "L'état des lieux décrit le logement à l'entrée et à la sortie du locataire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_045",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Chaque mois, le propriétaire m'envoie une ___ qui prouve que j'ai payé le loyer.",
+      "blankHint": null,
+      "translation": "Every month, the landlord sends me a receipt that proves I have paid the rent.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["quittance", "caution", "poignée", "étagère"],
+      "correct_index": 0,
+      "explanation": "La quittance de loyer est le reçu attestant du paiement du loyer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_046",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Trois mois avant de partir, j'envoie mon ___ au propriétaire par lettre recommandée.",
+      "blankHint": null,
+      "translation": "Three months before leaving, I send my notice to the landlord by registered letter.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["préavis", "compteur", "loyer", "balcon"],
+      "correct_index": 0,
+      "explanation": "Le préavis est le délai à respecter avant de quitter le logement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_047",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour couvrir un dégât des eaux, il faut souscrire une ___ habitation.",
+      "blankHint": null,
+      "translation": "To cover water damage, you have to take out home insurance.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["assurance", "quittance", "poignée", "véranda"],
+      "correct_index": 0,
+      "explanation": "L'assurance habitation protège le logement en cas de sinistre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_048",
+      "format": "cloze",
+      "level": 3,
+      "cue": "En plus du loyer, le propriétaire réclame des ___ pour l'entretien de l'immeuble.",
+      "blankHint": null,
+      "translation": "In addition to the rent, the landlord asks for service charges for the upkeep of the building.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["charges", "préavis", "cautions", "compteurs"],
+      "correct_index": 0,
+      "explanation": "Les charges couvrent les frais communs de l'immeuble (ascenseur, entretien, eau).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHome_049",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le ___ , mandaté par le propriétaire, gère les loyers et les réparations du bien.",
+      "blankHint": null,
+      "translation": "The letting agent, appointed by the owner, manages the rents and repairs of the property.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["gestionnaire", "locataire", "déménageur", "voisin"],
+      "correct_index": 0,
+      "explanation": "Le gestionnaire administre le bien locatif pour le compte du propriétaire.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vHome_050",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le bail précise l'obligation d'entretien courant à la charge du ___ .",
+      "blankHint": null,
+      "translation": "The lease specifies the routine maintenance obligation that falls to the tenant.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["preneur", "bailleur", "notaire", "syndic"],
+      "correct_index": 0,
+      "explanation": "Dans un bail, le preneur désigne le locataire, celui qui prend le logement à bail.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vHome_051",
+      "format": "cloze",
+      "level": 4,
+      "cue": "En cas de loyers impayés, le ___ peut engager une procédure d'expulsion.",
+      "blankHint": null,
+      "translation": "In the event of unpaid rent, the lessor can start eviction proceedings.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["bailleur", "preneur", "facteur", "déménageur"],
+      "correct_index": 0,
+      "explanation": "Le bailleur est le propriétaire qui donne le logement en location.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vHome_052",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Chaque année, le loyer est révisé selon l' ___ de référence des loyers.",
+      "blankHint": null,
+      "translation": "Each year, the rent is revised according to the reference rent index.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["indice", "quittance", "caution", "préavis"],
+      "correct_index": 0,
+      "explanation": "L'indice de référence des loyers sert de base légale à la révision annuelle.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vHome_053",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le ___ de copropriété gère les parties communes et vote le budget de l'immeuble.",
+      "blankHint": null,
+      "translation": "The property management company runs the common areas and votes on the building's budget.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["syndic", "preneur", "bailleur", "compteur"],
+      "correct_index": 0,
+      "explanation": "Le syndic administre les parties communes d'une copropriété.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vHome_054",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Avant la signature définitive, l'acheteur verse un dépôt de ___ chez le notaire.",
+      "blankHint": null,
+      "translation": "Before the final signing, the buyer pays a deposit into escrow at the notary's office.",
+      "tags": [
+        { "facet": "topic", "tag": "housing_admin", "role": "focus" }
+      ],
+      "options": ["garantie", "préavis", "compteur", "loyer"],
+      "correct_index": 0,
+      "explanation": "Le dépôt de garantie sécurise l'engagement de l'acheteur lors de la vente.",
+      "register": "formal"
+    }
+  ]
+}

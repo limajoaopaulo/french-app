@@ -1,0 +1,544 @@
+{
+  "questions": [
+    {
+      "id": "fr_w1_voc_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le matin, je me ___ à sept heures pour aller travailler.",
+      "blankHint": null,
+      "translation": "In the morning, I wake up at seven o'clock to go to work.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["réveille", "couche", "promène", "repose"],
+      "correct_index": 0,
+      "explanation": "Sortir du sommeil le matin, c'est se réveiller.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant de sortir, je me ___ les dents dans la salle de bain.",
+      "blankHint": null,
+      "translation": "Before going out, I brush my teeth in the bathroom.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["brosse", "lave", "coiffe", "rase"],
+      "correct_index": 0,
+      "explanation": "On se brosse les dents avec une brosse à dents.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le soir, je me ___ vers onze heures parce que je suis fatigué.",
+      "blankHint": null,
+      "translation": "In the evening, I go to bed around eleven because I'm tired.",
+      "tags": [
+        { "facet": "topic", "tag": "daily_routine", "role": "focus" }
+      ],
+      "options": ["couche", "réveille", "lève", "habille"],
+      "correct_index": 0,
+      "explanation": "Aller dormir le soir, c'est se coucher.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Prends ton parapluie, il ___ beaucoup aujourd'hui.",
+      "blankHint": null,
+      "translation": "Take your umbrella, it's raining a lot today.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["pleut", "neige", "gèle", "souffle"],
+      "correct_index": 0,
+      "explanation": "Quand il tombe de l'eau du ciel, il pleut.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En hiver, quand il fait très froid, il ___ souvent la nuit.",
+      "blankHint": null,
+      "translation": "In winter, when it's very cold, it often freezes at night.",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["gèle", "pleut", "brille", "chauffe"],
+      "correct_index": 0,
+      "explanation": "Quand la température descend sous zéro, il gèle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Aujourd'hui le ciel est bleu et le soleil ___ : quelle belle journée !",
+      "blankHint": null,
+      "translation": "Today the sky is blue and the sun is shining: what a beautiful day!",
+      "tags": [
+        { "facet": "topic", "tag": "weather_time", "role": "focus" }
+      ],
+      "options": ["brille", "pleut", "tombe", "gèle"],
+      "correct_index": 0,
+      "explanation": "Le soleil brille quand le ciel est dégagé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_007",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour acheter du pain frais, je vais à la ___.",
+      "blankHint": null,
+      "translation": "To buy fresh bread, I go to the bakery.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["boulangerie", "pharmacie", "librairie", "boucherie"],
+      "correct_index": 0,
+      "explanation": "La boulangerie est le magasin où l'on vend le pain.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "À la caisse du supermarché, j'ai payé avec ma ___ bancaire.",
+      "blankHint": null,
+      "translation": "At the supermarket checkout, I paid with my bank card.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["carte", "monnaie", "facture", "liste"],
+      "correct_index": 0,
+      "explanation": "On paie souvent avec une carte bancaire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avant de faire les courses, j'écris une ___ pour ne rien oublier.",
+      "blankHint": null,
+      "translation": "Before doing the shopping, I write a list so I don't forget anything.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["liste", "monnaie", "caisse", "étagère"],
+      "correct_index": 0,
+      "explanation": "On note les produits à acheter sur une liste de courses.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_010",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour aller au centre-ville, je prends le ___ numéro douze.",
+      "blankHint": null,
+      "translation": "To get to the city center, I take the number twelve bus.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["bus", "trottoir", "feu", "carrefour"],
+      "correct_index": 0,
+      "explanation": "Le bus est un transport en commun de la ville.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je descends du métro à la prochaine ___.",
+      "blankHint": null,
+      "translation": "I'm getting off the metro at the next stop.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["station", "voiture", "route", "roue"],
+      "correct_index": 0,
+      "explanation": "L'arrêt du métro s'appelle une station.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "J'ai raté mon train : il faut attendre le ___ dans une heure.",
+      "blankHint": null,
+      "translation": "I missed my train: I have to wait for the next one in an hour.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["suivant", "quai", "billet", "wagon"],
+      "correct_index": 0,
+      "explanation": "Le train d'après est le train suivant.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_013",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Au restaurant, pour finir le repas, je commande un ___.",
+      "blankHint": null,
+      "translation": "At the restaurant, to finish the meal, I order a dessert.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["dessert", "entrée", "menu", "pourboire"],
+      "correct_index": 0,
+      "explanation": "Le plat sucré de fin de repas est le dessert.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_014",
+      "format": "cloze",
+      "level": 2,
+      "cue": "À la fin du repas, je demande l'___ pour payer.",
+      "blankHint": null,
+      "translation": "At the end of the meal, I ask for the bill to pay.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["addition", "entrée", "assiette", "carte"],
+      "correct_index": 0,
+      "explanation": "Au restaurant, la note à payer s'appelle l'addition.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le ___ est venu prendre notre commande avec beaucoup de gentillesse.",
+      "blankHint": null,
+      "translation": "The waiter came to take our order very kindly.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["serveur", "client", "chef", "cuisinier"],
+      "correct_index": 0,
+      "explanation": "La personne qui sert les clients à table est le serveur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_016",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour faire une omelette, il me faut trois ___.",
+      "blankHint": null,
+      "translation": "To make an omelette, I need three eggs.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["œufs", "farines", "poivrons", "citrons"],
+      "correct_index": 0,
+      "explanation": "L'omelette se prépare avec des œufs battus.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_017",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Cette sauce est trop fade ; ajoute un peu de ___ et de poivre.",
+      "blankHint": null,
+      "translation": "This sauce is too bland; add a little salt and pepper.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["sel", "sucre", "beurre", "farine"],
+      "correct_index": 0,
+      "explanation": "Pour relever un plat fade, on ajoute du sel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour la salade, achète une ___ verte bien fraîche.",
+      "blankHint": null,
+      "translation": "For the salad, buy a nice fresh green lettuce.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["laitue", "cerise", "amande", "cannelle"],
+      "correct_index": 0,
+      "explanation": "La laitue est une salade verte à feuilles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pardon, où est la gare ? — Allez tout ___ et tournez à gauche.",
+      "blankHint": null,
+      "translation": "Excuse me, where is the station? — Go straight ahead and turn left.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["droit", "loin", "vite", "haut"],
+      "correct_index": 0,
+      "explanation": "« Aller tout droit » veut dire continuer sans tourner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La pharmacie est juste ___ de la boulangerie, l'une à côté de l'autre.",
+      "blankHint": null,
+      "translation": "The pharmacy is right next to the bakery, one beside the other.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["à côté", "au fond", "en face", "au coin"],
+      "correct_index": 0,
+      "explanation": "« À côté de » indique une position tout près, sur le côté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_021",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Traversez le pont, puis prenez la deuxième rue à ___.",
+      "blankHint": null,
+      "translation": "Cross the bridge, then take the second street on the right.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["droite", "gauche", "côté", "face"],
+      "correct_index": 0,
+      "explanation": "« À droite » désigne le côté opposé à la gauche.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Depuis la mort de son chien, elle est très ___ et pleure souvent.",
+      "blankHint": null,
+      "translation": "Since her dog died, she is very sad and often cries.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["triste", "contente", "fière", "calme"],
+      "correct_index": 0,
+      "explanation": "Une personne qui pleure de chagrin est triste.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_023",
+      "format": "cloze",
+      "level": 3,
+      "cue": "J'ai réussi mon examen : je suis vraiment ___ de moi !",
+      "blankHint": null,
+      "translation": "I passed my exam: I'm really proud of myself!",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["fier", "déçu", "inquiet", "jaloux"],
+      "correct_index": 0,
+      "explanation": "Éprouver de la satisfaction après une réussite, c'est être fier.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_024",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avant l'entretien d'embauche, il était très ___ et n'arrivait pas à dormir.",
+      "blankHint": null,
+      "translation": "Before the job interview, he was very nervous and couldn't sleep.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["nerveux", "heureux", "détendu", "reconnaissant"],
+      "correct_index": 0,
+      "explanation": "Avoir peur avant un événement important, c'est être nerveux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_025",
+      "format": "cloze",
+      "level": 1,
+      "cue": "La mère de mon père est ma ___.",
+      "blankHint": null,
+      "translation": "My father's mother is my grandmother.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["grand-mère", "tante", "cousine", "belle-mère"],
+      "correct_index": 0,
+      "explanation": "La mère d'un parent est la grand-mère.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mon oncle et ma tante ont deux enfants : ce sont mes ___.",
+      "blankHint": null,
+      "translation": "My uncle and aunt have two children: they are my cousins.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["cousins", "neveux", "beaux-frères", "petits-fils"],
+      "correct_index": 0,
+      "explanation": "Les enfants de l'oncle ou de la tante sont les cousins.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Depuis qu'elle a épousé mon frère, elle est ma ___.",
+      "blankHint": null,
+      "translation": "Since she married my brother, she is my sister-in-law.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["belle-sœur", "marraine", "nièce", "belle-fille"],
+      "correct_index": 0,
+      "explanation": "L'épouse du frère est la belle-sœur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_028",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Quand on rend un service à quelqu'un, il répond souvent : « ___ beaucoup ! »",
+      "blankHint": null,
+      "translation": "When you do someone a favor, they often reply: \"Thank you very much!\"",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["merci", "pardon", "bonjour", "voilà"],
+      "correct_index": 0,
+      "explanation": "Pour remercier, on dit « merci ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "— Merci pour votre aide ! — Je vous en ___, c'était normal.",
+      "blankHint": null,
+      "translation": "— Thanks for your help! — You're welcome, it was nothing.",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["prie", "remercie", "demande", "excuse"],
+      "correct_index": 0,
+      "explanation": "« Je vous en prie » est une réponse polie à un remerciement.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w1_voc_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Auriez-vous l'___ de me passer le sel, s'il vous plaît ?",
+      "blankHint": null,
+      "translation": "Would you be so kind as to pass me the salt, please?",
+      "tags": [
+        { "facet": "topic", "tag": "politeness", "role": "focus" }
+      ],
+      "options": ["amabilité", "habitude", "occasion", "envie"],
+      "correct_index": 0,
+      "explanation": "« Avoir l'amabilité de » est une formule polie pour demander un service.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w1_voc_031",
+      "format": "cloze",
+      "level": 1,
+      "cue": "J'ai trop mangé et maintenant j'ai mal au ___.",
+      "blankHint": null,
+      "translation": "I ate too much and now my stomach hurts.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["ventre", "coude", "genou", "talon"],
+      "correct_index": 0,
+      "explanation": "Après un gros repas, on a souvent mal au ventre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_032",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je suis enrhumé : j'ai mal à la ___ et j'ai du mal à parler.",
+      "blankHint": null,
+      "translation": "I have a cold: my throat hurts and I have trouble talking.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["gorge", "cheville", "épaule", "hanche"],
+      "correct_index": 0,
+      "explanation": "Quand on est enrhumé, on a souvent mal à la gorge.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour rester en bonne ___, il faut bien dormir et faire du sport.",
+      "blankHint": null,
+      "translation": "To stay in good health, you need to sleep well and exercise.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["santé", "forme", "humeur", "mémoire"],
+      "correct_index": 0,
+      "explanation": "« Être en bonne santé » veut dire ne pas être malade.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_034",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il fait froid dehors, mets ton ___ avant de sortir.",
+      "blankHint": null,
+      "translation": "It's cold outside, put on your coat before going out.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["manteau", "short", "maillot", "foulard"],
+      "correct_index": 0,
+      "explanation": "Contre le froid, on porte un manteau chaud.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_035",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour aller courir, elle met un survêtement et une paire de ___.",
+      "blankHint": null,
+      "translation": "To go running, she puts on a tracksuit and a pair of sneakers.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["baskets", "gants", "lunettes", "chaussettes"],
+      "correct_index": 0,
+      "explanation": "Les chaussures de sport pour courir sont des baskets.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_voc_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce pantalon est trop grand ; je vais l'essayer dans une autre ___.",
+      "blankHint": null,
+      "translation": "These trousers are too big; I'll try them in another size.",
+      "tags": [
+        { "facet": "topic", "tag": "clothing", "role": "focus" }
+      ],
+      "options": ["taille", "couleur", "poche", "manche"],
+      "correct_index": 0,
+      "explanation": "La dimension d'un vêtement (S, M, L) est la taille.",
+      "register": "neutral"
+    }
+  ]
+}

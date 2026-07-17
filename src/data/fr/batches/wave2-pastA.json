@@ -1,0 +1,616 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_pastA_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce midi, j'___ une salade au bureau.",
+      "blankHint": "manger",
+      "translation": "At noon I ate a salad at the office.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["ai mangé", "suis mangé", "mange", "as mangé"],
+      "correct_index": 0,
+      "explanation": "« Manger » se conjugue avec « avoir » : j'ai mangé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu ___ tes devoirs hier soir ?",
+      "blankHint": "finir",
+      "translation": "Did you finish your homework last night?",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["as fini", "es fini", "as finit", "finis"],
+      "correct_index": 0,
+      "explanation": "« Finir » prend l'auxiliaire « avoir » : tu as fini.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pastA_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ avec le professeur après le cours.",
+      "blankHint": "parler",
+      "translation": "We talked with the teacher after class.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["avons parlé", "sommes parlé", "avons parlés", "parlons"],
+      "correct_index": 0,
+      "explanation": "Avec « avoir », le participe ne s'accorde pas : nous avons parlé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ du pain à la boulangerie.",
+      "blankHint": "acheter",
+      "translation": "She bought some bread at the bakery.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["a acheté", "est achetée", "a achetée", "achète"],
+      "correct_index": 0,
+      "explanation": "« Acheter » se conjugue avec « avoir » : elle a acheté, sans accord.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ un film samedi dernier ?",
+      "blankHint": "regarder",
+      "translation": "Did you watch a film last Saturday?",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["avez regardé", "êtes regardé", "avez regardés", "regardez"],
+      "correct_index": 0,
+      "explanation": "« Regarder » prend « avoir » : vous avez regardé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Les enfants ___ au parc tout l'après-midi.",
+      "blankHint": "jouer",
+      "translation": "The children played at the park all afternoon.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["ont joué", "sont joués", "ont joués", "jouent"],
+      "correct_index": 0,
+      "explanation": "« Jouer » se conjugue avec « avoir » : ils ont joué.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ma sœur ___ à l'école ce matin.",
+      "blankHint": "aller",
+      "translation": "My sister went to school this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["est allée", "a allé", "est allé", "est allés"],
+      "correct_index": 0,
+      "explanation": "« Aller » se conjugue avec « être » : elle est allée, accord au féminin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mes parents ___ chez nous dimanche.",
+      "blankHint": "venir",
+      "translation": "My parents came to our place on Sunday.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["sont venus", "ont venu", "sont venu", "sont venues"],
+      "correct_index": 0,
+      "explanation": "« Venir » prend « être » : ils sont venus, accord au masculin pluriel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le train ___ en retard ce matin.",
+      "blankHint": "arriver",
+      "translation": "The train arrived late this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["est arrivé", "a arrivé", "est arrivée", "sont arrivé"],
+      "correct_index": 0,
+      "explanation": "« Arriver » se conjugue avec « être » : il est arrivé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elles ___ en vacances la semaine dernière.",
+      "blankHint": "partir",
+      "translation": "They left on holiday last week.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["sont parties", "ont parti", "sont partis", "est parties"],
+      "correct_index": 0,
+      "explanation": "« Partir » prend « être » : elles sont parties, accord au féminin pluriel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ à la maison tout le week-end.",
+      "blankHint": "rester",
+      "translation": "We stayed home all weekend.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["sommes restés", "avons resté", "sommes resté", "sommes restées"],
+      "correct_index": 0,
+      "explanation": "« Rester » se conjugue avec « être » : nous sommes restés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il ___ dans l'escalier hier.",
+      "blankHint": "tomber",
+      "translation": "He fell on the stairs yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["est tombé", "a tombé", "est tombée", "sont tombé"],
+      "correct_index": 0,
+      "explanation": "« Tomber » prend « être » : il est tombé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce matin, elle ___ le bus pour aller travailler.",
+      "blankHint": "prendre",
+      "translation": "This morning she took the bus to go to work.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["a pris", "est prise", "a prit", "prenait"],
+      "correct_index": 0,
+      "explanation": "Participe passé irrégulier de « prendre » avec « avoir » : elle a pris.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ le nouveau film hier soir ?",
+      "blankHint": "voir",
+      "translation": "Did you see the new film last night?",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["avez vu", "êtes vus", "avez vus", "voyiez"],
+      "correct_index": 0,
+      "explanation": "« Voir » se conjugue avec « avoir » : vous avez vu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ beaucoup d'efforts pour ce projet.",
+      "blankHint": "faire",
+      "translation": "We made a lot of effort for this project.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["avons fait", "sommes faits", "avons faits", "faisions"],
+      "correct_index": 0,
+      "explanation": "« Faire » prend « avoir » : nous avons fait, sans accord.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "J'___ mon manteau parce qu'il faisait froid.",
+      "blankHint": "mettre",
+      "translation": "I put on my coat because it was cold.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["ai mis", "suis mis", "ai mit", "mettais"],
+      "correct_index": 0,
+      "explanation": "Participe passé de « mettre » avec « avoir » : j'ai mis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il m'___ une longue lettre le mois dernier.",
+      "blankHint": "écrire",
+      "translation": "He wrote me a long letter last month.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["a écrit", "est écrit", "a écris", "écrivait"],
+      "correct_index": 0,
+      "explanation": "« Écrire » se conjugue avec « avoir » : il a écrit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu ___ ce roman pendant les vacances ?",
+      "blankHint": "lire",
+      "translation": "Did you read this novel during the holidays?",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["as lu", "es lu", "as lit", "lisais"],
+      "correct_index": 0,
+      "explanation": "Participe passé de « lire » avec « avoir » : tu as lu.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pastA_019",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle ___ à la mauvaise station de métro.",
+      "blankHint": "descendre",
+      "translation": "She got off at the wrong metro station.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["est descendue", "a descendu", "est descendu", "est descendus"],
+      "correct_index": 0,
+      "explanation": "« Descendre » intransitif prend « être » : elle est descendue.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_020",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce matin, elles ___ très tôt.",
+      "blankHint": "se lever",
+      "translation": "This morning they got up very early.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["se sont levées", "ont levé", "se sont levé", "se sont levés"],
+      "correct_index": 0,
+      "explanation": "Les verbes pronominaux prennent « être » : elles se sont levées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_021",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Son grand-père ___ l'année dernière.",
+      "blankHint": "mourir",
+      "translation": "His grandfather died last year.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["est mort", "a mort", "est morte", "sont mort"],
+      "correct_index": 0,
+      "explanation": "« Mourir » se conjugue avec « être » : il est mort.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_022",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ma nièce ___ au mois de mars.",
+      "blankHint": "naître",
+      "translation": "My niece was born in March.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["est née", "a né", "est né", "est nées"],
+      "correct_index": 0,
+      "explanation": "« Naître » prend « être » : elle est née, accord au féminin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_023",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après le déjeuner, ils ___ au bureau.",
+      "blankHint": "retourner",
+      "translation": "After lunch they went back to the office.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["sont retournés", "ont retourné", "sont retourné", "sont retournées"],
+      "correct_index": 0,
+      "explanation": "« Retourner » intransitif prend « être » : ils sont retournés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_024",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ dans le parc après le dîner.",
+      "blankHint": "se promener",
+      "translation": "We took a walk in the park after dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["nous sommes promenés", "avons promené", "nous sommes promené", "nous sommes promenées"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal avec « être » : nous nous sommes promenés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_025",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les rapports que je vous ___ la semaine dernière étaient confidentiels.",
+      "blankHint": "envoyer",
+      "translation": "The reports I sent you last week were confidential.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["ai envoyés", "ai envoyé", "ai envoyée", "suis envoyé"],
+      "correct_index": 0,
+      "explanation": "Avec « avoir », le participe s'accorde avec le COD placé avant : les rapports que j'ai envoyés.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pastA_026",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette proposition, tout le monde l'___ immédiatement.",
+      "blankHint": "rejeter",
+      "translation": "That proposal, everyone rejected it immediately.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["a rejetée", "a rejeté", "est rejetée", "a rejetés"],
+      "correct_index": 0,
+      "explanation": "Le COD « l' » (la proposition) est placé avant : on l'a rejetée, accord au féminin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_027",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les décisions difficiles, nous les ___ ensemble.",
+      "blankHint": "prendre",
+      "translation": "The difficult decisions, we made them together.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["avons prises", "avons pris", "sommes pris", "avons prise"],
+      "correct_index": 0,
+      "explanation": "Le COD « les » (les décisions) précède : nous les avons prises, accord au féminin pluriel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_028",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je ne sais plus où j'___ mes clés.",
+      "blankHint": "mettre",
+      "translation": "I no longer know where I put my keys.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["ai mis", "ai mise", "suis mis", "ai mit"],
+      "correct_index": 0,
+      "explanation": "Le COD suit le verbe : pas d'accord, j'ai mis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_029",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Combien de livres est-ce que tu ___ cette année ?",
+      "blankHint": "lire",
+      "translation": "How many books did you read this year?",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["as lus", "as lu", "es lu", "as lues"],
+      "correct_index": 0,
+      "explanation": "Le COD « combien de livres » précède le verbe : tu en as lus, accord au masculin pluriel.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pastA_030",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ils ___ tous les documents avant la réunion.",
+      "blankHint": "préparer",
+      "translation": "They prepared all the documents before the meeting.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["ont préparé", "ont préparés", "sont préparés", "ont préparée"],
+      "correct_index": 0,
+      "explanation": "Le COD suit le verbe : pas d'accord, ils ont préparé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après la réunion, elles ___ directement chez elles.",
+      "blankHint": "rentrer",
+      "translation": "After the meeting, they went straight home.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["sont rentrées", "ont rentré", "sont rentrés", "sont rentrée"],
+      "correct_index": 0,
+      "explanation": "« Rentrer » intransitif prend « être » : elles sont rentrées, accord au féminin pluriel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Mes deux sœurs ___ médecins après de longues études.",
+      "blankHint": "devenir",
+      "translation": "My two sisters became doctors after long studies.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["sont devenues", "ont devenu", "sont devenus", "sont devenue"],
+      "correct_index": 0,
+      "explanation": "« Devenir » prend « être » : elles sont devenues, accord au féminin pluriel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle s'est ___ les mains avant de cuisiner.",
+      "blankHint": "se laver",
+      "translation": "She washed her hands before cooking.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["lavé", "lavée", "lavés", "lavées"],
+      "correct_index": 0,
+      "explanation": "Le COD « les mains » suit le verbe : pas d'accord, elle s'est lavé les mains.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les touristes ___ au sommet de la tour à pied.",
+      "blankHint": "monter",
+      "translation": "The tourists went up to the top of the tower on foot.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["sont montés", "ont monté", "sont monté", "sont montées"],
+      "correct_index": 0,
+      "explanation": "« Monter » sans COD prend « être » : ils sont montés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elles se sont ___ compte de leur erreur trop tard.",
+      "blankHint": "se rendre compte",
+      "translation": "They realized their mistake too late.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["rendu", "rendue", "rendues", "rendus"],
+      "correct_index": 0,
+      "explanation": "Dans « se rendre compte », le participe reste invariable : elles se sont rendu compte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastA_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Une fois la nuit tombée, nous ___ nous promener.",
+      "blankHint": "sortir",
+      "translation": "Once night had fallen, we went out for a walk.",
+      "tags": [
+        { "facet": "grammar", "tag": "passe_compose", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["sommes sortis", "avons sorti", "sommes sorti", "sommes sorties"],
+      "correct_index": 0,
+      "explanation": "« Sortir » sans COD prend « être » : nous sommes sortis.",
+      "register": "neutral"
+    }
+  ]
+}

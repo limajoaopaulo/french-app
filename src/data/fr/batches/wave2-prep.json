@@ -1,0 +1,772 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_prep_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Cet été, je vais ___ Paris pour les vacances.",
+      "blankHint": null,
+      "translation": "This summer, I'm going to Paris for the holidays.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["à", "en", "au", "dans"],
+      "correct_index": 0,
+      "explanation": "Devant un nom de ville : à Paris.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ma famille habite ___ France depuis dix ans.",
+      "blankHint": null,
+      "translation": "My family has lived in France for ten years.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["en", "à", "au", "aux"],
+      "correct_index": 0,
+      "explanation": "Devant un pays féminin : en France.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Mon oncle travaille ___ Portugal.",
+      "blankHint": null,
+      "translation": "My uncle works in Portugal.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["au", "en", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Devant un pays masculin : au Portugal.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous partons ___ États-Unis en avion.",
+      "blankHint": null,
+      "translation": "We are leaving for the United States by plane.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["aux", "au", "en", "à"],
+      "correct_index": 0,
+      "explanation": "Devant un pays au pluriel : aux États-Unis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ce soir, je reste ___ moi pour me reposer.",
+      "blankHint": null,
+      "translation": "Tonight, I'm staying at home to rest.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["chez", "à", "dans", "en"],
+      "correct_index": 0,
+      "explanation": "Chez + pronom personnel : chez moi.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_prep_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Les livres sont ___ le sac de Léa.",
+      "blankHint": null,
+      "translation": "The books are in Léa's bag.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["dans", "à", "chez", "en"],
+      "correct_index": 0,
+      "explanation": "Lieu fermé et précis : dans le sac.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle rêve d'aller ___ Japon un jour.",
+      "blankHint": null,
+      "translation": "She dreams of going to Japan one day.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["au", "en", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Devant un pays masculin : au Japon.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mes cousins vivent ___ Italie, près de Rome.",
+      "blankHint": null,
+      "translation": "My cousins live in Italy, near Rome.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["en", "à", "au", "aux"],
+      "correct_index": 0,
+      "explanation": "Devant un pays féminin : en Italie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le train arrive ___ Lyon à midi.",
+      "blankHint": null,
+      "translation": "The train arrives in Lyon at noon.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["à", "en", "au", "dans"],
+      "correct_index": 0,
+      "explanation": "Devant un nom de ville : à Lyon.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il faut aller ___ le dentiste cette semaine.",
+      "blankHint": null,
+      "translation": "We have to go to the dentist this week.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["chez", "à", "au", "dans"],
+      "correct_index": 0,
+      "explanation": "Chez + personne (professionnel) : chez le dentiste.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous passons nos vacances ___ Pays-Bas.",
+      "blankHint": null,
+      "translation": "We are spending our holidays in the Netherlands.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["aux", "en", "au", "à"],
+      "correct_index": 0,
+      "explanation": "Devant un pays au pluriel : aux Pays-Bas.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Range tes affaires ___ ta chambre, s'il te plaît.",
+      "blankHint": null,
+      "translation": "Put your things away in your room, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["dans", "à", "chez", "en"],
+      "correct_index": 0,
+      "explanation": "Lieu fermé et précis : dans ta chambre.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_prep_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous avons fait une escale ___ Canada avant d'arriver.",
+      "blankHint": null,
+      "translation": "We made a stopover in Canada before arriving.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["au", "en", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Devant un pays masculin : au Canada.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a déménagé ___ Iran l'année dernière.",
+      "blankHint": null,
+      "translation": "She moved to Iran last year.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["en", "au", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Pays masculin commençant par une voyelle : en Iran.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le sommet se tiendra ___ Bruxelles au mois de juin.",
+      "blankHint": null,
+      "translation": "The summit will be held in Brussels in June.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["à", "en", "au", "aux"],
+      "correct_index": 0,
+      "explanation": "Devant un nom de ville : à Bruxelles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il a grandi ___ Philippines avant de venir ici.",
+      "blankHint": null,
+      "translation": "He grew up in the Philippines before coming here.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["aux", "en", "au", "à"],
+      "correct_index": 0,
+      "explanation": "Devant un pays au pluriel : aux Philippines.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "On se retrouve ___ mes parents pour le dîner de dimanche.",
+      "blankHint": null,
+      "translation": "We're meeting at my parents' place for Sunday dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["chez", "à", "dans", "en"],
+      "correct_index": 0,
+      "explanation": "Chez + personne : chez mes parents.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_prep_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les documents importants sont ___ le tiroir du bureau.",
+      "blankHint": null,
+      "translation": "The important documents are in the desk drawer.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["dans", "à", "sur", "chez"],
+      "correct_index": 0,
+      "explanation": "Lieu fermé et précis : dans le tiroir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_019",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La conférence internationale aura lieu ___ Singapour cette année.",
+      "blankHint": null,
+      "translation": "The international conference will take place in Singapore this year.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["à", "en", "au", "aux"],
+      "correct_index": 0,
+      "explanation": "Ville et cité-État : à Singapour.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_020",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ses recherches sur le terrain l'ont menée ___ Afghanistan.",
+      "blankHint": null,
+      "translation": "Her fieldwork took her to Afghanistan.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["en", "au", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Pays masculin commençant par une voyelle : en Afghanistan.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_021",
+      "format": "cloze",
+      "level": 4,
+      "cue": "L'entreprise a ouvert une nouvelle filiale ___ Brésil.",
+      "blankHint": null,
+      "translation": "The company opened a new subsidiary in Brazil.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["au", "en", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Devant un pays masculin : au Brésil.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_022",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le rapport analyse le marché du travail ___ Émirats arabes unis.",
+      "blankHint": null,
+      "translation": "The report analyses the labour market in the United Arab Emirates.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["aux", "en", "au", "à"],
+      "correct_index": 0,
+      "explanation": "Devant un pays au pluriel : aux Émirats arabes unis.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_023",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après l'audience, nous sommes retournés ___ l'avocat pour signer.",
+      "blankHint": null,
+      "translation": "After the hearing, we went back to the lawyer's to sign.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["chez", "à", "dans", "au"],
+      "correct_index": 0,
+      "explanation": "Chez + personne (professionnel) : chez l'avocat.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_024",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le suspect se cachait ___ un immeuble abandonné du quartier.",
+      "blankHint": null,
+      "translation": "The suspect was hiding in an abandoned building in the neighbourhood.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["dans", "à", "chez", "en"],
+      "correct_index": 0,
+      "explanation": "Lieu fermé et précis : dans un immeuble.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle commence ___ comprendre le français.",
+      "blankHint": null,
+      "translation": "She is beginning to understand French.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Commencer à + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai décidé ___ apprendre à cuisiner cette année.",
+      "blankHint": null,
+      "translation": "I decided to learn to cook this year.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["d'", "de", "à", "pour"],
+      "correct_index": 0,
+      "explanation": "Décider de + infinitif ; élision devant voyelle : décider d'apprendre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu as réussi ___ finir tes devoirs à temps ?",
+      "blankHint": null,
+      "translation": "Did you manage to finish your homework on time?",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Réussir à + infinitif.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_prep_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il essaie ___ parler plus lentement pour être compris.",
+      "blankHint": null,
+      "translation": "He is trying to speak more slowly to be understood.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Essayer de + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous avons fini ___ manger vers midi et demi.",
+      "blankHint": null,
+      "translation": "We finished eating around half past twelve.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Finir de + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle apprend ___ conduire avec son père.",
+      "blankHint": null,
+      "translation": "She is learning to drive with her father.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Apprendre à + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ont refusé ___ signer le contrat sans avocat.",
+      "blankHint": null,
+      "translation": "They refused to sign the contract without a lawyer.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Refuser de + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je n'arrive pas ___ ouvrir cette porte.",
+      "blankHint": null,
+      "translation": "I can't manage to open this door.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Arriver à + infinitif (réussir à).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous avons accepté ___ participer au nouveau projet.",
+      "blankHint": null,
+      "translation": "We agreed to take part in the new project.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Accepter de + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il hésite ___ prendre une décision aussi importante.",
+      "blankHint": null,
+      "translation": "He is hesitating to make such an important decision.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Hésiter à + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu devrais éviter ___ arriver en retard à l'entretien.",
+      "blankHint": null,
+      "translation": "You should avoid arriving late to the interview.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["d'", "de", "à", "pour"],
+      "correct_index": 0,
+      "explanation": "Éviter de + infinitif ; élision devant voyelle : éviter d'arriver.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le directeur a promis ___ répondre rapidement aux clients.",
+      "blankHint": null,
+      "translation": "The director promised to reply to the clients quickly.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Promettre de + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_037",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le gouvernement cherche ___ réduire le chômage des jeunes.",
+      "blankHint": null,
+      "translation": "The government is seeking to reduce youth unemployment.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Chercher à + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_038",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Faute de budget, nous avons renoncé ___ voyager cet été.",
+      "blankHint": null,
+      "translation": "For lack of budget, we gave up on travelling this summer.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Renoncer à + infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_prep_039",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sans réforme, l'entreprise risque ___ perdre de nombreux clients.",
+      "blankHint": null,
+      "translation": "Without reform, the company risks losing many clients.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Risquer de + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_040",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Malgré la pression, il s'est efforcé ___ rester calme.",
+      "blankHint": null,
+      "translation": "Despite the pressure, he made an effort to stay calm.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "S'efforcer de + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_041",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après des mois de travail, les chercheurs sont parvenus ___ isoler le virus.",
+      "blankHint": null,
+      "translation": "After months of work, the researchers succeeded in isolating the virus.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Parvenir à + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_042",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La direction envisage ___ ouvrir une succursale à l'étranger.",
+      "blankHint": null,
+      "translation": "Management is considering opening a branch abroad.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["d'", "de", "à", "pour"],
+      "correct_index": 0,
+      "explanation": "Envisager de + infinitif ; élision devant voyelle : envisager d'ouvrir.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_043",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le comité s'est abstenu ___ commenter l'affaire en cours.",
+      "blankHint": null,
+      "translation": "The committee refrained from commenting on the ongoing case.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "S'abstenir de + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_044",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Ces réformes aspirent ___ transformer en profondeur le système éducatif.",
+      "blankHint": null,
+      "translation": "These reforms aspire to profoundly transform the education system.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Aspirer à + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_045",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'auteur s'est bien gardé ___ révéler l'identité de ses sources.",
+      "blankHint": null,
+      "translation": "The author was careful not to reveal the identity of his sources.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Se garder de + infinitif (éviter soigneusement de).",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_046",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Elle tient absolument ___ préserver son indépendance financière.",
+      "blankHint": null,
+      "translation": "She is absolutely determined to preserve her financial independence.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Tenir à + infinitif (y tenir fortement).",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_047",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le tribunal a contraint l'entreprise ___ indemniser les victimes.",
+      "blankHint": null,
+      "translation": "The court compelled the company to compensate the victims.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "en"],
+      "correct_index": 0,
+      "explanation": "Contraindre quelqu'un à + infinitif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_prep_048",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'opposition ne cesse ___ répéter les mêmes arguments.",
+      "blankHint": null,
+      "translation": "The opposition keeps repeating the same arguments.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Cesser de + infinitif.",
+      "register": "formal"
+    }
+  ]
+}

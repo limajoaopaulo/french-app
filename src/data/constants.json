@@ -1,22 +1,39 @@
 {
   "_source": "FSRS-aligned evaluation. All scheduling/levels/points derive from per-card FSRS state.",
-
   "levels": {
-    "labels": ["", "A1", "A2", "B1", "B2", "C1"],
+    "labels": [
+      "",
+      "A1",
+      "A2",
+      "B1",
+      "B2",
+      "C1"
+    ],
     "_notes_labels": "Index 0 unused; levels are 1–5 → A1–C1.",
-    "base_points_by_level": [0, 0.25, 0.75, 1.5, 2.5, 4.0],
+    "base_points_by_level": [
+      0,
+      0.25,
+      0.75,
+      1.5,
+      2.5,
+      4
+    ],
     "_notes_points": "Weight applied to stability-gain in days. Higher CEFR = more points per day of consolidation.",
-    "stability_thresholds_days": { "1": 0, "2": 2, "3": 7, "4": 21, "5": 60 },
+    "stability_thresholds_days": {
+      "1": 0,
+      "2": 2,
+      "3": 7,
+      "4": 21,
+      "5": 60
+    },
     "cards_per_level_threshold": 5,
     "_notes_threshold": "subLevel = max L such that ≥N cards at question.level ≤ L have stability ≥ T_L. Decimal interpolation between levels."
   },
-
   "fsrs": {
     "target_retention": 0.9,
     "_notes_target": "FSRS schedules so retrievability decays to this value before next review.",
     "_notes_params": "ts-fsrs ships with optimized FSRS-5 default weights. Override here only after running the optimizer on real review data."
   },
-
   "scoring_rules": {
     "_retrieve_phase": "Two-stage: pick option, then (if correct) self-grade Hard/Good/Easy on a flip card before the explanation. Wrong answers skip the flip card.",
     "grade_mapping": {
@@ -27,12 +44,15 @@
       "_notes": "User's self-grade on the flip card → FSRS grade. Wrong always Again."
     },
     "points_formula": "max(0, stability_after - stability_before) * LEVEL_POINTS[level] * SPEED_MULTIPLIER[speedTag]",
-    "speed_multiplier": { "fast": 1.2, "normal": 1.0, "slow": 0.8 }
+    "speed_multiplier": {
+      "fast": 1.2,
+      "normal": 1,
+      "slow": 0.8
+    }
   },
-
   "sampling": {
     "_notes": "Weights for pickNextQuestion. Boss bypasses this and uses deterministic composition.",
-    "low_r_boost_scale": 3.0,
+    "low_r_boost_scale": 3,
     "due_boost": 1.5,
     "cold_card_bonus": 0.4,
     "pattern_weakness_bonus_max": 0.5,
@@ -42,31 +62,62 @@
     "same_pattern_damp_base": 0.6,
     "weight_floor": 0.05
   },
-
   "serve_level_distribution": {
-    "at_current": 0.70,
+    "at_current": 0.7,
     "one_above": 0.15,
     "one_below": 0.15,
     "_notes": "pickServeLevel(estimate): 70% at round(estimate), 15% one level up, 15% one level down. Clamped to [1, 5]."
   },
-
   "rank_tiers": {
     "_notes": "Recalibrate after a real session — current cutoffs assume new points = stability_gain × LEVEL_POINTS produces lower magnitudes than the old multiplier formula.",
-    "diamond":  { "min_ppq": 8.0, "color": "#22d3ee" },
-    "platinum": { "min_ppq": 4.0, "color": "#a78bfa" },
-    "gold":     { "min_ppq": 2.0, "color": "#fbbf24" },
-    "silver":   { "min_ppq": 0.75, "color": "#d1d5db" },
-    "bronze":   { "min_ppq": 0.0, "color": "#f97316" }
+    "diamond": {
+      "min_ppq": 8,
+      "color": "#22d3ee"
+    },
+    "platinum": {
+      "min_ppq": 4,
+      "color": "#a78bfa"
+    },
+    "gold": {
+      "min_ppq": 2,
+      "color": "#fbbf24"
+    },
+    "silver": {
+      "min_ppq": 0.75,
+      "color": "#d1d5db"
+    },
+    "bronze": {
+      "min_ppq": 0,
+      "color": "#f97316"
+    }
   },
-
   "user_tiers": [
-    { "name": "apprentice", "min": 0,    "color": "#94a3b8" },
-    { "name": "initiate",   "min": 100,  "color": "#34d399" },
-    { "name": "adept",      "min": 500,  "color": "#60a5fa" },
-    { "name": "master",     "min": 2000, "color": "#a78bfa" },
-    { "name": "sage",       "min": 5000, "color": "#fbbf24" }
+    {
+      "name": "apprentice",
+      "min": 0,
+      "color": "#94a3b8"
+    },
+    {
+      "name": "initiate",
+      "min": 100,
+      "color": "#34d399"
+    },
+    {
+      "name": "adept",
+      "min": 500,
+      "color": "#60a5fa"
+    },
+    {
+      "name": "master",
+      "min": 2000,
+      "color": "#a78bfa"
+    },
+    {
+      "name": "sage",
+      "min": 5000,
+      "color": "#fbbf24"
+    }
   ],
-
   "time_thresholds": {
     "_notes": "Used to derive speedTag (fast/normal/slow). Speed feeds the points multiplier in scoring_rules.speed_multiplier — it does not affect the FSRS grade (the user's flip-card self-grade owns that).",
     "words_per_second_base": 2,
@@ -75,41 +126,22 @@
     "slow_max_seconds": 120,
     "slow_multiplier": 4
   },
-
-  "bosses": {
-    "levels": [2, 3, 4, 5],
-    "_notes_levels": "A2, B1, B2, C1.",
-    "max_misses": 2,
-    "medal_by_misses": {
-      "0": { "tier": "gold",   "label": "Or",     "color": "#fbbf24", "rank": 3 },
-      "1": { "tier": "silver", "label": "Argent", "color": "#d1d5db", "rank": 2 },
-      "2": { "tier": "bronze", "label": "Bronze", "color": "#f97316", "rank": 1 }
-    },
-    "composition": {
-      "2": [ { "level": 2, "count": 20 } ],
-      "3": [ { "level": 2, "count": 10 }, { "level": 3, "count": 20 } ],
-      "4": [ { "level": 2, "count": 10 }, { "level": 3, "count": 15 }, { "level": 4, "count": 20 } ],
-      "5": [ { "level": 2, "count": 10 }, { "level": 3, "count": 15 }, { "level": 4, "count": 20 }, { "level": 5, "count": 25 } ]
-    },
-    "total_by_level": { "2": 20, "3": 30, "4": 45, "5": 70 },
-    "unlock_rule": "Boss level L is unlocked when EVERY active sub in that domain has subLevel >= L (subLevel derived from FSRS aggregates)."
-  },
-
   "drill_lengths": {
-    "personalised_options": [5, 10, 15, 20],
-    "manual_options": [5, 10, 15, 20],
+    "personalised_options": [
+      5,
+      10,
+      15,
+      20
+    ],
     "default_length": 10,
     "review_default_length": 10
   },
-
   "difficulties_thresholds": {
     "home_card_meanR": 0.6,
     "home_card_min_cards": 5,
-    "home_card_min_patterns": 3,
     "session_callout_top_k": 2,
     "_notes": "'Difficultés récurrentes' home card appears when ≥3 patterns in any active sub have meanR < 0.6 over ≥5 cards. Per-session callout: 2 weakest patterns (by ΔR) seen this session."
   },
-
   "shuffle": {
     "algorithm": "fisher-yates"
   }

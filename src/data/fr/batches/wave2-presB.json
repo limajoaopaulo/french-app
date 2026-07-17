@@ -1,0 +1,772 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_presB_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ au marché ce matin.",
+      "blankHint": "aller",
+      "translation": "I am going to the market this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["vais", "vas", "va", "allez"],
+      "correct_index": 0,
+      "explanation": "« Aller » à la 1re personne du singulier : je vais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu ___ tes devoirs après l'école.",
+      "blankHint": "faire",
+      "translation": "You do your homework after school.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["fais", "fait", "faisons", "font"],
+      "correct_index": 0,
+      "explanation": "« Faire » à la 2e personne du singulier : tu fais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle ___ le bus pour aller au travail.",
+      "blankHint": "prendre",
+      "translation": "She takes the bus to go to work.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["prend", "prends", "prenez", "prennent"],
+      "correct_index": 0,
+      "explanation": "« Prendre » à la 3e personne du singulier : elle prend.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous ___ de Lyon.",
+      "blankHint": "venir",
+      "translation": "We come from Lyon.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["venons", "venez", "viennent", "viens"],
+      "correct_index": 0,
+      "explanation": "« Venir » à la 1re personne du pluriel : nous venons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ un café, s'il vous plaît.",
+      "blankHint": "vouloir",
+      "translation": "I would like a coffee, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["veux", "veut", "voulez", "veulent"],
+      "correct_index": 0,
+      "explanation": "« Vouloir » à la 1re personne du singulier : je veux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Vous ___ entrer maintenant.",
+      "blankHint": "pouvoir",
+      "translation": "You may come in now.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["pouvez", "pouvons", "peuvent", "peux"],
+      "correct_index": 0,
+      "explanation": "« Pouvoir » à la 2e personne du pluriel : vous pouvez.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presB_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ___ partir avant midi.",
+      "blankHint": "devoir",
+      "translation": "I have to leave before noon.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["dois", "doit", "devez", "doivent"],
+      "correct_index": 0,
+      "explanation": "« Devoir » à la 1re personne du singulier : je dois.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu ___ très bien nager.",
+      "blankHint": "savoir",
+      "translation": "You know how to swim very well.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["sais", "sait", "savez", "savent"],
+      "correct_index": 0,
+      "explanation": "« Savoir » à la 2e personne du singulier : tu sais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il ___ mal sans ses lunettes.",
+      "blankHint": "voir",
+      "translation": "He sees poorly without his glasses.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["voit", "vois", "voyez", "voient"],
+      "correct_index": 0,
+      "explanation": "« Voir » à la 3e personne du singulier : il voit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils ___ toujours la vérité.",
+      "blankHint": "dire",
+      "translation": "They always tell the truth.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["disent", "dites", "disons", "dit"],
+      "correct_index": 0,
+      "explanation": "« Dire » à la 3e personne du pluriel : ils disent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ la table pour le dîner.",
+      "blankHint": "mettre",
+      "translation": "We set the table for dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["mettons", "mettez", "mettent", "mets"],
+      "correct_index": 0,
+      "explanation": "« Mettre » à la 1re personne du pluriel : nous mettons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ___ avec mes amis ce soir.",
+      "blankHint": "sortir",
+      "translation": "I am going out with my friends tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["sors", "sort", "sortez", "sortent"],
+      "correct_index": 0,
+      "explanation": "« Sortir » à la 1re personne du singulier : je sors.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_presB_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle ___ un thé chaque matin.",
+      "blankHint": "boire",
+      "translation": "She drinks a tea every morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["boit", "bois", "buvez", "boivent"],
+      "correct_index": 0,
+      "explanation": "« Boire » à la 3e personne du singulier : elle boit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ bien ce quartier, j'y habite depuis dix ans.",
+      "blankHint": "connaître",
+      "translation": "I know this neighborhood well, I've lived here for ten years.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["connais", "connaît", "connaissez", "connaissent"],
+      "correct_index": 0,
+      "explanation": "« Connaître » à la 1re personne du singulier : je connais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ un courriel à votre patron.",
+      "blankHint": "écrire",
+      "translation": "You write an email to your boss.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["écrivez", "écrivons", "écrivent", "écris"],
+      "correct_index": 0,
+      "explanation": "« Écrire » à la 2e personne du pluriel : vous écrivez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les bébés ___ profondément la nuit.",
+      "blankHint": "dormir",
+      "translation": "Babies sleep deeply at night.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["dorment", "dort", "dormez", "dormons"],
+      "correct_index": 0,
+      "explanation": "« Dormir » à la 3e personne du pluriel : ils dorment.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ beaucoup de courrier chaque semaine.",
+      "blankHint": "recevoir",
+      "translation": "We receive a lot of mail every week.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["recevons", "recevez", "reçoivent", "reçois"],
+      "correct_index": 0,
+      "explanation": "« Recevoir » à la 1re personne du pluriel : nous recevons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ la porte ouverte pour toi.",
+      "blankHint": "tenir",
+      "translation": "I am holding the door open for you.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["tiens", "tient", "tenez", "tiennent"],
+      "correct_index": 0,
+      "explanation": "« Tenir » à la 1re personne du singulier : je tiens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_019",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je ___ le froid mordant de l'hiver.",
+      "blankHint": "craindre",
+      "translation": "I dread the biting cold of winter.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["crains", "craint", "craignez", "craignent"],
+      "correct_index": 0,
+      "explanation": "« Craindre » à la 1re personne du singulier : je crains.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_020",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Nous ___ un cours de français avancé cette année.",
+      "blankHint": "suivre",
+      "translation": "We are taking an advanced French course this year.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["suivons", "suivez", "suivent", "suis"],
+      "correct_index": 0,
+      "explanation": "« Suivre » à la 1re personne du pluriel : nous suivons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_021",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ils ___ à l'étranger depuis dix ans.",
+      "blankHint": "vivre",
+      "translation": "They have been living abroad for ten years.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["vivent", "vit", "vivez", "vivons"],
+      "correct_index": 0,
+      "explanation": "« Vivre » à la 3e personne du pluriel : ils vivent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_022",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Vous ___ enfin les objectifs fixés par la direction.",
+      "blankHint": "atteindre",
+      "translation": "You are finally reaching the goals set by management.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["atteignez", "atteignons", "atteignent", "atteins"],
+      "correct_index": 0,
+      "explanation": "« Atteindre » à la 2e personne du pluriel : vous atteignez.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presB_023",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle ___ le problème en quelques minutes à peine.",
+      "blankHint": "résoudre",
+      "translation": "She solves the problem in barely a few minutes.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["résout", "résous", "résolvez", "résolvent"],
+      "correct_index": 0,
+      "explanation": "« Résoudre » à la 3e personne du singulier : elle résout.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_024",
+      "format": "cloze",
+      "level": 4,
+      "cue": "De la colline, j'___ toute la ville en contrebas.",
+      "blankHint": "apercevoir",
+      "translation": "From the hill, I can make out the whole town below.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["aperçois", "aperçoit", "apercevez", "aperçoivent"],
+      "correct_index": 0,
+      "explanation": "« Apercevoir » à la 1re personne du singulier : j'aperçois.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_025",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le matin, je ___ à sept heures.",
+      "blankHint": "se lever",
+      "translation": "In the morning, I get up at seven o'clock.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["me lève", "me lever", "se lève", "me lèves"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se lever » avec je : je me lève.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_026",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu ___ les mains avant de manger.",
+      "blankHint": "se laver",
+      "translation": "You wash your hands before eating.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["te laves", "te lave", "se lave", "me lave"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se laver » avec tu : tu te laves.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_027",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il ___ tard le week-end.",
+      "blankHint": "se coucher",
+      "translation": "He goes to bed late on the weekend.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["se couche", "te couches", "me couche", "se couchent"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se coucher » avec il : il se couche.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_028",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Bonjour, je ___ Marie.",
+      "blankHint": "s'appeler",
+      "translation": "Hello, my name is Marie.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["m'appelle", "m'appelles", "s'appelle", "t'appelles"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'appeler » avec je : je m'appelle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_029",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous ___ tôt le lundi.",
+      "blankHint": "se réveiller",
+      "translation": "We wake up early on Mondays.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["nous réveillons", "vous réveillez", "se réveillent", "me réveille"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se réveiller » avec nous : nous nous réveillons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_030",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle ___ les dents après le repas.",
+      "blankHint": "se brosser",
+      "translation": "She brushes her teeth after the meal.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["se brosse", "se brossent", "te brosses", "me brosse"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se brosser » avec elle : elle se brosse.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_031",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ___ pour ne pas rater le train.",
+      "blankHint": "se dépêcher",
+      "translation": "I am hurrying so as not to miss the train.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["me dépêche", "me dépêches", "se dépêche", "te dépêches"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se dépêcher » avec je : je me dépêche.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_032",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu ___ élégamment pour la fête.",
+      "blankHint": "s'habiller",
+      "translation": "You dress elegantly for the party.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["t'habilles", "t'habille", "s'habille", "m'habille"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'habiller » avec tu : tu t'habilles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_033",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils ___ après une longue journée de travail.",
+      "blankHint": "se reposer",
+      "translation": "They rest after a long day of work.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["se reposent", "se repose", "vous reposez", "nous reposons"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se reposer » avec ils : ils se reposent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_034",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ dans le parc le dimanche.",
+      "blankHint": "se promener",
+      "translation": "We take a walk in the park on Sundays.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["nous promenons", "vous promenez", "se promènent", "me promène"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se promener » avec nous : nous nous promenons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_035",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ___ de mon enfance à la campagne.",
+      "blankHint": "se souvenir",
+      "translation": "I remember my childhood in the countryside.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["me souviens", "me souvient", "se souvient", "te souviens"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se souvenir » avec je : je me souviens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_036",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ des enfants tous les soirs.",
+      "blankHint": "s'occuper",
+      "translation": "She takes care of the children every evening.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["s'occupe", "s'occupent", "t'occupes", "m'occupe"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'occuper » avec elle : elle s'occupe.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_037",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ pour ma fille quand elle voyage seule.",
+      "blankHint": "s'inquiéter",
+      "translation": "I worry about my daughter when she travels alone.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["m'inquiète", "m'inquiètes", "s'inquiète", "t'inquiètes"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'inquiéter » avec je : je m'inquiète.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_038",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ en écoutant de la musique douce.",
+      "blankHint": "se détendre",
+      "translation": "We relax by listening to soft music.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["nous détendons", "vous détendez", "se détendent", "me détends"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se détendre » avec nous : nous nous détendons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_039",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ compte de mon erreur trop tard.",
+      "blankHint": "se rendre",
+      "translation": "I realize my mistake too late.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["me rends", "me rend", "se rend", "te rends"],
+      "correct_index": 0,
+      "explanation": "Expression pronominale « se rendre compte » avec je : je me rends compte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_040",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il ___ quand il pleut tout le week-end.",
+      "blankHint": "s'ennuyer",
+      "translation": "He gets bored when it rains all weekend.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["s'ennuie", "s'ennuient", "t'ennuies", "m'ennuie"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'ennuyer » avec il : il s'ennuie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_041",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu ___ des inconnus, et tu as bien raison.",
+      "blankHint": "se méfier",
+      "translation": "You are wary of strangers, and you're quite right.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["te méfies", "te méfie", "se méfie", "me méfie"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se méfier » avec tu : tu te méfies.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_042",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les enfants ___ facilement dès qu'on éteint la lumière.",
+      "blankHint": "s'endormir",
+      "translation": "The children fall asleep easily as soon as the light is turned off.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["s'endorment", "s'endort", "vous endormez", "nous endormons"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'endormir » avec ils : ils s'endorment.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_043",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je ___ rarement de mes conditions de travail.",
+      "blankHint": "se plaindre",
+      "translation": "I rarely complain about my working conditions.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["me plains", "me plaint", "se plaint", "te plains"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se plaindre » avec je : je me plains.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_044",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Nous ___ trop tard de notre oubli.",
+      "blankHint": "s'apercevoir",
+      "translation": "We realize our oversight too late.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["nous apercevons", "vous apercevez", "s'aperçoivent", "m'aperçois"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'apercevoir » avec nous : nous nous apercevons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_045",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Quand le directeur parle, tout le monde ___.",
+      "blankHint": "se taire",
+      "translation": "When the director speaks, everyone falls silent.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["se tait", "te tais", "me tais", "se taisent"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se taire » avec tout le monde (singulier) : il se tait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_046",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je ___ de parler français chaque jour.",
+      "blankHint": "s'efforcer",
+      "translation": "I strive to speak French every day.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "register_formal", "role": "context" }
+      ],
+      "options": ["m'efforce", "m'efforces", "s'efforce", "t'efforces"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'efforcer » avec je : je m'efforce.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presB_047",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle ___ de la vérité depuis longtemps.",
+      "blankHint": "se douter",
+      "translation": "She has suspected the truth for a long time.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["se doute", "se doutent", "te doutes", "me doute"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « se douter » avec elle : elle se doute.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presB_048",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Lors des votes délicats, ils ___ souvent.",
+      "blankHint": "s'abstenir",
+      "translation": "During sensitive votes, they often abstain.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["s'abstiennent", "s'abstient", "vous abstenez", "nous abstenons"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal « s'abstenir » avec ils : ils s'abstiennent.",
+      "register": "formal"
+    }
+  ]
+}

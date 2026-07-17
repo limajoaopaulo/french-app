@@ -1,0 +1,500 @@
+{
+  "questions": [
+    {
+      "id": "fr_w1_pres_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ étudiant à Paris.",
+      "blankHint": "être",
+      "translation": "I am a student in Paris.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["suis", "es", "est", "ai"],
+      "correct_index": 0,
+      "explanation": "« Être » à la 1re personne du singulier : je suis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu ___ vingt ans aujourd'hui.",
+      "blankHint": "avoir",
+      "translation": "You are twenty years old today.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["as", "a", "ai", "es"],
+      "correct_index": 0,
+      "explanation": "Pour l'âge on utilise « avoir » : tu as vingt ans.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle ___ très fatiguée ce soir.",
+      "blankHint": "être",
+      "translation": "She is very tired tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["est", "es", "a", "suis"],
+      "correct_index": 0,
+      "explanation": "« Être » à la 3e personne du singulier : elle est.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous ___ faim, on va au restaurant.",
+      "blankHint": "avoir",
+      "translation": "We are hungry, we're going to the restaurant.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["avons", "avez", "sommes", "ont"],
+      "correct_index": 0,
+      "explanation": "« Avoir faim » avec nous : nous avons faim.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ en retard pour la réunion.",
+      "blankHint": "être",
+      "translation": "You are late for the meeting.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["êtes", "avez", "sommes", "est"],
+      "correct_index": 0,
+      "explanation": "« Être » à la 2e personne du pluriel : vous êtes.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils ___ deux enfants et un chien.",
+      "blankHint": "avoir",
+      "translation": "They have two children and a dog.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["ont", "sont", "avons", "a"],
+      "correct_index": 0,
+      "explanation": "« Avoir » à la 3e personne du pluriel : ils ont.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'___ froid, je ferme la fenêtre.",
+      "blankHint": "avoir",
+      "translation": "I am cold, I'm closing the window.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["ai", "suis", "as", "es"],
+      "correct_index": 0,
+      "explanation": "« Avoir froid » à la 1re personne : j'ai froid.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ ravis de vous accueillir chez nous.",
+      "blankHint": "être",
+      "translation": "We are delighted to welcome you to our home.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["sommes", "avons", "êtes", "sont"],
+      "correct_index": 0,
+      "explanation": "« Être » à la 1re personne du pluriel : nous sommes.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w1_pres_009",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ le français tous les jours.",
+      "blankHint": "parler",
+      "translation": "I speak French every day.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["parle", "parles", "parlons", "parlez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er, 1re personne : je parle (terminaison -e).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_010",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu ___ dans une grande entreprise.",
+      "blankHint": "travailler",
+      "translation": "You work in a big company.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["travailles", "travaille", "travaillez", "travaillent"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er, 2e personne du singulier : tu travailles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ un nouvel appartement en ville.",
+      "blankHint": "chercher",
+      "translation": "We are looking for a new apartment in town.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["cherchons", "cherchez", "cherchent", "cherche"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er, 1re personne du pluriel : nous cherchons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Les enfants ___ dans le jardin.",
+      "blankHint": "jouer",
+      "translation": "The children are playing in the garden.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["jouent", "joue", "jouons", "jouez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er, 3e personne du pluriel : ils jouent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_013",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ toujours à mes questions.",
+      "blankHint": "répondre",
+      "translation": "She always answers my questions.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["répond", "réponds", "répondez", "répondent"],
+      "correct_index": 0,
+      "explanation": "Verbe en -re, 3e personne : elle répond (pas de terminaison ajoutée).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ vos devoirs avant le dîner.",
+      "blankHint": "finir",
+      "translation": "You finish your homework before dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["finissez", "finissons", "finis", "finissent"],
+      "correct_index": 0,
+      "explanation": "Verbe en -ir, 2e personne du pluriel : vous finissez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ souvent des légumes frais au marché.",
+      "blankHint": "choisir",
+      "translation": "I often choose fresh vegetables at the market.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["choisis", "choisit", "choisissons", "choise"],
+      "correct_index": 0,
+      "explanation": "Verbe en -ir, 1re personne : je choisis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ___ un café ensemble chaque matin.",
+      "blankHint": "attendre",
+      "translation": "They wait for a coffee together every morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["attendent", "attend", "attendons", "attendez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -re, 3e personne du pluriel : ils attendent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Nous ___ les nouvelles règles de sécurité au travail.",
+      "blankHint": "respecter",
+      "translation": "We respect the new safety rules at work.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["respectons", "respectez", "respectent", "respecte"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er, 1re personne du pluriel : nous respectons.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w1_pres_018",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ à l'école en bus.",
+      "blankHint": "aller",
+      "translation": "I go to school by bus.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["vais", "va", "vas", "allons"],
+      "correct_index": 0,
+      "explanation": "« Aller » à la 1re personne : je vais (verbe irrégulier).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu ___ tes courses le samedi.",
+      "blankHint": "faire",
+      "translation": "You do your shopping on Saturdays.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["fais", "fait", "faites", "fes"],
+      "correct_index": 0,
+      "explanation": "« Faire » à la 2e personne du singulier : tu fais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ prendre le train de huit heures.",
+      "blankHint": "devoir",
+      "translation": "We have to take the eight o'clock train.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["devons", "devez", "doivent", "dois"],
+      "correct_index": 0,
+      "explanation": "« Devoir » à la 1re personne du pluriel : nous devons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ un peu de repos après ce voyage.",
+      "blankHint": "vouloir",
+      "translation": "You want a little rest after this trip.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["voulez", "voulons", "veulent", "veux"],
+      "correct_index": 0,
+      "explanation": "« Vouloir » à la 2e personne du pluriel : vous voulez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ toujours le métro pour aller au bureau.",
+      "blankHint": "prendre",
+      "translation": "She always takes the metro to go to the office.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["prend", "prends", "prennent", "prene"],
+      "correct_index": 0,
+      "explanation": "« Prendre » à la 3e personne du singulier : elle prend.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_023",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ___ nous aider à déménager demain.",
+      "blankHint": "pouvoir",
+      "translation": "They can help us move tomorrow.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["peuvent", "peut", "pouvons", "pouvez"],
+      "correct_index": 0,
+      "explanation": "« Pouvoir » à la 3e personne du pluriel : ils peuvent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_024",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ d'un petit village dans le sud.",
+      "blankHint": "venir",
+      "translation": "I come from a small village in the south.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["viens", "vient", "venons", "venez"],
+      "correct_index": 0,
+      "explanation": "« Venir » à la 1re personne : je viens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_025",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Vous ___ des efforts remarquables depuis un an.",
+      "blankHint": "faire",
+      "translation": "You have been making remarkable efforts for a year.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_irreguliers", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["faites", "faisez", "faisons", "font"],
+      "correct_index": 0,
+      "explanation": "« Faire » à la 2e personne du pluriel : vous faites (forme irrégulière).",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w1_pres_026",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ à sept heures tous les matins.",
+      "blankHint": "se lever",
+      "translation": "I get up at seven o'clock every morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["me lève", "me lever", "te lèves", "se lève"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal, 1re personne : je me lève.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu ___ les mains avant de manger.",
+      "blankHint": "se laver",
+      "translation": "You wash your hands before eating.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["te laves", "te laver", "se lave", "me lave"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal, 2e personne du singulier : tu te laves.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ tôt le dimanche pour randonner.",
+      "blankHint": "se réveiller",
+      "translation": "We wake up early on Sundays to go hiking.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["nous réveillons", "nous réveillez", "se réveillent", "vous réveillez"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal, 1re personne du pluriel : nous nous réveillons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ___ vite avant de sortir en boîte.",
+      "blankHint": "s'habiller",
+      "translation": "They get dressed quickly before going out clubbing.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["s'habillent", "s'habille", "nous habillons", "vous habillez"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal, 3e personne du pluriel : ils s'habillent.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w1_pres_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ dans le nouveau quartier ?",
+      "blankHint": "se promener",
+      "translation": "Are you taking a walk in the new neighborhood?",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["vous promenez", "vous promenons", "se promènent", "te promènes"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal, 2e personne du pluriel : vous vous promenez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pres_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle ___ facilement à toute nouvelle situation.",
+      "blankHint": "s'adapter",
+      "translation": "She adapts easily to any new situation.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_pronominaux", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["s'adapte", "s'adaptent", "m'adapte", "t'adaptes"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal, 3e personne du singulier : elle s'adapte.",
+      "register": "neutral"
+    }
+  ]
+}

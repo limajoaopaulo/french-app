@@ -50,17 +50,8 @@ export const TIME_THRESHOLDS = {
   slowMultiplier: raw.time_thresholds.slow_multiplier,
 } as const
 
-export const BOSSES = {
-  levels: raw.bosses.levels as readonly number[],
-  maxMisses: raw.bosses.max_misses,
-  medalByMisses: raw.bosses.medal_by_misses as Record<string, { tier: string; label: string; color: string; rank: number }>,
-  composition: raw.bosses.composition as unknown as Record<string, ReadonlyArray<{ level: number; count: number }>>,
-  totalByLevel: raw.bosses.total_by_level as unknown as Record<string, number>,
-} as const
-
 export const DRILL_LENGTHS = {
   personalisedOptions: raw.drill_lengths.personalised_options as readonly number[],
-  manualOptions: raw.drill_lengths.manual_options as readonly number[],
   defaultLength: raw.drill_lengths.default_length,
   reviewDefaultLength: raw.drill_lengths.review_default_length,
 } as const
@@ -68,11 +59,8 @@ export const DRILL_LENGTHS = {
 export const DIFFICULTIES = {
   homeCardMeanR: raw.difficulties_thresholds.home_card_meanR,
   homeCardMinCards: raw.difficulties_thresholds.home_card_min_cards,
-  homeCardMinPatterns: raw.difficulties_thresholds.home_card_min_patterns,
   sessionCalloutTopK: raw.difficulties_thresholds.session_callout_top_k,
 } as const
-
-export const CONTRAST_PAIRING_PROBABILITY = 0.7
 
 export const SAMPLING = {
   lowRBoostScale: raw.sampling.low_r_boost_scale,

@@ -1,0 +1,814 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vShop_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je vais au ___ pour acheter du pain et du lait.",
+      "blankHint": null,
+      "translation": "I'm going to the supermarket to buy bread and milk.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["supermarché", "boulangerie", "pharmacie", "librairie"],
+      "correct_index": 0,
+      "explanation": "Le supermarché vend beaucoup de produits différents, comme le pain et le lait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Au marché, j'achète des fruits et des ___ frais.",
+      "blankHint": null,
+      "translation": "At the market, I buy fresh fruit and vegetables.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["légumes", "meubles", "vêtements", "journaux"],
+      "correct_index": 0,
+      "explanation": "Les carottes et les tomates sont des légumes.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Combien ça ___ ? — Trois euros, s'il vous plaît.",
+      "blankHint": null,
+      "translation": "How much is it? — Three euros, please.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["coûte", "mange", "ouvre", "tombe"],
+      "correct_index": 0,
+      "explanation": "Pour demander le prix, on dit « combien ça coûte ? ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je paie à la ___ avant de sortir du magasin.",
+      "blankHint": null,
+      "translation": "I pay at the checkout before leaving the shop.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["caisse", "cuisine", "chambre", "gare"],
+      "correct_index": 0,
+      "explanation": "La caisse est l'endroit où l'on paie ses achats.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "J'ai besoin d'un ___ pour porter mes courses.",
+      "blankHint": null,
+      "translation": "I need a bag to carry my groceries.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["sac", "lit", "stylo", "verre"],
+      "correct_index": 0,
+      "explanation": "On met les courses dans un sac pour les transporter.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le vendeur me rend la ___ quand je paie en espèces.",
+      "blankHint": null,
+      "translation": "The seller gives me the change when I pay in cash.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["monnaie", "valise", "clé", "lettre"],
+      "correct_index": 0,
+      "explanation": "La monnaie, c'est l'argent qu'on vous rend après un paiement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce manteau est cher, mais il y a des ___ en janvier.",
+      "blankHint": null,
+      "translation": "This coat is expensive, but there are sales in January.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["soldes", "factures", "recettes", "horaires"],
+      "correct_index": 0,
+      "explanation": "Pendant les soldes, les magasins baissent leurs prix.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je voudrais essayer ce pantalon, où est la ___ d'essayage ?",
+      "blankHint": null,
+      "translation": "I'd like to try on these trousers, where is the fitting room?",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["cabine", "caisse", "vitrine", "étagère"],
+      "correct_index": 0,
+      "explanation": "On essaie les vêtements dans la cabine d'essayage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce produit est en ___ : il coûte vingt pour cent de moins.",
+      "blankHint": null,
+      "translation": "This product is on offer: it costs twenty percent less.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["promotion", "livraison", "commande", "garantie"],
+      "correct_index": 0,
+      "explanation": "Un produit en promotion est vendu moins cher que d'habitude.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le lait se trouve dans le ___ des produits frais.",
+      "blankHint": null,
+      "translation": "The milk is in the fresh-products aisle.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["rayon", "chariot", "panier", "comptoir"],
+      "correct_index": 0,
+      "explanation": "Un rayon est une allée du magasin où sont rangés les produits.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "À l'entrée du supermarché, je prends un ___ pour mes achats.",
+      "blankHint": null,
+      "translation": "At the supermarket entrance, I grab a trolley for my shopping.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["chariot", "tiroir", "casier", "coffre"],
+      "correct_index": 0,
+      "explanation": "Le chariot roule et permet de transporter beaucoup de courses.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je n'ai pas de liquide, je vais payer par ___.",
+      "blankHint": null,
+      "translation": "I don't have cash, I'll pay by card.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["carte", "rayon", "ticket", "sac"],
+      "correct_index": 0,
+      "explanation": "On paie par carte bancaire quand on n'a pas d'espèces.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette chemise ne me va pas, je voudrais l'___ contre une autre taille.",
+      "blankHint": null,
+      "translation": "This shirt doesn't fit me, I'd like to exchange it for another size.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["échanger", "emballer", "ranger", "jeter"],
+      "correct_index": 0,
+      "explanation": "Échanger un article, c'est le remplacer par un autre en magasin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Gardez le ___ de caisse au cas où vous voudriez être remboursé.",
+      "blankHint": null,
+      "translation": "Keep the receipt in case you want a refund.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["ticket", "chariot", "rayon", "panier"],
+      "correct_index": 0,
+      "explanation": "Le ticket de caisse prouve votre achat et sert pour un retour.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette veste est de très bonne ___, elle durera des années.",
+      "blankHint": null,
+      "translation": "This jacket is of very good quality, it will last for years.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["qualité", "quantité", "monnaie", "taille"],
+      "correct_index": 0,
+      "explanation": "La qualité désigne la valeur et la solidité d'un produit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le site propose la ___ à domicile pour les achats en ligne.",
+      "blankHint": null,
+      "translation": "The website offers home delivery for online purchases.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["livraison", "réduction", "ouverture", "fermeture"],
+      "correct_index": 0,
+      "explanation": "La livraison, c'est l'envoi des produits jusque chez le client.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avant d'acheter, je compare les ___ dans plusieurs magasins.",
+      "blankHint": null,
+      "translation": "Before buying, I compare the prices in several shops.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["prix", "goûts", "bruits", "poids"],
+      "correct_index": 0,
+      "explanation": "Le prix est la somme d'argent qu'on paie pour un produit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce modèle est en ___ de stock, il faut attendre la prochaine livraison.",
+      "blankHint": null,
+      "translation": "This model is out of stock, we have to wait for the next delivery.",
+      "tags": [
+        { "facet": "topic", "tag": "shopping_courses", "role": "focus" }
+      ],
+      "options": ["rupture", "promotion", "vitrine", "solde"],
+      "correct_index": 0,
+      "explanation": "Être en rupture de stock signifie qu'il n'y a plus de produit disponible.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Chaque matin, je prends le ___ pour aller au travail.",
+      "blankHint": null,
+      "translation": "Every morning, I take the bus to go to work.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["bus", "lit", "sac", "café"],
+      "correct_index": 0,
+      "explanation": "Le bus est un transport en commun qui roule dans la ville.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_020",
+      "format": "cloze",
+      "level": 1,
+      "cue": "À Paris, le ___ passe sous la ville et va très vite.",
+      "blankHint": null,
+      "translation": "In Paris, the metro runs under the city and goes very fast.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["métro", "vélo", "avion", "bateau"],
+      "correct_index": 0,
+      "explanation": "Le métro est un train souterrain dans les grandes villes.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_021",
+      "format": "cloze",
+      "level": 1,
+      "cue": "J'attends mon train à la ___ depuis dix minutes.",
+      "blankHint": null,
+      "translation": "I've been waiting for my train at the station for ten minutes.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["gare", "cuisine", "école", "plage"],
+      "correct_index": 0,
+      "explanation": "La gare est l'endroit d'où partent et arrivent les trains.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_022",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour aller loin, je préfère prendre le ___ que la voiture.",
+      "blankHint": null,
+      "translation": "To go far, I prefer to take the train rather than the car.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["train", "vélo", "sac", "pain"],
+      "correct_index": 0,
+      "explanation": "Le train roule sur des rails et permet de voyager sur de longues distances.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_023",
+      "format": "cloze",
+      "level": 1,
+      "cue": "À vélo, il faut porter un ___ pour protéger sa tête.",
+      "blankHint": null,
+      "translation": "On a bike, you must wear a helmet to protect your head.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["casque", "chapeau", "manteau", "gant"],
+      "correct_index": 0,
+      "explanation": "Le casque protège la tête en cas de chute à vélo.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_024",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le bus s'arrête à l'___ juste devant chez moi.",
+      "blankHint": null,
+      "translation": "The bus stops at the stop right in front of my house.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["arrêt", "école", "hôtel", "entrée"],
+      "correct_index": 0,
+      "explanation": "L'arrêt de bus est l'endroit où le bus s'arrête pour prendre les gens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour prendre le train, j'achète un ___ au guichet.",
+      "blankHint": null,
+      "translation": "To take the train, I buy a ticket at the counter.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["billet", "quai", "wagon", "arrêt"],
+      "correct_index": 0,
+      "explanation": "Le billet de train permet de monter à bord et de voyager.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le train pour Lyon part du ___ numéro quatre.",
+      "blankHint": null,
+      "translation": "The train to Lyon leaves from platform number four.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["quai", "arrêt", "guichet", "siège"],
+      "correct_index": 0,
+      "explanation": "Le quai est l'endroit où l'on monte dans le train à la gare.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le matin, il y a beaucoup d'___ sur la route à cause de l'heure de pointe.",
+      "blankHint": null,
+      "translation": "In the morning, there are a lot of traffic jams on the road because of rush hour.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["embouteillages", "passagers", "horaires", "tickets"],
+      "correct_index": 0,
+      "explanation": "Un embouteillage, c'est quand les voitures sont bloquées sur la route.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je valide mon ___ en montant dans le tramway.",
+      "blankHint": null,
+      "translation": "I validate my ticket as I get on the tram.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["ticket", "siège", "moteur", "volant"],
+      "correct_index": 0,
+      "explanation": "On valide son ticket dans la machine pour prouver qu'on a payé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le conducteur attend que tous les ___ montent avant de partir.",
+      "blankHint": null,
+      "translation": "The driver waits for all the passengers to board before leaving.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["passagers", "vélos", "quais", "guichets"],
+      "correct_index": 0,
+      "explanation": "Les passagers sont les personnes qui voyagent dans un transport.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Chaque jour, je fais le ___ entre la banlieue et le centre-ville.",
+      "blankHint": null,
+      "translation": "Every day, I make the trip between the suburbs and the city centre.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["trajet", "siège", "moteur", "casque"],
+      "correct_index": 0,
+      "explanation": "Le trajet est le chemin qu'on parcourt d'un lieu à un autre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "À cause d'une grève, tous les trains ont beaucoup de ___ ce matin.",
+      "blankHint": null,
+      "translation": "Because of a strike, all the trains are very delayed this morning.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["retard", "quai", "billet", "siège"],
+      "correct_index": 0,
+      "explanation": "Avoir du retard signifie arriver plus tard que prévu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je prends un ___ mensuel pour voyager en illimité dans les transports.",
+      "blankHint": null,
+      "translation": "I get a monthly pass to travel unlimited on public transport.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["abonnement", "embouteillage", "guichet", "trajet"],
+      "correct_index": 0,
+      "explanation": "Un abonnement permet d'utiliser les transports autant qu'on veut pendant une période.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le métro est bondé aux ___ de pointe, entre huit et neuf heures.",
+      "blankHint": null,
+      "translation": "The metro is packed at rush hour, between eight and nine.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["heures", "quais", "billets", "sièges"],
+      "correct_index": 0,
+      "explanation": "Les heures de pointe sont les moments où il y a le plus de voyageurs.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le train est tombé en ___ entre deux stations et n'avance plus.",
+      "blankHint": null,
+      "translation": "The train broke down between two stations and isn't moving anymore.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["panne", "grève", "gare", "ligne"],
+      "correct_index": 0,
+      "explanation": "Tomber en panne, c'est cesser de fonctionner mécaniquement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je partage ma voiture avec des collègues : le ___ réduit les frais.",
+      "blankHint": null,
+      "translation": "I share my car with colleagues: carpooling reduces the costs.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["covoiturage", "embouteillage", "stationnement", "ralentissement"],
+      "correct_index": 0,
+      "explanation": "Le covoiturage consiste à partager un trajet en voiture à plusieurs.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La ___ de métro numéro un est fermée pour travaux ce week-end.",
+      "blankHint": null,
+      "translation": "Metro line number one is closed for works this weekend.",
+      "tags": [
+        { "facet": "topic", "tag": "transport_daily", "role": "focus" }
+      ],
+      "options": ["ligne", "gare", "place", "voie"],
+      "correct_index": 0,
+      "explanation": "Une ligne de métro est un trajet précis desservi par les rames.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_037",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Continuez tout ___ jusqu'au feu, puis arrêtez-vous.",
+      "blankHint": null,
+      "translation": "Keep going straight ahead until the light, then stop.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["droit", "loin", "haut", "bas"],
+      "correct_index": 0,
+      "explanation": "« Tout droit » veut dire continuer dans la même direction, sans tourner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_038",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le cinéma est en ___ de la gare, de l'autre côté de la rue.",
+      "blankHint": null,
+      "translation": "The cinema is across from the station, on the other side of the street.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["face", "côté", "droite", "dessus"],
+      "correct_index": 0,
+      "explanation": "« En face de » signifie juste devant, de l'autre côté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_039",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Prenez la première ___ à droite après le carrefour.",
+      "blankHint": null,
+      "translation": "Take the first street on the right after the crossroads.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["rue", "feu", "pont", "coin"],
+      "correct_index": 0,
+      "explanation": "Une rue est une voie de circulation dans une ville.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_040",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Traversez le ___ pour aller de l'autre côté de la rivière.",
+      "blankHint": null,
+      "translation": "Cross the bridge to get to the other side of the river.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["pont", "feu", "trottoir", "carrefour"],
+      "correct_index": 0,
+      "explanation": "Un pont permet de passer au-dessus d'une rivière ou d'une route.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_041",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Arrêtez-vous, le ___ est rouge au croisement.",
+      "blankHint": null,
+      "translation": "Stop, the traffic light is red at the junction.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["feu", "pont", "coin", "plan"],
+      "correct_index": 0,
+      "explanation": "Le feu rouge indique qu'il faut s'arrêter.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_042",
+      "format": "cloze",
+      "level": 1,
+      "cue": "La boulangerie est tout ___ d'ici, à deux minutes à pied.",
+      "blankHint": null,
+      "translation": "The bakery is very near here, two minutes on foot.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["près", "loin", "droit", "haut"],
+      "correct_index": 0,
+      "explanation": "« Près » signifie à une courte distance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_043",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Continuez jusqu'au ___ et tournez à droite.",
+      "blankHint": null,
+      "translation": "Keep going up to the intersection and turn right.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["carrefour", "trottoir", "plan", "panneau"],
+      "correct_index": 0,
+      "explanation": "Un carrefour est l'endroit où plusieurs rues se croisent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_044",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Suivez les ___ pour trouver la sortie de l'autoroute.",
+      "blankHint": null,
+      "translation": "Follow the signs to find the motorway exit.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["panneaux", "trottoirs", "ponts", "coins"],
+      "correct_index": 0,
+      "explanation": "Les panneaux indiquent la direction à suivre sur la route.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_045",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le parking se trouve ___ le bâtiment, à l'arrière.",
+      "blankHint": null,
+      "translation": "The car park is behind the building, at the back.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["derrière", "devant", "sur", "sous"],
+      "correct_index": 0,
+      "explanation": "« Derrière » indique ce qui se trouve à l'arrière d'un lieu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_046",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Marchez sur le ___ et non sur la route, c'est plus sûr.",
+      "blankHint": null,
+      "translation": "Walk on the pavement and not on the road, it's safer.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["trottoir", "carrefour", "feu", "pont"],
+      "correct_index": 0,
+      "explanation": "Le trottoir est la partie de la rue réservée aux piétons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_047",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le restaurant est au ___ de la rue, là où elle se termine.",
+      "blankHint": null,
+      "translation": "The restaurant is at the end of the street, where it stops.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["bout", "coin", "milieu", "centre"],
+      "correct_index": 0,
+      "explanation": "« Au bout de la rue » désigne l'endroit où la rue finit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_048",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je suis perdu, pouvez-vous m'indiquer le ___ sur le plan ?",
+      "blankHint": null,
+      "translation": "I'm lost, can you show me the way on the map?",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["chemin", "feu", "pont", "trottoir"],
+      "correct_index": 0,
+      "explanation": "Le chemin est l'itinéraire à suivre pour arriver quelque part.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_049",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le magasin se situe à l'___ de deux grandes avenues.",
+      "blankHint": null,
+      "translation": "The shop is located at the intersection of two big avenues.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["intersection", "trottoir", "panneau", "chemin"],
+      "correct_index": 0,
+      "explanation": "Une intersection est le point où deux voies se rencontrent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_050",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous allez dans le mauvais ___, faites demi-tour.",
+      "blankHint": null,
+      "translation": "You're going the wrong way, make a U-turn.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["sens", "coin", "bout", "plan"],
+      "correct_index": 0,
+      "explanation": "Le sens indique la direction dans laquelle on se déplace.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_051",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour rejoindre l'autoroute, prenez la ___ de gauche.",
+      "blankHint": null,
+      "translation": "To reach the motorway, take the left lane.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["voie", "feu", "pont", "panneau"],
+      "correct_index": 0,
+      "explanation": "Une voie est une bande de la route réservée à une file de véhicules.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_052",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le GPS me dit de faire demi-___ à la prochaine sortie.",
+      "blankHint": null,
+      "translation": "The GPS tells me to make a U-turn at the next exit.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["tour", "chemin", "pont", "coin"],
+      "correct_index": 0,
+      "explanation": "Faire demi-tour, c'est repartir dans la direction opposée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_053",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le bureau est au fond du ___, la dernière porte à gauche.",
+      "blankHint": null,
+      "translation": "The office is at the end of the corridor, the last door on the left.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["couloir", "carrefour", "trottoir", "pont"],
+      "correct_index": 0,
+      "explanation": "Le couloir est le passage étroit qui dessert les pièces d'un bâtiment.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vShop_054",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Contournez le ___ devant l'immeuble à cause des travaux.",
+      "blankHint": null,
+      "translation": "Go around the building site in front of the block because of the works.",
+      "tags": [
+        { "facet": "topic", "tag": "directions", "role": "focus" }
+      ],
+      "options": ["chantier", "carrefour", "trottoir", "feu"],
+      "correct_index": 0,
+      "explanation": "Contourner, c'est faire le tour d'un obstacle comme un chantier.",
+      "register": "neutral"
+    }
+  ]
+}

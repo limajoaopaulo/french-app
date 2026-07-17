@@ -1,0 +1,50 @@
+{
+  "_notes": "PT facet taxonomy. Backfill-compatible: tags are exactly the 20 legacy sub keys (grammar subs → grammar facet, vocab subs → topic facet) so scripts/migrate-to-tags.ts maps 1:1 and PT behavior is preserved. frequency is a coarse default (recalibrate later); PT is not reauthored in this pass.",
+
+  "facets": {
+    "grammar": {
+      "label": "Gramática",
+      "color": "#10b981",
+      "tags": {
+        "present_conjugation": { "label": "Conjugação — presente", "shortLabel": "Presente", "frequency": 5 },
+        "past_tenses": { "label": "Tempos do passado", "shortLabel": "Passado", "frequency": 4 },
+        "future_conditional": { "label": "Futuro & condicional", "shortLabel": "Futuro/Cond.", "frequency": 3 },
+        "subjunctive": { "label": "Subjuntivo", "shortLabel": "Subjuntivo", "frequency": 2 },
+        "pronouns_personal": { "label": "Pronomes pessoais", "shortLabel": "Pronomes", "frequency": 4 },
+        "ser_vs_estar": { "label": "Ser vs estar", "shortLabel": "Ser/Estar", "frequency": 5 },
+        "prepositions": { "label": "Preposições", "shortLabel": "Preposições", "frequency": 4 },
+        "articles_determiners": { "label": "Artigos & determinantes", "shortLabel": "Artigos", "frequency": 4 },
+        "negation": { "label": "Negação", "shortLabel": "Negação", "frequency": 4 },
+        "complex_sentences": { "label": "Frases complexas", "shortLabel": "Frases cx.", "frequency": 3 }
+      }
+    },
+
+    "topic": {
+      "label": "Vocabulário",
+      "color": "#f59e0b",
+      "tags": {
+        "daily_life": { "label": "Cotidiano", "shortLabel": "Cotidiano", "frequency": 5 },
+        "food_cooking": { "label": "Comida & culinária", "shortLabel": "Comida", "frequency": 4 },
+        "home_logistics": { "label": "Casa & moradia", "shortLabel": "Casa", "frequency": 3 },
+        "work_career": { "label": "Trabalho & carreira", "shortLabel": "Trabalho", "frequency": 3 },
+        "health_body": { "label": "Saúde & corpo", "shortLabel": "Saúde", "frequency": 3 },
+        "travel_transport": { "label": "Viagem & transporte", "shortLabel": "Viagem", "frequency": 3 },
+        "emotions_social": { "label": "Emoções & vida social", "shortLabel": "Emoções", "frequency": 4 },
+        "admin_bureaucracy": { "label": "Burocracia", "shortLabel": "Burocracia", "frequency": 2 },
+        "media_news": { "label": "Mídia & atualidade", "shortLabel": "Mídia", "frequency": 2 },
+        "register_nuance": { "label": "Registro & gíria", "shortLabel": "Registro", "frequency": 3 }
+      }
+    }
+  },
+
+  "default_active": {
+    "grammar": [
+      "present_conjugation", "past_tenses", "future_conditional", "subjunctive", "pronouns_personal",
+      "ser_vs_estar", "prepositions", "articles_determiners", "negation", "complex_sentences"
+    ],
+    "topic": [
+      "daily_life", "food_cooking", "home_logistics", "work_career", "health_body", "travel_transport",
+      "emotions_social", "admin_bureaucracy", "media_news", "register_nuance"
+    ]
+  }
+}

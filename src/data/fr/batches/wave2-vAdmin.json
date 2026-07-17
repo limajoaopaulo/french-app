@@ -1,0 +1,994 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vAdmin_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour retirer de l'argent au distributeur, j'utilise ma carte ___.",
+      "blankHint": null,
+      "translation": "To withdraw money from the ATM, I use my bank card.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["bancaire", "postale", "grise", "vitale"],
+      "correct_index": 0,
+      "explanation": "On paie et on retire de l'argent avec une carte bancaire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Chaque année, les citoyens doivent payer leurs ___ sur le revenu.",
+      "blankHint": null,
+      "translation": "Every year, citizens must pay their income tax.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["impôts", "factures", "timbres", "amendes"],
+      "correct_index": 0,
+      "explanation": "L'argent versé à l'État sur ce qu'on gagne, ce sont les impôts.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je vais à la ___ pour déposer de l'argent sur mon compte.",
+      "blankHint": null,
+      "translation": "I'm going to the bank to deposit money into my account.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["banque", "poste", "mairie", "préfecture"],
+      "correct_index": 0,
+      "explanation": "On dépose son argent sur un compte à la banque.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour envoyer cette lettre, je dois acheter un ___ à la poste.",
+      "blankHint": null,
+      "translation": "To send this letter, I have to buy a stamp at the post office.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["timbre", "chèque", "reçu", "formulaire"],
+      "correct_index": 0,
+      "explanation": "On colle un timbre sur l'enveloppe pour envoyer une lettre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai perdu mes ___ et je dois refaire ma carte d'identité.",
+      "blankHint": null,
+      "translation": "I lost my documents and I have to redo my ID card.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["papiers", "impôts", "timbres", "chèques"],
+      "correct_index": 0,
+      "explanation": "La carte d'identité et le passeport sont des papiers officiels.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je voudrais ouvrir un ___ à la banque pour économiser de l'argent.",
+      "blankHint": null,
+      "translation": "I would like to open an account at the bank to save money.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["compte", "timbre", "impôt", "reçu"],
+      "correct_index": 0,
+      "explanation": "À la banque, on ouvre un compte pour garder son argent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après l'accident, j'ai appelé mon ___ pour déclarer les dégâts.",
+      "blankHint": null,
+      "translation": "After the accident, I called my insurer to report the damage.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["assureur", "banquier", "facteur", "comptable"],
+      "correct_index": 0,
+      "explanation": "On déclare un sinistre à son assureur pour être remboursé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Chaque mois, je reçois mon ___ de compte par courrier.",
+      "blankHint": null,
+      "translation": "Every month, I receive my account statement by mail.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["relevé", "timbre", "reçu", "bulletin"],
+      "correct_index": 0,
+      "explanation": "Le document listant les opérations bancaires est le relevé de compte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour payer le loyer, je fais un ___ bancaire à mon propriétaire.",
+      "blankHint": null,
+      "translation": "To pay the rent, I make a bank transfer to my landlord.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["virement", "retrait", "dépôt", "emprunt"],
+      "correct_index": 0,
+      "explanation": "Envoyer de l'argent à quelqu'un depuis son compte, c'est un virement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Au mois de mai, je remplis ma ___ d'impôts en ligne.",
+      "blankHint": null,
+      "translation": "In May, I fill out my tax return online.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["déclaration", "assurance", "facture", "ordonnance"],
+      "correct_index": 0,
+      "explanation": "On indique ses revenus à l'État dans la déclaration d'impôts.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Renouveler un passeport demande beaucoup de ___ administratives.",
+      "blankHint": null,
+      "translation": "Renewing a passport requires a lot of administrative procedures.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["démarches", "factures", "amendes", "assurances"],
+      "correct_index": 0,
+      "explanation": "Les formalités à accomplir auprès de l'administration sont des démarches.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mon compte est à ___ parce que j'ai trop dépensé ce mois-ci.",
+      "blankHint": null,
+      "translation": "My account is overdrawn because I spent too much this month.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["découvert", "crédit", "intérêt", "épargne"],
+      "correct_index": 0,
+      "explanation": "Quand le solde passe sous zéro, le compte est à découvert.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_013",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je dois régler cette facture avant la date d'___.",
+      "blankHint": null,
+      "translation": "I must pay this bill before the due date.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["échéance", "ouverture", "assurance", "épargne"],
+      "correct_index": 0,
+      "explanation": "La date limite de paiement s'appelle la date d'échéance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_014",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Mon abonnement est payé par ___ automatique chaque mois.",
+      "blankHint": null,
+      "translation": "My subscription is paid by automatic direct debit every month.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["prélèvement", "versement", "remboursement", "emprunt"],
+      "correct_index": 0,
+      "explanation": "Quand la banque retire l'argent d'elle-même, c'est un prélèvement automatique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Pour obtenir cette aide, il faut fournir un ___ de domicile.",
+      "blankHint": null,
+      "translation": "To get this benefit, you must provide proof of address.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["justificatif", "abonnement", "itinéraire", "brouillon"],
+      "correct_index": 0,
+      "explanation": "Un document qui prouve où l'on habite est un justificatif de domicile.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Chaque salarié paie une ___ sociale prélevée sur son salaire.",
+      "blankHint": null,
+      "translation": "Each employee pays a social contribution deducted from their salary.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["cotisation", "facture", "amende", "caution"],
+      "correct_index": 0,
+      "explanation": "La somme versée pour la protection sociale est une cotisation.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Avec ce contrat, la ___ à payer en cas de sinistre reste élevée.",
+      "blankHint": null,
+      "translation": "With this policy, the deductible to pay in case of a claim remains high.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["franchise", "prime", "cotisation", "échéance"],
+      "correct_index": 0,
+      "explanation": "La part qui reste à la charge de l'assuré lors d'un sinistre est la franchise.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "En cas de ___ avec la banque, on peut saisir le médiateur.",
+      "blankHint": null,
+      "translation": "In the event of a dispute with the bank, one can refer the matter to the ombudsman.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["litige", "virement", "relevé", "dépôt"],
+      "correct_index": 0,
+      "explanation": "Un désaccord juridique entre deux parties est un litige.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_019",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'entreprise a reçu un ___ fiscal après le contrôle de ses comptes.",
+      "blankHint": null,
+      "translation": "The company received a tax reassessment after the audit of its accounts.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["redressement", "prélèvement", "versement", "abattement"],
+      "correct_index": 0,
+      "explanation": "Quand le fisc réclame un impôt supplémentaire, c'est un redressement fiscal.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_020",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Faute de paiement, l'huissier a procédé à la ___ de ses biens.",
+      "blankHint": null,
+      "translation": "For lack of payment, the bailiff proceeded with the seizure of his assets.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["saisie", "caution", "franchise", "cotisation"],
+      "correct_index": 0,
+      "explanation": "La confiscation légale des biens d'un débiteur s'appelle une saisie.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_021",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le percepteur lui a accordé un ___ pour étaler sa dette fiscale.",
+      "blankHint": null,
+      "translation": "The tax collector granted him a payment schedule to spread out his tax debt.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["échéancier", "abattement", "découvert", "virement"],
+      "correct_index": 0,
+      "explanation": "Un calendrier de paiements échelonnés est un échéancier.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_022",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'agence de ___ réclame les sommes impayées depuis des mois.",
+      "blankHint": null,
+      "translation": "The debt collection agency has been demanding the unpaid sums for months.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["recouvrement", "placement", "remboursement", "versement"],
+      "correct_index": 0,
+      "explanation": "L'action de récupérer une dette impayée est le recouvrement.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_023",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le locataire réclame une ___ de loyer pour prouver ses paiements.",
+      "blankHint": null,
+      "translation": "The tenant is asking for a rent receipt to prove his payments.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["quittance", "échéance", "caution", "franchise"],
+      "correct_index": 0,
+      "explanation": "Le reçu attestant le paiement du loyer est la quittance de loyer.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_024",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Pour cette démarche, l'administration exige une ___ sur l'honneur.",
+      "blankHint": null,
+      "translation": "For this procedure, the administration requires a sworn statement.",
+      "tags": [
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "focus" }
+      ],
+      "options": ["attestation", "ordonnance", "facture", "cotisation"],
+      "correct_index": 0,
+      "explanation": "Une déclaration écrite où l'on certifie un fait est une attestation sur l'honneur.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Chaque matin, je lis le ___ pour connaître l'actualité.",
+      "blankHint": null,
+      "translation": "Every morning, I read the newspaper to keep up with the news.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["journal", "roman", "dictionnaire", "annuaire"],
+      "correct_index": 0,
+      "explanation": "La publication quotidienne d'informations est le journal.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le soir, je regarde les ___ à la télévision à vingt heures.",
+      "blankHint": null,
+      "translation": "In the evening, I watch the news on television at eight o'clock.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["informations", "publicités", "séries", "recettes"],
+      "correct_index": 0,
+      "explanation": "Le journal télévisé présente les informations du jour.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette ___ de télévision diffuse surtout des documentaires.",
+      "blankHint": null,
+      "translation": "This television channel mainly broadcasts documentaries.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["chaîne", "page", "affiche", "rubrique"],
+      "correct_index": 0,
+      "explanation": "Une station de télévision est une chaîne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "J'ai lu un ___ intéressant sur le climat dans ce magazine.",
+      "blankHint": null,
+      "translation": "I read an interesting article about the climate in this magazine.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["article", "chapitre", "paragraphe", "sous-titre"],
+      "correct_index": 0,
+      "explanation": "Un texte de presse sur un sujet précis est un article.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le ___ a interviewé le ministre après la réunion.",
+      "blankHint": null,
+      "translation": "The journalist interviewed the minister after the meeting.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["journaliste", "facteur", "libraire", "banquier"],
+      "correct_index": 0,
+      "explanation": "La personne qui recueille et diffuse l'information est le journaliste.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "À la une du journal, le gros ___ parle des élections.",
+      "blankHint": null,
+      "translation": "On the front page of the newspaper, the big headline is about the elections.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["titre", "prix", "numéro", "code"],
+      "correct_index": 0,
+      "explanation": "Le grand titre en première page est le gros titre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La chaîne a diffusé un ___ sur la vie des agriculteurs.",
+      "blankHint": null,
+      "translation": "The channel aired a report on the life of farmers.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["reportage", "feuilleton", "générique", "abonnement"],
+      "correct_index": 0,
+      "explanation": "Un compte rendu journalistique filmé sur le terrain est un reportage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La ___ du journal a décidé de publier l'enquête en première page.",
+      "blankHint": null,
+      "translation": "The newspaper's editorial team decided to publish the investigation on the front page.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["rédaction", "publicité", "imprimerie", "distribution"],
+      "correct_index": 0,
+      "explanation": "L'équipe de journalistes qui prépare le journal est la rédaction.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce ___ commente l'actualité politique tous les matins à la radio.",
+      "blankHint": null,
+      "translation": "This columnist comments on political news every morning on the radio.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["chroniqueur", "spectateur", "abonné", "lecteur"],
+      "correct_index": 0,
+      "explanation": "Celui qui livre régulièrement son commentaire dans les médias est un chroniqueur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Avant de publier, un journaliste doit vérifier ses ___.",
+      "blankHint": null,
+      "translation": "Before publishing, a journalist must verify their sources.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["sources", "abonnés", "lecteurs", "tirages"],
+      "correct_index": 0,
+      "explanation": "L'origine d'une information à recouper, ce sont les sources.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La ___ médiatique de l'événement a duré toute la semaine.",
+      "blankHint": null,
+      "translation": "The media coverage of the event lasted the whole week.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["couverture", "rédaction", "parution", "diffusion"],
+      "correct_index": 0,
+      "explanation": "Le traitement d'un sujet par l'ensemble des médias est la couverture médiatique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le rédacteur en chef signe l'___ qui donne l'avis du journal.",
+      "blankHint": null,
+      "translation": "The editor-in-chief signs the editorial that gives the newspaper's opinion.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["éditorial", "horoscope", "sommaire", "courrier"],
+      "correct_index": 0,
+      "explanation": "L'article qui exprime la position du journal est l'éditorial.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_037",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les réseaux sociaux facilitent la propagation de la ___.",
+      "blankHint": null,
+      "translation": "Social media facilitate the spread of disinformation.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["désinformation", "souscription", "diffusion", "rédaction"],
+      "correct_index": 0,
+      "explanation": "La diffusion volontaire de fausses nouvelles est la désinformation.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_038",
+      "format": "cloze",
+      "level": 5,
+      "cue": "La ___ journalistique impose de protéger ses sources.",
+      "blankHint": null,
+      "translation": "Journalistic ethics require protecting one's sources.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["déontologie", "tirage", "audience", "parution"],
+      "correct_index": 0,
+      "explanation": "L'ensemble des règles morales d'une profession est la déontologie.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_039",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Ce quotidien assume une ___ éditoriale clairement engagée.",
+      "blankHint": null,
+      "translation": "This daily openly maintains a clearly committed editorial line.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["ligne", "feuille", "colonne", "marge"],
+      "correct_index": 0,
+      "explanation": "L'orientation éditoriale d'un média est sa ligne éditoriale.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_040",
+      "format": "cloze",
+      "level": 5,
+      "cue": "La chaîne a battu des records d'___ pendant le débat présidentiel.",
+      "blankHint": null,
+      "translation": "The channel broke viewership records during the presidential debate.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["audience", "échéance", "affluence", "assistance"],
+      "correct_index": 0,
+      "explanation": "Le nombre de personnes qui suivent une émission est l'audience.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_041",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'agence de presse a publié une ___ pour annoncer la nouvelle.",
+      "blankHint": null,
+      "translation": "The news agency published a dispatch to announce the news.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["dépêche", "tribune", "rubrique", "légende"],
+      "correct_index": 0,
+      "explanation": "Une information brève transmise par une agence de presse est une dépêche.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_042",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Sous ce régime, la ___ empêchait les journaux de critiquer le pouvoir.",
+      "blankHint": null,
+      "translation": "Under that regime, censorship prevented newspapers from criticizing the authorities.",
+      "tags": [
+        { "facet": "topic", "tag": "media_news", "role": "focus" }
+      ],
+      "options": ["censure", "parution", "diffusion", "rédaction"],
+      "correct_index": 0,
+      "explanation": "Le contrôle qui interdit la publication de certains contenus est la censure.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vAdmin_043",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Dans une semaine, il y a ___ jours.",
+      "blankHint": null,
+      "translation": "In a week, there are seven days.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["sept", "cinq", "dix", "douze"],
+      "correct_index": 0,
+      "explanation": "Une semaine compte sept jours.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_044",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Une année compte ___ mois.",
+      "blankHint": null,
+      "translation": "A year has twelve months.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["douze", "dix", "vingt", "six"],
+      "correct_index": 0,
+      "explanation": "Il y a douze mois dans une année.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_045",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Une heure contient ___ minutes.",
+      "blankHint": null,
+      "translation": "An hour contains sixty minutes.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["soixante", "trente", "cent", "quarante"],
+      "correct_index": 0,
+      "explanation": "Une heure est composée de soixante minutes.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_046",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Compte sur tes doigts : une main a ___ doigts.",
+      "blankHint": null,
+      "translation": "Count on your fingers: one hand has five fingers.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["cinq", "trois", "huit", "dix"],
+      "correct_index": 0,
+      "explanation": "Une main a cinq doigts.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_047",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Janvier est le ___ mois de l'année.",
+      "blankHint": null,
+      "translation": "January is the first month of the year.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["premier", "dernier", "deuxième", "troisième"],
+      "correct_index": 0,
+      "explanation": "Janvier vient en tête : c'est le premier mois.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_048",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il y a ___ de monde au marché aujourd'hui, c'est vraiment plein.",
+      "blankHint": null,
+      "translation": "There are a lot of people at the market today, it's really crowded.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["beaucoup", "peu", "moins", "assez"],
+      "correct_index": 0,
+      "explanation": "Quand c'est plein, il y a beaucoup de monde.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_049",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La ___ de la classe est absente : il reste seulement dix élèves.",
+      "blankHint": null,
+      "translation": "Half of the class is absent: only ten students remain.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["moitié", "totalité", "dizaine", "douzaine"],
+      "correct_index": 0,
+      "explanation": "La moitié, c'est cinquante pour cent de l'ensemble.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_050",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le vendeur m'a annoncé un ___ de réduction très intéressant.",
+      "blankHint": null,
+      "translation": "The salesperson announced a very attractive discount percentage.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["pourcentage", "numéro", "chiffre", "montant"],
+      "correct_index": 0,
+      "explanation": "Une proportion exprimée sur cent est un pourcentage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_051",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Au marché, j'ai acheté une ___ d'œufs pour faire un gâteau.",
+      "blankHint": null,
+      "translation": "At the market, I bought a dozen eggs to make a cake.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["douzaine", "moitié", "dizaine", "paire"],
+      "correct_index": 0,
+      "explanation": "Une douzaine, c'est un ensemble de douze.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_052",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Écris ton numéro de téléphone : c'est un nombre à dix ___.",
+      "blankHint": null,
+      "translation": "Write your phone number: it's a ten-digit number.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["chiffres", "lettres", "mots", "pages"],
+      "correct_index": 0,
+      "explanation": "Les signes de 0 à 9 qui composent un nombre sont des chiffres.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_053",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le ___ de mes achats est de cinquante euros.",
+      "blankHint": null,
+      "translation": "The total of my purchases is fifty euros.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["total", "reste", "double", "tiers"],
+      "correct_index": 0,
+      "explanation": "La somme de tous les montants est le total.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_054",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il y avait ___ cent personnes au concert, peut-être un peu plus.",
+      "blankHint": null,
+      "translation": "There were about a hundred people at the concert, maybe a little more.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["environ", "exactement", "jamais", "surtout"],
+      "correct_index": 0,
+      "explanation": "« Environ » indique une quantité approximative.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_055",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La ___ des températures en juillet est de vingt-cinq degrés.",
+      "blankHint": null,
+      "translation": "The average of temperatures in July is twenty-five degrees.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["moyenne", "somme", "différence", "hausse"],
+      "correct_index": 0,
+      "explanation": "La valeur centrale calculée à partir de plusieurs nombres est la moyenne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_056",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Un ___ des étudiants a réussi l'examen, soit environ trente pour cent.",
+      "blankHint": null,
+      "translation": "A third of the students passed the exam, about thirty percent.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["tiers", "quart", "double", "triple"],
+      "correct_index": 0,
+      "explanation": "Le tiers correspond à une part sur trois, soit environ 33 %.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_057",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les prix sont en ___ : tout coûte plus cher qu'avant.",
+      "blankHint": null,
+      "translation": "Prices are rising: everything costs more than before.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["hausse", "baisse", "moyenne", "somme"],
+      "correct_index": 0,
+      "explanation": "Quand les chiffres montent, on parle de hausse.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_058",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Selon un ___, la majorité des Français soutient cette mesure.",
+      "blankHint": null,
+      "translation": "According to a poll, the majority of French people support this measure.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["sondage", "calcul", "numéro", "chiffre"],
+      "correct_index": 0,
+      "explanation": "Une enquête d'opinion mesurant les avis est un sondage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_059",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le ___ de chômage a diminué de deux points cette année.",
+      "blankHint": null,
+      "translation": "The unemployment rate fell by two points this year.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["taux", "poids", "montant", "degré"],
+      "correct_index": 0,
+      "explanation": "Une proportion mesurée en pourcentage, comme le chômage, est un taux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_060",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La ___ des habitants préfère le train plutôt que la voiture.",
+      "blankHint": null,
+      "translation": "The majority of residents prefer the train over the car.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["majorité", "minorité", "moitié", "totalité"],
+      "correct_index": 0,
+      "explanation": "La majorité désigne le plus grand nombre, plus de la moitié.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_061",
+      "format": "cloze",
+      "level": 4,
+      "cue": "On observe une forte ___ du nombre de touristes cette saison.",
+      "blankHint": null,
+      "translation": "A sharp increase in the number of tourists is observed this season.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["augmentation", "diminution", "stagnation", "répartition"],
+      "correct_index": 0,
+      "explanation": "Une hausse d'une quantité est une augmentation.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_062",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce sondage a été réalisé auprès d'un ___ de mille personnes.",
+      "blankHint": null,
+      "translation": "This poll was conducted with a sample of a thousand people.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["échantillon", "pourcentage", "effectif", "classement"],
+      "correct_index": 0,
+      "explanation": "Le groupe restreint interrogé pour représenter l'ensemble est l'échantillon.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_063",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La ___ des ventes monte régulièrement depuis janvier.",
+      "blankHint": null,
+      "translation": "The sales curve has been rising steadily since January.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["courbe", "moyenne", "somme", "marge"],
+      "correct_index": 0,
+      "explanation": "La ligne d'un graphique représentant une évolution est la courbe.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_064",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Selon les premières ___, le nombre de participants dépasse dix mille.",
+      "blankHint": null,
+      "translation": "According to the first estimates, the number of participants exceeds ten thousand.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["estimations", "additions", "légendes", "rubriques"],
+      "correct_index": 0,
+      "explanation": "Une évaluation approximative d'une quantité est une estimation.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_065",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La ___ de femmes dans cette profession a doublé en dix ans.",
+      "blankHint": null,
+      "translation": "The proportion of women in this profession has doubled in ten years.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["proportion", "longueur", "distance", "vitesse"],
+      "correct_index": 0,
+      "explanation": "La part relative d'un groupe dans un ensemble est la proportion.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vAdmin_066",
+      "format": "cloze",
+      "level": 4,
+      "cue": "L'___ entre les riches et les pauvres continue de se creuser.",
+      "blankHint": null,
+      "translation": "The gap between the rich and the poor keeps widening.",
+      "tags": [
+        { "facet": "topic", "tag": "numbers_stats", "role": "focus" }
+      ],
+      "options": ["écart", "total", "reste", "produit"],
+      "correct_index": 0,
+      "explanation": "La différence chiffrée entre deux valeurs est l'écart.",
+      "register": "neutral"
+    }
+  ]
+}

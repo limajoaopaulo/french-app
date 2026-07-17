@@ -1,0 +1,814 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vWork_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je t'ai envoyé un ___ ce matin avec toutes les informations.",
+      "blankHint": null,
+      "translation": "I sent you an email this morning with all the information.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["message", "timbre", "colis", "journal"],
+      "correct_index": 0,
+      "explanation": "Un courriel écrit s'appelle un message.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "N'oublie pas d'écrire l'___ du message avant de l'envoyer.",
+      "blankHint": null,
+      "translation": "Don't forget to write the subject of the message before sending it.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["objet", "adresse", "tableau", "dossier"],
+      "correct_index": 0,
+      "explanation": "La ligne qui résume le sujet d'un email, c'est l'objet.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour finir un email poli, on écrit « ___ » avant son nom.",
+      "blankHint": null,
+      "translation": "To end a polite email, you write \"Kind regards\" before your name.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["Cordialement", "Bonjour", "Allô", "Bravo"],
+      "correct_index": 0,
+      "explanation": "On termine un courriel poli par « Cordialement ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai reçu ton email dans ma boîte de ___.",
+      "blankHint": null,
+      "translation": "I received your email in my inbox.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["réception", "cuisine", "vitesse", "nuit"],
+      "correct_index": 0,
+      "explanation": "Les messages reçus arrivent dans la boîte de réception.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Peux-tu ___ ce message à ton collègue ? Il doit le lire aussi.",
+      "blankHint": null,
+      "translation": "Can you forward this message to your colleague? He needs to read it too.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["transférer", "effacer", "imprimer", "traduire"],
+      "correct_index": 0,
+      "explanation": "Renvoyer un email reçu à quelqu'un d'autre, c'est le transférer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai ajouté une pièce ___ avec le document PDF.",
+      "blankHint": null,
+      "translation": "I added an attachment with the PDF document.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["jointe", "cassée", "perdue", "fermée"],
+      "correct_index": 0,
+      "explanation": "Un fichier ajouté à un email est une pièce jointe.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je me permets de vous ___ ce dossier pour information.",
+      "blankHint": null,
+      "translation": "I am taking the liberty of forwarding you this file for your information.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["transmettre", "transporter", "traverser", "transformer"],
+      "correct_index": 0,
+      "explanation": "Faire parvenir un document par email, c'est le transmettre.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Veuillez trouver ci-___ le compte rendu de la réunion.",
+      "blankHint": null,
+      "translation": "Please find attached the minutes of the meeting.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["joint", "dessus", "contre", "après"],
+      "correct_index": 0,
+      "explanation": "On annonce un fichier attaché par la formule « ci-joint ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je reste à votre ___ pour toute information complémentaire.",
+      "blankHint": null,
+      "translation": "I remain at your disposal for any further information.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["disposition", "décision", "direction", "distribution"],
+      "correct_index": 0,
+      "explanation": "La formule polie de fin d'email est « rester à votre disposition ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "N'ayant pas eu de réponse, je me permets de vous faire une ___.",
+      "blankHint": null,
+      "translation": "Having received no reply, I am taking the liberty of sending you a reminder.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["relance", "remise", "reprise", "relecture"],
+      "correct_index": 0,
+      "explanation": "Un email de rappel envoyé sans réponse s'appelle une relance.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "J'ai mis ton responsable en ___ pour qu'il soit informé.",
+      "blankHint": null,
+      "translation": "I put your manager in copy so that he is kept informed.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["copie", "ligne", "place", "garde"],
+      "correct_index": 0,
+      "explanation": "Ajouter quelqu'un aux destinataires informés, c'est le mettre en copie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pourriez-vous accuser ___ de ce courriel, s'il vous plaît ?",
+      "blankHint": null,
+      "translation": "Could you acknowledge receipt of this email, please?",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["réception", "réparation", "réduction", "rédaction"],
+      "correct_index": 0,
+      "explanation": "Confirmer qu'on a bien reçu un message, c'est en accuser réception.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_013",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sans nouvelles de votre part, je me permets de vous ___.",
+      "blankHint": null,
+      "translation": "Having heard nothing from you, I am taking the liberty of following up with you.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["relancer", "relayer", "relire", "relier"],
+      "correct_index": 0,
+      "explanation": "Recontacter quelqu'un pour obtenir une réponse, c'est le relancer.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_014",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Comme ___ dans mon précédent message, le projet est reporté.",
+      "blankHint": null,
+      "translation": "As indicated in my previous message, the project is postponed.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["indiqué", "ignoré", "inventé", "imposé"],
+      "correct_index": 0,
+      "explanation": "Pour renvoyer à ce qu'on a déjà écrit, on dit « comme indiqué ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je vous prie de bien vouloir ___ ma demande dans les meilleurs délais.",
+      "blankHint": null,
+      "translation": "I kindly ask you to process my request as soon as possible.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["traiter", "tracer", "trancher", "tricher"],
+      "correct_index": 0,
+      "explanation": "S'occuper d'une demande administrative, c'est la traiter.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Veuillez agréer, Madame, l'expression de mes salutations ___.",
+      "blankHint": null,
+      "translation": "Please accept, Madam, the expression of my highest regards.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["distinguées", "distinctes", "distraites", "distantes"],
+      "correct_index": 0,
+      "explanation": "La formule de politesse consacrée est « salutations distinguées ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je reviens vers vous concernant le dossier resté en ___.",
+      "blankHint": null,
+      "translation": "I am getting back to you regarding the file left pending.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["suspens", "arrière", "avant", "hausse"],
+      "correct_index": 0,
+      "explanation": "Un dossier non traité est un dossier en suspens.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Dans l'attente de votre retour, je vous ___ mes remerciements anticipés.",
+      "blankHint": null,
+      "translation": "Looking forward to your reply, I extend my thanks in advance.",
+      "tags": [
+        { "facet": "topic", "tag": "work_email", "role": "focus" }
+      ],
+      "options": ["adresse", "ajoute", "apprends", "aménage"],
+      "correct_index": 0,
+      "explanation": "On adresse ses remerciements à quelqu'un dans une formule polie.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous avons une ___ importante lundi à neuf heures.",
+      "blankHint": null,
+      "translation": "We have an important meeting on Monday at nine o'clock.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["réunion", "récréation", "réduction", "région"],
+      "correct_index": 0,
+      "explanation": "Quand des collègues se retrouvent pour travailler, c'est une réunion.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La réunion aura lieu dans la ___ de conférence au deuxième étage.",
+      "blankHint": null,
+      "translation": "The meeting will take place in the conference room on the second floor.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["salle", "cuisine", "chambre", "gare"],
+      "correct_index": 0,
+      "explanation": "On se réunit dans une salle de conférence ou de réunion.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Chaque ___ doit arriver à l'heure pour commencer.",
+      "blankHint": null,
+      "translation": "Each participant must arrive on time so we can start.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["participant", "spectateur", "voyageur", "client"],
+      "correct_index": 0,
+      "explanation": "Une personne présente à une réunion est un participant.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Comme je suis malade, je dois ___ la réunion à demain.",
+      "blankHint": null,
+      "translation": "As I am sick, I have to postpone the meeting to tomorrow.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["reporter", "réserver", "remercier", "remplir"],
+      "correct_index": 0,
+      "explanation": "Déplacer une réunion à plus tard, c'est la reporter.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant la réunion, le chef envoie l'___ du jour à tout le monde.",
+      "blankHint": null,
+      "translation": "Before the meeting, the boss sends the agenda to everyone.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["ordre", "arbre", "autre", "ange"],
+      "correct_index": 0,
+      "explanation": "La liste des sujets à traiter s'appelle l'ordre du jour.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pendant la réunion, chacun peut prendre la ___ pour donner son avis.",
+      "blankHint": null,
+      "translation": "During the meeting, everyone can take the floor to give their opinion.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["parole", "place", "photo", "pause"],
+      "correct_index": 0,
+      "explanation": "Se mettre à parler devant le groupe, c'est prendre la parole.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le secrétaire rédige le compte ___ après chaque réunion.",
+      "blankHint": null,
+      "translation": "The secretary writes the minutes after each meeting.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["rendu", "tenu", "venu", "perdu"],
+      "correct_index": 0,
+      "explanation": "Le résumé écrit d'une réunion est le compte rendu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est le directeur qui va ___ la réunion de ce matin.",
+      "blankHint": null,
+      "translation": "It is the director who is going to lead this morning's meeting.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["animer", "allumer", "apporter", "avancer"],
+      "correct_index": 0,
+      "explanation": "Conduire et faire vivre une réunion, c'est l'animer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous devons ___ tous les points de l'ordre du jour avant midi.",
+      "blankHint": null,
+      "translation": "We must address all the agenda items before noon.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["aborder", "absorber", "abriter", "abonner"],
+      "correct_index": 0,
+      "explanation": "Commencer à traiter un sujet, c'est l'aborder.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La réunion a été ___ car trop de personnes étaient absentes.",
+      "blankHint": null,
+      "translation": "The meeting was cancelled because too many people were absent.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["annulée", "allumée", "amenée", "appelée"],
+      "correct_index": 0,
+      "explanation": "Supprimer une réunion prévue, c'est l'annuler.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le directeur va ___ les employés pour une réunion urgente.",
+      "blankHint": null,
+      "translation": "The director is going to summon the employees for an urgent meeting.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["convoquer", "conserver", "consommer", "construire"],
+      "correct_index": 0,
+      "explanation": "Demander officiellement à des gens de venir, c'est les convoquer.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après une longue discussion, la décision a été prise à l'___.",
+      "blankHint": null,
+      "translation": "After a long discussion, the decision was made unanimously.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["unanimité", "université", "unité", "uniforme"],
+      "correct_index": 0,
+      "explanation": "Quand tout le monde est d'accord, la décision est prise à l'unanimité.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le président a ___ la séance à quatorze heures précises.",
+      "blankHint": null,
+      "translation": "The chairman opened the session at exactly two o'clock.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["ouvert", "offert", "obtenu", "occupé"],
+      "correct_index": 0,
+      "explanation": "Commencer officiellement une réunion, c'est ouvrir la séance.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Plusieurs sujets épineux ont été ___ lors du comité de direction.",
+      "blankHint": null,
+      "translation": "Several thorny topics were addressed during the executive committee.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["abordés", "apportés", "appelés", "ajoutés"],
+      "correct_index": 0,
+      "explanation": "Des sujets que l'on traite en réunion sont abordés.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Faute de quorum, la réunion a dû être ___ à une date ultérieure.",
+      "blankHint": null,
+      "translation": "For lack of a quorum, the meeting had to be postponed to a later date.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["reportée", "rapportée", "remportée", "retournée"],
+      "correct_index": 0,
+      "explanation": "Repousser une réunion à plus tard, c'est la reporter.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le compte rendu sera ___ à tous les participants dès demain.",
+      "blankHint": null,
+      "translation": "The minutes will be circulated to all participants as of tomorrow.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["diffusé", "dispersé", "dissous", "distrait"],
+      "correct_index": 0,
+      "explanation": "Envoyer un document à un large public, c'est le diffuser.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Chaque intervenant a disposé de dix minutes pour ___ son point de vue.",
+      "blankHint": null,
+      "translation": "Each speaker had ten minutes to present their point of view.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["exposer", "exploser", "exporter", "expulser"],
+      "correct_index": 0,
+      "explanation": "Présenter clairement ses idées, c'est les exposer.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le débat a été ___ par le manque de temps en fin de séance.",
+      "blankHint": null,
+      "translation": "The debate was cut short by the lack of time at the end of the session.",
+      "tags": [
+        { "facet": "topic", "tag": "meetings", "role": "focus" }
+      ],
+      "options": ["écourté", "éclairé", "écrasé", "échoué"],
+      "correct_index": 0,
+      "explanation": "Rendre plus court que prévu, c'est écourter.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_037",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant de commencer, je dois ___ mon contrat de travail.",
+      "blankHint": null,
+      "translation": "Before starting, I have to sign my employment contract.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["signer", "saluer", "sauter", "sonner"],
+      "correct_index": 0,
+      "explanation": "Écrire son nom au bas d'un contrat, c'est le signer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_038",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mon ___ est de deux mille euros par mois.",
+      "blankHint": null,
+      "translation": "My salary is two thousand euros per month.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["salaire", "silence", "souci", "sourire"],
+      "correct_index": 0,
+      "explanation": "L'argent gagné chaque mois pour son travail est le salaire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_039",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle a signé un ___ de travail avec l'entreprise.",
+      "blankHint": null,
+      "translation": "She signed an employment contract with the company.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["contrat", "cadeau", "congé", "courrier"],
+      "correct_index": 0,
+      "explanation": "L'accord écrit entre employeur et salarié est le contrat.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_040",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle travaille huit heures par jour, elle est à temps ___.",
+      "blankHint": null,
+      "translation": "She works eight hours a day, she is full-time.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["plein", "vide", "court", "long"],
+      "correct_index": 0,
+      "explanation": "Travailler toute la journée, c'est être à temps plein.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_041",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Chaque année, j'ai cinq semaines de ___ payés.",
+      "blankHint": null,
+      "translation": "Every year, I have five weeks of paid leave.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["congés", "cours", "colis", "coûts"],
+      "correct_index": 0,
+      "explanation": "Les jours de repos payés par l'employeur sont les congés payés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_042",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Au début du travail, il y a une ___ d'essai de trois mois.",
+      "blankHint": null,
+      "translation": "At the start of the job, there is a three-month trial period.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["période", "personne", "présence", "promesse"],
+      "correct_index": 0,
+      "explanation": "Le temps de test au début d'un emploi est la période d'essai.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_043",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si je veux partir, je dois donner ma ___ par écrit.",
+      "blankHint": null,
+      "translation": "If I want to leave, I have to hand in my resignation in writing.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["démission", "décision", "direction", "distraction"],
+      "correct_index": 0,
+      "explanation": "Quand un salarié décide de quitter son poste, il donne sa démission.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_044",
+      "format": "cloze",
+      "level": 3,
+      "cue": "L'employeur doit respecter un ___ avant de mettre fin au contrat.",
+      "blankHint": null,
+      "translation": "The employer must respect a notice period before ending the contract.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["préavis", "prénom", "préfixe", "prélude"],
+      "correct_index": 0,
+      "explanation": "Le délai à respecter avant de rompre un contrat est le préavis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_045",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après le licenciement, il a touché une ___ de départ.",
+      "blankHint": null,
+      "translation": "After the layoff, he received a severance payment.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["indemnité", "identité", "initiative", "industrie"],
+      "correct_index": 0,
+      "explanation": "La somme versée au salarié qui part est une indemnité.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_046",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le contrat contient une ___ de confidentialité très stricte.",
+      "blankHint": null,
+      "translation": "The contract contains a very strict confidentiality clause.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["clause", "classe", "cause", "course"],
+      "correct_index": 0,
+      "explanation": "Un point particulier écrit dans un contrat est une clause.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_047",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a été ___ après un entretien réussi.",
+      "blankHint": null,
+      "translation": "She was hired after a successful interview.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["embauchée", "emballée", "empochée", "empêchée"],
+      "correct_index": 0,
+      "explanation": "Prendre quelqu'un dans une entreprise, c'est l'embaucher.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_048",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Comme le poste est temporaire, elle a signé un contrat à durée ___.",
+      "blankHint": null,
+      "translation": "As the position is temporary, she signed a fixed-term contract.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["déterminée", "dérangée", "décidée", "dévouée"],
+      "correct_index": 0,
+      "explanation": "Un CDD est un contrat à durée déterminée, avec une fin prévue.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vWork_049",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les deux parties ont opté pour une rupture ___ à l'amiable.",
+      "blankHint": null,
+      "translation": "The two parties opted for a mutually agreed termination.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["conventionnelle", "confidentielle", "conditionnelle", "controversée"],
+      "correct_index": 0,
+      "explanation": "La fin de contrat d'un commun accord est une rupture conventionnelle.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_050",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le salarié a contesté son ___ pour faute grave devant les prud'hommes.",
+      "blankHint": null,
+      "translation": "The employee contested his dismissal for serious misconduct before the labor court.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["licenciement", "ralentissement", "remboursement", "recrutement"],
+      "correct_index": 0,
+      "explanation": "Le fait d'être renvoyé par son employeur est le licenciement.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_051",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Un ___ au contrat a été signé pour modifier les horaires de travail.",
+      "blankHint": null,
+      "translation": "An amendment to the contract was signed to change the working hours.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["avenant", "aveu", "avantage", "avis"],
+      "correct_index": 0,
+      "explanation": "Un document qui modifie un contrat existant est un avenant.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_052",
+      "format": "cloze",
+      "level": 4,
+      "cue": "L'entreprise verse chaque mois une ___ complémentaire pour les transports.",
+      "blankHint": null,
+      "translation": "The company pays an additional bonus each month for transport.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["prime", "peine", "plainte", "pointe"],
+      "correct_index": 0,
+      "explanation": "Une somme versée en plus du salaire est une prime.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_053",
+      "format": "cloze",
+      "level": 4,
+      "cue": "En cas de rupture, le salarié perçoit des ___ de licenciement.",
+      "blankHint": null,
+      "translation": "In the event of termination, the employee receives severance pay.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["indemnités", "initiatives", "intempéries", "incertitudes"],
+      "correct_index": 0,
+      "explanation": "Les sommes versées au salarié licencié sont des indemnités.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vWork_054",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Son ___ mensuel détaille le salaire brut et le salaire net.",
+      "blankHint": null,
+      "translation": "His monthly payslip details the gross salary and the net salary.",
+      "tags": [
+        { "facet": "topic", "tag": "job_contract", "role": "focus" }
+      ],
+      "options": ["bulletin", "ballon", "bâtiment", "bureau"],
+      "correct_index": 0,
+      "explanation": "Le document mensuel qui détaille la paie est le bulletin de paie.",
+      "register": "formal"
+    }
+  ]
+}

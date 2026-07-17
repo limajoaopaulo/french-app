@@ -12,11 +12,6 @@ import {
   setSessionCookie,
   verifyPin,
 } from "@/lib/auth"
-import {
-  type LanguageCode,
-  getDefaultActive,
-  getDomains,
-} from "@/lib/taxonomy"
 
 const CreateUserSchema = z.object({
   username: z
@@ -44,43 +39,6 @@ const SignInSchema = z.object({
     .or(z.literal("").transform(() => undefined)),
 })
 
-async function seedUserProgress(
-  userId: number,
-  languageCode: LanguageCode,
-): Promise<void> {
-  const domains = getDomains(languageCode)
-  const defaults = getDefaultActive(languageCode)
-  const writes: Promise<unknown>[] = []
-  for (const d of Object.keys(domains) as Array<keyof typeof domains>) {
-    const isActiveSet = new Set(defaults[d] as readonly string[])
-    for (const sub of domains[d].subs) {
-      writes.push(
-        prisma.subStats.create({
-          data: {
-            userId,
-            domain: d,
-            sub: sub.key,
-            isActive: isActiveSet.has(sub.key),
-          },
-        }),
-      )
-      for (const pattern of sub.patterns) {
-        writes.push(
-          prisma.patternStats.create({
-            data: {
-              userId,
-              domain: d,
-              sub: sub.key,
-              pattern,
-            },
-          }),
-        )
-      }
-    }
-  }
-  await Promise.all(writes)
-}
-
 export async function createUser(input: unknown): Promise<{ ok: true }> {
   const parsed = CreateUserSchema.parse(input)
   const username = parsed.username.toLowerCase()
@@ -102,7 +60,7 @@ export async function createUser(input: unknown): Promise<{ ok: true }> {
       languageId: lang.id,
     },
   })
-  await seedUserProgress(user.id, parsed.languageCode)
+  // TagStats rows are created lazily on answer — no per-user seeding needed.
   await setSessionCookie(user.id)
   revalidatePath("/")
   return { ok: true }

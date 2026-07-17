@@ -1,0 +1,797 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_accord_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle est ___ à la maison à six heures.",
+      "blankHint": "partir",
+      "translation": "She left for home at six o'clock.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["partie", "parti", "partis", "parties"],
+      "correct_index": 0,
+      "explanation": "Avec « être », le participe s'accorde avec le sujet féminin singulier : partie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mes sœurs sont ___ hier soir.",
+      "blankHint": "sortir",
+      "translation": "My sisters went out last night.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["sorties", "sortis", "sortie", "sorti"],
+      "correct_index": 0,
+      "explanation": "Sujet féminin pluriel avec « être » : sorties.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Les filles sont ___ au parc ce matin.",
+      "blankHint": "aller",
+      "translation": "The girls went to the park this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["allées", "allés", "allée", "allé"],
+      "correct_index": 0,
+      "explanation": "Accord avec le sujet féminin pluriel : allées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il est ___ dans le train sans billet.",
+      "blankHint": "monter",
+      "translation": "He got on the train without a ticket.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["monté", "montée", "montés", "montées"],
+      "correct_index": 0,
+      "explanation": "Sujet masculin singulier avec « être » : monté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Marie est ___ chez le médecin ce matin.",
+      "blankHint": "aller",
+      "translation": "Marie went to the doctor this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["allée", "allé", "allés", "allées"],
+      "correct_index": 0,
+      "explanation": "Sujet féminin singulier avec « être » : allée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Paul et Marie sont ___ ensemble à la fête.",
+      "blankHint": "venir",
+      "translation": "Paul and Marie came to the party together.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["venus", "venues", "venu", "venue"],
+      "correct_index": 0,
+      "explanation": "Sujet mixte : accord au masculin pluriel, venus.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Voici les livres que j'ai ___ à la librairie.",
+      "blankHint": "acheter",
+      "translation": "Here are the books I bought at the bookshop.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["achetés", "acheté", "achetée", "achetées"],
+      "correct_index": 0,
+      "explanation": "Le COD « les livres » précède : accord au masculin pluriel, achetés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La lettre qu'elle a ___ est très longue.",
+      "blankHint": "écrire",
+      "translation": "The letter she wrote is very long.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["écrite", "écrit", "écrits", "écrites"],
+      "correct_index": 0,
+      "explanation": "COD « la lettre » placé avant le verbe : écrite.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les fleurs que tu m'as ___ sont magnifiques.",
+      "blankHint": "offrir",
+      "translation": "The flowers you gave me are magnificent.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["offertes", "offert", "offerte", "offerts"],
+      "correct_index": 0,
+      "explanation": "COD féminin pluriel « les fleurs » placé avant : offertes.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elles se sont ___ très tôt ce matin.",
+      "blankHint": "se réveiller",
+      "translation": "They woke up very early this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["réveillées", "réveillé", "réveillés", "réveillée"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal réfléchi : accord avec le sujet féminin pluriel, réveillées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La voiture est ___ au garage hier.",
+      "blankHint": "rentrer",
+      "translation": "The car went back into the garage yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["rentrée", "rentré", "rentrés", "rentrées"],
+      "correct_index": 0,
+      "explanation": "« rentrer » avec « être », sujet féminin singulier : rentrée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Combien de pommes as-tu ___ aujourd'hui ?",
+      "blankHint": "manger",
+      "translation": "How many apples did you eat today?",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["mangées", "mangé", "mangés", "mangée"],
+      "correct_index": 0,
+      "explanation": "Le COD « combien de pommes » précède : accord au féminin pluriel, mangées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_013",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les décisions qu'ils ont ___ sont importantes.",
+      "blankHint": "prendre",
+      "translation": "The decisions they made are important.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["prises", "pris", "prise", "prit"],
+      "correct_index": 0,
+      "explanation": "COD « les décisions » placé avant le verbe : prises.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_014",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces photos ? Je les ai ___ hier soir.",
+      "blankHint": "voir",
+      "translation": "These photos? I saw them last night.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "grammar", "tag": "pronom_cod", "role": "context" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["vues", "vu", "vus", "vue"],
+      "correct_index": 0,
+      "explanation": "Le pronom « les » (= les photos) précède : accord au féminin pluriel, vues.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La robe qu'elle a ___ lui va très bien.",
+      "blankHint": "choisir",
+      "translation": "The dress she chose suits her very well.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["choisie", "choisi", "choisis", "choisies"],
+      "correct_index": 0,
+      "explanation": "COD « la robe » placé avant le verbe : choisie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les efforts que nous avons ___ ont payé.",
+      "blankHint": "faire",
+      "translation": "The efforts we made paid off.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["faits", "fait", "faite", "faites"],
+      "correct_index": 0,
+      "explanation": "COD « les efforts » placé avant le verbe : faits.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle s'est ___ les mains avant le repas.",
+      "blankHint": "se laver",
+      "translation": "She washed her hands before the meal.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["lavé", "lavée", "lavés", "lavées"],
+      "correct_index": 0,
+      "explanation": "Le COD « les mains » suit le verbe : pas d'accord, lavé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les lettres qu'il nous a ___ étaient touchantes.",
+      "blankHint": "envoyer",
+      "translation": "The letters he sent us were touching.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["envoyées", "envoyé", "envoyés", "envoyée"],
+      "correct_index": 0,
+      "explanation": "COD « les lettres » placé avant le verbe : envoyées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_019",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les musiciens que j'ai ___ jouer étaient doués.",
+      "blankHint": "entendre",
+      "translation": "The musicians I heard play were talented.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["entendus", "entendu", "entendue", "entendues"],
+      "correct_index": 0,
+      "explanation": "« les musiciens » font l'action de l'infinitif : accord, entendus.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_020",
+      "format": "cloze",
+      "level": 5,
+      "cue": "La maison qu'ils ont ___ construire est immense.",
+      "blankHint": "faire",
+      "translation": "The house they had built is huge.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["fait", "faite", "faits", "faites"],
+      "correct_index": 0,
+      "explanation": "« faire » suivi d'un infinitif reste invariable : fait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_021",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les mille euros que ce voyage a ___ en valaient la peine.",
+      "blankHint": "coûter",
+      "translation": "The thousand euros this trip cost were worth it.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["coûté", "coûtés", "coûtée", "coûtées"],
+      "correct_index": 0,
+      "explanation": "« coûter » (prix) est intransitif : le participe reste invariable, coûté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_022",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Elle s'est ___ que tout finirait bien.",
+      "blankHint": "se dire",
+      "translation": "She told herself that everything would turn out fine.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["dit", "dite", "dits", "dites"],
+      "correct_index": 0,
+      "explanation": "« se » est COI : le participe reste invariable, dit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_023",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les chansons que j'ai ___ chanter m'ont émue.",
+      "blankHint": "entendre",
+      "translation": "The songs I heard being sung moved me.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["entendu", "entendues", "entendus", "entendue"],
+      "correct_index": 0,
+      "explanation": "« les chansons » ne font pas l'action de l'infinitif : pas d'accord, entendu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_024",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Ils se sont ___ de nombreux cadeaux cette année.",
+      "blankHint": "s'offrir",
+      "translation": "They gave each other many gifts this year.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_participe", "role": "focus" },
+        { "facet": "grammar", "tag": "aux_etre", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["offert", "offerts", "offerte", "offertes"],
+      "correct_index": 0,
+      "explanation": "« se » est COI et le COD suit le verbe : pas d'accord, offert.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_025",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ma sœur est très ___.",
+      "blankHint": "grand",
+      "translation": "My sister is very tall.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["grande", "grand", "grands", "grandes"],
+      "correct_index": 0,
+      "explanation": "Accord au féminin singulier : grande.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_026",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Les voitures de sport sont ___.",
+      "blankHint": "noir",
+      "translation": "The sports cars are black.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["noires", "noir", "noire", "noirs"],
+      "correct_index": 0,
+      "explanation": "Accord au féminin pluriel : noires.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_027",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle a les yeux ___.",
+      "blankHint": "bleu",
+      "translation": "She has blue eyes.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["bleus", "bleu", "bleue", "bleues"],
+      "correct_index": 0,
+      "explanation": "« yeux » est masculin pluriel : bleus.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_028",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Mon petit frère est encore ___.",
+      "blankHint": "petit",
+      "translation": "My little brother is still small.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["petit", "petite", "petits", "petites"],
+      "correct_index": 0,
+      "explanation": "Sujet masculin singulier : petit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_029",
+      "format": "cloze",
+      "level": 1,
+      "cue": "La maison de mes parents est ___.",
+      "blankHint": "blanc",
+      "translation": "My parents' house is white.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["blanche", "blanc", "blancs", "blanches"],
+      "correct_index": 0,
+      "explanation": "Féminin singulier irrégulier de « blanc » : blanche.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_030",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Les chats de ma voisine sont ___.",
+      "blankHint": "mignon",
+      "translation": "My neighbour's cats are cute.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["mignons", "mignon", "mignonne", "mignonnes"],
+      "correct_index": 0,
+      "explanation": "Accord au masculin pluriel : mignons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_031",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Cette robe rouge est très ___.",
+      "blankHint": "beau",
+      "translation": "This red dress is very beautiful.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["belle", "beau", "beaux", "belles"],
+      "correct_index": 0,
+      "explanation": "Féminin singulier irrégulier de « beau » : belle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_032",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mes amies sont vraiment ___.",
+      "blankHint": "gentil",
+      "translation": "My friends are really kind.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["gentilles", "gentille", "gentils", "gentil"],
+      "correct_index": 0,
+      "explanation": "Féminin pluriel : gentilles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_033",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle porte une ___ robe pour la fête.",
+      "blankHint": "nouveau",
+      "translation": "She is wearing a new dress for the party.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["nouvelle", "nouveau", "nouvel", "nouveaux"],
+      "correct_index": 0,
+      "explanation": "Féminin singulier de « nouveau » : nouvelle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_034",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La soupe du jour est bien ___.",
+      "blankHint": "chaud",
+      "translation": "The soup of the day is nice and hot.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["chaude", "chaud", "chauds", "chaudes"],
+      "correct_index": 0,
+      "explanation": "Féminin singulier : chaude.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_035",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils sont très ___ de leur fille.",
+      "blankHint": "fier",
+      "translation": "They are very proud of their daughter.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["fiers", "fier", "fière", "fières"],
+      "correct_index": 0,
+      "explanation": "Accord au masculin pluriel : fiers.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_036",
+      "format": "cloze",
+      "level": 2,
+      "cue": "C'est une très ___ histoire.",
+      "blankHint": "long",
+      "translation": "It's a very long story.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["longue", "long", "longs", "longues"],
+      "correct_index": 0,
+      "explanation": "Féminin singulier irrégulier de « long » : longue.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_037",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ont acheté des chemises ___.",
+      "blankHint": "blanc",
+      "translation": "They bought white shirts.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["blanches", "blanc", "blancs", "blanche"],
+      "correct_index": 0,
+      "explanation": "Féminin pluriel de « blanc » : blanches.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_038",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce sont de très ___ résultats.",
+      "blankHint": "bon",
+      "translation": "These are very good results.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["bons", "bon", "bonne", "bonnes"],
+      "correct_index": 0,
+      "explanation": "Accord au masculin pluriel : bons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_039",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est une femme ___ et créative.",
+      "blankHint": "actif",
+      "translation": "She is an active and creative woman.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["active", "actif", "actifs", "actives"],
+      "correct_index": 0,
+      "explanation": "Féminin singulier de « actif » : active.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_040",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a proposé des idées ___.",
+      "blankHint": "original",
+      "translation": "She proposed original ideas.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["originales", "original", "originaux", "originale"],
+      "correct_index": 0,
+      "explanation": "Féminin pluriel de « original » : originales.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_041",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après la randonnée, elles étaient ___.",
+      "blankHint": "épuisé",
+      "translation": "After the hike, they were exhausted.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["épuisées", "épuisé", "épuisés", "épuisée"],
+      "correct_index": 0,
+      "explanation": "Accord au féminin pluriel : épuisées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_042",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les enfants semblent très ___ aujourd'hui.",
+      "blankHint": "content",
+      "translation": "The children seem very happy today.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["contents", "content", "contente", "contentes"],
+      "correct_index": 0,
+      "explanation": "Accord au masculin pluriel : contents.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_043",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces chaussures sont ___.",
+      "blankHint": "marron",
+      "translation": "These shoes are brown.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["marron", "marrons", "marronne", "marronnes"],
+      "correct_index": 0,
+      "explanation": "« marron » (nom de fruit employé comme couleur) reste invariable.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_044",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle a les yeux ___ foncé.",
+      "blankHint": "vert",
+      "translation": "She has dark green eyes.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["vert", "verts", "verte", "vertes"],
+      "correct_index": 0,
+      "explanation": "Couleur composée « vert foncé » : l'adjectif reste invariable.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_045",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il est déjà deux heures et ___.",
+      "blankHint": "demi",
+      "translation": "It's already half past two.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["demie", "demi", "demis", "demies"],
+      "correct_index": 0,
+      "explanation": "Placé après le nom, « demi » s'accorde en genre seulement : demie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_046",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces montres suisses sont très ___.",
+      "blankHint": "cher",
+      "translation": "These Swiss watches are very expensive.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["chères", "cher", "chers", "chère"],
+      "correct_index": 0,
+      "explanation": "Féminin pluriel de « cher » : chères.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_047",
+      "format": "cloze",
+      "level": 4,
+      "cue": "C'est une réunion ___ ouverte à tous.",
+      "blankHint": "public",
+      "translation": "It's a public meeting open to everyone.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["publique", "public", "publics", "publiques"],
+      "correct_index": 0,
+      "explanation": "Féminin singulier irrégulier de « public » : publique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_accord_048",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce sont de ___ amis à moi.",
+      "blankHint": "vieux",
+      "translation": "They are old friends of mine.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["vieux", "vieil", "vieille", "vieilles"],
+      "correct_index": 0,
+      "explanation": "Masculin pluriel : vieux (« vieil » seulement au singulier devant voyelle).",
+      "register": "neutral"
+    }
+  ]
+}

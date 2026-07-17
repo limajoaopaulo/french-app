@@ -1,31 +1,23 @@
 import { z } from "zod"
 
-export const DomainSchema = z.enum(["grammar", "vocabulary"])
-export type DomainInput = z.infer<typeof DomainSchema>
+export const FacetSchema = z.enum(["grammar", "topic"])
+export type FacetInput = z.infer<typeof FacetSchema>
+
+export const TagRefSchema = z.object({
+  facet: FacetSchema,
+  tag: z.string().min(1),
+})
+export type TagRefInput = z.infer<typeof TagRefSchema>
 
 export const StartPersonalisedSchema = z.object({
   length: z.number().int().min(1).max(50).default(10),
-  domainFilter: DomainSchema.optional(),
-  targetSubs: z
-    .array(
-      z.object({
-        domain: DomainSchema,
-        sub: z.string().min(1),
-      }),
-    )
-    .max(2)
-    .optional(),
+  targetTags: z.array(TagRefSchema).max(4).optional(),
   levelRange: z
     .object({
       min: z.number().int().min(1).max(5),
       max: z.number().int().min(1).max(5),
     })
     .optional(),
-})
-
-export const StartBossSchema = z.object({
-  domain: DomainSchema,
-  level: z.number().int().min(2).max(5),
 })
 
 export const SelfGradeSchema = z.enum(["again", "hard", "good", "easy"])
@@ -41,12 +33,6 @@ export const SubmitAnswerSchema = z.object({
   levelAtServe: z.number().int().min(1).max(5),
   responseMs: z.number().int().min(0),
   selfGrade: SelfGradeSchema.nullable().optional(),
-})
-
-export const ToggleActiveSubSchema = z.object({
-  domain: DomainSchema,
-  sub: z.string().min(1),
-  isActive: z.boolean(),
 })
 
 export const SetDefaultDrillLengthSchema = z.object({

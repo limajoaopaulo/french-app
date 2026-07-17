@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_art_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "C'est ___ pomme rouge.",
+      "blankHint": null,
+      "translation": "It's a red apple.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["une", "un", "la", "des"],
+      "correct_index": 0,
+      "explanation": "On présente un élément nouveau féminin singulier : article indéfini une.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "J'aime beaucoup ___ chocolat.",
+      "blankHint": null,
+      "translation": "I really like chocolate.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["le", "un", "la", "des"],
+      "correct_index": 0,
+      "explanation": "Après « aimer », on parle en général : article défini le.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Regarde ___ lune ce soir !",
+      "blankHint": null,
+      "translation": "Look at the moon tonight!",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["la", "une", "le", "des"],
+      "correct_index": 0,
+      "explanation": "« Lune » est un objet unique et féminin : article défini la.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_art_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu as ___ stylo pour moi ?",
+      "blankHint": null,
+      "translation": "Do you have a pen for me?",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["un", "une", "le", "des"],
+      "correct_index": 0,
+      "explanation": "On demande un objet indéterminé masculin : article indéfini un.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_art_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ce sont ___ amis de Paul.",
+      "blankHint": null,
+      "translation": "They are friends of Paul.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["des", "les", "un", "une"],
+      "correct_index": 0,
+      "explanation": "On présente plusieurs personnes nouvelles : article indéfini pluriel des.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ferme ___ porte, s'il te plaît.",
+      "blankHint": null,
+      "translation": "Close the door, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["la", "une", "le", "des"],
+      "correct_index": 0,
+      "explanation": "Il s'agit d'une porte précise et féminine : article défini la.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_art_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le professeur explique ___ leçon aux élèves.",
+      "blankHint": null,
+      "translation": "The teacher explains the lesson to the students.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["la", "une", "les", "des"],
+      "correct_index": 0,
+      "explanation": "Il s'agit de la leçon précise du jour : article défini la.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il porte ___ chaussures noires aujourd'hui.",
+      "blankHint": null,
+      "translation": "He is wearing black shoes today.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["des", "les", "une", "un"],
+      "correct_index": 0,
+      "explanation": "On décrit des chaussures non précisées au pluriel : article indéfini des.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Est-ce que tu connais ___ voisins du troisième étage ?",
+      "blankHint": null,
+      "translation": "Do you know the neighbours on the third floor?",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["les", "des", "un", "une"],
+      "correct_index": 0,
+      "explanation": "Ce sont des voisins précis et identifiés : article défini les.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_art_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous cherchons ___ hôtel près de la gare.",
+      "blankHint": null,
+      "translation": "We are looking for a hotel near the station.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["un", "le", "des", "une"],
+      "correct_index": 0,
+      "explanation": "On cherche un hôtel quelconque masculin : article indéfini un.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ma fille adore ___ animaux.",
+      "blankHint": null,
+      "translation": "My daughter loves animals.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["les", "des", "un", "une"],
+      "correct_index": 0,
+      "explanation": "Après « adorer », on parle des animaux en général : article défini les.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai acheté ___ robe bleue hier.",
+      "blankHint": null,
+      "translation": "I bought a blue dress yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["une", "la", "des", "un"],
+      "correct_index": 0,
+      "explanation": "On introduit une robe nouvelle et féminine : article indéfini une.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "___ enfants apprennent les langues très vite.",
+      "blankHint": null,
+      "translation": "Children learn languages very quickly.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["Les", "Des", "Un", "Une"],
+      "correct_index": 0,
+      "explanation": "On parle des enfants en général comme catégorie : article défini Les.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il a rencontré ___ femme extraordinaire pendant son voyage.",
+      "blankHint": null,
+      "translation": "He met an extraordinary woman during his trip.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["une", "la", "des", "un"],
+      "correct_index": 0,
+      "explanation": "On introduit une personne nouvelle et féminine : article indéfini une.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Passe-moi ___ sel qui est devant toi, s'il te plaît.",
+      "blankHint": null,
+      "translation": "Pass me the salt that's in front of you, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["le", "du", "un", "la"],
+      "correct_index": 0,
+      "explanation": "Le sel est précis et désigné (« devant toi ») : article défini le.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_art_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "___ voiture de mon père est tombée en panne.",
+      "blankHint": null,
+      "translation": "My father's car broke down.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["La", "Une", "Des", "Le"],
+      "correct_index": 0,
+      "explanation": "La voiture est déterminée par « de mon père » : article défini La.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ont visité ___ musées célèbres pendant leurs vacances.",
+      "blankHint": null,
+      "translation": "They visited some famous museums during their holidays.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["des", "les", "un", "une"],
+      "correct_index": 0,
+      "explanation": "On évoque plusieurs musées non précisés : article indéfini des.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je n'aime pas ___ films d'horreur.",
+      "blankHint": null,
+      "translation": "I don't like horror films.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["les", "des", "un", "de"],
+      "correct_index": 0,
+      "explanation": "Après « aimer » au négatif, on garde le général : article défini les.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle mange ___ pain au petit-déjeuner.",
+      "blankHint": null,
+      "translation": "She eats bread for breakfast.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["du", "de la", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom masculin : partitif du.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_020",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je bois ___ eau à chaque repas.",
+      "blankHint": null,
+      "translation": "I drink water at every meal.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["de l'", "du", "de la", "des"],
+      "correct_index": 0,
+      "explanation": "« Eau » commence par une voyelle : partitif élidé de l'.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_021",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu veux ___ soupe ce soir ?",
+      "blankHint": null,
+      "translation": "Do you want some soup tonight?",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom féminin : partitif de la.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_art_022",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous mangeons ___ frites avec le poisson.",
+      "blankHint": null,
+      "translation": "We eat fries with the fish.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["des", "du", "de la", "de l'"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom pluriel : partitif des.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_023",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il achète ___ fromage au marché.",
+      "blankHint": null,
+      "translation": "He buys cheese at the market.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["du", "de la", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom masculin : partitif du.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_024",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Vous prenez ___ salade avec le plat ?",
+      "blankHint": null,
+      "translation": "Are you having salad with the dish?",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom féminin : partitif de la.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Au petit-déjeuner, je prends ___ céréales.",
+      "blankHint": null,
+      "translation": "For breakfast I have cereal.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["des", "du", "de la", "de l'"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom pluriel : partitif des.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il met ___ sucre dans son café.",
+      "blankHint": null,
+      "translation": "He puts sugar in his coffee.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["du", "de la", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom masculin : partitif du.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour la vinaigrette, elle utilise ___ huile d'olive.",
+      "blankHint": null,
+      "translation": "For the dressing she uses olive oil.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["de l'", "du", "de la", "des"],
+      "correct_index": 0,
+      "explanation": "« Huile » commence par une voyelle : partitif élidé de l'.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour cette recette, il faut ___ farine.",
+      "blankHint": null,
+      "translation": "For this recipe you need flour.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom féminin : partitif de la.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le soir, nous écoutons ___ musique pour nous détendre.",
+      "blankHint": null,
+      "translation": "In the evening we listen to music to relax.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Notion non comptable féminine : partitif de la.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il gagne ___ argent avec ce petit travail.",
+      "blankHint": null,
+      "translation": "He earns money with this small job.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["de l'", "du", "de la", "des"],
+      "correct_index": 0,
+      "explanation": "« Argent » commence par une voyelle : partitif élidé de l'.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce genre d'épreuve demande ___ patience.",
+      "blankHint": null,
+      "translation": "This kind of test requires patience.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Notion abstraite non comptable féminine : partitif de la.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avec tout ce bruit, il faut ___ courage pour se concentrer.",
+      "blankHint": null,
+      "translation": "With all this noise, it takes courage to concentrate.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["du", "de la", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Notion abstraite non comptable masculine : partitif du.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle fait ___ sport tous les matins.",
+      "blankHint": null,
+      "translation": "She does sport every morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["du", "de la", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "« Faire du sport » : activité non comptable masculine, partitif du.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le chef ajoute ___ épices pour relever le plat.",
+      "blankHint": null,
+      "translation": "The chef adds spices to season the dish.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["des", "du", "de la", "de l'"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom pluriel : partitif des.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ont ___ amis partout en Europe.",
+      "blankHint": null,
+      "translation": "They have friends all over Europe.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["des", "du", "de la", "de l'"],
+      "correct_index": 0,
+      "explanation": "Quantité indéterminée d'un nom pluriel : partitif des.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il boit ___ alcool seulement le week-end.",
+      "blankHint": null,
+      "translation": "He drinks alcohol only at the weekend.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["de l'", "du", "de la", "des"],
+      "correct_index": 0,
+      "explanation": "« Alcool » commence par une voyelle : partitif élidé de l'.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_037",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce projet exige ___ rigueur à chaque étape.",
+      "blankHint": null,
+      "translation": "This project demands rigour at every stage.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Notion abstraite non comptable féminine : partitif de la.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_038",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il faut ___ imagination pour écrire un bon roman.",
+      "blankHint": null,
+      "translation": "It takes imagination to write a good novel.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de l'", "du", "de la", "des"],
+      "correct_index": 0,
+      "explanation": "« Imagination » commence par une voyelle : partitif élidé de l'.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_039",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette décision a demandé ___ courage à toute l'équipe.",
+      "blankHint": null,
+      "translation": "This decision took courage from the whole team.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["du", "de la", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Notion abstraite non comptable masculine : partitif du.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_040",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le jury recherche avant tout ___ originalité.",
+      "blankHint": null,
+      "translation": "The jury is looking above all for originality.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de l'", "du", "de la", "des"],
+      "correct_index": 0,
+      "explanation": "« Originalité » commence par une voyelle : partitif élidé de l'.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_041",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle a montré ___ ambition dès son arrivée.",
+      "blankHint": null,
+      "translation": "She showed ambition right from her arrival.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["de l'", "du", "de la", "des"],
+      "correct_index": 0,
+      "explanation": "« Ambition » commence par une voyelle : partitif élidé de l'.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_042",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce métier procure ___ satisfaction personnelle.",
+      "blankHint": null,
+      "translation": "This job provides personal satisfaction.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Notion abstraite non comptable féminine : partitif de la.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_043",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je n'ai pas ___ frères, seulement une sœur.",
+      "blankHint": null,
+      "translation": "I don't have any brothers, only a sister.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["de", "des", "un", "les"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « des » devient de : pas de frères.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_044",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il n'y a plus ___ lait dans le frigo.",
+      "blankHint": null,
+      "translation": "There's no more milk in the fridge.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["de", "du", "le", "de la"],
+      "correct_index": 0,
+      "explanation": "Après « ne... plus », le partitif « du » devient de.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_045",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous n'avons pas ___ voiture, nous prenons le bus.",
+      "blankHint": null,
+      "translation": "We don't have a car, we take the bus.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["de", "une", "la", "des"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « une » devient de : pas de voiture.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_046",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ne mange pas ___ viande, elle est végétarienne.",
+      "blankHint": null,
+      "translation": "She doesn't eat meat, she's vegetarian.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["de", "de la", "la", "du"],
+      "correct_index": 0,
+      "explanation": "Après une négation, le partitif « de la » devient de.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_047",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ne bois jamais ___ café le soir.",
+      "blankHint": null,
+      "translation": "I never drink coffee in the evening.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["de", "du", "le", "de la"],
+      "correct_index": 0,
+      "explanation": "Après « ne... jamais », le partitif « du » devient de.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_048",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu n'as pas ___ argent sur toi ?",
+      "blankHint": null,
+      "translation": "Don't you have any money on you?",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["d'", "de l'", "l'", "du"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « de l' » devient d' devant voyelle : pas d'argent.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_art_049",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Depuis l'accident, il n'a plus ___ patience avec personne.",
+      "blankHint": null,
+      "translation": "Since the accident, he has no more patience with anyone.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["de", "de la", "la", "du"],
+      "correct_index": 0,
+      "explanation": "Après « ne... plus », le partitif « de la » devient de.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_050",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce petit village n'a pas ___ pharmacie.",
+      "blankHint": null,
+      "translation": "This small village doesn't have a pharmacy.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["de", "une", "la", "des"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « une » devient de : pas de pharmacie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_051",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les enfants ne font pas ___ bruit dans la bibliothèque.",
+      "blankHint": null,
+      "translation": "The children don't make any noise in the library.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["de", "du", "le", "de la"],
+      "correct_index": 0,
+      "explanation": "Après une négation, le partitif « du » devient de.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_052",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle ne prend jamais ___ vacances en hiver.",
+      "blankHint": null,
+      "translation": "She never takes holidays in winter.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["de", "des", "les", "une"],
+      "correct_index": 0,
+      "explanation": "Après « ne... jamais », « des » devient de : jamais de vacances.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_053",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il n'y a plus ___ places pour le concert de ce soir.",
+      "blankHint": null,
+      "translation": "There are no more seats for tonight's concert.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "des", "les", "une"],
+      "correct_index": 0,
+      "explanation": "Après « ne... plus », « des » devient de : plus de places.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_054",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je n'ai pas eu ___ chance au dernier examen.",
+      "blankHint": null,
+      "translation": "I didn't have any luck in the last exam.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["de", "de la", "la", "du"],
+      "correct_index": 0,
+      "explanation": "Après une négation, le partitif « de la » devient de : pas de chance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_art_055",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette théorie ne laisse pas ___ place au doute.",
+      "blankHint": null,
+      "translation": "This theory leaves no room for doubt.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "de la", "la", "du"],
+      "correct_index": 0,
+      "explanation": "Après une négation, le partitif « de la » devient de : pas de place.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_056",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le gouvernement n'a pas pris ___ mesures concrètes.",
+      "blankHint": null,
+      "translation": "The government hasn't taken any concrete measures.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "des", "les", "une"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « des » devient de : pas de mesures.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_057",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sans budget, on ne peut plus faire ___ progrès.",
+      "blankHint": null,
+      "translation": "Without a budget, we can no longer make any progress.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["de", "des", "du", "les"],
+      "correct_index": 0,
+      "explanation": "Après « ne... plus », « des » devient de : plus de progrès.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_058",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le témoin affirme qu'il n'a éprouvé ___ remords.",
+      "blankHint": null,
+      "translation": "The witness claims he felt no remorse.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "des", "du", "les"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « des » devient de : pas de remords.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_059",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sans preuves solides, il n'y a pas ___ affaire.",
+      "blankHint": null,
+      "translation": "Without solid evidence, there is no case.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["d'", "une", "l'", "des"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « une » devient d' devant voyelle : pas d'affaire.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_art_060",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette réforme n'apporte pas ___ solutions durables.",
+      "blankHint": null,
+      "translation": "This reform brings no lasting solutions.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["de", "des", "les", "une"],
+      "correct_index": 0,
+      "explanation": "Après une négation, « des » devient de : pas de solutions.",
+      "register": "formal"
+    }
+  ]
+}

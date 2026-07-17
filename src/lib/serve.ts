@@ -1,54 +1,18 @@
 import { prisma } from "@/lib/db"
 import { SERVE_DISTRIBUTION } from "@/lib/constants"
-import type { Domain } from "@/lib/taxonomy"
 import {
   daysSince,
   questionWeight,
   weightedPick,
   type SamplingCandidate,
 } from "@/lib/sampling"
-import { patternMastery, type CardForLevel } from "@/lib/levels"
-import { type FSRSStateRow } from "@/lib/fsrs"
-
-export interface BossPick {
-  question: ServedQuestion
-  levelAtServe: number
-  remainingQueue: number[]
-}
-
-export async function pickBossQuestion(args: {
-  userId: number
-  languageId: number
-  bossDomain: string
-  queue: number[]
-  servedIds: number[]
-}): Promise<BossPick | null> {
-  let remaining = [...args.queue]
-  while (remaining.length > 0) {
-    const head = remaining[0]
-    let row = await loadOneQuestion({
-      userId: args.userId,
-      languageId: args.languageId,
-      domain: args.bossDomain,
-      level: head,
-      excludeIds: args.servedIds,
-    })
-    if (!row) {
-      row = await loadOneQuestion({
-        userId: args.userId,
-        languageId: args.languageId,
-        domain: args.bossDomain,
-        level: head,
-        excludeIds: [],
-      })
-    }
-    remaining = remaining.slice(1)
-    if (row) {
-      return { question: toServed(row), levelAtServe: row.level, remainingQueue: remaining }
-    }
-  }
-  return null
-}
+import {
+  bucketCardsByTag,
+  tagKey,
+  type CardForLevel,
+  type CardTag,
+} from "@/lib/levels"
+import { retrievability, type FSRSStateRow } from "@/lib/fsrs"
 
 export function pickServeLevel(estimatedLevel: number, rng: () => number = Math.random): number {
   const base = Math.round(estimatedLevel)
@@ -63,34 +27,32 @@ export function pickServeLevel(estimatedLevel: number, rng: () => number = Math.
 export interface ServedQuestion {
   id: number
   externalId: string
-  domain: string
-  sub: string
   level: number
-  pattern: string
-  counterpart: string | null
-  cueType: string
+  format: string
   cue: string
+  blankHint: string | null
+  translation: string | null
   options: string[]
   correctIndex: number
   explanation: string
   register: string | null
+  tags: CardTag[]
   encounters: number
 }
 
 interface QuestionRow {
   id: number
   externalId: string
-  domain: string
-  sub: string
   level: number
-  pattern: string
-  counterpart: string | null
-  cueType: string
+  format: string
   cue: string
+  blankHint: string | null
+  translation: string | null
   options: string
   correctIndex: number
   explanation: string
   register: string | null
+  tags: CardTag[]
   state: {
     stability: number
     difficulty: number
@@ -121,78 +83,61 @@ function rowToFsrsState(row: QuestionRow): FSRSStateRow {
   return { ...row.state }
 }
 
-async function loadOneQuestion(args: {
-  userId: number
-  languageId: number
-  domain: string
+type RawQuestion = {
+  id: number
+  externalId: string
   level: number
-  excludeIds: number[]
-}): Promise<QuestionRow | null> {
-  const q = await prisma.question.findFirst({
-    where: {
-      languageId: args.languageId,
-      domain: args.domain,
-      level: args.level,
-      id: args.excludeIds.length > 0 ? { notIn: args.excludeIds } : undefined,
-    },
-    include: { states: { where: { userId: args.userId }, take: 1 } },
-  })
-  if (!q) return null
-  return shapeRow(q)
+  format: string
+  cue: string
+  blankHint: string | null
+  translation: string | null
+  options: string
+  correctIndex: number
+  explanation: string
+  register: string | null
+  tags: Array<{ facet: string; tag: string; role: string }>
+  states: Array<{
+    stability: number
+    difficulty: number
+    state: number
+    scheduledDays: number
+    learningSteps: number
+    reps: number
+    lapses: number
+    lastReview: Date | null
+    dueAt: Date | null
+  }>
 }
 
-function shapeRow(
-  q: {
-    id: number
-    externalId: string
-    domain: string
-    sub: string
-    level: number
-    pattern: string
-    counterpart: string | null
-    cueType: string
-    cue: string
-    options: string
-    correctIndex: number
-    explanation: string
-    register: string | null
-    states: Array<{
-      stability: number
-      difficulty: number
-      state: number
-      scheduledDays: number
-      learningSteps: number
-      reps: number
-      lapses: number
-      lastReview: Date | null
-      dueAt: Date | null
-    }>
-  },
-): QuestionRow {
-  const { states, ...rest } = q
-  return { ...rest, state: states[0] ?? null }
+function shapeRow(q: RawQuestion): QuestionRow {
+  const { states, tags, ...rest } = q
+  return {
+    ...rest,
+    tags: tags.map((t) => ({ facet: t.facet, tag: t.tag, role: t.role })),
+    state: states[0] ?? null,
+  }
+}
+
+export interface TagTarget {
+  facet: string
+  tag: string
 }
 
 export async function pickNextQuestion(args: {
   userId: number
   languageId: number
   sessionId: number
-  domainFilter?: Domain
   servedIds: number[]
-  targetSubs?: Array<{ domain: string; sub: string }>
+  targetTags?: TagTarget[]
   levelRange?: { min: number; max: number }
 }): Promise<{ question: ServedQuestion; levelAtServe: number } | null> {
-  const subScope = await resolveSubScope(args)
-  if (subScope.length === 0) return null
-
-  const subKeys = new Set(subScope.map((s) => `${s.domain}::${s.sub}`))
   const lvlMin = args.levelRange?.min ?? 1
   const lvlMax = args.levelRange?.max ?? 5
 
   let pool = await loadCandidates({
     userId: args.userId,
     languageId: args.languageId,
-    subScope,
+    targetTags: args.targetTags,
     lvlMin,
     lvlMax,
     excludeIds: args.servedIds,
@@ -201,7 +146,7 @@ export async function pickNextQuestion(args: {
     pool = await loadCandidates({
       userId: args.userId,
       languageId: args.languageId,
-      subScope,
+      targetTags: args.targetTags,
       lvlMin: 1,
       lvlMax: 5,
       excludeIds: args.servedIds,
@@ -211,81 +156,101 @@ export async function pickNextQuestion(args: {
     pool = await loadCandidates({
       userId: args.userId,
       languageId: args.languageId,
-      subScope,
+      targetTags: undefined,
       lvlMin: 1,
       lvlMax: 5,
-      excludeIds: [],
+      excludeIds: args.servedIds,
     })
   }
   if (pool.length === 0) return null
 
   const now = new Date()
 
-  const cardsForLevel: Array<CardForLevel & { pattern: string; subKey: string }> = pool.map(
-    (q) => ({
-      level: q.level,
-      stability: q.state?.stability ?? 0,
-      difficulty: q.state?.difficulty ?? 0,
-      state: q.state?.state ?? 0,
-      scheduledDays: q.state?.scheduledDays ?? 0,
-      learningSteps: q.state?.learningSteps ?? 0,
-      reps: q.state?.reps ?? 0,
-      lapses: q.state?.lapses ?? 0,
-      lastReview: q.state?.lastReview ?? null,
-      dueAt: q.state?.dueAt ?? null,
-      pattern: q.pattern,
-      subKey: `${q.domain}::${q.sub}`,
-    }),
+  // Weakness per (facet::tag) from the pool's cards, bucketed by every tag.
+  const taggedCards = pool.map((q) => ({
+    level: q.level,
+    stability: q.state?.stability ?? 0,
+    difficulty: q.state?.difficulty ?? 0,
+    state: q.state?.state ?? 0,
+    scheduledDays: q.state?.scheduledDays ?? 0,
+    learningSteps: q.state?.learningSteps ?? 0,
+    reps: q.state?.reps ?? 0,
+    lapses: q.state?.lapses ?? 0,
+    lastReview: q.state?.lastReview ?? null,
+    dueAt: q.state?.dueAt ?? null,
+    tags: q.tags,
+  }))
+  const buckets = bucketCardsByTag(taggedCards)
+  const weaknessByTag = new Map<string, number>()
+  for (const [key, bucket] of buckets) {
+    const summary = meanRetrievability(bucket.allCards, now)
+    weaknessByTag.set(key, 1 - summary)
+  }
+
+  // Representative tag per question = the focus tag with max weakness. When a
+  // target facet is set, prefer that facet's focus tag.
+  const targetFacets = new Set((args.targetTags ?? []).map((t) => t.facet))
+  function representativeTag(q: QuestionRow): string {
+    const focus = q.tags.filter((t) => t.role === "focus")
+    const candidates = focus.length > 0 ? focus : q.tags
+    let best = candidates[0]
+    let bestW = -1
+    for (const t of candidates) {
+      const key = tagKey(t.facet, t.tag)
+      let w = weaknessByTag.get(key) ?? 0.5
+      if (targetFacets.size > 0 && targetFacets.has(t.facet)) w += 1 // prefer targeted facet
+      if (w > bestW) {
+        bestW = w
+        best = t
+      }
+    }
+    return best ? tagKey(best.facet, best.tag) : "unknown"
+  }
+
+  // Weak-tag targeting: top-5 weakest tags present in the pool's focus tags.
+  const focusTagKeys = new Set<string>()
+  for (const q of pool) {
+    for (const t of q.tags) if (t.role === "focus") focusTagKeys.add(tagKey(t.facet, t.tag))
+  }
+  const weakTags = new Set(
+    Array.from(weaknessByTag.entries())
+      .filter(([k]) => focusTagKeys.has(k))
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5)
+      .map(([k]) => k),
   )
-  const masteryByPattern = new Map<string, number>()
-  for (const m of patternMastery(cardsForLevel, now)) {
-    masteryByPattern.set(m.pattern, 1 - m.meanR)
-  }
 
-  const patterns = Array.from(new Set(pool.map((q) => q.pattern)))
-  const patternStats = await prisma.patternStats.findMany({
-    where: {
-      userId: args.userId,
-      pattern: { in: patterns },
-      OR: subScope.map((s) => ({ domain: s.domain, sub: s.sub })),
-    },
-  })
-  const lastSeenByKey = new Map<string, Date | null>()
-  for (const ps of patternStats) {
-    lastSeenByKey.set(`${ps.domain}::${ps.sub}::${ps.pattern}`, ps.lastSeenAt)
-  }
+  // Staleness per tag from TagStats.lastSeenAt.
+  const tagStats = await prisma.tagStats.findMany({ where: { userId: args.userId } })
+  const lastSeenByTag = new Map<string, Date | null>()
+  for (const ts of tagStats) lastSeenByTag.set(tagKey(ts.facet, ts.tag), ts.lastSeenAt)
 
-  const weakRanked = Array.from(masteryByPattern.entries())
-    .filter(([p]) =>
-      cardsForLevel.some((c) => c.pattern === p && subKeys.has(c.subKey)),
-    )
-    .sort((a, b) => b[1] - a[1])
-  const weakPatterns = new Set(weakRanked.slice(0, 5).map(([p]) => p))
-
+  // Round-robin damp by representative tag served this session.
   const reviews = await prisma.review.findMany({
     where: { userId: args.userId, sessionId: args.sessionId },
-    include: { question: { select: { pattern: true } } },
+    include: { question: { select: { tags: { where: { role: "focus" } } } } },
   })
-  const servedPatternCounts = new Map<string, number>()
+  const servedTagCounts = new Map<string, number>()
   for (const r of reviews) {
-    const key = r.question.pattern
-    servedPatternCounts.set(key, (servedPatternCounts.get(key) ?? 0) + 1)
+    for (const t of r.question.tags) {
+      const key = tagKey(t.facet, t.tag)
+      servedTagCounts.set(key, (servedTagCounts.get(key) ?? 0) + 1)
+    }
   }
 
   const candidates: SamplingCandidate[] = pool.map((q) => {
-    const fsrsState = rowToFsrsState(q)
-    const lastSeen = lastSeenByKey.get(`${q.domain}::${q.sub}::${q.pattern}`) ?? null
+    const repTag = representativeTag(q)
     return {
       questionId: q.id,
-      pattern: q.pattern,
-      fsrsState,
-      patternWeakness: masteryByPattern.get(q.pattern) ?? 0.5,
-      patternStaleDays: daysSince(lastSeen, now),
+      tag: repTag,
+      fsrsState: rowToFsrsState(q),
+      tagWeakness: weaknessByTag.get(repTag) ?? 0.5,
+      tagStaleDays: daysSince(lastSeenByTag.get(repTag) ?? null, now),
     }
   })
 
   const weights = candidates.map((c) =>
-    questionWeight(c, weakPatterns, now, servedPatternCounts),
+    questionWeight(c, weakTags, now, servedTagCounts),
   )
 
   const indices = pool.map((_, i) => i)
@@ -298,37 +263,62 @@ export async function pickNextQuestion(args: {
   }
 }
 
-async function resolveSubScope(args: {
-  userId: number
-  domainFilter?: Domain
-  targetSubs?: Array<{ domain: string; sub: string }>
-}): Promise<Array<{ domain: string; sub: string }>> {
-  if (args.targetSubs && args.targetSubs.length > 0) {
-    return args.targetSubs
-  }
-  const activeWhere = args.domainFilter
-    ? { userId: args.userId, isActive: true, domain: args.domainFilter }
-    : { userId: args.userId, isActive: true }
-  const activeSubs = await prisma.subStats.findMany({ where: activeWhere })
-  return activeSubs.map((s) => ({ domain: s.domain, sub: s.sub }))
+function meanRetrievability(cards: readonly CardForLevel[], now: Date): number {
+  if (cards.length === 0) return 0
+  let sum = 0
+  for (const c of cards) sum += retrievability(c, now)
+  return sum / cards.length
 }
+
+// SQLite caps bound parameters (~999). Loading a large pool with `include`
+// generates `WHERE questionId IN (…)` over every candidate id, which blows that
+// cap. So: (1) fetch matching ids cheaply, (2) randomly down-sample to CANDIDATE_CAP,
+// (3) load the sampled rows with their tags + state. A capped random pool is fine —
+// weighted sampling picks a single question from it anyway.
+const CANDIDATE_CAP = 300
 
 async function loadCandidates(args: {
   userId: number
   languageId: number
-  subScope: Array<{ domain: string; sub: string }>
+  targetTags?: TagTarget[]
   lvlMin: number
   lvlMax: number
   excludeIds: number[]
 }): Promise<QuestionRow[]> {
+  const where = {
+    languageId: args.languageId,
+    level: { gte: args.lvlMin, lte: args.lvlMax },
+    ...(args.targetTags && args.targetTags.length > 0
+      ? {
+          tags: {
+            some: {
+              role: "focus",
+              OR: args.targetTags.map((t) => ({ facet: t.facet, tag: t.tag })),
+            },
+          },
+        }
+      : {}),
+    id: args.excludeIds.length > 0 ? { notIn: args.excludeIds } : undefined,
+  }
+
+  const idRows = await prisma.question.findMany({ where, select: { id: true } })
+  let ids = idRows.map((r) => r.id)
+  if (ids.length > CANDIDATE_CAP) {
+    // Fisher-Yates partial shuffle to sample CANDIDATE_CAP ids.
+    for (let i = 0; i < CANDIDATE_CAP; i++) {
+      const j = i + Math.floor(Math.random() * (ids.length - i))
+      ;[ids[i], ids[j]] = [ids[j], ids[i]]
+    }
+    ids = ids.slice(0, CANDIDATE_CAP)
+  }
+  if (ids.length === 0) return []
+
   const rows = await prisma.question.findMany({
-    where: {
-      languageId: args.languageId,
-      OR: args.subScope.map((s) => ({ domain: s.domain, sub: s.sub })),
-      level: { gte: args.lvlMin, lte: args.lvlMax },
-      id: args.excludeIds.length > 0 ? { notIn: args.excludeIds } : undefined,
+    where: { id: { in: ids } },
+    include: {
+      tags: true,
+      states: { where: { userId: args.userId }, take: 1 },
     },
-    include: { states: { where: { userId: args.userId }, take: 1 } },
   })
   return rows.map(shapeRow)
 }

@@ -1,0 +1,904 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vSocial_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je suis très ___ parce que c'est mon anniversaire aujourd'hui.",
+      "blankHint": null,
+      "translation": "I'm very happy because it's my birthday today.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["heureux", "triste", "fatigué", "malade"],
+      "correct_index": 0,
+      "explanation": "Quand on est content, on est heureux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle pleure parce qu'elle est ___.",
+      "blankHint": null,
+      "translation": "She is crying because she is sad.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["triste", "contente", "heureuse", "joyeuse"],
+      "correct_index": 0,
+      "explanation": "Quand on pleure, c'est souvent qu'on est triste.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Après une longue journée de travail, je suis ___.",
+      "blankHint": null,
+      "translation": "After a long day of work, I am tired.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["fatigué", "content", "amoureux", "surpris"],
+      "correct_index": 0,
+      "explanation": "Après beaucoup d'efforts, on se sent fatigué.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il a ___ des chiens et il ne veut pas s'approcher.",
+      "blankHint": null,
+      "translation": "He is afraid of dogs and doesn't want to come close.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["peur", "faim", "soif", "sommeil"],
+      "correct_index": 0,
+      "explanation": "Avoir peur, c'est ressentir de la crainte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Quand je reçois un cadeau, je suis ___.",
+      "blankHint": null,
+      "translation": "When I get a present, I am happy.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["content", "en colère", "triste", "déçu"],
+      "correct_index": 0,
+      "explanation": "Un cadeau fait plaisir : on est content.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le bébé rit tout le temps, il est ___.",
+      "blankHint": null,
+      "translation": "The baby laughs all the time, he is joyful.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["joyeux", "fâché", "triste", "inquiet"],
+      "correct_index": 0,
+      "explanation": "Quand on rit beaucoup, on est joyeux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il est ___ contre son frère qui a cassé son jouet.",
+      "blankHint": null,
+      "translation": "He is angry at his brother who broke his toy.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["en colère", "content", "heureux", "calme"],
+      "correct_index": 0,
+      "explanation": "Être en colère, c'est être fâché contre quelqu'un.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je suis ___ : je pensais gagner mais j'ai perdu.",
+      "blankHint": null,
+      "translation": "I'm disappointed: I thought I would win but I lost.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["déçu", "ravi", "enchanté", "fier"],
+      "correct_index": 0,
+      "explanation": "Quand un espoir ne se réalise pas, on est déçu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle est très ___ avant son entretien d'embauche.",
+      "blankHint": null,
+      "translation": "She is very nervous before her job interview.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["nerveuse", "détendue", "calme", "joyeuse"],
+      "correct_index": 0,
+      "explanation": "Avant un moment stressant, on se sent nerveux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Quel bruit ! J'ai été très ___ par cette explosion soudaine.",
+      "blankHint": null,
+      "translation": "What a noise! I was really surprised by that sudden explosion.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["surpris", "ennuyé", "rassuré", "content"],
+      "correct_index": 0,
+      "explanation": "Face à un événement inattendu, on est surpris.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Après ces bonnes nouvelles, nous sommes vraiment ___.",
+      "blankHint": null,
+      "translation": "After this good news, we are really delighted.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["ravis", "fâchés", "tristes", "déçus"],
+      "correct_index": 0,
+      "explanation": "Être ravi, c'est être très content.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce film est long et sans intérêt, je m'___ beaucoup.",
+      "blankHint": null,
+      "translation": "This film is long and dull, I'm very bored.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["ennuie", "amuse", "réjouis", "passionne"],
+      "correct_index": 0,
+      "explanation": "Quand rien ne nous intéresse, on s'ennuie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je suis vraiment ___ pour toi : tu as mérité cette promotion.",
+      "blankHint": null,
+      "translation": "I'm really proud of you: you deserved this promotion.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["fier", "jaloux", "indifférent", "déçu"],
+      "correct_index": 0,
+      "explanation": "On est fier de quelqu'un qui réussit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle se sent ___ depuis le départ de ses amis à l'étranger.",
+      "blankHint": null,
+      "translation": "She has felt lonely since her friends left abroad.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["seule", "entourée", "comblée", "enthousiaste"],
+      "correct_index": 0,
+      "explanation": "Sans personne autour de soi, on se sent seul.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Malgré le danger, il est resté ___ et n'a pas paniqué.",
+      "blankHint": null,
+      "translation": "Despite the danger, he stayed calm and didn't panic.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["serein", "affolé", "terrifié", "angoissé"],
+      "correct_index": 0,
+      "explanation": "Rester serein, c'est garder son calme.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je suis ___ que tu aies pensé à moi, ça me va droit au cœur.",
+      "blankHint": null,
+      "translation": "I'm moved that you thought of me, it touches me deeply.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["ému", "agacé", "indifférent", "vexé"],
+      "correct_index": 0,
+      "explanation": "Être ému, c'est ressentir une forte émotion agréable.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Depuis leur dispute, il éprouve de la ___ envers ses collègues.",
+      "blankHint": null,
+      "translation": "Since their quarrel, he feels resentment toward his colleagues.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["rancune", "tendresse", "admiration", "gratitude"],
+      "correct_index": 0,
+      "explanation": "La rancune, c'est le ressentiment que l'on garde après une offense.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle est ___ : elle n'arrive pas à décider quelle offre accepter.",
+      "blankHint": null,
+      "translation": "She is puzzled: she can't decide which offer to accept.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["perplexe", "catégorique", "décidée", "certaine"],
+      "correct_index": 0,
+      "explanation": "Être perplexe, c'est hésiter, ne pas savoir quoi penser.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_019",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Un profond sentiment de ___ l'envahit quand il repense à cet échec.",
+      "blankHint": null,
+      "translation": "A deep sense of guilt overcomes him when he thinks back on that failure.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["culpabilité", "fierté", "sérénité", "allégresse"],
+      "correct_index": 0,
+      "explanation": "La culpabilité, c'est le sentiment d'être fautif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_020",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle affichait une joie feinte, mais on devinait son ___.",
+      "blankHint": null,
+      "translation": "She put on a fake smile, but one could sense her distress.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["désarroi", "ravissement", "enthousiasme", "contentement"],
+      "correct_index": 0,
+      "explanation": "Le désarroi, c'est un trouble profond, un désespoir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_021",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il ressent une certaine ___ à l'idée de quitter son pays natal.",
+      "blankHint": null,
+      "translation": "He feels a certain apprehension at the thought of leaving his native country.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["appréhension", "insouciance", "allégresse", "euphorie"],
+      "correct_index": 0,
+      "explanation": "L'appréhension, c'est une inquiétude face à ce qui va arriver.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_022",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette œuvre bouleversante l'a plongé dans un état d'___ intense.",
+      "blankHint": null,
+      "translation": "This deeply moving work plunged him into a state of intense emotion.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["émoi", "indifférence", "lassitude", "quiétude"],
+      "correct_index": 0,
+      "explanation": "L'émoi, c'est un trouble, une émotion vive.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vSocial_023",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Loin de se réjouir, il éprouvait de l'___ face à tant d'hypocrisie.",
+      "blankHint": null,
+      "translation": "Far from rejoicing, he felt aversion in the face of so much hypocrisy.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["aversion", "admiration", "affection", "sympathie"],
+      "correct_index": 0,
+      "explanation": "L'aversion, c'est un profond dégoût, une forte répulsion.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vSocial_024",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Un mélange d'espoir et d'___ le tenait éveillé la veille du verdict.",
+      "blankHint": null,
+      "translation": "A mixture of hope and anguish kept him awake the night before the verdict.",
+      "tags": [
+        { "facet": "topic", "tag": "emotions_feelings", "role": "focus" }
+      ],
+      "options": ["angoisse", "quiétude", "béatitude", "insouciance"],
+      "correct_index": 0,
+      "explanation": "L'angoisse, c'est une peur diffuse et oppressante.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_025",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Mon ___ et ma mère habitent à Lyon.",
+      "blankHint": null,
+      "translation": "My father and my mother live in Lyon.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["père", "frère", "fils", "oncle"],
+      "correct_index": 0,
+      "explanation": "Le père et la mère forment le couple des parents.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_026",
+      "format": "cloze",
+      "level": 1,
+      "cue": "La mère de mon père est ma ___.",
+      "blankHint": null,
+      "translation": "My father's mother is my grandmother.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["grand-mère", "tante", "cousine", "belle-mère"],
+      "correct_index": 0,
+      "explanation": "La mère d'un parent est la grand-mère.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_027",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le fils de mon oncle est mon ___.",
+      "blankHint": null,
+      "translation": "My uncle's son is my cousin.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["cousin", "frère", "neveu", "gendre"],
+      "correct_index": 0,
+      "explanation": "L'enfant de l'oncle ou de la tante est le cousin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_028",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Mes parents ont deux enfants : moi et mon ___.",
+      "blankHint": null,
+      "translation": "My parents have two children: me and my brother.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["frère", "oncle", "père", "mari"],
+      "correct_index": 0,
+      "explanation": "Le garçon né des mêmes parents est le frère.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_029",
+      "format": "cloze",
+      "level": 1,
+      "cue": "La fille de mes parents, c'est ma ___.",
+      "blankHint": null,
+      "translation": "My parents' daughter is my sister.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["sœur", "tante", "nièce", "belle-fille"],
+      "correct_index": 0,
+      "explanation": "La fille née des mêmes parents est la sœur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_030",
+      "format": "cloze",
+      "level": 1,
+      "cue": "J'aime beaucoup mes ___ : mon père et ma mère.",
+      "blankHint": null,
+      "translation": "I love my parents very much: my father and my mother.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["parents", "enfants", "voisins", "amis"],
+      "correct_index": 0,
+      "explanation": "Le père et la mère sont les parents.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_031",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mon frère s'est marié ; sa femme est maintenant ma ___.",
+      "blankHint": null,
+      "translation": "My brother got married; his wife is now my sister-in-law.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["belle-sœur", "belle-mère", "marraine", "cousine"],
+      "correct_index": 0,
+      "explanation": "La femme du frère est la belle-sœur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_032",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le bébé de ma sœur est ma ___.",
+      "blankHint": null,
+      "translation": "My sister's baby is my niece.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["nièce", "cousine", "filleule", "petite-fille"],
+      "correct_index": 0,
+      "explanation": "La fille de la sœur ou du frère est la nièce.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_033",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Depuis le remariage de mon père, sa nouvelle épouse est ma ___.",
+      "blankHint": null,
+      "translation": "Since my father's remarriage, his new wife is my stepmother.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["belle-mère", "marraine", "tante", "grand-mère"],
+      "correct_index": 0,
+      "explanation": "La nouvelle épouse du père est la belle-mère.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_034",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mes grands-parents ont fêté leurs cinquante ans de ___.",
+      "blankHint": null,
+      "translation": "My grandparents celebrated their fifty years of marriage.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["mariage", "naissance", "divorce", "enterrement"],
+      "correct_index": 0,
+      "explanation": "L'union d'un couple, qu'on fête chaque année, c'est le mariage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_035",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je suis fils ___ : je n'ai ni frère ni sœur.",
+      "blankHint": null,
+      "translation": "I'm an only child: I have neither brother nor sister.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["unique", "aîné", "cadet", "jumeau"],
+      "correct_index": 0,
+      "explanation": "Un enfant sans frère ni sœur est un enfant unique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_036",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mon oncle et ma tante viennent de fêter la ___ de leur premier enfant.",
+      "blankHint": null,
+      "translation": "My uncle and aunt have just celebrated the birth of their first child.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["naissance", "retraite", "dispute", "séparation"],
+      "correct_index": 0,
+      "explanation": "L'arrivée au monde d'un enfant est sa naissance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_037",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après des années de tensions, ils ont fini par se ___ avec leurs parents.",
+      "blankHint": null,
+      "translation": "After years of tension, they finally reconciled with their parents.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["réconcilier", "disputer", "séparer", "éloigner"],
+      "correct_index": 0,
+      "explanation": "Se réconcilier, c'est faire la paix après un conflit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_038",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a été ___ par ses grands-parents après la mort de ses parents.",
+      "blankHint": null,
+      "translation": "She was raised by her grandparents after her parents' death.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["élevée", "abandonnée", "reniée", "trahie"],
+      "correct_index": 0,
+      "explanation": "Élever un enfant, c'est s'occuper de lui jusqu'à l'âge adulte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_039",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il entretient des liens très ___ avec toute sa famille.",
+      "blankHint": null,
+      "translation": "He keeps very close ties with his whole family.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["étroits", "distants", "superficiels", "tendus"],
+      "correct_index": 0,
+      "explanation": "Des liens étroits sont des relations proches et solides.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_040",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nos parents nous ont transmis de fortes ___ familiales.",
+      "blankHint": null,
+      "translation": "Our parents passed on strong family values to us.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["valeurs", "disputes", "dettes", "absences"],
+      "correct_index": 0,
+      "explanation": "Les valeurs familiales sont les principes transmis dans une famille.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_041",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mon frère aîné a toujours été un ___ pour moi, je l'admire.",
+      "blankHint": null,
+      "translation": "My older brother has always been a role model for me, I admire him.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["modèle", "fardeau", "rival", "étranger"],
+      "correct_index": 0,
+      "explanation": "Une personne qu'on admire et veut imiter est un modèle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_042",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après des années d'attente, ils ont ___ un enfant et fondé une famille.",
+      "blankHint": null,
+      "translation": "After years of waiting, they adopted a child and started a family.",
+      "tags": [
+        { "facet": "topic", "tag": "family_relations", "role": "focus" }
+      ],
+      "options": ["adopté", "renié", "abandonné", "quitté"],
+      "correct_index": 0,
+      "explanation": "Adopter un enfant, c'est le prendre légalement comme le sien.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_043",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Paul est mon meilleur ___, on se connaît depuis l'enfance.",
+      "blankHint": null,
+      "translation": "Paul is my best friend, we've known each other since childhood.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["ami", "ennemi", "collègue", "voisin"],
+      "correct_index": 0,
+      "explanation": "Une personne proche qu'on apprécie est un ami.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_044",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce week-end, on organise une ___ chez moi avec tous nos amis.",
+      "blankHint": null,
+      "translation": "This weekend, we're throwing a party at my place with all our friends.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["fête", "réunion", "dispute", "sieste"],
+      "correct_index": 0,
+      "explanation": "Une fête est un moment convivial entre amis.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vSocial_045",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai ___ Marie à une soirée la semaine dernière.",
+      "blankHint": null,
+      "translation": "I met Marie at a party last week.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["rencontré", "quitté", "oublié", "évité"],
+      "correct_index": 0,
+      "explanation": "Faire la connaissance de quelqu'un, c'est le rencontrer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_046",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mes amis et moi, on aime se ___ au café le samedi.",
+      "blankHint": null,
+      "translation": "My friends and I like to meet up at the café on Saturdays.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["retrouver", "disputer", "ignorer", "séparer"],
+      "correct_index": 0,
+      "explanation": "Se retrouver, c'est se réunir à un endroit convenu.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vSocial_047",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il est très ___ : il se fait des amis partout.",
+      "blankHint": null,
+      "translation": "He is very sociable: he makes friends everywhere.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["sociable", "timide", "solitaire", "méfiant"],
+      "correct_index": 0,
+      "explanation": "Une personne sociable aime être avec les autres.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_048",
+      "format": "cloze",
+      "level": 2,
+      "cue": "On s'entend très ___, on ne se dispute jamais.",
+      "blankHint": null,
+      "translation": "We get along very well, we never argue.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["bien", "mal", "peu", "rarement"],
+      "correct_index": 0,
+      "explanation": "S'entendre bien, c'est avoir de bonnes relations.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_vSocial_049",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je peux lui faire ___ : elle garde toujours mes secrets.",
+      "blankHint": null,
+      "translation": "I can trust her: she always keeps my secrets.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["confiance", "peur", "honte", "pitié"],
+      "correct_index": 0,
+      "explanation": "Faire confiance à quelqu'un, c'est compter sur lui.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_050",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après une longue brouille, les deux amis se sont enfin ___.",
+      "blankHint": null,
+      "translation": "After a long falling-out, the two friends finally made up.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["réconciliés", "disputés", "fâchés", "ignorés"],
+      "correct_index": 0,
+      "explanation": "Se réconcilier, c'est redevenir amis après un conflit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_051",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est un ami ___ : il est toujours là dans les moments difficiles.",
+      "blankHint": null,
+      "translation": "He's a loyal friend: he's always there in difficult times.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["fidèle", "hypocrite", "distant", "égoïste"],
+      "correct_index": 0,
+      "explanation": "Un ami fidèle reste loyal et présent.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_052",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous avons beaucoup de ___ communs, c'est pourquoi on s'entend si bien.",
+      "blankHint": null,
+      "translation": "We have a lot of tastes in common, that's why we get along so well.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["goûts", "ennemis", "défauts", "secrets"],
+      "correct_index": 0,
+      "explanation": "Avoir des goûts communs, c'est aimer les mêmes choses.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_053",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ont tissé des liens d'amitié ___ au fil des années.",
+      "blankHint": null,
+      "translation": "They forged solid bonds of friendship over the years.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["solides", "fragiles", "superficiels", "éphémères"],
+      "correct_index": 0,
+      "explanation": "Des liens solides sont des relations fortes et durables.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_054",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle m'a ___ : elle a répété partout ce que je lui avais confié.",
+      "blankHint": null,
+      "translation": "She betrayed me: she repeated everywhere what I had confided in her.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["trahi", "soutenu", "encouragé", "félicité"],
+      "correct_index": 0,
+      "explanation": "Trahir un ami, c'est manquer à sa confiance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_055",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Leur amitié s'est effritée à cause d'un ___ jamais dissipé.",
+      "blankHint": null,
+      "translation": "Their friendship crumbled because of a misunderstanding that was never cleared up.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["malentendu", "compliment", "hommage", "rapprochement"],
+      "correct_index": 0,
+      "explanation": "Un malentendu, c'est une incompréhension entre deux personnes.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_056",
+      "format": "cloze",
+      "level": 4,
+      "cue": "C'est une amitié ___ : chacun y trouve son compte.",
+      "blankHint": null,
+      "translation": "It's a mutual friendship: each one benefits from it.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["réciproque", "unilatérale", "factice", "intéressée"],
+      "correct_index": 0,
+      "explanation": "Une relation réciproque va dans les deux sens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_057",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il cultive un vaste ___ de relations dans le milieu artistique.",
+      "blankHint": null,
+      "translation": "He cultivates a vast network of connections in the art world.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["réseau", "fossé", "vide", "malaise"],
+      "correct_index": 0,
+      "explanation": "Un réseau de relations est l'ensemble des personnes qu'on connaît.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_058",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Sous des dehors aimables, c'était un ami ___ qui le jalousait en secret.",
+      "blankHint": null,
+      "translation": "Behind a friendly appearance, he was a hypocritical friend who secretly envied him.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["hypocrite", "loyal", "sincère", "dévoué"],
+      "correct_index": 0,
+      "explanation": "Un ami hypocrite cache ses vrais sentiments.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vSocial_059",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Leurs retrouvailles ont été empreintes d'une grande ___.",
+      "blankHint": null,
+      "translation": "Their reunion was marked by a great sense of closeness.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["complicité", "animosité", "indifférence", "rivalité"],
+      "correct_index": 0,
+      "explanation": "La complicité, c'est une entente profonde entre proches.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_vSocial_060",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Au fil du temps, ils se sont ___ sans jamais vraiment se fâcher.",
+      "blankHint": null,
+      "translation": "Over time, they drifted apart without ever really falling out.",
+      "tags": [
+        { "facet": "topic", "tag": "friendship_social", "role": "focus" }
+      ],
+      "options": ["éloignés", "rapprochés", "liés", "retrouvés"],
+      "correct_index": 0,
+      "explanation": "S'éloigner, c'est perdre peu à peu le contact.",
+      "register": "neutral"
+    }
+  ]
+}

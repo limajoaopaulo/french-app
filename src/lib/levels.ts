@@ -157,18 +157,28 @@ export interface PatternMastery {
   cardCount: number
 }
 
-export function patternMastery(
-  cards: readonly (CardForLevel & { pattern: string })[],
+// Generic mastery grouping — bucket cards by an arbitrary string key (a pattern
+// today, a tag under the multi-facet model). Kept key-agnostic so the same math
+// serves both. patternMastery is a thin back-compat wrapper.
+export interface KeyedMastery {
+  key: string
+  meanR: number
+  meanStability: number
+  cardCount: number
+}
+
+export function keyedMastery(
+  cards: readonly (CardForLevel & { key: string })[],
   now: Date,
-): PatternMastery[] {
-  const byPattern = new Map<string, (CardForLevel & { pattern: string })[]>()
+): KeyedMastery[] {
+  const byKey = new Map<string, (CardForLevel & { key: string })[]>()
   for (const c of cards) {
-    const arr = byPattern.get(c.pattern) ?? []
+    const arr = byKey.get(c.key) ?? []
     arr.push(c)
-    byPattern.set(c.pattern, arr)
+    byKey.set(c.key, arr)
   }
-  const out: PatternMastery[] = []
-  for (const [pattern, list] of byPattern) {
+  const out: KeyedMastery[] = []
+  for (const [key, list] of byKey) {
     let sumR = 0
     let sumS = 0
     for (const c of list) {
@@ -176,13 +186,76 @@ export function patternMastery(
       sumS += c.stability
     }
     out.push({
-      pattern,
+      key,
       meanR: sumR / list.length,
       meanStability: sumS / list.length,
       cardCount: list.length,
     })
   }
   return out
+}
+
+export function patternMastery(
+  cards: readonly (CardForLevel & { pattern: string })[],
+  now: Date,
+): PatternMastery[] {
+  return keyedMastery(
+    cards.map((c) => ({ ...c, key: c.pattern })),
+    now,
+  ).map((m) => ({
+    pattern: m.key,
+    meanR: m.meanR,
+    meanStability: m.meanStability,
+    cardCount: m.cardCount,
+  }))
+}
+
+// -----------------------------------------------------------------------------
+// Multi-facet tag bucketing. Fan each card into every tag it carries. Two views
+// per (facet, tag): focusCards (role==='focus', drive level graduation) and
+// allCards (any role, drive retrievability/weakness/staleness). "Exposure
+// maintains, testing advances" — a context tag stays warm via allCards but only
+// levels up through focusCards.
+// -----------------------------------------------------------------------------
+
+export interface CardTag {
+  facet: string
+  tag: string
+  role: string // 'focus' | 'context'
+}
+
+export interface TaggedCard extends CardForLevel {
+  tags: readonly CardTag[]
+}
+
+export interface TagBucket {
+  facet: string
+  tag: string
+  focusCards: CardForLevel[]
+  allCards: CardForLevel[]
+}
+
+export function tagKey(facet: string, tag: string): string {
+  return `${facet}::${tag}`
+}
+
+export function bucketCardsByTag(
+  cards: readonly TaggedCard[],
+): Map<string, TagBucket> {
+  const buckets = new Map<string, TagBucket>()
+  for (const card of cards) {
+    for (const t of card.tags) {
+      const key = tagKey(t.facet, t.tag)
+      let bucket = buckets.get(key)
+      if (!bucket) {
+        bucket = { facet: t.facet, tag: t.tag, focusCards: [], allCards: [] }
+        buckets.set(key, bucket)
+      }
+      bucket.allCards.push(card)
+      if (t.role === "focus") bucket.focusCards.push(card)
+    }
+  }
+  return buckets
 }
 
 function toFsrsRow(c: CardForLevel): FSRSStateRow {

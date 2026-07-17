@@ -6,15 +6,12 @@ import { startPersonalisedSession } from "@/app/actions/session"
 import { t } from "@/lib/i18n"
 import { DrillPreview } from "@/components/home/DrillPreview"
 import type { PersonalisedTargets } from "@/lib/progression"
-import type { Domain } from "@/lib/taxonomy"
 
 export function HomeStart({
   preview,
-  domainFilter,
   defaultLength,
 }: {
   preview: PersonalisedTargets | null
-  domainFilter?: Domain
   defaultLength: number
 }) {
   const router = useRouter()
@@ -26,10 +23,9 @@ export function HomeStart({
     try {
       const { sessionId } = await startPersonalisedSession({
         length: defaultLength,
-        domainFilter,
-        targetSubs: preview?.subs.map((s) => ({
-          domain: s.domain,
-          sub: s.sub,
+        targetTags: preview?.targets.map((tg) => ({
+          facet: tg.facet,
+          tag: tg.tag,
         })),
         levelRange: preview?.range
           ? { min: preview.range.min, max: preview.range.max }
@@ -48,7 +44,7 @@ export function HomeStart({
 
       <button
         type="button"
-        disabled={starting || !preview}
+        disabled={starting}
         onClick={start}
         className="self-start rounded-lg bg-white px-5 py-2 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200 disabled:opacity-60"
       >

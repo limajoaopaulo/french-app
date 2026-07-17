@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_pronA_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu connais ce film ? Oui, je ___ connais bien.",
+      "blankHint": null,
+      "translation": "Do you know this film? Yes, I know it well.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["le", "la", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COD masculin singulier : je le connais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Cette chanson est belle. J'aime beaucoup ___ écouter.",
+      "blankHint": null,
+      "translation": "This song is beautiful. I love listening to it.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["l'", "la", "lui", "en"],
+      "correct_index": 0,
+      "explanation": "COD féminin devant voyelle : je l'écoute.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Les enfants sont fatigués ? Oui, je vais ___ coucher.",
+      "blankHint": null,
+      "translation": "Are the children tired? Yes, I'm going to put them to bed.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["les", "leur", "y", "en"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : je vais les coucher.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu vois la tour Eiffel ? Oui, je ___ vois d'ici.",
+      "blankHint": null,
+      "translation": "Do you see the Eiffel Tower? Yes, I see it from here.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["la", "le", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COD féminin singulier : je la vois.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ton café, tu ___ prends avec du sucre ?",
+      "blankHint": null,
+      "translation": "Your coffee, do you take it with sugar?",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["le", "la", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD masculin singulier : tu le prends.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronA_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mes amis, je ___ invite à dîner ce soir.",
+      "blankHint": null,
+      "translation": "My friends, I'm inviting them to dinner tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["les", "leur", "lui", "en"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : je les invite.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce roman, je ___ ai déjà lu l'année dernière.",
+      "blankHint": null,
+      "translation": "This novel, I already read it last year.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["l'", "le", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COD masculin devant voyelle : je l'ai lu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tes lettres, je ___ ai postées ce matin.",
+      "blankHint": null,
+      "translation": "Your letters, I mailed them this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["les", "leur", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : je les ai postées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La vérité, tout le monde ___ connaît maintenant.",
+      "blankHint": null,
+      "translation": "The truth, everyone knows it now.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["la", "lui", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD féminin singulier : tout le monde la connaît.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce problème est difficile, mais nous allons ___ résoudre ensemble.",
+      "blankHint": null,
+      "translation": "This problem is difficult, but we're going to solve it together.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["le", "lui", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD masculin singulier : nous allons le résoudre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tes photos de vacances, tu peux ___ montrer aux autres ?",
+      "blankHint": null,
+      "translation": "Your holiday photos, can you show them to the others?",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["les", "leur", "en", "lui"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : tu peux les montrer.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronA_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette veste te va bien, tu devrais ___ acheter.",
+      "blankHint": null,
+      "translation": "This jacket suits you well, you should buy it.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["l'", "la", "lui", "en"],
+      "correct_index": 0,
+      "explanation": "COD féminin devant voyelle : tu devrais l'acheter.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronA_013",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces documents, le comptable ___ a vérifiés hier soir.",
+      "blankHint": null,
+      "translation": "These documents, the accountant checked them last night.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["les", "leur", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : le comptable les a vérifiés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_014",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Une telle occasion, il ne faut surtout pas ___ manquer.",
+      "blankHint": null,
+      "translation": "Such an opportunity, you must not miss it.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["la", "lui", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD féminin singulier : il ne faut pas la manquer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces arguments, l'avocat ___ a présentés avec brio.",
+      "blankHint": null,
+      "translation": "These arguments, the lawyer presented them brilliantly.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["les", "leur", "en", "lui"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : l'avocat les a présentés.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette décision, le conseil ___ a prise à l'unanimité.",
+      "blankHint": null,
+      "translation": "This decision, the board took it unanimously.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["l'", "la", "lui", "en"],
+      "correct_index": 0,
+      "explanation": "COD féminin devant voyelle : le conseil l'a prise.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce contrat, nous ___ signerons dès que possible.",
+      "blankHint": null,
+      "translation": "This contract, we'll sign it as soon as possible.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["le", "lui", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD masculin singulier : nous le signerons.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces erreurs, j'aurais dû ___ corriger avant l'envoi.",
+      "blankHint": null,
+      "translation": "These mistakes, I should have corrected them before sending.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["les", "leur", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : j'aurais dû les corriger.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu parles à ta sœur ? Oui, je ___ parle tous les jours.",
+      "blankHint": null,
+      "translation": "Do you talk to your sister? Yes, I talk to her every day.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["lui", "la", "le", "leur"],
+      "correct_index": 0,
+      "explanation": "COI singulier : je lui parle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'écris à mes parents et je ___ envoie des photos.",
+      "blankHint": null,
+      "translation": "I write to my parents and I send them photos.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "en"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : je leur envoie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le professeur explique la leçon aux élèves : il ___ explique bien.",
+      "blankHint": null,
+      "translation": "The teacher explains the lesson to the students: he explains it to them well.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : il leur explique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu téléphones à Paul ? Oui, je ___ téléphone ce soir.",
+      "blankHint": null,
+      "translation": "Are you calling Paul? Yes, I'm calling him tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "y"],
+      "correct_index": 0,
+      "explanation": "COI singulier : téléphoner à quelqu'un, je lui téléphone.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronA_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ma grand-mère aime les fleurs, alors je ___ offre un bouquet.",
+      "blankHint": null,
+      "translation": "My grandmother loves flowers, so I give her a bouquet.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["lui", "la", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : je lui offre un bouquet.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nos voisins sont gentils ; nous ___ disons toujours bonjour.",
+      "blankHint": null,
+      "translation": "Our neighbours are nice; we always say hello to them.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : nous leur disons bonjour.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce vendeur avait l'air compétent : je ___ ai demandé conseil.",
+      "blankHint": null,
+      "translation": "This salesperson seemed competent: I asked him for advice.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : demander à quelqu'un, je lui ai demandé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mes collègues avaient faim, donc je ___ ai apporté des sandwichs.",
+      "blankHint": null,
+      "translation": "My colleagues were hungry, so I brought them sandwiches.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : je leur ai apporté des sandwichs.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mon médecin m'a beaucoup aidé ; je ___ dois ma guérison.",
+      "blankHint": null,
+      "translation": "My doctor helped me a lot; I owe him my recovery.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : devoir à quelqu'un, je lui dois.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les clients se plaignent ; il faut ___ répondre rapidement.",
+      "blankHint": null,
+      "translation": "The customers are complaining; we must answer them quickly.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : répondre à quelqu'un, il faut leur répondre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette actrice cherchait un rôle ; le réalisateur ___ a proposé le premier rôle.",
+      "blankHint": null,
+      "translation": "This actress was looking for a role; the director offered her the lead.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["lui", "la", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : proposer à quelqu'un, le réalisateur lui a proposé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mes amis m'ont bien reçu, donc je ___ ai offert un cadeau en retour.",
+      "blankHint": null,
+      "translation": "My friends welcomed me warmly, so I gave them a gift in return.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "en"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : offrir à quelqu'un, je leur ai offert.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "À ces candidats, le jury ___ a accordé une seconde chance.",
+      "blankHint": null,
+      "translation": "To these candidates, the jury granted a second chance.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : accorder à quelqu'un, le jury leur a accordé.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce diplomate est expérimenté ; on ___ a confié une mission délicate.",
+      "blankHint": null,
+      "translation": "This diplomat is experienced; they entrusted him with a delicate mission.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : confier à quelqu'un, on lui a confié.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Aux actionnaires, la direction ___ a promis de meilleurs bénéfices.",
+      "blankHint": null,
+      "translation": "To the shareholders, management promised better profits.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : promettre à quelqu'un, la direction leur a promis.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce vieux professeur était admirable ; ses étudiants ___ vouaient un profond respect.",
+      "blankHint": null,
+      "translation": "This old professor was admirable; his students held a deep respect for him.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : vouer à quelqu'un, ses étudiants lui vouaient un respect.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces réfugiés étaient démunis ; l'association ___ a fourni un abri.",
+      "blankHint": null,
+      "translation": "These refugees were destitute; the charity provided them with shelter.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : fournir à quelqu'un, l'association leur a fourni un abri.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce ministre reste silencieux ; la presse ___ reproche son manque de transparence.",
+      "blankHint": null,
+      "translation": "This minister stays silent; the press criticises him for his lack of transparency.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : reprocher à quelqu'un, la presse lui reproche.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_037",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu vas à Paris cet été ? Oui, j'___ vais en juillet.",
+      "blankHint": null,
+      "translation": "Are you going to Paris this summer? Yes, I'm going there in July.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "« y » remplace un lieu : j'y vais.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronA_038",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu veux du café ? Oui, j'___ veux bien, merci.",
+      "blankHint": null,
+      "translation": "Do you want some coffee? Yes, I'd like some, thanks.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["en", "y", "le", "la"],
+      "correct_index": 0,
+      "explanation": "« en » remplace un partitif : j'en veux.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronA_039",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu penses à ton examen ? Oui, j'___ pense souvent.",
+      "blankHint": null,
+      "translation": "Are you thinking about your exam? Yes, I think about it often.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "penser à quelque chose : j'y pense.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_040",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Combien de frères as-tu ? J'___ ai deux.",
+      "blankHint": null,
+      "translation": "How many brothers do you have? I have two.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "leur"],
+      "correct_index": 0,
+      "explanation": "« en » avec une quantité : j'en ai deux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_041",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu habites à Lyon ? Oui, j'___ habite depuis un an.",
+      "blankHint": null,
+      "translation": "Do you live in Lyon? Yes, I've lived there for a year.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "la"],
+      "correct_index": 0,
+      "explanation": "« y » remplace un lieu : j'y habite.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_042",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu as besoin d'aide ? Oui, j'___ ai vraiment besoin.",
+      "blankHint": null,
+      "translation": "Do you need help? Yes, I really need some.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["en", "y", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "avoir besoin de : j'en ai besoin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_043",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce nouveau quartier ? Je m'___ suis habitué peu à peu.",
+      "blankHint": null,
+      "translation": "This new neighbourhood? I got used to it little by little.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "s'habituer à : je m'y suis habitué.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_044",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Des erreurs, tout le monde ___ fait de temps en temps.",
+      "blankHint": null,
+      "translation": "Mistakes, everyone makes some from time to time.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "la"],
+      "correct_index": 0,
+      "explanation": "« en » reprend « des erreurs » : tout le monde en fait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_045",
+      "format": "cloze",
+      "level": 3,
+      "cue": "À cette réunion importante, je ne peux malheureusement pas ___ assister.",
+      "blankHint": null,
+      "translation": "This important meeting, unfortunately I can't attend it.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "assister à : je ne peux pas y assister.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_046",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Des difficultés, il ___ a rencontré beaucoup pendant son voyage.",
+      "blankHint": null,
+      "translation": "Difficulties, he ran into a lot of them during his trip.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "leur"],
+      "correct_index": 0,
+      "explanation": "« en » reprend « des difficultés » : il en a rencontré beaucoup.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_047",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce projet me tient à cœur ; nous ___ travaillons depuis des mois.",
+      "blankHint": null,
+      "translation": "This project is close to my heart; we've been working on it for months.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "travailler à quelque chose : nous y travaillons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_048",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Du courage, il ___ faut beaucoup pour tout recommencer.",
+      "blankHint": null,
+      "translation": "Courage, you need a lot of it to start all over again.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["en", "y", "le", "la"],
+      "correct_index": 0,
+      "explanation": "« en » reprend « du courage » : il en faut beaucoup.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_049",
+      "format": "cloze",
+      "level": 4,
+      "cue": "À ce genre de remarques blessantes, je ne ___ prête aucune attention.",
+      "blankHint": null,
+      "translation": "To that kind of hurtful remark, I pay no attention.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "prêter attention à : je n'y prête aucune attention.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronA_050",
+      "format": "cloze",
+      "level": 4,
+      "cue": "De ses erreurs passées, il ___ tire aujourd'hui de précieuses leçons.",
+      "blankHint": null,
+      "translation": "From his past mistakes, he now draws valuable lessons.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "lui"],
+      "correct_index": 0,
+      "explanation": "tirer de : il en tire des leçons.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_051",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette hypothèse audacieuse, les chercheurs ___ ont longtemps réfléchi.",
+      "blankHint": null,
+      "translation": "This bold hypothesis, the researchers thought about it for a long time.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "la"],
+      "correct_index": 0,
+      "explanation": "réfléchir à : les chercheurs y ont réfléchi.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_052",
+      "format": "cloze",
+      "level": 4,
+      "cue": "De tels privilèges, peu de gens ___ bénéficient réellement.",
+      "blankHint": null,
+      "translation": "Such privileges, few people really benefit from them.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "leur"],
+      "correct_index": 0,
+      "explanation": "bénéficier de : peu de gens en bénéficient.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_053",
+      "format": "cloze",
+      "level": 4,
+      "cue": "À ce défi de taille, nous saurons ___ faire face ensemble.",
+      "blankHint": null,
+      "translation": "This major challenge, together we'll be able to face it.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "faire face à : nous saurons y faire face.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_054",
+      "format": "cloze",
+      "level": 4,
+      "cue": "De cette affaire embarrassante, la presse ___ a beaucoup parlé.",
+      "blankHint": null,
+      "translation": "This embarrassing affair, the press talked about it a lot.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["en", "y", "la", "lui"],
+      "correct_index": 0,
+      "explanation": "parler de : la presse en a parlé.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_055",
+      "format": "cloze",
+      "level": 5,
+      "cue": "À de telles compromissions, il refuse catégoriquement de ___ consentir.",
+      "blankHint": null,
+      "translation": "To such compromises, he categorically refuses to consent.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "register_formal", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "consentir à : il refuse d'y consentir.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_056",
+      "format": "cloze",
+      "level": 5,
+      "cue": "De ces manœuvres politiciennes, l'opinion publique ___ est désormais lassée.",
+      "blankHint": null,
+      "translation": "Of these political manoeuvres, public opinion is now weary.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["en", "y", "la", "lui"],
+      "correct_index": 0,
+      "explanation": "se lasser de : l'opinion s'en est lassée.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_057",
+      "format": "cloze",
+      "level": 5,
+      "cue": "À l'aboutissement de ce projet ambitieux, l'équipe ___ a consacré des années.",
+      "blankHint": null,
+      "translation": "To the completion of this ambitious project, the team devoted years.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "consacrer à : l'équipe y a consacré des années.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_058",
+      "format": "cloze",
+      "level": 5,
+      "cue": "De son autorité, ce dirigeant ___ a manifestement abusé sans vergogne.",
+      "blankHint": null,
+      "translation": "His authority, this leader clearly abused it shamelessly.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["en", "y", "le", "la"],
+      "correct_index": 0,
+      "explanation": "abuser de : il en a abusé.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_059",
+      "format": "cloze",
+      "level": 5,
+      "cue": "À ces valeurs héritées de sa famille, elle ___ tient plus qu'à tout.",
+      "blankHint": null,
+      "translation": "These values inherited from her family, she cherishes them above all.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["y", "en", "la", "le"],
+      "correct_index": 0,
+      "explanation": "tenir à : elle y tient plus qu'à tout.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronA_060",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Des conséquences de cette crise, nul ne saurait ___ mesurer pleinement l'ampleur.",
+      "blankHint": null,
+      "translation": "The consequences of this crisis, no one could fully measure their extent.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "la"],
+      "correct_index": 0,
+      "explanation": "« en » reprend « des conséquences » : nul ne saurait en mesurer l'ampleur.",
+      "register": "formal"
+    }
+  ]
+}

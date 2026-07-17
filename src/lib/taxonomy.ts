@@ -1,88 +1,111 @@
-import frRaw from "@/data/fr/taxonomy.json"
-import ptRaw from "@/data/pt/taxonomy.json"
+import frFacets from "@/data/fr/facets.json"
+import ptFacets from "@/data/pt/facets.json"
 
-export type Domain = "grammar" | "vocabulary"
 export type LanguageCode = "fr" | "pt"
 
-export interface SubInfo {
+// -----------------------------------------------------------------------------
+// Facet/tag taxonomy (new model). Two facets: grammar + topic. Each tag carries
+// a frequency (1-5) used to weight the linear curriculum. Loaded from
+// src/data/<lang>/facets.json.
+// -----------------------------------------------------------------------------
+
+export type Facet = "grammar" | "topic"
+
+export interface TagInfo {
   key: string
   label: string
   shortLabel: string
-  hint: string
-  patterns: string[]
+  frequency: number
 }
 
-export interface DomainInfo {
-  key: Domain
+export interface FacetInfo {
+  key: Facet
   label: string
   color: string
-  subs: SubInfo[]
+  tags: TagInfo[]
 }
 
-export type DomainsByKey = Record<Domain, DomainInfo>
+export type FacetsByKey = Record<Facet, FacetInfo>
 
-interface RawDomain {
+interface RawFacet {
   label: string
   color: string
-  subs: Record<
-    string,
-    { label: string; shortLabel?: string; hint: string; patterns?: string[] }
-  >
+  tags: Record<string, { label: string; shortLabel?: string; frequency?: number }>
 }
 
-interface RawTaxonomy {
-  domains: { grammar: RawDomain; vocabulary: RawDomain }
-  default_active: { grammar: string[]; vocabulary: string[] }
+interface RawFacetTaxonomy {
+  facets: { grammar: RawFacet; topic: RawFacet }
+  default_active: { grammar: string[]; topic: string[] }
 }
 
-const RAW: Record<LanguageCode, RawTaxonomy> = {
-  fr: frRaw as RawTaxonomy,
-  pt: ptRaw as RawTaxonomy,
+const FACET_RAW: Record<LanguageCode, RawFacetTaxonomy> = {
+  fr: frFacets as RawFacetTaxonomy,
+  pt: ptFacets as RawFacetTaxonomy,
 }
 
-function toDomainInfo(key: Domain, d: RawDomain): DomainInfo {
-  const subs: SubInfo[] = Object.entries(d.subs).map(([k, v]) => ({
+export const FACETS: readonly Facet[] = ["grammar", "topic"] as const
+
+function toFacetInfo(key: Facet, f: RawFacet): FacetInfo {
+  const tags: TagInfo[] = Object.entries(f.tags).map(([k, v]) => ({
     key: k,
     label: v.label,
     shortLabel: v.shortLabel ?? v.label,
-    hint: v.hint,
-    patterns: v.patterns ?? [],
+    frequency: v.frequency ?? 3,
   }))
-  return { key, label: d.label, color: d.color, subs }
+  return { key, label: f.label, color: f.color, tags }
 }
 
-export function getDomains(language: LanguageCode): DomainsByKey {
-  const raw = RAW[language]
+export function getFacets(language: LanguageCode): FacetsByKey {
+  const raw = FACET_RAW[language]
   return {
-    grammar: toDomainInfo("grammar", raw.domains.grammar),
-    vocabulary: toDomainInfo("vocabulary", raw.domains.vocabulary),
+    grammar: toFacetInfo("grammar", raw.facets.grammar),
+    topic: toFacetInfo("topic", raw.facets.topic),
   }
 }
 
-export function getDefaultActive(language: LanguageCode): {
-  grammar: readonly string[]
-  vocabulary: readonly string[]
-} {
-  const raw = RAW[language]
-  return {
-    grammar: raw.default_active.grammar,
-    vocabulary: raw.default_active.vocabulary,
-  }
-}
-
-export function allSubs(
+export function allTags(
   language: LanguageCode,
-): Array<{ domain: Domain; sub: string; label: string; hint: string }> {
-  const domains = getDomains(language)
-  return (Object.keys(domains) as Domain[]).flatMap((d) =>
-    domains[d].subs.map((s) => ({ domain: d, sub: s.key, label: s.label, hint: s.hint })),
+): Array<{ facet: Facet; tag: string; label: string; shortLabel: string; frequency: number }> {
+  const facets = getFacets(language)
+  return FACETS.flatMap((f) =>
+    facets[f].tags.map((t) => ({
+      facet: f,
+      tag: t.key,
+      label: t.label,
+      shortLabel: t.shortLabel,
+      frequency: t.frequency,
+    })),
   )
 }
 
-export function isDefaultActive(
-  language: LanguageCode,
-  domain: Domain,
-  sub: string,
-): boolean {
-  return (getDefaultActive(language)[domain] as readonly string[]).includes(sub)
+function tagInfoMap(language: LanguageCode): Map<string, TagInfo & { facet: Facet }> {
+  const facets = getFacets(language)
+  const m = new Map<string, TagInfo & { facet: Facet }>()
+  for (const f of FACETS) {
+    for (const t of facets[f].tags) m.set(`${f}::${t.key}`, { ...t, facet: f })
+  }
+  return m
+}
+
+const TAG_INFO_CACHE: Partial<Record<LanguageCode, Map<string, TagInfo & { facet: Facet }>>> = {}
+function tagInfo(language: LanguageCode, facet: Facet, tag: string): (TagInfo & { facet: Facet }) | undefined {
+  const cache = (TAG_INFO_CACHE[language] ??= tagInfoMap(language))
+  return cache.get(`${facet}::${tag}`)
+}
+
+export function frequencyOf(language: LanguageCode, facet: Facet, tag: string): number {
+  return tagInfo(language, facet, tag)?.frequency ?? 3
+}
+
+export function tagLabel(language: LanguageCode, facet: Facet, tag: string): string {
+  return tagInfo(language, facet, tag)?.label ?? tag
+}
+
+export function tagShortLabel(language: LanguageCode, facet: Facet, tag: string): string {
+  return tagInfo(language, facet, tag)?.shortLabel ?? tag
+}
+
+export function tagExists(language: LanguageCode, facet: string, tag: string): boolean {
+  if (facet !== "grammar" && facet !== "topic") return false
+  return tagInfo(language, facet, tag) !== undefined
 }

@@ -1,0 +1,814 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vHealth_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "J'ai mal à la ___ ; je vais prendre un cachet.",
+      "blankHint": null,
+      "translation": "I have a headache; I'm going to take a pill.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["tête", "main", "jambe", "oreille"],
+      "correct_index": 0,
+      "explanation": "Quand on a mal au-dessus du cou, on a mal à la tête.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour voir, on utilise les ___.",
+      "blankHint": null,
+      "translation": "To see, we use our eyes.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["yeux", "oreilles", "mains", "pieds"],
+      "correct_index": 0,
+      "explanation": "On voit avec les yeux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour marcher, on a besoin de ses deux ___.",
+      "blankHint": null,
+      "translation": "To walk, we need our two legs.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["jambes", "bras", "mains", "doigts"],
+      "correct_index": 0,
+      "explanation": "On marche avec les jambes.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je porte le sac lourd avec mes deux ___.",
+      "blankHint": null,
+      "translation": "I carry the heavy bag with my two arms.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["bras", "jambes", "yeux", "oreilles"],
+      "correct_index": 0,
+      "explanation": "On porte un objet lourd avec les bras.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "On entend la musique avec les ___.",
+      "blankHint": null,
+      "translation": "We hear music with our ears.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["oreilles", "yeux", "dents", "doigts"],
+      "correct_index": 0,
+      "explanation": "On entend les sons avec les oreilles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il a cinq ___ à chaque main.",
+      "blankHint": null,
+      "translation": "He has five fingers on each hand.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["doigts", "orteils", "bras", "genoux"],
+      "correct_index": 0,
+      "explanation": "La main se termine par cinq doigts.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Quand je cours trop vite, mon ___ bat très fort.",
+      "blankHint": null,
+      "translation": "When I run too fast, my heart beats very hard.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["cœur", "ventre", "dos", "bras"],
+      "correct_index": 0,
+      "explanation": "L'organe qui bat dans la poitrine est le cœur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai mangé trop de gâteau et maintenant j'ai mal au ___.",
+      "blankHint": null,
+      "translation": "I ate too much cake and now my stomach hurts.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["ventre", "genou", "coude", "poignet"],
+      "correct_index": 0,
+      "explanation": "Après avoir trop mangé, on a mal au ventre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Après une longue journée assis, j'ai mal au ___.",
+      "blankHint": null,
+      "translation": "After a long day sitting down, my back hurts.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["dos", "nez", "menton", "front"],
+      "correct_index": 0,
+      "explanation": "Rester assis longtemps fait mal au dos.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le dentiste soigne les ___ malades.",
+      "blankHint": null,
+      "translation": "The dentist treats sick teeth.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["dents", "ongles", "cheveux", "cils"],
+      "correct_index": 0,
+      "explanation": "Le dentiste s'occupe des dents.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour rester en bonne ___, il faut manger équilibré et bouger.",
+      "blankHint": null,
+      "translation": "To stay in good health, you must eat a balanced diet and move.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["santé", "maladie", "fièvre", "douleur"],
+      "correct_index": 0,
+      "explanation": "« Être en bonne santé » veut dire ne pas être malade.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il fait de la musculation pour développer ses ___.",
+      "blankHint": null,
+      "translation": "He does weight training to develop his muscles.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["muscles", "cheveux", "ongles", "cils"],
+      "correct_index": 0,
+      "explanation": "Le sport de force développe les muscles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le médecin a écouté mes ___ avec un stéthoscope pour vérifier ma respiration.",
+      "blankHint": null,
+      "translation": "The doctor listened to my lungs with a stethoscope to check my breathing.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["poumons", "reins", "muscles", "veines"],
+      "correct_index": 0,
+      "explanation": "La respiration se fait grâce aux poumons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après sa chute, la radio a montré qu'il s'était cassé un ___.",
+      "blankHint": null,
+      "translation": "After his fall, the X-ray showed that he had broken a bone.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["os", "muscle", "nerf", "tendon"],
+      "correct_index": 0,
+      "explanation": "Lors d'une fracture, on se casse un os.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le ___ contrôle la mémoire et les mouvements du corps.",
+      "blankHint": null,
+      "translation": "The brain controls memory and the body's movements.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["cerveau", "cœur", "foie", "rein"],
+      "correct_index": 0,
+      "explanation": "L'organe de la pensée et de la mémoire est le cerveau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "L'alcool consommé en excès abîme le ___.",
+      "blankHint": null,
+      "translation": "Alcohol consumed in excess damages the liver.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["foie", "cœur", "poumon", "estomac"],
+      "correct_index": 0,
+      "explanation": "L'organe abîmé par l'alcool est le foie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le soleil peut brûler la ___ si on ne met pas de crème.",
+      "blankHint": null,
+      "translation": "The sun can burn the skin if you don't put on cream.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["peau", "os", "dent", "ongle"],
+      "correct_index": 0,
+      "explanation": "L'enveloppe du corps que le soleil brûle est la peau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "En courant, il s'est tordu la ___ et ne peut plus marcher.",
+      "blankHint": null,
+      "translation": "While running, he twisted his ankle and can no longer walk.",
+      "tags": [
+        { "facet": "topic", "tag": "body_health", "role": "focus" }
+      ],
+      "options": ["cheville", "épaule", "poignet", "coude"],
+      "correct_index": 0,
+      "explanation": "L'articulation entre la jambe et le pied est la cheville.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai de la ___ : mon thermomètre indique 39 degrés.",
+      "blankHint": null,
+      "translation": "I have a fever: my thermometer shows 39 degrees.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["fièvre", "toux", "grippe", "douleur"],
+      "correct_index": 0,
+      "explanation": "Une température élevée s'appelle la fièvre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ___ beaucoup parce que j'ai attrapé froid.",
+      "blankHint": null,
+      "translation": "I cough a lot because I caught a cold.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["tousse", "guéris", "respire", "avale"],
+      "correct_index": 0,
+      "explanation": "Quand la gorge est irritée, on tousse.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le médecin me donne une ___ pour acheter des médicaments à la pharmacie.",
+      "blankHint": null,
+      "translation": "The doctor gives me a prescription to buy medicine at the pharmacy.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["ordonnance", "piqûre", "radio", "opération"],
+      "correct_index": 0,
+      "explanation": "Le papier pour acheter des médicaments est une ordonnance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai un gros ___ : je tousse et j'ai le nez qui coule.",
+      "blankHint": null,
+      "translation": "I have a bad cold: I'm coughing and my nose is running.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["rhume", "bras", "repas", "sommeil"],
+      "correct_index": 0,
+      "explanation": "Le nez qui coule et la toux sont les signes d'un rhume.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le pharmacien me conseille de prendre ce ___ trois fois par jour.",
+      "blankHint": null,
+      "translation": "The pharmacist advises me to take this medicine three times a day.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["médicament", "thermomètre", "pansement", "bandage"],
+      "correct_index": 0,
+      "explanation": "Ce que l'on prend pour se soigner est un médicament.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai mal à la ___ et j'ai du mal à avaler.",
+      "blankHint": null,
+      "translation": "My throat hurts and I have trouble swallowing.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["gorge", "jambe", "main", "oreille"],
+      "correct_index": 0,
+      "explanation": "Quand avaler fait mal, on a mal à la gorge.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le médecin m'a prescrit des ___ à prendre matin et soir.",
+      "blankHint": null,
+      "translation": "The doctor prescribed me tablets to take morning and evening.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["comprimés", "béquilles", "radios", "ordonnances"],
+      "correct_index": 0,
+      "explanation": "Les médicaments solides que l'on avale sont des comprimés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après l'accident, on l'a emmené aux ___ de l'hôpital.",
+      "blankHint": null,
+      "translation": "After the accident, he was taken to the hospital emergency room.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["urgences", "consultations", "ordonnances", "symptômes"],
+      "correct_index": 0,
+      "explanation": "En cas d'accident grave, on va aux urgences.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour connaître la cause de la douleur, le médecin a demandé une prise de ___.",
+      "blankHint": null,
+      "translation": "To find the cause of the pain, the doctor ordered a blood test.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["sang", "tête", "poids", "tension"],
+      "correct_index": 0,
+      "explanation": "On dit « une prise de sang » pour analyser le sang.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Depuis ce matin, j'ai des ___ et l'envie de vomir.",
+      "blankHint": null,
+      "translation": "Since this morning, I've had nausea and the urge to vomit.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["nausées", "courbatures", "boutons", "frissons"],
+      "correct_index": 0,
+      "explanation": "L'envie de vomir s'accompagne de nausées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le médecin ausculte le patient puis établit son ___.",
+      "blankHint": null,
+      "translation": "The doctor examines the patient and then makes his diagnosis.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["diagnostic", "ordonnance", "rendez-vous", "thermomètre"],
+      "correct_index": 0,
+      "explanation": "L'identification de la maladie est le diagnostic.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a de la fièvre et des ___ dans tout le corps ; c'est sûrement la grippe.",
+      "blankHint": null,
+      "translation": "She has a fever and aches all over her body; it's probably the flu.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["courbatures", "béquilles", "pansements", "seringues"],
+      "correct_index": 0,
+      "explanation": "Les douleurs musculaires diffuses sont des courbatures.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le médecin soupçonne une ___ et prescrit aussitôt des antibiotiques.",
+      "blankHint": null,
+      "translation": "The doctor suspects an infection and immediately prescribes antibiotics.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["infection", "guérison", "cicatrice", "consultation"],
+      "correct_index": 0,
+      "explanation": "Les antibiotiques traitent une infection.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Suite à ses ___ respiratoires, on lui a fait passer une radiographie des poumons.",
+      "blankHint": null,
+      "translation": "Following his respiratory problems, they had him take a chest X-ray.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["troubles", "remèdes", "soins", "vaccins"],
+      "correct_index": 0,
+      "explanation": "Un dysfonctionnement médical se nomme un trouble.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le patient souffre d'une maladie ___ qui dure depuis des années.",
+      "blankHint": null,
+      "translation": "The patient suffers from a chronic illness that has lasted for years.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["chronique", "passagère", "bénigne", "guérie"],
+      "correct_index": 0,
+      "explanation": "Une maladie qui dure longtemps est chronique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Avant l'opération, l'anesthésiste lui administre une ___ générale.",
+      "blankHint": null,
+      "translation": "Before the operation, the anesthetist gives him a general anesthetic.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["anesthésie", "ordonnance", "radiographie", "perfusion"],
+      "correct_index": 0,
+      "explanation": "Pour endormir le patient, on pratique une anesthésie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le malade doit suivre un ___ intensif pendant plusieurs semaines.",
+      "blankHint": null,
+      "translation": "The patient must follow an intensive treatment for several weeks.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["traitement", "symptôme", "diagnostic", "malaise"],
+      "correct_index": 0,
+      "explanation": "L'ensemble des soins prescrits est un traitement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après une nette amélioration, il a fait une ___ et la maladie est revenue.",
+      "blankHint": null,
+      "translation": "After a clear improvement, he had a relapse and the illness came back.",
+      "tags": [
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "focus" }
+      ],
+      "options": ["rechute", "guérison", "ordonnance", "consultation"],
+      "correct_index": 0,
+      "explanation": "Le retour de la maladie après une amélioration est une rechute.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_037",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je voudrais réserver une ___ d'hôtel pour deux nuits.",
+      "blankHint": null,
+      "translation": "I would like to book a hotel room for two nights.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["chambre", "valise", "gare", "plage"],
+      "correct_index": 0,
+      "explanation": "À l'hôtel, on réserve une chambre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_038",
+      "format": "cloze",
+      "level": 2,
+      "cue": "N'oublie pas ton ___ pour prendre l'avion à l'étranger.",
+      "blankHint": null,
+      "translation": "Don't forget your passport to take the plane abroad.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["passeport", "parapluie", "oreiller", "cahier"],
+      "correct_index": 0,
+      "explanation": "Pour voyager à l'étranger, il faut un passeport.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_039",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai acheté un ___ aller-retour pour Paris.",
+      "blankHint": null,
+      "translation": "I bought a round-trip ticket to Paris.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["billet", "sac", "menu", "journal"],
+      "correct_index": 0,
+      "explanation": "Pour voyager en train ou en avion, on achète un billet.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_040",
+      "format": "cloze",
+      "level": 2,
+      "cue": "À l'aéroport, je dois enregistrer ma ___ avant le vol.",
+      "blankHint": null,
+      "translation": "At the airport, I have to check in my suitcase before the flight.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["valise", "chambre", "voiture", "chaise"],
+      "correct_index": 0,
+      "explanation": "Le bagage que l'on enregistre est la valise.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_041",
+      "format": "cloze",
+      "level": 2,
+      "cue": "L'avion décolle de l'___ à huit heures du matin.",
+      "blankHint": null,
+      "translation": "The plane takes off from the airport at eight in the morning.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["aéroport", "hôtel", "restaurant", "magasin"],
+      "correct_index": 0,
+      "explanation": "Les avions décollent d'un aéroport.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_042",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour aller en ville depuis l'hôtel, je prends un ___.",
+      "blankHint": null,
+      "translation": "To get to town from the hotel, I take a taxi.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["taxi", "guichet", "séjour", "quai"],
+      "correct_index": 0,
+      "explanation": "Pour un court trajet en ville, on prend un taxi.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_043",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mon vol a du ___ de deux heures à cause de la neige.",
+      "blankHint": null,
+      "translation": "My flight is two hours late because of the snow.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["retard", "billet", "siège", "hublot"],
+      "correct_index": 0,
+      "explanation": "Quand un vol part en retard, on parle d'un retard.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_044",
+      "format": "cloze",
+      "level": 3,
+      "cue": "À la réception, je dois présenter ma ___ de réservation.",
+      "blankHint": null,
+      "translation": "At the front desk, I have to show my booking confirmation.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["confirmation", "valise", "télécommande", "serviette"],
+      "correct_index": 0,
+      "explanation": "Le document qui prouve la réservation est la confirmation.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_045",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si je change d'avis, l'___ de la réservation est gratuite avant 18 heures.",
+      "blankHint": null,
+      "translation": "If I change my mind, cancelling the booking is free before 6 p.m.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["annulation", "arrivée", "chambre", "valise"],
+      "correct_index": 0,
+      "explanation": "Renoncer à une réservation, c'est une annulation.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_046",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous avons pris une chambre avec ___ sur la mer.",
+      "blankHint": null,
+      "translation": "We took a room with a view of the sea.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["vue", "clé", "porte", "lit"],
+      "correct_index": 0,
+      "explanation": "Ce que l'on voit depuis la fenêtre est la vue.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_047",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mon billet n'est pas direct : il y a une ___ à Lisbonne.",
+      "blankHint": null,
+      "translation": "My ticket isn't direct: there's a stopover in Lisbon.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["escale", "chambre", "valise", "réception"],
+      "correct_index": 0,
+      "explanation": "Un arrêt entre deux vols s'appelle une escale.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_048",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le réceptionniste m'a donné la ___ de ma chambre au troisième étage.",
+      "blankHint": null,
+      "translation": "The receptionist gave me the key to my room on the third floor.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["clé", "valise", "facture", "réservation"],
+      "correct_index": 0,
+      "explanation": "Pour ouvrir la porte de la chambre, il faut la clé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_049",
+      "format": "cloze",
+      "level": 4,
+      "cue": "À cause d'une grève des pilotes, tous les vols ont été ___.",
+      "blankHint": null,
+      "translation": "Because of a pilots' strike, all the flights were cancelled.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["annulés", "réservés", "confirmés", "embarqués"],
+      "correct_index": 0,
+      "explanation": "Un vol supprimé est un vol annulé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_050",
+      "format": "cloze",
+      "level": 4,
+      "cue": "J'ai souscrit une ___ voyage au cas où je devrais annuler mon séjour.",
+      "blankHint": null,
+      "translation": "I took out travel insurance in case I have to cancel my stay.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["assurance", "réservation", "excursion", "réception"],
+      "correct_index": 0,
+      "explanation": "Pour être protégé en cas de problème, on prend une assurance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_051",
+      "format": "cloze",
+      "level": 4,
+      "cue": "En basse ___, les hôtels baissent leurs prix pour attirer les touristes.",
+      "blankHint": null,
+      "translation": "In low season, hotels lower their prices to attract tourists.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["saison", "chambre", "classe", "catégorie"],
+      "correct_index": 0,
+      "explanation": "La période de l'année pour voyager est la saison.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_052",
+      "format": "cloze",
+      "level": 4,
+      "cue": "L'agence m'a accordé un ___ complet car l'hôtel était fermé.",
+      "blankHint": null,
+      "translation": "The agency granted me a full refund because the hotel was closed.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["remboursement", "itinéraire", "hébergement", "acompte"],
+      "correct_index": 0,
+      "explanation": "Rendre l'argent payé, c'est un remboursement.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_053",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Avant de partir, j'ai versé un ___ de 30 % pour garantir la réservation.",
+      "blankHint": null,
+      "translation": "Before leaving, I paid a 30% deposit to secure the booking.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["acompte", "remboursement", "pourboire", "forfait"],
+      "correct_index": 0,
+      "explanation": "La somme payée d'avance sur un total est un acompte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vHealth_054",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce voyage organisé comprend le vol, l'___ et les repas dans un seul prix.",
+      "blankHint": null,
+      "translation": "This package tour includes the flight, accommodation and meals in a single price.",
+      "tags": [
+        { "facet": "topic", "tag": "travel_booking", "role": "focus" }
+      ],
+      "options": ["hébergement", "embarquement", "itinéraire", "décalage"],
+      "correct_index": 0,
+      "explanation": "Le logement pendant un voyage est l'hébergement.",
+      "register": "neutral"
+    }
+  ]
+}

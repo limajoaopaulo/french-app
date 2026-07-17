@@ -4,37 +4,47 @@ import { resolve } from "node:path"
 import { PrismaClient } from "../src/generated/prisma/client"
 import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3"
 
+interface TagRef {
+  facet: "grammar" | "topic"
+  tag: string
+  role: "focus" | "context"
+}
+
+// New tag-format question (FR reauthored). Legacy fields are optional so the
+// same loader still ingests the untouched PT bank.
 interface SeedQuestion {
   id: string
-  domain: string
-  sub: string
   level: number
-  pattern: string
-  counterpart?: string
-  cue_type: string
   cue: string
   options: string[]
   correct_index: number
   explanation: string
   register?: string
-}
-
-interface Taxonomy {
-  domains: Record<
-    string,
-    {
-      label: string
-      color: string
-      subs: Record<string, { label: string; hint: string; shortLabel?: string; patterns?: string[] }>
-    }
-  >
-  default_active: Record<string, string[]>
+  // new format
+  format?: string
+  blankHint?: string
+  translation?: string
+  tags?: TagRef[]
+  // legacy format (derived into tags below)
+  domain?: string
+  sub?: string
+  cue_type?: string
 }
 
 const LANGUAGES: Array<{ code: string; name: string }> = [
   { code: "fr", name: "Français" },
   { code: "pt", name: "Português" },
 ]
+
+// Derive tags from a legacy question: its single (domain, sub) → one focus tag.
+function tagsFor(q: SeedQuestion): TagRef[] {
+  if (q.tags && q.tags.length > 0) return q.tags
+  if (q.domain && q.sub) {
+    const facet = q.domain === "grammar" ? "grammar" : "topic"
+    return [{ facet, tag: q.sub, role: "focus" }]
+  }
+  return []
+}
 
 async function main() {
   const url = process.env.DATABASE_URL
@@ -43,72 +53,71 @@ async function main() {
   const prisma = new PrismaClient({ adapter })
 
   try {
-    let questionsInserted = 0
-    let questionsUpdated = 0
-    let totalLanguages = 0
+    let inserted = 0
+    let updated = 0
+    let tagRows = 0
 
     for (const lang of LANGUAGES) {
-      // Upsert language row.
       const langRow = await prisma.language.upsert({
         where: { code: lang.code },
         update: { name: lang.name },
         create: { code: lang.code, name: lang.name },
       })
-      totalLanguages++
 
-      const taxonomy = readJson<Taxonomy>(`src/data/${lang.code}/taxonomy.json`)
       const seed = readJson<{ questions: SeedQuestion[] }>(
         `src/data/${lang.code}/seed.json`,
       )
 
       for (const q of seed.questions) {
+        const externalId = `${lang.code}:${q.id}`
+        const tags = tagsFor(q)
         const data = {
-          externalId: `${lang.code}:${q.id}`,
+          externalId,
           languageId: langRow.id,
-          domain: q.domain,
-          sub: q.sub,
           level: q.level,
-          pattern: q.pattern,
-          counterpart: q.counterpart ?? null,
-          cueType: q.cue_type,
+          format: q.format ?? q.cue_type ?? "cloze",
           cue: q.cue,
+          blankHint: q.blankHint ?? null,
+          translation: q.translation ?? null,
           options: JSON.stringify(q.options),
           correctIndex: q.correct_index,
           explanation: q.explanation,
           register: q.register ?? null,
           source: "seed",
-        } as const
+        }
 
         const existing = await prisma.question.findUnique({
-          where: { externalId: data.externalId },
+          where: { externalId },
+          select: { id: true },
         })
+
+        let questionId: number
         if (existing) {
           await prisma.question.update({ where: { id: existing.id }, data })
-          questionsUpdated++
+          questionId = existing.id
+          updated++
         } else {
-          await prisma.question.create({ data })
-          questionsInserted++
+          const created = await prisma.question.create({ data, select: { id: true } })
+          questionId = created.id
+          inserted++
+        }
+
+        // Idempotent tag refresh: drop + recreate this question's tags.
+        await prisma.questionTag.deleteMany({ where: { questionId } })
+        if (tags.length > 0) {
+          await prisma.questionTag.createMany({
+            data: tags.map((t) => ({ questionId, facet: t.facet, tag: t.tag, role: t.role })),
+          })
+          tagRows += tags.length
         }
       }
 
-      // Validate taxonomy structure (domain/sub/pattern keys exist) — sanity log.
-      let subCount = 0
-      let patternCount = 0
-      for (const [, dv] of Object.entries(taxonomy.domains)) {
-        for (const [, sv] of Object.entries(dv.subs)) {
-          subCount++
-          patternCount += sv.patterns?.length ?? 0
-        }
-      }
-      console.log(
-        `[${lang.code}] taxonomy: ${subCount} subs, ${patternCount} patterns`,
-      )
+      console.log(`[${lang.code}] ${seed.questions.length} questions processed`)
     }
 
-    const totalQuestions = await prisma.question.count()
-    console.log(`Languages: ${totalLanguages}`)
+    const total = await prisma.question.count()
     console.log(
-      `Questions: ${totalQuestions} total (${questionsInserted} new, ${questionsUpdated} updated)`,
+      `Questions: ${total} total (${inserted} new, ${updated} updated); tag rows written: ${tagRows}`,
     )
     console.log("Seed complete.")
   } finally {

@@ -1,0 +1,484 @@
+{
+  "questions": [
+    {
+      "id": "fr_w1_art_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je cherche ___ gare, s'il vous plaît.",
+      "blankHint": null,
+      "translation": "I'm looking for the train station, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["la", "le", "une", "des"],
+      "correct_index": 0,
+      "explanation": "« Gare » est un nom féminin singulier connu : article défini la.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il y a ___ chat sur le canapé.",
+      "blankHint": null,
+      "translation": "There is a cat on the sofa.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["un", "le", "une", "des"],
+      "correct_index": 0,
+      "explanation": "On introduit un élément nouveau masculin : article indéfini un.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'aime beaucoup ___ films italiens.",
+      "blankHint": null,
+      "translation": "I really like Italian films.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["les", "des", "le", "de"],
+      "correct_index": 0,
+      "explanation": "Après « aimer », on parle en général : article défini pluriel les.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle achète ___ robe pour le mariage.",
+      "blankHint": null,
+      "translation": "She's buying a dress for the wedding.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["une", "la", "un", "des"],
+      "correct_index": 0,
+      "explanation": "Un élément nouveau féminin singulier : article indéfini une.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_005",
+      "format": "cloze",
+      "level": 3,
+      "cue": "___ enfants doivent respecter les règles de l'école.",
+      "blankHint": null,
+      "translation": "Children must respect the rules of the school.",
+      "tags": [
+        { "facet": "grammar", "tag": "articles_definis_indefinis", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["Les", "Des", "Le", "De"],
+      "correct_index": 0,
+      "explanation": "Généralité et catégorie entière : article défini pluriel les.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je voudrais ___ eau, s'il vous plaît.",
+      "blankHint": null,
+      "translation": "I would like some water, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["de l'", "la", "une", "du"],
+      "correct_index": 0,
+      "explanation": "Partitif devant un nom féminin commençant par une voyelle : de l'eau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Au petit-déjeuner, je prends ___ café et du pain.",
+      "blankHint": null,
+      "translation": "At breakfast, I have some coffee and some bread.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["du", "de la", "le", "un"],
+      "correct_index": 0,
+      "explanation": "Partitif devant un nom masculin : du café.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il faut ajouter ___ farine dans la pâte.",
+      "blankHint": null,
+      "translation": "You need to add some flour to the dough.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["de la", "du", "de l'", "des"],
+      "correct_index": 0,
+      "explanation": "Partitif devant un nom féminin par consonne : de la farine.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce sportif a ___ courage et beaucoup de volonté.",
+      "blankHint": null,
+      "translation": "This athlete has courage and a lot of willpower.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["du", "de la", "le", "des"],
+      "correct_index": 0,
+      "explanation": "Partitif abstrait devant un nom masculin : du courage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour la salade, achète ___ huile et des tomates.",
+      "blankHint": null,
+      "translation": "For the salad, buy some oil and some tomatoes.",
+      "tags": [
+        { "facet": "grammar", "tag": "article_partitif", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["de l'", "de la", "du", "la"],
+      "correct_index": 0,
+      "explanation": "Partitif devant un nom féminin à voyelle : de l'huile.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_011",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Désolé, je n'ai pas ___ monnaie sur moi.",
+      "blankHint": null,
+      "translation": "Sorry, I don't have any change on me.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["de", "de la", "la", "une"],
+      "correct_index": 0,
+      "explanation": "Après une négation, le partitif devient de : pas de monnaie.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il n'y a plus ___ lait dans le frigo.",
+      "blankHint": null,
+      "translation": "There's no more milk in the fridge.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["de", "du", "le", "de la"],
+      "correct_index": 0,
+      "explanation": "Après « ne... plus », le partitif se réduit à de : plus de lait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_013",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ne bois jamais ___ alcool le midi.",
+      "blankHint": null,
+      "translation": "I never drink alcohol at lunchtime.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["d'", "de l'", "de la", "l'"],
+      "correct_index": 0,
+      "explanation": "Après négation, de s'élide devant voyelle : jamais d'alcool.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette entreprise n'offre pas ___ formation à ses stagiaires.",
+      "blankHint": null,
+      "translation": "This company doesn't offer any training to its interns.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["de", "de la", "une", "des"],
+      "correct_index": 0,
+      "explanation": "Négation d'un partitif féminin : pas de formation.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous n'avons pas ___ nouvelles de lui depuis lundi.",
+      "blankHint": null,
+      "translation": "We haven't had any news from him since Monday.",
+      "tags": [
+        { "facet": "grammar", "tag": "de_apres_negation", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["de", "des", "les", "de la"],
+      "correct_index": 0,
+      "explanation": "Après négation, des devient de au pluriel : pas de nouvelles.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_016",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ comprends pas la question.",
+      "blankHint": null,
+      "translation": "I don't understand the question.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["ne", "n'", "pas", "ni"],
+      "correct_index": 0,
+      "explanation": "Devant une consonne, la négation s'écrit ne : je ne comprends pas.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_017",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle n'habite ___ à Lyon, elle a déménagé.",
+      "blankHint": null,
+      "translation": "She doesn't live in Lyon anymore, she moved.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "Arrêt d'une action habituelle : ne... plus.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_018",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il ne prend ___ le bus pour aller au travail.",
+      "blankHint": null,
+      "translation": "He never takes the bus to go to work.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["jamais", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "Fréquence nulle : ne... jamais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous n'avons ___ reçu votre e-mail hier.",
+      "blankHint": null,
+      "translation": "We did not receive your email yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["pas", "plus", "rien", "personne"],
+      "correct_index": 0,
+      "explanation": "Au passé composé, pas se place après l'auxiliaire : n'avons pas reçu.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w1_art_020",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Depuis l'accident, je ne conduis ___ la nuit.",
+      "blankHint": null,
+      "translation": "Since the accident, I never drive at night anymore.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["plus jamais", "pas plus", "jamais pas", "rien plus"],
+      "correct_index": 0,
+      "explanation": "On combine deux adverbes : ne... plus jamais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je n'ai ___ compris pendant la réunion.",
+      "blankHint": null,
+      "translation": "I understood nothing during the meeting.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["rien", "personne", "pas", "jamais"],
+      "correct_index": 0,
+      "explanation": "Objet nul au passé composé : rien se place avant le participe.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il n'y a ___ dans la salle d'attente.",
+      "blankHint": null,
+      "translation": "There is no one in the waiting room.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["personne", "rien", "aucun", "jamais"],
+      "correct_index": 0,
+      "explanation": "Absence de gens : ne... personne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_023",
+      "format": "cloze",
+      "level": 3,
+      "cue": "___ ne m'a prévenu du changement d'horaire.",
+      "blankHint": null,
+      "translation": "No one warned me about the schedule change.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["Personne", "Rien", "Aucun", "Jamais"],
+      "correct_index": 0,
+      "explanation": "Sujet nul en tête de phrase : Personne ne...",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_024",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ne t'inquiète pas, ___ ne s'est cassé dans le colis.",
+      "blankHint": null,
+      "translation": "Don't worry, nothing broke in the package.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["rien", "personne", "aucun", "jamais"],
+      "correct_index": 0,
+      "explanation": "Sujet inanimé nul : Rien ne...",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w1_art_025",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après une telle dispute, il ne veut voir ___.",
+      "blankHint": null,
+      "translation": "After such an argument, he doesn't want to see anyone.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["personne", "rien", "plus", "jamais"],
+      "correct_index": 0,
+      "explanation": "Complément d'objet « aucune personne » : ne... personne, placé après l'infinitif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_026",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ma sœur porte une jupe ___.",
+      "blankHint": "vert",
+      "translation": "My sister is wearing a green skirt.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["verte", "vert", "verts", "vertes"],
+      "correct_index": 0,
+      "explanation": "L'adjectif s'accorde avec « jupe », féminin singulier : verte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce sont des voisins très ___.",
+      "blankHint": "gentil",
+      "translation": "They are very kind neighbours.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["gentils", "gentil", "gentille", "gentilles"],
+      "correct_index": 0,
+      "explanation": "Accord avec « voisins », masculin pluriel : gentils.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Les rues du centre-ville sont très ___ ce soir.",
+      "blankHint": "animé",
+      "translation": "The city-centre streets are very lively tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["animées", "animé", "animés", "animée"],
+      "correct_index": 0,
+      "explanation": "Accord avec « rues », féminin pluriel : animées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a acheté une ___ voiture pour la famille.",
+      "blankHint": "nouveau",
+      "translation": "She bought a new car for the family.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["nouvelle", "nouveau", "nouveaux", "nouvelles"],
+      "correct_index": 0,
+      "explanation": "Adjectif irrégulier accordé avec « voiture », féminin singulier : nouvelle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_art_030",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les résultats de l'enquête sont vraiment ___.",
+      "blankHint": "surprenant",
+      "translation": "The results of the survey are really surprising.",
+      "tags": [
+        { "facet": "grammar", "tag": "accord_adjectif", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["surprenants", "surprenant", "surprenante", "surprenantes"],
+      "correct_index": 0,
+      "explanation": "Accord avec « résultats », masculin pluriel : surprenants.",
+      "register": "formal"
+    }
+  ]
+}

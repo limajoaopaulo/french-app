@@ -1,0 +1,676 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_subj_001",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il faut que tu ___ tes devoirs avant de sortir.",
+      "blankHint": "finir",
+      "translation": "You have to finish your homework before going out.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["finisses", "finis", "finiras", "finir"],
+      "correct_index": 0,
+      "explanation": "Après « il faut que » on emploie le subjonctif : que tu finisses.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_002",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je veux que vous ___ à la fête ce week-end.",
+      "blankHint": "venir",
+      "translation": "I want you to come to the party this weekend.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["veniez", "venez", "viendrez", "venir"],
+      "correct_index": 0,
+      "explanation": "« Vouloir que » impose le subjonctif : que vous veniez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_003",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Bien qu'il ___ fatigué, il continue de travailler.",
+      "blankHint": "être",
+      "translation": "Although he is tired, he keeps working.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["soit", "est", "était", "sera"],
+      "correct_index": 0,
+      "explanation": "« Bien que » est suivi du subjonctif : bien qu'il soit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_004",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle parle lentement pour que nous ___ tout.",
+      "blankHint": "comprendre",
+      "translation": "She speaks slowly so that we understand everything.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["comprenions", "comprenons", "comprendrons", "comprendre"],
+      "correct_index": 0,
+      "explanation": "« Pour que » exprime le but et demande le subjonctif : que nous comprenions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_005",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Partons avant qu'il ne ___ trop tard.",
+      "blankHint": "être",
+      "translation": "Let's leave before it's too late.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["soit", "est", "sera", "était"],
+      "correct_index": 0,
+      "explanation": "« Avant que » entraîne le subjonctif : avant qu'il ne soit.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_006",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il faut que nous ___ attention aux détails.",
+      "blankHint": "faire",
+      "translation": "We need to pay attention to the details.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["fassions", "faisons", "ferons", "faire"],
+      "correct_index": 0,
+      "explanation": "« Il faut que » + subjonctif du verbe faire : que nous fassions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_007",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je doute qu'il ___ vraiment la vérité.",
+      "blankHint": "savoir",
+      "translation": "I doubt that he really knows the truth.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["sache", "sait", "saura", "savait"],
+      "correct_index": 0,
+      "explanation": "« Douter que » exprime le doute et impose le subjonctif : qu'il sache.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_008",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Bien que nous ___ peu de temps, terminons ce rapport.",
+      "blankHint": "avoir",
+      "translation": "Although we have little time, let's finish this report.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["ayons", "avons", "aurons", "avoir"],
+      "correct_index": 0,
+      "explanation": "« Bien que » + subjonctif du verbe avoir : que nous ayons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_009",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il faut que vous ___ une décision rapidement.",
+      "blankHint": "prendre",
+      "translation": "You have to make a decision quickly.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["preniez", "prenez", "prendrez", "prendre"],
+      "correct_index": 0,
+      "explanation": "« Il faut que » + subjonctif : que vous preniez.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_010",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je ne pense pas qu'elle ___ venir demain.",
+      "blankHint": "pouvoir",
+      "translation": "I don't think she can come tomorrow.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["puisse", "peut", "pourra", "pouvait"],
+      "correct_index": 0,
+      "explanation": "« Ne pas penser que » exprime le doute et demande le subjonctif : qu'elle puisse.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_011",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Pour que le projet ___, il faut que chacun collabore.",
+      "blankHint": "réussir",
+      "translation": "For the project to succeed, everyone must collaborate.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["réussisse", "réussit", "réussira", "réussirait"],
+      "correct_index": 0,
+      "explanation": "« Pour que » exprime le but et impose le subjonctif : que le projet réussisse.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_012",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Bien que tu ___ partir, reste encore un peu.",
+      "blankHint": "vouloir",
+      "translation": "Although you want to leave, stay a little longer.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["veuilles", "veux", "voudras", "voulais"],
+      "correct_index": 0,
+      "explanation": "« Bien que » + subjonctif du verbe vouloir : que tu veuilles.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_subj_013",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il est essentiel que chacun ___ sa part du travail.",
+      "blankHint": "faire",
+      "translation": "It is essential that everyone does their share of the work.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["fasse", "fait", "fera", "ferait"],
+      "correct_index": 0,
+      "explanation": "« Il est essentiel que » exprime la nécessité et impose le subjonctif : que chacun fasse.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_014",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Quoi que vous ___, je ne changerai pas d'avis.",
+      "blankHint": "dire",
+      "translation": "Whatever you say, I won't change my mind.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["disiez", "dites", "direz", "dire"],
+      "correct_index": 0,
+      "explanation": "« Quoi que » (concession) est suivi du subjonctif : quoi que vous disiez.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_015",
+      "format": "cloze",
+      "level": 5,
+      "cue": "À moins que nous ne ___ tout de suite, nous serons en retard.",
+      "blankHint": "partir",
+      "translation": "Unless we leave right now, we'll be late.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["partions", "partons", "partirons", "partir"],
+      "correct_index": 0,
+      "explanation": "« À moins que » entraîne le subjonctif : à moins que nous ne partions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_016",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il faut que cette proposition ___ acceptée par tous les membres.",
+      "blankHint": "être",
+      "translation": "This proposal must be accepted by all the members.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["soit", "est", "sera", "serait"],
+      "correct_index": 0,
+      "explanation": "« Il faut que » + subjonctif passif : que cette proposition soit acceptée.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_017",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Bien qu'elle ___ de lourdes responsabilités, elle reste sereine.",
+      "blankHint": "avoir",
+      "translation": "Although she has heavy responsibilities, she stays calm.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["ait", "a", "aura", "avait"],
+      "correct_index": 0,
+      "explanation": "« Bien que » + subjonctif du verbe avoir : bien qu'elle ait.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_018",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Je crains qu'il n'___ trop loin dans ses propos.",
+      "blankHint": "aller",
+      "translation": "I'm afraid he is going too far in his remarks.",
+      "tags": [
+        { "facet": "grammar", "tag": "subjonctif", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["aille", "va", "ira", "allait"],
+      "correct_index": 0,
+      "explanation": "« Craindre que » exprime la crainte et impose le subjonctif : qu'il aille.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Si tu ___ le temps, tu pourras m'aider ce soir.",
+      "blankHint": "avoir",
+      "translation": "If you have time, you'll be able to help me tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["as", "auras", "aies", "avais"],
+      "correct_index": 0,
+      "explanation": "Hypothèse réelle : si + présent (tu as), résultat au futur (tu pourras).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Si vous mangez trop de sucre, vous ___ du poids.",
+      "blankHint": "prendre",
+      "translation": "If you eat too much sugar, you will gain weight.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["prendrez", "prenez", "prendriez", "prendre"],
+      "correct_index": 0,
+      "explanation": "Si + présent dans la subordonnée, futur simple dans la principale : vous prendrez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "S'il fait beau demain, nous ___ à la plage.",
+      "blankHint": "aller",
+      "translation": "If it's nice tomorrow, we'll go to the beach.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["irons", "allons", "irions", "aller"],
+      "correct_index": 0,
+      "explanation": "Si + présent → futur simple dans la principale : nous irons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Si je ___ tôt, je viendrai te voir.",
+      "blankHint": "finir",
+      "translation": "If I finish early, I'll come to see you.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["finis", "finirai", "finisse", "finirais"],
+      "correct_index": 0,
+      "explanation": "Après « si », on met le présent : si je finis, je viendrai.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Si tu prends ce train, tu ___ à l'heure.",
+      "blankHint": "arriver",
+      "translation": "If you take this train, you'll arrive on time.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["arriveras", "arrives", "arriverais", "arriver"],
+      "correct_index": 0,
+      "explanation": "Si + présent → futur dans la principale : tu arriveras.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Si nous ___ maintenant, nous éviterons les embouteillages.",
+      "blankHint": "partir",
+      "translation": "If we leave now, we'll avoid the traffic jams.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["partons", "partirons", "partions", "partir"],
+      "correct_index": 0,
+      "explanation": "Après « si », le présent : si nous partons, nous éviterons.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si j'___ plus d'argent, je voyagerais davantage.",
+      "blankHint": "avoir",
+      "translation": "If I had more money, I would travel more.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["avais", "ai", "aurais", "aie"],
+      "correct_index": 0,
+      "explanation": "Hypothèse irréelle : si + imparfait (j'avais), conditionnel présent (je voyagerais).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si tu ___ plus attentif, tu ferais moins d'erreurs.",
+      "blankHint": "être",
+      "translation": "If you were more careful, you would make fewer mistakes.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["étais", "es", "serais", "sois"],
+      "correct_index": 0,
+      "explanation": "Si + imparfait → conditionnel : si tu étais, tu ferais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si nous gagnions au loto, nous ___ une grande maison.",
+      "blankHint": "acheter",
+      "translation": "If we won the lottery, we would buy a big house.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["achèterions", "achetons", "achèterons", "acheter"],
+      "correct_index": 0,
+      "explanation": "Si + imparfait dans la subordonnée, conditionnel présent dans la principale : nous achèterions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si vous ___ choisir, où iriez-vous ?",
+      "blankHint": "pouvoir",
+      "translation": "If you could choose, where would you go?",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["pouviez", "pouvez", "pourriez", "pouvoir"],
+      "correct_index": 0,
+      "explanation": "Après « si », l'imparfait : si vous pouviez, où iriez-vous.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si elle ___ la vérité, elle serait très triste.",
+      "blankHint": "savoir",
+      "translation": "If she knew the truth, she would be very sad.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["savait", "sait", "saurait", "sache"],
+      "correct_index": 0,
+      "explanation": "Si + imparfait → conditionnel : si elle savait, elle serait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Si on ___ à la campagne, on aurait plus d'espace.",
+      "blankHint": "habiter",
+      "translation": "If we lived in the countryside, we would have more space.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["habitait", "habite", "habiterait", "habiter"],
+      "correct_index": 0,
+      "explanation": "Après « si », l'imparfait : si on habitait, on aurait.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_subj_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Si tu ___ plus tôt, tu aurais vu le début du spectacle.",
+      "blankHint": "venir",
+      "translation": "If you had come earlier, you would have seen the start of the show.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["étais venu", "es venu", "serais venu", "venais"],
+      "correct_index": 0,
+      "explanation": "Irréel du passé : si + plus-que-parfait (tu étais venu), conditionnel passé (tu aurais vu).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Si j'avais su, je ___ chez moi ce jour-là.",
+      "blankHint": "rester",
+      "translation": "If I had known, I would have stayed home that day.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["serais resté", "restais", "suis resté", "resterais"],
+      "correct_index": 0,
+      "explanation": "Si + plus-que-parfait → conditionnel passé dans la principale : je serais resté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Si nous avions réservé, nous ___ une meilleure table.",
+      "blankHint": "avoir",
+      "translation": "If we had booked, we would have had a better table.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["aurions eu", "avions eu", "avons eu", "aurions"],
+      "correct_index": 0,
+      "explanation": "Si + plus-que-parfait → conditionnel passé : nous aurions eu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Si vous ___ davantage, vous auriez réussi l'examen.",
+      "blankHint": "étudier",
+      "translation": "If you had studied more, you would have passed the exam.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["aviez étudié", "étudiiez", "auriez étudié", "avez étudié"],
+      "correct_index": 0,
+      "explanation": "Dans la subordonnée en « si », on emploie le plus-que-parfait : si vous aviez étudié.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Si elle m'avait écouté, elle ___ cette erreur.",
+      "blankHint": "éviter",
+      "translation": "If she had listened to me, she would have avoided this mistake.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["aurait évité", "évitait", "avait évité", "éviterait"],
+      "correct_index": 0,
+      "explanation": "Si + plus-que-parfait → conditionnel passé : elle aurait évité.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Si le temps ___ meilleur, nous serions sortis nous promener.",
+      "blankHint": "être",
+      "translation": "If the weather had been better, we would have gone out for a walk.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["avait été", "était", "aurait été", "avait"],
+      "correct_index": 0,
+      "explanation": "Irréel du passé : si + plus-que-parfait (avait été), conditionnel passé (serions sortis).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_037",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si nous avions anticipé la crise, nous ___ d'autres mesures.",
+      "blankHint": "prendre",
+      "translation": "If we had anticipated the crisis, we would have taken other measures.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["aurions pris", "avions pris", "prendrions", "avons pris"],
+      "correct_index": 0,
+      "explanation": "Si + plus-que-parfait → conditionnel passé : nous aurions pris.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_038",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si tu avais mieux préparé ton discours, tu ___ l'auditoire.",
+      "blankHint": "convaincre",
+      "translation": "If you had prepared your speech better, you would have convinced the audience.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["aurais convaincu", "avais convaincu", "convaincrais", "as convaincu"],
+      "correct_index": 0,
+      "explanation": "Si + plus-que-parfait → conditionnel passé : tu aurais convaincu.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_039",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si l'entreprise ___ plus tôt, elle dominerait le marché aujourd'hui.",
+      "blankHint": "investir",
+      "translation": "If the company had invested earlier, it would dominate the market today.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["avait investi", "investissait", "aurait investi", "investit"],
+      "correct_index": 0,
+      "explanation": "Système mixte : si + plus-que-parfait (avait investi), conditionnel présent pour un résultat actuel (dominerait).",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_040",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si les négociations ___, un accord aurait déjà été signé.",
+      "blankHint": "aboutir",
+      "translation": "If the negotiations had succeeded, an agreement would already have been signed.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["avaient abouti", "aboutissaient", "auraient abouti", "ont abouti"],
+      "correct_index": 0,
+      "explanation": "Dans la subordonnée en « si », le plus-que-parfait : si les négociations avaient abouti.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_subj_041",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si je l'avais su plus tôt, je m'y ___ tout autrement.",
+      "blankHint": "prendre",
+      "translation": "If I had known it earlier, I would have gone about it quite differently.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["serais pris", "prenais", "prendrais", "suis pris"],
+      "correct_index": 0,
+      "explanation": "« S'y prendre » au conditionnel passé après si + plus-que-parfait : je m'y serais pris.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_subj_042",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si vous aviez consulté un expert, vous ___ bien des ennuis.",
+      "blankHint": "éviter",
+      "translation": "If you had consulted an expert, you would have avoided a lot of trouble.",
+      "tags": [
+        { "facet": "grammar", "tag": "si_hypothese", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["auriez évité", "aviez évité", "éviteriez", "avez évité"],
+      "correct_index": 0,
+      "explanation": "Si + plus-que-parfait → conditionnel passé : vous auriez évité.",
+      "register": "formal"
+    }
+  ]
+}

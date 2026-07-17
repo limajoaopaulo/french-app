@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_pastB_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Quand j'étais petit, je ___ souvent chez ma grand-mère.",
+      "blankHint": "aller",
+      "translation": "When I was little, I often went to my grandmother's house.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["allais", "suis allé", "vais", "allait"],
+      "correct_index": 0,
+      "explanation": "L'imparfait décrit une habitude passée : je allais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant, elle ___ dans une petite ville tranquille.",
+      "blankHint": "habiter",
+      "translation": "Before, she lived in a small quiet town.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["habitait", "a habité", "habite", "habitais"],
+      "correct_index": 0,
+      "explanation": "Situation passée durable : elle habitait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le week-end, nous ___ au parc avec les enfants.",
+      "blankHint": "jouer",
+      "translation": "On weekends, we used to play in the park with the children.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["jouions", "avons joué", "jouons", "jouaient"],
+      "correct_index": 0,
+      "explanation": "Habitude passée à la 1re personne du pluriel : nous jouions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tous les matins, tu ___ un grand café.",
+      "blankHint": "boire",
+      "translation": "Every morning, you used to drink a big coffee.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["buvais", "as bu", "bois", "buvait"],
+      "correct_index": 0,
+      "explanation": "Radical « buv- » à l'imparfait : tu buvais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Quand il ___ jeune, il faisait beaucoup de sport.",
+      "blankHint": "être",
+      "translation": "When he was young, he did a lot of sport.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["était", "a été", "est", "étais"],
+      "correct_index": 0,
+      "explanation": "Imparfait irrégulier du verbe « être » : il était.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En vacances, ils ___ à la plage tous les jours.",
+      "blankHint": "aller",
+      "translation": "On holiday, they went to the beach every day.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["allaient", "sont allés", "vont", "allait"],
+      "correct_index": 0,
+      "explanation": "Habitude passée à la 3e personne du pluriel : ils allaient.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_007",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pendant que tu cuisinais, je ___ la table.",
+      "blankHint": "mettre",
+      "translation": "While you were cooking, I was setting the table.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["mettais", "ai mis", "mets", "mettait"],
+      "correct_index": 0,
+      "explanation": "Deux actions en cours en parallèle : je mettais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Quand nous étions étudiants, nous ___ dans un petit appartement.",
+      "blankHint": "vivre",
+      "translation": "When we were students, we lived in a small flat.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["vivions", "avons vécu", "vivons", "vivaient"],
+      "correct_index": 0,
+      "explanation": "Situation passée durable : nous vivions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il ___ toujours en retard à ses réunions.",
+      "blankHint": "arriver",
+      "translation": "He always used to arrive late to his meetings.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["arrivait", "est arrivé", "arrive", "arrivais"],
+      "correct_index": 0,
+      "explanation": "Habitude répétée dans le passé : il arrivait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Autrefois, les gens ___ des lettres à la main.",
+      "blankHint": "écrire",
+      "translation": "In the past, people wrote letters by hand.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["écrivaient", "ont écrit", "écrivent", "écrivait"],
+      "correct_index": 0,
+      "explanation": "Habitude passée, sujet pluriel : les gens écrivaient.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Chaque hiver, il ___ beaucoup dans les montagnes.",
+      "blankHint": "neiger",
+      "translation": "Every winter, it snowed a lot in the mountains.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["neigeait", "a neigé", "neige", "neigeaient"],
+      "correct_index": 0,
+      "explanation": "Verbe impersonnel à l'imparfait : il neigeait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ souvent au cinéma quand vous habitiez ici.",
+      "blankHint": "venir",
+      "translation": "You often came to the cinema when you lived here.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["veniez", "êtes venus", "venez", "venait"],
+      "correct_index": 0,
+      "explanation": "Habitude passée à la 2e personne du pluriel : vous veniez.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_013",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La salle était silencieuse ; on ___ à peine respirer.",
+      "blankHint": "oser",
+      "translation": "The room was silent; one hardly dared to breathe.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["osait", "a osé", "ose", "osaient"],
+      "correct_index": 0,
+      "explanation": "Description d'un état, sujet « on » : on osait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_014",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle paraissait fatiguée et ses mains ___ légèrement.",
+      "blankHint": "trembler",
+      "translation": "She looked tired and her hands were trembling slightly.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["tremblaient", "ont tremblé", "tremblent", "tremblait"],
+      "correct_index": 0,
+      "explanation": "Description en arrière-plan, sujet pluriel : ses mains tremblaient.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Autrefois, ce quartier ___ un marché tous les dimanches.",
+      "blankHint": "accueillir",
+      "translation": "In the past, this neighbourhood hosted a market every Sunday.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["accueillait", "a accueilli", "accueille", "accueillaient"],
+      "correct_index": 0,
+      "explanation": "Habitude passée, sujet singulier : ce quartier accueillait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le soleil ___ à travers les rideaux ce matin-là.",
+      "blankHint": "briller",
+      "translation": "The sun was shining through the curtains that morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["brillait", "a brillé", "brille", "brillaient"],
+      "correct_index": 0,
+      "explanation": "Description d'un décor passé : le soleil brillait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il se ___ que tout allait bien se passer.",
+      "blankHint": "se dire",
+      "translation": "He told himself that everything was going to go well.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["disait", "est dit", "dit", "disaient"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal à l'imparfait : il se disait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Chaque fois qu'elle entrait, tout le monde se ___.",
+      "blankHint": "se taire",
+      "translation": "Every time she came in, everyone fell silent.",
+      "tags": [
+        { "facet": "grammar", "tag": "imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["taisait", "est tu", "tait", "taisaient"],
+      "correct_index": 0,
+      "explanation": "Habitude passée, sujet « tout le monde » singulier : se taisait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Hier, il ___ un livre très intéressant.",
+      "blankHint": "lire",
+      "translation": "Yesterday, he read a very interesting book.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["a lu", "lisait", "lit", "lisais"],
+      "correct_index": 0,
+      "explanation": "Action ponctuelle et terminée « hier » : passé composé, il a lu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Quand j'étais enfant, je ___ peur du noir.",
+      "blankHint": "avoir",
+      "translation": "When I was a child, I was afraid of the dark.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["avais", "ai eu", "avait", "avons eu"],
+      "correct_index": 0,
+      "explanation": "État durable dans le passé : imparfait, j'avais peur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Soudain, quelqu'un ___ à la porte.",
+      "blankHint": "frapper",
+      "translation": "Suddenly, someone knocked at the door.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["a frappé", "frappait", "frappe", "ont frappé"],
+      "correct_index": 0,
+      "explanation": "Événement soudain et unique : passé composé, il a frappé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "D'habitude, nous ___ à huit heures du soir.",
+      "blankHint": "dîner",
+      "translation": "Usually, we had dinner at eight in the evening.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["dînions", "avons dîné", "dînons", "dînaient"],
+      "correct_index": 0,
+      "explanation": "Habitude signalée par « d'habitude » : imparfait, nous dînions.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La semaine dernière, elle ___ à Paris pour le travail.",
+      "blankHint": "aller",
+      "translation": "Last week, she went to Paris for work.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["est allée", "allait", "est allé", "allais"],
+      "correct_index": 0,
+      "explanation": "Déplacement ponctuel et daté : passé composé, elle est allée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tous les soirs, il ___ une histoire à sa fille.",
+      "blankHint": "raconter",
+      "translation": "Every evening, he told his daughter a story.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["racontait", "a raconté", "raconte", "racontaient"],
+      "correct_index": 0,
+      "explanation": "Habitude répétée « tous les soirs » : imparfait, il racontait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ la vaisselle quand tu as appelé.",
+      "blankHint": "faire",
+      "translation": "I was doing the dishes when you called.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["faisais", "ai fait", "fais", "faisait"],
+      "correct_index": 0,
+      "explanation": "Action en cours interrompue : imparfait, je faisais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pendant qu'elle dormait, le voleur ___ par la fenêtre.",
+      "blankHint": "entrer",
+      "translation": "While she was sleeping, the thief came in through the window.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["est entré", "entrait", "entre", "sont entrés"],
+      "correct_index": 0,
+      "explanation": "Événement ponctuel sur un fond continu : passé composé, il est entré.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous marchions tranquillement quand il ___ à pleuvoir.",
+      "blankHint": "commencer",
+      "translation": "We were walking calmly when it started to rain.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["a commencé", "commençait", "commence", "ont commencé"],
+      "correct_index": 0,
+      "explanation": "Rupture soudaine dans une action en cours : passé composé, il a commencé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avant, les trains ___ toujours à l'heure.",
+      "blankHint": "partir",
+      "translation": "In the past, the trains always left on time.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["partaient", "sont partis", "partent", "partait"],
+      "correct_index": 0,
+      "explanation": "Habitude passée « avant » : imparfait, les trains partaient.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "L'année dernière, il ___ son permis de conduire.",
+      "blankHint": "obtenir",
+      "translation": "Last year, he got his driving licence.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["a obtenu", "obtenait", "obtient", "ont obtenu"],
+      "correct_index": 0,
+      "explanation": "Résultat unique et daté : passé composé, il a obtenu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il faisait beau, alors nous ___ une longue promenade.",
+      "blankHint": "faire",
+      "translation": "The weather was nice, so we took a long walk.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["avons fait", "faisions", "faisons", "avons faits"],
+      "correct_index": 0,
+      "explanation": "Le décor est à l'imparfait, l'action ponctuelle au passé composé : nous avons fait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle ___ depuis dix minutes lorsque le train est enfin arrivé.",
+      "blankHint": "attendre",
+      "translation": "She had been waiting for ten minutes when the train finally arrived.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["attendait", "a attendu", "attend", "attendaient"],
+      "correct_index": 0,
+      "explanation": "Durée en cours avec « depuis » : imparfait, elle attendait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce jour-là, je ___ soudain que je m'étais trompé.",
+      "blankHint": "comprendre",
+      "translation": "That day, I suddenly understood that I had been wrong.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["ai compris", "comprenais", "comprends", "avons compris"],
+      "correct_index": 0,
+      "explanation": "Prise de conscience soudaine et unique : passé composé, j'ai compris.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le professeur expliquait la leçon pendant que les élèves ___ des notes.",
+      "blankHint": "prendre",
+      "translation": "The teacher was explaining the lesson while the students were taking notes.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["prenaient", "ont pris", "prennent", "prenait"],
+      "correct_index": 0,
+      "explanation": "Deux actions simultanées en cours : imparfait, les élèves prenaient.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Tout à coup, la lumière ___ et nous sommes restés dans le noir.",
+      "blankHint": "s'éteindre",
+      "translation": "All of a sudden, the light went out and we were left in the dark.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["s'est éteinte", "s'éteignait", "s'éteint", "se sont éteintes"],
+      "correct_index": 0,
+      "explanation": "Événement soudain « tout à coup » : passé composé, la lumière s'est éteinte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Autrefois, on ___ que la Terre était plate.",
+      "blankHint": "croire",
+      "translation": "In the past, people believed that the Earth was flat.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["croyait", "a cru", "croit", "croyaient"],
+      "correct_index": 0,
+      "explanation": "Croyance durable dans le passé : imparfait, on croyait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Quand je l'ai rencontrée, elle ___ dans une agence de voyages.",
+      "blankHint": "travailler",
+      "translation": "When I met her, she was working at a travel agency.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["travaillait", "a travaillé", "travaille", "travaillaient"],
+      "correct_index": 0,
+      "explanation": "Situation d'arrière-plan au moment de la rencontre : imparfait, elle travaillait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_037",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il pleuvait des cordes ; pourtant, elle ___ de sortir sans parapluie.",
+      "blankHint": "décider",
+      "translation": "It was pouring rain; yet she decided to go out without an umbrella.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["a décidé", "décidait", "décide", "a décidée"],
+      "correct_index": 0,
+      "explanation": "Décision ponctuelle sur un décor à l'imparfait : passé composé, elle a décidé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_038",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Chaque fois qu'on lui posait la question, il ___ de sujet avec habileté.",
+      "blankHint": "changer",
+      "translation": "Every time someone asked him the question, he skillfully changed the subject.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["changeait", "a changé", "change", "changeaient"],
+      "correct_index": 0,
+      "explanation": "Action répétée « chaque fois » : imparfait, il changeait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_039",
+      "format": "cloze",
+      "level": 5,
+      "cue": "À l'instant où le ministre ___ la parole, la salle s'est tue.",
+      "blankHint": "prendre",
+      "translation": "The moment the minister took the floor, the room fell silent.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["a pris", "prenait", "prend", "ont pris"],
+      "correct_index": 0,
+      "explanation": "Action précise et instantanée : passé composé, il a pris la parole.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_040",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Nous ___ à peine assis que le spectacle a commencé.",
+      "blankHint": "être",
+      "translation": "We had barely sat down when the show began.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["étions", "avons été", "sommes", "étaient"],
+      "correct_index": 0,
+      "explanation": "État décrit en arrière-plan : imparfait, nous étions à peine assis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_041",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Elle rangeait ses affaires quand elle ___ la vieille photo.",
+      "blankHint": "retrouver",
+      "translation": "She was tidying her things when she came across the old photo.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["a retrouvé", "retrouvait", "retrouve", "ont retrouvé"],
+      "correct_index": 0,
+      "explanation": "Découverte ponctuelle interrompant une action en cours : passé composé, elle a retrouvé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_042",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les négociations traînaient depuis des mois lorsque les deux parties ___ enfin un accord.",
+      "blankHint": "signer",
+      "translation": "The negotiations had been dragging on for months when the two parties finally signed an agreement.",
+      "tags": [
+        { "facet": "grammar", "tag": "pc_vs_imparfait", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["ont signé", "signaient", "signent", "a signé"],
+      "correct_index": 0,
+      "explanation": "Aboutissement ponctuel sur une durée à l'imparfait : passé composé, elles ont signé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_043",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Quand je suis arrivé, ils ___ déjà mangé.",
+      "blankHint": "manger",
+      "translation": "When I arrived, they had already eaten.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["avaient mangé", "ont mangé", "avaient mangés", "avais mangé"],
+      "correct_index": 0,
+      "explanation": "Action antérieure à une autre action passée : plus-que-parfait, ils avaient mangé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_044",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle était fatiguée parce qu'elle ___ tard la veille.",
+      "blankHint": "se coucher",
+      "translation": "She was tired because she had gone to bed late the night before.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["s'était couchée", "s'est couchée", "était couchée", "s'étaient couchées"],
+      "correct_index": 0,
+      "explanation": "Verbe pronominal au plus-que-parfait, accord avec « elle » : s'était couchée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_045",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ne sommes pas sortis parce qu'il ___ toute la journée.",
+      "blankHint": "pleuvoir",
+      "translation": "We didn't go out because it had rained all day.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["avait plu", "a plu", "était plu", "pleuvait"],
+      "correct_index": 0,
+      "explanation": "Cause antérieure à la situation passée : plus-que-parfait, il avait plu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_046",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il m'a rendu le livre que je lui ___ prêté.",
+      "blankHint": "prêter",
+      "translation": "He gave me back the book that I had lent him.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["avais prêté", "ai prêté", "avait prêté", "avais prêtés"],
+      "correct_index": 0,
+      "explanation": "Action antérieure à « il m'a rendu » : plus-que-parfait, je lui avais prêté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_047",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Quand elle est entrée, tout le monde ___ déjà parti.",
+      "blankHint": "partir",
+      "translation": "When she came in, everyone had already left.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["était parti", "est parti", "avait parti", "étaient partis"],
+      "correct_index": 0,
+      "explanation": "Antériorité avec « être », sujet « tout le monde » singulier : était parti.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_048",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu étais content parce que tu ___ ton entretien.",
+      "blankHint": "réussir",
+      "translation": "You were happy because you had passed your interview.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["avais réussi", "as réussi", "avais réussit", "étais réussi"],
+      "correct_index": 0,
+      "explanation": "Cause antérieure à l'état passé : plus-que-parfait, tu avais réussi.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_049",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le gâteau était délicieux ; ma mère l'___ selon une vieille recette.",
+      "blankHint": "préparer",
+      "translation": "The cake was delicious; my mother had made it following an old recipe.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["avait préparé", "a préparé", "avait préparée", "était préparé"],
+      "correct_index": 0,
+      "explanation": "COD « l' » = le gâteau (masculin) placé avant : avait préparé, sans « -e ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_050",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ils ont vendu la maison qu'ils ___ dix ans plus tôt.",
+      "blankHint": "acheter",
+      "translation": "They sold the house that they had bought ten years earlier.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["avaient achetée", "ont achetée", "avaient acheté", "avaient achetés"],
+      "correct_index": 0,
+      "explanation": "COD « que » = la maison (féminin) placé avant : accord, avaient achetée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_051",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je ne l'ai pas reconnu : il ___ énormément depuis notre dernière rencontre.",
+      "blankHint": "changer",
+      "translation": "I didn't recognise him: he had changed enormously since we last met.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["avait changé", "a changé", "avait changée", "était changé"],
+      "correct_index": 0,
+      "explanation": "Antériorité par rapport à « je ne l'ai pas reconnu » : plus-que-parfait, il avait changé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_052",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La route était bloquée : un camion ___ en travers de la chaussée.",
+      "blankHint": "se renverser",
+      "translation": "The road was blocked: a truck had overturned across the roadway.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["s'était renversé", "s'est renversé", "était renversé", "s'étaient renversés"],
+      "correct_index": 0,
+      "explanation": "Cause antérieure au blocage, verbe pronominal : s'était renversé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_053",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle a compris qu'elle ___ une erreur dans le rapport.",
+      "blankHint": "commettre",
+      "translation": "She realised that she had made a mistake in the report.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["avait commis", "a commis", "avait commise", "était commise"],
+      "correct_index": 0,
+      "explanation": "COD « une erreur » placé après : pas d'accord, avait commis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_054",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les invités ___ tout bu avant même le dîner.",
+      "blankHint": "boire",
+      "translation": "The guests had drunk everything even before dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["avaient bu", "ont bu", "avaient bus", "étaient bu"],
+      "correct_index": 0,
+      "explanation": "Action antérieure au dîner : plus-que-parfait, ils avaient bu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_055",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il avoua qu'il ___ la vérité pendant des années.",
+      "blankHint": "cacher",
+      "translation": "He confessed that he had hidden the truth for years.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["avait caché", "a caché", "avait cachée", "était caché"],
+      "correct_index": 0,
+      "explanation": "COD « la vérité » placé après : pas d'accord, il avait caché.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pastB_056",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les archéologues étudièrent la cité que le désert ___ pendant des siècles.",
+      "blankHint": "ensevelir",
+      "translation": "The archaeologists studied the city that the desert had buried for centuries.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["avait ensevelie", "a ensevelie", "avait enseveli", "avaient ensevelie"],
+      "correct_index": 0,
+      "explanation": "COD « que » = la cité (féminin) placé avant, sujet singulier : avait ensevelie.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pastB_057",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Elle ne comprenait pas pourquoi il ___ sans laisser d'adresse.",
+      "blankHint": "partir",
+      "translation": "She couldn't understand why he had left without leaving an address.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["était parti", "est parti", "avait parti", "étaient partis"],
+      "correct_index": 0,
+      "explanation": "Antériorité avec « être », sujet « il » : était parti.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pastB_058",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le jury récompensa le film que personne n'___ remarqué au festival.",
+      "blankHint": "remarquer",
+      "translation": "The jury rewarded the film that no one had noticed at the festival.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["avait remarqué", "a remarqué", "avait remarquée", "avaient remarqué"],
+      "correct_index": 0,
+      "explanation": "COD « que » = le film (masculin) placé avant, sujet « personne » singulier : avait remarqué.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pastB_059",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Nous découvrîmes que la tempête ___ tout le village.",
+      "blankHint": "dévaster",
+      "translation": "We discovered that the storm had devastated the entire village.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["avait dévasté", "a dévasté", "avait dévastée", "était dévasté"],
+      "correct_index": 0,
+      "explanation": "COD « tout le village » placé après : pas d'accord, avait dévasté.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pastB_060",
+      "format": "cloze",
+      "level": 5,
+      "cue": "À son retour, il constata qu'on ___ ses affaires.",
+      "blankHint": "déplacer",
+      "translation": "On his return, he noted that someone had moved his belongings.",
+      "tags": [
+        { "facet": "grammar", "tag": "plus_que_parfait", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["avait déplacé", "a déplacé", "avait déplacée", "avaient déplacé"],
+      "correct_index": 0,
+      "explanation": "Sujet « on » singulier, COD placé après : avait déplacé.",
+      "register": "formal"
+    }
+  ]
+}

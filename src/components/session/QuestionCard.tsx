@@ -32,6 +32,7 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
   const isFirstEncounter = question.encounters === 0
   const isAnki = question.encounters >= ANKI_THRESHOLD
   const [phase, setPhase] = useState<Phase>(isAnki ? "ankiPrompt" : "options")
+  const [showTranslation, setShowTranslation] = useState(false)
   const [chosenIndex, setChosenIndex] = useState<number | null>(null)
   const [correct, setCorrect] = useState<boolean | null>(null)
   const [submitting, setSubmitting] = useState(false)
@@ -49,6 +50,10 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
     [question.options],
   )
   const cueSplit = useMemo(() => splitCueAroundBlank(question.cue), [question.cue])
+  const focusTags = useMemo(
+    () => question.tags.filter((tag) => tag.role === "focus"),
+    [question.tags],
+  )
   const correctOption = question.options[question.correctIndex] ?? ""
 
   useEffect(() => {
@@ -150,15 +155,24 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
               Anki
             </span>
           )}
-          <span className="rounded-full border border-white/10 px-2 py-0.5 text-xs uppercase tracking-wide">
-            {question.domain} · {question.sub}
-          </span>
+          {focusTags.map((tag) => (
+            <span
+              key={`${tag.facet}:${tag.tag}`}
+              className="rounded-full border border-white/10 px-2 py-0.5 text-xs uppercase tracking-wide"
+            >
+              {tag.tag}
+            </span>
+          ))}
         </span>
       </header>
 
       {phase === "options" && (
         <>
-          <p className="text-lg leading-relaxed text-zinc-50">{question.cue}</p>
+          <Cue
+            question={question}
+            showTranslation={showTranslation}
+            onToggleTranslation={() => setShowTranslation((v) => !v)}
+          />
           <ul className="grid gap-2">
             {question.options.map((option, idx) => (
               <li key={idx}>
@@ -194,7 +208,11 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
 
       {phase === "ankiPrompt" && (
         <>
-          <p className="text-lg leading-relaxed text-zinc-50">{question.cue}</p>
+          <Cue
+            question={question}
+            showTranslation={showTranslation}
+            onToggleTranslation={() => setShowTranslation((v) => !v)}
+          />
           <button
             type="button"
             onClick={reveal}
@@ -264,6 +282,46 @@ export function QuestionCard({ sessionId, question, onAdvance }: Props) {
           durationMs={durationMs}
           onSkip={skipExplanation}
         />
+      )}
+    </div>
+  )
+}
+
+interface CueProps {
+  question: ServedQuestionDTO
+  showTranslation: boolean
+  onToggleTranslation: () => void
+}
+
+function Cue({ question, showTranslation, onToggleTranslation }: CueProps) {
+  const split = splitCueAroundBlank(question.cue)
+  return (
+    <div className="flex flex-col gap-2">
+      <p className="text-lg leading-relaxed text-zinc-50">
+        {split && question.blankHint !== null ? (
+          <>
+            {split.before}
+            {BLANK_MARKER}
+            <span className="italic text-zinc-500"> ({question.blankHint})</span>
+            {split.after}
+          </>
+        ) : (
+          question.cue
+        )}
+      </p>
+      {question.translation !== null && (
+        <div className="flex flex-col gap-1">
+          <button
+            type="button"
+            onClick={onToggleTranslation}
+            className="self-start text-xs uppercase tracking-wide text-zinc-500 transition hover:text-zinc-300"
+          >
+            {showTranslation ? t.session.hideTranslation : t.session.showTranslation}
+          </button>
+          {showTranslation && (
+            <p className="text-sm italic text-zinc-500">{question.translation}</p>
+          )}
+        </div>
       )}
     </div>
   )

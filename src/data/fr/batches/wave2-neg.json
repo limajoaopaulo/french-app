@@ -1,0 +1,868 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_neg_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Désolé, je ne comprends ___ ce mot difficile.",
+      "blankHint": null,
+      "translation": "Sorry, I don't understand this difficult word.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["pas", "rien", "plus", "jamais"],
+      "correct_index": 0,
+      "explanation": "Négation simple « ne … pas » avec un complément d'objet.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il fait très froid, je ne veux ___ sortir ce soir.",
+      "blankHint": null,
+      "translation": "It's very cold, I don't want to go out tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["pas", "plus", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … pas » encadre le verbe conjugué « veux ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous n'habitons ___ à Paris, mais à Lyon.",
+      "blankHint": null,
+      "translation": "We don't live in Paris, but in Lyon.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["pas", "plus", "jamais", "point"],
+      "correct_index": 0,
+      "explanation": "Négation neutre « ne … pas » pour nier un fait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Avant je fumais, mais maintenant je ne fume ___.",
+      "blankHint": null,
+      "translation": "Before I used to smoke, but now I don't smoke anymore.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … plus » exprime l'arrêt d'une habitude : avant oui, maintenant non.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle dit toujours la vérité, elle ne ment ___.",
+      "blankHint": null,
+      "translation": "She always tells the truth, she never lies.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["jamais", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … jamais » marque la fréquence nulle, opposée à « toujours ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ce magasin ne ferme ___ : il est ouvert 24 heures sur 24.",
+      "blankHint": null,
+      "translation": "This shop never closes: it's open 24 hours a day.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["jamais", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … jamais » : ouverture permanente, aucune fermeture.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu as fini ? — Non, je n'ai ___ encore terminé mon travail.",
+      "blankHint": null,
+      "translation": "Are you done? — No, I haven't finished my work yet.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["pas", "plus", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … pas encore » signifie que l'action n'est pas achevée pour l'instant.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Depuis notre dispute, je ne lui parle ___.",
+      "blankHint": null,
+      "translation": "Since our argument, I don't talk to him anymore.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … plus » : la relation existait avant, elle a cessé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle a arrêté le sport ; elle ne court ___ le matin.",
+      "blankHint": null,
+      "translation": "She stopped exercising; she no longer runs in the morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … plus » indique la fin d'une activité habituelle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai assez mangé, merci, je n'en veux ___.",
+      "blankHint": null,
+      "translation": "I've eaten enough, thank you, I don't want any more.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … plus » : après « assez », on ne veut pas de quantité supplémentaire.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_neg_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il est très ponctuel, il n'arrive ___ en retard.",
+      "blankHint": null,
+      "translation": "He is very punctual, he is never late.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["jamais", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … jamais » : « très ponctuel » impose la fréquence nulle.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ne connais ___ ton frère, présente-le-moi.",
+      "blankHint": null,
+      "translation": "I don't know your brother, introduce him to me.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["pas", "jamais", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … pas » nie simplement le verbe « connais ».",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_neg_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Malgré ses efforts, il ne réussit ___ à se concentrer longtemps.",
+      "blankHint": null,
+      "translation": "Despite his efforts, he can't manage to concentrate for long.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["pas", "que", "plus", "jamais"],
+      "correct_index": 0,
+      "explanation": "« Ne … pas » encadre « réussit » ; « à se concentrer » complète le verbe.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Depuis son déménagement à l'étranger, nous ne nous voyons ___.",
+      "blankHint": null,
+      "translation": "Since he moved abroad, we don't see each other anymore.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … plus » : les rencontres, autrefois possibles, ont cessé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Après cet accident, il a décidé de ne ___ conduire vite.",
+      "blankHint": null,
+      "translation": "After that accident, he decided not to drive fast anymore.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "rien"],
+      "correct_index": 0,
+      "explanation": "À l'infinitif, « ne plus » se place devant le verbe : « ne plus conduire ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Sois patient, le résultat n'est ___ encore disponible sur le site.",
+      "blankHint": null,
+      "translation": "Be patient, the result is not yet available on the website.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["pas", "plus", "jamais", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … pas encore » : le résultat viendra, mais plus tard.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce vieil ordinateur ne fonctionne ___ ; il faut le remplacer.",
+      "blankHint": null,
+      "translation": "This old computer doesn't work anymore; it needs to be replaced.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["plus", "pas", "jamais", "point"],
+      "correct_index": 0,
+      "explanation": "« Ne … plus » : la machine marchait avant, ce n'est plus le cas.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "En vingt ans de carrière, elle n'a ___ déçu ses clients.",
+      "blankHint": null,
+      "translation": "In twenty years of her career, she has never let her clients down.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_base", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["jamais", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … jamais » au passé composé : l'auxiliaire est encadré (n'a jamais déçu).",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il fait nuit noire, je ne vois ___ devant moi.",
+      "blankHint": null,
+      "translation": "It's pitch dark, I can't see anything in front of me.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["rien", "personne", "aucun", "jamais"],
+      "correct_index": 0,
+      "explanation": "« Ne … rien » nie une chose (l'objet), pas une personne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tout le monde est parti ; il n'y a ___ à la maison.",
+      "blankHint": null,
+      "translation": "Everyone has left; there is nobody at home.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["personne", "rien", "aucun", "jamais"],
+      "correct_index": 0,
+      "explanation": "« Ne … personne » désigne l'absence de gens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je n'ai pas faim, je ne veux ___ manger.",
+      "blankHint": null,
+      "translation": "I'm not hungry, I don't want to eat anything.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["rien", "personne", "aucun", "plus"],
+      "correct_index": 0,
+      "explanation": "« Ne … rien » se place devant l'infinitif : « ne rien manger ».",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_neg_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "___ n'a répondu à ma question pendant la réunion.",
+      "blankHint": null,
+      "translation": "Nobody answered my question during the meeting.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["Personne", "Rien", "Aucun", "Jamais"],
+      "correct_index": 0,
+      "explanation": "« Personne ne … » : sujet qui désigne l'absence de gens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le frigo est vide : ___ ne reste à manger.",
+      "blankHint": null,
+      "translation": "The fridge is empty: nothing is left to eat.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["Rien", "Personne", "Aucun", "Jamais"],
+      "correct_index": 0,
+      "explanation": "« Rien ne … » : sujet qui désigne l'absence de chose.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je viens d'arriver et je ne connais ___ dans cette ville.",
+      "blankHint": null,
+      "translation": "I've just arrived and I don't know anyone in this town.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["personne", "rien", "aucun", "jamais"],
+      "correct_index": 0,
+      "explanation": "« Ne … personne » : on ne connaît aucun individu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ne t'inquiète pas, ___ n'est cassé dans le colis.",
+      "blankHint": null,
+      "translation": "Don't worry, nothing is broken in the package.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["rien", "personne", "aucun", "nul"],
+      "correct_index": 0,
+      "explanation": "« Rien ne … » comme sujet inanimé : rien n'est cassé.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_neg_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Malgré mes recherches, je n'ai trouvé ___ d'intéressant.",
+      "blankHint": null,
+      "translation": "Despite my research, I found nothing interesting.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["rien", "personne", "aucun", "plus"],
+      "correct_index": 0,
+      "explanation": "« Ne … rien de + adjectif » : rien d'intéressant.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette nuit-là, ___ n'a osé sortir dans la tempête.",
+      "blankHint": null,
+      "translation": "That night, nobody dared to go out in the storm.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["personne", "rien", "aucun", "nul"],
+      "correct_index": 0,
+      "explanation": "« Personne ne … » sujet au passé composé : personne n'a osé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je n'ai ___ idée de la réponse à cette question.",
+      "blankHint": null,
+      "translation": "I have no idea of the answer to this question.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["aucune", "aucun", "rien", "personne"],
+      "correct_index": 0,
+      "explanation": "« Aucune » s'accorde avec le nom féminin « idée ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il a lu tous les dossiers mais n'a relevé ___ erreur.",
+      "blankHint": null,
+      "translation": "He read all the files but found no error.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["aucune", "aucun", "rien", "nulle"],
+      "correct_index": 0,
+      "explanation": "« Aucune » s'accorde avec le nom féminin « erreur ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Depuis cette trahison, il ne fait confiance à ___.",
+      "blankHint": null,
+      "translation": "Since that betrayal, he trusts nobody.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["personne", "rien", "aucun", "quiconque"],
+      "correct_index": 0,
+      "explanation": "« Ne … à personne » : « personne » complément après la préposition « à ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette affaire est confidentielle : n'en parle à ___.",
+      "blankHint": null,
+      "translation": "This matter is confidential: don't talk about it to anyone.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["personne", "rien", "aucun", "quiconque"],
+      "correct_index": 0,
+      "explanation": "À l'impératif négatif, « personne » complète « à » : parle à personne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Malgré le scandale, ___ n'a été tenu pour responsable.",
+      "blankHint": null,
+      "translation": "Despite the scandal, nobody was held responsible.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["personne", "rien", "aucun", "nul"],
+      "correct_index": 0,
+      "explanation": "« Personne ne … » sujet d'une forme passive : personne n'a été tenu.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Après une telle déception, plus ___ ne l'enthousiasmait.",
+      "blankHint": null,
+      "translation": "After such a disappointment, nothing excited him anymore.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["rien", "personne", "aucun", "guère"],
+      "correct_index": 0,
+      "explanation": "« Plus rien ne … » combine « ne … plus » et le sujet « rien ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le juge a examiné le dossier sans trouver ___ preuve solide.",
+      "blankHint": null,
+      "translation": "The judge examined the file without finding any solid evidence.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["aucune", "aucun", "rien", "nulle"],
+      "correct_index": 0,
+      "explanation": "« Aucune » s'accorde avec le nom féminin « preuve ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il parle beaucoup en réunion mais ne dit ___ d'important.",
+      "blankHint": null,
+      "translation": "He talks a lot in meetings but says nothing important.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["rien", "personne", "aucun", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … rien de + adjectif » : rien d'important.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "___ des candidats n'a satisfait le jury particulièrement exigeant.",
+      "blankHint": null,
+      "translation": "None of the candidates satisfied the particularly demanding panel.",
+      "tags": [
+        { "facet": "grammar", "tag": "negation_rien_personne", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["Aucun", "Aucune", "Rien", "Personne"],
+      "correct_index": 0,
+      "explanation": "« Aucun … ne » s'accorde au masculin avec « candidats ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_037",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je n'ai ___ dix euros sur moi, c'est trop peu pour ce livre.",
+      "blankHint": null,
+      "translation": "I only have ten euros on me, that's too little for this book.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » exprime la restriction : seulement dix euros.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_038",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle ne boit ___ de l'eau, jamais d'alcool.",
+      "blankHint": null,
+      "translation": "She only drinks water, never alcohol.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "jamais"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » = seulement ; « que de l'eau » = uniquement de l'eau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_039",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ne t'inquiète pas, il ne reste ___ deux stations avant l'arrivée.",
+      "blankHint": null,
+      "translation": "Don't worry, there are only two stations left before arrival.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "jamais"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : il ne reste plus qu'un petit nombre, seulement deux.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_neg_040",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce restaurant ne sert ___ des plats végétariens.",
+      "blankHint": null,
+      "translation": "This restaurant only serves vegetarian dishes.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » restreint le service aux seuls plats végétariens.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_041",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ne veux ___ ton bonheur, rien de plus.",
+      "blankHint": null,
+      "translation": "I only want your happiness, nothing more.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : le seul désir est le bonheur de l'autre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_042",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le dimanche, ce magasin n'ouvre ___ l'après-midi.",
+      "blankHint": null,
+      "translation": "On Sundays, this shop only opens in the afternoon.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "jamais"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » limite l'ouverture au seul après-midi.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_043",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette décision ne concerne ___ les employés du service comptable.",
+      "blankHint": null,
+      "translation": "This decision only concerns the employees of the accounting department.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : la mesure vise uniquement ce service.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_044",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il ne jure ___ par cette méthode, qu'il trouve infaillible.",
+      "blankHint": null,
+      "translation": "He swears only by this method, which he finds infallible.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "idioms", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "Expression « ne jurer que par » : n'avoir confiance qu'en une chose.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_045",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le directeur ne reçoit ___ sur rendez-vous, jamais à l'improviste.",
+      "blankHint": null,
+      "translation": "The director only sees people by appointment, never unannounced.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : la seule modalité admise est le rendez-vous.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_046",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il ne manque ___ deux jours avant les vacances tant attendues.",
+      "blankHint": null,
+      "translation": "There are only two days left before the long-awaited holidays.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : il ne reste plus qu'un délai réduit, seulement deux jours.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_neg_047",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Cette théorie ne repose ___ sur des hypothèses invérifiables.",
+      "blankHint": null,
+      "translation": "This theory rests only on unverifiable hypotheses.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : le seul fondement est constitué d'hypothèses.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_048",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Nous n'accepterons ___ des candidatures complètes et signées.",
+      "blankHint": null,
+      "translation": "We will only accept complete and signed applications.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » restreint l'acceptation aux seuls dossiers complets.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_049",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Ce phénomène rare ne se manifeste ___ dans des conditions extrêmes.",
+      "blankHint": null,
+      "translation": "This rare phenomenon only occurs in extreme conditions.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : l'apparition se limite à ces seules conditions.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_050",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'orateur ne s'exprimait ___ par allusions, jamais directement.",
+      "blankHint": null,
+      "translation": "The speaker only expressed himself through allusions, never directly.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "register_formal", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : le seul mode d'expression était l'allusion.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_051",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Une telle rigueur ne se rencontre ___ chez les plus grands savants.",
+      "blankHint": null,
+      "translation": "Such rigor is only found among the greatest scholars.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "register_formal", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : cette rigueur ne se trouve que dans ce seul cas.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_052",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le traité ne stipule ___ des obligations réciproques entre les parties.",
+      "blankHint": null,
+      "translation": "The treaty only stipulates reciprocal obligations between the parties.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : le texte se limite à ces seules obligations.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_053",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Sa renommée ne repose ___ sur quelques travaux aujourd'hui contestés.",
+      "blankHint": null,
+      "translation": "His fame rests only on a few works that are now disputed.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "guère"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : la réputation tient à ces seuls travaux.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_neg_054",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Sous des dehors modestes, il ne visait ___ son profit personnel.",
+      "blankHint": null,
+      "translation": "Under a modest appearance, he was aiming only at his personal profit.",
+      "tags": [
+        { "facet": "grammar", "tag": "ne_que", "role": "focus" },
+        { "facet": "topic", "tag": "register_formal", "role": "context" }
+      ],
+      "options": ["que", "pas", "plus", "rien"],
+      "correct_index": 0,
+      "explanation": "« Ne … que » : son unique but était le profit personnel.",
+      "register": "formal"
+    }
+  ]
+}

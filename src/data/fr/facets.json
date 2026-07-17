@@ -1,0 +1,101 @@
+{
+  "_notes": "Facet-based tag taxonomy (replaces domains/subs). Two facets: grammar (structure) + topic (subject). Tags are finer than the old 20 subs so per-tag diagnosis has resolution ('more parameters'). frequency 1-5 = how common/important in real French (5 = train first). shortLabel <= 12 chars for radar axes. Adding a tag later needs no migration — add an entry here + tag questions.",
+
+  "facets": {
+    "grammar": {
+      "label": "Grammaire",
+      "color": "#6366f1",
+      "tags": {
+        "present_etre_avoir": { "label": "Présent — être / avoir", "shortLabel": "Être/Avoir", "frequency": 5 },
+        "present_reguliers": { "label": "Présent — verbes réguliers", "shortLabel": "Prés. rég.", "frequency": 5 },
+        "present_irreguliers": { "label": "Présent — irréguliers fréquents", "shortLabel": "Prés. irr.", "frequency": 4 },
+        "present_pronominaux": { "label": "Verbes pronominaux", "shortLabel": "Pronominaux", "frequency": 3 },
+        "passe_compose": { "label": "Passé composé", "shortLabel": "P. composé", "frequency": 5 },
+        "aux_avoir": { "label": "Auxiliaire avoir", "shortLabel": "Aux. avoir", "frequency": 4 },
+        "aux_etre": { "label": "Auxiliaire être", "shortLabel": "Aux. être", "frequency": 3 },
+        "accord_participe": { "label": "Accord du participe passé", "shortLabel": "Accord PP", "frequency": 3 },
+        "imparfait": { "label": "Imparfait", "shortLabel": "Imparfait", "frequency": 4 },
+        "pc_vs_imparfait": { "label": "Passé composé vs imparfait", "shortLabel": "PC/Imparf.", "frequency": 4 },
+        "plus_que_parfait": { "label": "Plus-que-parfait", "shortLabel": "PQP", "frequency": 2 },
+        "futur_proche": { "label": "Futur proche", "shortLabel": "Futur pr.", "frequency": 4 },
+        "futur_simple": { "label": "Futur simple", "shortLabel": "Futur s.", "frequency": 3 },
+        "conditionnel": { "label": "Conditionnel", "shortLabel": "Condit.", "frequency": 3 },
+        "subjonctif": { "label": "Subjonctif présent", "shortLabel": "Subjonctif", "frequency": 2 },
+        "si_hypothese": { "label": "Hypothèse (si + concordance)", "shortLabel": "Si / hypo", "frequency": 3 },
+        "pronom_cod": { "label": "Pronom COD", "shortLabel": "COD", "frequency": 4 },
+        "pronom_coi": { "label": "Pronom COI", "shortLabel": "COI", "frequency": 3 },
+        "pronom_y_en": { "label": "Pronoms y / en", "shortLabel": "Y / en", "frequency": 3 },
+        "pronom_combinaisons": { "label": "Combinaison de pronoms", "shortLabel": "Combi. pr.", "frequency": 2 },
+        "relatif_qui_que": { "label": "Relatifs qui / que", "shortLabel": "Qui / que", "frequency": 4 },
+        "relatif_dont_ou_lequel": { "label": "Relatifs dont / où / lequel", "shortLabel": "Dont/où", "frequency": 2 },
+        "prepositions_lieu": { "label": "Prépositions de lieu (villes/pays)", "shortLabel": "Prép. lieu", "frequency": 4 },
+        "prepositions_verbe": { "label": "Verbe + préposition + infinitif", "shortLabel": "Verbe+prép", "frequency": 3 },
+        "articles_definis_indefinis": { "label": "Articles définis / indéfinis", "shortLabel": "Articles", "frequency": 5 },
+        "article_partitif": { "label": "Article partitif (du/de la)", "shortLabel": "Partitif", "frequency": 4 },
+        "de_apres_negation": { "label": "De après la négation", "shortLabel": "De + nég.", "frequency": 3 },
+        "negation_base": { "label": "Négation ne… pas / plus / jamais", "shortLabel": "Négation", "frequency": 5 },
+        "negation_rien_personne": { "label": "Ne… rien / personne", "shortLabel": "Rien/pers.", "frequency": 3 },
+        "ne_que": { "label": "Ne… que (restriction)", "shortLabel": "Ne… que", "frequency": 2 },
+        "accord_adjectif": { "label": "Accord de l'adjectif", "shortLabel": "Accord adj", "frequency": 4 },
+        "comparatif_superlatif": { "label": "Comparatif / superlatif", "shortLabel": "Comparatif", "frequency": 3 },
+        "discours_rapporte": { "label": "Discours rapporté", "shortLabel": "Disc. rap.", "frequency": 2 },
+        "connecteurs_logiques": { "label": "Connecteurs logiques", "shortLabel": "Connect.", "frequency": 3 }
+      }
+    },
+
+    "topic": {
+      "label": "Vocabulaire",
+      "color": "#ec4899",
+      "tags": {
+        "daily_routine": { "label": "Routine quotidienne", "shortLabel": "Routine", "frequency": 5 },
+        "weather_time": { "label": "Temps & météo", "shortLabel": "Temps", "frequency": 4 },
+        "clothing": { "label": "Vêtements", "shortLabel": "Vêtements", "frequency": 3 },
+        "shopping_courses": { "label": "Courses & achats", "shortLabel": "Courses", "frequency": 4 },
+        "transport_daily": { "label": "Transports du quotidien", "shortLabel": "Transports", "frequency": 4 },
+        "restaurant": { "label": "Au restaurant", "shortLabel": "Restaurant", "frequency": 4 },
+        "food_ingredients": { "label": "Aliments & ingrédients", "shortLabel": "Aliments", "frequency": 4 },
+        "cooking_methods": { "label": "Cuisiner (méthodes)", "shortLabel": "Cuisson", "frequency": 2 },
+        "home_rooms": { "label": "Logement & pièces", "shortLabel": "Logement", "frequency": 3 },
+        "furniture_objects": { "label": "Mobilier & objets", "shortLabel": "Mobilier", "frequency": 2 },
+        "housing_admin": { "label": "Location & logistique", "shortLabel": "Location", "frequency": 2 },
+        "work_email": { "label": "Travail — emails", "shortLabel": "Emails", "frequency": 3 },
+        "meetings": { "label": "Réunions", "shortLabel": "Réunions", "frequency": 3 },
+        "job_contract": { "label": "Contrats & carrière", "shortLabel": "Carrière", "frequency": 2 },
+        "body_health": { "label": "Corps & santé", "shortLabel": "Santé", "frequency": 3 },
+        "symptoms_doctor": { "label": "Symptômes & médecin", "shortLabel": "Médecin", "frequency": 3 },
+        "travel_booking": { "label": "Voyage & réservations", "shortLabel": "Voyage", "frequency": 3 },
+        "directions": { "label": "Directions & orientation", "shortLabel": "Directions", "frequency": 4 },
+        "emotions_feelings": { "label": "Émotions & sentiments", "shortLabel": "Émotions", "frequency": 4 },
+        "family_relations": { "label": "Famille & relations", "shortLabel": "Famille", "frequency": 4 },
+        "friendship_social": { "label": "Amitié & vie sociale", "shortLabel": "Social", "frequency": 3 },
+        "apologies_conflict": { "label": "Excuses & conflits", "shortLabel": "Excuses", "frequency": 3 },
+        "politeness": { "label": "Politesse", "shortLabel": "Politesse", "frequency": 4 },
+        "admin_bureaucracy": { "label": "Administratif & banque", "shortLabel": "Admin", "frequency": 2 },
+        "media_news": { "label": "Médias & actualité", "shortLabel": "Médias", "frequency": 2 },
+        "numbers_stats": { "label": "Chiffres & quantités", "shortLabel": "Chiffres", "frequency": 3 },
+        "idioms": { "label": "Idiomes courants", "shortLabel": "Idiomes", "frequency": 3 },
+        "register_formal": { "label": "Registre formel / familier", "shortLabel": "Registre", "frequency": 3 }
+      }
+    }
+  },
+
+  "default_active": {
+    "_notes": "Under linear mode there is no user toggle; every tag is always in scope. This list is retained only as the canonical tag enumeration.",
+    "grammar": [
+      "present_etre_avoir", "present_reguliers", "present_irreguliers", "present_pronominaux",
+      "passe_compose", "aux_avoir", "aux_etre", "accord_participe", "imparfait", "pc_vs_imparfait",
+      "plus_que_parfait", "futur_proche", "futur_simple", "conditionnel", "subjonctif", "si_hypothese",
+      "pronom_cod", "pronom_coi", "pronom_y_en", "pronom_combinaisons", "relatif_qui_que",
+      "relatif_dont_ou_lequel", "prepositions_lieu", "prepositions_verbe", "articles_definis_indefinis",
+      "article_partitif", "de_apres_negation", "negation_base", "negation_rien_personne", "ne_que",
+      "accord_adjectif", "comparatif_superlatif", "discours_rapporte", "connecteurs_logiques"
+    ],
+    "topic": [
+      "daily_routine", "weather_time", "clothing", "shopping_courses", "transport_daily", "restaurant",
+      "food_ingredients", "cooking_methods", "home_rooms", "furniture_objects", "housing_admin",
+      "work_email", "meetings", "job_contract", "body_health", "symptoms_doctor", "travel_booking",
+      "directions", "emotions_feelings", "family_relations", "friendship_social", "apologies_conflict",
+      "politeness", "admin_bureaucracy", "media_news", "numbers_stats", "idioms", "register_formal"
+    ]
+  }
+}

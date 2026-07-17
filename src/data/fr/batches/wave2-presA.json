@@ -1,0 +1,580 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_presA_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ étudiant à l'université.",
+      "blankHint": "être",
+      "translation": "I am a student at the university.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["suis", "es", "est", "sommes"],
+      "correct_index": 0,
+      "explanation": "Avec « je », le verbe être se conjugue « je suis ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu ___ très gentil avec moi.",
+      "blankHint": "être",
+      "translation": "You are very kind to me.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["es", "est", "suis", "êtes"],
+      "correct_index": 0,
+      "explanation": "Avec « tu », être devient « tu es ».",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_presA_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il ___ grand et brun.",
+      "blankHint": "être",
+      "translation": "He is tall and dark-haired.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["est", "es", "sont", "suis"],
+      "correct_index": 0,
+      "explanation": "Avec « il », être devient « il est ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous ___ contents de te voir.",
+      "blankHint": "être",
+      "translation": "We are happy to see you.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["sommes", "êtes", "sont", "est"],
+      "correct_index": 0,
+      "explanation": "Avec « nous », être devient « nous sommes ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "J'___ un petit chien noir.",
+      "blankHint": "avoir",
+      "translation": "I have a little black dog.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["ai", "as", "a", "ont"],
+      "correct_index": 0,
+      "explanation": "Avec « je », avoir devient « j'ai ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Elle ___ vingt ans aujourd'hui.",
+      "blankHint": "avoir",
+      "translation": "She is twenty years old today.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["a", "as", "ai", "ont"],
+      "correct_index": 0,
+      "explanation": "Pour l'âge on utilise avoir : « elle a vingt ans ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ en retard pour la réunion.",
+      "blankHint": "être",
+      "translation": "You are late for the meeting.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["êtes", "sommes", "sont", "est"],
+      "correct_index": 0,
+      "explanation": "Avec « vous », être devient « vous êtes ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presA_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils ___ dans le jardin depuis midi.",
+      "blankHint": "être",
+      "translation": "They have been in the garden since noon.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["sont", "êtes", "est", "ont"],
+      "correct_index": 0,
+      "explanation": "Avec « ils », être devient « ils sont ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ faim après cette longue marche.",
+      "blankHint": "avoir",
+      "translation": "We are hungry after this long walk.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["avons", "avez", "ont", "sommes"],
+      "correct_index": 0,
+      "explanation": "« Avoir faim » : nous avons faim.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ raison, c'est bien par ici.",
+      "blankHint": "avoir",
+      "translation": "You are right, it's this way.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["avez", "avons", "ont", "êtes"],
+      "correct_index": 0,
+      "explanation": "« Avoir raison » : vous avez raison.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presA_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elles ___ à la maison ce week-end.",
+      "blankHint": "être",
+      "translation": "They are at home this weekend.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["sont", "ont", "êtes", "est"],
+      "correct_index": 0,
+      "explanation": "Avec « elles », être devient « elles sont ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu ___ de la chance de partir en voyage.",
+      "blankHint": "avoir",
+      "translation": "You are lucky to be going on a trip.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["as", "es", "a", "ai"],
+      "correct_index": 0,
+      "explanation": "« Avoir de la chance » : tu as de la chance.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_presA_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce ___ mes collègues qui organisent la fête.",
+      "blankHint": "être",
+      "translation": "It's my colleagues who are organizing the party.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["sont", "est", "ont", "sommes"],
+      "correct_index": 0,
+      "explanation": "Devant un nom pluriel on dit « ce sont ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ besoin de votre signature sur ce document.",
+      "blankHint": "avoir",
+      "translation": "We need your signature on this document.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["avons", "sommes", "avez", "ont"],
+      "correct_index": 0,
+      "explanation": "« Avoir besoin de » : nous avons besoin.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presA_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il y ___ beaucoup de monde dans le métro ce matin.",
+      "blankHint": "avoir",
+      "translation": "There are a lot of people on the subway this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["a", "est", "ont", "as"],
+      "correct_index": 0,
+      "explanation": "L'expression « il y a » utilise avoir à la 3e personne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ certainement raison sur ce point précis.",
+      "blankHint": "avoir",
+      "translation": "You are certainly right on this precise point.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["avez", "êtes", "avons", "ont"],
+      "correct_index": 0,
+      "explanation": "« Avoir raison » : vous avez raison.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presA_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les enfants ___ particulièrement sages aujourd'hui.",
+      "blankHint": "être",
+      "translation": "The children are particularly well-behaved today.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["sont", "ont", "est", "êtes"],
+      "correct_index": 0,
+      "explanation": "Avec « les enfants » (ils), être devient « sont ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "J'___ l'impression que tu ne m'écoutes pas vraiment.",
+      "blankHint": "avoir",
+      "translation": "I have the feeling that you're not really listening to me.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_etre_avoir", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["ai", "suis", "as", "es"],
+      "correct_index": 0,
+      "explanation": "« Avoir l'impression » : j'ai l'impression.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_presA_019",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je ___ français avec mes amis.",
+      "blankHint": "parler",
+      "translation": "I speak French with my friends.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["parle", "parles", "parlons", "parlez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « je parle ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_020",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Tu ___ à Paris depuis deux ans.",
+      "blankHint": "habiter",
+      "translation": "You have lived in Paris for two years.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["habites", "habite", "habitent", "habitez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « tu habites ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_021",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Il ___ la télévision le soir.",
+      "blankHint": "regarder",
+      "translation": "He watches television in the evening.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["regarde", "regardes", "regardent", "regardons"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « il regarde ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_022",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Nous ___ au foot le dimanche.",
+      "blankHint": "jouer",
+      "translation": "We play soccer on Sundays.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["jouons", "jouez", "jouent", "joue"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « nous jouons ».",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_presA_023",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Vous ___ beaucoup au petit-déjeuner.",
+      "blankHint": "manger",
+      "translation": "You eat a lot at breakfast.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["mangez", "mangeons", "mangent", "mange"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « vous mangez ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_024",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Ils ___ la musique classique.",
+      "blankHint": "aimer",
+      "translation": "They like classical music.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["aiment", "aime", "aimes", "aimez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « ils aiment ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_025",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ toujours poliment à la question.",
+      "blankHint": "répondre",
+      "translation": "We always answer the question politely.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "politeness", "role": "context" }
+      ],
+      "options": ["répondons", "répondez", "répond", "répondent"],
+      "correct_index": 0,
+      "explanation": "Verbe en -re : « nous répondons ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Elle ___ ses devoirs avant le dîner.",
+      "blankHint": "finir",
+      "translation": "She finishes her homework before dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["finit", "finis", "finissent", "finissons"],
+      "correct_index": 0,
+      "explanation": "Verbe en -ir : « elle finit ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ils ___ dans un grand appartement en ville.",
+      "blankHint": "habiter",
+      "translation": "They live in a big apartment in the city.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["habitent", "habite", "habitons", "habitez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « ils habitent ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_028",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Vous ___ le train sur le quai numéro trois.",
+      "blankHint": "attendre",
+      "translation": "You are waiting for the train on platform three.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["attendez", "attendons", "attend", "attendent"],
+      "correct_index": 0,
+      "explanation": "Verbe en -re : « vous attendez ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_029",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je ___ à mes parents tous les dimanches.",
+      "blankHint": "téléphoner",
+      "translation": "I call my parents every Sunday.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["téléphone", "téléphones", "téléphonent", "téléphonez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « je téléphone ».",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_presA_030",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous ___ un gâteau au chocolat pour l'anniversaire.",
+      "blankHint": "choisir",
+      "translation": "We are choosing a chocolate cake for the birthday.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["choisissons", "choisissez", "choisit", "choisissent"],
+      "correct_index": 0,
+      "explanation": "Verbe en -ir : « nous choisissons ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_031",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les étudiants ___ leurs examens la semaine prochaine.",
+      "blankHint": "passer",
+      "translation": "The students are taking their exams next week.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["passent", "passe", "passons", "passez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « les étudiants passent ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_032",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Nous ___ toujours nos projets bien avant la date limite.",
+      "blankHint": "finir",
+      "translation": "We always finish our projects well before the deadline.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["finissons", "finissez", "finissent", "finit"],
+      "correct_index": 0,
+      "explanation": "Verbe en -ir : « nous finissons ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_033",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous ___ toujours calmement aux critiques de vos clients.",
+      "blankHint": "répondre",
+      "translation": "You always respond calmly to your clients' criticism.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["répondez", "répondons", "répond", "répondent"],
+      "correct_index": 0,
+      "explanation": "Verbe en -re : « vous répondez ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_presA_034",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je ___ mes affaires avant de quitter le bureau.",
+      "blankHint": "ranger",
+      "translation": "I tidy up my things before leaving the office.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["range", "ranges", "rangent", "rangez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « je range ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_035",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ___ le résultat des analyses avec impatience.",
+      "blankHint": "attendre",
+      "translation": "They are waiting impatiently for the test results.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["attendent", "attend", "attendons", "attendez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -re : « ils attendent ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_presA_036",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle ___ souvent ses voisins à prendre le café.",
+      "blankHint": "inviter",
+      "translation": "She often invites her neighbors over for coffee.",
+      "tags": [
+        { "facet": "grammar", "tag": "present_reguliers", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["invite", "invites", "invitent", "invitez"],
+      "correct_index": 0,
+      "explanation": "Verbe en -er : « elle invite ».",
+      "register": "neutral"
+    }
+  ]
+}

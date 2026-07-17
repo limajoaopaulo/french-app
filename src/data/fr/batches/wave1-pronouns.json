@@ -1,0 +1,484 @@
+{
+  "questions": [
+    {
+      "id": "fr_w1_pron_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu vois Marie ? Oui, je ___ vois souvent.",
+      "blankHint": null,
+      "translation": "Do you see Marie? Yes, I see her often.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["la", "lui", "le", "y"],
+      "correct_index": 0,
+      "explanation": "COD féminin singulier : je la vois.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce pull est joli. Je ___ achète tout de suite.",
+      "blankHint": null,
+      "translation": "This sweater is nice. I'll buy it right away.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["l'", "lui", "la", "en"],
+      "correct_index": 0,
+      "explanation": "COD masculin devant voyelle : je l'achète.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_003",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tes clés ? Je ___ ai posées sur la table de la cuisine.",
+      "blankHint": null,
+      "translation": "Your keys? I put them on the kitchen table.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["les", "leur", "en", "y"],
+      "correct_index": 0,
+      "explanation": "COD pluriel : je les ai posées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_004",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce dossier est urgent : le directeur veut ___ signer aujourd'hui.",
+      "blankHint": null,
+      "translation": "This file is urgent: the director wants to sign it today.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["le", "lui", "y", "en"],
+      "correct_index": 0,
+      "explanation": "COD masculin singulier : il veut le signer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_005",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ces photos, tu les as vues ? — Non, je ne ___ ai pas encore regardées.",
+      "blankHint": null,
+      "translation": "These photos, have you seen them? — No, I haven't looked at them yet.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_cod", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["les", "leur", "en", "lui"],
+      "correct_index": 0,
+      "explanation": "COD pluriel repris : je ne les ai pas regardées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Quand je vois mes parents, je ___ téléphone chaque dimanche.",
+      "blankHint": null,
+      "translation": "When it comes to my parents, I call them every Sunday.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["leur", "les", "y", "en"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : téléphoner à quelqu'un, je leur téléphone.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Mon collègue a un problème, alors je ___ explique la procédure.",
+      "blankHint": null,
+      "translation": "My colleague has a problem, so I explain the procedure to him.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "y"],
+      "correct_index": 0,
+      "explanation": "COI singulier : expliquer à quelqu'un, je lui explique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La serveuse est occupée ; je ___ demande l'addition dans un instant.",
+      "blankHint": null,
+      "translation": "The waitress is busy; I'll ask her for the bill in a moment.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["lui", "la", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "COI singulier : demander à quelqu'un, je lui demande.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Mes voisins m'ont aidé, donc je ___ ai offert des fleurs pour les remercier.",
+      "blankHint": null,
+      "translation": "My neighbours helped me, so I gave them flowers to thank them.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["leur", "les", "lui", "y"],
+      "correct_index": 0,
+      "explanation": "COI pluriel : offrir à quelqu'un, je leur ai offert.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_010",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le médecin est compétent : je ___ fais entièrement confiance.",
+      "blankHint": null,
+      "translation": "The doctor is competent: I completely trust him.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_coi", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["lui", "le", "leur", "en"],
+      "correct_index": 0,
+      "explanation": "Faire confiance à quelqu'un : COI, je lui fais confiance.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu vas au marché ? Oui, j'___ vais ce matin.",
+      "blankHint": null,
+      "translation": "Are you going to the market? Yes, I'm going there this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["y", "en", "le", "lui"],
+      "correct_index": 0,
+      "explanation": "« y » remplace un lieu : aller au marché → j'y vais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tu veux du café ? Non merci, je n'___ veux pas.",
+      "blankHint": null,
+      "translation": "Do you want some coffee? No thanks, I don't want any.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["en", "y", "le", "la"],
+      "correct_index": 0,
+      "explanation": "« en » remplace une quantité partitive : du café → je n'en veux pas.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il a acheté trois croissants et il ___ a déjà mangé deux.",
+      "blankHint": null,
+      "translation": "He bought three croissants and he's already eaten two of them.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "leur"],
+      "correct_index": 0,
+      "explanation": "« en » reprend un nom avec un nombre : il en a mangé deux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle pense souvent à ses vacances ; elle ___ pense même la nuit.",
+      "blankHint": null,
+      "translation": "She often thinks about her holidays; she even thinks about them at night.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["y", "en", "les", "leur"],
+      "correct_index": 0,
+      "explanation": "Penser à quelque chose : « y », elle y pense.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "As-tu besoin de ces documents ? — Oui, j'___ ai absolument besoin.",
+      "blankHint": null,
+      "translation": "Do you need these documents? — Yes, I absolutely need them.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_y_en", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["en", "y", "les", "leur"],
+      "correct_index": 0,
+      "explanation": "Avoir besoin de quelque chose : « en », j'en ai besoin.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_016",
+      "format": "cloze",
+      "level": 2,
+      "cue": "C'est le train ___ part à huit heures.",
+      "blankHint": null,
+      "translation": "It's the train that leaves at eight o'clock.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["qui", "que", "où", "dont"],
+      "correct_index": 0,
+      "explanation": "« qui » est sujet du verbe partir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_017",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Voici le manteau ___ j'ai acheté hier.",
+      "blankHint": null,
+      "translation": "Here is the coat that I bought yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["que", "qui", "où", "dont"],
+      "correct_index": 0,
+      "explanation": "« que » est COD de j'ai acheté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La collègue ___ travaille à côté de moi part à la retraite.",
+      "blankHint": null,
+      "translation": "The colleague who works next to me is retiring.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["qui", "que", "dont", "où"],
+      "correct_index": 0,
+      "explanation": "« qui » est sujet du verbe travailler.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_019",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le plat ___ tu as préparé était délicieux.",
+      "blankHint": null,
+      "translation": "The dish that you prepared was delicious.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "cooking_methods", "role": "context" }
+      ],
+      "options": ["que", "qui", "où", "dont"],
+      "correct_index": 0,
+      "explanation": "« que » est COD de tu as préparé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_020",
+      "format": "cloze",
+      "level": 4,
+      "cue": "C'est un article ___ explique bien la crise économique.",
+      "blankHint": null,
+      "translation": "It's an article that explains the economic crisis well.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["qui", "que", "dont", "où"],
+      "correct_index": 0,
+      "explanation": "« qui » est sujet du verbe expliquer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Cet été, nous partons ___ Portugal pour deux semaines.",
+      "blankHint": null,
+      "translation": "This summer, we're going to Portugal for two weeks.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["au", "en", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Pays masculin : au Portugal.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ma sœur habite ___ Espagne depuis trois ans.",
+      "blankHint": null,
+      "translation": "My sister has lived in Spain for three years.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["en", "au", "à", "aux"],
+      "correct_index": 0,
+      "explanation": "Pays féminin : en Espagne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le vol fait escale ___ Amsterdam avant d'arriver.",
+      "blankHint": null,
+      "translation": "The flight stops over in Amsterdam before arriving.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["à", "en", "au", "aux"],
+      "correct_index": 0,
+      "explanation": "Ville : à Amsterdam.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_024",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Chaque hiver, ils vont skier ___ États-Unis.",
+      "blankHint": null,
+      "translation": "Every winter, they go skiing in the United States.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["aux", "en", "au", "à"],
+      "correct_index": 0,
+      "explanation": "Pays pluriel : aux États-Unis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il vient ___ Canada mais il travaille à Paris.",
+      "blankHint": null,
+      "translation": "He comes from Canada but he works in Paris.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_lieu", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["du", "de", "en", "au"],
+      "correct_index": 0,
+      "explanation": "Provenance d'un pays masculin : venir du Canada.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_026",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai décidé ___ apprendre le français cette année.",
+      "blankHint": null,
+      "translation": "I decided to learn French this year.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["d'", "à", "de", "pour"],
+      "correct_index": 0,
+      "explanation": "Décider de faire quelque chose, devant voyelle : d'apprendre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_027",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous commençons ___ comprendre les règles du jeu.",
+      "blankHint": null,
+      "translation": "We're starting to understand the rules of the game.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Commencer à faire quelque chose : commencer à comprendre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le patient a oublié ___ prendre ses médicaments ce matin.",
+      "blankHint": null,
+      "translation": "The patient forgot to take his medication this morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Oublier de faire quelque chose : oublier de prendre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle hésite encore ___ signer le nouveau contrat.",
+      "blankHint": null,
+      "translation": "She still hesitates to sign the new contract.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["à", "de", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Hésiter à faire quelque chose : hésiter à signer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w1_pron_030",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le directeur a accepté ___ reporter la réunion à vendredi.",
+      "blankHint": null,
+      "translation": "The director agreed to postpone the meeting to Friday.",
+      "tags": [
+        { "facet": "grammar", "tag": "prepositions_verbe", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["de", "à", "d'", "pour"],
+      "correct_index": 0,
+      "explanation": "Accepter de faire quelque chose : accepter de reporter.",
+      "register": "neutral"
+    }
+  ]
+}

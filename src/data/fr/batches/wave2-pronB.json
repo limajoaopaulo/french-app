@@ -1,0 +1,868 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_pronB_001",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu as prêté ta voiture à ton frère ? — Oui, je ___ ai prêtée.",
+      "blankHint": null,
+      "translation": "Did you lend your car to your brother? — Yes, I lent it to him.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["la lui", "lui la", "le lui", "la leur"],
+      "correct_index": 0,
+      "explanation": "COD féminin avant COI : je la lui ai prêtée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_002",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils veulent les billets. Le vendeur ___ donne à la caisse.",
+      "blankHint": null,
+      "translation": "They want the tickets. The seller gives them to them at the counter.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["les leur", "leur les", "les lui", "le leur"],
+      "correct_index": 0,
+      "explanation": "COD pluriel avant COI pluriel : il les leur donne.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_003",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Des fruits au marché ? Oui, il ___ a beaucoup.",
+      "blankHint": null,
+      "translation": "Fruit at the market? Yes, there is a lot of it.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["y en", "en y", "y", "en"],
+      "correct_index": 0,
+      "explanation": "Ordre y avant en : il y en a beaucoup.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_004",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Tu m'as rapporté le journal ? — Oui, je ___ ai rapporté.",
+      "blankHint": null,
+      "translation": "Did you bring me the newspaper? — Yes, I brought it to you.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["te le", "le te", "me le", "te la"],
+      "correct_index": 0,
+      "explanation": "COI te avant COD le : je te le rapporte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_005",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Vous avez expliqué la règle aux étudiants ? — Oui, je ___ ai expliquée.",
+      "blankHint": null,
+      "translation": "Did you explain the rule to the students? — Yes, I explained it to them.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["la leur", "leur la", "la lui", "les leur"],
+      "correct_index": 0,
+      "explanation": "COD féminin avant COI pluriel : je la leur ai expliquée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_006",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette histoire est drôle : raconte-___ tout de suite !",
+      "blankHint": null,
+      "translation": "This story is funny: tell it to me right away!",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["la-moi", "moi-la", "me-la", "la-me"],
+      "correct_index": 0,
+      "explanation": "Impératif affirmatif : COD puis moi, raconte-la-moi.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronB_007",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce secret, ne ___ dis surtout pas, je t'en prie.",
+      "blankHint": null,
+      "translation": "This secret, don't tell it to me, I beg you.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["me le", "le me", "te le", "m'en"],
+      "correct_index": 0,
+      "explanation": "Impératif négatif : ordre normal me le, ne me le dis pas.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_008",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il nous a promis ces résultats, mais il ne ___ a jamais montrés.",
+      "blankHint": null,
+      "translation": "He promised us these results, but he never showed them to us.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["nous les", "les nous", "nous leur", "nous en"],
+      "correct_index": 0,
+      "explanation": "COI nous avant COD les : il ne nous les a jamais montrés.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_009",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Des excuses ? Il ne ___ fera jamais, je le connais trop bien.",
+      "blankHint": null,
+      "translation": "An apology? He'll never make one to me, I know him too well.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["m'en", "me en", "en me", "m'y"],
+      "correct_index": 0,
+      "explanation": "COI me devant en : il ne m'en fera jamais.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_010",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce stylo, j'en ai besoin : donne-___ , s'il te plaît.",
+      "blankHint": null,
+      "translation": "This pen, I need it: give it to me, please.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["le-moi", "moi-le", "me-le", "le-me"],
+      "correct_index": 0,
+      "explanation": "Impératif affirmatif : COD puis moi, donne-le-moi.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronB_011",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Parle-lui de ton projet ! — Justement, je ___ ai déjà parlé hier.",
+      "blankHint": null,
+      "translation": "Talk to him about your project! — Actually, I already talked to him about it yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["lui en", "en lui", "y en", "lui y"],
+      "correct_index": 0,
+      "explanation": "COI lui devant en : je lui en ai déjà parlé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_012",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Tu veux mon adresse ? Attends, je ___ écris sur ce papier.",
+      "blankHint": null,
+      "translation": "You want my address? Wait, I'll write it down for you on this paper.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "directions", "role": "context" }
+      ],
+      "options": ["te l'", "le te", "te la", "t'en"],
+      "correct_index": 0,
+      "explanation": "COI te avant COD l' élidé : je te l'écris.",
+      "register": "casual"
+    },
+    {
+      "id": "fr_w2_pronB_013",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il a trahi ses associés et il ___ voulait terriblement ensuite.",
+      "blankHint": null,
+      "translation": "He betrayed his partners and afterwards he resented himself terribly for it.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["s'en", "se en", "en se", "s'y"],
+      "correct_index": 0,
+      "explanation": "S'en vouloir : le pronom se précède en, il s'en voulait.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_014",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Ces privilèges, on ___ a accordés sans qu'ils les méritent vraiment.",
+      "blankHint": null,
+      "translation": "These privileges, they were granted to them without them really deserving them.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["les leur", "leur les", "les lui", "leur en"],
+      "correct_index": 0,
+      "explanation": "COD pluriel avant COI pluriel : on les leur a accordés.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_015",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Ces dossiers sensibles, il faut ___ remettre en main propre, à personne d'autre.",
+      "blankHint": null,
+      "translation": "These sensitive files, they must be handed to him in person, to no one else.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["les lui", "lui les", "le lui", "les leur"],
+      "correct_index": 0,
+      "explanation": "COD pluriel avant COI lui : il faut les lui remettre.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_016",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Quant à ces reproches, épargne-___ , ils ne servent à rien.",
+      "blankHint": null,
+      "translation": "As for these reproaches, spare me them, they're pointless.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["les-moi", "moi-les", "me-les", "m'en"],
+      "correct_index": 0,
+      "explanation": "Impératif affirmatif : COD les puis moi, épargne-les-moi.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_017",
+      "format": "cloze",
+      "level": 5,
+      "cue": "De cette rumeur, ne ___ fais surtout pas l'écho auprès de la direction.",
+      "blankHint": null,
+      "translation": "This rumor, don't relay it to management, whatever you do.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["t'en", "en te", "te en", "toi-en"],
+      "correct_index": 0,
+      "explanation": "Impératif négatif : te devant en, ne t'en fais pas l'écho.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_018",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Si ces documents lui manquent, procure-___ sans tarder.",
+      "blankHint": null,
+      "translation": "If he lacks these documents, get them for him without delay.",
+      "tags": [
+        { "facet": "grammar", "tag": "pronom_combinaisons", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["les-lui", "lui-les", "le-lui", "les-leur"],
+      "correct_index": 0,
+      "explanation": "Impératif affirmatif : COD les avant COI lui, procure-les-lui.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_019",
+      "format": "cloze",
+      "level": 2,
+      "cue": "La femme ___ parle au téléphone est ma voisine.",
+      "blankHint": null,
+      "translation": "The woman who is talking on the phone is my neighbor.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "où"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe : le pronom relatif est qui.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_020",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le livre ___ je lis ce soir est passionnant.",
+      "blankHint": null,
+      "translation": "The book that I'm reading tonight is fascinating.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["que", "qui", "qu'", "où"],
+      "correct_index": 0,
+      "explanation": "COD du verbe lis : le pronom relatif est que.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_021",
+      "format": "cloze",
+      "level": 2,
+      "cue": "C'est le train ___ part à midi pour Lyon.",
+      "blankHint": null,
+      "translation": "It's the train that leaves at noon for Lyon.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "dont"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe part : le pronom relatif est qui.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_022",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Voici le gâteau ___ j'ai fait pour ton anniversaire.",
+      "blankHint": null,
+      "translation": "Here is the cake that I made for your birthday.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["que", "qui", "où", "dont"],
+      "correct_index": 0,
+      "explanation": "COD du verbe ai fait : le pronom relatif est que.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_023",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le film ___ il regarde est en anglais.",
+      "blankHint": null,
+      "translation": "The film that he is watching is in English.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["qu'", "qui", "que", "où"],
+      "correct_index": 0,
+      "explanation": "COD élidé devant voyelle : le film qu'il regarde.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_024",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'ai un ami ___ habite à Marseille.",
+      "blankHint": null,
+      "translation": "I have a friend who lives in Marseille.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "où"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe habite : le pronom relatif est qui.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Les collègues ___ travaillent avec moi sont très compétents.",
+      "blankHint": null,
+      "translation": "The colleagues who work with me are very competent.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "dont"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe travaillent : le pronom relatif est qui.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La proposition ___ le directeur a rejetée était pourtant sérieuse.",
+      "blankHint": null,
+      "translation": "The proposal that the director rejected was nevertheless serious.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["que", "qui", "qu'", "où"],
+      "correct_index": 0,
+      "explanation": "COD du verbe a rejetée : le pronom relatif est que.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est un médicament ___ soulage rapidement la douleur.",
+      "blankHint": null,
+      "translation": "It's a medicine that relieves the pain quickly.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "dont"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe soulage : le pronom relatif est qui.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le manteau ___ tu as acheté hier te va très bien.",
+      "blankHint": null,
+      "translation": "The coat that you bought yesterday suits you very well.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "clothing", "role": "context" }
+      ],
+      "options": ["que", "qui", "où", "dont"],
+      "correct_index": 0,
+      "explanation": "COD du verbe as acheté : le pronom relatif est que.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_029",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce sont des voisins ___ nous invitons souvent à dîner.",
+      "blankHint": null,
+      "translation": "They are neighbors whom we often invite to dinner.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["que", "qui", "qu'", "dont"],
+      "correct_index": 0,
+      "explanation": "COD du verbe invitons : le pronom relatif est que.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_030",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le train ___ nous attendions avait quinze minutes de retard.",
+      "blankHint": null,
+      "translation": "The train that we were waiting for was fifteen minutes late.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["que", "qui", "qu'", "où"],
+      "correct_index": 0,
+      "explanation": "COD du verbe attendions : le pronom relatif est que.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les décisions ___ ont été prises en réunion engagent toute l'équipe.",
+      "blankHint": null,
+      "translation": "The decisions that were made in the meeting commit the whole team.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "dont"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe passif ont été prises : le pronom relatif est qui.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "L'argument ___ il a avancé pour se justifier ne convainc personne.",
+      "blankHint": null,
+      "translation": "The argument that he put forward to justify himself convinces no one.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["qu'", "qui", "que", "dont"],
+      "correct_index": 0,
+      "explanation": "COD élidé devant voyelle : l'argument qu'il a avancé.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Voici les candidats ___ correspondent le mieux au profil recherché.",
+      "blankHint": null,
+      "translation": "Here are the candidates who best match the sought-after profile.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "dont"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe correspondent : le pronom relatif est qui.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le rapport ___ la commission a rédigé sera publié la semaine prochaine.",
+      "blankHint": null,
+      "translation": "The report that the committee drafted will be published next week.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["que", "qui", "qu'", "où"],
+      "correct_index": 0,
+      "explanation": "COD du verbe a rédigé : le pronom relatif est que.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce sont des symptômes ___ apparaissent souvent après un long effort.",
+      "blankHint": null,
+      "translation": "These are symptoms that often appear after a long effort.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "symptoms_doctor", "role": "context" }
+      ],
+      "options": ["qui", "que", "qu'", "dont"],
+      "correct_index": 0,
+      "explanation": "Sujet du verbe apparaissent : le pronom relatif est qui.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_036",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La stratégie ___ nous avons adoptée l'an dernier porte enfin ses fruits.",
+      "blankHint": null,
+      "translation": "The strategy that we adopted last year is finally paying off.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_qui_que", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["que", "qui", "qu'", "où"],
+      "correct_index": 0,
+      "explanation": "COD du verbe avons adoptée : le pronom relatif est que.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_037",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le collègue ___ je t'ai parlé vient d'être promu.",
+      "blankHint": null,
+      "translation": "The colleague I told you about has just been promoted.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["dont", "que", "qui", "où"],
+      "correct_index": 0,
+      "explanation": "Parler de quelqu'un : le relatif reprenant « de » est dont.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_038",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La ville ___ je suis né se trouve dans le sud.",
+      "blankHint": null,
+      "translation": "The town where I was born is in the south.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["où", "dont", "que", "qui"],
+      "correct_index": 0,
+      "explanation": "Complément de lieu : le pronom relatif est où.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_039",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le jour ___ nous sommes arrivés, il pleuvait des cordes.",
+      "blankHint": null,
+      "translation": "The day we arrived, it was pouring rain.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["où", "dont", "que", "qui"],
+      "correct_index": 0,
+      "explanation": "Complément de temps : on emploie où pour le jour où.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_040",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est un voisin ___ la voiture est toujours mal garée.",
+      "blankHint": null,
+      "translation": "It's a neighbor whose car is always badly parked.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["dont", "que", "où", "qui"],
+      "correct_index": 0,
+      "explanation": "Possession (la voiture de lui) : le relatif est dont.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_041",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Voici la maison ___ j'ai passé toute mon enfance.",
+      "blankHint": null,
+      "translation": "Here is the house where I spent my whole childhood.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "home_rooms", "role": "context" }
+      ],
+      "options": ["où", "dont", "que", "qui"],
+      "correct_index": 0,
+      "explanation": "Complément de lieu : le pronom relatif est où.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_042",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est un résultat ___ toute l'équipe est très fière.",
+      "blankHint": null,
+      "translation": "It's a result that the whole team is very proud of.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["dont", "que", "où", "qui"],
+      "correct_index": 0,
+      "explanation": "Être fier de : le relatif reprenant « de » est dont.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_043",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La réunion à ___ j'ai assisté ce matin a duré trois heures.",
+      "blankHint": null,
+      "translation": "The meeting I attended this morning lasted three hours.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["laquelle", "lequel", "auquel", "dont"],
+      "correct_index": 0,
+      "explanation": "Assister à + nom féminin : à laquelle.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_044",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le problème ___ nous devons faire face est plus grave que prévu.",
+      "blankHint": null,
+      "translation": "The problem we have to face is more serious than expected.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["auquel", "à lequel", "duquel", "dont"],
+      "correct_index": 0,
+      "explanation": "Faire face à : la contraction à + lequel donne auquel.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_045",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les outils avec ___ je travaille au quotidien sont assez anciens.",
+      "blankHint": null,
+      "translation": "The tools I work with every day are quite old.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "furniture_objects", "role": "context" }
+      ],
+      "options": ["lesquels", "lesquelles", "qui", "dont"],
+      "correct_index": 0,
+      "explanation": "Préposition avec + nom masculin pluriel : lesquels.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_046",
+      "format": "cloze",
+      "level": 4,
+      "cue": "L'entreprise pour ___ il travaille depuis dix ans va fermer.",
+      "blankHint": null,
+      "translation": "The company he has worked for for ten years is going to close.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["laquelle", "lequel", "lesquelles", "dont"],
+      "correct_index": 0,
+      "explanation": "Préposition pour + nom féminin singulier : laquelle.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_047",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le sujet ___ tout le monde s'intéresse en ce moment, c'est l'écologie.",
+      "blankHint": null,
+      "translation": "The topic everyone is interested in right now is ecology.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["auquel", "dont", "à lequel", "duquel"],
+      "correct_index": 0,
+      "explanation": "S'intéresser à : la contraction à + lequel donne auquel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_pronB_048",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La raison pour ___ j'ai démissionné reste strictement personnelle.",
+      "blankHint": null,
+      "translation": "The reason for which I resigned remains strictly personal.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["laquelle", "lequel", "quoi", "dont"],
+      "correct_index": 0,
+      "explanation": "Locution pour laquelle : préposition + nom féminin.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_049",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le congrès au cours ___ il a présenté ses travaux était international.",
+      "blankHint": null,
+      "translation": "The conference during which he presented his work was international.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["duquel", "dont", "auquel", "lequel"],
+      "correct_index": 0,
+      "explanation": "Locution au cours de : de + lequel donne duquel.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_050",
+      "format": "cloze",
+      "level": 5,
+      "cue": "La table à côté de ___ elle s'était assise était déjà réservée.",
+      "blankHint": null,
+      "translation": "The table next to which she had sat down was already reserved.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["laquelle", "lequel", "duquel", "dont"],
+      "correct_index": 0,
+      "explanation": "Locution à côté de + nom féminin : de laquelle.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_051",
+      "format": "cloze",
+      "level": 5,
+      "cue": "C'est un principe au nom ___ il se bat depuis toujours.",
+      "blankHint": null,
+      "translation": "It's a principle in the name of which he has always fought.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["duquel", "dont", "auquel", "lequel"],
+      "correct_index": 0,
+      "explanation": "Locution au nom de : de + lequel donne duquel.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_052",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'homme grâce ___ j'ai décroché ce poste est aujourd'hui mon mentor.",
+      "blankHint": null,
+      "translation": "The man thanks to whom I landed this job is now my mentor.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["auquel", "duquel", "à lequel", "dont"],
+      "correct_index": 0,
+      "explanation": "Locution grâce à : à + lequel donne auquel.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_053",
+      "format": "cloze",
+      "level": 5,
+      "cue": "La période au terme ___ tout a basculé n'a duré que quelques mois.",
+      "blankHint": null,
+      "translation": "The period at the end of which everything changed lasted only a few months.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["de laquelle", "duquel", "dont", "laquelle"],
+      "correct_index": 0,
+      "explanation": "Locution au terme de + nom féminin : de laquelle.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_pronB_054",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les circonstances dans ___ cette décision a été prise restent obscures.",
+      "blankHint": null,
+      "translation": "The circumstances in which this decision was made remain obscure.",
+      "tags": [
+        { "facet": "grammar", "tag": "relatif_dont_ou_lequel", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["lesquelles", "lesquels", "laquelle", "dont"],
+      "correct_index": 0,
+      "explanation": "Préposition dans + nom féminin pluriel : lesquelles.",
+      "register": "formal"
+    }
+  ]
+}

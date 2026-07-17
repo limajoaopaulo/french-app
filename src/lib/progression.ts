@@ -1,12 +1,21 @@
 import { prisma } from "@/lib/db"
-import { BOSSES, FSRS_TARGET_RETENTION } from "@/lib/constants"
-import { getDomains, type Domain, type LanguageCode } from "@/lib/taxonomy"
+import { FSRS_TARGET_RETENTION } from "@/lib/constants"
+import {
+  allTags,
+  FACETS,
+  tagLabel,
+  type Facet,
+  type LanguageCode,
+} from "@/lib/taxonomy"
 import {
   bandProgressToNext,
+  bucketCardsByTag,
   cardsToNextLevel,
   subLevelFromCards,
   subRetrievabilitySummary,
-  type CardForLevel,
+  tagKey,
+  type CardTag,
+  type TaggedCard,
 } from "@/lib/levels"
 
 export interface LevelRange {
@@ -22,91 +31,112 @@ export const LEVEL_RANGES: readonly LevelRange[] = [
   { label: "B2-C1", min: 4, max: 5 },
 ] as const
 
-export interface SubAggregate {
-  domain: string
-  sub: string
-  isActive: boolean
-  subLevel: number
+export interface TagAggregate {
+  facet: Facet
+  tag: string
+  label: string
+  frequency: number
+  tagLevel: number
   meanR: number
   lowR: number
-  total: number
+  total: number // all cards carrying the tag (any role)
+  focusTotal: number // cards where the tag is focus (drive graduation)
   cold: number
 }
 
-export interface TargetSub {
-  domain: Domain
-  sub: string
+export interface TagTargetInfo {
+  facet: Facet
+  tag: string
   label: string
 }
 
 export interface PersonalisedTargets {
-  subs: TargetSub[]
+  targets: TagTargetInfo[]
   range: LevelRange
-  weakPatterns: string[]
+  weakTags: TagTargetInfo[]
 }
 
-export async function loadSubAggregates(
+interface StateRow {
+  stability: number
+  difficulty: number
+  state: number
+  scheduledDays: number
+  learningSteps: number
+  reps: number
+  lapses: number
+  lastReview: Date | null
+  dueAt: Date | null
+  question: { level: number; tags: Array<{ facet: string; tag: string; role: string }> }
+}
+
+function toTaggedCard(st: StateRow): TaggedCard {
+  const tags: CardTag[] = st.question.tags.map((t) => ({
+    facet: t.facet,
+    tag: t.tag,
+    role: t.role,
+  }))
+  return {
+    level: st.question.level,
+    stability: st.stability,
+    difficulty: st.difficulty,
+    state: st.state,
+    scheduledDays: st.scheduledDays,
+    learningSteps: st.learningSteps,
+    reps: st.reps,
+    lapses: st.lapses,
+    lastReview: st.lastReview,
+    dueAt: st.dueAt,
+    tags,
+  }
+}
+
+async function loadTaggedCards(userId: number, languageId: number): Promise<TaggedCard[]> {
+  const states = await prisma.questionState.findMany({
+    where: { userId, question: { languageId } },
+    include: { question: { select: { level: true, tags: true } } },
+  })
+  return states.map(toTaggedCard)
+}
+
+export async function loadTagAggregates(
   userId: number,
   languageId: number,
-): Promise<SubAggregate[]> {
-  const [subStats, states] = await Promise.all([
-    prisma.subStats.findMany({ where: { userId } }),
-    prisma.questionState.findMany({
-      where: {
-        userId,
-        question: { languageId },
-      },
-      include: {
-        question: { select: { domain: true, sub: true, level: true, pattern: true } },
-      },
-    }),
-  ])
-
-  const cardsBySub = new Map<string, CardForLevel[]>()
-  for (const st of states) {
-    const key = `${st.question.domain}::${st.question.sub}`
-    const arr = cardsBySub.get(key) ?? []
-    arr.push({
-      level: st.question.level,
-      stability: st.stability,
-      difficulty: st.difficulty,
-      state: st.state,
-      scheduledDays: st.scheduledDays,
-      learningSteps: st.learningSteps,
-      reps: st.reps,
-      lapses: st.lapses,
-      lastReview: st.lastReview,
-      dueAt: st.dueAt,
-    })
-    cardsBySub.set(key, arr)
-  }
-
+  languageCode: LanguageCode,
+): Promise<TagAggregate[]> {
+  const cards = await loadTaggedCards(userId, languageId)
+  const buckets = bucketCardsByTag(cards)
   const now = new Date()
-  const out: SubAggregate[] = []
-  for (const sub of subStats) {
-    const key = `${sub.domain}::${sub.sub}`
-    const cards = cardsBySub.get(key) ?? []
-    const subLevel = subLevelFromCards(cards)
-    const summary = subRetrievabilitySummary(cards, now, FSRS_TARGET_RETENTION)
+  const out: TagAggregate[] = []
+  for (const t of allTags(languageCode)) {
+    const bucket = buckets.get(tagKey(t.facet, t.tag))
+    const focusCards = bucket?.focusCards ?? []
+    const allCards = bucket?.allCards ?? []
+    const tagLevel = subLevelFromCards(focusCards)
+    const summary = subRetrievabilitySummary(allCards, now, FSRS_TARGET_RETENTION)
     out.push({
-      domain: sub.domain,
-      sub: sub.sub,
-      isActive: sub.isActive,
-      subLevel,
+      facet: t.facet,
+      tag: t.tag,
+      label: t.label,
+      frequency: t.frequency,
+      tagLevel,
       meanR: summary.meanR,
       lowR: summary.lowR,
       total: summary.total,
+      focusTotal: focusCards.length,
       cold: summary.cold,
     })
   }
   return out
 }
 
-function subPriority(s: SubAggregate): number {
-  const levelScore = 5 - s.subLevel
-  const retentionPressure = s.lowR * 2
-  const coldStart = s.total > 0 && s.cold / s.total > 0.5 ? 0.5 : 0
-  return levelScore + retentionPressure + coldStart
+// Priority = weakness/level-gap, scaled by frequency so common skills surface
+// first (the linear curriculum). frequency 1..5 → weight 0.33..1.67.
+function tagPriority(a: TagAggregate): number {
+  const levelScore = 5 - a.tagLevel
+  const retentionPressure = a.lowR * 2
+  const coldStart = a.total > 0 && a.cold / a.total > 0.5 ? 0.5 : 0
+  const base = levelScore + retentionPressure + coldStart
+  return base * (a.frequency / 3)
 }
 
 function levelRangeFor(meanEst: number): LevelRange {
@@ -116,196 +146,66 @@ function levelRangeFor(meanEst: number): LevelRange {
   return LEVEL_RANGES[3]
 }
 
-export async function pickPersonalisedTargets(args: {
-  userId: number
-  languageId: number
-  languageCode: LanguageCode
-  subAggregates: SubAggregate[]
-  domainFilter?: Domain
-}): Promise<PersonalisedTargets | null> {
-  let pool = args.subAggregates.filter((s) => s.isActive)
-  if (args.domainFilter) pool = pool.filter((s) => s.domain === args.domainFilter)
-  if (pool.length === 0) return null
-
-  const ranked = pool
-    .map((s) => ({ sub: s, priority: subPriority(s) }))
-    .sort((a, b) => b.priority - a.priority)
-
-  const picks = [ranked[0]]
-  if (
-    ranked.length > 1 &&
-    ranked[0].priority > 0 &&
-    ranked[1].priority / ranked[0].priority >= 0.7
-  ) {
-    picks.push(ranked[1])
+// Overall CEFR estimate — frequency-weighted mean of per-tag levels. Rare tags
+// contribute little, so an untouched niche tag doesn't tank the headline number.
+export function overallLevel(aggregates: readonly TagAggregate[]): number {
+  let num = 0
+  let den = 0
+  for (const a of aggregates) {
+    num += a.tagLevel * a.frequency
+    den += a.frequency
   }
-
-  const domains = getDomains(args.languageCode)
-  const targetSubs: TargetSub[] = picks.map((p) => {
-    const key = p.sub.domain as Domain
-    const meta = domains[key]?.subs.find((x) => x.key === p.sub.sub)
-    return {
-      domain: key,
-      sub: p.sub.sub,
-      label: meta?.label ?? p.sub.sub,
-    }
-  })
-
-  const meanEst =
-    picks.reduce((acc, p) => acc + Math.max(1, p.sub.subLevel), 0) / picks.length
-  const range = levelRangeFor(meanEst)
-
-  const subDomainKeys = new Set(picks.map((p) => `${p.sub.domain}::${p.sub.sub}`))
-  const states = await prisma.questionState.findMany({
-    where: { userId: args.userId, question: { languageId: args.languageId } },
-    include: {
-      question: { select: { domain: true, sub: true, pattern: true } },
-    },
-  })
-  type StateCard = {
-    stability: number
-    difficulty: number
-    state: number
-    scheduledDays: number
-    learningSteps: number
-    reps: number
-    lapses: number
-    lastReview: Date | null
-    dueAt: Date | null
-  }
-  const cardsByPattern = new Map<string, StateCard[]>()
-  for (const st of states) {
-    const key = `${st.question.domain}::${st.question.sub}`
-    if (!subDomainKeys.has(key)) continue
-    const list = cardsByPattern.get(st.question.pattern) ?? []
-    list.push({
-      stability: st.stability,
-      difficulty: st.difficulty,
-      state: st.state,
-      scheduledDays: st.scheduledDays,
-      learningSteps: st.learningSteps,
-      reps: st.reps,
-      lapses: st.lapses,
-      lastReview: st.lastReview,
-      dueAt: st.dueAt,
-    })
-    cardsByPattern.set(st.question.pattern, list)
-  }
-
-  const { retrievability } = await import("@/lib/fsrs")
-  const now = new Date()
-  const patternWeakness: Array<{ pattern: string; weakness: number }> = []
-  for (const [pattern, list] of cardsByPattern) {
-    let sumR = 0
-    for (const c of list) sumR += retrievability(c, now)
-    const meanR = list.length === 0 ? 0 : sumR / list.length
-    patternWeakness.push({ pattern, weakness: 1 - meanR })
-  }
-  patternWeakness.sort((a, b) => b.weakness - a.weakness)
-  const weakPatterns = patternWeakness.slice(0, 5).map((p) => p.pattern)
-
-  return { subs: targetSubs, range, weakPatterns }
+  return den === 0 ? 0 : num / den
 }
 
-export function computeUnlockedBossLevels(
-  subAggregates: SubAggregate[],
-  domain: Domain,
-): number[] {
-  const activeInDomain = subAggregates.filter(
-    (s) => s.isActive && s.domain === domain,
-  )
-  if (activeInDomain.length === 0) return []
-  const unlocked: number[] = []
-  for (const level of BOSSES.levels) {
-    if (activeInDomain.every((s) => s.subLevel >= level)) {
-      unlocked.push(level)
-    }
+export function pickPersonalisedTargets(
+  aggregates: readonly TagAggregate[],
+): PersonalisedTargets | null {
+  if (aggregates.length === 0) return null
+  const ranked = aggregates
+    .map((a) => ({ a, p: tagPriority(a) }))
+    .sort((x, y) => y.p - x.p)
+
+  // Top-priority tag per facet.
+  const targets: TagTargetInfo[] = []
+  for (const f of FACETS) {
+    const top = ranked.find((r) => r.a.facet === f)
+    if (top) targets.push({ facet: f, tag: top.a.tag, label: top.a.label })
   }
-  return unlocked
+
+  const range = levelRangeFor(overallLevel(aggregates))
+  const weakTags: TagTargetInfo[] = ranked
+    .slice(0, 5)
+    .map((r) => ({ facet: r.a.facet, tag: r.a.tag, label: r.a.label }))
+
+  return { targets, range, weakTags }
 }
 
-export interface BossProgress {
-  ready: number
-  total: number
-  bottleneck: { sub: string; subLevel: number } | null
-}
-
-// Active subs in `domain` that are at or above `level` count as "ready"; the
-// remaining ones are blocking. The bottleneck is the active sub furthest below.
-export function computeBossProgress(
-  subAggregates: SubAggregate[],
-  domain: Domain,
-  level: number,
-): BossProgress {
-  const active = subAggregates.filter(
-    (s) => s.isActive && s.domain === domain,
-  )
-  if (active.length === 0) {
-    return { ready: 0, total: 0, bottleneck: null }
-  }
-  const ready = active.filter((s) => s.subLevel >= level).length
-  const blockers = active
-    .filter((s) => s.subLevel < level)
-    .sort((a, b) => a.subLevel - b.subLevel)
-  const bottleneck = blockers[0]
-    ? { sub: blockers[0].sub, subLevel: blockers[0].subLevel }
-    : null
-  return { ready, total: active.length, bottleneck }
-}
-
-export interface SubLevelSnapshotEntry {
-  subLevel: number
+export interface TagLevelSnapshotEntry {
+  tagLevel: number
   cardsNeeded: number
   nextLevel: number | null
   bandProgress: number
 }
-export type SubLevelSnapshot = Record<string, SubLevelSnapshotEntry>
+export type TagLevelSnapshot = Record<string, TagLevelSnapshotEntry>
 
-// Capture current per-active-sub level + cards-to-next-level so the post-drill
-// screen can show "X → Y cards to B1, +Z graduated" without per-card storage.
-// Keyed by `${domain}::${sub}` — same convention used elsewhere.
-export async function snapshotSubLevels(
+// Capture per-tag level + cards-to-next so the post-drill screen can show
+// advancement without per-card storage. Keyed by `${facet}::${tag}`.
+export async function snapshotTagLevels(
   userId: number,
   languageId: number,
-): Promise<SubLevelSnapshot> {
-  const [subStats, states] = await Promise.all([
-    prisma.subStats.findMany({ where: { userId, isActive: true } }),
-    prisma.questionState.findMany({
-      where: { userId, question: { languageId } },
-      include: {
-        question: { select: { domain: true, sub: true, level: true } },
-      },
-    }),
-  ])
-
-  const cardsBySub = new Map<string, CardForLevel[]>()
-  for (const st of states) {
-    const key = `${st.question.domain}::${st.question.sub}`
-    const arr = cardsBySub.get(key) ?? []
-    arr.push({
-      level: st.question.level,
-      stability: st.stability,
-      difficulty: st.difficulty,
-      state: st.state,
-      scheduledDays: st.scheduledDays,
-      learningSteps: st.learningSteps,
-      reps: st.reps,
-      lapses: st.lapses,
-      lastReview: st.lastReview,
-      dueAt: st.dueAt,
-    })
-    cardsBySub.set(key, arr)
-  }
-
-  const out: SubLevelSnapshot = {}
-  for (const sub of subStats) {
-    const key = `${sub.domain}::${sub.sub}`
-    const cards = cardsBySub.get(key) ?? []
-    const subLevel = subLevelFromCards(cards)
-    const next = cardsToNextLevel(cards, subLevel)
-    const band = bandProgressToNext(cards, subLevel)
-    out[key] = {
-      subLevel,
+  languageCode: LanguageCode,
+): Promise<TagLevelSnapshot> {
+  const cards = await loadTaggedCards(userId, languageId)
+  const buckets = bucketCardsByTag(cards)
+  const out: TagLevelSnapshot = {}
+  for (const t of allTags(languageCode)) {
+    const focusCards = buckets.get(tagKey(t.facet, t.tag))?.focusCards ?? []
+    const tagLevel = subLevelFromCards(focusCards)
+    const next = cardsToNextLevel(focusCards, tagLevel)
+    const band = bandProgressToNext(focusCards, tagLevel)
+    out[tagKey(t.facet, t.tag)] = {
+      tagLevel,
       cardsNeeded: next?.needed ?? 0,
       nextLevel: next?.nextLevel ?? null,
       bandProgress: band.progress,
@@ -314,82 +214,35 @@ export async function snapshotSubLevels(
   return out
 }
 
-export interface SubReviewCount {
+export interface TagReviewCount {
   total: number
   correct: number
 }
 
-// Lifetime per-sub review counts (correct + total) for stats page accuracy
-// display. Joins Review → Question to group by domain/sub since Review itself
-// only stores questionId.
-export async function loadSubReviewCounts(
+// Lifetime per-tag review counts. A review fans out to every tag its question
+// carries (join Review → Question → QuestionTag).
+export async function loadTagReviewCounts(
   userId: number,
   languageId: number,
-): Promise<Map<string, SubReviewCount>> {
+): Promise<Map<string, TagReviewCount>> {
   const reviews = await prisma.review.findMany({
     where: { userId, question: { languageId } },
     select: {
       correct: true,
-      question: { select: { domain: true, sub: true } },
+      question: { select: { tags: { select: { facet: true, tag: true } } } },
     },
   })
-  const out = new Map<string, SubReviewCount>()
+  const out = new Map<string, TagReviewCount>()
   for (const r of reviews) {
-    const key = `${r.question.domain}::${r.question.sub}`
-    const cur = out.get(key) ?? { total: 0, correct: 0 }
-    cur.total++
-    if (r.correct) cur.correct++
-    out.set(key, cur)
+    for (const t of r.question.tags) {
+      const key = tagKey(t.facet, t.tag)
+      const cur = out.get(key) ?? { total: 0, correct: 0 }
+      cur.total++
+      if (r.correct) cur.correct++
+      out.set(key, cur)
+    }
   }
   return out
 }
 
-export interface SkillLossEntry {
-  domain: string
-  sub: string
-  before: number
-  after: number
-}
-
-export async function applyBossDefeatSkillLoss(args: {
-  userId: number
-  languageId: number
-  domain: string
-  bossLevel: number
-}): Promise<SkillLossEntry[]> {
-  const states = await prisma.questionState.findMany({
-    where: {
-      userId: args.userId,
-      question: { languageId: args.languageId, domain: args.domain },
-    },
-    include: {
-      question: { select: { sub: true, level: true } },
-    },
-  })
-
-  const before = new Map<string, number>()
-  const after = new Map<string, number>()
-
-  for (const st of states) {
-    const key = st.question.sub
-    if (!before.has(key)) before.set(key, st.stability)
-  }
-
-  const updates = states.filter((st) => st.question.level >= args.bossLevel)
-  for (const st of updates) {
-    const newStability = Math.max(0.1, st.stability * 0.7)
-    await prisma.questionState.update({
-      where: { id: st.id },
-      data: { stability: newStability },
-    })
-    after.set(st.question.sub, newStability)
-  }
-
-  const entries: SkillLossEntry[] = []
-  for (const [sub, b] of before) {
-    if (after.has(sub)) {
-      entries.push({ domain: args.domain, sub, before: b, after: after.get(sub) ?? b })
-    }
-  }
-  return entries
-}
+export { tagLabel }

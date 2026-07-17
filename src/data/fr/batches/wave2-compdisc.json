@@ -1,0 +1,964 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_compdisc_001",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Marie mesure 1m80 et sa sœur 1m60 : Marie est ___ grande que sa sœur.",
+      "blankHint": null,
+      "translation": "Marie is 1.80 m and her sister 1.60 m: Marie is taller than her sister.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["plus", "moins", "aussi", "très"],
+      "correct_index": 0,
+      "explanation": "Comparatif de supériorité : « plus … que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_002",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce café coûte 2 €, l'autre coûte 5 € : ce café est ___ cher que l'autre.",
+      "blankHint": null,
+      "translation": "This coffee costs 2 euros, the other costs 5: this coffee is less expensive than the other.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["moins", "plus", "aussi", "très"],
+      "correct_index": 0,
+      "explanation": "Comparatif d'infériorité : « moins … que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_003",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Nous avons exactement le même âge : je suis ___ âgé que toi.",
+      "blankHint": null,
+      "translation": "We are exactly the same age: I am as old as you.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["aussi", "plus", "moins", "très"],
+      "correct_index": 0,
+      "explanation": "Comparatif d'égalité : « aussi … que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_004",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Léa a les meilleures notes de la classe : c'est ___ élève.",
+      "blankHint": null,
+      "translation": "Léa has the best grades in the class: she is the best student.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["la meilleure", "la mieux", "la plus bonne", "la meilleur"],
+      "correct_index": 0,
+      "explanation": "Superlatif de « bon » au féminin : « la meilleure ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_005",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Tout le monde commande ce plat : c'est le plat ___ populaire de la carte.",
+      "blankHint": null,
+      "translation": "Everyone orders this dish: it is the most popular dish on the menu.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["le plus", "plus", "la plus", "le mieux"],
+      "correct_index": 0,
+      "explanation": "Superlatif de supériorité : « le plus … ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_006",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Hier j'allais mal, mais aujourd'hui je vais ___ qu'hier.",
+      "blankHint": null,
+      "translation": "Yesterday I felt bad, but today I feel better than yesterday.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "body_health", "role": "context" }
+      ],
+      "options": ["mieux", "meilleur", "plus bien", "bien"],
+      "correct_index": 0,
+      "explanation": "Comparatif de l'adverbe « bien » : « mieux ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Ce gâteau-ci est délicieux et l'autre est fade : celui-ci est ___ que l'autre.",
+      "blankHint": null,
+      "translation": "This cake is delicious and the other is bland: this one is better than the other.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "food_ingredients", "role": "context" }
+      ],
+      "options": ["meilleur", "mieux", "plus bon", "meilleure"],
+      "correct_index": 0,
+      "explanation": "Comparatif de l'adjectif « bon » au masculin : « meilleur ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_008",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avec dix millions d'habitants, c'est la ville ___ peuplée du pays.",
+      "blankHint": null,
+      "translation": "With ten million inhabitants, it is the most populated city in the country.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["la plus", "la moins", "plus", "le plus"],
+      "correct_index": 0,
+      "explanation": "Superlatif féminin : « la plus … du/de la … ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_009",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il parle six langues : de tous mes amis, c'est lui qui parle ___ langues.",
+      "blankHint": null,
+      "translation": "He speaks six languages: of all my friends, he is the one who speaks the most languages.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["le plus de", "le plus", "plus de", "la plus de"],
+      "correct_index": 0,
+      "explanation": "Superlatif avec un nom : « le plus de + nom ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_010",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La cuisine y est excellente : ce restaurant est ___ que l'ancien.",
+      "blankHint": null,
+      "translation": "The food there is excellent: this restaurant is better than the old one.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["meilleur", "mieux", "plus bon", "meilleure"],
+      "correct_index": 0,
+      "explanation": "Comparatif de « bon » au masculin : « meilleur … que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_011",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle est la pianiste la plus douée : elle joue ___ que quiconque dans l'orchestre.",
+      "blankHint": null,
+      "translation": "She is the most gifted pianist: she plays better than anyone in the orchestra.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["mieux", "meilleur", "plus bien", "meilleure"],
+      "correct_index": 0,
+      "explanation": "Comparatif de l'adverbe « bien » : « mieux que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_012",
+      "format": "cloze",
+      "level": 3,
+      "cue": "De tous les coureurs, c'est Ahmed qui court ___.",
+      "blankHint": null,
+      "translation": "Of all the runners, Ahmed is the one who runs the fastest.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["le plus vite", "le plus vitement", "plus vite", "la plus vite"],
+      "correct_index": 0,
+      "explanation": "Superlatif d'un adverbe : « le plus vite ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "La situation ne s'améliore pas : elle devient de plus en ___ difficile.",
+      "blankHint": null,
+      "translation": "The situation is not improving: it is becoming more and more difficult.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["plus", "moins", "mieux", "meilleure"],
+      "correct_index": 0,
+      "explanation": "Expression de progression : « de plus en plus ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "C'est un cercle vertueux : plus on s'entraîne, ___ on progresse.",
+      "blankHint": null,
+      "translation": "It is a virtuous circle: the more you train, the more you improve.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["plus", "moins", "mieux", "le plus"],
+      "correct_index": 0,
+      "explanation": "Corrélation croissante : « plus …, plus … ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_015",
+      "format": "cloze",
+      "level": 4,
+      "cue": "À poste égal, il gagne deux fois ___ d'argent que son collègue.",
+      "blankHint": null,
+      "translation": "At an equal position, he earns twice as much money as his colleague.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["plus", "moins", "autant", "aussi"],
+      "correct_index": 0,
+      "explanation": "Comparatif multiplié : « deux fois plus de … que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_016",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Des millions de touristes s'y pressent : c'est l'un des monuments ___ visités au monde.",
+      "blankHint": null,
+      "translation": "Millions of tourists flock there: it is one of the most visited monuments in the world.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["les plus", "le plus", "les moins", "plus"],
+      "correct_index": 0,
+      "explanation": "Superlatif après « l'un des » : accord au pluriel « les plus visités ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_017",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Son humeur dépend de son sommeil : moins il dort, ___ il est irritable.",
+      "blankHint": null,
+      "translation": "His mood depends on his sleep: the less he sleeps, the more irritable he is.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["plus", "moins", "mieux", "meilleur"],
+      "correct_index": 0,
+      "explanation": "Corrélation inverse : « moins …, plus … ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_018",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce trimestre est décevant : le résultat est bien ___ satisfaisant que le précédent.",
+      "blankHint": null,
+      "translation": "This quarter is disappointing: the result is far less satisfactory than the previous one.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["moins", "plus", "aussi", "autant"],
+      "correct_index": 0,
+      "explanation": "Comparatif d'infériorité renforcé : « bien moins … que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_019",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le jury a tranché : de tous les dossiers, c'est elle qui a présenté le ___ projet.",
+      "blankHint": null,
+      "translation": "The jury decided: of all the applications, she presented the best project.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["meilleur", "mieux", "plus bon", "meilleure"],
+      "correct_index": 0,
+      "explanation": "Superlatif de « bon » avec un nom masculin : « le meilleur projet ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_020",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ils fournissent le même effort, mais elle réussit ___ que lui.",
+      "blankHint": null,
+      "translation": "They put in the same effort, but she succeeds better than him.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["mieux", "meilleur", "plus", "meilleure"],
+      "correct_index": 0,
+      "explanation": "Comparatif de l'adverbe « bien » : « mieux que ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_021",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Tous s'accordent à le dire : c'est de loin la ___ décision qu'il ait prise.",
+      "blankHint": null,
+      "translation": "Everyone agrees: it is by far the best decision he has made.",
+      "tags": [
+        { "facet": "grammar", "tag": "comparatif_superlatif", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["meilleure", "mieux", "plus bonne", "meilleur"],
+      "correct_index": 0,
+      "explanation": "Superlatif de « bon » avec un nom féminin : « la meilleure décision ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_022",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il m'a dit qu'il ___ fatigué après sa longue journée.",
+      "blankHint": "être",
+      "translation": "He told me that he was tired after his long day.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["était", "est", "sera", "soit"],
+      "correct_index": 0,
+      "explanation": "Concordance : présent du discours direct → imparfait au rapporté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_023",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a demandé si je ___ venir à la réunion.",
+      "blankHint": "pouvoir",
+      "translation": "She asked whether I could come to the meeting.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "meetings", "role": "context" }
+      ],
+      "options": ["pouvais", "peux", "pourrai", "puisse"],
+      "correct_index": 0,
+      "explanation": "Interrogation indirecte : « peux-tu » → imparfait « pouvais ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_024",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il a dit qu'il ___ le lendemain matin.",
+      "blankHint": "venir",
+      "translation": "He said that he would come the next morning.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["viendrait", "viendra", "venait", "vienne"],
+      "correct_index": 0,
+      "explanation": "Futur du discours direct → conditionnel présent au rapporté.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_025",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Marie a répondu qu'elle ne ___ pas la réponse.",
+      "blankHint": "savoir",
+      "translation": "Marie answered that she did not know the answer.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["savait", "sait", "saura", "sache"],
+      "correct_index": 0,
+      "explanation": "Présent → imparfait dans le discours rapporté au passé.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_026",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ils ont annoncé qu'ils ___ déjà déménagé au moment de l'appel.",
+      "blankHint": "avoir",
+      "translation": "They announced that they had already moved by the time of the call.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "housing_admin", "role": "context" }
+      ],
+      "options": ["avaient", "ont", "auraient", "avait"],
+      "correct_index": 0,
+      "explanation": "Passé composé → plus-que-parfait : auxiliaire « avaient ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_027",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le professeur a demandé ce que nous ___ pendant les vacances.",
+      "blankHint": "faire",
+      "translation": "The teacher asked what we were doing during the holidays.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["faisions", "faisons", "ferons", "fassions"],
+      "correct_index": 0,
+      "explanation": "Présent → imparfait « faisions » dans l'interrogation indirecte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_028",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle m'a demandé ___ j'avais froid dans cette pièce.",
+      "blankHint": null,
+      "translation": "She asked me whether I was cold in that room.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["si", "que", "quand", "quoi"],
+      "correct_index": 0,
+      "explanation": "Question fermée rapportée : « est-ce que » devient « si ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_029",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il a affirmé qu'il ___ terminé le rapport avant midi.",
+      "blankHint": "avoir",
+      "translation": "He claimed that he had finished the report before noon.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["avait", "a", "aurait", "avaient"],
+      "correct_index": 0,
+      "explanation": "Passé composé → plus-que-parfait : « avait terminé ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_030",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle a expliqué qu'elle ___ déjà partie quand il est arrivé.",
+      "blankHint": "être",
+      "translation": "She explained that she had already left when he arrived.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["était", "est", "serait", "avait"],
+      "correct_index": 0,
+      "explanation": "Verbe de mouvement au plus-que-parfait : auxiliaire « était ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_031",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le ministre a déclaré que les mesures ___ appliquées dès janvier.",
+      "blankHint": "être",
+      "translation": "The minister declared that the measures would be applied as of January.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["seraient", "seront", "étaient", "soient"],
+      "correct_index": 0,
+      "explanation": "Futur passif → conditionnel : « seraient appliquées ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_032",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Je lui ai demandé pourquoi il ___ refusé mon offre.",
+      "blankHint": "avoir",
+      "translation": "I asked him why he had refused my offer.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["avait", "a", "aurait", "avaient"],
+      "correct_index": 0,
+      "explanation": "Interrogation indirecte : passé composé → plus-que-parfait « avait refusé ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_033",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ils ont juré qu'ils ne ___ jamais une telle erreur.",
+      "blankHint": "faire",
+      "translation": "They swore that they would never make such a mistake.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["feraient", "feront", "faisaient", "fassent"],
+      "correct_index": 0,
+      "explanation": "Futur → conditionnel présent : « feraient ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_034",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il nous a demandé ___ nous voulions boire avant le repas.",
+      "blankHint": null,
+      "translation": "He asked us what we wanted to drink before the meal.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "restaurant", "role": "context" }
+      ],
+      "options": ["ce que", "ce qui", "que", "qu'est-ce que"],
+      "correct_index": 0,
+      "explanation": "« Qu'est-ce que » devient « ce que » dans l'interrogation indirecte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_035",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Avant de partir, elle a voulu savoir ___ le train arriverait à l'heure.",
+      "blankHint": null,
+      "translation": "Before leaving, she wanted to know whether the train would arrive on time.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "travel_booking", "role": "context" }
+      ],
+      "options": ["si", "que", "ce que", "quand"],
+      "correct_index": 0,
+      "explanation": "Question fermée indirecte : introduite par « si ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_036",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le témoin a soutenu qu'il n'___ rien vu de suspect cette nuit-là.",
+      "blankHint": "avoir",
+      "translation": "The witness maintained that he had seen nothing suspicious that night.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["avait", "a", "aurait", "avaient"],
+      "correct_index": 0,
+      "explanation": "Passé composé → plus-que-parfait : « n'avait rien vu ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_037",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Elle a laissé entendre qu'elle ___ démissionner si rien ne changeait.",
+      "blankHint": "pouvoir",
+      "translation": "She hinted that she might resign if nothing changed.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["pourrait", "pourra", "pouvait", "puisse"],
+      "correct_index": 0,
+      "explanation": "Éventualité future rapportée au passé : conditionnel « pourrait ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_038",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le rapport indiquait que la croissance ___ ralenti au dernier trimestre.",
+      "blankHint": "avoir",
+      "translation": "The report indicated that growth had slowed in the last quarter.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["avait", "a", "aurait", "était"],
+      "correct_index": 0,
+      "explanation": "Antériorité rapportée : plus-que-parfait « avait ralenti ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_039",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il prétendait qu'on l'___ trompé sur la qualité de la marchandise.",
+      "blankHint": "avoir",
+      "translation": "He claimed that he had been misled about the quality of the goods.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "shopping_courses", "role": "context" }
+      ],
+      "options": ["avait", "a", "aurait", "avaient"],
+      "correct_index": 0,
+      "explanation": "Passé composé → plus-que-parfait : « on l'avait trompé ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_040",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Elle m'a confié qu'elle ___ agi autrement si elle avait su.",
+      "blankHint": "avoir",
+      "translation": "She confided that she would have acted differently had she known.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["aurait", "avait", "aura", "ait"],
+      "correct_index": 0,
+      "explanation": "Irréel du passé : conditionnel passé « aurait agi ».",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_041",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le journaliste a demandé au président ___ il comptait affronter la crise.",
+      "blankHint": null,
+      "translation": "The journalist asked the president how he intended to face the crisis.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["comment", "si", "que", "quoi"],
+      "correct_index": 0,
+      "explanation": "L'interrogatif « comment » se conserve dans l'interrogation indirecte.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_042",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Personne ne savait ___ la décision serait annoncée.",
+      "blankHint": null,
+      "translation": "No one knew when the decision would be announced.",
+      "tags": [
+        { "facet": "grammar", "tag": "discours_rapporte", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["quand", "si", "que", "dont"],
+      "correct_index": 0,
+      "explanation": "Interrogation indirecte de temps : introduite par « quand ».",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_043",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il pleut à verse, ___ je prends mon parapluie.",
+      "blankHint": null,
+      "translation": "It is pouring rain, so I am taking my umbrella.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["donc", "pourtant", "car", "bien que"],
+      "correct_index": 0,
+      "explanation": "« Donc » exprime la conséquence logique.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_044",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Elle a beaucoup révisé, ___ elle a raté l'examen.",
+      "blankHint": null,
+      "translation": "She studied a lot, and yet she failed the exam.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "daily_routine", "role": "context" }
+      ],
+      "options": ["pourtant", "donc", "car", "alors"],
+      "correct_index": 0,
+      "explanation": "« Pourtant » marque une opposition à ce qu'on attendait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_045",
+      "format": "cloze",
+      "level": 3,
+      "cue": "J'aimerais beaucoup venir ; ___, je n'ai pas le temps ce soir.",
+      "blankHint": null,
+      "translation": "I would love to come; however, I do not have time tonight.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "friendship_social", "role": "context" }
+      ],
+      "options": ["cependant", "donc", "ainsi", "car"],
+      "correct_index": 0,
+      "explanation": "« Cependant » introduit une restriction ou une opposition.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_046",
+      "format": "cloze",
+      "level": 3,
+      "cue": "___ le temps soit mauvais, ils font quand même une randonnée.",
+      "blankHint": null,
+      "translation": "Although the weather is bad, they still go for a hike.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "weather_time", "role": "context" }
+      ],
+      "options": ["Bien que", "Parce que", "Puisque", "Pendant que"],
+      "correct_index": 0,
+      "explanation": "« Bien que » exprime la concession et demande le subjonctif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_047",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il se repose tranquillement ___ tout le monde travaille.",
+      "blankHint": null,
+      "translation": "He is resting quietly while everyone else is working.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["alors que", "parce que", "donc", "pourtant"],
+      "correct_index": 0,
+      "explanation": "« Alors que » exprime ici une opposition simultanée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_048",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le train a une heure de retard ; ___, nous manquerons la correspondance.",
+      "blankHint": null,
+      "translation": "The train is an hour late; consequently, we will miss the connection.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "transport_daily", "role": "context" }
+      ],
+      "options": ["par conséquent", "pourtant", "bien que", "alors que"],
+      "correct_index": 0,
+      "explanation": "« Par conséquent » introduit une conséquence.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_049",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le projet est ambitieux ; ___, il manque cruellement de financement.",
+      "blankHint": null,
+      "translation": "The project is ambitious; however, it sorely lacks funding.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "job_contract", "role": "context" }
+      ],
+      "options": ["cependant", "donc", "ainsi", "par conséquent"],
+      "correct_index": 0,
+      "explanation": "« Cependant » nuance en opposant deux idées.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_050",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Les ventes ont chuté ; ___, l'entreprise a dû réduire ses effectifs.",
+      "blankHint": null,
+      "translation": "Sales fell; consequently, the company had to cut its workforce.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["par conséquent", "pourtant", "bien que", "alors que"],
+      "correct_index": 0,
+      "explanation": "« Par conséquent » relie une cause à sa conséquence.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_051",
+      "format": "cloze",
+      "level": 4,
+      "cue": "___ les prévisions soient pessimistes, il reste résolument optimiste.",
+      "blankHint": null,
+      "translation": "Although the forecasts are pessimistic, he remains resolutely optimistic.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "emotions_feelings", "role": "context" }
+      ],
+      "options": ["Bien que", "Parce que", "Puisque", "Étant donné que"],
+      "correct_index": 0,
+      "explanation": "« Bien que » marque la concession et régit le subjonctif.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_052",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Il gagne très bien sa vie ___ son frère peine à joindre les deux bouts.",
+      "blankHint": null,
+      "translation": "He earns a very good living whereas his brother struggles to make ends meet.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "family_relations", "role": "context" }
+      ],
+      "options": ["alors que", "donc", "par conséquent", "ainsi"],
+      "correct_index": 0,
+      "explanation": "« Alors que » oppose deux situations contrastées.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_053",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Elle avait promis de venir ; ___, elle n'est jamais arrivée.",
+      "blankHint": null,
+      "translation": "She had promised to come; and yet, she never showed up.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "apologies_conflict", "role": "context" }
+      ],
+      "options": ["pourtant", "donc", "ainsi", "par conséquent"],
+      "correct_index": 0,
+      "explanation": "« Pourtant » souligne le contraste avec l'attente.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_054",
+      "format": "cloze",
+      "level": 4,
+      "cue": "La demande a explosé ; l'entreprise a ___ embauché du personnel supplémentaire.",
+      "blankHint": null,
+      "translation": "Demand exploded; the company therefore hired additional staff.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "work_email", "role": "context" }
+      ],
+      "options": ["donc", "pourtant", "cependant", "bien que"],
+      "correct_index": 0,
+      "explanation": "« Donc », placé après l'auxiliaire, exprime la conséquence.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_compdisc_055",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Le rapport est incomplet ; ___, ses conclusions demeurent pertinentes.",
+      "blankHint": null,
+      "translation": "The report is incomplete; nevertheless, its conclusions remain relevant.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["cependant", "par conséquent", "donc", "ainsi"],
+      "correct_index": 0,
+      "explanation": "« Cependant » introduit une concession malgré le défaut évoqué.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_056",
+      "format": "cloze",
+      "level": 5,
+      "cue": "___ il ait des arguments solides, il n'a convaincu personne.",
+      "blankHint": null,
+      "translation": "Although he has solid arguments, he convinced no one.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["Bien qu'", "Puisqu'", "Étant donné qu'", "Dès lors qu'"],
+      "correct_index": 0,
+      "explanation": "« Bien que » + subjonctif exprime la concession (« Bien qu'il ait »).",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_057",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les taux d'intérêt grimpent ; ___, les investisseurs se retirent du marché.",
+      "blankHint": null,
+      "translation": "Interest rates are climbing; as a result, investors are pulling out of the market.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "numbers_stats", "role": "context" }
+      ],
+      "options": ["par conséquent", "pourtant", "bien que", "alors que"],
+      "correct_index": 0,
+      "explanation": "« Par conséquent » exprime la conséquence économique.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_058",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Il prône ouvertement la sobriété ___ il mène un train de vie fastueux.",
+      "blankHint": null,
+      "translation": "He openly preaches frugality whereas he leads a lavish lifestyle.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "idioms", "role": "context" }
+      ],
+      "options": ["alors que", "si bien que", "de sorte que", "parce que"],
+      "correct_index": 0,
+      "explanation": "« Alors que » oppose le discours et les actes.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_059",
+      "format": "cloze",
+      "level": 5,
+      "cue": "L'auteur reste très discret ; ___, son influence est considérable.",
+      "blankHint": null,
+      "translation": "The author remains very discreet; and yet, his influence is considerable.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "media_news", "role": "context" }
+      ],
+      "options": ["pourtant", "par conséquent", "donc", "ainsi"],
+      "correct_index": 0,
+      "explanation": "« Pourtant » marque le contraste entre discrétion et influence.",
+      "register": "formal"
+    },
+    {
+      "id": "fr_w2_compdisc_060",
+      "format": "cloze",
+      "level": 5,
+      "cue": "Les preuves faisaient défaut ; l'accusé a ___ été relâché sans délai.",
+      "blankHint": null,
+      "translation": "Evidence was lacking; the defendant was therefore released without delay.",
+      "tags": [
+        { "facet": "grammar", "tag": "connecteurs_logiques", "role": "focus" },
+        { "facet": "topic", "tag": "admin_bureaucracy", "role": "context" }
+      ],
+      "options": ["donc", "pourtant", "bien que", "alors que"],
+      "correct_index": 0,
+      "explanation": "« Donc », inséré après l'auxiliaire, exprime la conséquence.",
+      "register": "formal"
+    }
+  ]
+}

@@ -1,0 +1,994 @@
+{
+  "questions": [
+    {
+      "id": "fr_w2_vFood_001",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Au restaurant, le ___ apporte les plats à notre table.",
+      "blankHint": null,
+      "translation": "At the restaurant, the waiter brings the dishes to our table.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["serveur", "client", "cuisinier", "patron"],
+      "correct_index": 0,
+      "explanation": "La personne qui apporte les plats en salle est le serveur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_002",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Après le repas, je demande l'___ pour payer.",
+      "blankHint": null,
+      "translation": "After the meal, I ask for the bill to pay.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["addition", "entrée", "assiette", "carte"],
+      "correct_index": 0,
+      "explanation": "Le document qui indique le prix à payer est l'addition.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_003",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je voudrais réserver une ___ pour deux personnes, s'il vous plaît.",
+      "blankHint": null,
+      "translation": "I would like to reserve a table for two, please.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["table", "chaise", "note", "carte"],
+      "correct_index": 0,
+      "explanation": "On réserve une table au restaurant.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_004",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour choisir, je regarde d'abord la ___ des plats.",
+      "blankHint": null,
+      "translation": "To choose, I first look at the menu of dishes.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["carte", "table", "cuillère", "nappe"],
+      "correct_index": 0,
+      "explanation": "La liste des plats proposés s'appelle la carte.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_005",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le serveur pose une ___ propre devant chaque client.",
+      "blankHint": null,
+      "translation": "The waiter places a clean plate in front of each customer.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["assiette", "nappe", "carte", "addition"],
+      "correct_index": 0,
+      "explanation": "On mange dans une assiette.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_006",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour boire de l'eau, j'utilise un ___.",
+      "blankHint": null,
+      "translation": "To drink water, I use a glass.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["verre", "couteau", "plat", "menu"],
+      "correct_index": 0,
+      "explanation": "On boit dans un verre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_007",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Comme ___, je vais prendre une salade avant le plat principal.",
+      "blankHint": null,
+      "translation": "As a starter, I'll have a salad before the main course.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["entrée", "dessert", "addition", "pourboire"],
+      "correct_index": 0,
+      "explanation": "Le premier plat d'un repas s'appelle l'entrée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_008",
+      "format": "cloze",
+      "level": 2,
+      "cue": "En France, on laisse parfois un ___ au serveur quand le service est bon.",
+      "blankHint": null,
+      "translation": "In France, you sometimes leave a tip for the waiter when the service is good.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["pourboire", "menu", "plat", "couvert"],
+      "correct_index": 0,
+      "explanation": "L'argent laissé en plus pour le service est le pourboire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_009",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je coupe ma viande avec un ___ et une fourchette.",
+      "blankHint": null,
+      "translation": "I cut my meat with a knife and a fork.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["couteau", "cuillère", "verre", "assiette"],
+      "correct_index": 0,
+      "explanation": "On coupe avec un couteau.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_010",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour manger la soupe, j'utilise une ___.",
+      "blankHint": null,
+      "translation": "To eat soup, I use a spoon.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["cuillère", "fourchette", "couteau", "serviette"],
+      "correct_index": 0,
+      "explanation": "On mange la soupe avec une cuillère.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_011",
+      "format": "cloze",
+      "level": 2,
+      "cue": "À la fin du repas, j'ai choisi une glace comme ___.",
+      "blankHint": null,
+      "translation": "At the end of the meal, I chose an ice cream for dessert.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["dessert", "entrée", "apéritif", "boisson"],
+      "correct_index": 0,
+      "explanation": "Le plat sucré de fin de repas est le dessert.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_012",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant le repas, on prend souvent un ___ avec des olives.",
+      "blankHint": null,
+      "translation": "Before the meal, people often have an aperitif with olives.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["apéritif", "dessert", "addition", "pourboire"],
+      "correct_index": 0,
+      "explanation": "La boisson prise avant le repas est l'apéritif.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_013",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le restaurant affiche complet, il faut ___ une table à l'avance.",
+      "blankHint": null,
+      "translation": "The restaurant is fully booked, you have to reserve a table in advance.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["réserver", "commander", "annuler", "servir"],
+      "correct_index": 0,
+      "explanation": "Retenir une table à l'avance, c'est la réserver.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_014",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le midi, le chef propose un ___ du jour à prix fixe.",
+      "blankHint": null,
+      "translation": "At noon, the chef offers a fixed-price set menu of the day.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["menu", "pourboire", "couvert", "apéritif"],
+      "correct_index": 0,
+      "explanation": "L'ensemble entrée-plat-dessert à prix fixe s'appelle un menu.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_015",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le serveur nous a recommandé la ___ du chef, une recette maison.",
+      "blankHint": null,
+      "translation": "The waiter recommended the chef's specialty, a house recipe.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["spécialité", "addition", "réservation", "nappe"],
+      "correct_index": 0,
+      "explanation": "Le plat typique d'un chef est sa spécialité.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_016",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le plat était froid, nous avons décidé de le ___ en cuisine.",
+      "blankHint": null,
+      "translation": "The dish was cold, so we decided to send it back to the kitchen.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["renvoyer", "commander", "réserver", "servir"],
+      "correct_index": 0,
+      "explanation": "Rendre un plat au serveur, c'est le renvoyer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_017",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Le ___ était aux petits soins et connaissait bien la carte des vins.",
+      "blankHint": null,
+      "translation": "The sommelier was very attentive and knew the wine list well.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["sommelier", "cuisinier", "plongeur", "caissier"],
+      "correct_index": 0,
+      "explanation": "Le spécialiste des vins au restaurant est le sommelier.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_018",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour le service, le restaurant ajoute un ___ de deux euros par personne.",
+      "blankHint": null,
+      "translation": "For service, the restaurant adds a two-euro cover charge per person.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["couvert", "pourboire", "apéritif", "dessert"],
+      "correct_index": 0,
+      "explanation": "Le prix fixe par personne pour la mise en place est le couvert.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_019",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce restaurant gastronomique a été récompensé d'une ___ au guide Michelin.",
+      "blankHint": null,
+      "translation": "This fine-dining restaurant was awarded a star in the Michelin guide.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["étoile", "fourchette", "note", "carte"],
+      "correct_index": 0,
+      "explanation": "La distinction du guide Michelin est une étoile.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_020",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le ___ nous a accueillis à l'entrée et conduits à notre table.",
+      "blankHint": null,
+      "translation": "The maître d' welcomed us at the entrance and led us to our table.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["maître d'hôtel", "sommelier", "plongeur", "commis"],
+      "correct_index": 0,
+      "explanation": "Le responsable de l'accueil et de la salle est le maître d'hôtel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_021",
+      "format": "cloze",
+      "level": 4,
+      "cue": "En cuisine, le ___ lave la vaisselle pendant tout le service.",
+      "blankHint": null,
+      "translation": "In the kitchen, the dishwasher washes the dishes throughout the service.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["plongeur", "sommelier", "maître d'hôtel", "serveur"],
+      "correct_index": 0,
+      "explanation": "Celui qui lave la vaisselle en cuisine est le plongeur.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_022",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le chef a soigné le ___ de l'assiette, presque comme une œuvre d'art.",
+      "blankHint": null,
+      "translation": "The chef took care with the plating, almost like a work of art.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["dressage", "pourboire", "couvert", "addition"],
+      "correct_index": 0,
+      "explanation": "La présentation des aliments dans l'assiette s'appelle le dressage.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_023",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Pour fêter l'événement, nous avons réservé une ___ privée à l'étage.",
+      "blankHint": null,
+      "translation": "To celebrate the event, we booked a private room upstairs.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["salle", "carte", "note", "cuillère"],
+      "correct_index": 0,
+      "explanation": "Un espace fermé pour un groupe est une salle privée.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_024",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le sommelier a suggéré un vin pour ___ le plat de poisson.",
+      "blankHint": null,
+      "translation": "The sommelier suggested a wine to accompany the fish dish.",
+      "tags": [
+        { "facet": "topic", "tag": "restaurant", "role": "focus" }
+      ],
+      "options": ["accompagner", "réserver", "commander", "verser"],
+      "correct_index": 0,
+      "explanation": "Assortir un vin à un plat, c'est l'accompagner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_025",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Le matin, je mange du ___ avec du beurre et de la confiture.",
+      "blankHint": null,
+      "translation": "In the morning, I eat bread with butter and jam.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["pain", "riz", "poisson", "fromage"],
+      "correct_index": 0,
+      "explanation": "L'aliment de boulangerie du petit-déjeuner est le pain.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_026",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Pour faire une omelette, il faut casser des ___.",
+      "blankHint": null,
+      "translation": "To make an omelette, you have to crack some eggs.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["œufs", "pommes", "tomates", "oignons"],
+      "correct_index": 0,
+      "explanation": "On fait une omelette avec des œufs.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_027",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Je bois un verre de ___ froid au petit-déjeuner.",
+      "blankHint": null,
+      "translation": "I drink a glass of cold milk at breakfast.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["lait", "pain", "sel", "riz"],
+      "correct_index": 0,
+      "explanation": "La boisson blanche de la vache est le lait.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_028",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Dans mon café, j'ajoute un peu de ___ pour l'adoucir.",
+      "blankHint": null,
+      "translation": "In my coffee, I add a little sugar to sweeten it.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["sucre", "sel", "poivre", "huile"],
+      "correct_index": 0,
+      "explanation": "Ce qui adoucit le café est le sucre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_029",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Cette soupe manque de ___, elle est trop fade.",
+      "blankHint": null,
+      "translation": "This soup lacks salt, it's too bland.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["sel", "sucre", "farine", "beurre"],
+      "correct_index": 0,
+      "explanation": "Ce qui donne le goût salé est le sel.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_030",
+      "format": "cloze",
+      "level": 1,
+      "cue": "Comme dessert, je prends une ___ bien mûre.",
+      "blankHint": null,
+      "translation": "For dessert, I have a nice ripe apple.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["pomme", "carotte", "tomate", "oignon"],
+      "correct_index": 0,
+      "explanation": "Le fruit rond du pommier est la pomme.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_031",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour faire un gâteau, il faut de la ___, des œufs et du sucre.",
+      "blankHint": null,
+      "translation": "To make a cake, you need flour, eggs and sugar.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["farine", "huile", "crème", "viande"],
+      "correct_index": 0,
+      "explanation": "La poudre de blé pour la pâtisserie est la farine.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_032",
+      "format": "cloze",
+      "level": 2,
+      "cue": "J'assaisonne la salade avec de l'___ d'olive et du vinaigre.",
+      "blankHint": null,
+      "translation": "I dress the salad with olive oil and vinegar.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["huile", "eau", "farine", "crème"],
+      "correct_index": 0,
+      "explanation": "Le liquide gras tiré des olives est l'huile.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_033",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Le végétarien ne mange pas de ___, seulement des légumes.",
+      "blankHint": null,
+      "translation": "The vegetarian doesn't eat meat, only vegetables.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["viande", "pain", "riz", "fromage"],
+      "correct_index": 0,
+      "explanation": "La chair animale que le végétarien évite est la viande.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_034",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour la sauce tomate, je fais revenir un ___ coupé en morceaux.",
+      "blankHint": null,
+      "translation": "For the tomato sauce, I fry an onion cut into pieces.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["oignon", "fruit", "yaourt", "œuf"],
+      "correct_index": 0,
+      "explanation": "Le légume rond qui fait pleurer est l'oignon.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_035",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Au dîner, nous avons mangé du ___ grillé avec du citron.",
+      "blankHint": null,
+      "translation": "For dinner, we ate grilled fish with lemon.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["poisson", "pain", "sucre", "lait"],
+      "correct_index": 0,
+      "explanation": "L'animal de la mer qu'on mange est le poisson.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_036",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Sur mon pain, j'étale du ___ et un peu de miel.",
+      "blankHint": null,
+      "translation": "On my bread, I spread butter and a little honey.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["beurre", "sel", "poivre", "riz"],
+      "correct_index": 0,
+      "explanation": "La matière grasse jaune du lait est le beurre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_037",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette recette demande une pincée de ___ pour relever le goût.",
+      "blankHint": null,
+      "translation": "This recipe calls for a pinch of pepper to enhance the flavor.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["poivre", "farine", "crème", "huile"],
+      "correct_index": 0,
+      "explanation": "L'épice noire piquante est le poivre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_038",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour épaissir la sauce, j'ajoute une cuillère de ___ fraîche.",
+      "blankHint": null,
+      "translation": "To thicken the sauce, I add a spoonful of fresh cream.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["crème", "huile", "sucre", "sel"],
+      "correct_index": 0,
+      "explanation": "Le produit laitier onctueux pour les sauces est la crème.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_039",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce plat est parfumé avec une gousse d'___ écrasée.",
+      "blankHint": null,
+      "translation": "This dish is flavored with a crushed clove of garlic.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["ail", "oignon", "poivre", "sel"],
+      "correct_index": 0,
+      "explanation": "Le condiment vendu en gousses est l'ail.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_040",
+      "format": "cloze",
+      "level": 3,
+      "cue": "En accompagnement, j'ai fait cuire du ___ complet plutôt que des pâtes.",
+      "blankHint": null,
+      "translation": "As a side, I cooked whole-grain rice rather than pasta.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["riz", "pain", "lait", "beurre"],
+      "correct_index": 0,
+      "explanation": "La céréale blanche en grains est le riz.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_041",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Cette confiture est faite avec des ___ rouges cueillies au jardin.",
+      "blankHint": null,
+      "translation": "This jam is made with red strawberries picked from the garden.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["fraises", "carottes", "oignons", "courgettes"],
+      "correct_index": 0,
+      "explanation": "Le petit fruit rouge du printemps est la fraise.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_042",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour la vinaigrette, il faut mélanger huile, vinaigre et ___.",
+      "blankHint": null,
+      "translation": "For the vinaigrette, you mix oil, vinegar and mustard.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["moutarde", "sucre", "farine", "crème"],
+      "correct_index": 0,
+      "explanation": "Le condiment jaune et piquant de la vinaigrette est la moutarde.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_043",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le chef parfume son plat avec des ___ fraîches comme le thym et le romarin.",
+      "blankHint": null,
+      "translation": "The chef flavors his dish with fresh herbs like thyme and rosemary.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["herbes", "farines", "crèmes", "huiles"],
+      "correct_index": 0,
+      "explanation": "Le thym et le romarin sont des herbes aromatiques.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_044",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Pour relever le curry, il ajoute un mélange d'___ venues d'Inde.",
+      "blankHint": null,
+      "translation": "To spice up the curry, he adds a blend of spices from India.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["épices", "herbes", "légumes", "fruits"],
+      "correct_index": 0,
+      "explanation": "Le curry et le poivre font partie des épices.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_045",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le boulanger prépare son pain avec du ___ naturel plutôt que de la levure chimique.",
+      "blankHint": null,
+      "translation": "The baker makes his bread with natural sourdough rather than chemical yeast.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["levain", "sucre", "sel", "beurre"],
+      "correct_index": 0,
+      "explanation": "La pâte fermentée qui fait lever le pain est le levain.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_046",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce plat mijoté contient des ___ secs comme les lentilles et les pois chiches.",
+      "blankHint": null,
+      "translation": "This stew contains dried legumes like lentils and chickpeas.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["légumes", "fruits", "herbes", "épices"],
+      "correct_index": 0,
+      "explanation": "Les lentilles et pois chiches sont des légumes secs.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_047",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Pour lier la sauce, le cuisinier prépare un ___ de farine et de beurre.",
+      "blankHint": null,
+      "translation": "To thicken the sauce, the cook prepares a roux of flour and butter.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["roux", "bouillon", "coulis", "sirop"],
+      "correct_index": 0,
+      "explanation": "Le mélange cuit de farine et de beurre s'appelle un roux.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_048",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Ce dessert est nappé d'un ___ de fruits rouges légèrement sucré.",
+      "blankHint": null,
+      "translation": "This dessert is topped with a lightly sweetened red-fruit coulis.",
+      "tags": [
+        { "facet": "topic", "tag": "food_ingredients", "role": "focus" }
+      ],
+      "options": ["coulis", "roux", "bouillon", "levain"],
+      "correct_index": 0,
+      "explanation": "La purée liquide de fruits pour napper un dessert est un coulis.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_049",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour faire des frites, je dois ___ les pommes de terre dans l'huile.",
+      "blankHint": null,
+      "translation": "To make fries, I have to fry the potatoes in oil.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["frire", "bouillir", "laver", "éplucher"],
+      "correct_index": 0,
+      "explanation": "Cuire dans un bain d'huile chaude, c'est frire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_050",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Avant de cuisiner les carottes, il faut les ___ avec un couteau.",
+      "blankHint": null,
+      "translation": "Before cooking the carrots, you have to peel them with a knife.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["éplucher", "mélanger", "griller", "servir"],
+      "correct_index": 0,
+      "explanation": "Enlever la peau d'un légume, c'est l'éplucher.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_051",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Je fais ___ l'eau avant d'y jeter les pâtes.",
+      "blankHint": null,
+      "translation": "I bring the water to a boil before dropping in the pasta.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["bouillir", "frire", "griller", "couper"],
+      "correct_index": 0,
+      "explanation": "Chauffer l'eau jusqu'aux bulles, c'est la faire bouillir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_052",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Pour la salade, je vais ___ les tomates en petits morceaux.",
+      "blankHint": null,
+      "translation": "For the salad, I'm going to cut the tomatoes into small pieces.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["couper", "bouillir", "frire", "battre"],
+      "correct_index": 0,
+      "explanation": "Diviser un aliment avec un couteau, c'est le couper.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_053",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Il faut bien ___ la sauce pour qu'elle ne colle pas au fond.",
+      "blankHint": null,
+      "translation": "You have to stir the sauce well so it doesn't stick to the bottom.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["remuer", "éplucher", "couper", "frire"],
+      "correct_index": 0,
+      "explanation": "Agiter une préparation avec une cuillère, c'est la remuer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_054",
+      "format": "cloze",
+      "level": 2,
+      "cue": "Sur le barbecue, on aime ___ des saucisses et de la viande.",
+      "blankHint": null,
+      "translation": "On the barbecue, we like to grill sausages and meat.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["griller", "éplucher", "mélanger", "battre"],
+      "correct_index": 0,
+      "explanation": "Cuire sur la flamme ou la braise, c'est griller.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_055",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour une omelette légère, il faut ___ les œufs énergiquement.",
+      "blankHint": null,
+      "translation": "For a light omelette, you have to beat the eggs vigorously.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["battre", "éplucher", "griller", "mijoter"],
+      "correct_index": 0,
+      "explanation": "Mélanger vivement les œufs au fouet, c'est les battre.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_056",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Ce ragoût doit ___ à feu doux pendant deux heures.",
+      "blankHint": null,
+      "translation": "This stew has to simmer over low heat for two hours.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["mijoter", "frire", "griller", "bouillir"],
+      "correct_index": 0,
+      "explanation": "Cuire longtemps et doucement, c'est mijoter.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_057",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Je fais ___ les oignons dans le beurre jusqu'à ce qu'ils soient dorés.",
+      "blankHint": null,
+      "translation": "I sauté the onions in butter until they are golden.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["revenir", "bouillir", "éplucher", "battre"],
+      "correct_index": 0,
+      "explanation": "Faire dorer à feu vif dans un peu de matière grasse, c'est faire revenir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_058",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Avant de la cuisiner, je laisse ___ la viande dans une sauce épicée.",
+      "blankHint": null,
+      "translation": "Before cooking it, I let the meat marinate in a spicy sauce.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["mariner", "griller", "éplucher", "battre"],
+      "correct_index": 0,
+      "explanation": "Laisser tremper un aliment dans un assaisonnement, c'est le faire mariner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_059",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Pour la soupe, je vais ___ les légumes très finement.",
+      "blankHint": null,
+      "translation": "For the soup, I'm going to finely slice the vegetables.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["émincer", "griller", "bouillir", "dorer"],
+      "correct_index": 0,
+      "explanation": "Couper en tranches très fines, c'est émincer.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_060",
+      "format": "cloze",
+      "level": 3,
+      "cue": "Il faut ___ le fromage avant de le mettre sur les pâtes.",
+      "blankHint": null,
+      "translation": "You have to grate the cheese before putting it on the pasta.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["râper", "bouillir", "mariner", "mijoter"],
+      "correct_index": 0,
+      "explanation": "Réduire un aliment en filaments avec une râpe, c'est le râper.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_061",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Pour garder leur couleur, il faut ___ les légumes verts quelques minutes dans l'eau bouillante.",
+      "blankHint": null,
+      "translation": "To keep their color, you blanch the green vegetables for a few minutes in boiling water.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["blanchir", "mariner", "râper", "éplucher"],
+      "correct_index": 0,
+      "explanation": "Plonger brièvement un aliment dans l'eau bouillante, c'est le blanchir.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_062",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le chef fait ___ la sauce jusqu'à ce qu'elle épaississe et concentre les saveurs.",
+      "blankHint": null,
+      "translation": "The chef reduces the sauce until it thickens and concentrates the flavors.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["réduire", "bouillir", "blanchir", "râper"],
+      "correct_index": 0,
+      "explanation": "Faire évaporer un liquide pour le concentrer, c'est le faire réduire.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_063",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Avant de le cuire, on va ___ le poisson avec de la chapelure.",
+      "blankHint": null,
+      "translation": "Before cooking it, we're going to bread the fish with breadcrumbs.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["paner", "mijoter", "blanchir", "réduire"],
+      "correct_index": 0,
+      "explanation": "Enrober un aliment de chapelure avant cuisson, c'est le paner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_064",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Pour le dessert, le chef fait ___ les crêpes avec du rhum devant les clients.",
+      "blankHint": null,
+      "translation": "For dessert, the chef flambés the crêpes with rum in front of the guests.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["flamber", "paner", "blanchir", "réduire"],
+      "correct_index": 0,
+      "explanation": "Arroser d'alcool et enflammer un plat, c'est le flamber.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_065",
+      "format": "cloze",
+      "level": 4,
+      "cue": "On termine le plat en le faisant ___ au four pour dorer le fromage.",
+      "blankHint": null,
+      "translation": "We finish the dish by browning it in the oven to melt the cheese golden.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["gratiner", "mariner", "blanchir", "émincer"],
+      "correct_index": 0,
+      "explanation": "Faire dorer une couche de fromage au four, c'est gratiner.",
+      "register": "neutral"
+    },
+    {
+      "id": "fr_w2_vFood_066",
+      "format": "cloze",
+      "level": 4,
+      "cue": "Le chef préfère ___ le poisson dans un bouillon frémissant plutôt que de le frire.",
+      "blankHint": null,
+      "translation": "The chef prefers to poach the fish in a simmering broth rather than fry it.",
+      "tags": [
+        { "facet": "topic", "tag": "cooking_methods", "role": "focus" }
+      ],
+      "options": ["pocher", "paner", "gratiner", "flamber"],
+      "correct_index": 0,
+      "explanation": "Cuire doucement dans un liquide frémissant, c'est pocher.",
+      "register": "neutral"
+    }
+  ]
+}

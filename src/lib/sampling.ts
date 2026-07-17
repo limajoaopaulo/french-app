@@ -3,17 +3,17 @@ import { retrievability, State, type FSRSStateRow } from "@/lib/fsrs"
 
 export interface SamplingCandidate {
   questionId: number
-  pattern: string
+  tag: string // the question's targeted focus tag (`${facet}::${tag}`)
   fsrsState: FSRSStateRow
-  patternWeakness: number   // 0..1ish; higher = pattern less mastered (1 - meanR)
-  patternStaleDays: number
+  tagWeakness: number // 0..1ish; higher = tag less mastered (1 - meanR)
+  tagStaleDays: number
 }
 
 export function questionWeight(
   c: SamplingCandidate,
-  weakPatterns: Set<string>,
+  weakTags: Set<string>,
   now: Date,
-  servedPatternCounts: Map<string, number>,
+  servedTagCounts: Map<string, number>,
 ): number {
   let w = 1.0
 
@@ -33,19 +33,19 @@ export function questionWeight(
     w *= SAMPLING.dueBoost
   }
 
-  // Pattern weakness — larger when the pattern's mean retrievability is low.
-  w += c.patternWeakness * SAMPLING.patternWeaknessBonusMax
+  // Tag weakness — larger when the tag's mean retrievability is low.
+  w += c.tagWeakness * SAMPLING.patternWeaknessBonusMax
 
-  // Weak-pattern targeting (top-K patterns inside scope).
-  if (weakPatterns.has(c.pattern)) w *= SAMPLING.weakPatternMultiplier
+  // Weak-tag targeting (top-K tags inside scope).
+  if (weakTags.has(c.tag)) w *= SAMPLING.weakPatternMultiplier
 
-  // Cold/stale pattern boost.
-  if (c.patternStaleDays > SAMPLING.patternStalenessDays) {
+  // Cold/stale tag boost.
+  if (c.tagStaleDays > SAMPLING.patternStalenessDays) {
     w *= SAMPLING.coldPatternBoost
   }
 
-  // Round-robin damp: reduce weight for patterns already served this session.
-  const already = servedPatternCounts.get(c.pattern) ?? 0
+  // Round-robin damp: reduce weight for tags already served this session.
+  const already = servedTagCounts.get(c.tag) ?? 0
   if (already > 0) {
     w *= Math.pow(SAMPLING.samePatternDampBase, already)
   }
